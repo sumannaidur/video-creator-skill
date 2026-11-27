@@ -1,0 +1,221 @@
+{
+  "result": "mapped",
+  "words": [
+    {
+      "label": "ఇదంతా",
+      "text_start": 0,
+      "text_end": 5,
+      "method": "mithi_token_word_ownership",
+      "model_words": [
+        "ఇదంతా"
+      ],
+      "group": null,
+      "tokens": [
+        1,
+        8
+      ],
+      "samples": [
+        1200,
+        13200
+      ]
+    },
+    {
+      "label": "కుడి",
+      "text_start": 6,
+      "text_end": 10,
+      "method": "mithi_token_word_ownership",
+      "model_words": [
+        "కుడి"
+      ],
+      "group": null,
+      "tokens": [
+        10,
+        14
+      ],
+      "samples": [
+        15000,
+        21600
+      ]
+    },
+    {
+      "label": "కర్ణికలోని",
+      "text_start": 11,
+      "text_end": 21,
+      "method": "mithi_token_word_ownership",
+      "model_words": [
+        "కర్ణికలోని"
+      ],
+      "group": null,
+      "tokens": [
+        16,
+        29
+      ],
+      "samples": [
+        22800,
+        42000
+      ]
+    },
+    {
+      "label": "ఒక",
+      "text_start": 22,
+      "text_end": 24,
+      "method": "mithi_token_word_ownership",
+      "model_words": [
+        "ఒక"
+      ],
+      "group": null,
+      "tokens": [
+        31,
+        34
+      ],
+      "samples": [
+        43800,
+        48600
+      ]
+    },
+    {
+      "label": "చిన్న",
+      "text_start": 25,
+      "text_end": 30,
+      "method": "mithi_token_word_ownership",
+      "model_words": [
+        "చిన్న"
+      ],
+      "group": null,
+      "tokens": [
+        36,
+        41
+      ],
+      "samples": [
+        50400,
+        58800
+      ]
+    },
+    {
+      "label": "విద్యుత్",
+      "text_start": 31,
+      "text_end": 39,
+      "method": "mithi_token_word_ownership",
+      "model_words": [
+        "విద్యుత్"
+      ],
+      "group": null,
+      "tokens": [
+        43,
+        49
+      ],
+      "samples": [
+        60000,
+        69000
+      ]
+    },
+    {
+      "label": "సంకేతంతో",
+      "text_start": 40,
+      "text_end": 48,
+      "method": "mithi_token_word_ownership",
+      "model_words": [
+        "సంకేతంతో"
+      ],
+      "group": null,
+      "tokens": [
+        51,
+        64
+      ],
+      "samples": [
+        70200,
+        86400
+      ]
+    },
+    {
+      "label": "మొదలవుతుంది.",
+      "text_start": 49,
+      "text_end": 61,
+      "method": "mithi_token_word_ownership",
+      "model_words": [
+        "మొదలవుతుంది."
+      ],
+      "group": null,
+      "tokens": [
+        66,
+        81
+      ],
+      "samples": [
+        87600,
+        104400
+      ]
+    },
+    {
+      "label": "ప్రతి",
+      "text_start": 62,
+      "text_end": 67,
+      "method": "mithi_token_word_ownership",
+      "model_words": [
+        "ప్రతి"
+      ],
+      "group": null,
+      "tokens": [
+        84,
+        89
+      ],
+      "samples": [
+        114600,
+        122400
+      ]
+    },
+    {
+      "label": "క్షణం,",
+      "text_start": 68,
+      "text_end": 74,
+      "method": "mithi_token_word_ownership",
+      "model_words": [
+        "క్షణం,"
+      ],
+      "group": null,
+      "tokens": [
+        91,
+        97
+      ],
+      "samples": [
+        123600,
+        132000
+      ]
+    },
+    {
+      "label": "మీకు",
+      "text_start": 75,
+      "text_end": 79,
+      "method": "mithi_token_word_ownership",
+      "model_words": [
+        "మీకు"
+      ],
+      "group": null,
+      "tokens": [
+        100,
+        105
+      ],
+      "samples": [
+        142200,
+        149400
+      ]
+    },
+    {
+      "label": "తెలియకుండానే.",
+      "text_start": 80,
+      "text_end": 93,
+      "method": "mithi_token_word_ownership",
+      "model_words": [
+        "తెలియకుండానే."
+      ],
+      "group": null,
+      "tokens": [
+        107,
+        124
+      ],
+      "samples": [
+        150600,
+        168600
+      ]
+    }
+  ]
+}

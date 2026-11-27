@@ -1,0 +1,66 @@
+/* P009 layers extend the P008 palette, type and caption primitives. */
+.story-frame {
+  --x: 92px; --y: 72px;
+  min-height: 100vh; padding: var(--y) var(--x);
+  background: radial-gradient(ellipse at 25% 18%, #fffaed, transparent 73%), var(--paper);
+  position: relative; isolation: isolate;
+}
+.grain { position: absolute; inset: 0; z-index: -1; width: 100%; height: 100%; opacity: .105; pointer-events: none; }
+.story-safe {
+  min-height: calc(100vh - 2 * var(--y));
+  display: grid; grid-template-rows: 1fr auto; gap: 28px;
+}
+.story-body { display: grid; grid-template-columns: minmax(0, .72fr) minmax(0, 1.28fr); gap: 24px; align-items: center; }
+.story-title { font-size: clamp(70px, 5.25vw, 106px); }
+.story-body .story-title { text-wrap: initial; }
+.story-stage { position: relative; height: min(71vh, 776px); isolation: isolate; min-width: 0; }
+.route-layer { position: absolute; inset: 0; width: 100%; height: 100%; z-index: 1; pointer-events: none; }
+.route { fill: none; stroke: var(--ink); stroke-width: 3.5px; stroke-linecap: round; vector-effect: non-scaling-stroke; }
+.route.radio { stroke: var(--forest); stroke-dasharray: 8 9; stroke-width: 5px; }
+.piece { position: absolute; transform: translate(-50%,-50%); display: grid; justify-items: center; gap: 2px; text-align: center; }
+.piece-art { width: 100%; display: block; overflow: visible; filter: drop-shadow(1px 6px 1px #252a3025) drop-shadow(1px 10px 12px #252a3019); }
+.piece--ground .piece-art, .piece--question .piece-art { filter: none; }
+.piece--ground { opacity: .66; }
+.piece[data-object="route-ghost"] { opacity: .23; }
+.piece-label {
+  display: block; width: max-content; max-width: 100%; font-size: 26px; font-weight: 700;
+  padding: 3px 8px; text-wrap: balance;
+}
+.piece--calendar .piece-label { margin-top: -12px; }
+.piece--ticket .piece-label, .piece--ticket-alt .piece-label {
+  position: absolute; top: 40%; left: 50%; width: 78%; transform: translateX(-50%);
+}
+.piece--annotation .piece-label {
+  padding: 7px 13px; border-radius: 12px 8px 14px 6px; border: 1px solid var(--line); background: var(--light);
+  font-weight: 650; font-size: 22px;
+}
+.story-caption { max-width: 1220px; font-size: 31px; margin: 0; }
+.debug { position: absolute; top: 18px; left: var(--x); font-size: 16px; }
+@media (orientation: portrait) {
+  .story-frame { --x: 84px; --y: 104px; }
+  .story-safe { gap: 37px; }
+  .story-body { grid-template-columns: minmax(0, 1fr); grid-template-rows: auto 1fr; align-items: center; gap: 24px; }
+  .story-body .story-title { font-size: 106px; max-width: 13ch; }
+  .story-stage { height: 100%; min-height: 920px; }
+  .story-caption { font-size: 35px; }
+  .piece-label { font-size: 30px; }
+}
+
+/* P018.2 full-bleed presentation (opt-in: topic.presentation.mode = 'full-bleed'; geometry from shared/presentation.js).
+   Paper voice: captions are a torn cream paper strip with ink type; the spoken word gets a mustard marker stroke
+   (background only, so the line never reflows); the hook is a large ink headline on paper strips, its key word in accent. */
+html[data-presentation="full-bleed"] { --cap-size: 50px; --cap-lh: 1.36; --cap-pad-y: 12px; --cap-pad-x: 28px; --cap-lower: 2vh; --hook-top: 1vh; }
+html[data-presentation="full-bleed"] .story-frame { background: var(--paper); }
+html[data-presentation="full-bleed"] footer.story-caption { font-family: var(--vc-font); font-weight: 700; color: var(--ink); }
+html[data-presentation="full-bleed"] footer .ct { background: var(--light); border-radius: 14px 9px 16px 7px; text-wrap: balance;
+  box-shadow: 0 6px 0 -2px #252a3030, 0 14px 26px #252a302b, inset 0 0 0 1px #d2c7b2; }
+html[data-presentation="full-bleed"] footer .cw.is-active { color: var(--accent, var(--terracotta));
+  background: linear-gradient(transparent 62%, #dab35799 62%, #dab35799 92%, transparent 92%); }
+.vc-hook { font: 800 78px/1.18 var(--vc-font); color: var(--ink); }
+.vc-hook-text { background: var(--light); padding: 4px 22px; border-radius: 10px 6px 12px 5px; -webkit-box-decoration-break: clone; box-decoration-break: clone;
+  box-shadow: 0 7px 0 -2px #252a3030, 0 16px 30px #252a302e; }
+.vc-hook-key { color: var(--accent, var(--terracotta)); }
+@media (orientation: landscape) {
+  html[data-presentation="full-bleed"] { --cap-size: 40px; --cap-pad-y: 8px; }
+  .vc-hook { font-size: 58px; }
+}

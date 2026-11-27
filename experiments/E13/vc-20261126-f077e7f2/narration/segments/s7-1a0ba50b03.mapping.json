@@ -1,0 +1,213 @@
+{
+  "result": "mapped",
+  "words": [
+    {
+      "label": "లోపలి",
+      "text_start": 0,
+      "text_end": 5,
+      "model_words": [
+        "లోపలి"
+      ],
+      "tokens": [
+        1,
+        8
+      ],
+      "samples": [
+        1200,
+        12000
+      ]
+    },
+    {
+      "label": "చక్రం",
+      "text_start": 6,
+      "text_end": 11,
+      "model_words": [
+        "చక్రం"
+      ],
+      "tokens": [
+        10,
+        16
+      ],
+      "samples": [
+        13200,
+        24600
+      ]
+    },
+    {
+      "label": "సన్నని",
+      "text_start": 12,
+      "text_end": 18,
+      "model_words": [
+        "సన్నని"
+      ],
+      "tokens": [
+        18,
+        25
+      ],
+      "samples": [
+        26400,
+        37800
+      ]
+    },
+    {
+      "label": "భాగం",
+      "text_start": 19,
+      "text_end": 23,
+      "model_words": [
+        "భాగం"
+      ],
+      "tokens": [
+        27,
+        34
+      ],
+      "samples": [
+        39000,
+        46800
+      ]
+    },
+    {
+      "label": "మీద",
+      "text_start": 24,
+      "text_end": 27,
+      "model_words": [
+        "మీద"
+      ],
+      "tokens": [
+        36,
+        41
+      ],
+      "samples": [
+        48000,
+        55200
+      ]
+    },
+    {
+      "label": "తక్కువ",
+      "text_start": 28,
+      "text_end": 34,
+      "model_words": [
+        "తక్కువ"
+      ],
+      "tokens": [
+        43,
+        50
+      ],
+      "samples": [
+        57000,
+        67800
+      ]
+    },
+    {
+      "label": "దూరం",
+      "text_start": 35,
+      "text_end": 39,
+      "model_words": [
+        "దూరం"
+      ],
+      "tokens": [
+        52,
+        58
+      ],
+      "samples": [
+        69000,
+        76200
+      ]
+    },
+    {
+      "label": "వెళ్తుంది.",
+      "text_start": 40,
+      "text_end": 50,
+      "model_words": [
+        "వెళ్తుంది."
+      ],
+      "tokens": [
+        60,
+        68
+      ],
+      "samples": [
+        77400,
+        88200
+      ]
+    },
+    {
+      "label": "అలా",
+      "text_start": 51,
+      "text_end": 54,
+      "model_words": [
+        "అలా"
+      ],
+      "tokens": [
+        71,
+        75
+      ],
+      "samples": [
+        99600,
+        107400
+      ]
+    },
+    {
+      "label": "జారకుండానే",
+      "text_start": 55,
+      "text_end": 65,
+      "model_words": [
+        "జారకుండానే"
+      ],
+      "tokens": [
+        77,
+        92
+      ],
+      "samples": [
+        108600,
+        129000
+      ]
+    },
+    {
+      "label": "రైలు",
+      "text_start": 66,
+      "text_end": 70,
+      "model_words": [
+        "రైలు"
+      ],
+      "tokens": [
+        94,
+        98
+      ],
+      "samples": [
+        136200,
+        145200
+      ]
+    },
+    {
+      "label": "వంపును",
+      "text_start": 71,
+      "text_end": 77,
+      "model_words": [
+        "వంపును"
+      ],
+      "tokens": [
+        100,
+        107
+      ],
+      "samples": [
+        146400,
+        155400
+      ]
+    },
+    {
+      "label": "అనుసరిస్తుంది.",
+      "text_start": 78,
+      "text_end": 92,
+      "model_words": [
+        "అనుసరిస్తుంది."
+      ],
+      "tokens": [
+        109,
+        124
+      ],
+      "samples": [
+        156600,
+        174600
+      ]
+    }
+  ]
+}

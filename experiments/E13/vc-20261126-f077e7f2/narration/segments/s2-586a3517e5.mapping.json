@@ -1,0 +1,213 @@
+{
+  "result": "mapped",
+  "words": [
+    {
+      "label": "చాలామంది",
+      "text_start": 0,
+      "text_end": 8,
+      "model_words": [
+        "చాలామంది"
+      ],
+      "tokens": [
+        1,
+        13
+      ],
+      "samples": [
+        1200,
+        15000
+      ]
+    },
+    {
+      "label": "అనుకుంటారు,",
+      "text_start": 9,
+      "text_end": 20,
+      "model_words": [
+        "అనుకుంటారు,"
+      ],
+      "tokens": [
+        15,
+        27
+      ],
+      "samples": [
+        16200,
+        31800
+      ]
+    },
+    {
+      "label": "చక్రం",
+      "text_start": 21,
+      "text_end": 26,
+      "model_words": [
+        "చక్రం"
+      ],
+      "tokens": [
+        30,
+        36
+      ],
+      "samples": [
+        42600,
+        53400
+      ]
+    },
+    {
+      "label": "లోపలి",
+      "text_start": 27,
+      "text_end": 32,
+      "model_words": [
+        "లోపలి"
+      ],
+      "tokens": [
+        38,
+        45
+      ],
+      "samples": [
+        54600,
+        64200
+      ]
+    },
+    {
+      "label": "అంచే",
+      "text_start": 33,
+      "text_end": 37,
+      "model_words": [
+        "అంచే"
+      ],
+      "tokens": [
+        47,
+        52
+      ],
+      "samples": [
+        65400,
+        75000
+      ]
+    },
+    {
+      "label": "రైలును",
+      "text_start": 38,
+      "text_end": 44,
+      "model_words": [
+        "రైలును"
+      ],
+      "tokens": [
+        54,
+        60
+      ],
+      "samples": [
+        76200,
+        85200
+      ]
+    },
+    {
+      "label": "పట్టుకుంటుందని.",
+      "text_start": 45,
+      "text_end": 60,
+      "model_words": [
+        "పట్టుకుంటుందని."
+      ],
+      "tokens": [
+        62,
+        79
+      ],
+      "samples": [
+        86400,
+        106200
+      ]
+    },
+    {
+      "label": "కానీ",
+      "text_start": 61,
+      "text_end": 65,
+      "model_words": [
+        "కానీ"
+      ],
+      "tokens": [
+        82,
+        88
+      ],
+      "samples": [
+        118200,
+        127200
+      ]
+    },
+    {
+      "label": "అసలు",
+      "text_start": 66,
+      "text_end": 70,
+      "model_words": [
+        "అసలు"
+      ],
+      "tokens": [
+        90,
+        95
+      ],
+      "samples": [
+        129600,
+        138600
+      ]
+    },
+    {
+      "label": "రహస్యం",
+      "text_start": 71,
+      "text_end": 77,
+      "model_words": [
+        "రహస్యం"
+      ],
+      "tokens": [
+        97,
+        105
+      ],
+      "samples": [
+        139800,
+        153000
+      ]
+    },
+    {
+      "label": "చక్రం",
+      "text_start": 78,
+      "text_end": 83,
+      "model_words": [
+        "చక్రం"
+      ],
+      "tokens": [
+        107,
+        113
+      ],
+      "samples": [
+        154800,
+        164400
+      ]
+    },
+    {
+      "label": "ఆకారంలో",
+      "text_start": 84,
+      "text_end": 91,
+      "model_words": [
+        "ఆకారంలో"
+      ],
+      "tokens": [
+        115,
+        127
+      ],
+      "samples": [
+        165600,
+        178200
+      ]
+    },
+    {
+      "label": "ఉంది.",
+      "text_start": 92,
+      "text_end": 97,
+      "model_words": [
+        "ఉంది."
+      ],
+      "tokens": [
+        129,
+        133
+      ],
+      "samples": [
+        179400,
+        184800
+      ]
+    }
+  ]
+}

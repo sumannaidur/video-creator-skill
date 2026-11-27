@@ -1,0 +1,5 @@
+{"sources": [
+  {"id": "S1", "title": "Why Is the Sky Blue?", "publisher": "NASA Space Place (NASA Science)", "url": "https://spaceplace.nasa.gov/blue-sky/en/", "accessed": "2026-11-26", "status": "read", "note": "page shows Last Updated July 31st, 2026"},
+  {"id": "S2", "title": "Why is the sky blue?", "publisher": "Royal Museums Greenwich (Royal Observatory Greenwich astronomers)", "url": "https://www.rmg.co.uk/stories/space-astronomy/why-sky-blue", "accessed": "2026-11-26", "status": "read"},
+  {"id": "S3", "title": "Blue Sky (SciJinks, NOAA/NASA)", "publisher": "NOAA / NASA SciJinks", "url": "https://scijinks.gov/blue-sky/", "accessed": "2026-11-26", "status": "failed to load (DNS error); not used as evidence"}
+]}

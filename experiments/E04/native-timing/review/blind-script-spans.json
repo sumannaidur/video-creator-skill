@@ -1,0 +1,454 @@
+{
+  "samples": [
+    {
+      "id": "A-native",
+      "sha256": "944eae330bda371fa11541a3b56eb21e8f0423928c3255025eba125085c2eeee",
+      "sample_rate": 24000,
+      "audio": "experiments/E04/native-timing/samples/sample-A-native.wav",
+      "spoken_text": "एक ही शहर की दो सड़कों पर गर्मी अलग क्यों लगती है? शायद जवाब पेड़ों की छाया में छिपा है।",
+      "spans": [
+        {
+          "kind": "word",
+          "spoken": "एक",
+          "text_ref": {
+            "field": "speech",
+            "start": 0,
+            "end": 2
+          }
+        },
+        {
+          "kind": "word",
+          "spoken": "ही",
+          "text_ref": {
+            "field": "speech",
+            "start": 3,
+            "end": 5
+          }
+        },
+        {
+          "kind": "word",
+          "spoken": "शहर",
+          "text_ref": {
+            "field": "speech",
+            "start": 6,
+            "end": 9
+          }
+        },
+        {
+          "kind": "word",
+          "spoken": "की",
+          "text_ref": {
+            "field": "speech",
+            "start": 10,
+            "end": 12
+          }
+        },
+        {
+          "kind": "word",
+          "spoken": "दो",
+          "text_ref": {
+            "field": "speech",
+            "start": 13,
+            "end": 15
+          }
+        },
+        {
+          "kind": "word",
+          "spoken": "सड़कों",
+          "text_ref": {
+            "field": "speech",
+            "start": 16,
+            "end": 22
+          }
+        },
+        {
+          "kind": "word",
+          "spoken": "पर",
+          "text_ref": {
+            "field": "speech",
+            "start": 23,
+            "end": 25
+          }
+        },
+        {
+          "kind": "word",
+          "spoken": "गर्मी",
+          "text_ref": {
+            "field": "speech",
+            "start": 26,
+            "end": 31
+          }
+        },
+        {
+          "kind": "word",
+          "spoken": "अलग",
+          "text_ref": {
+            "field": "speech",
+            "start": 32,
+            "end": 35
+          }
+        },
+        {
+          "kind": "word",
+          "spoken": "क्यों",
+          "text_ref": {
+            "field": "speech",
+            "start": 36,
+            "end": 41
+          }
+        },
+        {
+          "kind": "word",
+          "spoken": "लगती",
+          "text_ref": {
+            "field": "speech",
+            "start": 42,
+            "end": 46
+          }
+        },
+        {
+          "kind": "word",
+          "spoken": "है?",
+          "text_ref": {
+            "field": "speech",
+            "start": 47,
+            "end": 50
+          }
+        },
+        {
+          "kind": "word",
+          "spoken": "शायद",
+          "text_ref": {
+            "field": "speech",
+            "start": 51,
+            "end": 55
+          }
+        },
+        {
+          "kind": "word",
+          "spoken": "जवाब",
+          "text_ref": {
+            "field": "speech",
+            "start": 56,
+            "end": 60
+          }
+        },
+        {
+          "kind": "word",
+          "spoken": "पेड़ों",
+          "text_ref": {
+            "field": "speech",
+            "start": 61,
+            "end": 67
+          }
+        },
+        {
+          "kind": "word",
+          "spoken": "की",
+          "text_ref": {
+            "field": "speech",
+            "start": 68,
+            "end": 70
+          }
+        },
+        {
+          "kind": "word",
+          "spoken": "छाया",
+          "text_ref": {
+            "field": "speech",
+            "start": 71,
+            "end": 75
+          }
+        },
+        {
+          "kind": "word",
+          "spoken": "में",
+          "text_ref": {
+            "field": "speech",
+            "start": 76,
+            "end": 79
+          }
+        },
+        {
+          "kind": "word",
+          "spoken": "छिपा",
+          "text_ref": {
+            "field": "speech",
+            "start": 80,
+            "end": 84
+          }
+        },
+        {
+          "kind": "word",
+          "spoken": "है।",
+          "text_ref": {
+            "field": "speech",
+            "start": 85,
+            "end": 88
+          }
+        },
+        {
+          "kind": "phrase",
+          "spoken": "एक ही शहर की दो सड़कों पर गर्मी अलग क्यों लगती है?",
+          "text_ref": {
+            "field": "speech",
+            "start": 0,
+            "end": 50
+          }
+        },
+        {
+          "kind": "phrase",
+          "spoken": "शायद जवाब पेड़ों की छाया में छिपा है।",
+          "text_ref": {
+            "field": "speech",
+            "start": 51,
+            "end": 88
+          }
+        }
+      ]
+    },
+    {
+      "id": "B-native",
+      "sha256": "a24e05d743f1bfcb63615f3a4609f3847346344dea7b151d6dda7a568b53ac22",
+      "sample_rate": 24000,
+      "audio": "experiments/E04/native-timing/samples/sample-B-native.wav",
+      "spoken_text": "पेड़ धूप रोकते हैं। पत्तियों से पानी भाप बनकर निकलता है, तो आसपास की हवा ठंडी होने में भी मदद मिल सकती है।",
+      "spans": [
+        {
+          "kind": "word",
+          "spoken": "पेड़",
+          "text_ref": {
+            "field": "speech",
+            "start": 0,
+            "end": 4
+          }
+        },
+        {
+          "kind": "word",
+          "spoken": "धूप",
+          "text_ref": {
+            "field": "speech",
+            "start": 5,
+            "end": 8
+          }
+        },
+        {
+          "kind": "word",
+          "spoken": "रोकते",
+          "text_ref": {
+            "field": "speech",
+            "start": 9,
+            "end": 14
+          }
+        },
+        {
+          "kind": "word",
+          "spoken": "हैं।",
+          "text_ref": {
+            "field": "speech",
+            "start": 15,
+            "end": 19
+          }
+        },
+        {
+          "kind": "word",
+          "spoken": "पत्तियों",
+          "text_ref": {
+            "field": "speech",
+            "start": 20,
+            "end": 28
+          }
+        },
+        {
+          "kind": "word",
+          "spoken": "से",
+          "text_ref": {
+            "field": "speech",
+            "start": 29,
+            "end": 31
+          }
+        },
+        {
+          "kind": "word",
+          "spoken": "पानी",
+          "text_ref": {
+            "field": "speech",
+            "start": 32,
+            "end": 36
+          }
+        },
+        {
+          "kind": "word",
+          "spoken": "भाप",
+          "text_ref": {
+            "field": "speech",
+            "start": 37,
+            "end": 40
+          }
+        },
+        {
+          "kind": "word",
+          "spoken": "बनकर",
+          "text_ref": {
+            "field": "speech",
+            "start": 41,
+            "end": 45
+          }
+        },
+        {
+          "kind": "word",
+          "spoken": "निकलता",
+          "text_ref": {
+            "field": "speech",
+            "start": 46,
+            "end": 52
+          }
+        },
+        {
+          "kind": "word",
+          "spoken": "है,",
+          "text_ref": {
+            "field": "speech",
+            "start": 53,
+            "end": 56
+          }
+        },
+        {
+          "kind": "word",
+          "spoken": "तो",
+          "text_ref": {
+            "field": "speech",
+            "start": 57,
+            "end": 59
+          }
+        },
+        {
+          "kind": "word",
+          "spoken": "आसपास",
+          "text_ref": {
+            "field": "speech",
+            "start": 60,
+            "end": 65
+          }
+        },
+        {
+          "kind": "word",
+          "spoken": "की",
+          "text_ref": {
+            "field": "speech",
+            "start": 66,
+            "end": 68
+          }
+        },
+        {
+          "kind": "word",
+          "spoken": "हवा",
+          "text_ref": {
+            "field": "speech",
+            "start": 69,
+            "end": 72
+          }
+        },
+        {
+          "kind": "word",
+          "spoken": "ठंडी",
+          "text_ref": {
+            "field": "speech",
+            "start": 73,
+            "end": 77
+          }
+        },
+        {
+          "kind": "word",
+          "spoken": "होने",
+          "text_ref": {
+            "field": "speech",
+            "start": 78,
+            "end": 82
+          }
+        },
+        {
+          "kind": "word",
+          "spoken": "में",
+          "text_ref": {
+            "field": "speech",
+            "start": 83,
+            "end": 86
+          }
+        },
+        {
+          "kind": "word",
+          "spoken": "भी",
+          "text_ref": {
+            "field": "speech",
+            "start": 87,
+            "end": 89
+          }
+        },
+        {
+          "kind": "word",
+          "spoken": "मदद",
+          "text_ref": {
+            "field": "speech",
+            "start": 90,
+            "end": 93
+          }
+        },
+        {
+          "kind": "word",
+          "spoken": "मिल",
+          "text_ref": {
+            "field": "speech",
+            "start": 94,
+            "end": 97
+          }
+        },
+        {
+          "kind": "word",
+          "spoken": "सकती",
+          "text_ref": {
+            "field": "speech",
+            "start": 98,
+            "end": 102
+          }
+        },
+        {
+          "kind": "word",
+          "spoken": "है।",
+          "text_ref": {
+            "field": "speech",
+            "start": 103,
+            "end": 106
+          }
+        },
+        {
+          "kind": "phrase",
+          "spoken": "पेड़ धूप रोकते हैं।",
+          "text_ref": {
+            "field": "speech",
+            "start": 0,
+            "end": 19
+          }
+        },
+        {
+          "kind": "phrase",
+          "spoken": "पत्तियों से पानी भाप बनकर निकलता है,",
+          "text_ref": {
+            "field": "speech",
+            "start": 20,
+            "end": 56
+          }
+        },
+        {
+          "kind": "phrase",
+          "spoken": "तो आसपास की हवा ठंडी होने में भी मदद मिल सकती है।",
+          "text_ref": {
+            "field": "speech",
+            "start": 57,
+            "end": 106
+          }
+        }
+      ]
+    }
+  ]
+}

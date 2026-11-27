@@ -1,0 +1,28 @@
+{
+  "paper/preflight-rich-seconds": 3.1,
+  "paper/plain-60-frames-1080x1920-seconds": 13.9,
+  "paper/plain-runs": [
+    15.8,
+    13.9
+  ],
+  "paper/rich-60-frames-1080x1920-seconds": 21.7,
+  "paper/rich-runs": [
+    21.7,
+    26.0
+  ],
+  "paper/rich-overhead": "+56%",
+  "paper/preview-540x960-seconds": 79.74759540000001,
+  "tech/preflight-rich-seconds": 2.8,
+  "tech/plain-60-frames-1080x1920-seconds": 10.1,
+  "tech/plain-runs": [
+    10.9,
+    10.1
+  ],
+  "tech/rich-60-frames-1080x1920-seconds": 13.5,
+  "tech/rich-runs": [
+    13.5,
+    13.8
+  ],
+  "tech/rich-overhead": "+34%",
+  "tech/preview-540x960-seconds": 61.637393100000004
+}

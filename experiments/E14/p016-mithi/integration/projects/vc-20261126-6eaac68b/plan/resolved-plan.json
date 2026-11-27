@@ -1,0 +1,92 @@
+{
+  "schema": "video-creator.creative-plan",
+  "version": 1,
+  "narration": {
+    "timeline": "narration/narration.timeline.json",
+    "sha256": "f37d23a124ade8fd2022f09ed9a5a2b862cb4405661f00ac8a9128f68ba95e39"
+  },
+  "style": "paper-explainer",
+  "style_reason": "validation",
+  "guardrails": [
+    "none"
+  ],
+  "story": [
+    {
+      "segment": "s1",
+      "role": "hook",
+      "idea": "a"
+    },
+    {
+      "segment": "s2",
+      "role": "resolution",
+      "idea": "b"
+    }
+  ],
+  "motifs": [
+    {
+      "id": "m1",
+      "stands_for": "x"
+    }
+  ],
+  "assets": [
+    {
+      "id": "a1",
+      "kind": "original",
+      "description": "x"
+    }
+  ],
+  "shots": [
+    {
+      "id": "x",
+      "purpose": "p",
+      "objects": [
+        {
+          "id": "o1",
+          "asset": "a1",
+          "description": "x"
+        }
+      ],
+      "cues": [
+        {
+          "id": "rep",
+          "object": "o1",
+          "action": "a",
+          "at": {
+            "sample": 208200,
+            "seconds": 8.675,
+            "kind": "word",
+            "label": "மழை",
+            "segment": "s2",
+            "timing_source": "native_model",
+            "edge": "start",
+            "offset_ms": 0
+          }
+        }
+      ],
+      "start": {
+        "sample": 0,
+        "seconds": 0.0,
+        "kind": "bounds",
+        "label": "narration-start",
+        "timing_source": "narration_bounds"
+      },
+      "end": {
+        "sample": 302400,
+        "seconds": 12.6
+      },
+      "camera": []
+    }
+  ],
+  "resolution": {
+    "timeline_sha256": "f37d23a124ade8fd2022f09ed9a5a2b862cb4405661f00ac8a9128f68ba95e39",
+    "audio_sha256": "b13290efbcc0663fde9d62ba1b8f8fb5ea4cc4282dad2cee910c34f4f93db68f",
+    "sample_rate": 24000,
+    "sample_count": 302400,
+    "timing_status": "unreviewed",
+    "record_sources": [
+      "native_model"
+    ],
+    "run_id": "combined-c6827604a5a79b981419172e",
+    "timeline": "narration/narration.timeline.json"
+  }
+}

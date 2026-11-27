@@ -1,0 +1,181 @@
+{
+  "result": "mapped",
+  "words": [
+    {
+      "label": "ನೋಡು,",
+      "text_start": 0,
+      "text_end": 5,
+      "model_words": [
+        "ನೋಡು,"
+      ],
+      "tokens": [
+        1,
+        6
+      ],
+      "samples": [
+        1200,
+        12000
+      ]
+    },
+    {
+      "label": "ಮಳೆ",
+      "text_start": 6,
+      "text_end": 9,
+      "model_words": [
+        "ಮಳೆ"
+      ],
+      "tokens": [
+        9,
+        13
+      ],
+      "samples": [
+        20400,
+        27600
+      ]
+    },
+    {
+      "label": "ಬಂತು!",
+      "text_start": 10,
+      "text_end": 15,
+      "model_words": [
+        "ಬಂತು!"
+      ],
+      "tokens": [
+        15,
+        20
+      ],
+      "samples": [
+        28800,
+        37800
+      ]
+    },
+    {
+      "label": "ಮಳೆ",
+      "text_start": 16,
+      "text_end": 19,
+      "model_words": [
+        "ಮಳೆ"
+      ],
+      "tokens": [
+        23,
+        27
+      ],
+      "samples": [
+        48600,
+        55800
+      ]
+    },
+    {
+      "label": "ಬಂದ",
+      "text_start": 20,
+      "text_end": 23,
+      "model_words": [
+        "ಬಂದ"
+      ],
+      "tokens": [
+        29,
+        34
+      ],
+      "samples": [
+        57000,
+        63600
+      ]
+    },
+    {
+      "label": "ಮೇಲೆ",
+      "text_start": 24,
+      "text_end": 28,
+      "model_words": [
+        "ಮೇಲೆ"
+      ],
+      "tokens": [
+        36,
+        41
+      ],
+      "samples": [
+        64800,
+        73200
+      ]
+    },
+    {
+      "label": "ಮಣ್ಣಿನ",
+      "text_start": 29,
+      "text_end": 35,
+      "model_words": [
+        "ಮಣ್ಣಿನ"
+      ],
+      "tokens": [
+        43,
+        50
+      ],
+      "samples": [
+        75000,
+        86400
+      ]
+    },
+    {
+      "label": "ವಾಸನೆ",
+      "text_start": 36,
+      "text_end": 41,
+      "model_words": [
+        "ವಾಸನೆ"
+      ],
+      "tokens": [
+        52,
+        59
+      ],
+      "samples": [
+        87600,
+        99000
+      ]
+    },
+    {
+      "label": "ಎಷ್ಟು",
+      "text_start": 42,
+      "text_end": 47,
+      "model_words": [
+        "ಎಷ್ಟು"
+      ],
+      "tokens": [
+        61,
+        65
+      ],
+      "samples": [
+        100800,
+        108600
+      ]
+    },
+    {
+      "label": "ಚೆನ್ನಾಗಿರುತ್ತೆ,",
+      "text_start": 48,
+      "text_end": 63,
+      "model_words": [
+        "ಚೆನ್ನಾಗಿರುತ್ತೆ,"
+      ],
+      "tokens": [
+        67,
+        81
+      ],
+      "samples": [
+        109800,
+        127200
+      ]
+    },
+    {
+      "label": "ಅಲ್ವಾ?",
+      "text_start": 64,
+      "text_end": 70,
+      "model_words": [
+        "ಅಲ್ವಾ?"
+      ],
+      "tokens": [
+        84,
+        89
+      ],
+      "samples": [
+        137400,
+        145200
+      ]
+    }
+  ]
+}

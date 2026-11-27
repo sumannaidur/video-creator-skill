@@ -1,0 +1,44 @@
+/* Kinetic Typography frame: the stage is a full-bleed colour field where type is the image. Default palette: ink black
+   field, warm white type, one signal yellow; shots may invert. Captions are a quiet strip so they never compete with
+   the type. Works in portrait and landscape. */
+:root {
+  --vc-font: "Nirmala UI", "Segoe UI", sans-serif;
+  --kt-field: #111214; --kt-ink: #f4f1ea; --kt-accent: #ffd400;
+}
+html, body { margin: 0; height: 100%; }
+body { background: #0b0b0c; color: var(--kt-ink); font-family: var(--vc-font); }
+.story-frame { --x: 48px; --y: 72px; min-height: 100vh; box-sizing: border-box; padding: var(--y) var(--x); background: #0b0b0c; position: relative; isolation: isolate; }
+.story-safe { height: calc(100vh - 2 * var(--y)); min-height: 0; display: grid; grid-template-rows: minmax(0, 1fr) auto; gap: 20px; }
+.story-body { position: relative; height: 100%; min-height: 0; }
+.story-title { display: none; }
+.story-stage { position: relative; height: 100%; min-height: 0; overflow: hidden; border-radius: 0; background: var(--kt-field); isolation: isolate; }
+.shot-light { display: none; }
+.route-layer { position: absolute; inset: 0; width: 100%; height: 100%; z-index: 1; pointer-events: none; }
+.route { fill: none; stroke: var(--kt-ink); stroke-width: 2px; vector-effect: non-scaling-stroke; }
+.piece { position: absolute; transform: translate(-50%, -50%); display: grid; justify-items: center; text-align: center; }
+.piece-art { width: 100%; display: block; overflow: visible; filter: none; }
+.piece-label { display: block; width: max-content; max-width: 100%; }
+.kt-shutter { position: absolute; inset: 0; z-index: 33; pointer-events: none; visibility: hidden; overflow: hidden; }
+.kt-shutter i { position: absolute; left: 0; width: 100%; height: calc(100% / 6 + 1px); background: var(--kt-accent); }
+.kt-shutter i:nth-child(even) { background: var(--kt-ink); }
+footer.story-caption { align-self: end; position: relative; min-height: 150px; margin: 0; display: grid; place-items: center; box-sizing: border-box;
+  padding: 18px 30px; background: transparent; color: #cfcac0; font: 600 38px/1.5 var(--vc-font); text-align: center; text-wrap: balance;
+  border-top: 3px solid var(--accent, var(--kt-accent)); }
+.debug { position: absolute; top: 18px; left: var(--x); font-size: 16px; }
+@media (orientation: landscape) {
+  .story-frame { --x: 64px; --y: 40px; }
+  .story-safe { gap: 14px; }
+  footer.story-caption { min-height: 118px; font-size: 34px; padding: 12px 40px; }
+}
+
+/* P018.6 full-bleed presentation. Kinetic Typography voice: the type is the picture, so captions stay quiet: no box,
+   light text with a dark halo, smaller than the kinetic words; the spoken word turns the field's yellow; the hook is a
+   huge statement in the style's own colours with its key word in yellow. */
+html[data-presentation="full-bleed"] { --cap-size: 40px; --cap-lh: 1.4; --cap-pad-y: 8px; --cap-pad-x: 18px; --cap-lower: 0vh; --hook-top: 1vh; }
+html[data-presentation="full-bleed"] .story-frame { background: var(--kt-field); }
+html[data-presentation="full-bleed"] footer.story-caption { font-family: var(--vc-font); font-weight: 700; color: var(--kt-ink); }
+html[data-presentation="full-bleed"] footer .ct { background: none; text-shadow: 0 2px 0 #000, 0 0 18px #000, 0 0 30px #000c; }
+html[data-presentation="full-bleed"] footer .cw.is-active { color: var(--kt-accent); }
+.vc-hook { font: 900 86px/1.08 var(--vc-font); color: var(--kt-ink); }
+.vc-hook-key { color: var(--kt-accent); }
+@media (orientation: landscape) { html[data-presentation="full-bleed"] { --cap-size: 34px; } .vc-hook { font-size: 62px; } }

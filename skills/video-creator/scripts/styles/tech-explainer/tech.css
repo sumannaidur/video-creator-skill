@@ -1,0 +1,54 @@
+/* Tech Explainer frame: a calm studio-lit lab. Matte surfaces, one cobalt signal colour, warm amber for emphasis,
+   soft ambient-occlusion shadows, crisp thin linework. No paper grain, no neon. Works in portrait and landscape. */
+:root {
+  --vc-font: "Nirmala UI", "Segoe UI", sans-serif;
+  --mono: "Cascadia Mono", "Consolas", var(--vc-font);
+  --frame-a: #e8ecf2; --frame-b: #d9dfe8;
+  --surface: #f3f5f8; --surface-2: #e5e9ef; --line: #c7cfdb;
+  --ink: #13203a; --ink-2: #4a5872;
+  --signal: #2e6bff; --amber: #ffb020; --mint: #12b886; --coral: #f0524f;
+}
+html, body { margin: 0; height: 100%; }
+body { background: var(--frame-b); color: var(--ink); font-family: var(--vc-font); }
+.story-frame { --x: 56px; --y: 80px; min-height: 100vh; box-sizing: border-box; padding: var(--y) var(--x);
+  background: linear-gradient(160deg, var(--frame-a), var(--frame-b)); position: relative; isolation: isolate; }
+.story-safe { height: calc(100vh - 2 * var(--y)); min-height: 0; display: grid; grid-template-rows: minmax(0, 1fr) auto; gap: 26px; }
+.story-body { position: relative; height: 100%; min-height: 0; }
+.story-title { display: none; }
+.story-stage { position: relative; height: 100%; min-height: 0; overflow: hidden; border-radius: 22px; background: #0f1a2e; isolation: isolate;
+  box-shadow: inset 0 1px 0 #ffffff, 0 26px 60px #13203a24, 0 2px 6px #13203a1a; }
+.route-layer { position: absolute; inset: 0; width: 100%; height: 100%; z-index: 1; pointer-events: none; }
+.route { fill: none; stroke: var(--ink-2); stroke-width: 2px; vector-effect: non-scaling-stroke; }
+.piece { position: absolute; transform: translate(-50%, -50%); display: grid; justify-items: center; text-align: center; }
+/* Ambient-occlusion shadow: soft, cool and directly below (overhead studio light), never an offset paper edge. */
+.piece-art { width: 100%; display: block; overflow: visible; filter: drop-shadow(0 18px 22px #13203a21) drop-shadow(0 2px 3px #13203a1c); }
+.piece-label { display: block; width: max-content; max-width: 100%; font: 650 34px/1.5 var(--vc-font); color: var(--ink); white-space: nowrap; }
+footer.story-caption { align-self: end; position: relative; overflow: hidden; min-height: 184px; margin: 0; display: grid; place-items: center;
+  box-sizing: border-box; padding: 26px 36px 22px; border-radius: 18px; background: #ffffff; color: var(--ink);
+  font: 600 42px/1.5 var(--vc-font); text-align: center; text-wrap: balance; box-shadow: 0 18px 40px #13203a1f, 0 1px 2px #13203a14; }
+footer.story-caption::before { content: ""; position: absolute; left: 0; right: 0; top: 0; height: 6px; background: var(--accent, var(--signal)); }
+.debug { position: absolute; top: 18px; left: var(--x); font-size: 16px; }
+@media (orientation: landscape) {
+  .story-frame { --x: 72px; --y: 44px; }
+  .story-safe { gap: 20px; }
+  footer.story-caption { min-height: 128px; font-size: 38px; padding: 18px 48px 16px; }
+}
+
+/* P018.2 full-bleed presentation (opt-in: topic.presentation.mode = 'full-bleed'; geometry from shared/presentation.js).
+   Studio voice: captions are a dark glass pill over the light studio; the spoken word lights up in the shot accent
+   (colour only, so the line never reflows); the hook is a heavy ink headline with its key word in an accent chip. */
+html[data-presentation="full-bleed"] { --cap-size: 48px; --cap-lh: 1.36; --cap-pad-y: 12px; --cap-pad-x: 26px; --cap-lower: 1vh; --hook-top: 1vh; }
+html[data-presentation="full-bleed"] .story-frame { background: var(--frame-a); }
+html[data-presentation="full-bleed"] footer.story-caption { font-family: var(--vc-font); font-weight: 700; color: #f4f7fb; }
+html[data-presentation="full-bleed"] footer .ct { background: #0d1626e6; border-radius: 20px; text-wrap: balance;
+  box-shadow: 0 16px 36px #0d16264d, inset 0 1px 0 #ffffff26; }
+html[data-presentation="full-bleed"] footer .cw.is-active { color: color-mix(in srgb, var(--accent, var(--signal)) 62%, #ffffff); }
+html[data-presentation="full-bleed"] footer .cw.is-spoken { color: #ffffff; }
+html[data-presentation="full-bleed"] footer .ct:has(.is-active) .cw:not(.is-spoken):not(.is-active) { color: #c9d2e0; }
+.vc-hook { font: 800 76px/1.16 var(--vc-font); color: var(--ink); text-shadow: 0 2px 0 #ffffff, 0 10px 30px #ffffffb3; }
+.vc-hook-key { color: #ffffff; background: var(--accent, var(--signal)); border-radius: 14px; padding: 0 14px; text-shadow: none;
+  -webkit-box-decoration-break: clone; box-decoration-break: clone; }
+@media (orientation: landscape) {
+  html[data-presentation="full-bleed"] { --cap-size: 40px; --cap-pad-y: 8px; }
+  .vc-hook { font-size: 56px; }
+}

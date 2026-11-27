@@ -1,0 +1,74 @@
+{
+ "_note": "Visual styles (all nine implemented as of P017.8). A style is installed only when scripts/styles/<id>/backend.mjs and references/styles/<id>.md exist. Each style is an independent visual system, not a colour variation. `presentations` lists the presentation modes a style supports (P018.6: framed and full-bleed for all nine); preferences and the renderer refuse other combinations.",
+ "paper-explainer": {
+  "name": "Paper Explainer",
+  "presentations": [
+   "framed",
+   "full-bleed"
+  ]
+ },
+ "whiteboard": {
+  "name": "Whiteboard",
+  "validation": "fixture-validated (P017.2): portrait and landscape, Hindi captions, preflight, 5.6 s preview; no full production or human review yet",
+  "presentations": [
+   "framed",
+   "full-bleed"
+  ]
+ },
+ "flat-science": {
+  "name": "Flat Science",
+  "validation": "fixture-validated (P017.3): Telugu captions and labels in portrait and landscape, preflight, 5.6 s preview; no full production or human review yet",
+  "presentations": [
+   "framed",
+   "full-bleed"
+  ]
+ },
+ "tech-explainer": {
+  "name": "Tech Explainer",
+  "validation": "fixture-validated (P017.1): portrait and landscape keyframes, preflight, 6 s preview; no full production or human review yet",
+  "presentations": [
+   "framed",
+   "full-bleed"
+  ]
+ },
+ "data-storytelling": {
+  "name": "Data Storytelling",
+  "validation": "fixture-validated (P017.4): Kannada captions, labels and numerals in portrait and landscape, data-integrity checks, preflight, 5.6 s preview; no full production or human review yet",
+  "presentations": [
+   "framed",
+   "full-bleed"
+  ]
+ },
+ "documentary": {
+  "name": "Documentary",
+  "validation": "fixture-validated (P017.7): verified original procedural assets, Telugu captions in portrait and landscape, provenance and licence refusals, preflight, 5.6 s preview; no full production or human review yet",
+  "presentations": [
+   "framed",
+   "full-bleed"
+  ]
+ },
+ "3d-explainer": {
+  "name": "3D Explainer",
+  "validation": "fixture-validated (P017.8): WebGL2 on CPU SwiftShader, Telugu captions in portrait and landscape, geometry and mechanics checks, preflight via projected-bounds proxies, 5.6 s preview; measured 0.64 s/frame and 1.08 GiB peak at 1080x1920; no full production or human review yet",
+  "presentations": [
+   "framed",
+   "full-bleed"
+  ]
+ },
+ "x-ray-explainer": {
+  "name": "X-Ray Explainer",
+  "validation": "fixture-validated (P017.6): Telugu captions and labels in portrait and landscape, X-ray window, meshing mechanics checks, preflight, 5.6 s preview; no full production or human review yet",
+  "presentations": [
+   "framed",
+   "full-bleed"
+  ]
+ },
+ "kinetic-typography": {
+  "name": "Kinetic Typography",
+  "validation": "fixture-validated (P017.5): English and Telugu in portrait and landscape, word cues, narration-only words, preflight, 5.6 s preview; no full production or human review yet",
+  "presentations": [
+   "framed",
+   "full-bleed"
+  ]
+ }
+}

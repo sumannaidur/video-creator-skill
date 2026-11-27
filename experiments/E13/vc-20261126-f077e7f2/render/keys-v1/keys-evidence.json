@@ -1,0 +1,1251 @@
+{
+  "name": "video.mp4",
+  "backend": "D:\\video-creator-skill\\skills\\video-creator\\scripts\\styles\\paper-explainer\\backend.mjs",
+  "settings": {
+    "style": "paper-explainer",
+    "width": 1080,
+    "height": 1920,
+    "scale": 1,
+    "fps": 30,
+    "quality": 95,
+    "options": null,
+    "locale": "te-IN",
+    "font": null,
+    "browserArgs": [
+      "--disable-gpu"
+    ],
+    "deviceScaleFactor": 1,
+    "captions": "artifact"
+  },
+  "inputs": {
+    "renderer": {
+      "path": "D:\\video-creator-skill\\skills\\video-creator\\scripts\\render.mjs",
+      "sha256": "d51318592a1cecac2b5dc23e03d064b2f1043b8dd29a1f0e312f94b9ad320c18"
+    },
+    "topic": {
+      "path": "D:\\video-creator-skill\\experiments\\E13\\vc-20261126-f077e7f2\\visual\\topic-trains.js",
+      "sha256": "fe5d34090d108225842a7188e24b91f1cfb7b2e35ccdb4e42140a31ba28e2d28"
+    },
+    "timeline": {
+      "path": "D:\\video-creator-skill\\experiments\\E13\\vc-20261126-f077e7f2\\narration\\narration-1d6e722da7.timeline.json",
+      "sha256": "3bcf57d853b3e9f9816409c2f8196f5fb6c85d13f0d628c69d1561bc40043548"
+    },
+    "audio": {
+      "path": "D:\\video-creator-skill\\experiments\\E13\\vc-20261126-f077e7f2\\narration\\narration-1d6e722da7.wav",
+      "sha256": "7075e581f3f3ccd699eea0f34b1b953e300c2d4e15df6957c92377ac4cd95462"
+    },
+    "plan": {
+      "path": "D:\\video-creator-skill\\experiments\\E13\\vc-20261126-f077e7f2\\plan\\resolved-plan.json",
+      "sha256": "ab476c71652070394aac3465f0dc0875eb4c83d2c9572e6e5a19bc3586fff842"
+    },
+    "plan-loader": {
+      "path": "D:\\video-creator-skill\\skills\\video-creator\\scripts\\lib\\resolved-plan.mjs",
+      "sha256": "f93698df132528619f4b7d0b1eaa4ca9add2bbac2996dec20b8b6b3ac8ede93a"
+    },
+    "captions": {
+      "path": "D:\\video-creator-skill\\experiments\\E13\\vc-20261126-f077e7f2\\captions\\captions.json",
+      "sha256": "2ed4257545b52d6322aec9a59f145febe102bbb21a78306d3653d966c4f19ba2"
+    },
+    "captions-loader": {
+      "path": "D:\\video-creator-skill\\skills\\video-creator\\scripts\\lib\\captions.mjs",
+      "sha256": "f61be7d2dd2811745d726edbd2d4e4f42ea33efdb517efd7813ac96ada2a9084"
+    },
+    "backend:engine.js": {
+      "path": "D:\\video-creator-skill\\skills\\video-creator\\scripts\\styles\\paper-explainer\\engine.js",
+      "sha256": "fe497f0f155873b4f64eb93f2c8a9feeaadafba90d8731932dc572fca876e628"
+    },
+    "backend:kit.js": {
+      "path": "D:\\video-creator-skill\\skills\\video-creator\\scripts\\styles\\paper-explainer\\kit.js",
+      "sha256": "b6342cc3c063da85cac408bcac1e20e8508f47d7f9fa7fbf75ea09f5d2c21b2f"
+    },
+    "backend:view.js": {
+      "path": "D:\\video-creator-skill\\skills\\video-creator\\scripts\\styles\\paper-explainer\\view.js",
+      "sha256": "73498e9558a4868e5a0050d35eb494e29ff96d9ef50c4019db22b4bb65fa1e74"
+    },
+    "backend:host.html": {
+      "path": "D:\\video-creator-skill\\skills\\video-creator\\scripts\\styles\\paper-explainer\\host.html",
+      "sha256": "5c1b9e6777079ee0f8de622248027ba0c65c5cfa818d30b6696ffddbf43bcadd"
+    },
+    "backend:paper.css": {
+      "path": "D:\\video-creator-skill\\skills\\video-creator\\scripts\\styles\\paper-explainer\\paper.css",
+      "sha256": "c766e6bc8a70679f652d7b98dd3bc2fb1e2724c25e8523b95223a8d4cc7528dd"
+    },
+    "backend:story.css": {
+      "path": "D:\\video-creator-skill\\skills\\video-creator\\scripts\\styles\\paper-explainer\\story.css",
+      "sha256": "4793c6efe7d54bad96b63c3b7941fe06ac8c5466a859546d64637ac42f7fbab1"
+    },
+    "backend:backend.mjs": {
+      "path": "D:\\video-creator-skill\\skills\\video-creator\\scripts\\styles\\paper-explainer\\backend.mjs",
+      "sha256": "1752808334d697ab1357324714487a439e95ad0ac7a7ac16873c53f5351fcebf"
+    },
+    "backend:chrome.mjs": {
+      "path": "D:\\video-creator-skill\\skills\\video-creator\\scripts\\lib\\chrome.mjs",
+      "sha256": "8a181ba10e08187334e9d8f1dbfbb67cb95c22d63d7ba10e3a17245ec0dc0e5c"
+    }
+  },
+  "output": [
+    1080,
+    1920
+  ],
+  "keyframes": [
+    {
+      "name": "curve-open",
+      "t": 0.6,
+      "shot": "curve",
+      "captionId": 1,
+      "transition": null,
+      "labels": [],
+      "sha256": "e06ba819943a627afa1b7433b594cef25c3ec0ac7a67005d0414acc3dafc4c6d"
+    },
+    {
+      "name": "curve-steer",
+      "t": 5.6499999999999995,
+      "shot": "curve",
+      "captionId": 2,
+      "transition": null,
+      "labels": [],
+      "sha256": "9c5dfd439b1adba227deb486a63870cb638eb6d98f687002dad9063c2065fae9"
+    },
+    {
+      "name": "curve-question",
+      "t": 8.475,
+      "shot": "curve",
+      "captionId": 3,
+      "transition": null,
+      "labels": [],
+      "sha256": "c071a425ff210f1103a45d435aba3db711909a257e78333a88acac07f64387c7"
+    },
+    {
+      "name": "myth-flange",
+      "t": 12.4,
+      "shot": "myth",
+      "captionId": 5,
+      "transition": null,
+      "labels": [
+        {
+          "id": "m-tag-flange",
+          "x": 118.23527526855469,
+          "y": 343.230712890625,
+          "width": 201.15480041503906,
+          "height": 87.7308349609375
+        }
+      ],
+      "sha256": "ff35990e7ab3c177e66df2e0b2f79247a0f54d8a1a02e766e6f5136338ad3ef9"
+    },
+    {
+      "name": "myth-lens",
+      "t": 16.475,
+      "shot": "myth",
+      "captionId": 6,
+      "transition": null,
+      "labels": [],
+      "sha256": "8b2352424afbf618c009b2608da1c1f9f51b6d4e15542454277e3e5ccc11df78"
+    },
+    {
+      "name": "axle-spin",
+      "t": 22.525000000000002,
+      "shot": "axle",
+      "captionId": 8,
+      "transition": null,
+      "labels": [
+        {
+          "id": "x-tag-axle",
+          "x": 447.859375,
+          "y": 952.21240234375,
+          "width": 184.28125,
+          "height": 76.962646484375
+        }
+      ],
+      "sha256": "43062f36168b646188f356cf72d6b949f221756a437feb332e8f9f580f3d4d48"
+    },
+    {
+      "name": "cone-cone",
+      "t": 27.175,
+      "shot": "cone",
+      "captionId": 10,
+      "transition": null,
+      "labels": [],
+      "sha256": "6165a9f405ddb08f8411aac13fda7ecefb762bd52107ecae50b37872b8913530"
+    },
+    {
+      "name": "cone-arrows",
+      "t": 30.45,
+      "shot": "cone",
+      "captionId": 12,
+      "transition": "sheet",
+      "labels": [
+        {
+          "id": "k-tag-fat",
+          "x": 154.0384521484375,
+          "y": 720.98583984375,
+          "width": 188.010009765625,
+          "height": 79.09722900390625
+        },
+        {
+          "id": "k-tag-thin",
+          "x": 800.3923950195312,
+          "y": 648.8909912109375,
+          "width": 197.83294677734375,
+          "height": 79.06793212890625
+        }
+      ],
+      "sha256": "c5a7f41c5d00389c0cbfa82501a17eb6456e784019ab58bd0212e70f9631e174"
+    },
+    {
+      "name": "centre-drift",
+      "t": 33.925000000000004,
+      "shot": "centre",
+      "captionId": 14,
+      "transition": null,
+      "labels": [],
+      "sha256": "8362e30fbbb46b14e34064e7374dd72d7f36450d9c4b92fa4506b90db42de1b8"
+    },
+    {
+      "name": "centre-settled",
+      "t": 37.725,
+      "shot": "centre",
+      "captionId": 15,
+      "transition": null,
+      "labels": [
+        {
+          "id": "n-tag",
+          "x": 406.53289794921875,
+          "y": 1352.21484375,
+          "width": 266.93426513671875,
+          "height": 85.091064453125
+        }
+      ],
+      "sha256": "b85197f866def3b7fff1fce46bdea50e5c2ec7f558712aa681ca6494f3eb68df"
+    },
+    {
+      "name": "bend-fat",
+      "t": 43.8,
+      "shot": "bend",
+      "captionId": 17,
+      "transition": null,
+      "labels": [
+        {
+          "id": "b-tag-fat",
+          "x": 139.93853759765625,
+          "y": 1167.9874267578125,
+          "width": 312.4737854003906,
+          "height": 80.4324951171875
+        }
+      ],
+      "sha256": "50d3fa085116e127716de2b53a84588d4a9b2549e144b54fd41fb603922ebf7e"
+    },
+    {
+      "name": "bend-tapes",
+      "t": 51.074999999999996,
+      "shot": "bend",
+      "captionId": 19,
+      "transition": null,
+      "labels": [
+        {
+          "id": "b-tag-short",
+          "x": 606.0137939453125,
+          "y": 505.55352783203125,
+          "width": 363.6875,
+          "height": 75.0062255859375
+        }
+      ],
+      "sha256": "646b3c294921a4be5033216031c8ac71e212e266c5838b112b03bc67993d81c0"
+    },
+    {
+      "name": "follow",
+      "t": 54.3,
+      "shot": "follow",
+      "captionId": 20,
+      "transition": null,
+      "labels": [],
+      "sha256": "20457013db481dbbc05d00e02de57c287a9790539845737b35f31a9a7d887fd8"
+    },
+    {
+      "name": "guard-catch",
+      "t": 60.525,
+      "shot": "guard",
+      "captionId": 23,
+      "transition": null,
+      "labels": [
+        {
+          "id": "g-tag",
+          "x": 291.34564208984375,
+          "y": 349.87481689453125,
+          "width": 193.59884643554688,
+          "height": 103.28759765625
+        }
+      ],
+      "sha256": "2b6631452d6f9179e8a11be62768e63ff55616763cef33e522d50cbcb47c5e7b"
+    },
+    {
+      "name": "payoff",
+      "t": 63.625,
+      "shot": "payoff",
+      "captionId": 24,
+      "transition": null,
+      "labels": [],
+      "sha256": "365dd26455d44b8168f2a7106d738dc0e3d4d81af0156b0cb5718e5a0570e727"
+    }
+  ],
+  "browser": "Chrome/157.0.8103.79",
+  "duration": 63.675,
+  "shots": [
+    {
+      "id": "curve",
+      "scene": "tr-hill",
+      "start": 0,
+      "end": 8.775,
+      "phrases": null,
+      "cameraTimes": [
+        0,
+        6.325,
+        8.775
+      ],
+      "transition": {
+        "type": "dissolve",
+        "at": 8.775,
+        "from": 8.635,
+        "to": 9.035
+      }
+    },
+    {
+      "id": "myth",
+      "scene": "tr-under",
+      "start": 8.775,
+      "end": 16.75,
+      "phrases": null,
+      "cameraTimes": [
+        8.775,
+        13.7,
+        16.75
+      ],
+      "transition": {
+        "type": "sheet",
+        "at": 16.75,
+        "from": 16.53,
+        "to": 16.97
+      }
+    },
+    {
+      "id": "axle",
+      "scene": "tr-axle",
+      "start": 16.75,
+      "end": 22.925,
+      "phrases": null,
+      "cameraTimes": [
+        16.75,
+        20.3,
+        22.925
+      ],
+      "transition": {
+        "type": "dissolve",
+        "at": 22.925,
+        "from": 22.785,
+        "to": 23.185000000000002
+      }
+    },
+    {
+      "id": "cone",
+      "scene": "tr-cone",
+      "start": 22.925,
+      "end": 30.625,
+      "phrases": null,
+      "cameraTimes": [
+        22.925,
+        27.55,
+        30.625
+      ],
+      "transition": {
+        "type": "sheet",
+        "at": 30.625,
+        "from": 30.405,
+        "to": 30.845
+      }
+    },
+    {
+      "id": "centre",
+      "scene": "tr-centre",
+      "start": 30.625,
+      "end": 38.175,
+      "phrases": null,
+      "cameraTimes": [
+        30.625,
+        36.2,
+        38.175
+      ],
+      "transition": {
+        "type": "dissolve",
+        "at": 38.175,
+        "from": 38.035,
+        "to": 38.434999999999995
+      }
+    },
+    {
+      "id": "bend",
+      "scene": "tr-bend",
+      "start": 38.175,
+      "end": 51.45,
+      "phrases": null,
+      "cameraTimes": [
+        38.175,
+        45.825,
+        47.35,
+        51.45
+      ],
+      "transition": {
+        "type": "dissolve",
+        "at": 51.45,
+        "from": 51.31,
+        "to": 51.71
+      }
+    },
+    {
+      "id": "follow",
+      "scene": "tr-follow",
+      "start": 51.45,
+      "end": 54.85,
+      "phrases": null,
+      "cameraTimes": [
+        51.45,
+        52.975,
+        54.85
+      ],
+      "transition": {
+        "type": "sheet",
+        "at": 54.85,
+        "from": 54.63,
+        "to": 55.07
+      }
+    },
+    {
+      "id": "guard",
+      "scene": "tr-guard",
+      "start": 54.85,
+      "end": 60.95,
+      "phrases": null,
+      "cameraTimes": [
+        54.85,
+        58.2,
+        60.95
+      ],
+      "transition": {
+        "type": "dissolve",
+        "at": 60.95,
+        "from": 60.81,
+        "to": 61.21
+      }
+    },
+    {
+      "id": "payoff",
+      "scene": "tr-payoff",
+      "start": 60.95,
+      "end": 63.675,
+      "phrases": null,
+      "cameraTimes": [
+        60.95,
+        63.675
+      ],
+      "transition": null
+    }
+  ],
+  "captions": [
+    {
+      "id": 1,
+      "cue": "c1",
+      "start": 0.05,
+      "end": 3.225,
+      "text": "ఎంతో బరువున్న రైలు వేగంగా వంపు తిరుగుతుంది."
+    },
+    {
+      "id": 2,
+      "cue": "c2",
+      "start": 3.225,
+      "end": 5.725,
+      "text": "దానికి స్టీరింగ్ చక్రం కూడా లేదు."
+    },
+    {
+      "id": 3,
+      "cue": "c3",
+      "start": 5.725,
+      "end": 8.825,
+      "text": "మరి పట్టాల మీద నుంచి ఎందుకు జారిపోదు?"
+    },
+    {
+      "id": 4,
+      "cue": "c4",
+      "start": 8.825,
+      "end": 10.55,
+      "text": "చాలామంది అనుకుంటారు,"
+    },
+    {
+      "id": 5,
+      "cue": "c5",
+      "start": 10.55,
+      "end": 13.7,
+      "text": "చక్రం లోపలి అంచే రైలును పట్టుకుంటుందని."
+    },
+    {
+      "id": 6,
+      "cue": "c6",
+      "start": 13.7,
+      "end": 16.8,
+      "text": "కానీ అసలు రహస్యం చక్రం ఆకారంలో ఉంది."
+    },
+    {
+      "id": 7,
+      "cue": "c7",
+      "start": 16.8,
+      "end": 20.3,
+      "text": "రెండు చక్రాలూ ఒకే గట్టి ఇరుసుకు బిగించి ఉంటాయి."
+    },
+    {
+      "id": 8,
+      "cue": "c8",
+      "start": 20.3,
+      "end": 22.975,
+      "text": "అందుకే అవి ఎప్పుడూ కలిసే తిరుగుతాయి."
+    },
+    {
+      "id": 9,
+      "cue": "c9",
+      "start": 22.975,
+      "end": 23.75,
+      "text": "ఇంకా,"
+    },
+    {
+      "id": 10,
+      "cue": "c10",
+      "start": 23.75,
+      "end": 27.55,
+      "text": "ప్రతి చక్రం ఐస్‌క్రీమ్ కోన్‌లా కొంచెం వాలుగా ఉంటుంది."
+    },
+    {
+      "id": 11,
+      "cue": "c11",
+      "start": 27.55,
+      "end": 29.225,
+      "text": "లోపలి వైపు లావుగా,"
+    },
+    {
+      "id": 12,
+      "cue": "c12",
+      "start": 29.225,
+      "end": 30.675,
+      "text": "బయటి వైపు సన్నగా."
+    },
+    {
+      "id": 13,
+      "cue": "c13",
+      "start": 30.675,
+      "end": 33.125,
+      "text": "రైలు కాస్త ఒక పక్కకు జరిగితే,"
+    },
+    {
+      "id": 14,
+      "cue": "c14",
+      "start": 33.125,
+      "end": 36.2,
+      "text": "ఈ వాలే దాన్ని మళ్లీ మధ్యలోకి తెస్తుంది."
+    },
+    {
+      "id": 15,
+      "cue": "c15",
+      "start": 36.2,
+      "end": 38.225,
+      "text": "తనంతట తానే సర్దుకుంటుంది."
+    },
+    {
+      "id": 16,
+      "cue": "c16",
+      "start": 38.225,
+      "end": 41.45,
+      "text": "వంపులో రైలు బయటి పట్టా వైపు జరుగుతుంది."
+    },
+    {
+      "id": 17,
+      "cue": "c17",
+      "start": 41.45,
+      "end": 44.925,
+      "text": "అప్పుడు బయటి చక్రం లావైన భాగం మీద తిరిగి,"
+    },
+    {
+      "id": 18,
+      "cue": "c18",
+      "start": 44.925,
+      "end": 47.35,
+      "text": "ఒక్క చుట్టుకే ఎక్కువ దూరం వెళ్తుంది."
+    },
+    {
+      "id": 19,
+      "cue": "c19",
+      "start": 47.35,
+      "end": 51.45,
+      "text": "లోపలి చక్రం సన్నని భాగం మీద తక్కువ దూరం వెళ్తుంది."
+    },
+    {
+      "id": 20,
+      "cue": "c20",
+      "start": 51.45,
+      "end": 54.9,
+      "text": "అలా జారకుండానే రైలు వంపును అనుసరిస్తుంది."
+    },
+    {
+      "id": 21,
+      "cue": "c21",
+      "start": 54.9,
+      "end": 56.475,
+      "text": "మరి అంచు ఎందుకు?"
+    },
+    {
+      "id": 22,
+      "cue": "c22",
+      "start": 56.475,
+      "end": 59.325,
+      "text": "గట్టి గాలి లాంటి బలమైన తోపుడు వస్తే,"
+    },
+    {
+      "id": 23,
+      "cue": "c23",
+      "start": 59.325,
+      "end": 60.95,
+      "text": "అదే చివరి రక్షణ."
+    },
+    {
+      "id": 24,
+      "cue": "c24",
+      "start": 60.95,
+      "end": 63.675,
+      "text": "కానీ అసలు పని మాత్రం ఈ చిన్న వాలుదే!"
+    }
+  ],
+  "cues": [
+    {
+      "id": "c-bend",
+      "cue": "train-bend",
+      "at": 2
+    },
+    {
+      "id": "c-steer",
+      "cue": "no-steer",
+      "at": 3.825
+    },
+    {
+      "id": "c-cross",
+      "cue": "steer-x",
+      "at": 5.05
+    },
+    {
+      "id": "c-q",
+      "cue": "girl-q",
+      "at": 7.975
+    },
+    {
+      "id": "m-flange-ring",
+      "cue": "flange-ring",
+      "at": 11.5
+    },
+    {
+      "id": "m-lens",
+      "cue": "secret-lens",
+      "at": 14.6
+    },
+    {
+      "id": "m-profile",
+      "cue": "shape-trace",
+      "at": 15.675
+    },
+    {
+      "id": "x-right",
+      "cue": "two-wheels",
+      "at": 16.8
+    },
+    {
+      "id": "x-axle",
+      "cue": "axle-in",
+      "at": 18.65
+    },
+    {
+      "id": "x-bolts",
+      "cue": "clamped",
+      "at": 19.525
+    },
+    {
+      "id": "x-spin",
+      "cue": "turn-together",
+      "at": 21.725
+    },
+    {
+      "id": "k-cone",
+      "cue": "cone-in",
+      "at": 24.725
+    },
+    {
+      "id": "k-slope",
+      "cue": "slope-line",
+      "at": 26.175
+    },
+    {
+      "id": "k-fat",
+      "cue": "fat-side",
+      "at": 28.4
+    },
+    {
+      "id": "k-thin",
+      "cue": "thin-side",
+      "at": 29.95
+    },
+    {
+      "id": "n-slope",
+      "cue": "slope-acts",
+      "at": 33.325
+    },
+    {
+      "id": "n-drift",
+      "cue": "drift",
+      "at": 32.2
+    },
+    {
+      "id": "n-back",
+      "cue": "to-middle",
+      "at": 34.5
+    },
+    {
+      "id": "n-mark",
+      "cue": "settled",
+      "at": 37.125
+    },
+    {
+      "id": "b-out",
+      "cue": "shift-out",
+      "at": 39.325
+    },
+    {
+      "id": "b-fat",
+      "cue": "outer-fat",
+      "at": 43
+    },
+    {
+      "id": "b-long",
+      "cue": "long-tape",
+      "at": 45.825
+    },
+    {
+      "id": "b-short",
+      "cue": "short-tape",
+      "at": 49.675
+    },
+    {
+      "id": "f-glow",
+      "cue": "follows",
+      "at": 53.4
+    },
+    {
+      "id": "g-wind",
+      "cue": "gust",
+      "at": 56.95
+    },
+    {
+      "id": "g-push",
+      "cue": "shove",
+      "at": 58.2
+    },
+    {
+      "id": "g-shield",
+      "cue": "flange-catch",
+      "at": 60.025
+    },
+    {
+      "id": "g-shield",
+      "cue": "flange-catch",
+      "at": 60.025
+    },
+    {
+      "id": "p-train",
+      "cue": "dusk-train",
+      "at": 61.9
+    },
+    {
+      "id": "p-girl-ac",
+      "cue": "cone-up",
+      "at": 63.225
+    }
+  ],
+  "checks": {
+    "keyframes": [
+      [
+        "curve-open",
+        0.6
+      ],
+      [
+        "curve-steer",
+        5.6499999999999995
+      ],
+      [
+        "curve-question",
+        8.475
+      ],
+      [
+        "myth-flange",
+        12.4
+      ],
+      [
+        "myth-lens",
+        16.475
+      ],
+      [
+        "axle-spin",
+        22.525000000000002
+      ],
+      [
+        "cone-cone",
+        27.175
+      ],
+      [
+        "cone-arrows",
+        30.45
+      ],
+      [
+        "centre-drift",
+        33.925000000000004
+      ],
+      [
+        "centre-settled",
+        37.725
+      ],
+      [
+        "bend-fat",
+        43.8
+      ],
+      [
+        "bend-tapes",
+        51.074999999999996
+      ],
+      [
+        "follow",
+        54.3
+      ],
+      [
+        "guard-catch",
+        60.525
+      ],
+      [
+        "payoff",
+        63.625
+      ]
+    ],
+    "repeatAt": 2.6,
+    "absentAfter": []
+  },
+  "phrases": [
+    {
+      "start": 0.05,
+      "end": 2.85,
+      "text": "ఎంతో బరువున్న రైలు వేగంగా వంపు తిరుగుతుంది."
+    },
+    {
+      "start": 3.225,
+      "end": 5.325,
+      "text": "దానికి స్టీరింగ్ చక్రం కూడా లేదు."
+    },
+    {
+      "start": 5.725,
+      "end": 8.5,
+      "text": "మరి పట్టాల మీద నుంచి ఎందుకు జారిపోదు?"
+    },
+    {
+      "start": 8.825,
+      "end": 10.1,
+      "text": "చాలామంది అనుకుంటారు,"
+    },
+    {
+      "start": 10.55,
+      "end": 13.2,
+      "text": "చక్రం లోపలి అంచే రైలును పట్టుకుంటుందని."
+    },
+    {
+      "start": 13.7,
+      "end": 16.475,
+      "text": "కానీ అసలు రహస్యం చక్రం ఆకారంలో ఉంది."
+    },
+    {
+      "start": 16.8,
+      "end": 19.9,
+      "text": "రెండు చక్రాలూ ఒకే గట్టి ఇరుసుకు బిగించి ఉంటాయి."
+    },
+    {
+      "start": 20.3,
+      "end": 22.65,
+      "text": "అందుకే అవి ఎప్పుడూ కలిసే తిరుగుతాయి."
+    },
+    {
+      "start": 22.975,
+      "end": 23.45,
+      "text": "ఇంకా,"
+    },
+    {
+      "start": 23.75,
+      "end": 27.05,
+      "text": "ప్రతి చక్రం ఐస్‌క్రీమ్ కోన్‌లా కొంచెం వాలుగా ఉంటుంది."
+    },
+    {
+      "start": 27.55,
+      "end": 28.9,
+      "text": "లోపలి వైపు లావుగా,"
+    },
+    {
+      "start": 29.225,
+      "end": 30.35,
+      "text": "బయటి వైపు సన్నగా."
+    },
+    {
+      "start": 30.675,
+      "end": 32.7,
+      "text": "రైలు కాస్త ఒక పక్కకు జరిగితే,"
+    },
+    {
+      "start": 33.125,
+      "end": 35.6,
+      "text": "ఈ వాలే దాన్ని మళ్లీ మధ్యలోకి తెస్తుంది."
+    },
+    {
+      "start": 36.2,
+      "end": 37.9,
+      "text": "తనంతట తానే సర్దుకుంటుంది."
+    },
+    {
+      "start": 38.225,
+      "end": 41,
+      "text": "వంపులో రైలు బయటి పట్టా వైపు జరుగుతుంది."
+    },
+    {
+      "start": 41.45,
+      "end": 44.6,
+      "text": "అప్పుడు బయటి చక్రం లావైన భాగం మీద తిరిగి,"
+    },
+    {
+      "start": 44.925,
+      "end": 47.025,
+      "text": "ఒక్క చుట్టుకే ఎక్కువ దూరం వెళ్తుంది."
+    },
+    {
+      "start": 47.35,
+      "end": 50.975,
+      "text": "లోపలి చక్రం సన్నని భాగం మీద తక్కువ దూరం వెళ్తుంది."
+    },
+    {
+      "start": 51.45,
+      "end": 54.575,
+      "text": "అలా జారకుండానే రైలు వంపును అనుసరిస్తుంది."
+    },
+    {
+      "start": 54.9,
+      "end": 56.05,
+      "text": "మరి అంచు ఎందుకు?"
+    },
+    {
+      "start": 56.475,
+      "end": 59,
+      "text": "గట్టి గాలి లాంటి బలమైన తోపుడు వస్తే,"
+    },
+    {
+      "start": 59.325,
+      "end": 60.425,
+      "text": "అదే చివరి రక్షణ."
+    },
+    {
+      "start": 60.95,
+      "end": 63.6,
+      "text": "కానీ అసలు పని మాత్రం ఈ చిన్న వాలుదే!"
+    }
+  ],
+  "planCuesUsed": [
+    "train-bend",
+    "no-steer",
+    "steer-x",
+    "girl-q",
+    "flange-ring",
+    "secret-lens",
+    "shape-trace",
+    "two-wheels",
+    "axle-in",
+    "clamped",
+    "turn-together",
+    "cone-in",
+    "slope-line",
+    "fat-side",
+    "thin-side",
+    "drift",
+    "to-middle",
+    "slope-acts",
+    "settled",
+    "shift-out",
+    "outer-fat",
+    "long-tape",
+    "short-tape",
+    "follows",
+    "gust",
+    "shove",
+    "flange-catch",
+    "dusk-train",
+    "cone-up"
+  ],
+  "plan": {
+    "path": "plan/resolved-plan.json",
+    "sha256": "ab476c71652070394aac3465f0dc0875eb4c83d2c9572e6e5a19bc3586fff842",
+    "timeline_sha256": "3bcf57d853b3e9f9816409c2f8196f5fb6c85d13f0d628c69d1561bc40043548",
+    "timing_status": "unreviewed"
+  },
+  "presentation": {
+    "lang": "te-IN",
+    "captionFont": "\"Nirmala UI\", \"Segoe UI\", sans-serif",
+    "labelFont": "\"Nirmala UI\",\"Segoe UI\",sans-serif"
+  },
+  "cueChecks": [
+    {
+      "id": "c-bend",
+      "cue": "train-bend",
+      "at": 2,
+      "phraseStart": null,
+      "before": 0,
+      "after": 1
+    },
+    {
+      "id": "c-steer",
+      "cue": "no-steer",
+      "at": 3.825,
+      "phraseStart": null,
+      "before": 0,
+      "after": 1
+    },
+    {
+      "id": "c-cross",
+      "cue": "steer-x",
+      "at": 5.05,
+      "phraseStart": null,
+      "before": 0,
+      "after": 1
+    },
+    {
+      "id": "c-q",
+      "cue": "girl-q",
+      "at": 7.975,
+      "phraseStart": null,
+      "before": 0,
+      "after": 1
+    },
+    {
+      "id": "m-flange-ring",
+      "cue": "flange-ring",
+      "at": 11.5,
+      "phraseStart": null,
+      "before": 0,
+      "after": 1
+    },
+    {
+      "id": "m-lens",
+      "cue": "secret-lens",
+      "at": 14.6,
+      "phraseStart": null,
+      "before": 0,
+      "after": 1
+    },
+    {
+      "id": "m-profile",
+      "cue": "shape-trace",
+      "at": 15.675,
+      "phraseStart": null,
+      "before": 0,
+      "after": 1
+    },
+    {
+      "id": "x-right",
+      "cue": "two-wheels",
+      "at": 16.8,
+      "phraseStart": null,
+      "before": 0,
+      "after": 1
+    },
+    {
+      "id": "x-axle",
+      "cue": "axle-in",
+      "at": 18.65,
+      "phraseStart": null,
+      "before": 0,
+      "after": 1
+    },
+    {
+      "id": "x-bolts",
+      "cue": "clamped",
+      "at": 19.525,
+      "phraseStart": null,
+      "before": 0,
+      "after": 1
+    },
+    {
+      "id": "x-spin",
+      "cue": "turn-together",
+      "at": 21.725,
+      "phraseStart": null,
+      "before": 0,
+      "after": 1
+    },
+    {
+      "id": "k-cone",
+      "cue": "cone-in",
+      "at": 24.725,
+      "phraseStart": null,
+      "before": 0,
+      "after": 0.817609
+    },
+    {
+      "id": "k-slope",
+      "cue": "slope-line",
+      "at": 26.175,
+      "phraseStart": null,
+      "before": 0,
+      "after": 1
+    },
+    {
+      "id": "k-fat",
+      "cue": "fat-side",
+      "at": 28.4,
+      "phraseStart": null,
+      "before": 0,
+      "after": 1
+    },
+    {
+      "id": "k-thin",
+      "cue": "thin-side",
+      "at": 29.95,
+      "phraseStart": null,
+      "before": 0,
+      "after": 1
+    },
+    {
+      "id": "n-slope",
+      "cue": "slope-acts",
+      "at": 33.325,
+      "phraseStart": null,
+      "before": 0,
+      "after": 1
+    },
+    {
+      "id": "n-drift",
+      "cue": "drift",
+      "at": 32.2,
+      "phraseStart": null,
+      "before": 0,
+      "after": 1
+    },
+    {
+      "id": "n-back",
+      "cue": "to-middle",
+      "at": 34.5,
+      "phraseStart": null,
+      "before": 0,
+      "after": 1
+    },
+    {
+      "id": "n-mark",
+      "cue": "settled",
+      "at": 37.125,
+      "phraseStart": null,
+      "before": 0,
+      "after": 1
+    },
+    {
+      "id": "b-out",
+      "cue": "shift-out",
+      "at": 39.325,
+      "phraseStart": null,
+      "before": 0,
+      "after": 1
+    },
+    {
+      "id": "b-fat",
+      "cue": "outer-fat",
+      "at": 43,
+      "phraseStart": null,
+      "before": 0,
+      "after": 1
+    },
+    {
+      "id": "b-long",
+      "cue": "long-tape",
+      "at": 45.825,
+      "phraseStart": null,
+      "before": 0,
+      "after": 1
+    },
+    {
+      "id": "b-short",
+      "cue": "short-tape",
+      "at": 49.675,
+      "phraseStart": null,
+      "before": 0,
+      "after": 1
+    },
+    {
+      "id": "f-glow",
+      "cue": "follows",
+      "at": 53.4,
+      "phraseStart": null,
+      "before": 0,
+      "after": 1
+    },
+    {
+      "id": "g-wind",
+      "cue": "gust",
+      "at": 56.95,
+      "phraseStart": null,
+      "before": 0,
+      "after": 0.997594
+    },
+    {
+      "id": "g-push",
+      "cue": "shove",
+      "at": 58.2,
+      "phraseStart": null,
+      "before": 0,
+      "after": 1
+    },
+    {
+      "id": "g-shield",
+      "cue": "flange-catch",
+      "at": 60.025,
+      "phraseStart": null,
+      "before": 0,
+      "after": 1
+    },
+    {
+      "id": "g-shield",
+      "cue": "flange-catch",
+      "at": 60.025,
+      "phraseStart": null,
+      "before": 0,
+      "after": 1
+    },
+    {
+      "id": "p-train",
+      "cue": "dusk-train",
+      "at": 61.9,
+      "phraseStart": null,
+      "before": 0,
+      "after": 1
+    },
+    {
+      "id": "p-girl-ac",
+      "cue": "cone-up",
+      "at": 63.225,
+      "phraseStart": null,
+      "before": 0,
+      "after": 1
+    }
+  ],
+  "repeatability": {
+    "seconds": 2.6,
+    "sameFrame": true,
+    "sameLabels": true
+  },
+  "renderWallSeconds": 59.1880479
+}

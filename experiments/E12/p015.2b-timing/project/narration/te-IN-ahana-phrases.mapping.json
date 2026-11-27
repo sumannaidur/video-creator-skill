@@ -1,0 +1,277 @@
+{
+  "result": "mapped",
+  "words": [
+    {
+      "label": "అమ్మా,",
+      "text_start": 0,
+      "text_end": 6,
+      "model_words": [
+        "అమ్మా,"
+      ],
+      "tokens": [
+        1,
+        6
+      ],
+      "samples": [
+        1200,
+        12000
+      ]
+    },
+    {
+      "label": "ఈ",
+      "text_start": 7,
+      "text_end": 8,
+      "model_words": [
+        "ఈ"
+      ],
+      "tokens": [
+        9,
+        11
+      ],
+      "samples": [
+        17400,
+        21000
+      ]
+    },
+    {
+      "label": "రోజు",
+      "text_start": 9,
+      "text_end": 13,
+      "model_words": [
+        "రోజు"
+      ],
+      "tokens": [
+        13,
+        18
+      ],
+      "samples": [
+        22800,
+        30000
+      ]
+    },
+    {
+      "label": "వాన",
+      "text_start": 14,
+      "text_end": 17,
+      "model_words": [
+        "వాన"
+      ],
+      "tokens": [
+        20,
+        25
+      ],
+      "samples": [
+        31800,
+        38400
+      ]
+    },
+    {
+      "label": "వస్తుందా?",
+      "text_start": 18,
+      "text_end": 27,
+      "model_words": [
+        "వస్తుందా?"
+      ],
+      "tokens": [
+        27,
+        36
+      ],
+      "samples": [
+        39600,
+        52800
+      ]
+    },
+    {
+      "label": "ఆకాశం",
+      "text_start": 28,
+      "text_end": 33,
+      "model_words": [
+        "ఆకాశం"
+      ],
+      "tokens": [
+        39,
+        47
+      ],
+      "samples": [
+        64200,
+        76200
+      ]
+    },
+    {
+      "label": "చూడు,",
+      "text_start": 34,
+      "text_end": 39,
+      "model_words": [
+        "చూడు,"
+      ],
+      "tokens": [
+        49,
+        54
+      ],
+      "samples": [
+        77400,
+        85200
+      ]
+    },
+    {
+      "label": "మబ్బులు",
+      "text_start": 40,
+      "text_end": 47,
+      "model_words": [
+        "మబ్బులు"
+      ],
+      "tokens": [
+        57,
+        64
+      ],
+      "samples": [
+        93000,
+        102600
+      ]
+    },
+    {
+      "label": "ఎంత",
+      "text_start": 48,
+      "text_end": 51,
+      "model_words": [
+        "ఎంత"
+      ],
+      "tokens": [
+        66,
+        71
+      ],
+      "samples": [
+        104400,
+        111000
+      ]
+    },
+    {
+      "label": "నల్లగా",
+      "text_start": 52,
+      "text_end": 58,
+      "model_words": [
+        "నల్లగా"
+      ],
+      "tokens": [
+        73,
+        81
+      ],
+      "samples": [
+        112200,
+        122400
+      ]
+    },
+    {
+      "label": "ఉన్నాయో.",
+      "text_start": 59,
+      "text_end": 67,
+      "model_words": [
+        "ఉన్నాయో."
+      ],
+      "tokens": [
+        83,
+        91
+      ],
+      "samples": [
+        123600,
+        132600
+      ]
+    },
+    {
+      "label": "వాన",
+      "text_start": 68,
+      "text_end": 71,
+      "model_words": [
+        "వాన"
+      ],
+      "tokens": [
+        94,
+        99
+      ],
+      "samples": [
+        144600,
+        153000
+      ]
+    },
+    {
+      "label": "వస్తే,",
+      "text_start": 72,
+      "text_end": 78,
+      "model_words": [
+        "వస్తే,"
+      ],
+      "tokens": [
+        101,
+        107
+      ],
+      "samples": [
+        154200,
+        163200
+      ]
+    },
+    {
+      "label": "మనం",
+      "text_start": 79,
+      "text_end": 82,
+      "model_words": [
+        "మనం"
+      ],
+      "tokens": [
+        110,
+        115
+      ],
+      "samples": [
+        171000,
+        178200
+      ]
+    },
+    {
+      "label": "ఇంట్లోనే",
+      "text_start": 83,
+      "text_end": 91,
+      "model_words": [
+        "ఇంట్లోనే"
+      ],
+      "tokens": [
+        117,
+        126
+      ],
+      "samples": [
+        179400,
+        190800
+      ]
+    },
+    {
+      "label": "ఉందాం,",
+      "text_start": 92,
+      "text_end": 98,
+      "model_words": [
+        "ఉందాం,"
+      ],
+      "tokens": [
+        128,
+        134
+      ],
+      "samples": [
+        192000,
+        199800
+      ]
+    },
+    {
+      "label": "సరేనా?",
+      "text_start": 99,
+      "text_end": 105,
+      "model_words": [
+        "సరేనా?"
+      ],
+      "tokens": [
+        137,
+        145
+      ],
+      "samples": [
+        207600,
+        217800
+      ]
+    }
+  ]
+}

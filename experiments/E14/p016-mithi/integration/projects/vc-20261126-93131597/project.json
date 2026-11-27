@@ -1,0 +1,310 @@
+{
+  "schema": "video-creator.project",
+  "version": 1,
+  "id": "vc-20261126-93131597",
+  "created": "2026-11-26T09:46:48+00:00",
+  "topic": {
+    "path": "inputs/topic.txt",
+    "sha256": "7c21ad49974dd3c63cc041127c193107ead90c95b283dcfd9a937daa0e57481f",
+    "source": null
+  },
+  "config": {
+    "effective": {
+      "locale": "hi-IN",
+      "narration": {
+        "provider": "auto",
+        "voice": "auto",
+        "accent": null,
+        "tone": "conversational"
+      },
+      "style": "auto",
+      "duration_seconds": 60,
+      "orientation": "vertical",
+      "resolution": 1080,
+      "fps": 30,
+      "captions": {
+        "enabled": true,
+        "burn_in": true,
+        "subtitle_files": [
+          "srt",
+          "vtt"
+        ]
+      },
+      "music": {
+        "enabled": true,
+        "level": "subtle"
+      },
+      "sfx": {
+        "enabled": true,
+        "density": "sparse"
+      },
+      "review_mode": "guided",
+      "output_dir": null,
+      "cost_policy": "local-only"
+    },
+    "source": {
+      "locale": "request",
+      "narration": {
+        "provider": "default",
+        "voice": "default",
+        "accent": "default",
+        "tone": "default"
+      },
+      "style": "default",
+      "duration_seconds": "default",
+      "orientation": "default",
+      "resolution": "default",
+      "fps": "default",
+      "captions": {
+        "enabled": "default",
+        "burn_in": "default",
+        "subtitle_files": "default"
+      },
+      "music": {
+        "enabled": "default",
+        "level": "default"
+      },
+      "sfx": {
+        "enabled": "default",
+        "density": "default"
+      },
+      "review_mode": "default",
+      "output_dir": "default",
+      "cost_policy": "default"
+    },
+    "file": "D:/video-creator-skill/experiments/E14/p016-mithi/integration/hi-IN.json",
+    "sha256": "da145621783850aa54c5e7459571db4e1fbe8086a79f1f9e326915106de2d537"
+  },
+  "capabilities": null,
+  "stages": {
+    "research": {
+      "state": "completed",
+      "depends_on": [],
+      "inputs_fingerprint": "8dc77bb09fb59da53ead0775c708aa3d10db18984fcdaeb4d78de5c29136d8e2",
+      "outputs": [
+        {
+          "path": "research/claims.json",
+          "sha256": "2957fec40effc74c60457035f59a3de2e82dd5cf1923b8947a00eae02bf8c24b",
+          "bytes": 20
+        }
+      ],
+      "validation": {
+        "passed": true,
+        "evidence": "qa/research.json",
+        "evidence_sha256": "ac2199d298697d1ffd1ff5fca42aa71d031307dc5940fb968e1ec1ea7f33e932"
+      },
+      "attempts": 1,
+      "started": "2026-11-26T09:46:48+00:00",
+      "finished": "2026-11-26T09:46:48+00:00",
+      "failure": null,
+      "invalidated": null,
+      "declared_inputs": []
+    },
+    "script": {
+      "state": "completed",
+      "depends_on": [
+        "research"
+      ],
+      "inputs_fingerprint": "9e60752bba72fede4b44bac6a2a133bcdc73d63ee0f87b6fd41a6b9a22083610",
+      "outputs": [
+        {
+          "path": "script/script.json",
+          "sha256": "861086c86cf21db1402e967c4db075b85c37763690318c7f185c623fb4128311",
+          "bytes": 23
+        }
+      ],
+      "validation": {
+        "passed": true,
+        "evidence": "qa/script.json",
+        "evidence_sha256": "ac2199d298697d1ffd1ff5fca42aa71d031307dc5940fb968e1ec1ea7f33e932"
+      },
+      "attempts": 1,
+      "started": "2026-11-26T09:46:48+00:00",
+      "finished": "2026-11-26T09:46:48+00:00",
+      "failure": null,
+      "invalidated": null,
+      "declared_inputs": []
+    },
+    "narration": {
+      "state": "completed",
+      "depends_on": [
+        "script"
+      ],
+      "inputs_fingerprint": "deb0fcf3f0f68e81e620e2304d5ee9f7a3ac995018aa577a2818162936f7c15d",
+      "outputs": [
+        {
+          "path": "narration/narration.wav",
+          "sha256": "b75d98818bb2a9403204c30e6dda02b7c8018411b1628b08388555a52ac3f8e4",
+          "bytes": 568844
+        },
+        {
+          "path": "narration/narration.timeline.json",
+          "sha256": "1da7075459d1a4acf3f7418254372871212a30151fc79e95a3b3e516eaa94759",
+          "bytes": 59952
+        }
+      ],
+      "validation": {
+        "passed": true,
+        "evidence": "qa/narration.json",
+        "evidence_sha256": "ac2199d298697d1ffd1ff5fca42aa71d031307dc5940fb968e1ec1ea7f33e932"
+      },
+      "attempts": 1,
+      "started": "2026-11-26T09:46:49+00:00",
+      "finished": "2026-11-26T09:46:49+00:00",
+      "failure": null,
+      "invalidated": null,
+      "declared_inputs": []
+    },
+    "creative-plan": {
+      "state": "completed",
+      "depends_on": [
+        "script",
+        "narration"
+      ],
+      "inputs_fingerprint": "f0383cb4d53090c81a303426b1648d516d2c33e4da48d78310141d8c9c2d72f9",
+      "outputs": [
+        {
+          "path": "plan/creative-plan.json",
+          "sha256": "a21bcc7605220a63cf7e432ea04f3b735690ec2aa5af55aa640a3288c13da320",
+          "bytes": 1160
+        },
+        {
+          "path": "plan/resolved-plan.json",
+          "sha256": "14bbb96c7a40b242fe42c571cf340a9196a95667e0a408aca9e86209eed7151d",
+          "bytes": 2069
+        }
+      ],
+      "validation": {
+        "passed": true,
+        "evidence": "plan/plan-evidence.json",
+        "evidence_sha256": "29fa7eb6815822885aafe9d60c58cabd2da0ec7ad880c69631ddc1ebd2d440ca"
+      },
+      "attempts": 1,
+      "started": "2026-11-26T09:46:50+00:00",
+      "finished": "2026-11-26T09:46:50+00:00",
+      "failure": null,
+      "invalidated": null,
+      "declared_inputs": []
+    },
+    "visual-production": {
+      "state": "pending",
+      "depends_on": [
+        "creative-plan",
+        "narration"
+      ],
+      "inputs_fingerprint": null,
+      "outputs": [],
+      "validation": null,
+      "attempts": 0,
+      "started": null,
+      "finished": null,
+      "failure": null,
+      "invalidated": null,
+      "declared_inputs": []
+    },
+    "sound": {
+      "state": "pending",
+      "depends_on": [
+        "narration",
+        "visual-production"
+      ],
+      "inputs_fingerprint": null,
+      "outputs": [],
+      "validation": null,
+      "attempts": 0,
+      "started": null,
+      "finished": null,
+      "failure": null,
+      "invalidated": null,
+      "declared_inputs": []
+    },
+    "review-delivery": {
+      "state": "pending",
+      "depends_on": [
+        "visual-production",
+        "sound"
+      ],
+      "inputs_fingerprint": null,
+      "outputs": [],
+      "validation": null,
+      "attempts": 0,
+      "started": null,
+      "finished": null,
+      "failure": null,
+      "invalidated": null,
+      "declared_inputs": []
+    }
+  },
+  "approvals": {
+    "human_review": {
+      "status": "pending"
+    },
+    "publication": {
+      "status": "not-approved"
+    }
+  },
+  "history": [
+    {
+      "at": "2026-11-26T09:46:48+00:00",
+      "event": "init"
+    },
+    {
+      "at": "2026-11-26T09:46:48+00:00",
+      "event": "start",
+      "stage": "research",
+      "attempt": 1
+    },
+    {
+      "at": "2026-11-26T09:46:48+00:00",
+      "event": "complete",
+      "stage": "research",
+      "outputs": [
+        "research/claims.json"
+      ]
+    },
+    {
+      "at": "2026-11-26T09:46:48+00:00",
+      "event": "start",
+      "stage": "script",
+      "attempt": 1
+    },
+    {
+      "at": "2026-11-26T09:46:48+00:00",
+      "event": "complete",
+      "stage": "script",
+      "outputs": [
+        "script/script.json"
+      ]
+    },
+    {
+      "at": "2026-11-26T09:46:49+00:00",
+      "event": "start",
+      "stage": "narration",
+      "attempt": 1
+    },
+    {
+      "at": "2026-11-26T09:46:49+00:00",
+      "event": "complete",
+      "stage": "narration",
+      "outputs": [
+        "narration/narration.wav",
+        "narration/narration.timeline.json"
+      ]
+    },
+    {
+      "at": "2026-11-26T09:46:50+00:00",
+      "event": "start",
+      "stage": "creative-plan",
+      "attempt": 1
+    },
+    {
+      "at": "2026-11-26T09:46:50+00:00",
+      "event": "complete",
+      "stage": "creative-plan",
+      "outputs": [
+        "plan/creative-plan.json",
+        "plan/resolved-plan.json"
+      ]
+    }
+  ]
+}

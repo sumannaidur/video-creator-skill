@@ -1,0 +1,90 @@
+[
+  {
+    "case": "gain -6 dB",
+    "expected_pass": true,
+    "ok": true,
+    "method": "envelope cross-correlation",
+    "lag_ms": 0,
+    "correlation": 1.0,
+    "max_lag_ms": 2,
+    "min_correlation": 0.95,
+    "passed": true
+  },
+  {
+    "case": "loudnorm linear",
+    "expected_pass": true,
+    "ok": true,
+    "method": "envelope cross-correlation",
+    "lag_ms": 0,
+    "correlation": 0.99978,
+    "max_lag_ms": 2,
+    "min_correlation": 0.95,
+    "passed": true
+  },
+  {
+    "case": "mix + bed stem",
+    "expected_pass": true,
+    "ok": true,
+    "method": "bed-subtracted envelope cross-correlation",
+    "lag_ms": 0,
+    "correlation": 1.0,
+    "max_lag_ms": 2,
+    "min_correlation": 0.95,
+    "passed": true
+  },
+  {
+    "case": "delayed 40 ms",
+    "expected_pass": false,
+    "ok": true,
+    "method": "envelope cross-correlation",
+    "lag_ms": 40,
+    "correlation": 1.0,
+    "max_lag_ms": 2,
+    "min_correlation": 0.95,
+    "passed": false
+  },
+  {
+    "case": "delayed 5 ms",
+    "expected_pass": false,
+    "ok": true,
+    "method": "envelope cross-correlation",
+    "lag_ms": 5,
+    "correlation": 1.0,
+    "max_lag_ms": 2,
+    "min_correlation": 0.95,
+    "passed": false
+  },
+  {
+    "case": "mix with narration delayed 40 ms",
+    "expected_pass": false,
+    "ok": true,
+    "method": "bed-subtracted envelope cross-correlation",
+    "lag_ms": 40,
+    "correlation": 1.0,
+    "max_lag_ms": 2,
+    "min_correlation": 0.95,
+    "passed": false
+  },
+  {
+    "case": "alimiter default (diagnostic)",
+    "expected_pass": false,
+    "ok": true,
+    "method": "envelope cross-correlation",
+    "lag_ms": 5,
+    "correlation": 0.99969,
+    "max_lag_ms": 2,
+    "min_correlation": 0.95,
+    "passed": false
+  },
+  {
+    "case": "alimiter latency=1 (diagnostic)",
+    "expected_pass": true,
+    "ok": true,
+    "method": "envelope cross-correlation",
+    "lag_ms": 0,
+    "correlation": 1.0,
+    "max_lag_ms": 2,
+    "min_correlation": 0.95,
+    "passed": true
+  }
+]

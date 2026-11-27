@@ -1,0 +1,2370 @@
+{
+  "version": 1,
+  "unit": "sample",
+  "locale": "ta-IN",
+  "validation": "unreviewed",
+  "run_id": "combined-c6827604a5a79b981419172e",
+  "combined_id": "two",
+  "audio": {
+    "path": "narration/narration.wav",
+    "sha256": "b13290efbcc0663fde9d62ba1b8f8fb5ea4cc4282dad2cee910c34f4f93db68f",
+    "sample_rate": 24000,
+    "sample_count": 302400
+  },
+  "text": {
+    "display": "பாரு, மழை வந்துடுச்சு! மழை பெய்ஞ்சதும் மண் வாசனை எவ்வளவு நல்லா இருக்கு, இல்லையா? பாரு, மழை வந்துடுச்சு! மழை பெய்ஞ்சதும் மண் வாசனை எவ்வளவு நல்லா இருக்கு, இல்லையா?",
+    "speech": "பாரு, மழை வந்துடுச்சு! மழை பெய்ஞ்சதும் மண் வாசனை எவ்வளவு நல்லா இருக்கு, இல்லையா? பாரு, மழை வந்துடுச்சு! மழை பெய்ஞ்சதும் மண் வாசனை எவ்வளவு நல்லா இருக்கு, இல்லையா?"
+  },
+  "segments": [
+    {
+      "id": "s1",
+      "run_id": "90a8d545d09a4ff98667cadf85a315f5",
+      "validation": "unreviewed",
+      "source_timeline": "narration/segments/seg.timeline.json",
+      "source_timeline_sha256": "cb436b47c84a79f2a0f2dd997ab1526bf5f2fa2198a56204a140090005120df1",
+      "audio": {
+        "path": "narration/segments/seg.wav",
+        "sha256": "59e612d0bea4e4b7417dc750449ec5d82421e3be90120ea590ee568a8712b9ce",
+        "sample_rate": 24000,
+        "sample_count": 147600
+      },
+      "offset_samples": 0,
+      "sample_count": 147600,
+      "text_offset": {
+        "speech": 0,
+        "display": 0
+      },
+      "gap_after_samples": 7200
+    },
+    {
+      "id": "s2",
+      "run_id": "90a8d545d09a4ff98667cadf85a315f5",
+      "validation": "unreviewed",
+      "source_timeline": "narration/segments/seg.timeline.json",
+      "source_timeline_sha256": "cb436b47c84a79f2a0f2dd997ab1526bf5f2fa2198a56204a140090005120df1",
+      "audio": {
+        "path": "narration/segments/seg.wav",
+        "sha256": "59e612d0bea4e4b7417dc750449ec5d82421e3be90120ea590ee568a8712b9ce",
+        "sample_rate": 24000,
+        "sample_count": 147600
+      },
+      "offset_samples": 154800,
+      "sample_count": 147600,
+      "text_offset": {
+        "speech": 81,
+        "display": 81
+      },
+      "gap_after_samples": 0
+    }
+  ],
+  "records": [
+    {
+      "kind": "phoneme",
+      "label": "p",
+      "start": 1200,
+      "end": 3000,
+      "source": "native_model",
+      "segment": "s1"
+    },
+    {
+      "kind": "phoneme",
+      "label": "ˈ",
+      "start": 3000,
+      "end": 3600,
+      "source": "native_model",
+      "segment": "s1"
+    },
+    {
+      "kind": "phoneme",
+      "label": "a",
+      "start": 3600,
+      "end": 6000,
+      "source": "native_model",
+      "segment": "s1"
+    },
+    {
+      "kind": "phoneme",
+      "label": "ː",
+      "start": 6000,
+      "end": 6600,
+      "source": "native_model",
+      "segment": "s1"
+    },
+    {
+      "kind": "phoneme",
+      "label": "ɹ",
+      "start": 6600,
+      "end": 9000,
+      "source": "native_model",
+      "segment": "s1"
+    },
+    {
+      "kind": "phoneme",
+      "label": "u",
+      "start": 9000,
+      "end": 12600,
+      "source": "native_model",
+      "segment": "s1"
+    },
+    {
+      "kind": "phoneme",
+      "label": "m",
+      "start": 19800,
+      "end": 21000,
+      "source": "native_model",
+      "segment": "s1"
+    },
+    {
+      "kind": "phoneme",
+      "label": "ˈ",
+      "start": 21000,
+      "end": 21600,
+      "source": "native_model",
+      "segment": "s1"
+    },
+    {
+      "kind": "phoneme",
+      "label": "ʌ",
+      "start": 21600,
+      "end": 24000,
+      "source": "native_model",
+      "segment": "s1"
+    },
+    {
+      "kind": "phoneme",
+      "label": "ɻ",
+      "start": 24000,
+      "end": 25800,
+      "source": "native_model",
+      "segment": "s1"
+    },
+    {
+      "kind": "phoneme",
+      "label": "I",
+      "start": 25800,
+      "end": 26400,
+      "source": "native_model",
+      "segment": "s1"
+    },
+    {
+      "kind": "phoneme",
+      "label": "v",
+      "start": 28200,
+      "end": 29400,
+      "source": "native_model",
+      "segment": "s1"
+    },
+    {
+      "kind": "phoneme",
+      "label": "ˈ",
+      "start": 29400,
+      "end": 30000,
+      "source": "native_model",
+      "segment": "s1"
+    },
+    {
+      "kind": "phoneme",
+      "label": "ʌ",
+      "start": 30000,
+      "end": 31200,
+      "source": "native_model",
+      "segment": "s1"
+    },
+    {
+      "kind": "phoneme",
+      "label": "n",
+      "start": 31200,
+      "end": 32400,
+      "source": "native_model",
+      "segment": "s1"
+    },
+    {
+      "kind": "phoneme",
+      "label": "d",
+      "start": 32400,
+      "end": 33600,
+      "source": "native_model",
+      "segment": "s1"
+    },
+    {
+      "kind": "phoneme",
+      "label": "u",
+      "start": 33600,
+      "end": 34800,
+      "source": "native_model",
+      "segment": "s1"
+    },
+    {
+      "kind": "phoneme",
+      "label": "ɖ",
+      "start": 34800,
+      "end": 36000,
+      "source": "native_model",
+      "segment": "s1"
+    },
+    {
+      "kind": "phoneme",
+      "label": "ˌ",
+      "start": 36000,
+      "end": 36600,
+      "source": "native_model",
+      "segment": "s1"
+    },
+    {
+      "kind": "phoneme",
+      "label": "u",
+      "start": 36600,
+      "end": 38400,
+      "source": "native_model",
+      "segment": "s1"
+    },
+    {
+      "kind": "phoneme",
+      "label": "ʧ",
+      "start": 38400,
+      "end": 40200,
+      "source": "native_model",
+      "segment": "s1"
+    },
+    {
+      "kind": "phoneme",
+      "label": "ː",
+      "start": 40200,
+      "end": 40800,
+      "source": "native_model",
+      "segment": "s1"
+    },
+    {
+      "kind": "phoneme",
+      "label": "u",
+      "start": 40800,
+      "end": 43200,
+      "source": "native_model",
+      "segment": "s1"
+    },
+    {
+      "kind": "phoneme",
+      "label": "m",
+      "start": 53400,
+      "end": 54600,
+      "source": "native_model",
+      "segment": "s1"
+    },
+    {
+      "kind": "phoneme",
+      "label": "ˈ",
+      "start": 54600,
+      "end": 55200,
+      "source": "native_model",
+      "segment": "s1"
+    },
+    {
+      "kind": "phoneme",
+      "label": "ʌ",
+      "start": 55200,
+      "end": 57600,
+      "source": "native_model",
+      "segment": "s1"
+    },
+    {
+      "kind": "phoneme",
+      "label": "ɻ",
+      "start": 57600,
+      "end": 59400,
+      "source": "native_model",
+      "segment": "s1"
+    },
+    {
+      "kind": "phoneme",
+      "label": "I",
+      "start": 59400,
+      "end": 61800,
+      "source": "native_model",
+      "segment": "s1"
+    },
+    {
+      "kind": "phoneme",
+      "label": "p",
+      "start": 63000,
+      "end": 64200,
+      "source": "native_model",
+      "segment": "s1"
+    },
+    {
+      "kind": "phoneme",
+      "label": "ˈ",
+      "start": 64200,
+      "end": 64800,
+      "source": "native_model",
+      "segment": "s1"
+    },
+    {
+      "kind": "phoneme",
+      "label": "e",
+      "start": 64800,
+      "end": 66600,
+      "source": "native_model",
+      "segment": "s1"
+    },
+    {
+      "kind": "phoneme",
+      "label": "j",
+      "start": 66600,
+      "end": 67800,
+      "source": "native_model",
+      "segment": "s1"
+    },
+    {
+      "kind": "phoneme",
+      "label": "ɲ",
+      "start": 67800,
+      "end": 69000,
+      "source": "native_model",
+      "segment": "s1"
+    },
+    {
+      "kind": "phoneme",
+      "label": "ʤ",
+      "start": 69000,
+      "end": 70800,
+      "source": "native_model",
+      "segment": "s1"
+    },
+    {
+      "kind": "phoneme",
+      "label": "ʌ",
+      "start": 70800,
+      "end": 72000,
+      "source": "native_model",
+      "segment": "s1"
+    },
+    {
+      "kind": "phoneme",
+      "label": "d",
+      "start": 72000,
+      "end": 73200,
+      "source": "native_model",
+      "segment": "s1"
+    },
+    {
+      "kind": "phoneme",
+      "label": "u",
+      "start": 73200,
+      "end": 75000,
+      "source": "native_model",
+      "segment": "s1"
+    },
+    {
+      "kind": "phoneme",
+      "label": "m",
+      "start": 75000,
+      "end": 78600,
+      "source": "native_model",
+      "segment": "s1"
+    },
+    {
+      "kind": "phoneme",
+      "label": "m",
+      "start": 79200,
+      "end": 80400,
+      "source": "native_model",
+      "segment": "s1"
+    },
+    {
+      "kind": "phoneme",
+      "label": "ˈ",
+      "start": 80400,
+      "end": 81000,
+      "source": "native_model",
+      "segment": "s1"
+    },
+    {
+      "kind": "phoneme",
+      "label": "ʌ",
+      "start": 81000,
+      "end": 82800,
+      "source": "native_model",
+      "segment": "s1"
+    },
+    {
+      "kind": "phoneme",
+      "label": "ɳ",
+      "start": 82800,
+      "end": 84600,
+      "source": "native_model",
+      "segment": "s1"
+    },
+    {
+      "kind": "phoneme",
+      "label": "v",
+      "start": 86400,
+      "end": 87600,
+      "source": "native_model",
+      "segment": "s1"
+    },
+    {
+      "kind": "phoneme",
+      "label": "ˈ",
+      "start": 87600,
+      "end": 88200,
+      "source": "native_model",
+      "segment": "s1"
+    },
+    {
+      "kind": "phoneme",
+      "label": "a",
+      "start": 88200,
+      "end": 90000,
+      "source": "native_model",
+      "segment": "s1"
+    },
+    {
+      "kind": "phoneme",
+      "label": "ː",
+      "start": 90000,
+      "end": 90600,
+      "source": "native_model",
+      "segment": "s1"
+    },
+    {
+      "kind": "phoneme",
+      "label": "s",
+      "start": 90600,
+      "end": 92400,
+      "source": "native_model",
+      "segment": "s1"
+    },
+    {
+      "kind": "phoneme",
+      "label": "ʌ",
+      "start": 92400,
+      "end": 93600,
+      "source": "native_model",
+      "segment": "s1"
+    },
+    {
+      "kind": "phoneme",
+      "label": "n",
+      "start": 93600,
+      "end": 94800,
+      "source": "native_model",
+      "segment": "s1"
+    },
+    {
+      "kind": "phoneme",
+      "label": "I",
+      "start": 94800,
+      "end": 97200,
+      "source": "native_model",
+      "segment": "s1"
+    },
+    {
+      "kind": "phoneme",
+      "label": "ˈ",
+      "start": 99000,
+      "end": 99600,
+      "source": "native_model",
+      "segment": "s1"
+    },
+    {
+      "kind": "phoneme",
+      "label": "e",
+      "start": 99600,
+      "end": 100800,
+      "source": "native_model",
+      "segment": "s1"
+    },
+    {
+      "kind": "phoneme",
+      "label": "v",
+      "start": 100800,
+      "end": 102600,
+      "source": "native_model",
+      "segment": "s1"
+    },
+    {
+      "kind": "phoneme",
+      "label": "v",
+      "start": 102600,
+      "end": 103200,
+      "source": "native_model",
+      "segment": "s1"
+    },
+    {
+      "kind": "phoneme",
+      "label": "ʌ",
+      "start": 103200,
+      "end": 104400,
+      "source": "native_model",
+      "segment": "s1"
+    },
+    {
+      "kind": "phoneme",
+      "label": "l",
+      "start": 104400,
+      "end": 105600,
+      "source": "native_model",
+      "segment": "s1"
+    },
+    {
+      "kind": "phoneme",
+      "label": "ˌ",
+      "start": 105600,
+      "end": 106200,
+      "source": "native_model",
+      "segment": "s1"
+    },
+    {
+      "kind": "phoneme",
+      "label": "ʌ",
+      "start": 106200,
+      "end": 107400,
+      "source": "native_model",
+      "segment": "s1"
+    },
+    {
+      "kind": "phoneme",
+      "label": "v",
+      "start": 107400,
+      "end": 108600,
+      "source": "native_model",
+      "segment": "s1"
+    },
+    {
+      "kind": "phoneme",
+      "label": "u",
+      "start": 108600,
+      "end": 109200,
+      "source": "native_model",
+      "segment": "s1"
+    },
+    {
+      "kind": "phoneme",
+      "label": "n",
+      "start": 110400,
+      "end": 111600,
+      "source": "native_model",
+      "segment": "s1"
+    },
+    {
+      "kind": "phoneme",
+      "label": "ˈ",
+      "start": 111600,
+      "end": 112200,
+      "source": "native_model",
+      "segment": "s1"
+    },
+    {
+      "kind": "phoneme",
+      "label": "ʌ",
+      "start": 112200,
+      "end": 113400,
+      "source": "native_model",
+      "segment": "s1"
+    },
+    {
+      "kind": "phoneme",
+      "label": "l",
+      "start": 113400,
+      "end": 114600,
+      "source": "native_model",
+      "segment": "s1"
+    },
+    {
+      "kind": "phoneme",
+      "label": "l",
+      "start": 114600,
+      "end": 115800,
+      "source": "native_model",
+      "segment": "s1"
+    },
+    {
+      "kind": "phoneme",
+      "label": "a",
+      "start": 115800,
+      "end": 116400,
+      "source": "native_model",
+      "segment": "s1"
+    },
+    {
+      "kind": "phoneme",
+      "label": "ː",
+      "start": 116400,
+      "end": 117000,
+      "source": "native_model",
+      "segment": "s1"
+    },
+    {
+      "kind": "phoneme",
+      "label": "ˈ",
+      "start": 118200,
+      "end": 118800,
+      "source": "native_model",
+      "segment": "s1"
+    },
+    {
+      "kind": "phoneme",
+      "label": "i",
+      "start": 118800,
+      "end": 120000,
+      "source": "native_model",
+      "segment": "s1"
+    },
+    {
+      "kind": "phoneme",
+      "label": "ɹ",
+      "start": 120000,
+      "end": 121200,
+      "source": "native_model",
+      "segment": "s1"
+    },
+    {
+      "kind": "phoneme",
+      "label": "u",
+      "start": 121200,
+      "end": 121800,
+      "source": "native_model",
+      "segment": "s1"
+    },
+    {
+      "kind": "phoneme",
+      "label": "k",
+      "start": 121800,
+      "end": 123000,
+      "source": "native_model",
+      "segment": "s1"
+    },
+    {
+      "kind": "phoneme",
+      "label": "k",
+      "start": 123000,
+      "end": 124200,
+      "source": "native_model",
+      "segment": "s1"
+    },
+    {
+      "kind": "phoneme",
+      "label": "u",
+      "start": 124200,
+      "end": 126600,
+      "source": "native_model",
+      "segment": "s1"
+    },
+    {
+      "kind": "phoneme",
+      "label": "ˈ",
+      "start": 135600,
+      "end": 136800,
+      "source": "native_model",
+      "segment": "s1"
+    },
+    {
+      "kind": "phoneme",
+      "label": "i",
+      "start": 136800,
+      "end": 138000,
+      "source": "native_model",
+      "segment": "s1"
+    },
+    {
+      "kind": "phoneme",
+      "label": "l",
+      "start": 138000,
+      "end": 139800,
+      "source": "native_model",
+      "segment": "s1"
+    },
+    {
+      "kind": "phoneme",
+      "label": "l",
+      "start": 139800,
+      "end": 141000,
+      "source": "native_model",
+      "segment": "s1"
+    },
+    {
+      "kind": "phoneme",
+      "label": "I",
+      "start": 141000,
+      "end": 142200,
+      "source": "native_model",
+      "segment": "s1"
+    },
+    {
+      "kind": "phoneme",
+      "label": "j",
+      "start": 142200,
+      "end": 144000,
+      "source": "native_model",
+      "segment": "s1"
+    },
+    {
+      "kind": "phoneme",
+      "label": "a",
+      "start": 144000,
+      "end": 145200,
+      "source": "native_model",
+      "segment": "s1"
+    },
+    {
+      "kind": "phoneme",
+      "label": "ː",
+      "start": 145200,
+      "end": 145800,
+      "source": "native_model",
+      "segment": "s1"
+    },
+    {
+      "kind": "phoneme",
+      "label": "p",
+      "start": 156000,
+      "end": 157800,
+      "source": "native_model",
+      "segment": "s2"
+    },
+    {
+      "kind": "phoneme",
+      "label": "ˈ",
+      "start": 157800,
+      "end": 158400,
+      "source": "native_model",
+      "segment": "s2"
+    },
+    {
+      "kind": "phoneme",
+      "label": "a",
+      "start": 158400,
+      "end": 160800,
+      "source": "native_model",
+      "segment": "s2"
+    },
+    {
+      "kind": "phoneme",
+      "label": "ː",
+      "start": 160800,
+      "end": 161400,
+      "source": "native_model",
+      "segment": "s2"
+    },
+    {
+      "kind": "phoneme",
+      "label": "ɹ",
+      "start": 161400,
+      "end": 163800,
+      "source": "native_model",
+      "segment": "s2"
+    },
+    {
+      "kind": "phoneme",
+      "label": "u",
+      "start": 163800,
+      "end": 167400,
+      "source": "native_model",
+      "segment": "s2"
+    },
+    {
+      "kind": "phoneme",
+      "label": "m",
+      "start": 174600,
+      "end": 175800,
+      "source": "native_model",
+      "segment": "s2"
+    },
+    {
+      "kind": "phoneme",
+      "label": "ˈ",
+      "start": 175800,
+      "end": 176400,
+      "source": "native_model",
+      "segment": "s2"
+    },
+    {
+      "kind": "phoneme",
+      "label": "ʌ",
+      "start": 176400,
+      "end": 178800,
+      "source": "native_model",
+      "segment": "s2"
+    },
+    {
+      "kind": "phoneme",
+      "label": "ɻ",
+      "start": 178800,
+      "end": 180600,
+      "source": "native_model",
+      "segment": "s2"
+    },
+    {
+      "kind": "phoneme",
+      "label": "I",
+      "start": 180600,
+      "end": 181200,
+      "source": "native_model",
+      "segment": "s2"
+    },
+    {
+      "kind": "phoneme",
+      "label": "v",
+      "start": 183000,
+      "end": 184200,
+      "source": "native_model",
+      "segment": "s2"
+    },
+    {
+      "kind": "phoneme",
+      "label": "ˈ",
+      "start": 184200,
+      "end": 184800,
+      "source": "native_model",
+      "segment": "s2"
+    },
+    {
+      "kind": "phoneme",
+      "label": "ʌ",
+      "start": 184800,
+      "end": 186000,
+      "source": "native_model",
+      "segment": "s2"
+    },
+    {
+      "kind": "phoneme",
+      "label": "n",
+      "start": 186000,
+      "end": 187200,
+      "source": "native_model",
+      "segment": "s2"
+    },
+    {
+      "kind": "phoneme",
+      "label": "d",
+      "start": 187200,
+      "end": 188400,
+      "source": "native_model",
+      "segment": "s2"
+    },
+    {
+      "kind": "phoneme",
+      "label": "u",
+      "start": 188400,
+      "end": 189600,
+      "source": "native_model",
+      "segment": "s2"
+    },
+    {
+      "kind": "phoneme",
+      "label": "ɖ",
+      "start": 189600,
+      "end": 190800,
+      "source": "native_model",
+      "segment": "s2"
+    },
+    {
+      "kind": "phoneme",
+      "label": "ˌ",
+      "start": 190800,
+      "end": 191400,
+      "source": "native_model",
+      "segment": "s2"
+    },
+    {
+      "kind": "phoneme",
+      "label": "u",
+      "start": 191400,
+      "end": 193200,
+      "source": "native_model",
+      "segment": "s2"
+    },
+    {
+      "kind": "phoneme",
+      "label": "ʧ",
+      "start": 193200,
+      "end": 195000,
+      "source": "native_model",
+      "segment": "s2"
+    },
+    {
+      "kind": "phoneme",
+      "label": "ː",
+      "start": 195000,
+      "end": 195600,
+      "source": "native_model",
+      "segment": "s2"
+    },
+    {
+      "kind": "phoneme",
+      "label": "u",
+      "start": 195600,
+      "end": 198000,
+      "source": "native_model",
+      "segment": "s2"
+    },
+    {
+      "kind": "phoneme",
+      "label": "m",
+      "start": 208200,
+      "end": 209400,
+      "source": "native_model",
+      "segment": "s2"
+    },
+    {
+      "kind": "phoneme",
+      "label": "ˈ",
+      "start": 209400,
+      "end": 210000,
+      "source": "native_model",
+      "segment": "s2"
+    },
+    {
+      "kind": "phoneme",
+      "label": "ʌ",
+      "start": 210000,
+      "end": 212400,
+      "source": "native_model",
+      "segment": "s2"
+    },
+    {
+      "kind": "phoneme",
+      "label": "ɻ",
+      "start": 212400,
+      "end": 214200,
+      "source": "native_model",
+      "segment": "s2"
+    },
+    {
+      "kind": "phoneme",
+      "label": "I",
+      "start": 214200,
+      "end": 216600,
+      "source": "native_model",
+      "segment": "s2"
+    },
+    {
+      "kind": "phoneme",
+      "label": "p",
+      "start": 217800,
+      "end": 219000,
+      "source": "native_model",
+      "segment": "s2"
+    },
+    {
+      "kind": "phoneme",
+      "label": "ˈ",
+      "start": 219000,
+      "end": 219600,
+      "source": "native_model",
+      "segment": "s2"
+    },
+    {
+      "kind": "phoneme",
+      "label": "e",
+      "start": 219600,
+      "end": 221400,
+      "source": "native_model",
+      "segment": "s2"
+    },
+    {
+      "kind": "phoneme",
+      "label": "j",
+      "start": 221400,
+      "end": 222600,
+      "source": "native_model",
+      "segment": "s2"
+    },
+    {
+      "kind": "phoneme",
+      "label": "ɲ",
+      "start": 222600,
+      "end": 223800,
+      "source": "native_model",
+      "segment": "s2"
+    },
+    {
+      "kind": "phoneme",
+      "label": "ʤ",
+      "start": 223800,
+      "end": 225600,
+      "source": "native_model",
+      "segment": "s2"
+    },
+    {
+      "kind": "phoneme",
+      "label": "ʌ",
+      "start": 225600,
+      "end": 226800,
+      "source": "native_model",
+      "segment": "s2"
+    },
+    {
+      "kind": "phoneme",
+      "label": "d",
+      "start": 226800,
+      "end": 228000,
+      "source": "native_model",
+      "segment": "s2"
+    },
+    {
+      "kind": "phoneme",
+      "label": "u",
+      "start": 228000,
+      "end": 229800,
+      "source": "native_model",
+      "segment": "s2"
+    },
+    {
+      "kind": "phoneme",
+      "label": "m",
+      "start": 229800,
+      "end": 233400,
+      "source": "native_model",
+      "segment": "s2"
+    },
+    {
+      "kind": "phoneme",
+      "label": "m",
+      "start": 234000,
+      "end": 235200,
+      "source": "native_model",
+      "segment": "s2"
+    },
+    {
+      "kind": "phoneme",
+      "label": "ˈ",
+      "start": 235200,
+      "end": 235800,
+      "source": "native_model",
+      "segment": "s2"
+    },
+    {
+      "kind": "phoneme",
+      "label": "ʌ",
+      "start": 235800,
+      "end": 237600,
+      "source": "native_model",
+      "segment": "s2"
+    },
+    {
+      "kind": "phoneme",
+      "label": "ɳ",
+      "start": 237600,
+      "end": 239400,
+      "source": "native_model",
+      "segment": "s2"
+    },
+    {
+      "kind": "phoneme",
+      "label": "v",
+      "start": 241200,
+      "end": 242400,
+      "source": "native_model",
+      "segment": "s2"
+    },
+    {
+      "kind": "phoneme",
+      "label": "ˈ",
+      "start": 242400,
+      "end": 243000,
+      "source": "native_model",
+      "segment": "s2"
+    },
+    {
+      "kind": "phoneme",
+      "label": "a",
+      "start": 243000,
+      "end": 244800,
+      "source": "native_model",
+      "segment": "s2"
+    },
+    {
+      "kind": "phoneme",
+      "label": "ː",
+      "start": 244800,
+      "end": 245400,
+      "source": "native_model",
+      "segment": "s2"
+    },
+    {
+      "kind": "phoneme",
+      "label": "s",
+      "start": 245400,
+      "end": 247200,
+      "source": "native_model",
+      "segment": "s2"
+    },
+    {
+      "kind": "phoneme",
+      "label": "ʌ",
+      "start": 247200,
+      "end": 248400,
+      "source": "native_model",
+      "segment": "s2"
+    },
+    {
+      "kind": "phoneme",
+      "label": "n",
+      "start": 248400,
+      "end": 249600,
+      "source": "native_model",
+      "segment": "s2"
+    },
+    {
+      "kind": "phoneme",
+      "label": "I",
+      "start": 249600,
+      "end": 252000,
+      "source": "native_model",
+      "segment": "s2"
+    },
+    {
+      "kind": "phoneme",
+      "label": "ˈ",
+      "start": 253800,
+      "end": 254400,
+      "source": "native_model",
+      "segment": "s2"
+    },
+    {
+      "kind": "phoneme",
+      "label": "e",
+      "start": 254400,
+      "end": 255600,
+      "source": "native_model",
+      "segment": "s2"
+    },
+    {
+      "kind": "phoneme",
+      "label": "v",
+      "start": 255600,
+      "end": 257400,
+      "source": "native_model",
+      "segment": "s2"
+    },
+    {
+      "kind": "phoneme",
+      "label": "v",
+      "start": 257400,
+      "end": 258000,
+      "source": "native_model",
+      "segment": "s2"
+    },
+    {
+      "kind": "phoneme",
+      "label": "ʌ",
+      "start": 258000,
+      "end": 259200,
+      "source": "native_model",
+      "segment": "s2"
+    },
+    {
+      "kind": "phoneme",
+      "label": "l",
+      "start": 259200,
+      "end": 260400,
+      "source": "native_model",
+      "segment": "s2"
+    },
+    {
+      "kind": "phoneme",
+      "label": "ˌ",
+      "start": 260400,
+      "end": 261000,
+      "source": "native_model",
+      "segment": "s2"
+    },
+    {
+      "kind": "phoneme",
+      "label": "ʌ",
+      "start": 261000,
+      "end": 262200,
+      "source": "native_model",
+      "segment": "s2"
+    },
+    {
+      "kind": "phoneme",
+      "label": "v",
+      "start": 262200,
+      "end": 263400,
+      "source": "native_model",
+      "segment": "s2"
+    },
+    {
+      "kind": "phoneme",
+      "label": "u",
+      "start": 263400,
+      "end": 264000,
+      "source": "native_model",
+      "segment": "s2"
+    },
+    {
+      "kind": "phoneme",
+      "label": "n",
+      "start": 265200,
+      "end": 266400,
+      "source": "native_model",
+      "segment": "s2"
+    },
+    {
+      "kind": "phoneme",
+      "label": "ˈ",
+      "start": 266400,
+      "end": 267000,
+      "source": "native_model",
+      "segment": "s2"
+    },
+    {
+      "kind": "phoneme",
+      "label": "ʌ",
+      "start": 267000,
+      "end": 268200,
+      "source": "native_model",
+      "segment": "s2"
+    },
+    {
+      "kind": "phoneme",
+      "label": "l",
+      "start": 268200,
+      "end": 269400,
+      "source": "native_model",
+      "segment": "s2"
+    },
+    {
+      "kind": "phoneme",
+      "label": "l",
+      "start": 269400,
+      "end": 270600,
+      "source": "native_model",
+      "segment": "s2"
+    },
+    {
+      "kind": "phoneme",
+      "label": "a",
+      "start": 270600,
+      "end": 271200,
+      "source": "native_model",
+      "segment": "s2"
+    },
+    {
+      "kind": "phoneme",
+      "label": "ː",
+      "start": 271200,
+      "end": 271800,
+      "source": "native_model",
+      "segment": "s2"
+    },
+    {
+      "kind": "phoneme",
+      "label": "ˈ",
+      "start": 273000,
+      "end": 273600,
+      "source": "native_model",
+      "segment": "s2"
+    },
+    {
+      "kind": "phoneme",
+      "label": "i",
+      "start": 273600,
+      "end": 274800,
+      "source": "native_model",
+      "segment": "s2"
+    },
+    {
+      "kind": "phoneme",
+      "label": "ɹ",
+      "start": 274800,
+      "end": 276000,
+      "source": "native_model",
+      "segment": "s2"
+    },
+    {
+      "kind": "phoneme",
+      "label": "u",
+      "start": 276000,
+      "end": 276600,
+      "source": "native_model",
+      "segment": "s2"
+    },
+    {
+      "kind": "phoneme",
+      "label": "k",
+      "start": 276600,
+      "end": 277800,
+      "source": "native_model",
+      "segment": "s2"
+    },
+    {
+      "kind": "phoneme",
+      "label": "k",
+      "start": 277800,
+      "end": 279000,
+      "source": "native_model",
+      "segment": "s2"
+    },
+    {
+      "kind": "phoneme",
+      "label": "u",
+      "start": 279000,
+      "end": 281400,
+      "source": "native_model",
+      "segment": "s2"
+    },
+    {
+      "kind": "phoneme",
+      "label": "ˈ",
+      "start": 290400,
+      "end": 291600,
+      "source": "native_model",
+      "segment": "s2"
+    },
+    {
+      "kind": "phoneme",
+      "label": "i",
+      "start": 291600,
+      "end": 292800,
+      "source": "native_model",
+      "segment": "s2"
+    },
+    {
+      "kind": "phoneme",
+      "label": "l",
+      "start": 292800,
+      "end": 294600,
+      "source": "native_model",
+      "segment": "s2"
+    },
+    {
+      "kind": "phoneme",
+      "label": "l",
+      "start": 294600,
+      "end": 295800,
+      "source": "native_model",
+      "segment": "s2"
+    },
+    {
+      "kind": "phoneme",
+      "label": "I",
+      "start": 295800,
+      "end": 297000,
+      "source": "native_model",
+      "segment": "s2"
+    },
+    {
+      "kind": "phoneme",
+      "label": "j",
+      "start": 297000,
+      "end": 298800,
+      "source": "native_model",
+      "segment": "s2"
+    },
+    {
+      "kind": "phoneme",
+      "label": "a",
+      "start": 298800,
+      "end": 300000,
+      "source": "native_model",
+      "segment": "s2"
+    },
+    {
+      "kind": "phoneme",
+      "label": "ː",
+      "start": 300000,
+      "end": 300600,
+      "source": "native_model",
+      "segment": "s2"
+    },
+    {
+      "kind": "pause",
+      "label": "edge silence",
+      "start": 0,
+      "end": 1200,
+      "source": "native_model",
+      "segment": "s1"
+    },
+    {
+      "kind": "pause",
+      "label": "punctuation pause",
+      "start": 12600,
+      "end": 19800,
+      "source": "native_model",
+      "segment": "s1"
+    },
+    {
+      "kind": "pause",
+      "label": "word gap",
+      "start": 26400,
+      "end": 28200,
+      "source": "native_model",
+      "segment": "s1"
+    },
+    {
+      "kind": "pause",
+      "label": "punctuation pause",
+      "start": 43200,
+      "end": 53400,
+      "source": "native_model",
+      "segment": "s1"
+    },
+    {
+      "kind": "pause",
+      "label": "word gap",
+      "start": 61800,
+      "end": 63000,
+      "source": "native_model",
+      "segment": "s1"
+    },
+    {
+      "kind": "pause",
+      "label": "word gap",
+      "start": 78600,
+      "end": 79200,
+      "source": "native_model",
+      "segment": "s1"
+    },
+    {
+      "kind": "pause",
+      "label": "word gap",
+      "start": 84600,
+      "end": 86400,
+      "source": "native_model",
+      "segment": "s1"
+    },
+    {
+      "kind": "pause",
+      "label": "word gap",
+      "start": 97200,
+      "end": 99000,
+      "source": "native_model",
+      "segment": "s1"
+    },
+    {
+      "kind": "pause",
+      "label": "word gap",
+      "start": 109200,
+      "end": 110400,
+      "source": "native_model",
+      "segment": "s1"
+    },
+    {
+      "kind": "pause",
+      "label": "word gap",
+      "start": 117000,
+      "end": 118200,
+      "source": "native_model",
+      "segment": "s1"
+    },
+    {
+      "kind": "pause",
+      "label": "punctuation pause",
+      "start": 126600,
+      "end": 135600,
+      "source": "native_model",
+      "segment": "s1"
+    },
+    {
+      "kind": "pause",
+      "label": "punctuation pause",
+      "start": 145800,
+      "end": 147600,
+      "source": "native_model",
+      "segment": "s1"
+    },
+    {
+      "kind": "pause",
+      "label": "inserted silence",
+      "start": 147600,
+      "end": 154800,
+      "source": "manual",
+      "segment": null
+    },
+    {
+      "kind": "pause",
+      "label": "edge silence",
+      "start": 154800,
+      "end": 156000,
+      "source": "native_model",
+      "segment": "s2"
+    },
+    {
+      "kind": "pause",
+      "label": "punctuation pause",
+      "start": 167400,
+      "end": 174600,
+      "source": "native_model",
+      "segment": "s2"
+    },
+    {
+      "kind": "pause",
+      "label": "word gap",
+      "start": 181200,
+      "end": 183000,
+      "source": "native_model",
+      "segment": "s2"
+    },
+    {
+      "kind": "pause",
+      "label": "punctuation pause",
+      "start": 198000,
+      "end": 208200,
+      "source": "native_model",
+      "segment": "s2"
+    },
+    {
+      "kind": "pause",
+      "label": "word gap",
+      "start": 216600,
+      "end": 217800,
+      "source": "native_model",
+      "segment": "s2"
+    },
+    {
+      "kind": "pause",
+      "label": "word gap",
+      "start": 233400,
+      "end": 234000,
+      "source": "native_model",
+      "segment": "s2"
+    },
+    {
+      "kind": "pause",
+      "label": "word gap",
+      "start": 239400,
+      "end": 241200,
+      "source": "native_model",
+      "segment": "s2"
+    },
+    {
+      "kind": "pause",
+      "label": "word gap",
+      "start": 252000,
+      "end": 253800,
+      "source": "native_model",
+      "segment": "s2"
+    },
+    {
+      "kind": "pause",
+      "label": "word gap",
+      "start": 264000,
+      "end": 265200,
+      "source": "native_model",
+      "segment": "s2"
+    },
+    {
+      "kind": "pause",
+      "label": "word gap",
+      "start": 271800,
+      "end": 273000,
+      "source": "native_model",
+      "segment": "s2"
+    },
+    {
+      "kind": "pause",
+      "label": "punctuation pause",
+      "start": 281400,
+      "end": 290400,
+      "source": "native_model",
+      "segment": "s2"
+    },
+    {
+      "kind": "pause",
+      "label": "punctuation pause",
+      "start": 300600,
+      "end": 302400,
+      "source": "native_model",
+      "segment": "s2"
+    },
+    {
+      "kind": "word",
+      "label": "பாரு,",
+      "start": 1200,
+      "end": 12600,
+      "source": "native_model",
+      "mapping": {
+        "method": "mithi_token_word_ownership",
+        "model_words": [
+          0
+        ],
+        "first_token": 1,
+        "last_token": 6
+      },
+      "text_ref": {
+        "field": "speech",
+        "start": 0,
+        "end": 5
+      },
+      "display_ref": {
+        "field": "display",
+        "start": 0,
+        "end": 5
+      },
+      "mapping_scope": "segment",
+      "segment": "s1"
+    },
+    {
+      "kind": "word",
+      "label": "மழை",
+      "start": 19800,
+      "end": 26400,
+      "source": "native_model",
+      "mapping": {
+        "method": "mithi_token_word_ownership",
+        "model_words": [
+          1
+        ],
+        "first_token": 9,
+        "last_token": 13
+      },
+      "text_ref": {
+        "field": "speech",
+        "start": 6,
+        "end": 9
+      },
+      "display_ref": {
+        "field": "display",
+        "start": 6,
+        "end": 9
+      },
+      "mapping_scope": "segment",
+      "segment": "s1"
+    },
+    {
+      "kind": "word",
+      "label": "வந்துடுச்சு!",
+      "start": 28200,
+      "end": 43200,
+      "source": "native_model",
+      "mapping": {
+        "method": "mithi_token_word_ownership",
+        "model_words": [
+          2
+        ],
+        "first_token": 15,
+        "last_token": 26
+      },
+      "text_ref": {
+        "field": "speech",
+        "start": 10,
+        "end": 22
+      },
+      "display_ref": {
+        "field": "display",
+        "start": 10,
+        "end": 22
+      },
+      "mapping_scope": "segment",
+      "segment": "s1"
+    },
+    {
+      "kind": "word",
+      "label": "மழை",
+      "start": 53400,
+      "end": 61800,
+      "source": "native_model",
+      "mapping": {
+        "method": "mithi_token_word_ownership",
+        "model_words": [
+          3
+        ],
+        "first_token": 29,
+        "last_token": 33
+      },
+      "text_ref": {
+        "field": "speech",
+        "start": 23,
+        "end": 26
+      },
+      "display_ref": {
+        "field": "display",
+        "start": 23,
+        "end": 26
+      },
+      "mapping_scope": "segment",
+      "segment": "s1"
+    },
+    {
+      "kind": "word",
+      "label": "பெய்ஞ்சதும்",
+      "start": 63000,
+      "end": 78600,
+      "source": "native_model",
+      "mapping": {
+        "method": "mithi_token_word_ownership",
+        "model_words": [
+          4
+        ],
+        "first_token": 35,
+        "last_token": 44
+      },
+      "text_ref": {
+        "field": "speech",
+        "start": 27,
+        "end": 38
+      },
+      "display_ref": {
+        "field": "display",
+        "start": 27,
+        "end": 38
+      },
+      "mapping_scope": "segment",
+      "segment": "s1"
+    },
+    {
+      "kind": "word",
+      "label": "மண்",
+      "start": 79200,
+      "end": 84600,
+      "source": "native_model",
+      "mapping": {
+        "method": "mithi_token_word_ownership",
+        "model_words": [
+          5
+        ],
+        "first_token": 46,
+        "last_token": 49
+      },
+      "text_ref": {
+        "field": "speech",
+        "start": 39,
+        "end": 42
+      },
+      "display_ref": {
+        "field": "display",
+        "start": 39,
+        "end": 42
+      },
+      "mapping_scope": "segment",
+      "segment": "s1"
+    },
+    {
+      "kind": "word",
+      "label": "வாசனை",
+      "start": 86400,
+      "end": 97200,
+      "source": "native_model",
+      "mapping": {
+        "method": "mithi_token_word_ownership",
+        "model_words": [
+          6
+        ],
+        "first_token": 51,
+        "last_token": 58
+      },
+      "text_ref": {
+        "field": "speech",
+        "start": 43,
+        "end": 48
+      },
+      "display_ref": {
+        "field": "display",
+        "start": 43,
+        "end": 48
+      },
+      "mapping_scope": "segment",
+      "segment": "s1"
+    },
+    {
+      "kind": "word",
+      "label": "எவ்வளவு",
+      "start": 99000,
+      "end": 109200,
+      "source": "native_model",
+      "mapping": {
+        "method": "mithi_token_word_ownership",
+        "model_words": [
+          7
+        ],
+        "first_token": 60,
+        "last_token": 69
+      },
+      "text_ref": {
+        "field": "speech",
+        "start": 49,
+        "end": 56
+      },
+      "display_ref": {
+        "field": "display",
+        "start": 49,
+        "end": 56
+      },
+      "mapping_scope": "segment",
+      "segment": "s1"
+    },
+    {
+      "kind": "word",
+      "label": "நல்லா",
+      "start": 110400,
+      "end": 117000,
+      "source": "native_model",
+      "mapping": {
+        "method": "mithi_token_word_ownership",
+        "model_words": [
+          8
+        ],
+        "first_token": 71,
+        "last_token": 77
+      },
+      "text_ref": {
+        "field": "speech",
+        "start": 57,
+        "end": 62
+      },
+      "display_ref": {
+        "field": "display",
+        "start": 57,
+        "end": 62
+      },
+      "mapping_scope": "segment",
+      "segment": "s1"
+    },
+    {
+      "kind": "word",
+      "label": "இருக்கு,",
+      "start": 118200,
+      "end": 126600,
+      "source": "native_model",
+      "mapping": {
+        "method": "mithi_token_word_ownership",
+        "model_words": [
+          9
+        ],
+        "first_token": 79,
+        "last_token": 85
+      },
+      "text_ref": {
+        "field": "speech",
+        "start": 63,
+        "end": 71
+      },
+      "display_ref": {
+        "field": "display",
+        "start": 63,
+        "end": 71
+      },
+      "mapping_scope": "segment",
+      "segment": "s1"
+    },
+    {
+      "kind": "word",
+      "label": "இல்லையா?",
+      "start": 135600,
+      "end": 145800,
+      "source": "native_model",
+      "mapping": {
+        "method": "mithi_token_word_ownership",
+        "model_words": [
+          10
+        ],
+        "first_token": 88,
+        "last_token": 95
+      },
+      "text_ref": {
+        "field": "speech",
+        "start": 72,
+        "end": 80
+      },
+      "display_ref": {
+        "field": "display",
+        "start": 72,
+        "end": 80
+      },
+      "mapping_scope": "segment",
+      "segment": "s1"
+    },
+    {
+      "kind": "word",
+      "label": "பாரு,",
+      "start": 156000,
+      "end": 167400,
+      "source": "native_model",
+      "mapping": {
+        "method": "mithi_token_word_ownership",
+        "model_words": [
+          0
+        ],
+        "first_token": 1,
+        "last_token": 6
+      },
+      "text_ref": {
+        "field": "speech",
+        "start": 81,
+        "end": 86
+      },
+      "display_ref": {
+        "field": "display",
+        "start": 81,
+        "end": 86
+      },
+      "mapping_scope": "segment",
+      "segment": "s2"
+    },
+    {
+      "kind": "word",
+      "label": "மழை",
+      "start": 174600,
+      "end": 181200,
+      "source": "native_model",
+      "mapping": {
+        "method": "mithi_token_word_ownership",
+        "model_words": [
+          1
+        ],
+        "first_token": 9,
+        "last_token": 13
+      },
+      "text_ref": {
+        "field": "speech",
+        "start": 87,
+        "end": 90
+      },
+      "display_ref": {
+        "field": "display",
+        "start": 87,
+        "end": 90
+      },
+      "mapping_scope": "segment",
+      "segment": "s2"
+    },
+    {
+      "kind": "word",
+      "label": "வந்துடுச்சு!",
+      "start": 183000,
+      "end": 198000,
+      "source": "native_model",
+      "mapping": {
+        "method": "mithi_token_word_ownership",
+        "model_words": [
+          2
+        ],
+        "first_token": 15,
+        "last_token": 26
+      },
+      "text_ref": {
+        "field": "speech",
+        "start": 91,
+        "end": 103
+      },
+      "display_ref": {
+        "field": "display",
+        "start": 91,
+        "end": 103
+      },
+      "mapping_scope": "segment",
+      "segment": "s2"
+    },
+    {
+      "kind": "word",
+      "label": "மழை",
+      "start": 208200,
+      "end": 216600,
+      "source": "native_model",
+      "mapping": {
+        "method": "mithi_token_word_ownership",
+        "model_words": [
+          3
+        ],
+        "first_token": 29,
+        "last_token": 33
+      },
+      "text_ref": {
+        "field": "speech",
+        "start": 104,
+        "end": 107
+      },
+      "display_ref": {
+        "field": "display",
+        "start": 104,
+        "end": 107
+      },
+      "mapping_scope": "segment",
+      "segment": "s2"
+    },
+    {
+      "kind": "word",
+      "label": "பெய்ஞ்சதும்",
+      "start": 217800,
+      "end": 233400,
+      "source": "native_model",
+      "mapping": {
+        "method": "mithi_token_word_ownership",
+        "model_words": [
+          4
+        ],
+        "first_token": 35,
+        "last_token": 44
+      },
+      "text_ref": {
+        "field": "speech",
+        "start": 108,
+        "end": 119
+      },
+      "display_ref": {
+        "field": "display",
+        "start": 108,
+        "end": 119
+      },
+      "mapping_scope": "segment",
+      "segment": "s2"
+    },
+    {
+      "kind": "word",
+      "label": "மண்",
+      "start": 234000,
+      "end": 239400,
+      "source": "native_model",
+      "mapping": {
+        "method": "mithi_token_word_ownership",
+        "model_words": [
+          5
+        ],
+        "first_token": 46,
+        "last_token": 49
+      },
+      "text_ref": {
+        "field": "speech",
+        "start": 120,
+        "end": 123
+      },
+      "display_ref": {
+        "field": "display",
+        "start": 120,
+        "end": 123
+      },
+      "mapping_scope": "segment",
+      "segment": "s2"
+    },
+    {
+      "kind": "word",
+      "label": "வாசனை",
+      "start": 241200,
+      "end": 252000,
+      "source": "native_model",
+      "mapping": {
+        "method": "mithi_token_word_ownership",
+        "model_words": [
+          6
+        ],
+        "first_token": 51,
+        "last_token": 58
+      },
+      "text_ref": {
+        "field": "speech",
+        "start": 124,
+        "end": 129
+      },
+      "display_ref": {
+        "field": "display",
+        "start": 124,
+        "end": 129
+      },
+      "mapping_scope": "segment",
+      "segment": "s2"
+    },
+    {
+      "kind": "word",
+      "label": "எவ்வளவு",
+      "start": 253800,
+      "end": 264000,
+      "source": "native_model",
+      "mapping": {
+        "method": "mithi_token_word_ownership",
+        "model_words": [
+          7
+        ],
+        "first_token": 60,
+        "last_token": 69
+      },
+      "text_ref": {
+        "field": "speech",
+        "start": 130,
+        "end": 137
+      },
+      "display_ref": {
+        "field": "display",
+        "start": 130,
+        "end": 137
+      },
+      "mapping_scope": "segment",
+      "segment": "s2"
+    },
+    {
+      "kind": "word",
+      "label": "நல்லா",
+      "start": 265200,
+      "end": 271800,
+      "source": "native_model",
+      "mapping": {
+        "method": "mithi_token_word_ownership",
+        "model_words": [
+          8
+        ],
+        "first_token": 71,
+        "last_token": 77
+      },
+      "text_ref": {
+        "field": "speech",
+        "start": 138,
+        "end": 143
+      },
+      "display_ref": {
+        "field": "display",
+        "start": 138,
+        "end": 143
+      },
+      "mapping_scope": "segment",
+      "segment": "s2"
+    },
+    {
+      "kind": "word",
+      "label": "இருக்கு,",
+      "start": 273000,
+      "end": 281400,
+      "source": "native_model",
+      "mapping": {
+        "method": "mithi_token_word_ownership",
+        "model_words": [
+          9
+        ],
+        "first_token": 79,
+        "last_token": 85
+      },
+      "text_ref": {
+        "field": "speech",
+        "start": 144,
+        "end": 152
+      },
+      "display_ref": {
+        "field": "display",
+        "start": 144,
+        "end": 152
+      },
+      "mapping_scope": "segment",
+      "segment": "s2"
+    },
+    {
+      "kind": "word",
+      "label": "இல்லையா?",
+      "start": 290400,
+      "end": 300600,
+      "source": "native_model",
+      "mapping": {
+        "method": "mithi_token_word_ownership",
+        "model_words": [
+          10
+        ],
+        "first_token": 88,
+        "last_token": 95
+      },
+      "text_ref": {
+        "field": "speech",
+        "start": 153,
+        "end": 161
+      },
+      "display_ref": {
+        "field": "display",
+        "start": 153,
+        "end": 161
+      },
+      "mapping_scope": "segment",
+      "segment": "s2"
+    },
+    {
+      "kind": "phrase",
+      "label": "பாரு,",
+      "start": 1200,
+      "end": 12600,
+      "source": "native_model",
+      "mapping": {
+        "method": "contextual_word_union",
+        "first_word": 0,
+        "stop_word": 1
+      },
+      "text_ref": {
+        "field": "speech",
+        "start": 0,
+        "end": 5
+      },
+      "display_ref": {
+        "field": "display",
+        "start": 0,
+        "end": 5
+      },
+      "mapping_scope": "segment",
+      "segment": "s1"
+    },
+    {
+      "kind": "phrase",
+      "label": "மழை வந்துடுச்சு!",
+      "start": 19800,
+      "end": 43200,
+      "source": "native_model",
+      "mapping": {
+        "method": "contextual_word_union",
+        "first_word": 1,
+        "stop_word": 3
+      },
+      "text_ref": {
+        "field": "speech",
+        "start": 6,
+        "end": 22
+      },
+      "display_ref": {
+        "field": "display",
+        "start": 6,
+        "end": 22
+      },
+      "mapping_scope": "segment",
+      "segment": "s1"
+    },
+    {
+      "kind": "phrase",
+      "label": "மழை பெய்ஞ்சதும் மண் வாசனை எவ்வளவு நல்லா இருக்கு,",
+      "start": 53400,
+      "end": 126600,
+      "source": "native_model",
+      "mapping": {
+        "method": "contextual_word_union",
+        "first_word": 3,
+        "stop_word": 10
+      },
+      "text_ref": {
+        "field": "speech",
+        "start": 23,
+        "end": 71
+      },
+      "display_ref": {
+        "field": "display",
+        "start": 23,
+        "end": 71
+      },
+      "mapping_scope": "segment",
+      "segment": "s1"
+    },
+    {
+      "kind": "phrase",
+      "label": "இல்லையா?",
+      "start": 135600,
+      "end": 145800,
+      "source": "native_model",
+      "mapping": {
+        "method": "contextual_word_union",
+        "first_word": 10,
+        "stop_word": 11
+      },
+      "text_ref": {
+        "field": "speech",
+        "start": 72,
+        "end": 80
+      },
+      "display_ref": {
+        "field": "display",
+        "start": 72,
+        "end": 80
+      },
+      "mapping_scope": "segment",
+      "segment": "s1"
+    },
+    {
+      "kind": "phrase",
+      "label": "பாரு,",
+      "start": 156000,
+      "end": 167400,
+      "source": "native_model",
+      "mapping": {
+        "method": "contextual_word_union",
+        "first_word": 0,
+        "stop_word": 1
+      },
+      "text_ref": {
+        "field": "speech",
+        "start": 81,
+        "end": 86
+      },
+      "display_ref": {
+        "field": "display",
+        "start": 81,
+        "end": 86
+      },
+      "mapping_scope": "segment",
+      "segment": "s2"
+    },
+    {
+      "kind": "phrase",
+      "label": "மழை வந்துடுச்சு!",
+      "start": 174600,
+      "end": 198000,
+      "source": "native_model",
+      "mapping": {
+        "method": "contextual_word_union",
+        "first_word": 1,
+        "stop_word": 3
+      },
+      "text_ref": {
+        "field": "speech",
+        "start": 87,
+        "end": 103
+      },
+      "display_ref": {
+        "field": "display",
+        "start": 87,
+        "end": 103
+      },
+      "mapping_scope": "segment",
+      "segment": "s2"
+    },
+    {
+      "kind": "phrase",
+      "label": "மழை பெய்ஞ்சதும் மண் வாசனை எவ்வளவு நல்லா இருக்கு,",
+      "start": 208200,
+      "end": 281400,
+      "source": "native_model",
+      "mapping": {
+        "method": "contextual_word_union",
+        "first_word": 3,
+        "stop_word": 10
+      },
+      "text_ref": {
+        "field": "speech",
+        "start": 104,
+        "end": 152
+      },
+      "display_ref": {
+        "field": "display",
+        "start": 104,
+        "end": 152
+      },
+      "mapping_scope": "segment",
+      "segment": "s2"
+    },
+    {
+      "kind": "phrase",
+      "label": "இல்லையா?",
+      "start": 290400,
+      "end": 300600,
+      "source": "native_model",
+      "mapping": {
+        "method": "contextual_word_union",
+        "first_word": 10,
+        "stop_word": 11
+      },
+      "text_ref": {
+        "field": "speech",
+        "start": 153,
+        "end": 161
+      },
+      "display_ref": {
+        "field": "display",
+        "start": 153,
+        "end": 161
+      },
+      "mapping_scope": "segment",
+      "segment": "s2"
+    }
+  ],
+  "checks": {
+    "total_samples": true,
+    "audio_hash": true,
+    "segment_audio_byte_exact": true,
+    "gaps_silent": true,
+    "records_offset_exactly": true,
+    "records_within_own_segment": true,
+    "text_slices_valid": true,
+    "status_preserved": true
+  }
+}

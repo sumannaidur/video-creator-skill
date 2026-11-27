@@ -1,0 +1,72 @@
+{
+  "store": "D:/video-creator-skill/experiments/E14/p016-mithi/integration/prefs.json",
+  "saved_exists": false,
+  "effective": {
+    "locale": "hi-IN",
+    "narration": {
+      "provider": "auto",
+      "voice": "auto",
+      "accent": null,
+      "tone": "conversational"
+    },
+    "style": "auto",
+    "duration_seconds": 60,
+    "orientation": "vertical",
+    "resolution": 1080,
+    "fps": 30,
+    "captions": {
+      "enabled": true,
+      "burn_in": true,
+      "subtitle_files": [
+        "srt",
+        "vtt"
+      ]
+    },
+    "music": {
+      "enabled": true,
+      "level": "subtle"
+    },
+    "sfx": {
+      "enabled": true,
+      "density": "sparse"
+    },
+    "review_mode": "guided",
+    "output_dir": null,
+    "cost_policy": "local-only"
+  },
+  "source": {
+    "locale": "request",
+    "narration": {
+      "provider": "default",
+      "voice": "default",
+      "accent": "default",
+      "tone": "default"
+    },
+    "style": "default",
+    "duration_seconds": "default",
+    "orientation": "default",
+    "resolution": "default",
+    "fps": "default",
+    "captions": {
+      "enabled": "default",
+      "burn_in": "default",
+      "subtitle_files": "default"
+    },
+    "music": {
+      "enabled": "default",
+      "level": "default"
+    },
+    "sfx": {
+      "enabled": "default",
+      "density": "default"
+    },
+    "review_mode": "default",
+    "output_dir": "default",
+    "cost_policy": "default"
+  },
+  "creative_decisions_left_to_agent": [
+    "narration.provider",
+    "narration.voice",
+    "style"
+  ]
+}

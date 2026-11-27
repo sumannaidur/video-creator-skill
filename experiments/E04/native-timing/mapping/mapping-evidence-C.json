@@ -1,0 +1,512 @@
+{
+  "versions": {
+    "kokoro-onnx": "0.6.1",
+    "phonemizer": "3.6.0",
+    "espeakng-loader": "0.2.4"
+  },
+  "captures": [
+    {
+      "passage": "C",
+      "run_id": "cb678298c0504880b9381c94ffa162db",
+      "sha256": "2b67a558571cc63755efcb688034b99bcb9e3aa41ff6a4303f2c2e8dd16293a1",
+      "marked": "ˈaːɟ|hˌəm|sikʰˈẽːɡeː|kˈɪ|bˈaːdəl|kˈɛːseː|bˈʌntˌeː|hɛ̃|hˈʌʋaː|mẽː|mɔːɟˈuːd|nˈʌmi|ʈʰˈʌɳɖi|hˈoːkəɾ|pˈaːni|ki|cʰˈoːʈi|bˈũdõ|mẽː|bˈʌdəl|ɟˈaːti|hɛː|",
+      "groups": 22,
+      "separator_roundtrip_exact": true,
+      "positional_gate": true,
+      "source_is_nfc": true,
+      "isolated_exact": false,
+      "isolated_diff": [
+        {
+          "operation": "delete",
+          "isolated": [
+            63,
+            64
+          ],
+          "captured": [
+            63,
+            63
+          ],
+          "from_symbols": "ˈ",
+          "to_symbols": ""
+        },
+        {
+          "operation": "delete",
+          "isolated": [
+            126,
+            127
+          ],
+          "captured": [
+            125,
+            125
+          ],
+          "from_symbols": "ˈ",
+          "to_symbols": ""
+        }
+      ],
+      "words": [
+        {
+          "index": 0,
+          "text_ref": {
+            "field": "speech",
+            "start": 0,
+            "end": 2
+          },
+          "spoken": "आज",
+          "backend_group": "ˈaːɟ",
+          "isolated": "ˈaːɟ",
+          "prefix": "ˈaːɟ",
+          "prefix_exact": true,
+          "prefix_agrees_ignoring_stress": true,
+          "isolated_agrees_ignoring_stress": true,
+          "repeated_backend_group": false,
+          "method": "full_context_espeak_separator",
+          "first_symbol": 0,
+          "last_symbol": 3,
+          "mapped": true
+        },
+        {
+          "index": 1,
+          "text_ref": {
+            "field": "speech",
+            "start": 3,
+            "end": 5
+          },
+          "spoken": "हम",
+          "backend_group": "hˌəm",
+          "isolated": "hˌəm",
+          "prefix": "ˈaːɟ hˌəm",
+          "prefix_exact": true,
+          "prefix_agrees_ignoring_stress": true,
+          "isolated_agrees_ignoring_stress": true,
+          "repeated_backend_group": false,
+          "method": "full_context_espeak_separator",
+          "first_symbol": 5,
+          "last_symbol": 8,
+          "mapped": true
+        },
+        {
+          "index": 2,
+          "text_ref": {
+            "field": "speech",
+            "start": 6,
+            "end": 13
+          },
+          "spoken": "सीखेंगे",
+          "backend_group": "sikʰˈẽːɡeː",
+          "isolated": "sikʰˈẽːɡeː",
+          "prefix": "ˈaːɟ hˌəm sikʰˈẽːɡeː",
+          "prefix_exact": true,
+          "prefix_agrees_ignoring_stress": true,
+          "isolated_agrees_ignoring_stress": true,
+          "repeated_backend_group": false,
+          "method": "full_context_espeak_separator",
+          "first_symbol": 10,
+          "last_symbol": 20,
+          "mapped": true
+        },
+        {
+          "index": 3,
+          "text_ref": {
+            "field": "speech",
+            "start": 14,
+            "end": 16
+          },
+          "spoken": "कि",
+          "backend_group": "kˈɪ",
+          "isolated": "kˈɪ",
+          "prefix": "ˈaːɟ hˌəm sikʰˈẽːɡeː kˈɪ",
+          "prefix_exact": true,
+          "prefix_agrees_ignoring_stress": true,
+          "isolated_agrees_ignoring_stress": true,
+          "repeated_backend_group": false,
+          "method": "full_context_espeak_separator",
+          "first_symbol": 22,
+          "last_symbol": 24,
+          "mapped": true
+        },
+        {
+          "index": 4,
+          "text_ref": {
+            "field": "speech",
+            "start": 17,
+            "end": 21
+          },
+          "spoken": "बादल",
+          "backend_group": "bˈaːdəl",
+          "isolated": "bˈaːdəl",
+          "prefix": "ˈaːɟ hˌəm sikʰˈẽːɡeː kˈɪ bˈaːdəl",
+          "prefix_exact": true,
+          "prefix_agrees_ignoring_stress": true,
+          "isolated_agrees_ignoring_stress": true,
+          "repeated_backend_group": false,
+          "method": "full_context_espeak_separator",
+          "first_symbol": 26,
+          "last_symbol": 32,
+          "mapped": true
+        },
+        {
+          "index": 5,
+          "text_ref": {
+            "field": "speech",
+            "start": 22,
+            "end": 26
+          },
+          "spoken": "कैसे",
+          "backend_group": "kˈɛːseː",
+          "isolated": "kˈɛːseː",
+          "prefix": "ˈaːɟ hˌəm sikʰˈẽːɡeː kˈɪ bˈaːdəl kˈɛːseː",
+          "prefix_exact": true,
+          "prefix_agrees_ignoring_stress": true,
+          "isolated_agrees_ignoring_stress": true,
+          "repeated_backend_group": false,
+          "method": "full_context_espeak_separator",
+          "first_symbol": 34,
+          "last_symbol": 40,
+          "mapped": true
+        },
+        {
+          "index": 6,
+          "text_ref": {
+            "field": "speech",
+            "start": 27,
+            "end": 31
+          },
+          "spoken": "बनते",
+          "backend_group": "bˈʌntˌeː",
+          "isolated": "bˈʌntˌeː",
+          "prefix": "ˈaːɟ hˌəm sikʰˈẽːɡeː kˈɪ bˈaːdəl kˈɛːseː bˈʌntˌeː",
+          "prefix_exact": true,
+          "prefix_agrees_ignoring_stress": true,
+          "isolated_agrees_ignoring_stress": true,
+          "repeated_backend_group": false,
+          "method": "full_context_espeak_separator",
+          "first_symbol": 42,
+          "last_symbol": 49,
+          "mapped": true
+        },
+        {
+          "index": 7,
+          "text_ref": {
+            "field": "speech",
+            "start": 32,
+            "end": 36
+          },
+          "spoken": "हैं।",
+          "backend_group": "hɛ̃",
+          "isolated": "hɛ̃",
+          "prefix": "ˈaːɟ hˌəm sikʰˈẽːɡeː kˈɪ bˈaːdəl kˈɛːseː bˈʌntˌeː hɛ̃",
+          "prefix_exact": true,
+          "prefix_agrees_ignoring_stress": true,
+          "isolated_agrees_ignoring_stress": true,
+          "repeated_backend_group": false,
+          "method": "full_context_espeak_separator",
+          "first_symbol": 51,
+          "last_symbol": 53,
+          "mapped": true
+        },
+        {
+          "index": 8,
+          "text_ref": {
+            "field": "speech",
+            "start": 37,
+            "end": 40
+          },
+          "spoken": "हवा",
+          "backend_group": "hˈʌʋaː",
+          "isolated": "hˈʌʋaː",
+          "prefix": "ˈaːɟ hˌəm sikʰˈẽːɡeː kˈɪ bˈaːdəl kˈɛːseː bˈʌntˌeː hɛ̃ hˈʌʋaː",
+          "prefix_exact": true,
+          "prefix_agrees_ignoring_stress": true,
+          "isolated_agrees_ignoring_stress": true,
+          "repeated_backend_group": false,
+          "method": "full_context_espeak_separator",
+          "first_symbol": 55,
+          "last_symbol": 60,
+          "mapped": true
+        },
+        {
+          "index": 9,
+          "text_ref": {
+            "field": "speech",
+            "start": 41,
+            "end": 44
+          },
+          "spoken": "में",
+          "backend_group": "mẽː",
+          "isolated": "mˈẽː",
+          "prefix": "ˈaːɟ hˌəm sikʰˈẽːɡeː kˈɪ bˈaːdəl kˈɛːseː bˈʌntˌeː hɛ̃ hˈʌʋaː mˈẽː",
+          "prefix_exact": false,
+          "prefix_agrees_ignoring_stress": true,
+          "isolated_agrees_ignoring_stress": true,
+          "repeated_backend_group": true,
+          "method": "full_context_espeak_separator",
+          "first_symbol": 62,
+          "last_symbol": 65,
+          "mapped": true
+        },
+        {
+          "index": 10,
+          "text_ref": {
+            "field": "speech",
+            "start": 45,
+            "end": 50
+          },
+          "spoken": "मौजूद",
+          "backend_group": "mɔːɟˈuːd",
+          "isolated": "mɔːɟˈuːd",
+          "prefix": "ˈaːɟ hˌəm sikʰˈẽːɡeː kˈɪ bˈaːdəl kˈɛːseː bˈʌntˌeː hɛ̃ hˈʌʋaː mẽː mɔːɟˈuːd",
+          "prefix_exact": true,
+          "prefix_agrees_ignoring_stress": true,
+          "isolated_agrees_ignoring_stress": true,
+          "repeated_backend_group": false,
+          "method": "full_context_espeak_separator",
+          "first_symbol": 67,
+          "last_symbol": 74,
+          "mapped": true
+        },
+        {
+          "index": 11,
+          "text_ref": {
+            "field": "speech",
+            "start": 51,
+            "end": 54
+          },
+          "spoken": "नमी",
+          "backend_group": "nˈʌmi",
+          "isolated": "nˈʌmi",
+          "prefix": "ˈaːɟ hˌəm sikʰˈẽːɡeː kˈɪ bˈaːdəl kˈɛːseː bˈʌntˌeː hɛ̃ hˈʌʋaː mẽː mɔːɟˈuːd nˈʌmi",
+          "prefix_exact": true,
+          "prefix_agrees_ignoring_stress": true,
+          "isolated_agrees_ignoring_stress": true,
+          "repeated_backend_group": false,
+          "method": "full_context_espeak_separator",
+          "first_symbol": 76,
+          "last_symbol": 80,
+          "mapped": true
+        },
+        {
+          "index": 12,
+          "text_ref": {
+            "field": "speech",
+            "start": 55,
+            "end": 59
+          },
+          "spoken": "ठंडी",
+          "backend_group": "ʈʰˈʌɳɖi",
+          "isolated": "ʈʰˈʌɳɖi",
+          "prefix": "ˈaːɟ hˌəm sikʰˈẽːɡeː kˈɪ bˈaːdəl kˈɛːseː bˈʌntˌeː hɛ̃ hˈʌʋaː mẽː mɔːɟˈuːd nˈʌmi ʈʰˈʌɳɖi",
+          "prefix_exact": true,
+          "prefix_agrees_ignoring_stress": true,
+          "isolated_agrees_ignoring_stress": true,
+          "repeated_backend_group": false,
+          "method": "full_context_espeak_separator",
+          "first_symbol": 82,
+          "last_symbol": 88,
+          "mapped": true
+        },
+        {
+          "index": 13,
+          "text_ref": {
+            "field": "speech",
+            "start": 60,
+            "end": 64
+          },
+          "spoken": "होकर",
+          "backend_group": "hˈoːkəɾ",
+          "isolated": "hˈoːkəɾ",
+          "prefix": "ˈaːɟ hˌəm sikʰˈẽːɡeː kˈɪ bˈaːdəl kˈɛːseː bˈʌntˌeː hɛ̃ hˈʌʋaː mẽː mɔːɟˈuːd nˈʌmi ʈʰˈʌɳɖi hˈoːkəɾ",
+          "prefix_exact": true,
+          "prefix_agrees_ignoring_stress": true,
+          "isolated_agrees_ignoring_stress": true,
+          "repeated_backend_group": false,
+          "method": "full_context_espeak_separator",
+          "first_symbol": 90,
+          "last_symbol": 96,
+          "mapped": true
+        },
+        {
+          "index": 14,
+          "text_ref": {
+            "field": "speech",
+            "start": 65,
+            "end": 69
+          },
+          "spoken": "पानी",
+          "backend_group": "pˈaːni",
+          "isolated": "pˈaːni",
+          "prefix": "ˈaːɟ hˌəm sikʰˈẽːɡeː kˈɪ bˈaːdəl kˈɛːseː bˈʌntˌeː hɛ̃ hˈʌʋaː mẽː mɔːɟˈuːd nˈʌmi ʈʰˈʌɳɖi hˈoːkəɾ pˈaːni",
+          "prefix_exact": true,
+          "prefix_agrees_ignoring_stress": true,
+          "isolated_agrees_ignoring_stress": true,
+          "repeated_backend_group": false,
+          "method": "full_context_espeak_separator",
+          "first_symbol": 98,
+          "last_symbol": 103,
+          "mapped": true
+        },
+        {
+          "index": 15,
+          "text_ref": {
+            "field": "speech",
+            "start": 70,
+            "end": 72
+          },
+          "spoken": "की",
+          "backend_group": "ki",
+          "isolated": "ki",
+          "prefix": "ˈaːɟ hˌəm sikʰˈẽːɡeː kˈɪ bˈaːdəl kˈɛːseː bˈʌntˌeː hɛ̃ hˈʌʋaː mẽː mɔːɟˈuːd nˈʌmi ʈʰˈʌɳɖi hˈoːkəɾ pˈaːni ki",
+          "prefix_exact": true,
+          "prefix_agrees_ignoring_stress": true,
+          "isolated_agrees_ignoring_stress": true,
+          "repeated_backend_group": false,
+          "method": "full_context_espeak_separator",
+          "first_symbol": 105,
+          "last_symbol": 106,
+          "mapped": true
+        },
+        {
+          "index": 16,
+          "text_ref": {
+            "field": "speech",
+            "start": 73,
+            "end": 77
+          },
+          "spoken": "छोटी",
+          "backend_group": "cʰˈoːʈi",
+          "isolated": "cʰˈoːʈi",
+          "prefix": "ˈaːɟ hˌəm sikʰˈẽːɡeː kˈɪ bˈaːdəl kˈɛːseː bˈʌntˌeː hɛ̃ hˈʌʋaː mẽː mɔːɟˈuːd nˈʌmi ʈʰˈʌɳɖi hˈoːkəɾ pˈaːni ki cʰˈoːʈi",
+          "prefix_exact": true,
+          "prefix_agrees_ignoring_stress": true,
+          "isolated_agrees_ignoring_stress": true,
+          "repeated_backend_group": false,
+          "method": "full_context_espeak_separator",
+          "first_symbol": 108,
+          "last_symbol": 114,
+          "mapped": true
+        },
+        {
+          "index": 17,
+          "text_ref": {
+            "field": "speech",
+            "start": 78,
+            "end": 84
+          },
+          "spoken": "बूंदों",
+          "backend_group": "bˈũdõ",
+          "isolated": "bˈũdõ",
+          "prefix": "ˈaːɟ hˌəm sikʰˈẽːɡeː kˈɪ bˈaːdəl kˈɛːseː bˈʌntˌeː hɛ̃ hˈʌʋaː mẽː mɔːɟˈuːd nˈʌmi ʈʰˈʌɳɖi hˈoːkəɾ pˈaːni ki cʰˈoːʈi bˈũdõ",
+          "prefix_exact": true,
+          "prefix_agrees_ignoring_stress": true,
+          "isolated_agrees_ignoring_stress": true,
+          "repeated_backend_group": false,
+          "method": "full_context_espeak_separator",
+          "first_symbol": 116,
+          "last_symbol": 122,
+          "mapped": true
+        },
+        {
+          "index": 18,
+          "text_ref": {
+            "field": "speech",
+            "start": 85,
+            "end": 88
+          },
+          "spoken": "में",
+          "backend_group": "mẽː",
+          "isolated": "mˈẽː",
+          "prefix": "ˈaːɟ hˌəm sikʰˈẽːɡeː kˈɪ bˈaːdəl kˈɛːseː bˈʌntˌeː hɛ̃ hˈʌʋaː mẽː mɔːɟˈuːd nˈʌmi ʈʰˈʌɳɖi hˈoːkəɾ pˈaːni ki cʰˈoːʈi bˈũdõ mˈẽː",
+          "prefix_exact": false,
+          "prefix_agrees_ignoring_stress": true,
+          "isolated_agrees_ignoring_stress": true,
+          "repeated_backend_group": true,
+          "method": "full_context_espeak_separator",
+          "first_symbol": 124,
+          "last_symbol": 127,
+          "mapped": true
+        },
+        {
+          "index": 19,
+          "text_ref": {
+            "field": "speech",
+            "start": 89,
+            "end": 92
+          },
+          "spoken": "बदल",
+          "backend_group": "bˈʌdəl",
+          "isolated": "bˈʌdəl",
+          "prefix": "ˈaːɟ hˌəm sikʰˈẽːɡeː kˈɪ bˈaːdəl kˈɛːseː bˈʌntˌeː hɛ̃ hˈʌʋaː mẽː mɔːɟˈuːd nˈʌmi ʈʰˈʌɳɖi hˈoːkəɾ pˈaːni ki cʰˈoːʈi bˈũdõ mẽː bˈʌdəl",
+          "prefix_exact": true,
+          "prefix_agrees_ignoring_stress": true,
+          "isolated_agrees_ignoring_stress": true,
+          "repeated_backend_group": false,
+          "method": "full_context_espeak_separator",
+          "first_symbol": 129,
+          "last_symbol": 134,
+          "mapped": true
+        },
+        {
+          "index": 20,
+          "text_ref": {
+            "field": "speech",
+            "start": 93,
+            "end": 97
+          },
+          "spoken": "जाती",
+          "backend_group": "ɟˈaːti",
+          "isolated": "ɟˈaːti",
+          "prefix": "ˈaːɟ hˌəm sikʰˈẽːɡeː kˈɪ bˈaːdəl kˈɛːseː bˈʌntˌeː hɛ̃ hˈʌʋaː mẽː mɔːɟˈuːd nˈʌmi ʈʰˈʌɳɖi hˈoːkəɾ pˈaːni ki cʰˈoːʈi bˈũdõ mẽː bˈʌdəl ɟˈaːti",
+          "prefix_exact": true,
+          "prefix_agrees_ignoring_stress": true,
+          "isolated_agrees_ignoring_stress": true,
+          "repeated_backend_group": false,
+          "method": "full_context_espeak_separator",
+          "first_symbol": 136,
+          "last_symbol": 141,
+          "mapped": true
+        },
+        {
+          "index": 21,
+          "text_ref": {
+            "field": "speech",
+            "start": 98,
+            "end": 101
+          },
+          "spoken": "है।",
+          "backend_group": "hɛː",
+          "isolated": "hɛː",
+          "prefix": "ˈaːɟ hˌəm sikʰˈẽːɡeː kˈɪ bˈaːdəl kˈɛːseː bˈʌntˌeː hɛ̃ hˈʌʋaː mẽː mɔːɟˈuːd nˈʌmi ʈʰˈʌɳɖi hˈoːkəɾ pˈaːni ki cʰˈoːʈi bˈũdõ mẽː bˈʌdəl ɟˈaːti hɛː",
+          "prefix_exact": true,
+          "prefix_agrees_ignoring_stress": true,
+          "isolated_agrees_ignoring_stress": true,
+          "repeated_backend_group": false,
+          "method": "full_context_espeak_separator",
+          "first_symbol": 143,
+          "last_symbol": 145,
+          "mapped": true
+        }
+      ],
+      "phrases": [
+        {
+          "words": [
+            0,
+            8
+          ],
+          "standalone": "ˈaːɟ hˌəm sikʰˈẽːɡeː kˈɪ bˈaːdəl kˈɛːseː bˈʌntˌeː hɛ̃",
+          "contextual": "ˈaːɟ hˌəm sikʰˈẽːɡeː kˈɪ bˈaːdəl kˈɛːseː bˈʌntˌeː hɛ̃",
+          "exact": true,
+          "mapped": true
+        },
+        {
+          "words": [
+            8,
+            22
+          ],
+          "standalone": "hˈʌʋaː mẽː mɔːɟˈuːd nˈʌmi ʈʰˈʌɳɖi hˈoːkəɾ pˈaːni ki cʰˈoːʈi bˈũdõ mẽː bˈʌdəl ɟˈaːti hɛː",
+          "contextual": "hˈʌʋaː mẽː mɔːɟˈuːd nˈʌmi ʈʰˈʌɳɖi hˈoːkəɾ pˈaːni ki cʰˈoːʈi bˈũdõ mẽː bˈʌdəl ɟˈaːti hɛː",
+          "exact": true,
+          "mapped": true
+        }
+      ]
+    }
+  ]
+}

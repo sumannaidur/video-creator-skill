@@ -1,0 +1,905 @@
+{
+  "schema": "video-creator.creative-plan",
+  "version": 1,
+  "narration": {
+    "timeline": "narration/narration-bc46667d38.timeline.json",
+    "sha256": "7b13ae42a8e5c6645dcdc9c071351fe9dc11f8a9dff264b6c08b8d9a93710866"
+  },
+  "style": "paper-explainer",
+  "style_reason": "Light, colour and air are invisible; cut-paper layers make a physical, touchable world where a white paper beam can literally split into coloured ribbons and scatter into blue paper flecks. The rooftop gives a familiar Indian everyday setting to open and close on.",
+  "story": [
+    {
+      "segment": "s1",
+      "role": "hook",
+      "idea": "A child on a sunny rooftop looks up: the sky is blue, yet sunlight looks white. Why?"
+    },
+    {
+      "segment": "s2",
+      "role": "context",
+      "idea": "White sunlight hides all the rainbow colours; a prism reveals them."
+    },
+    {
+      "segment": "s3",
+      "role": "mechanism",
+      "idea": "Tiny air molecules scatter light every way; short blue waves scatter far more than long red ones."
+    },
+    {
+      "segment": "s4",
+      "role": "example",
+      "idea": "Scattered blue reaches the eye from the whole sky, so every direction looks blue (back on the rooftop)."
+    },
+    {
+      "segment": "s5",
+      "role": "contrast",
+      "idea": "Violet scatters even more, but sunlight has less violet and eyes favour blue."
+    },
+    {
+      "segment": "s6",
+      "role": "resolution",
+      "idea": "At sunset light crosses a long path; blue is scattered away and red-orange arrives: the same rooftop turns orange."
+    }
+  ],
+  "motifs": [
+    {
+      "id": "m-beam",
+      "stands_for": "sunlight (a white paper strip that carries hidden colours)"
+    },
+    {
+      "id": "m-fleck",
+      "stands_for": "scattered blue light (small blue paper flecks)"
+    },
+    {
+      "id": "m-molecule",
+      "stands_for": "tiny air molecules (symbolic paper dots, not to scale)"
+    },
+    {
+      "id": "m-rooftop",
+      "stands_for": "the viewer's everyday world; opens the question and shows the answer"
+    },
+    {
+      "id": "m-eye",
+      "stands_for": "what our eyes receive"
+    }
+  ],
+  "assets": [
+    {
+      "id": "art-rooftop",
+      "kind": "original",
+      "description": "cut-paper Indian rooftop: parapet, water tank, clothesline, tulsi pot, town skyline"
+    },
+    {
+      "id": "art-child",
+      "kind": "original",
+      "description": "child seen from behind, pointing up"
+    },
+    {
+      "id": "art-sun",
+      "kind": "original",
+      "description": "layered paper sun with ray strips"
+    },
+    {
+      "id": "art-prism",
+      "kind": "original",
+      "description": "glass prism in paper facets with white beam and seven colour ribbons"
+    },
+    {
+      "id": "art-air",
+      "kind": "original",
+      "description": "air molecules as paper dots, scatter bursts, short and long paper waves"
+    },
+    {
+      "id": "art-eye",
+      "kind": "original",
+      "description": "large stylised paper eye"
+    },
+    {
+      "id": "art-spectrum",
+      "kind": "original",
+      "description": "illustrative sunlight colour strip (no values)"
+    },
+    {
+      "id": "art-earth",
+      "kind": "original",
+      "description": "Earth curve with atmosphere band, low sun and long light path"
+    },
+    {
+      "id": "art-textures",
+      "kind": "procedural",
+      "description": "paper fibres and tile textures from the Paper Explainer kit"
+    }
+  ],
+  "guardrails": [
+    "no wavelength numbers, percentages or the 1/lambda^4 law (not stated by the sources read)",
+    "do not name nitrogen or oxygen",
+    "molecules are symbolic dots, never drawn to scale",
+    "the violet strip and eye-sensitivity visual are illustrative only, without values",
+    "do not suggest red light is never scattered; it is scattered much less",
+    "sunset colours are illustrative; do not suggest pollution causes the sunset"
+  ],
+  "shots": [
+    {
+      "id": "rooftop",
+      "purpose": "Pose the question in a familiar place: blue sky above, white sunlight",
+      "metaphor": "child on a sunny rooftop looking up",
+      "objects": [
+        {
+          "id": "r-kid",
+          "asset": "art-child",
+          "motif": "m-rooftop"
+        },
+        {
+          "id": "r-q",
+          "asset": "art-child"
+        },
+        {
+          "id": "r-sun",
+          "asset": "art-sun",
+          "motif": "m-beam"
+        }
+      ],
+      "camera": [
+        {
+          "at": {
+            "sample": 34800,
+            "seconds": 1.45,
+            "kind": "word",
+            "label": "देखिए।",
+            "segment": "s1",
+            "timing_source": "native_model",
+            "edge": "start",
+            "offset_ms": 0
+          },
+          "intent": "tilt up from the rooftop to the open sky"
+        }
+      ],
+      "cues": [
+        {
+          "id": "kid-up",
+          "object": "r-kid",
+          "action": "child turns up and points",
+          "at": {
+            "sample": 25200,
+            "seconds": 1.05,
+            "kind": "word",
+            "label": "ऊपर",
+            "segment": "s1",
+            "timing_source": "native_model",
+            "edge": "start",
+            "offset_ms": 0
+          }
+        },
+        {
+          "id": "sky-question",
+          "object": "r-q",
+          "action": "paper question mark pops into the sky",
+          "at": {
+            "sample": 73200,
+            "seconds": 3.05,
+            "kind": "word",
+            "label": "क्यों",
+            "segment": "s1",
+            "timing_source": "native_model",
+            "edge": "start",
+            "offset_ms": 0
+          }
+        },
+        {
+          "id": "sun-white",
+          "object": "r-sun",
+          "action": "white rays unfold from the sun",
+          "at": {
+            "sample": 141600,
+            "seconds": 5.9,
+            "kind": "word",
+            "label": "सफ़ेद",
+            "segment": "s1",
+            "timing_source": "native_model",
+            "edge": "start",
+            "offset_ms": 0
+          }
+        }
+      ],
+      "transition": {
+        "type": "dissolve",
+        "reason": "dissolve through rainbow paper tiles hints that white light holds colours"
+      },
+      "start": {
+        "sample": 0,
+        "seconds": 0.0,
+        "kind": "bounds",
+        "label": "narration-start",
+        "timing_source": "narration_bounds"
+      },
+      "end": {
+        "sample": 179400,
+        "seconds": 7.475
+      }
+    },
+    {
+      "id": "prism",
+      "purpose": "White light contains all colours; a prism separates them",
+      "metaphor": "a sunbeam entering a dark paper room and a glass prism",
+      "start": {
+        "sample": 179400,
+        "seconds": 7.475,
+        "kind": "segment",
+        "label": "s2",
+        "segment": null,
+        "timing_source": "segment_boundary",
+        "edge": "start",
+        "offset_ms": 0
+      },
+      "objects": [
+        {
+          "id": "p-beam",
+          "asset": "art-prism",
+          "motif": "m-beam"
+        },
+        {
+          "id": "p-hidden",
+          "asset": "art-prism"
+        },
+        {
+          "id": "p-prism",
+          "asset": "art-prism"
+        },
+        {
+          "id": "p-fan",
+          "asset": "art-prism"
+        }
+      ],
+      "camera": [
+        {
+          "at": {
+            "sample": 308400,
+            "seconds": 12.85,
+            "kind": "word",
+            "label": "प्रिज़्म",
+            "segment": "s2",
+            "timing_source": "native_model",
+            "edge": "start",
+            "offset_ms": 0
+          },
+          "intent": "push in on the prism"
+        }
+      ],
+      "cues": [
+        {
+          "id": "beam-in",
+          "object": "p-beam",
+          "action": "white beam draws across the room",
+          "at": {
+            "sample": 229800,
+            "seconds": 9.575,
+            "kind": "word",
+            "label": "रोशनी",
+            "segment": "s2",
+            "timing_source": "native_model",
+            "edge": "start",
+            "offset_ms": 0
+          }
+        },
+        {
+          "id": "colours-hidden",
+          "object": "p-hidden",
+          "action": "faint rainbow lines glimmer inside the beam",
+          "at": {
+            "sample": 252600,
+            "seconds": 10.525,
+            "kind": "word",
+            "label": "इंद्रधनुष",
+            "segment": "s2",
+            "timing_source": "native_model",
+            "edge": "start",
+            "offset_ms": 0
+          }
+        },
+        {
+          "id": "prism-in",
+          "object": "p-prism",
+          "action": "prism slides into the beam",
+          "at": {
+            "sample": 308400,
+            "seconds": 12.85,
+            "kind": "word",
+            "label": "प्रिज़्म",
+            "segment": "s2",
+            "timing_source": "native_model",
+            "edge": "start",
+            "offset_ms": 0
+          }
+        },
+        {
+          "id": "fan-out",
+          "object": "p-fan",
+          "action": "seven ribbons fan out",
+          "at": {
+            "sample": 352800,
+            "seconds": 14.7,
+            "kind": "word",
+            "label": "अलग-अलग",
+            "segment": "s2",
+            "timing_source": "native_model",
+            "edge": "start",
+            "offset_ms": 0
+          }
+        }
+      ],
+      "transition": {
+        "type": "sheet",
+        "reason": "a printed sky sheet carries us up into the air"
+      },
+      "end": {
+        "sample": 405000,
+        "seconds": 16.875
+      }
+    },
+    {
+      "id": "air",
+      "purpose": "Air molecules scatter light in every direction",
+      "metaphor": "zooming into the sky where the beam meets tiny paper dots",
+      "start": {
+        "sample": 405000,
+        "seconds": 16.875,
+        "kind": "segment",
+        "label": "s3",
+        "segment": null,
+        "timing_source": "segment_boundary",
+        "edge": "start",
+        "offset_ms": 0
+      },
+      "objects": [
+        {
+          "id": "a-beam",
+          "asset": "art-air",
+          "motif": "m-beam"
+        },
+        {
+          "id": "a-dots",
+          "asset": "art-air",
+          "motif": "m-molecule"
+        },
+        {
+          "id": "a-burst",
+          "asset": "art-air",
+          "motif": "m-fleck"
+        }
+      ],
+      "camera": [
+        {
+          "at": {
+            "sample": 507600,
+            "seconds": 21.15,
+            "kind": "word",
+            "label": "अणु",
+            "segment": "s3",
+            "timing_source": "native_model",
+            "edge": "start",
+            "offset_ms": 0
+          },
+          "intent": "zoom towards one molecule"
+        }
+      ],
+      "cues": [
+        {
+          "id": "air-hit",
+          "object": "a-beam",
+          "action": "beam reaches the air",
+          "at": {
+            "sample": 456600,
+            "seconds": 19.025,
+            "kind": "word",
+            "label": "टकराती",
+            "segment": "s3",
+            "timing_source": "native_model",
+            "edge": "start",
+            "offset_ms": 0
+          }
+        },
+        {
+          "id": "molecules-in",
+          "object": "a-dots",
+          "action": "molecule dots pop in",
+          "at": {
+            "sample": 507600,
+            "seconds": 21.15,
+            "kind": "word",
+            "label": "अणु",
+            "segment": "s3",
+            "timing_source": "native_model",
+            "edge": "start",
+            "offset_ms": 0
+          }
+        },
+        {
+          "id": "scatter-burst",
+          "object": "a-burst",
+          "action": "light bursts in all directions from a molecule",
+          "at": {
+            "sample": 542400,
+            "seconds": 22.6,
+            "kind": "word",
+            "label": "बिखेर",
+            "segment": "s3",
+            "timing_source": "native_model",
+            "edge": "start",
+            "offset_ms": 0
+          }
+        }
+      ],
+      "end": {
+        "sample": 572400,
+        "seconds": 23.85
+      }
+    },
+    {
+      "id": "waves",
+      "purpose": "Short blue waves scatter far more than long red waves",
+      "metaphor": "two paper lanes: tight blue wave and long red wave meeting a molecule",
+      "start": {
+        "sample": 572400,
+        "seconds": 23.85,
+        "kind": "word",
+        "label": "नीला",
+        "segment": "s3",
+        "timing_source": "native_model",
+        "edge": "start",
+        "offset_ms": 0
+      },
+      "objects": [
+        {
+          "id": "w-blue",
+          "asset": "art-air"
+        },
+        {
+          "id": "w-red",
+          "asset": "art-air"
+        },
+        {
+          "id": "w-splinter",
+          "asset": "art-air",
+          "motif": "m-fleck"
+        }
+      ],
+      "cues": [
+        {
+          "id": "blue-wave",
+          "object": "w-blue",
+          "action": "short blue wave draws in",
+          "at": {
+            "sample": 589200,
+            "seconds": 24.55,
+            "kind": "word",
+            "label": "छोटी",
+            "segment": "s3",
+            "timing_source": "native_model",
+            "edge": "start",
+            "offset_ms": 0
+          }
+        },
+        {
+          "id": "red-wave",
+          "object": "w-red",
+          "action": "long red wave draws in",
+          "at": {
+            "sample": 652200,
+            "seconds": 27.175,
+            "kind": "word",
+            "label": "लाल",
+            "segment": "s3",
+            "timing_source": "native_model",
+            "edge": "start",
+            "offset_ms": 0
+          }
+        },
+        {
+          "id": "blue-splinters",
+          "object": "w-splinter",
+          "action": "blue wave splinters into many flecks while red continues",
+          "at": {
+            "sample": 671400,
+            "seconds": 27.975,
+            "kind": "word",
+            "label": "ज़्यादा",
+            "segment": "s3",
+            "timing_source": "native_model",
+            "edge": "start",
+            "offset_ms": 0
+          }
+        }
+      ],
+      "transition": {
+        "type": "sheet",
+        "reason": "a sheet printed with blue flecks returns us to the rooftop"
+      },
+      "end": {
+        "sample": 712800,
+        "seconds": 29.7
+      },
+      "camera": []
+    },
+    {
+      "id": "whole-sky",
+      "purpose": "Blue light reaches the eye from the whole sky",
+      "metaphor": "back on the rooftop, blue flecks converge on the child's eyes",
+      "start": {
+        "sample": 712800,
+        "seconds": 29.7,
+        "kind": "segment",
+        "label": "s4",
+        "segment": null,
+        "timing_source": "segment_boundary",
+        "edge": "start",
+        "offset_ms": 0
+      },
+      "objects": [
+        {
+          "id": "s-flecks",
+          "asset": "art-air",
+          "motif": "m-fleck"
+        },
+        {
+          "id": "s-arrows",
+          "asset": "art-air",
+          "motif": "m-eye"
+        },
+        {
+          "id": "s-glow",
+          "asset": "art-rooftop"
+        }
+      ],
+      "camera": [
+        {
+          "at": {
+            "sample": 781200,
+            "seconds": 32.55,
+            "kind": "word",
+            "label": "आसमान",
+            "segment": "s4",
+            "timing_source": "native_model",
+            "edge": "start",
+            "offset_ms": 0
+          },
+          "intent": "pull back to the whole sky"
+        }
+      ],
+      "cues": [
+        {
+          "id": "flecks-in",
+          "object": "s-flecks",
+          "action": "blue flecks fill the sky",
+          "at": {
+            "sample": 735000,
+            "seconds": 30.625,
+            "kind": "word",
+            "label": "बिखरी",
+            "segment": "s4",
+            "timing_source": "native_model",
+            "edge": "start",
+            "offset_ms": 0
+          }
+        },
+        {
+          "id": "to-eyes",
+          "object": "s-arrows",
+          "action": "flecks stream to the child's eyes from every side",
+          "at": {
+            "sample": 816000,
+            "seconds": 34.0,
+            "kind": "word",
+            "label": "आँखों",
+            "segment": "s4",
+            "timing_source": "native_model",
+            "edge": "start",
+            "offset_ms": 0
+          }
+        },
+        {
+          "id": "sky-glow",
+          "object": "s-glow",
+          "action": "the whole sky glows blue",
+          "at": {
+            "sample": 892200,
+            "seconds": 37.175,
+            "kind": "word",
+            "label": "नीला",
+            "segment": "s4",
+            "timing_source": "native_model",
+            "edge": "start",
+            "offset_ms": 0
+          }
+        }
+      ],
+      "transition": {
+        "type": "dissolve",
+        "reason": "blue and violet tiles lead into the violet question"
+      },
+      "end": {
+        "sample": 928800,
+        "seconds": 38.7
+      }
+    },
+    {
+      "id": "violet",
+      "purpose": "Why not violet: less violet in sunlight, eyes favour blue",
+      "metaphor": "a violet ribbon scattering, a sunlight colour strip with a thin violet band, and a big eye",
+      "start": {
+        "sample": 928800,
+        "seconds": 38.7,
+        "kind": "segment",
+        "label": "s5",
+        "segment": null,
+        "timing_source": "segment_boundary",
+        "edge": "start",
+        "offset_ms": 0
+      },
+      "objects": [
+        {
+          "id": "v-burst",
+          "asset": "art-air"
+        },
+        {
+          "id": "v-strip",
+          "asset": "art-spectrum"
+        },
+        {
+          "id": "v-eye",
+          "asset": "art-eye",
+          "motif": "m-eye"
+        }
+      ],
+      "cues": [
+        {
+          "id": "violet-scatter",
+          "object": "v-burst",
+          "action": "violet ribbon bursts even more",
+          "at": {
+            "sample": 982800,
+            "seconds": 40.95,
+            "kind": "word",
+            "label": "बिखरता",
+            "segment": "s5",
+            "timing_source": "native_model",
+            "edge": "start",
+            "offset_ms": 0
+          }
+        },
+        {
+          "id": "violet-less",
+          "object": "v-strip",
+          "action": "sunlight strip shows only a thin violet band",
+          "at": {
+            "sample": 1035000,
+            "seconds": 43.125,
+            "kind": "word",
+            "label": "कम",
+            "segment": "s5",
+            "timing_source": "native_model",
+            "edge": "start",
+            "offset_ms": 0
+          }
+        },
+        {
+          "id": "eye-blue",
+          "object": "v-eye",
+          "action": "eye opens and its iris catches the blue",
+          "at": {
+            "sample": 1090200,
+            "seconds": 45.425,
+            "kind": "word",
+            "label": "नीले",
+            "segment": "s5",
+            "timing_source": "native_model",
+            "edge": "start",
+            "offset_ms": 0
+          }
+        }
+      ],
+      "transition": {
+        "type": "sheet",
+        "reason": "a warm printed sheet turns the day towards evening"
+      },
+      "end": {
+        "sample": 1174800,
+        "seconds": 48.95
+      },
+      "camera": []
+    },
+    {
+      "id": "sunset",
+      "purpose": "At sunset light takes a long path; blue is scattered away",
+      "metaphor": "Earth's curve with a thin air band and a low sun's long beam",
+      "start": {
+        "sample": 1174800,
+        "seconds": 48.95,
+        "kind": "segment",
+        "label": "s6",
+        "segment": null,
+        "timing_source": "segment_boundary",
+        "edge": "start",
+        "offset_ms": 0
+      },
+      "objects": [
+        {
+          "id": "e-sun",
+          "asset": "art-earth",
+          "motif": "m-beam"
+        },
+        {
+          "id": "e-path",
+          "asset": "art-earth",
+          "motif": "m-beam"
+        },
+        {
+          "id": "e-flecks",
+          "asset": "art-earth",
+          "motif": "m-fleck"
+        }
+      ],
+      "camera": [
+        {
+          "at": {
+            "sample": 1286400,
+            "seconds": 53.6,
+            "kind": "word",
+            "label": "लंबा",
+            "segment": "s6",
+            "timing_source": "native_model",
+            "edge": "start",
+            "offset_ms": 0
+          },
+          "intent": "track along the long path"
+        }
+      ],
+      "cues": [
+        {
+          "id": "sun-low",
+          "object": "e-sun",
+          "action": "sun sinks to the horizon",
+          "at": {
+            "sample": 1224000,
+            "seconds": 51.0,
+            "kind": "word",
+            "label": "नीचे",
+            "segment": "s6",
+            "timing_source": "native_model",
+            "edge": "start",
+            "offset_ms": 0
+          }
+        },
+        {
+          "id": "long-path",
+          "object": "e-path",
+          "action": "long beam draws through the air band",
+          "at": {
+            "sample": 1286400,
+            "seconds": 53.6,
+            "kind": "word",
+            "label": "लंबा",
+            "segment": "s6",
+            "timing_source": "native_model",
+            "edge": "start",
+            "offset_ms": 0
+          }
+        },
+        {
+          "id": "blue-away",
+          "object": "e-flecks",
+          "action": "blue flecks peel off the beam",
+          "at": {
+            "sample": 1372200,
+            "seconds": 57.175,
+            "kind": "word",
+            "label": "बिखर",
+            "segment": "s6",
+            "timing_source": "native_model",
+            "edge": "start",
+            "offset_ms": 0
+          }
+        }
+      ],
+      "transition": {
+        "type": "dissolve",
+        "reason": "warm tiles bring us back to the rooftop at dusk"
+      },
+      "end": {
+        "sample": 1399800,
+        "seconds": 58.325
+      }
+    },
+    {
+      "id": "dusk",
+      "purpose": "Payoff: the same rooftop under an orange sky; one effect explains both",
+      "metaphor": "the opening rooftop at sunset",
+      "start": {
+        "sample": 1399800,
+        "seconds": 58.325,
+        "kind": "word",
+        "label": "और",
+        "segment": "s6",
+        "timing_source": "native_model",
+        "edge": "start",
+        "offset_ms": 0
+      },
+      "objects": [
+        {
+          "id": "d-glow",
+          "asset": "art-rooftop"
+        },
+        {
+          "id": "d-sun",
+          "asset": "art-sun"
+        }
+      ],
+      "camera": [
+        {
+          "at": {
+            "sample": 1442400,
+            "seconds": 60.1,
+            "kind": "word",
+            "label": "पहुँचते",
+            "segment": "s6",
+            "timing_source": "native_model",
+            "edge": "start",
+            "offset_ms": 0
+          },
+          "intent": "settle on the child and the orange sky"
+        }
+      ],
+      "cues": [
+        {
+          "id": "dusk-red",
+          "object": "d-sun",
+          "action": "orange-red light reaches the rooftop",
+          "at": {
+            "sample": 1405200,
+            "seconds": 58.55,
+            "kind": "word",
+            "label": "लाल-नारंगी",
+            "segment": "s6",
+            "timing_source": "native_model",
+            "edge": "start",
+            "offset_ms": 0
+          }
+        },
+        {
+          "id": "dusk-glow",
+          "object": "d-glow",
+          "action": "sky warms to orange",
+          "at": {
+            "sample": 1442400,
+            "seconds": 60.1,
+            "kind": "word",
+            "label": "पहुँचते",
+            "segment": "s6",
+            "timing_source": "native_model",
+            "edge": "start",
+            "offset_ms": 0
+          }
+        }
+      ],
+      "end": {
+        "sample": 1470600,
+        "seconds": 61.275
+      }
+    }
+  ],
+  "extensions": {
+    "paper-explainer": {
+      "labels": "narration words only",
+      "required_objects": "sun, prism, fan, molecules, waves, eye, colour strip, Earth path"
+    }
+  },
+  "resolution": {
+    "timeline_sha256": "7b13ae42a8e5c6645dcdc9c071351fe9dc11f8a9dff264b6c08b8d9a93710866",
+    "audio_sha256": "7d426dbe0d15596de8c96d40fcfb242fd57111a324efcbdfc7eeb503ff3c4d32",
+    "sample_rate": 24000,
+    "sample_count": 1470600,
+    "timing_status": "unreviewed",
+    "record_sources": [
+      "native_model"
+    ],
+    "run_id": "combined-f4b227fbf597cb0f3275aa35",
+    "timeline": "narration/narration-bc46667d38.timeline.json"
+  }
+}

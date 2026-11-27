@@ -1,0 +1,309 @@
+{
+  "result": "mapped",
+  "words": [
+    {
+      "label": "మరి",
+      "text_start": 0,
+      "text_end": 3,
+      "model_words": [
+        "మరి"
+      ],
+      "tokens": [
+        1,
+        5
+      ],
+      "samples": [
+        1200,
+        9000
+      ]
+    },
+    {
+      "label": "అంచు",
+      "text_start": 4,
+      "text_end": 8,
+      "model_words": [
+        "అంచు"
+      ],
+      "tokens": [
+        7,
+        11
+      ],
+      "samples": [
+        10800,
+        16800
+      ]
+    },
+    {
+      "label": "ఎందుకు?",
+      "text_start": 9,
+      "text_end": 16,
+      "model_words": [
+        "ఎందుకు?"
+      ],
+      "tokens": [
+        13,
+        20
+      ],
+      "samples": [
+        18000,
+        28800
+      ]
+    },
+    {
+      "label": "గట్టి",
+      "text_start": 17,
+      "text_end": 22,
+      "model_words": [
+        "గట్టి"
+      ],
+      "tokens": [
+        23,
+        28
+      ],
+      "samples": [
+        39000,
+        49200
+      ]
+    },
+    {
+      "label": "గాలి",
+      "text_start": 23,
+      "text_end": 27,
+      "model_words": [
+        "గాలి"
+      ],
+      "tokens": [
+        30,
+        35
+      ],
+      "samples": [
+        50400,
+        57000
+      ]
+    },
+    {
+      "label": "లాంటి",
+      "text_start": 28,
+      "text_end": 33,
+      "model_words": [
+        "లాంటి"
+      ],
+      "tokens": [
+        37,
+        43
+      ],
+      "samples": [
+        58200,
+        66000
+      ]
+    },
+    {
+      "label": "బలమైన",
+      "text_start": 34,
+      "text_end": 39,
+      "model_words": [
+        "బలమైన"
+      ],
+      "tokens": [
+        45,
+        54
+      ],
+      "samples": [
+        67200,
+        79200
+      ]
+    },
+    {
+      "label": "తోపుడు",
+      "text_start": 40,
+      "text_end": 46,
+      "model_words": [
+        "తోపుడు"
+      ],
+      "tokens": [
+        56,
+        63
+      ],
+      "samples": [
+        80400,
+        89400
+      ]
+    },
+    {
+      "label": "వస్తే,",
+      "text_start": 47,
+      "text_end": 53,
+      "model_words": [
+        "వస్తే,"
+      ],
+      "tokens": [
+        65,
+        71
+      ],
+      "samples": [
+        90600,
+        99600
+      ]
+    },
+    {
+      "label": "అదే",
+      "text_start": 54,
+      "text_end": 57,
+      "model_words": [
+        "అదే"
+      ],
+      "tokens": [
+        74,
+        78
+      ],
+      "samples": [
+        107400,
+        112800
+      ]
+    },
+    {
+      "label": "చివరి",
+      "text_start": 58,
+      "text_end": 63,
+      "model_words": [
+        "చివరి"
+      ],
+      "tokens": [
+        80,
+        86
+      ],
+      "samples": [
+        114600,
+        123000
+      ]
+    },
+    {
+      "label": "రక్షణ.",
+      "text_start": 64,
+      "text_end": 70,
+      "model_words": [
+        "రక్షణ."
+      ],
+      "tokens": [
+        88,
+        95
+      ],
+      "samples": [
+        124200,
+        133800
+      ]
+    },
+    {
+      "label": "కానీ",
+      "text_start": 71,
+      "text_end": 75,
+      "model_words": [
+        "కానీ"
+      ],
+      "tokens": [
+        98,
+        104
+      ],
+      "samples": [
+        146400,
+        156000
+      ]
+    },
+    {
+      "label": "అసలు",
+      "text_start": 76,
+      "text_end": 80,
+      "model_words": [
+        "అసలు"
+      ],
+      "tokens": [
+        106,
+        111
+      ],
+      "samples": [
+        159600,
+        168000
+      ]
+    },
+    {
+      "label": "పని",
+      "text_start": 81,
+      "text_end": 84,
+      "model_words": [
+        "పని"
+      ],
+      "tokens": [
+        113,
+        117
+      ],
+      "samples": [
+        169200,
+        174000
+      ]
+    },
+    {
+      "label": "మాత్రం",
+      "text_start": 85,
+      "text_end": 91,
+      "model_words": [
+        "మాత్రం"
+      ],
+      "tokens": [
+        119,
+        126
+      ],
+      "samples": [
+        175200,
+        184200
+      ]
+    },
+    {
+      "label": "ఈ",
+      "text_start": 92,
+      "text_end": 93,
+      "model_words": [
+        "ఈ"
+      ],
+      "tokens": [
+        128,
+        130
+      ],
+      "samples": [
+        187200,
+        190200
+      ]
+    },
+    {
+      "label": "చిన్న",
+      "text_start": 94,
+      "text_end": 99,
+      "model_words": [
+        "చిన్న"
+      ],
+      "tokens": [
+        132,
+        137
+      ],
+      "samples": [
+        192000,
+        199800
+      ]
+    },
+    {
+      "label": "వాలుదే!",
+      "text_start": 100,
+      "text_end": 107,
+      "model_words": [
+        "వాలుదే!"
+      ],
+      "tokens": [
+        139,
+        147
+      ],
+      "samples": [
+        201000,
+        210000
+      ]
+    }
+  ]
+}

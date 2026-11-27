@@ -1,0 +1,378 @@
+[
+  {
+    "name": "paper-en-IN: phrase and word-group caption artifacts build; SRT/VTT carry the cue text unchanged",
+    "ok": true,
+    "err": "",
+    "cues": [
+      "Sun rises,",
+      "leaf grows.",
+      "Rain falls."
+    ]
+  },
+  {
+    "name": "paper-en-IN: framed keyframes render with every speech-cue check",
+    "ok": true,
+    "cues": 4,
+    "presentation": "framed",
+    "out": "keyframes only: 4 keyframes, 4 cue checks passed\n"
+  },
+  {
+    "name": "paper-en-IN: full keyframes render with every speech-cue check",
+    "ok": true,
+    "cues": 4,
+    "presentation": "full-bleed",
+    "out": "keyframes only: 4 keyframes, 4 cue checks passed\n"
+  },
+  {
+    "name": "paper-en-IN: full preflight passes every frame with no unsupported checks",
+    "ok": true,
+    "defects": [],
+    "out": "preflight passed: 156 frames, 0 defect(s), 0 unsupported check(s); 1.6 s\n"
+  },
+  {
+    "name": "paper-en-IN: rendering leaves the caption artifacts and SRT/VTT untouched",
+    "ok": true
+  },
+  {
+    "name": "paper-te-IN: phrase and word-group caption artifacts build; SRT/VTT carry the cue text unchanged",
+    "ok": true,
+    "err": "",
+    "cues": [
+      "సూర్యుడు ఉదయిస్తాడు,",
+      "ఆకు పెరుగుతుంది.",
+      "వాన కురుస్తుంది."
+    ]
+  },
+  {
+    "name": "paper-te-IN: framed keyframes render with every speech-cue check",
+    "ok": true,
+    "cues": 4,
+    "presentation": "framed",
+    "out": "keyframes only: 4 keyframes, 4 cue checks passed\n"
+  },
+  {
+    "name": "paper-te-IN: full keyframes render with every speech-cue check",
+    "ok": true,
+    "cues": 4,
+    "presentation": "full-bleed",
+    "out": "keyframes only: 4 keyframes, 4 cue checks passed\n"
+  },
+  {
+    "name": "paper-te-IN: full preflight passes every frame with no unsupported checks",
+    "ok": true,
+    "defects": [],
+    "out": "preflight passed: 156 frames, 0 defect(s), 0 unsupported check(s); 1.6 s\n"
+  },
+  {
+    "name": "paper-te-IN: rendering leaves the caption artifacts and SRT/VTT untouched",
+    "ok": true
+  },
+  {
+    "name": "tech-en-IN: phrase and word-group caption artifacts build; SRT/VTT carry the cue text unchanged",
+    "ok": true,
+    "err": "",
+    "cues": [
+      "Your message leaves the",
+      "phone as tiny packets.",
+      "Routers pass each one",
+      "along the fastest path."
+    ]
+  },
+  {
+    "name": "tech-en-IN: framed keyframes render with every speech-cue check",
+    "ok": true,
+    "cues": 4,
+    "presentation": "framed",
+    "out": "keyframes only: 4 keyframes, 4 cue checks passed\n"
+  },
+  {
+    "name": "tech-en-IN: full keyframes render with every speech-cue check",
+    "ok": true,
+    "cues": 4,
+    "presentation": "full-bleed",
+    "out": "keyframes only: 4 keyframes, 4 cue checks passed\n"
+  },
+  {
+    "name": "tech-en-IN: full preflight passes every frame with no unsupported checks",
+    "ok": true,
+    "defects": [],
+    "out": "preflight passed: 180 frames, 0 defect(s), 0 unsupported check(s); 1.8 s\n"
+  },
+  {
+    "name": "tech-en-IN: rendering leaves the caption artifacts and SRT/VTT untouched",
+    "ok": true
+  },
+  {
+    "name": "tech-te-IN: phrase and word-group caption artifacts build; SRT/VTT carry the cue text unchanged",
+    "ok": true,
+    "err": "",
+    "cues": [
+      "మీ సందేశం చిన్న ప్యాకెట్లుగా",
+      "ఫోన్ నుంచి బయలుదేరుతుంది.",
+      "రౌటర్లు ప్రతి ప్యాకెట్‌ను వేగమైన",
+      "దారిలో పంపుతాయి."
+    ]
+  },
+  {
+    "name": "tech-te-IN: framed keyframes render with every speech-cue check",
+    "ok": true,
+    "cues": 4,
+    "presentation": "framed",
+    "out": "keyframes only: 4 keyframes, 4 cue checks passed\n"
+  },
+  {
+    "name": "tech-te-IN: full keyframes render with every speech-cue check",
+    "ok": true,
+    "cues": 4,
+    "presentation": "full-bleed",
+    "out": "keyframes only: 4 keyframes, 4 cue checks passed\n"
+  },
+  {
+    "name": "tech-te-IN: full preflight passes every frame with no unsupported checks",
+    "ok": true,
+    "defects": [],
+    "out": "preflight passed: 180 frames, 0 defect(s), 0 unsupported check(s); 1.7 s\n"
+  },
+  {
+    "name": "tech-te-IN: full-landscape preflight passes every frame with no unsupported checks",
+    "ok": true,
+    "defects": [],
+    "out": "preflight passed: 180 frames, 0 defect(s), 0 unsupported check(s); 1.8 s\n"
+  },
+  {
+    "name": "tech-te-IN: framed preflight passes every frame with no unsupported checks",
+    "ok": true,
+    "defects": [],
+    "out": "preflight passed: 180 frames, 0 defect(s), 0 unsupported check(s); 1.7 s\n"
+  },
+  {
+    "name": "tech-te-IN: rendering leaves the caption artifacts and SRT/VTT untouched",
+    "ok": true
+  },
+  {
+    "name": "paper-te-IN: caption contract carries measured word times for every word-group cue",
+    "ok": true,
+    "words": [
+      2,
+      2,
+      2
+    ]
+  },
+  {
+    "name": "paper-te-IN: the emphasised word is the latest measured word that has started (never ahead of speech)",
+    "ok": true,
+    "mismatches": [],
+    "probed": 16
+  },
+  {
+    "name": "paper-te-IN: no findings at any probed frame (safe area, labels, caption layout, caption box stable within each cue)",
+    "ok": true,
+    "findings": []
+  },
+  {
+    "name": "paper-te-IN: hook fully visible from the first frame, whole key word highlighted, gone after hook.until",
+    "ok": true,
+    "first": {
+      "opacity": 1,
+      "visible": true
+    },
+    "late": {
+      "opacity": 0,
+      "visible": false
+    },
+    "summary": {
+      "text": "ఆకు ఎలా పెరుగుతుంది?",
+      "until": 1.6,
+      "key": "ఆకు"
+    }
+  },
+  {
+    "name": "paper-te-IN: install summary reports full-bleed with emphasis on every cue",
+    "ok": true,
+    "summary": {
+      "mode": "full-bleed",
+      "emphasisCues": 3,
+      "captionCues": 3,
+      "shotPositions": {
+        "open": "lower",
+        "close": "upper"
+      }
+    }
+  },
+  {
+    "name": "paper-te-IN: legacy framed topic installs without presentation (original layout, no hook, no emphasis state)",
+    "ok": true,
+    "framed": {
+      "presentation": null,
+      "describe": {
+        "presentation": "framed",
+        "lang": "und",
+        "captionFont": "\"Nirmala UI\", \"Segoe UI\", sans-serif",
+        "labelFont": "\"Nirmala UI\",\"Segoe UI\",sans-serif"
+      },
+      "error": null,
+      "findings": []
+    }
+  },
+  {
+    "name": "paper-te-IN: a hook left on screen over a label is reported by preflight",
+    "ok": true,
+    "findings": [
+      [
+        "caption-layout",
+        "hook",
+        "hook overlaps a visible label"
+      ],
+      [
+        "caption-layout",
+        "hook",
+        "hook overlaps a visible label"
+      ],
+      [
+        "caption-layout",
+        "hook",
+        "hook overlaps a visible label"
+      ]
+    ]
+  },
+  {
+    "name": "paper-te-IN: invalid presentation specs are refused (partial-word highlight, missing highlight, unknown mode, bad caption position)",
+    "ok": true,
+    "bad": {
+      "bad-position.js": "Error: Presentation: shot open: captionPosition must be one of lower,middle,upper\n    at f",
+      "missing-highlight.js": "Error: Presentation: hook.highlight must be part of hook.text\n    at fail (<anonymous>:22:",
+      "partial-highlight.js": "Error: Presentation: hook.highlight must cover whole words\n    at fail (<anonymous>:22:35)",
+      "unknown-mode.js": "Error: Presentation: mode must be one of framed,full-bleed\n    at fail (<anonymous>:22:35)"
+    }
+  },
+  {
+    "name": "tech-te-IN: caption contract carries measured word times for every word-group cue",
+    "ok": true,
+    "words": [
+      4,
+      3,
+      4,
+      2,
+      4,
+      1
+    ]
+  },
+  {
+    "name": "tech-te-IN: the emphasised word is the latest measured word that has started (never ahead of speech)",
+    "ok": true,
+    "mismatches": [],
+    "probed": 40
+  },
+  {
+    "name": "tech-te-IN: no findings at any probed frame (safe area, labels, caption layout, caption box stable within each cue)",
+    "ok": true,
+    "findings": []
+  },
+  {
+    "name": "tech-te-IN: hook fully visible from the first frame, whole key word highlighted, gone after hook.until",
+    "ok": true,
+    "first": {
+      "opacity": 1,
+      "visible": true
+    },
+    "late": {
+      "opacity": 0,
+      "visible": false
+    },
+    "summary": {
+      "text": "మీ సందేశం ఎక్కడికి వెళ్తుంది?",
+      "until": 1.4,
+      "key": "సందేశం"
+    }
+  },
+  {
+    "name": "tech-te-IN: install summary reports full-bleed with emphasis on every cue",
+    "ok": true,
+    "summary": {
+      "mode": "full-bleed",
+      "emphasisCues": 6,
+      "captionCues": 6,
+      "shotPositions": {
+        "send": "lower",
+        "route": "lower",
+        "arrive": "lower"
+      }
+    }
+  },
+  {
+    "name": "tech-te-IN: legacy framed topic installs without presentation (original layout, no hook, no emphasis state)",
+    "ok": true,
+    "framed": {
+      "presentation": null,
+      "describe": {
+        "presentation": "framed",
+        "lang": "te-IN",
+        "captionFont": "\"Nirmala UI\", \"Segoe UI\", sans-serif",
+        "labelFont": "\"Nirmala UI\", \"Segoe UI\", sans-serif"
+      },
+      "error": null,
+      "findings": []
+    }
+  },
+  {
+    "name": "tech-te-IN: a hook left on screen over a label is reported by preflight",
+    "ok": true,
+    "findings": [
+      [
+        "caption-layout",
+        "hook",
+        "hook overlaps a visible label"
+      ],
+      [
+        "caption-layout",
+        "hook",
+        "hook overlaps a visible label"
+      ]
+    ]
+  },
+  {
+    "name": "tech-te-IN: invalid presentation specs are refused (partial-word highlight, missing highlight, unknown mode, bad caption position)",
+    "ok": true,
+    "bad": {
+      "bad-position.js": "Error: Presentation: shot send: captionPosition must be one of lower,middle,upper\n    at f",
+      "missing-highlight.js": "Error: Presentation: hook.highlight must be part of hook.text\n    at fail (<anonymous>:22:",
+      "partial-highlight.js": "Error: Presentation: hook.highlight must cover whole words\n    at fail (<anonymous>:22:35)",
+      "unknown-mode.js": "Error: Presentation: mode must be one of framed,full-bleed\n    at fail (<anonymous>:22:35)"
+    }
+  },
+  {
+    "name": "full-bleed motion preview renders, decodes and passes media checks",
+    "ok": true,
+    "out": "full-bleed-preview.mp4: 180 frames, 6.000 s; reused 0, rendered 180, corrupt 0, missing 180, invalidated 0; 21.8 s wall\n"
+  },
+  {
+    "name": "motion sheet written",
+    "ok": true,
+    "err": ""
+  },
+  {
+    "name": "paper-en-IN: before/after contact sheet written",
+    "ok": true,
+    "err": ""
+  },
+  {
+    "name": "paper-te-IN: before/after contact sheet written",
+    "ok": true,
+    "err": ""
+  },
+  {
+    "name": "tech-en-IN: before/after contact sheet written",
+    "ok": true,
+    "err": ""
+  },
+  {
+    "name": "tech-te-IN: before/after contact sheet written",
+    "ok": true,
+    "err": ""
+  },
+  {
+    "name": "installed package unchanged",
+    "ok": true,
+    "changed": []
+  }
+]

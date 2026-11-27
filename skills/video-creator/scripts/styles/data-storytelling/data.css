@@ -1,0 +1,48 @@
+/* Data Storytelling frame: an editorial page. Crisp white stage, charcoal type, one accent colour against muted grey
+   context, hairline grids. Captions sit on a charcoal card like a newsroom lower third. No textures, no shadows on data. */
+:root {
+  --vc-font: "Nirmala UI", "Segoe UI", sans-serif;
+  --ink: #1a1c1f; --accent: #e4572e; --page: #ffffff; --frame-a: #f1f1ef; --frame-b: #e6e6e3;
+}
+html, body { margin: 0; height: 100%; }
+body { background: var(--frame-b); color: var(--ink); font-family: var(--vc-font); }
+.story-frame { --x: 54px; --y: 78px; min-height: 100vh; box-sizing: border-box; padding: var(--y) var(--x);
+  background: linear-gradient(180deg, var(--frame-a), var(--frame-b)); position: relative; isolation: isolate; }
+.story-safe { height: calc(100vh - 2 * var(--y)); min-height: 0; display: grid; grid-template-rows: minmax(0, 1fr) auto; gap: 22px; }
+.story-body { position: relative; height: 100%; min-height: 0; }
+.story-title { display: none; }
+.story-stage { position: relative; height: 100%; min-height: 0; overflow: hidden; border-radius: 4px; background: var(--page); isolation: isolate;
+  box-shadow: 0 1px 0 #00000012, 0 12px 30px #0000001a; }
+.story-stage::before { content: ""; position: absolute; left: 0; right: 0; top: 0; height: 8px; background: var(--ink); z-index: 40; }
+.shot-light { display: none; }
+.route-layer { position: absolute; inset: 0; width: 100%; height: 100%; z-index: 1; pointer-events: none; }
+.route { fill: none; stroke: var(--ink); stroke-width: 2px; vector-effect: non-scaling-stroke; }
+.piece { position: absolute; transform: translate(-50%, -50%); display: grid; justify-items: center; text-align: center; }
+.piece-art { width: 100%; display: block; overflow: visible; filter: none; }
+.piece-art text { font-family: var(--vc-font); }
+.piece-label { display: block; width: max-content; max-width: 100%; white-space: nowrap; }
+.ds-bars { position: absolute; inset: 0; z-index: 33; pointer-events: none; visibility: hidden; }
+.ds-bars i { position: absolute; bottom: 0; width: calc(100% / 9 + 1px); height: 0; background: var(--ink); }
+.ds-bars i:nth-child(3n+2) { background: var(--accent); }
+footer.story-caption { align-self: end; position: relative; min-height: 184px; margin: 0; display: grid; place-items: center; box-sizing: border-box;
+  padding: 20px 40px 20px 56px; border-radius: 4px; background: var(--ink); color: #ffffff; font: 600 42px/1.5 var(--vc-font);
+  text-align: center; text-wrap: balance; }
+footer.story-caption::before { content: ""; position: absolute; left: 0; top: 0; bottom: 0; width: 14px; background: var(--accent); }
+.debug { position: absolute; top: 18px; left: var(--x); font-size: 16px; }
+@media (orientation: landscape) {
+  .story-frame { --x: 70px; --y: 42px; }
+  .story-safe { gap: 18px; }
+  footer.story-caption { min-height: 132px; font-size: 38px; padding: 16px 48px 16px 60px; }
+}
+
+/* P018.6 full-bleed presentation. Data Storytelling voice: editorial; the page fills the frame; captions are a white
+   box with the accent rule on the left; the spoken word takes the accent colour with an underline (no reflow); the hook
+   is a heavy black headline with its key word in the accent. */
+html[data-presentation="full-bleed"] { --cap-size: 46px; --cap-lh: 1.36; --cap-pad-y: 12px; --cap-pad-x: 28px; --cap-lower: 1vh; --hook-top: 1vh; }
+html[data-presentation="full-bleed"] .story-frame { background: var(--page); }
+html[data-presentation="full-bleed"] footer.story-caption { font-family: var(--vc-font); font-weight: 700; color: var(--ink); }
+html[data-presentation="full-bleed"] footer .ct { background: #ffffff; border-radius: 2px; box-shadow: inset 12px 0 0 var(--accent), 0 10px 26px #1a1c1f26; padding-left: 40px; }
+html[data-presentation="full-bleed"] footer .cw.is-active { color: var(--accent); text-decoration: underline 4px; text-underline-offset: 8px; }
+.vc-hook { font: 900 72px/1.15 var(--vc-font); color: var(--ink); }
+.vc-hook-key { color: var(--accent); }
+@media (orientation: landscape) { html[data-presentation="full-bleed"] { --cap-size: 38px; --cap-pad-y: 8px; } .vc-hook { font-size: 54px; } }

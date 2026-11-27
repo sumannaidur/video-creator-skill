@@ -1,0 +1,185 @@
+{
+  "result": "mapped",
+  "words": [
+    {
+      "label": "గుండెలో",
+      "text_start": 0,
+      "text_end": 7,
+      "method": "mithi_token_word_ownership",
+      "model_words": [
+        "గుండెలో"
+      ],
+      "group": null,
+      "tokens": [
+        1,
+        9
+      ],
+      "samples": [
+        1200,
+        15600
+      ]
+    },
+    {
+      "label": "నాలుగు",
+      "text_start": 8,
+      "text_end": 14,
+      "method": "mithi_token_word_ownership",
+      "model_words": [
+        "నాలుగు"
+      ],
+      "group": null,
+      "tokens": [
+        11,
+        18
+      ],
+      "samples": [
+        17400,
+        27600
+      ]
+    },
+    {
+      "label": "గదులు",
+      "text_start": 15,
+      "text_end": 20,
+      "method": "mithi_token_word_ownership",
+      "model_words": [
+        "గదులు"
+      ],
+      "group": null,
+      "tokens": [
+        20,
+        26
+      ],
+      "samples": [
+        28800,
+        36600
+      ]
+    },
+    {
+      "label": "ఉంటాయి.",
+      "text_start": 21,
+      "text_end": 28,
+      "method": "mithi_token_word_ownership",
+      "model_words": [
+        "ఉంటాయి."
+      ],
+      "group": null,
+      "tokens": [
+        28,
+        35
+      ],
+      "samples": [
+        37800,
+        47400
+      ]
+    },
+    {
+      "label": "పైన",
+      "text_start": 29,
+      "text_end": 32,
+      "method": "mithi_token_word_ownership",
+      "model_words": [
+        "పైన"
+      ],
+      "group": null,
+      "tokens": [
+        38,
+        42
+      ],
+      "samples": [
+        57000,
+        64200
+      ]
+    },
+    {
+      "label": "రెండు",
+      "text_start": 33,
+      "text_end": 38,
+      "method": "mithi_token_word_ownership",
+      "model_words": [
+        "రెండు"
+      ],
+      "group": null,
+      "tokens": [
+        44,
+        49
+      ],
+      "samples": [
+        65400,
+        72600
+      ]
+    },
+    {
+      "label": "కర్ణికలు,",
+      "text_start": 39,
+      "text_end": 48,
+      "method": "mithi_token_word_ownership",
+      "model_words": [
+        "కర్ణికలు,"
+      ],
+      "group": null,
+      "tokens": [
+        51,
+        61
+      ],
+      "samples": [
+        73800,
+        87600
+      ]
+    },
+    {
+      "label": "కింద",
+      "text_start": 49,
+      "text_end": 53,
+      "method": "mithi_token_word_ownership",
+      "model_words": [
+        "కింద"
+      ],
+      "group": null,
+      "tokens": [
+        64,
+        69
+      ],
+      "samples": [
+        96600,
+        106200
+      ]
+    },
+    {
+      "label": "రెండు",
+      "text_start": 54,
+      "text_end": 59,
+      "method": "mithi_token_word_ownership",
+      "model_words": [
+        "రెండు"
+      ],
+      "group": null,
+      "tokens": [
+        71,
+        76
+      ],
+      "samples": [
+        107400,
+        115200
+      ]
+    },
+    {
+      "label": "జఠరికలు.",
+      "text_start": 60,
+      "text_end": 68,
+      "method": "mithi_token_word_ownership",
+      "model_words": [
+        "జఠరికలు."
+      ],
+      "group": null,
+      "tokens": [
+        78,
+        90
+      ],
+      "samples": [
+        116400,
+        131400
+      ]
+    }
+  ]
+}

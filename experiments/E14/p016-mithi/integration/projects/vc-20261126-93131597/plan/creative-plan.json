@@ -1,0 +1,63 @@
+{
+  "schema": "video-creator.creative-plan",
+  "version": 1,
+  "narration": {
+    "timeline": "narration/narration.timeline.json",
+    "sha256": "1da7075459d1a4acf3f7418254372871212a30151fc79e95a3b3e516eaa94759"
+  },
+  "style": "paper-explainer",
+  "style_reason": "validation",
+  "guardrails": [
+    "none"
+  ],
+  "story": [
+    {
+      "segment": "s1",
+      "role": "hook",
+      "idea": "a"
+    },
+    {
+      "segment": "s2",
+      "role": "resolution",
+      "idea": "b"
+    }
+  ],
+  "motifs": [
+    {
+      "id": "m1",
+      "stands_for": "x"
+    }
+  ],
+  "assets": [
+    {
+      "id": "a1",
+      "kind": "original",
+      "description": "x"
+    }
+  ],
+  "shots": [
+    {
+      "id": "x",
+      "purpose": "p",
+      "objects": [
+        {
+          "id": "o1",
+          "asset": "a1",
+          "description": "x"
+        }
+      ],
+      "cues": [
+        {
+          "id": "rep",
+          "object": "o1",
+          "action": "a",
+          "at": {
+            "word": "बारिश",
+            "segment": "s2",
+            "occurrence": 2
+          }
+        }
+      ]
+    }
+  ]
+}

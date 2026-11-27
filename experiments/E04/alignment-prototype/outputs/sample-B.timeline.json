@@ -1,0 +1,53 @@
+{
+  "version": 1,
+  "unit": "sample",
+  "locale": "hi-IN",
+  "validation": "unreviewed",
+  "audio": {
+    "path": "experiments/E03/kokoro-hindi/samples/sample-B.wav",
+    "sha256": "358fe942bfb2762e2cd000ab06dff63eaf9a88ea987cb1df6261c77bebe74d31",
+    "sample_rate": 24000,
+    "sample_count": 214200
+  },
+  "text": {
+    "display": "पेड़ धूप रोकते हैं। पत्तियों से पानी भाप बनकर निकलता है, तो आसपास की हवा ठंडी होने में भी मदद मिल सकती है।",
+    "speech": "पेड़ धूप रोकते हैं। पत्तियों से पानी भाप बनकर निकलता है, तो आसपास की हवा ठंडी होने में भी मदद मिल सकती है।"
+  },
+  "records": [
+    {
+      "kind": "pause",
+      "label": "low energy",
+      "start": 0,
+      "end": 13101,
+      "source": "audio_boundary"
+    },
+    {
+      "kind": "pause",
+      "label": "low energy",
+      "start": 40774,
+      "end": 45847,
+      "source": "audio_boundary"
+    },
+    {
+      "kind": "pause",
+      "label": "low energy",
+      "start": 105656,
+      "end": 113035,
+      "source": "audio_boundary"
+    },
+    {
+      "kind": "pause",
+      "label": "low energy",
+      "start": 169453,
+      "end": 174556,
+      "source": "audio_boundary"
+    },
+    {
+      "kind": "pause",
+      "label": "low energy",
+      "start": 201688,
+      "end": 214200,
+      "source": "audio_boundary"
+    }
+  ]
+}

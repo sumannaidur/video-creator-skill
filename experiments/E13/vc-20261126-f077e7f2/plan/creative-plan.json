@@ -1,0 +1,747 @@
+{
+ "schema": "video-creator.creative-plan",
+ "version": 1,
+ "narration": {
+  "timeline": "narration/narration-1d6e722da7.timeline.json",
+  "sha256": "3bcf57d853b3e9f9816409c2f8196f5fb6c85d13f0d628c69d1561bc40043548"
+ },
+ "style": "paper-explainer",
+ "style_reason": "Wheels, rails, sleepers and ballast are physical, layered objects; a cut-paper diorama lets the viewer see a train from impossible angles (under the coach, along the axle, from above the bend) while staying warm and tactile. Exaggerated paper cones make an invisible, slight taper visible.",
+ "story": [
+  {
+   "segment": "s1",
+   "role": "hook",
+   "idea": "A heavy train swings round a hillside bend with no steering wheel; a girl at the fence wonders why it does not slide off."
+  },
+  {
+   "segment": "s2",
+   "role": "context",
+   "idea": "Most people credit the inner rim (flange); the real secret is the wheel shape."
+  },
+  {
+   "segment": "s3",
+   "role": "mechanism",
+   "idea": "Two wheels are fixed on one rigid axle and always turn together."
+  },
+  {
+   "segment": "s4",
+   "role": "mechanism",
+   "idea": "Each tread is slightly coned like an ice-cream cone: fat on the inside, thin on the outside."
+  },
+  {
+   "segment": "s5",
+   "role": "example",
+   "idea": "If the wheelset drifts sideways, the slope brings it back to the middle by itself."
+  },
+  {
+   "segment": "s6",
+   "role": "mechanism",
+   "idea": "On a bend the set shifts outward; the outer wheel rides its fat part and covers more distance per turn."
+  },
+  {
+   "segment": "s7",
+   "role": "contrast",
+   "idea": "The inner wheel rides its thin part and covers less; so the train follows the bend without slipping."
+  },
+  {
+   "segment": "s8",
+   "role": "resolution",
+   "idea": "The flange is the last line of defence against strong pushes like crosswinds; the real work is done by the small slope."
+  }
+ ],
+ "motifs": [
+  {
+   "id": "m-cone",
+   "stands_for": "the coned tread (an ice-cream cone; fat inside, thin outside)"
+  },
+  {
+   "id": "m-flange",
+   "stands_for": "the flange, the backup rim (marked in terracotta)"
+  },
+  {
+   "id": "m-tape",
+   "stands_for": "distance travelled per wheel turn (paper measuring tape: orange long, blue short)"
+  },
+  {
+   "id": "m-girl",
+   "stands_for": "the viewer's curiosity; opens with the question and closes with the answer"
+  },
+  {
+   "id": "m-centre",
+   "stands_for": "the middle of the track (a chalk centre mark)"
+  }
+ ],
+ "assets": [
+  {
+   "id": "art-hill",
+   "kind": "original",
+   "description": "cut-paper monsoon hillside: layered hills, tea terraces, waterfall, palms, curving track"
+  },
+  {
+   "id": "art-train",
+   "kind": "original",
+   "description": "2.5D paper train (locomotive and coaches) drawn along the curve"
+  },
+  {
+   "id": "art-girl",
+   "kind": "original",
+   "description": "girl in a school uniform, three-quarter view, jointed paper puppet with expressions"
+  },
+  {
+   "id": "art-under",
+   "kind": "original",
+   "description": "track-level view beside a coach: bogie frame, springs, wheel disc, rail, sleepers, ballast"
+  },
+  {
+   "id": "art-front",
+   "kind": "original",
+   "description": "view along the track: wheelset front view, rails in cross-section, sleepers converging to fields"
+  },
+  {
+   "id": "art-workshop",
+   "kind": "original",
+   "description": "workshop wall: pegboard tools, window light, blueprint of the wheel profile, bench with a chai glass"
+  },
+  {
+   "id": "art-cone",
+   "kind": "original",
+   "description": "paper ice-cream cone with a scoop"
+  },
+  {
+   "id": "art-top",
+   "kind": "original",
+   "description": "top-down bend: fields, trees, hut roofs, curved track and wheelset seen from above"
+  },
+  {
+   "id": "art-wind",
+   "kind": "original",
+   "description": "paper wind ribbons and rain"
+  },
+  {
+   "id": "art-textures",
+   "kind": "procedural",
+   "description": "paper fibres and tile textures from the Paper Explainer kit"
+  }
+ ],
+ "guardrails": [
+  "no numbers for weight, speed, taper or wheel size",
+  "the taper is exaggerated in all art and called slight in narration",
+  "the flange is the backup, never shown as the main guide",
+  "no cant/superelevation, no hunting oscillation",
+  "straight-track self-centring is shown only as drift and return, without more mechanism detail than the sources give",
+  "train, track and landscape are illustrative, not a specific railway"
+ ],
+ "shots": [
+  {
+   "id": "curve",
+   "purpose": "Hook: a heavy train curves along a hillside with no steering wheel; why does it not slide off?",
+   "metaphor": "a girl at a fence watching a train swing round a monsoon hillside bend",
+   "objects": [
+    {
+     "id": "c-bend",
+     "asset": "art-hill",
+     "description": "curved dashed arrow along the bend"
+    },
+    {
+     "id": "c-steer",
+     "asset": "art-train",
+     "description": "paper steering wheel"
+    },
+    {
+     "id": "c-cross",
+     "asset": "art-train",
+     "description": "red cross over the steering wheel"
+    },
+    {
+     "id": "c-q",
+     "asset": "art-girl",
+     "motif": "m-girl",
+     "description": "question mark above the girl"
+    }
+   ],
+   "camera": [
+    {
+     "at": {
+      "word": "పట్టాల"
+     },
+     "intent": "push in towards the wheels on the rails"
+    }
+   ],
+   "cues": [
+    {
+     "id": "train-bend",
+     "object": "c-bend",
+     "action": "an arrow sweeps along the bend",
+     "at": {
+      "word": "వంపు"
+     }
+    },
+    {
+     "id": "no-steer",
+     "object": "c-steer",
+     "action": "a steering wheel pops up by the engine",
+     "at": {
+      "word": "స్టీరింగ్"
+     }
+    },
+    {
+     "id": "steer-x",
+     "object": "c-cross",
+     "action": "a red cross strikes it",
+     "at": {
+      "word": "లేదు"
+     }
+    },
+    {
+     "id": "girl-q",
+     "object": "c-q",
+     "action": "question mark pops; girl points",
+     "at": {
+      "word": "జారిపోదు"
+     }
+    }
+   ],
+   "transition": {
+    "type": "dissolve",
+    "reason": "steel-and-ballast tiles drop us down to the wheels"
+   }
+  },
+  {
+   "id": "myth",
+   "purpose": "Myth versus secret: people credit the flange; the answer is the wheel shape",
+   "metaphor": "a camera at rail level beside the coach, the big wheel rolling past",
+   "start": {
+    "segment": "s2"
+   },
+   "objects": [
+    {
+     "id": "m-flange-ring",
+     "asset": "art-under",
+     "motif": "m-flange",
+     "description": "ring around the flange"
+    },
+    {
+     "id": "m-lens",
+     "asset": "art-under",
+     "description": "magnifying glass"
+    },
+    {
+     "id": "m-profile",
+     "asset": "art-under",
+     "motif": "m-cone",
+     "description": "tread profile drawn inside the lens"
+    }
+   ],
+   "camera": [
+    {
+     "at": {
+      "word": "కానీ",
+      "segment": "s2"
+     },
+     "intent": "push in to the tread"
+    }
+   ],
+   "cues": [
+    {
+     "id": "flange-ring",
+     "object": "m-flange-ring",
+     "action": "flange is ringed and tagged",
+     "at": {
+      "word": "అంచే"
+     }
+    },
+    {
+     "id": "secret-lens",
+     "object": "m-lens",
+     "action": "magnifier slides over the tread",
+     "at": {
+      "word": "రహస్యం"
+     }
+    },
+    {
+     "id": "shape-trace",
+     "object": "m-profile",
+     "action": "coned profile draws inside the lens",
+     "at": {
+      "word": "ఆకారంలో"
+     }
+    }
+   ],
+   "transition": {
+    "type": "sheet",
+    "reason": "a printed sheet of the track seen head-on turns the camera to look along the rails"
+   }
+  },
+  {
+   "id": "axle",
+   "purpose": "Two wheels on one rigid axle always turn together",
+   "metaphor": "looking along the track at the wheelset under the coach",
+   "start": {
+    "segment": "s3"
+   },
+   "objects": [
+    {
+     "id": "x-right",
+     "asset": "art-front",
+     "description": "right wheel"
+    },
+    {
+     "id": "x-axle",
+     "asset": "art-front",
+     "description": "axle"
+    },
+    {
+     "id": "x-bolts",
+     "asset": "art-front",
+     "description": "clamps where wheels meet the axle"
+    },
+    {
+     "id": "x-spin",
+     "asset": "art-front",
+     "description": "twin turning arrows"
+    }
+   ],
+   "camera": [
+    {
+     "at": {
+      "word": "అందుకే"
+     },
+     "intent": "ease back to the whole wheelset"
+    }
+   ],
+   "cues": [
+    {
+     "id": "two-wheels",
+     "object": "x-right",
+     "action": "second wheel settles beside the first",
+     "at": {
+      "word": "రెండు"
+     }
+    },
+    {
+     "id": "axle-in",
+     "object": "x-axle",
+     "action": "axle slides through both wheels",
+     "at": {
+      "word": "ఇరుసుకు"
+     }
+    },
+    {
+     "id": "clamped",
+     "object": "x-bolts",
+     "action": "clamps snap on",
+     "at": {
+      "word": "ఉంటాయి",
+      "segment": "s3"
+     }
+    },
+    {
+     "id": "turn-together",
+     "object": "x-spin",
+     "action": "matching arrows turn in step",
+     "at": {
+      "word": "కలిసే"
+     }
+    }
+   ],
+   "transition": {
+    "type": "dissolve",
+    "reason": "blueprint-blue tiles carry us into the workshop drawing"
+   }
+  },
+  {
+   "id": "cone",
+   "purpose": "The tread is slightly coned: fat inside, thin outside",
+   "metaphor": "an ice-cream cone laid against a workshop blueprint of the wheel",
+   "start": {
+    "segment": "s4"
+   },
+   "objects": [
+    {
+     "id": "k-cone",
+     "asset": "art-cone",
+     "motif": "m-cone",
+     "description": "ice-cream cone"
+    },
+    {
+     "id": "k-slope",
+     "asset": "art-workshop",
+     "motif": "m-cone",
+     "description": "slope line on the tread"
+    },
+    {
+     "id": "k-fat",
+     "asset": "art-workshop",
+     "description": "long arrow on the inner side"
+    },
+    {
+     "id": "k-thin",
+     "asset": "art-workshop",
+     "description": "short arrow on the outer side"
+    }
+   ],
+   "camera": [
+    {
+     "at": {
+      "word": "లోపలి",
+      "segment": "s4"
+     },
+     "intent": "settle on the tread and its two arrows"
+    }
+   ],
+   "cues": [
+    {
+     "id": "cone-in",
+     "object": "k-cone",
+     "action": "the ice-cream cone hops onto the drawing",
+     "at": {
+      "word": "ఐస్‌క్రీమ్"
+     }
+    },
+    {
+     "id": "slope-line",
+     "object": "k-slope",
+     "action": "the slope is traced along the tread",
+     "at": {
+      "word": "వాలుగా"
+     }
+    },
+    {
+     "id": "fat-side",
+     "object": "k-fat",
+     "action": "long arrow on the flange side",
+     "at": {
+      "word": "లావుగా"
+     }
+    },
+    {
+     "id": "thin-side",
+     "object": "k-thin",
+     "action": "short arrow on the outer side",
+     "at": {
+      "word": "సన్నగా"
+     }
+    }
+   ],
+   "transition": {
+    "type": "sheet",
+    "reason": "the blueprint sheet lifts to reveal the real track again"
+   }
+  },
+  {
+   "id": "centre",
+   "purpose": "On straight track the slope returns a drifting wheelset to the centre",
+   "metaphor": "the wheelset slides on its rails and glides back to a chalk centre mark",
+   "start": {
+    "segment": "s5"
+   },
+   "objects": [
+    {
+     "id": "n-drift",
+     "asset": "art-front",
+     "description": "sideways arrow"
+    },
+    {
+     "id": "n-slope",
+     "asset": "art-front",
+     "motif": "m-cone",
+     "description": "glowing tread slopes"
+    },
+    {
+     "id": "n-back",
+     "asset": "art-front",
+     "motif": "m-centre",
+     "description": "return arrow"
+    },
+    {
+     "id": "n-mark",
+     "asset": "art-front",
+     "motif": "m-centre",
+     "description": "centre mark lights"
+    }
+   ],
+   "camera": [
+    {
+     "at": {
+      "word": "తనంతట"
+     },
+     "intent": "settle low and close on the centred wheelset"
+    }
+   ],
+   "cues": [
+    {
+     "id": "drift",
+     "object": "n-drift",
+     "action": "wheelset drifts to one side",
+     "at": {
+      "word": "జరిగితే"
+     }
+    },
+    {
+     "id": "slope-acts",
+     "object": "n-slope",
+     "action": "the tread slopes glow",
+     "at": {
+      "word": "వాలే"
+     }
+    },
+    {
+     "id": "to-middle",
+     "object": "n-back",
+     "action": "it glides back to the middle",
+     "at": {
+      "word": "మధ్యలోకి"
+     }
+    },
+    {
+     "id": "settled",
+     "object": "n-mark",
+     "action": "centre mark lights up",
+     "at": {
+      "word": "సర్దుకుంటుంది"
+     }
+    }
+   ],
+   "transition": {
+    "type": "dissolve",
+    "reason": "green field tiles lift us up above the bend"
+   }
+  },
+  {
+   "id": "bend",
+   "purpose": "On a bend the outer wheel covers more distance per turn, the inner less",
+   "metaphor": "a bird's-eye view of the wheelset on a curve, with paper measuring tapes along each rail",
+   "start": {
+    "segment": "s6"
+   },
+   "objects": [
+    {
+     "id": "b-out",
+     "asset": "art-top",
+     "description": "outward arrow"
+    },
+    {
+     "id": "b-fat",
+     "asset": "art-top",
+     "motif": "m-cone",
+     "description": "outer wheel glows"
+    },
+    {
+     "id": "b-long",
+     "asset": "art-top",
+     "motif": "m-tape",
+     "description": "long orange tape on the outer rail"
+    },
+    {
+     "id": "b-short",
+     "asset": "art-top",
+     "motif": "m-tape",
+     "description": "short blue tape on the inner rail"
+    }
+   ],
+   "camera": [
+    {
+     "at": {
+      "word": "ఎక్కువ"
+     },
+     "intent": "pan along the outer tape"
+    },
+    {
+     "at": {
+      "word": "లోపలి",
+      "segment": "s7"
+     },
+     "intent": "drift across to the inner tape"
+    }
+   ],
+   "cues": [
+    {
+     "id": "shift-out",
+     "object": "b-out",
+     "action": "arrow shows the shift to the outer rail",
+     "at": {
+      "word": "బయటి",
+      "segment": "s6",
+      "occurrence": 1
+     }
+    },
+    {
+     "id": "outer-fat",
+     "object": "b-fat",
+     "action": "outer wheel glows on its fat part",
+     "at": {
+      "word": "లావైన"
+     }
+    },
+    {
+     "id": "long-tape",
+     "object": "b-long",
+     "action": "long tape unrolls along the outer rail",
+     "at": {
+      "word": "ఎక్కువ"
+     }
+    },
+    {
+     "id": "short-tape",
+     "object": "b-short",
+     "action": "short tape unrolls along the inner rail",
+     "at": {
+      "word": "తక్కువ"
+     }
+    }
+   ],
+   "transition": {
+    "type": "dissolve",
+    "reason": "rail-coloured tiles pull back to the hillside"
+   }
+  },
+  {
+   "id": "follow",
+   "purpose": "So the train follows the bend without slipping",
+   "metaphor": "back on the hillside: the whole train glides round the curve",
+   "start": {
+    "word": "అలా"
+   },
+   "objects": [
+    {
+     "id": "f-glow",
+     "asset": "art-hill",
+     "description": "glowing rails along the curve"
+    }
+   ],
+   "camera": [
+    {
+     "at": {
+      "word": "రైలు",
+      "segment": "s7"
+     },
+     "intent": "pull back to show the whole bend"
+    }
+   ],
+   "cues": [
+    {
+     "id": "follows",
+     "object": "f-glow",
+     "action": "rails glow as the train sweeps round",
+     "at": {
+      "word": "వంపును"
+     }
+    }
+   ],
+   "transition": {
+    "type": "sheet",
+    "reason": "a storm-grey sheet blows in with the wind"
+   }
+  },
+  {
+   "id": "guard",
+   "purpose": "The flange is the backup for strong pushes such as crosswinds",
+   "metaphor": "a gust shoves the wheelset and the flange catches it",
+   "start": {
+    "segment": "s8"
+   },
+   "objects": [
+    {
+     "id": "g-wind",
+     "asset": "art-wind",
+     "description": "wind ribbons"
+    },
+    {
+     "id": "g-push",
+     "asset": "art-front",
+     "description": "push arrow"
+    },
+    {
+     "id": "g-shield",
+     "asset": "art-front",
+     "motif": "m-flange",
+     "description": "flange glows with a shield"
+    }
+   ],
+   "camera": [
+    {
+     "at": {
+      "word": "తోపుడు"
+     },
+     "intent": "push in on the flange against the rail"
+    }
+   ],
+   "cues": [
+    {
+     "id": "gust",
+     "object": "g-wind",
+     "action": "wind ribbons stream across",
+     "at": {
+      "word": "గాలి"
+     }
+    },
+    {
+     "id": "shove",
+     "object": "g-push",
+     "action": "the wheelset is shoved sideways",
+     "at": {
+      "word": "తోపుడు"
+     }
+    },
+    {
+     "id": "flange-catch",
+     "object": "g-shield",
+     "action": "the flange catches the rail",
+     "at": {
+      "word": "రక్షణ"
+     }
+    }
+   ],
+   "transition": {
+    "type": "dissolve",
+    "reason": "warm evening tiles bring back the hillside"
+   }
+  },
+  {
+   "id": "payoff",
+   "purpose": "Payoff: the small slope does the real work",
+   "metaphor": "the same hillside at dusk; the girl holds up an ice-cream cone",
+   "start": {
+    "word": "కానీ",
+    "segment": "s8"
+   },
+   "objects": [
+    {
+     "id": "p-train",
+     "asset": "art-train",
+     "description": "train lights sweep round the bend"
+    },
+    {
+     "id": "p-cone",
+     "asset": "art-cone",
+     "motif": "m-cone",
+     "description": "girl lifts an ice-cream cone"
+    }
+   ],
+   "cues": [
+    {
+     "id": "dusk-train",
+     "object": "p-train",
+     "action": "train lights sweep round the bend",
+     "at": {
+      "word": "పని"
+     }
+    },
+    {
+     "id": "cone-up",
+     "object": "p-cone",
+     "action": "girl raises the cone",
+     "at": {
+      "word": "వాలుదే"
+     }
+    }
+   ]
+  }
+ ],
+ "extensions": {
+  "paper-explainer": {
+   "labels": "narration words only",
+   "required_objects": "train, wheels, rails, axle, wheel profile, tapes, girl"
+  }
+ }
+}

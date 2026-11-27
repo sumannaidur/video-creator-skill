@@ -1,0 +1,85 @@
+[
+  {
+    "name": "en-IN: plan resolves for the whiteboard style",
+    "ok": true,
+    "err": ""
+  },
+  {
+    "name": "en-IN: caption artifact builds with the original text",
+    "ok": true,
+    "err": ""
+  },
+  {
+    "name": "en-IN-portrait: keyframes render with speech-driven drawing cue checks",
+    "ok": true,
+    "out": "keyframes only: 4 keyframes, 5 cue checks passed\n"
+  },
+  {
+    "name": "en-IN-portrait: preflight passes every frame (caption layout and empty-caption checks included)",
+    "ok": true,
+    "out": "preflight passed: 168 frames, 0 defect(s), 0 unsupported check(s); 1.6 s\n"
+  },
+  {
+    "name": "en-IN-landscape: keyframes render with speech-driven drawing cue checks",
+    "ok": true,
+    "out": "keyframes only: 4 keyframes, 5 cue checks passed\n"
+  },
+  {
+    "name": "en-IN-landscape: preflight passes every frame (caption layout and empty-caption checks included)",
+    "ok": true,
+    "out": "preflight passed: 168 frames, 0 defect(s), 0 unsupported check(s); 1.5 s\n"
+  },
+  {
+    "name": "hi-IN: plan resolves for the whiteboard style",
+    "ok": true,
+    "err": ""
+  },
+  {
+    "name": "hi-IN: caption artifact builds with the original text",
+    "ok": true,
+    "err": ""
+  },
+  {
+    "name": "hi-IN-portrait: keyframes render with speech-driven drawing cue checks",
+    "ok": true,
+    "out": "keyframes only: 4 keyframes, 5 cue checks passed\n"
+  },
+  {
+    "name": "hi-IN-portrait: preflight passes every frame (caption layout and empty-caption checks included)",
+    "ok": true,
+    "out": "preflight passed: 168 frames, 0 defect(s), 0 unsupported check(s); 1.6 s\n"
+  },
+  {
+    "name": "erase transition active around the cut; camera moments present",
+    "ok": true,
+    "facts": {
+      "shots": [
+        [
+          "seed",
+          2,
+          "erase"
+        ],
+        [
+          "sprout",
+          2,
+          null
+        ]
+      ],
+      "mid": [
+        "erase",
+        "erase",
+        null
+      ]
+    }
+  },
+  {
+    "name": "contact sheet written",
+    "ok": true,
+    "err": ""
+  },
+  {
+    "name": "installed package unchanged",
+    "ok": true,
+    "changed": []
+  }
+]

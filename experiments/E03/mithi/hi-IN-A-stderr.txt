@@ -1,0 +1,26 @@
+W1125 13:55:01.999000 25080 Lib\site-packages\torch\distributed\elastic\multiprocessing\redirects.py:29] NOTE: Redirects are currently not supported in Windows or MacOs.
+Loading weights:   0%|          | 0/25 [00:00<?, ?it/s]Loading weights: 100%|##########| 25/25 [00:00<00:00, 617.15it/s]
+D:\video-creator-skill-experiments\E03\mithi\venv\Lib\site-packages\num2words\lang_PT_BR.py:142: SyntaxWarning: invalid escape sequence '\w'
+  if re.match('.*{} e \w*ento'.format(ext), result):
+D:\video-creator-skill-experiments\E03\mithi\venv\Lib\site-packages\num2words\lang_PT_BR.py:170: SyntaxWarning: invalid escape sequence '\s'
+  result = re.sub('\s+', ' ', result)
+Traceback (most recent call last):
+  File "D:\video-creator-skill\experiments\E03\mithi\synthesize.py", line 42, in <module>
+    audio = engine.synthesize(text, lang=lang, voice=voice)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\video-creator-skill-experiments\E03\mithi\models\mithi_tts\tts.py", line 121, in synthesize
+  File "D:\video-creator-skill-experiments\E03\mithi\models\mithi_tts\tts.py", line 108, in split
+  File "D:\video-creator-skill-experiments\E03\mithi\models\mithi_tts\frontend.py", line 194, in split_text
+  File "D:\video-creator-skill-experiments\E03\mithi\models\mithi_tts\frontend.py", line 142, in phonemes
+  File "D:\video-creator-skill-experiments\E03\mithi\models\mithi_tts\frontend.py", line 66, in _init_g2p
+  File "D:\video-creator-skill-experiments\E03\mithi\venv\Lib\site-packages\misaki\en.py", line 10, in <module>
+    import spacy
+  File "D:\video-creator-skill-experiments\E03\mithi\venv\Lib\site-packages\spacy\__init__.py", line 13, in <module>
+    from . import (
+  File "D:\video-creator-skill-experiments\E03\mithi\venv\Lib\site-packages\spacy\pipeline\__init__.py", line 2, in <module>
+    from .dep_parser import DependencyParser
+  File "spacy/pipeline/dep_parser.pyx", line 1, in init spacy.pipeline.dep_parser
+    # cython: infer_types=True, binding=True
+  File "spacy/pipeline/transition_parser.pyx", line 1, in init spacy.pipeline.transition_parser
+    # cython: infer_types=True, cdivision=True, boundscheck=False, binding=True
+ImportError: DLL load failed while importing transition_system: An Application Control policy has blocked this file.

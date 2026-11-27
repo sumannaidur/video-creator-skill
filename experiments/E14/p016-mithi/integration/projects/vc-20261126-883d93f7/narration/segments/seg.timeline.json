@@ -1,0 +1,1258 @@
+{
+  "version": 1,
+  "unit": "sample",
+  "locale": "en-IN",
+  "validation": "unreviewed",
+  "run_id": "3722022ca7aa4784b80d3740148e0fe3",
+  "timing": {
+    "method": "native_durations",
+    "provider": "mithi",
+    "word_timing": true,
+    "note": "model-predicted token durations from the same inference, mapped to words by the model's own token-word ownership"
+  },
+  "audio": {
+    "path": "narration/segments/seg.wav",
+    "sha256": "4223a5e204a9cbe758bdd1afb859e850d654f23b44d2425143a3fb29160bc15f",
+    "sample_rate": 24000,
+    "sample_count": 145200
+  },
+  "text": {
+    "display": "Look, it's raining! After the rain, the soil smells so lovely, doesn't it? Let's sit by the window.",
+    "speech": "Look, it's raining! After the rain, the soil smells so lovely, doesn't it? Let's sit by the window."
+  },
+  "records": [
+    {
+      "kind": "phoneme",
+      "label": "l",
+      "start": 1200,
+      "end": 2400,
+      "source": "native_model"
+    },
+    {
+      "kind": "phoneme",
+      "label": "ˈ",
+      "start": 2400,
+      "end": 3000,
+      "source": "native_model"
+    },
+    {
+      "kind": "phoneme",
+      "label": "ʊ",
+      "start": 3000,
+      "end": 4800,
+      "source": "native_model"
+    },
+    {
+      "kind": "phoneme",
+      "label": "k",
+      "start": 4800,
+      "end": 6000,
+      "source": "native_model"
+    },
+    {
+      "kind": "phoneme",
+      "label": "ɪ",
+      "start": 10200,
+      "end": 11400,
+      "source": "native_model"
+    },
+    {
+      "kind": "phoneme",
+      "label": "t",
+      "start": 11400,
+      "end": 13200,
+      "source": "native_model"
+    },
+    {
+      "kind": "phoneme",
+      "label": "s",
+      "start": 13200,
+      "end": 14400,
+      "source": "native_model"
+    },
+    {
+      "kind": "phoneme",
+      "label": "ɹ",
+      "start": 16200,
+      "end": 17400,
+      "source": "native_model"
+    },
+    {
+      "kind": "phoneme",
+      "label": "ˈ",
+      "start": 17400,
+      "end": 18000,
+      "source": "native_model"
+    },
+    {
+      "kind": "phoneme",
+      "label": "A",
+      "start": 18000,
+      "end": 19800,
+      "source": "native_model"
+    },
+    {
+      "kind": "phoneme",
+      "label": "n",
+      "start": 19800,
+      "end": 21600,
+      "source": "native_model"
+    },
+    {
+      "kind": "phoneme",
+      "label": "ɪ",
+      "start": 21600,
+      "end": 22800,
+      "source": "native_model"
+    },
+    {
+      "kind": "phoneme",
+      "label": "ŋ",
+      "start": 22800,
+      "end": 24000,
+      "source": "native_model"
+    },
+    {
+      "kind": "phoneme",
+      "label": "ˈ",
+      "start": 27600,
+      "end": 28200,
+      "source": "native_model"
+    },
+    {
+      "kind": "phoneme",
+      "label": "æ",
+      "start": 28200,
+      "end": 29400,
+      "source": "native_model"
+    },
+    {
+      "kind": "phoneme",
+      "label": "f",
+      "start": 29400,
+      "end": 31200,
+      "source": "native_model"
+    },
+    {
+      "kind": "phoneme",
+      "label": "t",
+      "start": 31200,
+      "end": 33000,
+      "source": "native_model"
+    },
+    {
+      "kind": "phoneme",
+      "label": "ə",
+      "start": 33000,
+      "end": 33600,
+      "source": "native_model"
+    },
+    {
+      "kind": "phoneme",
+      "label": "ɹ",
+      "start": 33600,
+      "end": 34200,
+      "source": "native_model"
+    },
+    {
+      "kind": "phoneme",
+      "label": "ð",
+      "start": 35400,
+      "end": 36000,
+      "source": "native_model"
+    },
+    {
+      "kind": "phoneme",
+      "label": "ə",
+      "start": 36000,
+      "end": 37200,
+      "source": "native_model"
+    },
+    {
+      "kind": "phoneme",
+      "label": "ɹ",
+      "start": 39000,
+      "end": 40200,
+      "source": "native_model"
+    },
+    {
+      "kind": "phoneme",
+      "label": "ˈ",
+      "start": 40200,
+      "end": 40800,
+      "source": "native_model"
+    },
+    {
+      "kind": "phoneme",
+      "label": "A",
+      "start": 40800,
+      "end": 42600,
+      "source": "native_model"
+    },
+    {
+      "kind": "phoneme",
+      "label": "n",
+      "start": 42600,
+      "end": 45600,
+      "source": "native_model"
+    },
+    {
+      "kind": "phoneme",
+      "label": "ð",
+      "start": 53400,
+      "end": 55200,
+      "source": "native_model"
+    },
+    {
+      "kind": "phoneme",
+      "label": "ə",
+      "start": 55200,
+      "end": 56400,
+      "source": "native_model"
+    },
+    {
+      "kind": "phoneme",
+      "label": "s",
+      "start": 58200,
+      "end": 59400,
+      "source": "native_model"
+    },
+    {
+      "kind": "phoneme",
+      "label": "ˈ",
+      "start": 59400,
+      "end": 60000,
+      "source": "native_model"
+    },
+    {
+      "kind": "phoneme",
+      "label": "Y",
+      "start": 60000,
+      "end": 62400,
+      "source": "native_model"
+    },
+    {
+      "kind": "phoneme",
+      "label": "l",
+      "start": 62400,
+      "end": 64800,
+      "source": "native_model"
+    },
+    {
+      "kind": "phoneme",
+      "label": "s",
+      "start": 66000,
+      "end": 67800,
+      "source": "native_model"
+    },
+    {
+      "kind": "phoneme",
+      "label": "m",
+      "start": 67800,
+      "end": 69000,
+      "source": "native_model"
+    },
+    {
+      "kind": "phoneme",
+      "label": "ˈ",
+      "start": 69000,
+      "end": 69600,
+      "source": "native_model"
+    },
+    {
+      "kind": "phoneme",
+      "label": "ɛ",
+      "start": 69600,
+      "end": 71400,
+      "source": "native_model"
+    },
+    {
+      "kind": "phoneme",
+      "label": "l",
+      "start": 71400,
+      "end": 73200,
+      "source": "native_model"
+    },
+    {
+      "kind": "phoneme",
+      "label": "z",
+      "start": 73200,
+      "end": 74400,
+      "source": "native_model"
+    },
+    {
+      "kind": "phoneme",
+      "label": "s",
+      "start": 75600,
+      "end": 76800,
+      "source": "native_model"
+    },
+    {
+      "kind": "phoneme",
+      "label": "ˌ",
+      "start": 76800,
+      "end": 77400,
+      "source": "native_model"
+    },
+    {
+      "kind": "phoneme",
+      "label": "O",
+      "start": 77400,
+      "end": 78600,
+      "source": "native_model"
+    },
+    {
+      "kind": "phoneme",
+      "label": "l",
+      "start": 80400,
+      "end": 81600,
+      "source": "native_model"
+    },
+    {
+      "kind": "phoneme",
+      "label": "ˈ",
+      "start": 81600,
+      "end": 82200,
+      "source": "native_model"
+    },
+    {
+      "kind": "phoneme",
+      "label": "ʌ",
+      "start": 82200,
+      "end": 83400,
+      "source": "native_model"
+    },
+    {
+      "kind": "phoneme",
+      "label": "v",
+      "start": 83400,
+      "end": 85200,
+      "source": "native_model"
+    },
+    {
+      "kind": "phoneme",
+      "label": "l",
+      "start": 85200,
+      "end": 87000,
+      "source": "native_model"
+    },
+    {
+      "kind": "phoneme",
+      "label": "i",
+      "start": 87000,
+      "end": 89400,
+      "source": "native_model"
+    },
+    {
+      "kind": "phoneme",
+      "label": "d",
+      "start": 95400,
+      "end": 97200,
+      "source": "native_model"
+    },
+    {
+      "kind": "phoneme",
+      "label": "ˈ",
+      "start": 97200,
+      "end": 97800,
+      "source": "native_model"
+    },
+    {
+      "kind": "phoneme",
+      "label": "ʌ",
+      "start": 97800,
+      "end": 99600,
+      "source": "native_model"
+    },
+    {
+      "kind": "phoneme",
+      "label": "z",
+      "start": 99600,
+      "end": 101400,
+      "source": "native_model"
+    },
+    {
+      "kind": "phoneme",
+      "label": "ᵊ",
+      "start": 101400,
+      "end": 102600,
+      "source": "native_model"
+    },
+    {
+      "kind": "phoneme",
+      "label": "n",
+      "start": 102600,
+      "end": 103800,
+      "source": "native_model"
+    },
+    {
+      "kind": "phoneme",
+      "label": "t",
+      "start": 103800,
+      "end": 105000,
+      "source": "native_model"
+    },
+    {
+      "kind": "phoneme",
+      "label": "ɪ",
+      "start": 106200,
+      "end": 107400,
+      "source": "native_model"
+    },
+    {
+      "kind": "phoneme",
+      "label": "t",
+      "start": 107400,
+      "end": 108600,
+      "source": "native_model"
+    },
+    {
+      "kind": "phoneme",
+      "label": "l",
+      "start": 115800,
+      "end": 117600,
+      "source": "native_model"
+    },
+    {
+      "kind": "phoneme",
+      "label": "ˈ",
+      "start": 117600,
+      "end": 118200,
+      "source": "native_model"
+    },
+    {
+      "kind": "phoneme",
+      "label": "ɛ",
+      "start": 118200,
+      "end": 120000,
+      "source": "native_model"
+    },
+    {
+      "kind": "phoneme",
+      "label": "t",
+      "start": 120000,
+      "end": 121800,
+      "source": "native_model"
+    },
+    {
+      "kind": "phoneme",
+      "label": "s",
+      "start": 121800,
+      "end": 123000,
+      "source": "native_model"
+    },
+    {
+      "kind": "phoneme",
+      "label": "s",
+      "start": 124200,
+      "end": 125400,
+      "source": "native_model"
+    },
+    {
+      "kind": "phoneme",
+      "label": "ˈ",
+      "start": 125400,
+      "end": 126000,
+      "source": "native_model"
+    },
+    {
+      "kind": "phoneme",
+      "label": "ɪ",
+      "start": 126000,
+      "end": 127200,
+      "source": "native_model"
+    },
+    {
+      "kind": "phoneme",
+      "label": "t",
+      "start": 127200,
+      "end": 128400,
+      "source": "native_model"
+    },
+    {
+      "kind": "phoneme",
+      "label": "b",
+      "start": 129600,
+      "end": 130800,
+      "source": "native_model"
+    },
+    {
+      "kind": "phoneme",
+      "label": "I",
+      "start": 130800,
+      "end": 132600,
+      "source": "native_model"
+    },
+    {
+      "kind": "phoneme",
+      "label": "ð",
+      "start": 133800,
+      "end": 134400,
+      "source": "native_model"
+    },
+    {
+      "kind": "phoneme",
+      "label": "ə",
+      "start": 134400,
+      "end": 135600,
+      "source": "native_model"
+    },
+    {
+      "kind": "phoneme",
+      "label": "w",
+      "start": 136800,
+      "end": 138000,
+      "source": "native_model"
+    },
+    {
+      "kind": "phoneme",
+      "label": "ˈ",
+      "start": 138000,
+      "end": 138600,
+      "source": "native_model"
+    },
+    {
+      "kind": "phoneme",
+      "label": "ɪ",
+      "start": 138600,
+      "end": 139800,
+      "source": "native_model"
+    },
+    {
+      "kind": "phoneme",
+      "label": "n",
+      "start": 139800,
+      "end": 141000,
+      "source": "native_model"
+    },
+    {
+      "kind": "phoneme",
+      "label": "d",
+      "start": 141000,
+      "end": 142200,
+      "source": "native_model"
+    },
+    {
+      "kind": "phoneme",
+      "label": "O",
+      "start": 142200,
+      "end": 143400,
+      "source": "native_model"
+    },
+    {
+      "kind": "pause",
+      "label": "edge silence",
+      "start": 0,
+      "end": 1200,
+      "source": "native_model"
+    },
+    {
+      "kind": "pause",
+      "label": "punctuation pause",
+      "start": 6000,
+      "end": 10200,
+      "source": "native_model"
+    },
+    {
+      "kind": "pause",
+      "label": "word gap",
+      "start": 14400,
+      "end": 16200,
+      "source": "native_model"
+    },
+    {
+      "kind": "pause",
+      "label": "punctuation pause",
+      "start": 24000,
+      "end": 27600,
+      "source": "native_model"
+    },
+    {
+      "kind": "pause",
+      "label": "word gap",
+      "start": 34200,
+      "end": 35400,
+      "source": "native_model"
+    },
+    {
+      "kind": "pause",
+      "label": "word gap",
+      "start": 37200,
+      "end": 39000,
+      "source": "native_model"
+    },
+    {
+      "kind": "pause",
+      "label": "punctuation pause",
+      "start": 45600,
+      "end": 53400,
+      "source": "native_model"
+    },
+    {
+      "kind": "pause",
+      "label": "word gap",
+      "start": 56400,
+      "end": 58200,
+      "source": "native_model"
+    },
+    {
+      "kind": "pause",
+      "label": "word gap",
+      "start": 64800,
+      "end": 66000,
+      "source": "native_model"
+    },
+    {
+      "kind": "pause",
+      "label": "word gap",
+      "start": 74400,
+      "end": 75600,
+      "source": "native_model"
+    },
+    {
+      "kind": "pause",
+      "label": "word gap",
+      "start": 78600,
+      "end": 80400,
+      "source": "native_model"
+    },
+    {
+      "kind": "pause",
+      "label": "punctuation pause",
+      "start": 89400,
+      "end": 95400,
+      "source": "native_model"
+    },
+    {
+      "kind": "pause",
+      "label": "word gap",
+      "start": 105000,
+      "end": 106200,
+      "source": "native_model"
+    },
+    {
+      "kind": "pause",
+      "label": "punctuation pause",
+      "start": 108600,
+      "end": 115800,
+      "source": "native_model"
+    },
+    {
+      "kind": "pause",
+      "label": "word gap",
+      "start": 123000,
+      "end": 124200,
+      "source": "native_model"
+    },
+    {
+      "kind": "pause",
+      "label": "word gap",
+      "start": 128400,
+      "end": 129600,
+      "source": "native_model"
+    },
+    {
+      "kind": "pause",
+      "label": "word gap",
+      "start": 132600,
+      "end": 133800,
+      "source": "native_model"
+    },
+    {
+      "kind": "pause",
+      "label": "word gap",
+      "start": 135600,
+      "end": 136800,
+      "source": "native_model"
+    },
+    {
+      "kind": "pause",
+      "label": "punctuation pause",
+      "start": 143400,
+      "end": 145200,
+      "source": "native_model"
+    },
+    {
+      "kind": "word",
+      "label": "Look,",
+      "start": 1200,
+      "end": 6000,
+      "source": "native_model",
+      "mapping": {
+        "method": "mithi_group_ownership_apostrophe_reconciled",
+        "model_words": [
+          0
+        ],
+        "first_token": 1,
+        "last_token": 4
+      },
+      "text_ref": {
+        "field": "speech",
+        "start": 0,
+        "end": 5
+      },
+      "display_ref": {
+        "field": "display",
+        "start": 0,
+        "end": 5
+      }
+    },
+    {
+      "kind": "word",
+      "label": "it's",
+      "start": 10200,
+      "end": 14400,
+      "source": "native_model",
+      "mapping": {
+        "method": "mithi_group_ownership_apostrophe_reconciled",
+        "model_words": [
+          1
+        ],
+        "first_token": 7,
+        "last_token": 9
+      },
+      "text_ref": {
+        "field": "speech",
+        "start": 6,
+        "end": 10
+      },
+      "display_ref": {
+        "field": "display",
+        "start": 6,
+        "end": 10
+      }
+    },
+    {
+      "kind": "word",
+      "label": "raining!",
+      "start": 16200,
+      "end": 24000,
+      "source": "native_model",
+      "mapping": {
+        "method": "mithi_group_ownership_apostrophe_reconciled",
+        "model_words": [
+          2
+        ],
+        "first_token": 11,
+        "last_token": 16
+      },
+      "text_ref": {
+        "field": "speech",
+        "start": 11,
+        "end": 19
+      },
+      "display_ref": {
+        "field": "display",
+        "start": 11,
+        "end": 19
+      }
+    },
+    {
+      "kind": "word",
+      "label": "After",
+      "start": 27600,
+      "end": 34200,
+      "source": "native_model",
+      "mapping": {
+        "method": "mithi_group_ownership_apostrophe_reconciled",
+        "model_words": [
+          3
+        ],
+        "first_token": 19,
+        "last_token": 24
+      },
+      "text_ref": {
+        "field": "speech",
+        "start": 20,
+        "end": 25
+      },
+      "display_ref": {
+        "field": "display",
+        "start": 20,
+        "end": 25
+      }
+    },
+    {
+      "kind": "word",
+      "label": "the",
+      "start": 35400,
+      "end": 37200,
+      "source": "native_model",
+      "mapping": {
+        "method": "mithi_group_ownership_apostrophe_reconciled",
+        "model_words": [
+          4
+        ],
+        "first_token": 26,
+        "last_token": 27
+      },
+      "text_ref": {
+        "field": "speech",
+        "start": 26,
+        "end": 29
+      },
+      "display_ref": {
+        "field": "display",
+        "start": 26,
+        "end": 29
+      }
+    },
+    {
+      "kind": "word",
+      "label": "rain,",
+      "start": 39000,
+      "end": 45600,
+      "source": "native_model",
+      "mapping": {
+        "method": "mithi_group_ownership_apostrophe_reconciled",
+        "model_words": [
+          5
+        ],
+        "first_token": 29,
+        "last_token": 32
+      },
+      "text_ref": {
+        "field": "speech",
+        "start": 30,
+        "end": 35
+      },
+      "display_ref": {
+        "field": "display",
+        "start": 30,
+        "end": 35
+      }
+    },
+    {
+      "kind": "word",
+      "label": "the",
+      "start": 53400,
+      "end": 56400,
+      "source": "native_model",
+      "mapping": {
+        "method": "mithi_group_ownership_apostrophe_reconciled",
+        "model_words": [
+          6
+        ],
+        "first_token": 35,
+        "last_token": 36
+      },
+      "text_ref": {
+        "field": "speech",
+        "start": 36,
+        "end": 39
+      },
+      "display_ref": {
+        "field": "display",
+        "start": 36,
+        "end": 39
+      }
+    },
+    {
+      "kind": "word",
+      "label": "soil",
+      "start": 58200,
+      "end": 64800,
+      "source": "native_model",
+      "mapping": {
+        "method": "mithi_group_ownership_apostrophe_reconciled",
+        "model_words": [
+          7
+        ],
+        "first_token": 38,
+        "last_token": 41
+      },
+      "text_ref": {
+        "field": "speech",
+        "start": 40,
+        "end": 44
+      },
+      "display_ref": {
+        "field": "display",
+        "start": 40,
+        "end": 44
+      }
+    },
+    {
+      "kind": "word",
+      "label": "smells",
+      "start": 66000,
+      "end": 74400,
+      "source": "native_model",
+      "mapping": {
+        "method": "mithi_group_ownership_apostrophe_reconciled",
+        "model_words": [
+          8
+        ],
+        "first_token": 43,
+        "last_token": 48
+      },
+      "text_ref": {
+        "field": "speech",
+        "start": 45,
+        "end": 51
+      },
+      "display_ref": {
+        "field": "display",
+        "start": 45,
+        "end": 51
+      }
+    },
+    {
+      "kind": "word",
+      "label": "so",
+      "start": 75600,
+      "end": 78600,
+      "source": "native_model",
+      "mapping": {
+        "method": "mithi_group_ownership_apostrophe_reconciled",
+        "model_words": [
+          9
+        ],
+        "first_token": 50,
+        "last_token": 52
+      },
+      "text_ref": {
+        "field": "speech",
+        "start": 52,
+        "end": 54
+      },
+      "display_ref": {
+        "field": "display",
+        "start": 52,
+        "end": 54
+      }
+    },
+    {
+      "kind": "word",
+      "label": "lovely,",
+      "start": 80400,
+      "end": 89400,
+      "source": "native_model",
+      "mapping": {
+        "method": "mithi_group_ownership_apostrophe_reconciled",
+        "model_words": [
+          10
+        ],
+        "first_token": 54,
+        "last_token": 59
+      },
+      "text_ref": {
+        "field": "speech",
+        "start": 55,
+        "end": 62
+      },
+      "display_ref": {
+        "field": "display",
+        "start": 55,
+        "end": 62
+      }
+    },
+    {
+      "kind": "word",
+      "label": "doesn't",
+      "start": 95400,
+      "end": 105000,
+      "source": "native_model",
+      "mapping": {
+        "method": "mithi_group_ownership_apostrophe_reconciled",
+        "model_words": [
+          11
+        ],
+        "first_token": 62,
+        "last_token": 68
+      },
+      "text_ref": {
+        "field": "speech",
+        "start": 63,
+        "end": 70
+      },
+      "display_ref": {
+        "field": "display",
+        "start": 63,
+        "end": 70
+      }
+    },
+    {
+      "kind": "word",
+      "label": "it?",
+      "start": 106200,
+      "end": 108600,
+      "source": "native_model",
+      "mapping": {
+        "method": "mithi_group_ownership_apostrophe_reconciled",
+        "model_words": [
+          12
+        ],
+        "first_token": 70,
+        "last_token": 71
+      },
+      "text_ref": {
+        "field": "speech",
+        "start": 71,
+        "end": 74
+      },
+      "display_ref": {
+        "field": "display",
+        "start": 71,
+        "end": 74
+      }
+    },
+    {
+      "kind": "word",
+      "label": "Let's",
+      "start": 115800,
+      "end": 123000,
+      "source": "native_model",
+      "mapping": {
+        "method": "mithi_group_ownership_apostrophe_reconciled",
+        "model_words": [
+          13
+        ],
+        "first_token": 74,
+        "last_token": 78
+      },
+      "text_ref": {
+        "field": "speech",
+        "start": 75,
+        "end": 80
+      },
+      "display_ref": {
+        "field": "display",
+        "start": 75,
+        "end": 80
+      }
+    },
+    {
+      "kind": "word",
+      "label": "sit",
+      "start": 124200,
+      "end": 128400,
+      "source": "native_model",
+      "mapping": {
+        "method": "mithi_group_ownership_apostrophe_reconciled",
+        "model_words": [
+          14
+        ],
+        "first_token": 80,
+        "last_token": 83
+      },
+      "text_ref": {
+        "field": "speech",
+        "start": 81,
+        "end": 84
+      },
+      "display_ref": {
+        "field": "display",
+        "start": 81,
+        "end": 84
+      }
+    },
+    {
+      "kind": "word",
+      "label": "by",
+      "start": 129600,
+      "end": 132600,
+      "source": "native_model",
+      "mapping": {
+        "method": "mithi_group_ownership_apostrophe_reconciled",
+        "model_words": [
+          15
+        ],
+        "first_token": 85,
+        "last_token": 86
+      },
+      "text_ref": {
+        "field": "speech",
+        "start": 85,
+        "end": 87
+      },
+      "display_ref": {
+        "field": "display",
+        "start": 85,
+        "end": 87
+      }
+    },
+    {
+      "kind": "word",
+      "label": "the",
+      "start": 133800,
+      "end": 135600,
+      "source": "native_model",
+      "mapping": {
+        "method": "mithi_group_ownership_apostrophe_reconciled",
+        "model_words": [
+          16
+        ],
+        "first_token": 88,
+        "last_token": 89
+      },
+      "text_ref": {
+        "field": "speech",
+        "start": 88,
+        "end": 91
+      },
+      "display_ref": {
+        "field": "display",
+        "start": 88,
+        "end": 91
+      }
+    },
+    {
+      "kind": "word",
+      "label": "window.",
+      "start": 136800,
+      "end": 143400,
+      "source": "native_model",
+      "mapping": {
+        "method": "mithi_group_ownership_apostrophe_reconciled",
+        "model_words": [
+          17
+        ],
+        "first_token": 91,
+        "last_token": 96
+      },
+      "text_ref": {
+        "field": "speech",
+        "start": 92,
+        "end": 99
+      },
+      "display_ref": {
+        "field": "display",
+        "start": 92,
+        "end": 99
+      }
+    },
+    {
+      "kind": "phrase",
+      "label": "Look,",
+      "start": 1200,
+      "end": 6000,
+      "source": "native_model",
+      "mapping": {
+        "method": "contextual_word_union",
+        "first_word": 0,
+        "stop_word": 1
+      },
+      "text_ref": {
+        "field": "speech",
+        "start": 0,
+        "end": 5
+      },
+      "display_ref": {
+        "field": "display",
+        "start": 0,
+        "end": 5
+      }
+    },
+    {
+      "kind": "phrase",
+      "label": "it's raining!",
+      "start": 10200,
+      "end": 24000,
+      "source": "native_model",
+      "mapping": {
+        "method": "contextual_word_union",
+        "first_word": 1,
+        "stop_word": 3
+      },
+      "text_ref": {
+        "field": "speech",
+        "start": 6,
+        "end": 19
+      },
+      "display_ref": {
+        "field": "display",
+        "start": 6,
+        "end": 19
+      }
+    },
+    {
+      "kind": "phrase",
+      "label": "After the rain,",
+      "start": 27600,
+      "end": 45600,
+      "source": "native_model",
+      "mapping": {
+        "method": "contextual_word_union",
+        "first_word": 3,
+        "stop_word": 6
+      },
+      "text_ref": {
+        "field": "speech",
+        "start": 20,
+        "end": 35
+      },
+      "display_ref": {
+        "field": "display",
+        "start": 20,
+        "end": 35
+      }
+    },
+    {
+      "kind": "phrase",
+      "label": "the soil smells so lovely,",
+      "start": 53400,
+      "end": 89400,
+      "source": "native_model",
+      "mapping": {
+        "method": "contextual_word_union",
+        "first_word": 6,
+        "stop_word": 11
+      },
+      "text_ref": {
+        "field": "speech",
+        "start": 36,
+        "end": 62
+      },
+      "display_ref": {
+        "field": "display",
+        "start": 36,
+        "end": 62
+      }
+    },
+    {
+      "kind": "phrase",
+      "label": "doesn't it?",
+      "start": 95400,
+      "end": 108600,
+      "source": "native_model",
+      "mapping": {
+        "method": "contextual_word_union",
+        "first_word": 11,
+        "stop_word": 13
+      },
+      "text_ref": {
+        "field": "speech",
+        "start": 63,
+        "end": 74
+      },
+      "display_ref": {
+        "field": "display",
+        "start": 63,
+        "end": 74
+      }
+    },
+    {
+      "kind": "phrase",
+      "label": "Let's sit by the window.",
+      "start": 115800,
+      "end": 143400,
+      "source": "native_model",
+      "mapping": {
+        "method": "contextual_word_union",
+        "first_word": 13,
+        "stop_word": 18
+      },
+      "text_ref": {
+        "field": "speech",
+        "start": 75,
+        "end": 99
+      },
+      "display_ref": {
+        "field": "display",
+        "start": 75,
+        "end": 99
+      }
+    }
+  ]
+}

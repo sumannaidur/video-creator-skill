@@ -1,0 +1,275 @@
+{
+  "result": "mapped",
+  "words": [
+    {
+      "label": "శరీరం",
+      "text_start": 0,
+      "text_end": 5,
+      "method": "mithi_token_word_ownership",
+      "model_words": [
+        "శరీరం"
+      ],
+      "group": null,
+      "tokens": [
+        1,
+        9
+      ],
+      "samples": [
+        1200,
+        13200
+      ]
+    },
+    {
+      "label": "నుంచి",
+      "text_start": 6,
+      "text_end": 11,
+      "method": "mithi_token_word_ownership",
+      "model_words": [
+        "నుంచి"
+      ],
+      "group": null,
+      "tokens": [
+        11,
+        16
+      ],
+      "samples": [
+        14400,
+        21000
+      ]
+    },
+    {
+      "label": "వచ్చే",
+      "text_start": 12,
+      "text_end": 17,
+      "method": "mithi_token_word_ownership",
+      "model_words": [
+        "వచ్చే"
+      ],
+      "group": null,
+      "tokens": [
+        18,
+        24
+      ],
+      "samples": [
+        22200,
+        30600
+      ]
+    },
+    {
+      "label": "ఆక్సిజన్",
+      "text_start": 18,
+      "text_end": 26,
+      "method": "mithi_token_word_ownership",
+      "model_words": [
+        "ఆక్సిజన్"
+      ],
+      "group": null,
+      "tokens": [
+        26,
+        34
+      ],
+      "samples": [
+        32400,
+        46200
+      ]
+    },
+    {
+      "label": "తక్కువ",
+      "text_start": 27,
+      "text_end": 33,
+      "method": "mithi_token_word_ownership",
+      "model_words": [
+        "తక్కువ"
+      ],
+      "group": null,
+      "tokens": [
+        36,
+        43
+      ],
+      "samples": [
+        48000,
+        59400
+      ]
+    },
+    {
+      "label": "ఉన్న",
+      "text_start": 34,
+      "text_end": 38,
+      "method": "mithi_token_word_ownership",
+      "model_words": [
+        "ఉన్న"
+      ],
+      "group": null,
+      "tokens": [
+        45,
+        49
+      ],
+      "samples": [
+        60600,
+        66000
+      ]
+    },
+    {
+      "label": "రక్తం",
+      "text_start": 39,
+      "text_end": 44,
+      "method": "mithi_token_word_ownership",
+      "model_words": [
+        "రక్తం"
+      ],
+      "group": null,
+      "tokens": [
+        51,
+        57
+      ],
+      "samples": [
+        67200,
+        77400
+      ]
+    },
+    {
+      "label": "కుడి",
+      "text_start": 45,
+      "text_end": 49,
+      "method": "mithi_token_word_ownership",
+      "model_words": [
+        "కుడి"
+      ],
+      "group": null,
+      "tokens": [
+        59,
+        63
+      ],
+      "samples": [
+        82800,
+        88200
+      ]
+    },
+    {
+      "label": "కర్ణికలోకి",
+      "text_start": 50,
+      "text_end": 60,
+      "method": "mithi_token_word_ownership",
+      "model_words": [
+        "కర్ణికలోకి"
+      ],
+      "group": null,
+      "tokens": [
+        65,
+        78
+      ],
+      "samples": [
+        89400,
+        106200
+      ]
+    },
+    {
+      "label": "చేరుతుంది.",
+      "text_start": 61,
+      "text_end": 71,
+      "method": "mithi_token_word_ownership",
+      "model_words": [
+        "చేరుతుంది."
+      ],
+      "group": null,
+      "tokens": [
+        80,
+        91
+      ],
+      "samples": [
+        107400,
+        120000
+      ]
+    },
+    {
+      "label": "కుడి",
+      "text_start": 72,
+      "text_end": 76,
+      "method": "mithi_token_word_ownership",
+      "model_words": [
+        "కుడి"
+      ],
+      "group": null,
+      "tokens": [
+        94,
+        98
+      ],
+      "samples": [
+        134400,
+        141000
+      ]
+    },
+    {
+      "label": "జఠరిక",
+      "text_start": 77,
+      "text_end": 82,
+      "method": "mithi_token_word_ownership",
+      "model_words": [
+        "జఠరిక"
+      ],
+      "group": null,
+      "tokens": [
+        100,
+        110
+      ],
+      "samples": [
+        142200,
+        156000
+      ]
+    },
+    {
+      "label": "దాన్ని",
+      "text_start": 83,
+      "text_end": 89,
+      "method": "mithi_token_word_ownership",
+      "model_words": [
+        "దాన్ని"
+      ],
+      "group": null,
+      "tokens": [
+        112,
+        118
+      ],
+      "samples": [
+        158400,
+        168600
+      ]
+    },
+    {
+      "label": "ఊపిరితిత్తులకు",
+      "text_start": 90,
+      "text_end": 104,
+      "method": "mithi_token_word_ownership",
+      "model_words": [
+        "ఊపిరితిత్తులకు"
+      ],
+      "group": null,
+      "tokens": [
+        120,
+        137
+      ],
+      "samples": [
+        170400,
+        191400
+      ]
+    },
+    {
+      "label": "పంపుతుంది.",
+      "text_start": 105,
+      "text_end": 115,
+      "method": "mithi_token_word_ownership",
+      "model_words": [
+        "పంపుతుంది."
+      ],
+      "group": null,
+      "tokens": [
+        139,
+        150
+      ],
+      "samples": [
+        192600,
+        205800
+      ]
+    }
+  ]
+}

@@ -1,0 +1,65 @@
+{
+  "schema": "video-creator.assets",
+  "version": 1,
+  "assets": [
+    {
+      "id": "coast-photo",
+      "media": "image",
+      "file": "coast.jpg",
+      "sha256": "6ad935f112660c30072af71e4bc57658688cfc1862e708746be417eac6b6e95d",
+      "width": 1600,
+      "height": 1000,
+      "title": "Synthetic coast",
+      "kind": "original",
+      "license": "unknown",
+      "source": "Generated with FFmpeg lavfi expressions in test_documentary.py",
+      "attribution": "Video Creator test fixture",
+      "authenticity": "procedural"
+    },
+    {
+      "id": "waves",
+      "media": "frames",
+      "fps": 8,
+      "frames": [
+        {
+          "file": "waves-01.jpg",
+          "sha256": "8527246737acc80f0285475b329541db4698c6ce87fc8d378ccfcb54566fe0e5"
+        },
+        {
+          "file": "waves-02.jpg",
+          "sha256": "99933910b68ee009577609edeed960dd2e19d54d11f68c832a9a31c8473a0e88"
+        },
+        {
+          "file": "waves-03.jpg",
+          "sha256": "64357def30a8bd0a778e96bc4f66e2ebe7f3b8bd910192bfb9994946dbc5239a"
+        },
+        {
+          "file": "waves-04.jpg",
+          "sha256": "cd5e0cdfb262693c91436e3bbea77324901d9317e5500ab502ef2e28d90e88b7"
+        },
+        {
+          "file": "waves-05.jpg",
+          "sha256": "15540efb79943a7ac450aca7280778e05d41bfbeb8ae509d4b026245457b67a1"
+        },
+        {
+          "file": "waves-06.jpg",
+          "sha256": "e32e9ce9b95c8f6b9bbd28ded0e38b8289f0d2b198f031312a23de456a4dcd30"
+        },
+        {
+          "file": "waves-07.jpg",
+          "sha256": "e29cf5cff252e09337156bc18ca5661d013a57a4f6e8687c692a6be338cb59a7"
+        },
+        {
+          "file": "waves-08.jpg",
+          "sha256": "4b0cd48871ad6679cdc30ec4c5811e987c1a0ddaf57dec4eba36d98744ac878c"
+        }
+      ],
+      "title": "Synthetic waves",
+      "kind": "original",
+      "license": "Original work created for this test (no third-party rights)",
+      "source": "Generated with FFmpeg lavfi expressions in test_documentary.py",
+      "attribution": "Video Creator test fixture",
+      "authenticity": "procedural"
+    }
+  ]
+}

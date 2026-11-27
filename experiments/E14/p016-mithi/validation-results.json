@@ -1,0 +1,134 @@
+{
+  "kn-IN": {
+    "mapping_method": [
+      "mithi_token_word_ownership"
+    ],
+    "repeated_word": {
+      "word": "ಮಳೆ",
+      "occurrences_in_s2": 2,
+      "err": ""
+    },
+    "caption_cues": 8,
+    "checks": {
+      "durations_equal_samples": true,
+      "audio_pcm16_mono_24k": true,
+      "audio_hash_matches": true,
+      "all_words_mapped": true,
+      "all_phrases_mapped": true,
+      "unicode_slices": true,
+      "ordered_words": true,
+      "unreviewed_model_predicted": true,
+      "provenance": true,
+      "validator": true,
+      "combine_two_segments": true,
+      "repeated_word_cue": true,
+      "captions_build": true,
+      "captions_check": true
+    },
+    "ready": true,
+    "seconds": 6.125,
+    "synthesis_seconds": 5.11,
+    "peak_rss_mib": 1161.7,
+    "peak_dbfs": -12.5,
+    "full_scale_samples": 0
+  },
+  "ta-IN": {
+    "mapping_method": [
+      "mithi_token_word_ownership"
+    ],
+    "repeated_word": {
+      "word": "மழை",
+      "occurrences_in_s2": 2,
+      "err": ""
+    },
+    "caption_cues": 8,
+    "checks": {
+      "durations_equal_samples": true,
+      "audio_pcm16_mono_24k": true,
+      "audio_hash_matches": true,
+      "all_words_mapped": true,
+      "all_phrases_mapped": true,
+      "unicode_slices": true,
+      "ordered_words": true,
+      "unreviewed_model_predicted": true,
+      "provenance": true,
+      "validator": true,
+      "combine_two_segments": true,
+      "repeated_word_cue": true,
+      "captions_build": true,
+      "captions_check": true
+    },
+    "ready": true,
+    "seconds": 6.15,
+    "synthesis_seconds": 5.276,
+    "peak_rss_mib": 1171.1,
+    "peak_dbfs": -12.5,
+    "full_scale_samples": 0
+  },
+  "en-IN": {
+    "mapping_method": [
+      "mithi_group_ownership_apostrophe_reconciled"
+    ],
+    "repeated_word": {
+      "word": "the",
+      "occurrences_in_s2": 3,
+      "err": ""
+    },
+    "caption_cues": 12,
+    "checks": {
+      "durations_equal_samples": true,
+      "audio_pcm16_mono_24k": true,
+      "audio_hash_matches": true,
+      "all_words_mapped": true,
+      "all_phrases_mapped": true,
+      "unicode_slices": true,
+      "ordered_words": true,
+      "unreviewed_model_predicted": true,
+      "provenance": true,
+      "validator": true,
+      "combine_two_segments": true,
+      "repeated_word_cue": true,
+      "captions_build": true,
+      "captions_check": true
+    },
+    "ready": true,
+    "seconds": 6.05,
+    "synthesis_seconds": 5.202,
+    "peak_rss_mib": 1125.9,
+    "peak_dbfs": -10.9,
+    "full_scale_samples": 0
+  },
+  "hi-IN": {
+    "mapping_method": [
+      "mithi_token_word_ownership"
+    ],
+    "repeated_word": {
+      "word": "बारिश",
+      "occurrences_in_s2": 2,
+      "err": ""
+    },
+    "caption_cues": 8,
+    "checks": {
+      "durations_equal_samples": true,
+      "audio_pcm16_mono_24k": true,
+      "audio_hash_matches": true,
+      "all_words_mapped": true,
+      "all_phrases_mapped": true,
+      "unicode_slices": true,
+      "ordered_words": true,
+      "unreviewed_model_predicted": true,
+      "provenance": true,
+      "validator": true,
+      "combine_two_segments": true,
+      "repeated_word_cue": true,
+      "captions_build": true,
+      "captions_check": true
+    },
+    "ready": true,
+    "seconds": 5.775,
+    "synthesis_seconds": 7.21,
+    "peak_rss_mib": 1132.2,
+    "peak_dbfs": -9.9,
+    "full_scale_samples": 0
+  }
+}

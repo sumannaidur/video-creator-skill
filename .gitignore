@@ -221,3 +221,33 @@ __marimo__/
 
 # Streamlit
 .streamlit/secrets.toml
+
+# --- Video Creator repository rules (P021) ---
+# The packaged Skill needs its own scripts/lib (the Python template above ignores every lib/ folder).
+!skills/video-creator/scripts/lib/
+skills/**/test-*results.json
+# Release archives are attached to GitHub releases, not committed.
+release/
+.claude/
+# experiments: keep notes, scripts and lightweight evidence; drop generated media and machine-specific files.
+experiments/**/*.jpg
+experiments/**/*.jpeg
+experiments/**/*.mp4
+experiments/**/*.wav
+experiments/**/*.npy
+experiments/**/*.png
+!experiments/**/*contact*.png
+!experiments/**/*sheet*.png
+!experiments/**/*overview*.png
+!experiments/**/before-after*.png
+experiments/**/frames/
+experiments/**/setup/*runtime*.json
+experiments/**/setup/config.json
+experiments/**/setup/capabilities.json
+experiments/**/*preview-evidence.json
+experiments/**/*measure-evidence.json
+experiments/E10/p013.1/test-results.json
+experiments/E11/vc-*/project.json
+experiments/E13/vc-*/project.json
+experiments/E15/p017.7-documentary/qa/preflight-*/preflight.json
+experiments/**/*runtime*.json

@@ -1,0 +1,181 @@
+{
+  "result": "mapped",
+  "words": [
+    {
+      "label": "பாரு,",
+      "text_start": 0,
+      "text_end": 5,
+      "model_words": [
+        "பாரு,"
+      ],
+      "tokens": [
+        1,
+        6
+      ],
+      "samples": [
+        1200,
+        12600
+      ]
+    },
+    {
+      "label": "மழை",
+      "text_start": 6,
+      "text_end": 9,
+      "model_words": [
+        "மழை"
+      ],
+      "tokens": [
+        9,
+        13
+      ],
+      "samples": [
+        19800,
+        26400
+      ]
+    },
+    {
+      "label": "வந்துடுச்சு!",
+      "text_start": 10,
+      "text_end": 22,
+      "model_words": [
+        "வந்துடுச்சு!"
+      ],
+      "tokens": [
+        15,
+        26
+      ],
+      "samples": [
+        28200,
+        43200
+      ]
+    },
+    {
+      "label": "மழை",
+      "text_start": 23,
+      "text_end": 26,
+      "model_words": [
+        "மழை"
+      ],
+      "tokens": [
+        29,
+        33
+      ],
+      "samples": [
+        53400,
+        61800
+      ]
+    },
+    {
+      "label": "பெய்ஞ்சதும்",
+      "text_start": 27,
+      "text_end": 38,
+      "model_words": [
+        "பெய்ஞ்சதும்"
+      ],
+      "tokens": [
+        35,
+        44
+      ],
+      "samples": [
+        63000,
+        78600
+      ]
+    },
+    {
+      "label": "மண்",
+      "text_start": 39,
+      "text_end": 42,
+      "model_words": [
+        "மண்"
+      ],
+      "tokens": [
+        46,
+        49
+      ],
+      "samples": [
+        79200,
+        84600
+      ]
+    },
+    {
+      "label": "வாசனை",
+      "text_start": 43,
+      "text_end": 48,
+      "model_words": [
+        "வாசனை"
+      ],
+      "tokens": [
+        51,
+        58
+      ],
+      "samples": [
+        86400,
+        97200
+      ]
+    },
+    {
+      "label": "எவ்வளவு",
+      "text_start": 49,
+      "text_end": 56,
+      "model_words": [
+        "எவ்வளவு"
+      ],
+      "tokens": [
+        60,
+        69
+      ],
+      "samples": [
+        99000,
+        109200
+      ]
+    },
+    {
+      "label": "நல்லா",
+      "text_start": 57,
+      "text_end": 62,
+      "model_words": [
+        "நல்லா"
+      ],
+      "tokens": [
+        71,
+        77
+      ],
+      "samples": [
+        110400,
+        117000
+      ]
+    },
+    {
+      "label": "இருக்கு,",
+      "text_start": 63,
+      "text_end": 71,
+      "model_words": [
+        "இருக்கு,"
+      ],
+      "tokens": [
+        79,
+        85
+      ],
+      "samples": [
+        118200,
+        126600
+      ]
+    },
+    {
+      "label": "இல்லையா?",
+      "text_start": 72,
+      "text_end": 80,
+      "model_words": [
+        "இல்லையா?"
+      ],
+      "tokens": [
+        88,
+        95
+      ],
+      "samples": [
+        135600,
+        145800
+      ]
+    }
+  ]
+}

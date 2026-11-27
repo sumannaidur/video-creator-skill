@@ -1,0 +1,672 @@
+{
+  "schema": "video-creator.captions",
+  "version": 1,
+  "locale": "te-IN",
+  "narration": {
+    "timeline": "narration/narration-7480761c4b.timeline.json",
+    "timeline_sha256": "fd3f521992effe33cca750652e8f36f227ba9f02f303fdb560d175bab89e55c8",
+    "audio_sha256": "f9464a1d5a59daa2ee5e268406b8176ee5c9554500216528ee715eb30b0fe1ae",
+    "sample_rate": 24000,
+    "sample_count": 1387200,
+    "timing_status": "unreviewed",
+    "timing_method": null,
+    "run_id": "combined-867047416a245b5b6812be4e"
+  },
+  "config": {
+    "enabled": true,
+    "burn_in": true,
+    "subtitle_files": [
+      "srt",
+      "vtt"
+    ],
+    "mode": "words",
+    "max_chars": 26,
+    "max_words": 4,
+    "max_lines": 2,
+    "hold_ms": 700
+  },
+  "cues": [
+    {
+      "start_sample": 1200,
+      "speech_end_sample": 39000,
+      "text": "విశ్రాంతిగా ఉన్నప్పుడు కూడా,",
+      "text_ref": {
+        "field": "speech",
+        "start": 0,
+        "end": 28
+      },
+      "segment": "s1",
+      "timing_sources": [
+        "native_model"
+      ],
+      "long": false,
+      "end_sample": 47400,
+      "id": "c1",
+      "start": 0.05,
+      "end": 1.975
+    },
+    {
+      "start_sample": 47400,
+      "speech_end_sample": 91200,
+      "text": "మీ గుండె నిమిషానికి అరవై",
+      "text_ref": {
+        "field": "speech",
+        "start": 29,
+        "end": 53
+      },
+      "segment": "s1",
+      "timing_sources": [
+        "native_model"
+      ],
+      "long": false,
+      "end_sample": 93000,
+      "id": "c2",
+      "start": 1.975,
+      "end": 3.875
+    },
+    {
+      "start_sample": 93000,
+      "speech_end_sample": 137400,
+      "text": "నుంచి వంద సార్లు కొట్టుకుంటుంది.",
+      "text_ref": {
+        "field": "speech",
+        "start": 54,
+        "end": 86
+      },
+      "segment": "s1",
+      "timing_sources": [
+        "native_model"
+      ],
+      "long": false,
+      "end_sample": 151800,
+      "id": "c3",
+      "start": 3.875,
+      "end": 6.325
+    },
+    {
+      "start_sample": 151800,
+      "speech_end_sample": 189000,
+      "text": "ఒక్క క్షణం కూడా ఆగకుండా.",
+      "text_ref": {
+        "field": "speech",
+        "start": 87,
+        "end": 111
+      },
+      "segment": "s1",
+      "timing_sources": [
+        "native_model"
+      ],
+      "long": false,
+      "end_sample": 199200,
+      "id": "c4",
+      "start": 6.325,
+      "end": 8.3
+    },
+    {
+      "start_sample": 199200,
+      "speech_end_sample": 233400,
+      "text": "మరి అది రక్తాన్ని ఎలా",
+      "text_ref": {
+        "field": "speech",
+        "start": 112,
+        "end": 133
+      },
+      "segment": "s1",
+      "timing_sources": [
+        "native_model"
+      ],
+      "long": false,
+      "end_sample": 234600,
+      "id": "c5",
+      "start": 8.3,
+      "end": 9.775
+    },
+    {
+      "start_sample": 234600,
+      "speech_end_sample": 247800,
+      "text": "పంపుతుంది?",
+      "text_ref": {
+        "field": "speech",
+        "start": 134,
+        "end": 144
+      },
+      "segment": "s1",
+      "timing_sources": [
+        "native_model"
+      ],
+      "long": false,
+      "end_sample": 255600,
+      "id": "c6",
+      "start": 9.775,
+      "end": 10.65
+    },
+    {
+      "start_sample": 255600,
+      "speech_end_sample": 301800,
+      "text": "గుండెలో నాలుగు గదులు ఉంటాయి.",
+      "text_ref": {
+        "field": "speech",
+        "start": 145,
+        "end": 173
+      },
+      "segment": "s2",
+      "timing_sources": [
+        "native_model"
+      ],
+      "long": false,
+      "end_sample": 311400,
+      "id": "c7",
+      "start": 10.65,
+      "end": 12.975
+    },
+    {
+      "start_sample": 311400,
+      "speech_end_sample": 342000,
+      "text": "పైన రెండు కర్ణికలు,",
+      "text_ref": {
+        "field": "speech",
+        "start": 174,
+        "end": 193
+      },
+      "segment": "s2",
+      "timing_sources": [
+        "native_model"
+      ],
+      "long": false,
+      "end_sample": 351000,
+      "id": "c8",
+      "start": 12.975,
+      "end": 14.625
+    },
+    {
+      "start_sample": 351000,
+      "speech_end_sample": 385800,
+      "text": "కింద రెండు జఠరికలు.",
+      "text_ref": {
+        "field": "speech",
+        "start": 194,
+        "end": 213
+      },
+      "segment": "s2",
+      "timing_sources": [
+        "native_model"
+      ],
+      "long": false,
+      "end_sample": 393600,
+      "id": "c9",
+      "start": 14.625,
+      "end": 16.4
+    },
+    {
+      "start_sample": 393600,
+      "speech_end_sample": 438600,
+      "text": "శరీరం నుంచి వచ్చే ఆక్సిజన్",
+      "text_ref": {
+        "field": "speech",
+        "start": 214,
+        "end": 240
+      },
+      "segment": "s3",
+      "timing_sources": [
+        "native_model"
+      ],
+      "long": false,
+      "end_sample": 440400,
+      "id": "c10",
+      "start": 16.4,
+      "end": 18.35
+    },
+    {
+      "start_sample": 440400,
+      "speech_end_sample": 480600,
+      "text": "తక్కువ ఉన్న రక్తం కుడి",
+      "text_ref": {
+        "field": "speech",
+        "start": 241,
+        "end": 263
+      },
+      "segment": "s3",
+      "timing_sources": [
+        "native_model"
+      ],
+      "long": false,
+      "end_sample": 481800,
+      "id": "c11",
+      "start": 18.35,
+      "end": 20.075
+    },
+    {
+      "start_sample": 481800,
+      "speech_end_sample": 512400,
+      "text": "కర్ణికలోకి చేరుతుంది.",
+      "text_ref": {
+        "field": "speech",
+        "start": 264,
+        "end": 285
+      },
+      "segment": "s3",
+      "timing_sources": [
+        "native_model"
+      ],
+      "long": false,
+      "end_sample": 526800,
+      "id": "c12",
+      "start": 20.075,
+      "end": 21.95
+    },
+    {
+      "start_sample": 526800,
+      "speech_end_sample": 583800,
+      "text": "కుడి జఠరిక దాన్ని ఊపిరితిత్తులకు",
+      "text_ref": {
+        "field": "speech",
+        "start": 286,
+        "end": 318
+      },
+      "segment": "s3",
+      "timing_sources": [
+        "native_model"
+      ],
+      "long": false,
+      "end_sample": 585000,
+      "id": "c13",
+      "start": 21.95,
+      "end": 24.375
+    },
+    {
+      "start_sample": 585000,
+      "speech_end_sample": 598200,
+      "text": "పంపుతుంది.",
+      "text_ref": {
+        "field": "speech",
+        "start": 319,
+        "end": 329
+      },
+      "segment": "s3",
+      "timing_sources": [
+        "native_model"
+      ],
+      "long": false,
+      "end_sample": 606000,
+      "id": "c14",
+      "start": 24.375,
+      "end": 25.25
+    },
+    {
+      "start_sample": 606000,
+      "speech_end_sample": 660000,
+      "text": "ఊపిరితిత్తుల్లో ఆ రక్తం ఆక్సిజన్",
+      "text_ref": {
+        "field": "speech",
+        "start": 330,
+        "end": 362
+      },
+      "segment": "s4",
+      "timing_sources": [
+        "native_model"
+      ],
+      "long": false,
+      "end_sample": 661200,
+      "id": "c15",
+      "start": 25.25,
+      "end": 27.55
+    },
+    {
+      "start_sample": 661200,
+      "speech_end_sample": 673800,
+      "text": "నింపుకొని,",
+      "text_ref": {
+        "field": "speech",
+        "start": 363,
+        "end": 373
+      },
+      "segment": "s4",
+      "timing_sources": [
+        "native_model"
+      ],
+      "long": false,
+      "end_sample": 683400,
+      "id": "c16",
+      "start": 27.55,
+      "end": 28.475
+    },
+    {
+      "start_sample": 683400,
+      "speech_end_sample": 728400,
+      "text": "ఎడమ కర్ణికలోకి తిరిగి వస్తుంది.",
+      "text_ref": {
+        "field": "speech",
+        "start": 374,
+        "end": 405
+      },
+      "segment": "s4",
+      "timing_sources": [
+        "native_model"
+      ],
+      "long": false,
+      "end_sample": 742200,
+      "id": "c17",
+      "start": 28.475,
+      "end": 30.925
+    },
+    {
+      "start_sample": 742200,
+      "speech_end_sample": 788400,
+      "text": "అక్కడి నుంచి ఎడమ జఠరికలోకి",
+      "text_ref": {
+        "field": "speech",
+        "start": 406,
+        "end": 432
+      },
+      "segment": "s4",
+      "timing_sources": [
+        "native_model"
+      ],
+      "long": false,
+      "end_sample": 789600,
+      "id": "c18",
+      "start": 30.925,
+      "end": 32.9
+    },
+    {
+      "start_sample": 789600,
+      "speech_end_sample": 801600,
+      "text": "దిగుతుంది.",
+      "text_ref": {
+        "field": "speech",
+        "start": 433,
+        "end": 443
+      },
+      "segment": "s4",
+      "timing_sources": [
+        "native_model"
+      ],
+      "long": false,
+      "end_sample": 809400,
+      "id": "c19",
+      "start": 32.9,
+      "end": 33.725
+    },
+    {
+      "start_sample": 809400,
+      "speech_end_sample": 851400,
+      "text": "ఎడమ జఠరిక బలంగా ఒత్తిడి",
+      "text_ref": {
+        "field": "speech",
+        "start": 444,
+        "end": 467
+      },
+      "segment": "s5",
+      "timing_sources": [
+        "native_model"
+      ],
+      "long": false,
+      "end_sample": 852600,
+      "id": "c20",
+      "start": 33.725,
+      "end": 35.525
+    },
+    {
+      "start_sample": 852600,
+      "speech_end_sample": 865200,
+      "text": "పెంచి,",
+      "text_ref": {
+        "field": "speech",
+        "start": 468,
+        "end": 474
+      },
+      "segment": "s5",
+      "timing_sources": [
+        "native_model"
+      ],
+      "long": false,
+      "end_sample": 875400,
+      "id": "c21",
+      "start": 35.525,
+      "end": 36.475
+    },
+    {
+      "start_sample": 875400,
+      "speech_end_sample": 910800,
+      "text": "ఆ రక్తాన్ని తల నుంచి",
+      "text_ref": {
+        "field": "speech",
+        "start": 475,
+        "end": 495
+      },
+      "segment": "s5",
+      "timing_sources": [
+        "native_model"
+      ],
+      "long": false,
+      "end_sample": 912600,
+      "id": "c22",
+      "start": 36.475,
+      "end": 38.025
+    },
+    {
+      "start_sample": 912600,
+      "speech_end_sample": 937800,
+      "text": "కాలి వేళ్ల దాకా,",
+      "text_ref": {
+        "field": "speech",
+        "start": 496,
+        "end": 512
+      },
+      "segment": "s5",
+      "timing_sources": [
+        "native_model"
+      ],
+      "long": false,
+      "end_sample": 946800,
+      "id": "c23",
+      "start": 38.025,
+      "end": 39.45
+    },
+    {
+      "start_sample": 946800,
+      "speech_end_sample": 981000,
+      "text": "శరీరమంతటికీ నెడుతుంది.",
+      "text_ref": {
+        "field": "speech",
+        "start": 513,
+        "end": 535
+      },
+      "segment": "s5",
+      "timing_sources": [
+        "native_model"
+      ],
+      "long": false,
+      "end_sample": 988800,
+      "id": "c24",
+      "start": 39.45,
+      "end": 41.2
+    },
+    {
+      "start_sample": 988800,
+      "speech_end_sample": 1042800,
+      "text": "నాలుగు కవాటాలు తలుపుల్లా ఒకే",
+      "text_ref": {
+        "field": "speech",
+        "start": 536,
+        "end": 564
+      },
+      "segment": "s6",
+      "timing_sources": [
+        "native_model"
+      ],
+      "long": false,
+      "end_sample": 1044600,
+      "id": "c25",
+      "start": 41.2,
+      "end": 43.525
+    },
+    {
+      "start_sample": 1044600,
+      "speech_end_sample": 1070400,
+      "text": "వైపు తెరుచుకుంటాయి.",
+      "text_ref": {
+        "field": "speech",
+        "start": 565,
+        "end": 584
+      },
+      "segment": "s6",
+      "timing_sources": [
+        "native_model"
+      ],
+      "long": false,
+      "end_sample": 1082400,
+      "id": "c26",
+      "start": 43.525,
+      "end": 45.1
+    },
+    {
+      "start_sample": 1082400,
+      "speech_end_sample": 1125600,
+      "text": "రక్తం వెనక్కి రాకుండా ఆపుతాయి.",
+      "text_ref": {
+        "field": "speech",
+        "start": 585,
+        "end": 615
+      },
+      "segment": "s6",
+      "timing_sources": [
+        "native_model"
+      ],
+      "long": false,
+      "end_sample": 1133400,
+      "id": "c27",
+      "start": 45.1,
+      "end": 47.225
+    },
+    {
+      "start_sample": 1133400,
+      "speech_end_sample": 1183800,
+      "text": "అవి మూసుకునే శబ్దమే మనకు",
+      "text_ref": {
+        "field": "speech",
+        "start": 616,
+        "end": 640
+      },
+      "segment": "s7",
+      "timing_sources": [
+        "native_model"
+      ],
+      "long": false,
+      "end_sample": 1185000,
+      "id": "c28",
+      "start": 47.225,
+      "end": 49.375
+    },
+    {
+      "start_sample": 1185000,
+      "speech_end_sample": 1210200,
+      "text": "వినిపించే లబ్ డబ్.",
+      "text_ref": {
+        "field": "speech",
+        "start": 641,
+        "end": 659
+      },
+      "segment": "s7",
+      "timing_sources": [
+        "native_model"
+      ],
+      "long": false,
+      "end_sample": 1218000,
+      "id": "c29",
+      "start": 49.375,
+      "end": 50.75
+    },
+    {
+      "start_sample": 1218000,
+      "speech_end_sample": 1265400,
+      "text": "ఇదంతా కుడి కర్ణికలోని ఒక",
+      "text_ref": {
+        "field": "speech",
+        "start": 660,
+        "end": 684
+      },
+      "segment": "s8",
+      "timing_sources": [
+        "native_model"
+      ],
+      "long": false,
+      "end_sample": 1267200,
+      "id": "c30",
+      "start": 50.75,
+      "end": 52.8
+    },
+    {
+      "start_sample": 1267200,
+      "speech_end_sample": 1321200,
+      "text": "చిన్న విద్యుత్ సంకేతంతో మొదలవుతుంది.",
+      "text_ref": {
+        "field": "speech",
+        "start": 685,
+        "end": 721
+      },
+      "segment": "s8",
+      "timing_sources": [
+        "native_model"
+      ],
+      "long": false,
+      "end_sample": 1331400,
+      "id": "c31",
+      "start": 52.8,
+      "end": 55.475
+    },
+    {
+      "start_sample": 1331400,
+      "speech_end_sample": 1348800,
+      "text": "ప్రతి క్షణం,",
+      "text_ref": {
+        "field": "speech",
+        "start": 722,
+        "end": 734
+      },
+      "segment": "s8",
+      "timing_sources": [
+        "native_model"
+      ],
+      "long": false,
+      "end_sample": 1359000,
+      "id": "c32",
+      "start": 55.475,
+      "end": 56.625
+    },
+    {
+      "start_sample": 1359000,
+      "speech_end_sample": 1385400,
+      "text": "మీకు తెలియకుండానే.",
+      "text_ref": {
+        "field": "speech",
+        "start": 735,
+        "end": 753
+      },
+      "segment": "s8",
+      "timing_sources": [
+        "native_model"
+      ],
+      "long": false,
+      "end_sample": 1387200,
+      "id": "c33",
+      "start": 56.625,
+      "end": 57.8
+    }
+  ],
+  "files": {
+    "srt": {
+      "path": "captions/captions.srt",
+      "sha256": "d08f93a2643c73b37917024b4b18bdc2c328cacd568d81c1dc9f5fdd71f8cc5f"
+    },
+    "vtt": {
+      "path": "captions/captions.vtt",
+      "sha256": "26bae53d4823bbcabf59510acd35858c393239321c91cbbe66071dda55c83270"
+    }
+  },
+  "review": {
+    "technical": "passed",
+    "language": "pending native-reader review",
+    "readability": "pending human review"
+  }
+}

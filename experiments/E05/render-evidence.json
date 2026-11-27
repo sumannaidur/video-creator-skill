@@ -1,0 +1,598 @@
+{
+  "browser": "Chrome/157.0.8103.79",
+  "profile": "temporary isolated profile",
+  "layouts": [
+    {
+      "name": "vertical",
+      "viewport": [
+        1080,
+        1920
+      ],
+      "document": [
+        1080,
+        1920
+      ],
+      "blocks": [
+        {
+          "text": "ಕ್ಷ ಜ್ಞ ತ್ರ ಶ್ರ ಸ್ಕೃ ಕಿ ಕೀ ಕು ಕೂ ಕೆ ಕೈ ಕೊ ಕೌ ೦೧೨೩೪",
+          "lang": "kn-IN",
+          "className": "specimen script",
+          "lines": 1,
+          "splitGraphemes": 0,
+          "overflow": false,
+          "outsideViewport": false,
+          "fonts": [
+            {
+              "familyName": "Nirmala UI",
+              "postScriptName": "NirmalaUI",
+              "isCustomFont": false,
+              "glyphCount": 37
+            }
+          ]
+        },
+        {
+          "text": "ಬೆಂಗಳೂರಿನ heat map ನೋಡಿ: ೧೨% ಕಡಿಮೆ, ₹೨೫೦ ಉಳಿತಾಯವೇ?",
+          "lang": "kn-IN",
+          "className": "caption script",
+          "lines": 2,
+          "splitGraphemes": 0,
+          "overflow": false,
+          "outsideViewport": false,
+          "fonts": [
+            {
+              "familyName": "Segoe UI",
+              "postScriptName": "SegoeUI",
+              "isCustomFont": false,
+              "glyphCount": 8
+            },
+            {
+              "familyName": "Nirmala UI",
+              "postScriptName": "NirmalaUI",
+              "isCustomFont": false,
+              "glyphCount": 33
+            }
+          ]
+        },
+        {
+          "text": "heat map",
+          "lang": "en",
+          "className": "latin",
+          "lines": 1,
+          "splitGraphemes": 0,
+          "overflow": false,
+          "outsideViewport": false,
+          "fonts": [
+            {
+              "familyName": "Segoe UI",
+              "postScriptName": "SegoeUI",
+              "isCustomFont": false,
+              "glyphCount": 8
+            }
+          ]
+        },
+        {
+          "text": "क्ष त्र ज्ञ श्र र्क क्र कि की कृ कै कौ कँ कं ड़ ०१२३४",
+          "lang": "hi-IN",
+          "className": "specimen script",
+          "lines": 1,
+          "splitGraphemes": 0,
+          "overflow": false,
+          "outsideViewport": false,
+          "fonts": [
+            {
+              "familyName": "Nirmala UI",
+              "postScriptName": "NirmalaUI",
+              "isCustomFont": false,
+              "glyphCount": 41
+            }
+          ]
+        },
+        {
+          "text": "दिल्ली का heat map देखिए: १२% कम, ₹२५० की बचत।",
+          "lang": "hi-IN",
+          "className": "caption script",
+          "lines": 2,
+          "splitGraphemes": 0,
+          "overflow": false,
+          "outsideViewport": false,
+          "fonts": [
+            {
+              "familyName": "Segoe UI",
+              "postScriptName": "SegoeUI",
+              "isCustomFont": false,
+              "glyphCount": 8
+            },
+            {
+              "familyName": "Nirmala UI",
+              "postScriptName": "NirmalaUI",
+              "isCustomFont": false,
+              "glyphCount": 35
+            }
+          ]
+        },
+        {
+          "text": "heat map",
+          "lang": "en",
+          "className": "latin",
+          "lines": 1,
+          "splitGraphemes": 0,
+          "overflow": false,
+          "outsideViewport": false,
+          "fonts": [
+            {
+              "familyName": "Segoe UI",
+              "postScriptName": "SegoeUI",
+              "isCustomFont": false,
+              "glyphCount": 8
+            }
+          ]
+        },
+        {
+          "text": "క్ష జ్ఞ త్ర శ్ర క్ర కి కీ కు కూ కె కై కొ కౌ ౦౧౨౩౪",
+          "lang": "te-IN",
+          "className": "specimen script",
+          "lines": 1,
+          "splitGraphemes": 0,
+          "overflow": false,
+          "outsideViewport": false,
+          "fonts": [
+            {
+              "familyName": "Nirmala UI",
+              "postScriptName": "NirmalaUI",
+              "isCustomFont": false,
+              "glyphCount": 35
+            }
+          ]
+        },
+        {
+          "text": "హైదరాబాద్ heat map చూడండి: ౧౨% తక్కువ, ₹౨౫౦ ఆదా?",
+          "lang": "te-IN",
+          "className": "caption script",
+          "lines": 2,
+          "splitGraphemes": 0,
+          "overflow": false,
+          "outsideViewport": false,
+          "fonts": [
+            {
+              "familyName": "Segoe UI",
+              "postScriptName": "SegoeUI",
+              "isCustomFont": false,
+              "glyphCount": 8
+            },
+            {
+              "familyName": "Nirmala UI",
+              "postScriptName": "NirmalaUI",
+              "isCustomFont": false,
+              "glyphCount": 30
+            }
+          ]
+        },
+        {
+          "text": "heat map",
+          "lang": "en",
+          "className": "latin",
+          "lines": 1,
+          "splitGraphemes": 0,
+          "overflow": false,
+          "outsideViewport": false,
+          "fonts": [
+            {
+              "familyName": "Segoe UI",
+              "postScriptName": "SegoeUI",
+              "isCustomFont": false,
+              "glyphCount": 8
+            }
+          ]
+        },
+        {
+          "text": "க்ஷ ஸ்ரீ க் ங்க ன்ற கி கீ கு கூ கெ கை கொ கௌ ௦௧௨௩௪",
+          "lang": "ta-IN",
+          "className": "specimen script",
+          "lines": 2,
+          "splitGraphemes": 0,
+          "overflow": false,
+          "outsideViewport": false,
+          "fonts": [
+            {
+              "familyName": "Nirmala UI",
+              "postScriptName": "NirmalaUI",
+              "isCustomFont": false,
+              "glyphCount": 41
+            }
+          ]
+        },
+        {
+          "text": "சென்னையின் heat map பாருங்கள்: ௧௨% குறைவு, ₹௨௫௦ சேமிப்பு?",
+          "lang": "ta-IN",
+          "className": "caption script",
+          "lines": 3,
+          "splitGraphemes": 0,
+          "overflow": false,
+          "outsideViewport": false,
+          "fonts": [
+            {
+              "familyName": "Segoe UI",
+              "postScriptName": "SegoeUI",
+              "isCustomFont": false,
+              "glyphCount": 8
+            },
+            {
+              "familyName": "Nirmala UI",
+              "postScriptName": "NirmalaUI",
+              "isCustomFont": false,
+              "glyphCount": 41
+            }
+          ]
+        },
+        {
+          "text": "heat map",
+          "lang": "en",
+          "className": "latin",
+          "lines": 1,
+          "splitGraphemes": 0,
+          "overflow": false,
+          "outsideViewport": false,
+          "fonts": [
+            {
+              "familyName": "Segoe UI",
+              "postScriptName": "SegoeUI",
+              "isCustomFont": false,
+              "glyphCount": 8
+            }
+          ]
+        },
+        {
+          "text": "Café · “heat map” · ₹250 · 12% · 4.5 km",
+          "lang": "en-IN",
+          "className": "specimen english",
+          "lines": 1,
+          "splitGraphemes": 0,
+          "overflow": false,
+          "outsideViewport": false,
+          "fonts": [
+            {
+              "familyName": "Segoe UI",
+              "postScriptName": "SegoeUI",
+              "isCustomFont": false,
+              "glyphCount": 39
+            }
+          ]
+        },
+        {
+          "text": "Check the Bengaluru heat map: 12% lower, with ₹250 in savings.",
+          "lang": "en-IN",
+          "className": "caption english",
+          "lines": 2,
+          "splitGraphemes": 0,
+          "overflow": false,
+          "outsideViewport": false,
+          "fonts": [
+            {
+              "familyName": "Segoe UI",
+              "postScriptName": "SegoeUI",
+              "isCustomFont": false,
+              "glyphCount": 61
+            }
+          ]
+        },
+        {
+          "text": "ಕ್ಷ ಕಿ",
+          "lang": "kn-IN",
+          "className": "fallback",
+          "lines": 1,
+          "splitGraphemes": 0,
+          "overflow": false,
+          "outsideViewport": false,
+          "fonts": [
+            {
+              "familyName": "Nirmala UI",
+              "postScriptName": "NirmalaUI-Bold",
+              "isCustomFont": false,
+              "glyphCount": 3
+            }
+          ]
+        }
+      ],
+      "png": [
+        1080,
+        1920
+      ]
+    },
+    {
+      "name": "horizontal",
+      "viewport": [
+        1920,
+        1080
+      ],
+      "document": [
+        1920,
+        1080
+      ],
+      "blocks": [
+        {
+          "text": "ಕ್ಷ ಜ್ಞ ತ್ರ ಶ್ರ ಸ್ಕೃ ಕಿ ಕೀ ಕು ಕೂ ಕೆ ಕೈ ಕೊ ಕೌ ೦೧೨೩೪",
+          "lang": "kn-IN",
+          "className": "specimen script",
+          "lines": 1,
+          "splitGraphemes": 0,
+          "overflow": false,
+          "outsideViewport": false,
+          "fonts": [
+            {
+              "familyName": "Nirmala UI",
+              "postScriptName": "NirmalaUI",
+              "isCustomFont": false,
+              "glyphCount": 37
+            }
+          ]
+        },
+        {
+          "text": "ಬೆಂಗಳೂರಿನ heat map ನೋಡಿ: ೧೨% ಕಡಿಮೆ, ₹೨೫೦ ಉಳಿತಾಯವೇ?",
+          "lang": "kn-IN",
+          "className": "caption script",
+          "lines": 2,
+          "splitGraphemes": 0,
+          "overflow": false,
+          "outsideViewport": false,
+          "fonts": [
+            {
+              "familyName": "Segoe UI",
+              "postScriptName": "SegoeUI",
+              "isCustomFont": false,
+              "glyphCount": 8
+            },
+            {
+              "familyName": "Nirmala UI",
+              "postScriptName": "NirmalaUI",
+              "isCustomFont": false,
+              "glyphCount": 33
+            }
+          ]
+        },
+        {
+          "text": "heat map",
+          "lang": "en",
+          "className": "latin",
+          "lines": 1,
+          "splitGraphemes": 0,
+          "overflow": false,
+          "outsideViewport": false,
+          "fonts": [
+            {
+              "familyName": "Segoe UI",
+              "postScriptName": "SegoeUI",
+              "isCustomFont": false,
+              "glyphCount": 8
+            }
+          ]
+        },
+        {
+          "text": "क्ष त्र ज्ञ श्र र्क क्र कि की कृ कै कौ कँ कं ड़ ०१२३४",
+          "lang": "hi-IN",
+          "className": "specimen script",
+          "lines": 1,
+          "splitGraphemes": 0,
+          "overflow": false,
+          "outsideViewport": false,
+          "fonts": [
+            {
+              "familyName": "Nirmala UI",
+              "postScriptName": "NirmalaUI",
+              "isCustomFont": false,
+              "glyphCount": 41
+            }
+          ]
+        },
+        {
+          "text": "दिल्ली का heat map देखिए: १२% कम, ₹२५० की बचत।",
+          "lang": "hi-IN",
+          "className": "caption script",
+          "lines": 2,
+          "splitGraphemes": 0,
+          "overflow": false,
+          "outsideViewport": false,
+          "fonts": [
+            {
+              "familyName": "Segoe UI",
+              "postScriptName": "SegoeUI",
+              "isCustomFont": false,
+              "glyphCount": 8
+            },
+            {
+              "familyName": "Nirmala UI",
+              "postScriptName": "NirmalaUI",
+              "isCustomFont": false,
+              "glyphCount": 35
+            }
+          ]
+        },
+        {
+          "text": "heat map",
+          "lang": "en",
+          "className": "latin",
+          "lines": 1,
+          "splitGraphemes": 0,
+          "overflow": false,
+          "outsideViewport": false,
+          "fonts": [
+            {
+              "familyName": "Segoe UI",
+              "postScriptName": "SegoeUI",
+              "isCustomFont": false,
+              "glyphCount": 8
+            }
+          ]
+        },
+        {
+          "text": "క్ష జ్ఞ త్ర శ్ర క్ర కి కీ కు కూ కె కై కొ కౌ ౦౧౨౩౪",
+          "lang": "te-IN",
+          "className": "specimen script",
+          "lines": 1,
+          "splitGraphemes": 0,
+          "overflow": false,
+          "outsideViewport": false,
+          "fonts": [
+            {
+              "familyName": "Nirmala UI",
+              "postScriptName": "NirmalaUI",
+              "isCustomFont": false,
+              "glyphCount": 35
+            }
+          ]
+        },
+        {
+          "text": "హైదరాబాద్ heat map చూడండి: ౧౨% తక్కువ, ₹౨౫౦ ఆదా?",
+          "lang": "te-IN",
+          "className": "caption script",
+          "lines": 2,
+          "splitGraphemes": 0,
+          "overflow": false,
+          "outsideViewport": false,
+          "fonts": [
+            {
+              "familyName": "Segoe UI",
+              "postScriptName": "SegoeUI",
+              "isCustomFont": false,
+              "glyphCount": 8
+            },
+            {
+              "familyName": "Nirmala UI",
+              "postScriptName": "NirmalaUI",
+              "isCustomFont": false,
+              "glyphCount": 30
+            }
+          ]
+        },
+        {
+          "text": "heat map",
+          "lang": "en",
+          "className": "latin",
+          "lines": 1,
+          "splitGraphemes": 0,
+          "overflow": false,
+          "outsideViewport": false,
+          "fonts": [
+            {
+              "familyName": "Segoe UI",
+              "postScriptName": "SegoeUI",
+              "isCustomFont": false,
+              "glyphCount": 8
+            }
+          ]
+        },
+        {
+          "text": "க்ஷ ஸ்ரீ க் ங்க ன்ற கி கீ கு கூ கெ கை கொ கௌ ௦௧௨௩௪",
+          "lang": "ta-IN",
+          "className": "specimen script",
+          "lines": 2,
+          "splitGraphemes": 0,
+          "overflow": false,
+          "outsideViewport": false,
+          "fonts": [
+            {
+              "familyName": "Nirmala UI",
+              "postScriptName": "NirmalaUI",
+              "isCustomFont": false,
+              "glyphCount": 41
+            }
+          ]
+        },
+        {
+          "text": "சென்னையின் heat map பாருங்கள்: ௧௨% குறைவு, ₹௨௫௦ சேமிப்பு?",
+          "lang": "ta-IN",
+          "className": "caption script",
+          "lines": 3,
+          "splitGraphemes": 0,
+          "overflow": false,
+          "outsideViewport": false,
+          "fonts": [
+            {
+              "familyName": "Segoe UI",
+              "postScriptName": "SegoeUI",
+              "isCustomFont": false,
+              "glyphCount": 8
+            },
+            {
+              "familyName": "Nirmala UI",
+              "postScriptName": "NirmalaUI",
+              "isCustomFont": false,
+              "glyphCount": 41
+            }
+          ]
+        },
+        {
+          "text": "heat map",
+          "lang": "en",
+          "className": "latin",
+          "lines": 1,
+          "splitGraphemes": 0,
+          "overflow": false,
+          "outsideViewport": false,
+          "fonts": [
+            {
+              "familyName": "Segoe UI",
+              "postScriptName": "SegoeUI",
+              "isCustomFont": false,
+              "glyphCount": 8
+            }
+          ]
+        },
+        {
+          "text": "Café · “heat map” · ₹250 · 12% · 4.5 km",
+          "lang": "en-IN",
+          "className": "specimen english",
+          "lines": 1,
+          "splitGraphemes": 0,
+          "overflow": false,
+          "outsideViewport": false,
+          "fonts": [
+            {
+              "familyName": "Segoe UI",
+              "postScriptName": "SegoeUI",
+              "isCustomFont": false,
+              "glyphCount": 39
+            }
+          ]
+        },
+        {
+          "text": "Check the Bengaluru heat map: 12% lower, with ₹250 in savings.",
+          "lang": "en-IN",
+          "className": "caption english",
+          "lines": 2,
+          "splitGraphemes": 0,
+          "overflow": false,
+          "outsideViewport": false,
+          "fonts": [
+            {
+              "familyName": "Segoe UI",
+              "postScriptName": "SegoeUI",
+              "isCustomFont": false,
+              "glyphCount": 61
+            }
+          ]
+        },
+        {
+          "text": "ಕ್ಷ ಕಿ",
+          "lang": "kn-IN",
+          "className": "fallback",
+          "lines": 1,
+          "splitGraphemes": 0,
+          "overflow": false,
+          "outsideViewport": false,
+          "fonts": [
+            {
+              "familyName": "Nirmala UI",
+              "postScriptName": "NirmalaUI-Bold",
+              "isCustomFont": false,
+              "glyphCount": 3
+            }
+          ]
+        }
+      ],
+      "png": [
+        1920,
+        1080
+      ]
+    }
+  ]
+}

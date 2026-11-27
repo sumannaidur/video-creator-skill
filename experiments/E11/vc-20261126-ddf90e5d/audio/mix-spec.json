@@ -1,0 +1,82 @@
+{
+  "narration": "../narration/narration-bc46667d38.wav",
+  "manifest": "assets/assets-manifest.json",
+  "music": {
+    "file": "assets/music-pad.wav",
+    "gain_db": 0,
+    "fade_in": 1.5,
+    "fade_out": 2.5,
+    "duck": {
+      "threshold": 0.03,
+      "ratio": 8,
+      "attack_ms": 30,
+      "release_ms": 600
+    }
+  },
+  "sfx": [
+    {
+      "file": "assets/pop.wav",
+      "at": 3.05,
+      "gain_db": -22,
+      "why": "question pops into the sky"
+    },
+    {
+      "file": "assets/chime.wav",
+      "at": 14.7,
+      "gain_db": -22,
+      "why": "white light fans into colours"
+    },
+    {
+      "file": "assets/whoosh.wav",
+      "at": 16.525,
+      "gain_db": -24,
+      "why": "sheet transition up into the air"
+    },
+    {
+      "file": "assets/pop.wav",
+      "at": 22.6,
+      "gain_db": -23,
+      "why": "light scatters from a molecule"
+    },
+    {
+      "file": "assets/pop.wav",
+      "at": 27.975,
+      "gain_db": -24,
+      "why": "blue wave splinters"
+    },
+    {
+      "file": "assets/whoosh.wav",
+      "at": 29.35,
+      "gain_db": -24,
+      "why": "sheet transition back to the rooftop"
+    },
+    {
+      "file": "assets/chime.wav",
+      "at": 37.175,
+      "gain_db": -24,
+      "why": "the whole sky glows blue"
+    },
+    {
+      "file": "assets/whoosh.wav",
+      "at": 48.6,
+      "gain_db": -24,
+      "why": "sheet transition into evening"
+    },
+    {
+      "file": "assets/chime.wav",
+      "at": 60.1,
+      "gain_db": -22,
+      "why": "payoff: orange sky over the rooftop"
+    }
+  ],
+  "loudness": {
+    "integrated_lufs": -16,
+    "true_peak_db": -1.5
+  },
+  "intelligibility_min_lu": 12,
+  "output": "mix.wav",
+  "video": {
+    "input": "../render/fullhd/video-1080x1920.mp4",
+    "output": "final-1080x1920.mp4"
+  }
+}

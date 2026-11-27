@@ -1,0 +1,24 @@
+{
+  "passage": "B",
+  "display_text": "पेड़ धूप रोकते हैं। पत्तियों से पानी भाप बनकर निकलता है, तो आसपास की हवा ठंडी होने में भी मदद मिल सकती है।",
+  "speech_normalized_text": "पेड़ धूप रोकते हैं। पत्तियों से पानी भाप बनकर निकलता है, तो आसपास की हवा ठंडी होने में भी मदद मिल सकती है।",
+  "model": "D:\\video-creator-skill-experiments\\E03\\models\\kokoro-v1.0.onnx",
+  "voices": "D:\\video-creator-skill-experiments\\E03\\models\\voices-v1.0.bin",
+  "voice": "hf_alpha",
+  "locale": "hi-IN",
+  "runtime": "kokoro-onnx==0.6.1",
+  "provider": [
+    "CPUExecutionProvider"
+  ],
+  "intra_op_threads": 4,
+  "inter_op_threads": 1,
+  "graph_optimization": "disabled",
+  "prepacking": "disabled",
+  "python_network_guard": true,
+  "load_seconds": 0.629901299951598,
+  "synthesis_seconds": 5.7202491000061855,
+  "audio_duration_seconds": 8.925,
+  "real_time_factor": 0.640924268908256,
+  "sample_rate": 24000,
+  "output_bytes": 428444
+}

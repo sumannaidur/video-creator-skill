@@ -1,0 +1,11 @@
+[
+  {
+    "at": "2026-11-26T15:40:34+00:00",
+    "measured_seconds": 57.8,
+    "target_seconds": 60,
+    "deviation": -0.0367,
+    "within": true,
+    "script_sha256": "547451c22741bc54a3b45083df8261e2391bd5a4b804289de2529ddb67498b93",
+    "combined": "narration/narration-7480761c4b.wav"
+  }
+]

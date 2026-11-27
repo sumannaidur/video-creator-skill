@@ -1,0 +1,112 @@
+{
+ "whiteboard": {
+  "locale": "en-IN",
+  "hook": {
+   "text": "How does this work?",
+   "until": 1.2,
+   "key": "work?"
+  },
+  "visible": {
+   "opacity": 1,
+   "visible": true
+  },
+  "outside": [],
+  "findings": []
+ },
+ "flat_science": {
+  "locale": "te-IN",
+  "hook": {
+   "text": "ఇది ఎలా పని చేస్తుంది?",
+   "until": 1.2,
+   "key": "ఎలా"
+  },
+  "visible": {
+   "opacity": 1,
+   "visible": true
+  },
+  "outside": [],
+  "findings": []
+ },
+ "data_storytelling": {
+  "locale": "kn-IN",
+  "hook": {
+   "text": "ಇದು ಹೇಗೆ ಕೆಲಸ ಮಾಡುತ್ತದೆ?",
+   "until": 1.2,
+   "key": "ಹೇಗೆ"
+  },
+  "visible": {
+   "opacity": 1,
+   "visible": true
+  },
+  "outside": [],
+  "findings": [
+   [
+    "caption-layout",
+    "hook",
+    "hook overlaps a visible label"
+   ]
+  ]
+ },
+ "kinetic_typography": {
+  "locale": "te-IN",
+  "hook": {
+   "text": "ఇది ఎలా పని చేస్తుంది?",
+   "until": 1.2,
+   "key": "ఎలా"
+  },
+  "visible": {
+   "opacity": 1,
+   "visible": true
+  },
+  "outside": [],
+  "findings": []
+ },
+ "xray_explainer": {
+  "locale": "te-IN",
+  "hook": {
+   "text": "ఇది ఎలా పని చేస్తుంది?",
+   "until": 1.2,
+   "key": "ఎలా"
+  },
+  "visible": {
+   "opacity": 1,
+   "visible": true
+  },
+  "outside": [],
+  "findings": []
+ },
+ "documentary": {
+  "locale": "te-IN",
+  "hook": {
+   "text": "ఇది ఎలా పని చేస్తుంది?",
+   "until": 1.2,
+   "key": "ఎలా"
+  },
+  "visible": {
+   "opacity": 1,
+   "visible": true
+  },
+  "outside": [],
+  "findings": [
+   [
+    "caption-layout",
+    "hook",
+    "hook overlaps a visible label"
+   ]
+  ]
+ },
+ "3d_explainer": {
+  "locale": "te-IN",
+  "hook": {
+   "text": "ఇది ఎలా పని చేస్తుంది?",
+   "until": 1.2,
+   "key": "ఎలా"
+  },
+  "visible": {
+   "opacity": 1,
+   "visible": true
+  },
+  "outside": [],
+  "findings": []
+ }
+}

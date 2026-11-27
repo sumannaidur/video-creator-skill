@@ -1,0 +1,197 @@
+{
+  "schema": "video-creator.captions",
+  "version": 1,
+  "locale": "ta-IN",
+  "narration": {
+    "timeline": "narration/narration.timeline.json",
+    "timeline_sha256": "f37d23a124ade8fd2022f09ed9a5a2b862cb4405661f00ac8a9128f68ba95e39",
+    "audio_sha256": "b13290efbcc0663fde9d62ba1b8f8fb5ea4cc4282dad2cee910c34f4f93db68f",
+    "sample_rate": 24000,
+    "sample_count": 302400,
+    "timing_status": "unreviewed",
+    "timing_method": null,
+    "run_id": "combined-c6827604a5a79b981419172e"
+  },
+  "config": {
+    "enabled": true,
+    "burn_in": true,
+    "subtitle_files": [
+      "srt",
+      "vtt"
+    ],
+    "mode": "phrase",
+    "max_chars": 42,
+    "max_words": 6,
+    "max_lines": 2,
+    "hold_ms": 700
+  },
+  "cues": [
+    {
+      "start_sample": 1200,
+      "speech_end_sample": 12600,
+      "text": "பாரு,",
+      "text_ref": {
+        "field": "speech",
+        "start": 0,
+        "end": 5
+      },
+      "segment": "s1",
+      "timing_sources": [
+        "native_model"
+      ],
+      "long": false,
+      "end_sample": 19800,
+      "id": "c1",
+      "start": 0.05,
+      "end": 0.825
+    },
+    {
+      "start_sample": 19800,
+      "speech_end_sample": 43200,
+      "text": "மழை வந்துடுச்சு!",
+      "text_ref": {
+        "field": "speech",
+        "start": 6,
+        "end": 22
+      },
+      "segment": "s1",
+      "timing_sources": [
+        "native_model"
+      ],
+      "long": false,
+      "end_sample": 53400,
+      "id": "c2",
+      "start": 0.825,
+      "end": 2.225
+    },
+    {
+      "start_sample": 53400,
+      "speech_end_sample": 126600,
+      "text": "மழை பெய்ஞ்சதும் மண் வாசனை எவ்வளவு நல்லா இருக்கு,",
+      "text_ref": {
+        "field": "speech",
+        "start": 23,
+        "end": 71
+      },
+      "segment": "s1",
+      "timing_sources": [
+        "native_model"
+      ],
+      "long": false,
+      "end_sample": 135600,
+      "id": "c3",
+      "start": 2.225,
+      "end": 5.65
+    },
+    {
+      "start_sample": 135600,
+      "speech_end_sample": 145800,
+      "text": "இல்லையா?",
+      "text_ref": {
+        "field": "speech",
+        "start": 72,
+        "end": 80
+      },
+      "segment": "s1",
+      "timing_sources": [
+        "native_model"
+      ],
+      "long": false,
+      "end_sample": 156000,
+      "id": "c4",
+      "start": 5.65,
+      "end": 6.5
+    },
+    {
+      "start_sample": 156000,
+      "speech_end_sample": 167400,
+      "text": "பாரு,",
+      "text_ref": {
+        "field": "speech",
+        "start": 81,
+        "end": 86
+      },
+      "segment": "s2",
+      "timing_sources": [
+        "native_model"
+      ],
+      "long": false,
+      "end_sample": 174600,
+      "id": "c5",
+      "start": 6.5,
+      "end": 7.275
+    },
+    {
+      "start_sample": 174600,
+      "speech_end_sample": 198000,
+      "text": "மழை வந்துடுச்சு!",
+      "text_ref": {
+        "field": "speech",
+        "start": 87,
+        "end": 103
+      },
+      "segment": "s2",
+      "timing_sources": [
+        "native_model"
+      ],
+      "long": false,
+      "end_sample": 208200,
+      "id": "c6",
+      "start": 7.275,
+      "end": 8.675
+    },
+    {
+      "start_sample": 208200,
+      "speech_end_sample": 281400,
+      "text": "மழை பெய்ஞ்சதும் மண் வாசனை எவ்வளவு நல்லா இருக்கு,",
+      "text_ref": {
+        "field": "speech",
+        "start": 104,
+        "end": 152
+      },
+      "segment": "s2",
+      "timing_sources": [
+        "native_model"
+      ],
+      "long": false,
+      "end_sample": 290400,
+      "id": "c7",
+      "start": 8.675,
+      "end": 12.1
+    },
+    {
+      "start_sample": 290400,
+      "speech_end_sample": 300600,
+      "text": "இல்லையா?",
+      "text_ref": {
+        "field": "speech",
+        "start": 153,
+        "end": 161
+      },
+      "segment": "s2",
+      "timing_sources": [
+        "native_model"
+      ],
+      "long": false,
+      "end_sample": 302400,
+      "id": "c8",
+      "start": 12.1,
+      "end": 12.6
+    }
+  ],
+  "files": {
+    "srt": {
+      "path": "captions/captions.srt",
+      "sha256": "82117409a597830ed664d0a690b0fccab0dc48eabdfd684c3900cd7a76f79f1a"
+    },
+    "vtt": {
+      "path": "captions/captions.vtt",
+      "sha256": "733ff6a89304322411ef65cba87ece43e041f81a704e80699dc692358a9e6492"
+    }
+  },
+  "review": {
+    "technical": "passed",
+    "language": "pending native-reader review",
+    "readability": "pending human review"
+  }
+}

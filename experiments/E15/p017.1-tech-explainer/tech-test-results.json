@@ -1,0 +1,76 @@
+[
+  {
+    "name": "plan resolves for the tech-explainer style",
+    "ok": true,
+    "err": ""
+  },
+  {
+    "name": "caption artifact builds",
+    "ok": true,
+    "err": ""
+  },
+  {
+    "name": "portrait keyframes render with all speech-cue checks",
+    "ok": true,
+    "out": "keyframes only: 3 keyframes, 4 cue checks passed\n"
+  },
+  {
+    "name": "portrait preflight passes every frame with no unsupported checks",
+    "ok": true,
+    "out": "preflight passed: 180 frames, 0 defect(s), 0 unsupported check(s); 1.5 s\n",
+    "unsupported": []
+  },
+  {
+    "name": "landscape keyframes render with all speech-cue checks",
+    "ok": true,
+    "out": "keyframes only: 3 keyframes, 4 cue checks passed\n"
+  },
+  {
+    "name": "landscape preflight passes every frame with no unsupported checks",
+    "ok": true,
+    "out": "preflight passed: 180 frames, 0 defect(s), 0 unsupported check(s); 1.9 s\n",
+    "unsupported": []
+  },
+  {
+    "name": "camera moments and tech transitions (focus, iris) are active",
+    "ok": true,
+    "facts": {
+      "shots": [
+        [
+          "send",
+          3,
+          "focus"
+        ],
+        [
+          "route",
+          2,
+          "iris"
+        ],
+        [
+          "arrive",
+          2,
+          null
+        ]
+      ],
+      "mid": [
+        "focus",
+        "iris"
+      ]
+    }
+  },
+  {
+    "name": "motion preview renders, decodes and passes media checks",
+    "ok": true,
+    "out": "tech-preview.mp4: 180 frames, 6.000 s; reused 0, rendered 180, corrupt 0, missing 180, invalidated 0; 18.6 s wall\n"
+  },
+  {
+    "name": "contact sheet written",
+    "ok": true,
+    "err": ""
+  },
+  {
+    "name": "installed package unchanged",
+    "ok": true,
+    "changed": []
+  }
+]

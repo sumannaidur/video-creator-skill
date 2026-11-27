@@ -1,0 +1,476 @@
+{
+  "schema": "video-creator.project",
+  "version": 1,
+  "id": "vc-20261126-c78767ec",
+  "created": "2026-11-26T15:37:43+00:00",
+  "topic": {
+    "path": "inputs/topic.txt",
+    "sha256": "995caf5eb9bf6cd1824da8ded9882a4984067f5ebe6c475a9cada15ade09d693",
+    "source": null
+  },
+  "config": {
+    "effective": {
+      "locale": "te-IN",
+      "narration": {
+        "provider": "mithi",
+        "voice": "ahana",
+        "accent": null,
+        "tone": "conversational"
+      },
+      "style": "paper-explainer",
+      "duration_seconds": 60,
+      "orientation": "vertical",
+      "resolution": 1080,
+      "fps": 30,
+      "captions": {
+        "enabled": true,
+        "burn_in": true,
+        "subtitle_files": [
+          "srt",
+          "vtt"
+        ]
+      },
+      "music": {
+        "enabled": true,
+        "level": "subtle"
+      },
+      "sfx": {
+        "enabled": true,
+        "density": "sparse"
+      },
+      "review_mode": "autonomous",
+      "output_dir": null,
+      "cost_policy": "local-only"
+    },
+    "source": {
+      "locale": "request",
+      "narration": {
+        "provider": "request",
+        "voice": "request",
+        "accent": "default",
+        "tone": "request"
+      },
+      "style": "request",
+      "duration_seconds": "request",
+      "orientation": "request",
+      "resolution": "request",
+      "fps": "request",
+      "captions": {
+        "enabled": "request",
+        "burn_in": "request",
+        "subtitle_files": "default"
+      },
+      "music": {
+        "enabled": "default",
+        "level": "default"
+      },
+      "sfx": {
+        "enabled": "default",
+        "density": "default"
+      },
+      "review_mode": "request",
+      "output_dir": "default",
+      "cost_policy": "request"
+    },
+    "file": "D:/video-creator-skill/experiments/E17/setup/config.json",
+    "sha256": "27154034332aeb3cf102a631b979eb553a216c11b58fb4fd6599331919cc2d13"
+  },
+  "capabilities": null,
+  "stages": {
+    "research": {
+      "state": "completed",
+      "depends_on": [],
+      "inputs_fingerprint": "3b757f7ec07d0bf67e2ab21b79f02e3361073bd4c967a225358668ad854ea7a9",
+      "outputs": [
+        {
+          "path": "research/sources.json",
+          "sha256": "4bc5cc4019f3033c5ab9b52cc062db93d8c0ec43d84a2f8106578a0d80d60309",
+          "bytes": 911
+        },
+        {
+          "path": "research/claims.json",
+          "sha256": "ff85fce4c339645e421516dbdabd45cde95c4ec352cfaa27a0db5a8a4d89129f",
+          "bytes": 2374
+        }
+      ],
+      "validation": {
+        "passed": true,
+        "evidence": "qa/research-evidence.json",
+        "evidence_sha256": "abec6709bf245d5a18cf35e04d716efa2ed661def8ad56262273caf0a7cc9be2"
+      },
+      "attempts": 1,
+      "started": "2026-11-26T15:38:12+00:00",
+      "finished": "2026-11-26T15:38:12+00:00",
+      "failure": null,
+      "invalidated": null,
+      "declared_inputs": []
+    },
+    "script": {
+      "state": "completed",
+      "depends_on": [
+        "research"
+      ],
+      "inputs_fingerprint": "5fe3e97b72691d101ef6fc6641f340d916f2869fd267240ba6507e389990d4d2",
+      "outputs": [
+        {
+          "path": "script/script.json",
+          "sha256": "547451c22741bc54a3b45083df8261e2391bd5a4b804289de2529ddb67498b93",
+          "bytes": 2654
+        }
+      ],
+      "validation": {
+        "passed": true,
+        "evidence": "qa/script-evidence.json",
+        "evidence_sha256": "538af3f5ca790dd7194830bf6ff9e23c2900bd63b642f22aa0679b7fb5c15b93"
+      },
+      "attempts": 1,
+      "started": "2026-11-26T15:38:13+00:00",
+      "finished": "2026-11-26T15:38:13+00:00",
+      "failure": null,
+      "invalidated": null,
+      "declared_inputs": []
+    },
+    "narration": {
+      "state": "completed",
+      "depends_on": [
+        "script"
+      ],
+      "inputs_fingerprint": "b797f635f54de1a441503ff11a9ea5870cc64f91a972c1a116c53589e3f4f6fd",
+      "outputs": [
+        {
+          "path": "narration/narration-7480761c4b.wav",
+          "sha256": "f9464a1d5a59daa2ee5e268406b8176ee5c9554500216528ee715eb30b0fe1ae",
+          "bytes": 2774444
+        },
+        {
+          "path": "narration/narration-7480761c4b.timeline.json",
+          "sha256": "fd3f521992effe33cca750652e8f36f227ba9f02f303fdb560d175bab89e55c8",
+          "bytes": 250279
+        }
+      ],
+      "validation": {
+        "passed": true,
+        "evidence": "narration/narration-evidence.json",
+        "evidence_sha256": "2c7be882474f215e2edc75f1f706aead58db5c0e6dd5d1a37871e3666d086fb1"
+      },
+      "attempts": 1,
+      "started": "2026-11-26T15:38:18+00:00",
+      "finished": "2026-11-26T15:40:34+00:00",
+      "failure": null,
+      "invalidated": null,
+      "declared_inputs": []
+    },
+    "creative-plan": {
+      "state": "completed",
+      "depends_on": [
+        "script",
+        "narration"
+      ],
+      "inputs_fingerprint": "13e857dde41d91325d6ce3d56a401fadff86ff4199f055ff9a33d3e5d77c805b",
+      "outputs": [
+        {
+          "path": "plan/creative-plan.json",
+          "sha256": "fe0ae07eb1f47f829e9f4fa3f763b51a32ed17a444d26b4af59b10018f2f390f",
+          "bytes": 12851
+        },
+        {
+          "path": "plan/resolved-plan.json",
+          "sha256": "cb945830a93407450557d2539f92ec31e20defd7d5cba59f92aa12447655b8f3",
+          "bytes": 19653
+        }
+      ],
+      "validation": {
+        "passed": true,
+        "evidence": "plan/plan-evidence.json",
+        "evidence_sha256": "e5ab3eca6b70a5c8483dc66437ecbeb60e96e73776c2a35a34f233965e2649cf"
+      },
+      "attempts": 1,
+      "started": "2026-11-26T15:44:12+00:00",
+      "finished": "2026-11-26T15:44:12+00:00",
+      "failure": null,
+      "invalidated": null,
+      "declared_inputs": []
+    },
+    "visual-production": {
+      "state": "completed",
+      "depends_on": [
+        "creative-plan",
+        "narration"
+      ],
+      "inputs_fingerprint": "446608f29adda914874e8ac22369ca5c84844ccdfebd7b55afdb8e00df6d97e3",
+      "outputs": [
+        {
+          "path": "render/fullhd/video-1080x1920.mp4",
+          "sha256": "917b0073053df74d52b4107e7a4fe2afccf57038f2cc9cf4798c522e22a77f18",
+          "bytes": 41498496
+        },
+        {
+          "path": "render/fullhd/video-1080x1920-evidence.json",
+          "sha256": "0eec2057c26a14d43c72a1895869182bc70e523afdd16e22bd6e306481d53efd",
+          "bytes": 37022
+        },
+        {
+          "path": "visual/topic-heart.js",
+          "sha256": "c55d6520956a12f34f6c0e28da3ad6123cd5443686af671d0e96ef653a4f6b4c",
+          "bytes": 40649
+        },
+        {
+          "path": "captions/captions.json",
+          "sha256": "3f5e54fe32598be5d716be90b0488c1735d9d2f910125de7a25e770e4bac6dcf",
+          "bytes": 16490
+        },
+        {
+          "path": "captions/captions.srt",
+          "sha256": "d08f93a2643c73b37917024b4b18bdc2c328cacd568d81c1dc9f5fdd71f8cc5f",
+          "bytes": 3129
+        },
+        {
+          "path": "captions/captions.vtt",
+          "sha256": "26bae53d4823bbcabf59510acd35858c393239321c91cbbe66071dda55c83270",
+          "bytes": 3170
+        },
+        {
+          "path": "qa/preflight/preflight.json",
+          "sha256": "2979e89837c38812f34c6b7ad29fecf6d6a50ab82ffaff01c3fba1d0109f7f8d",
+          "bytes": 2612
+        },
+        {
+          "path": "qa/preflight/preflight.md",
+          "sha256": "27bd477eafb61cca05f1e18099f3ae5be385a2ea0420abde99c621fd5c3a06fb",
+          "bytes": 858
+        },
+        {
+          "path": "notes/creative-direction.md",
+          "sha256": "9b97a55b66b9ac31523e6b5f35aeca561a4fc041a245b3ba9a8ab8b829d2a285",
+          "bytes": 3540
+        }
+      ],
+      "validation": {
+        "passed": true,
+        "evidence": "qa/visual-evidence.json",
+        "evidence_sha256": "73043e3dd1d06dddb4f82388c3c0bae9cdd726659fc4b35c6e406f033dfc9978"
+      },
+      "attempts": 1,
+      "started": "2026-11-26T15:59:57+00:00",
+      "finished": "2026-11-26T15:59:57+00:00",
+      "failure": null,
+      "invalidated": null,
+      "declared_inputs": []
+    },
+    "sound": {
+      "state": "completed",
+      "depends_on": [
+        "narration",
+        "visual-production"
+      ],
+      "inputs_fingerprint": "d71631107ce013d5af2f53966f841c497c25df7aec80d01ce86c370e57dfee13",
+      "outputs": [
+        {
+          "path": "audio/mix.wav",
+          "sha256": "ff7138d9ae1732c531842c29fcea406b5217697420f358ac25141da214cd3e0a",
+          "bytes": 11097678
+        },
+        {
+          "path": "audio/final-1080x1920.mp4",
+          "sha256": "c598fd97ceefd09bb69f0a7f511fb7cd7a352cbce6c52173dca0f444355eb489",
+          "bytes": 41895715
+        },
+        {
+          "path": "audio/mix-spec.json",
+          "sha256": "0ac65fe7c5dc8ee4c9102ebc92b332ea2d73ee31d3ede18515bde44e56d668b1",
+          "bytes": 2325
+        },
+        {
+          "path": "audio/make-spec.py",
+          "sha256": "e6002c53de369919cae036837731f098a7a84d0166a30ec5f5714ac8ef92c111",
+          "bytes": 2426
+        },
+        {
+          "path": "audio/assets/assets-manifest.json",
+          "sha256": "9c7ffaf420688b1ec261f54c09fceb15389bfa579c1b06d663a91548c6759ffe",
+          "bytes": 5376
+        }
+      ],
+      "validation": {
+        "passed": true,
+        "evidence": "audio/mix.evidence.json",
+        "evidence_sha256": "e7a6820dc3c7ead2c1a5e542f25dc623295446b871610b5b03067477bf777865"
+      },
+      "attempts": 1,
+      "started": "2026-11-26T15:59:58+00:00",
+      "finished": "2026-11-26T15:59:58+00:00",
+      "failure": null,
+      "invalidated": null,
+      "declared_inputs": []
+    },
+    "review-delivery": {
+      "state": "completed",
+      "depends_on": [
+        "visual-production",
+        "sound"
+      ],
+      "inputs_fingerprint": "c80a2bfe826a2b68dcca2cb9559d9016e7b99c96a90c1f924d247075aae93223",
+      "outputs": [
+        {
+          "path": "qa/qa-report.json",
+          "sha256": "5802ec6b39451c01cc7622de4a790b52564459e0aa7e1ec9ae257457714dc0e4",
+          "bytes": 9026
+        },
+        {
+          "path": "qa/delivery-report.md",
+          "sha256": "7ad1524702912ad36cf0a051d0a509eac13b88016367bde682a1396d2afa715e",
+          "bytes": 2519
+        },
+        {
+          "path": "qa/human-review-checklist.md",
+          "sha256": "b65fb2d5027fb672ded69d0cd2454c0fd54f704de076548175bb282644865ac5",
+          "bytes": 1539
+        }
+      ],
+      "validation": {
+        "passed": true,
+        "evidence": "qa/qa-report.json",
+        "evidence_sha256": "5802ec6b39451c01cc7622de4a790b52564459e0aa7e1ec9ae257457714dc0e4"
+      },
+      "attempts": 1,
+      "started": "2026-11-26T16:00:15+00:00",
+      "finished": "2026-11-26T16:00:15+00:00",
+      "failure": null,
+      "invalidated": null,
+      "declared_inputs": []
+    }
+  },
+  "approvals": {
+    "human_review": {
+      "status": "pending"
+    },
+    "publication": {
+      "status": "not-approved"
+    }
+  },
+  "history": [
+    {
+      "at": "2026-11-26T15:37:43+00:00",
+      "event": "init"
+    },
+    {
+      "at": "2026-11-26T15:38:12+00:00",
+      "event": "start",
+      "stage": "research",
+      "attempt": 1
+    },
+    {
+      "at": "2026-11-26T15:38:12+00:00",
+      "event": "complete",
+      "stage": "research",
+      "outputs": [
+        "research/sources.json",
+        "research/claims.json"
+      ]
+    },
+    {
+      "at": "2026-11-26T15:38:13+00:00",
+      "event": "start",
+      "stage": "script",
+      "attempt": 1
+    },
+    {
+      "at": "2026-11-26T15:38:13+00:00",
+      "event": "complete",
+      "stage": "script",
+      "outputs": [
+        "script/script.json"
+      ]
+    },
+    {
+      "at": "2026-11-26T15:38:18+00:00",
+      "event": "start",
+      "stage": "narration",
+      "attempt": 1
+    },
+    {
+      "at": "2026-11-26T15:40:34+00:00",
+      "event": "complete",
+      "stage": "narration",
+      "outputs": [
+        "narration/narration-7480761c4b.wav",
+        "narration/narration-7480761c4b.timeline.json"
+      ]
+    },
+    {
+      "at": "2026-11-26T15:44:12+00:00",
+      "event": "start",
+      "stage": "creative-plan",
+      "attempt": 1
+    },
+    {
+      "at": "2026-11-26T15:44:12+00:00",
+      "event": "complete",
+      "stage": "creative-plan",
+      "outputs": [
+        "plan/creative-plan.json",
+        "plan/resolved-plan.json"
+      ]
+    },
+    {
+      "at": "2026-11-26T15:59:57+00:00",
+      "event": "start",
+      "stage": "visual-production",
+      "attempt": 1
+    },
+    {
+      "at": "2026-11-26T15:59:57+00:00",
+      "event": "complete",
+      "stage": "visual-production",
+      "outputs": [
+        "render/fullhd/video-1080x1920.mp4",
+        "render/fullhd/video-1080x1920-evidence.json",
+        "visual/topic-heart.js",
+        "captions/captions.json",
+        "captions/captions.srt",
+        "captions/captions.vtt",
+        "qa/preflight/preflight.json",
+        "qa/preflight/preflight.md",
+        "notes/creative-direction.md"
+      ]
+    },
+    {
+      "at": "2026-11-26T15:59:58+00:00",
+      "event": "start",
+      "stage": "sound",
+      "attempt": 1
+    },
+    {
+      "at": "2026-11-26T15:59:58+00:00",
+      "event": "complete",
+      "stage": "sound",
+      "outputs": [
+        "audio/mix.wav",
+        "audio/final-1080x1920.mp4",
+        "audio/mix-spec.json",
+        "audio/make-spec.py",
+        "audio/assets/assets-manifest.json"
+      ]
+    },
+    {
+      "at": "2026-11-26T15:59:58+00:00",
+      "event": "verify"
+    },
+    {
+      "at": "2026-11-26T16:00:15+00:00",
+      "event": "start",
+      "stage": "review-delivery",
+      "attempt": 1
+    },
+    {
+      "at": "2026-11-26T16:00:15+00:00",
+      "event": "complete",
+      "stage": "review-delivery",
+      "outputs": [
+        "qa/qa-report.json",
+        "qa/delivery-report.md",
+        "qa/human-review-checklist.md"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,48 @@
+/* X-Ray Explainer frame: a deep light-table field, glass shells with bright rims, warm metal internals under selective
+   light, hatched amber section planes. Captions sit in an inspection card with corner brackets. Illustrative only. */
+:root {
+  --vc-font: "Nirmala UI", "Segoe UI", sans-serif;
+  --xr-field: #08151d; --xr-glass: #7fd8ff; --xr-ink: #e9f6ff; --xr-cut: #ffb547;
+}
+html, body { margin: 0; height: 100%; }
+body { background: #050d12; color: var(--xr-ink); font-family: var(--vc-font); }
+.story-frame { --x: 50px; --y: 74px; min-height: 100vh; box-sizing: border-box; padding: var(--y) var(--x); background: radial-gradient(120% 80% at 50% 30%, #0b1e28, #050d12); position: relative; isolation: isolate; }
+.story-safe { height: calc(100vh - 2 * var(--y)); min-height: 0; display: grid; grid-template-rows: minmax(0, 1fr) auto; gap: 22px; }
+.story-body { position: relative; height: 100%; min-height: 0; }
+.story-title { display: none; }
+.story-stage { position: relative; height: 100%; min-height: 0; overflow: hidden; border-radius: 14px; background: var(--xr-field); isolation: isolate;
+  box-shadow: inset 0 0 0 2px #7fd8ff2e, 0 0 60px #7fd8ff14; }
+.shot-light { display: none; }
+.route-layer { position: absolute; inset: 0; width: 100%; height: 100%; z-index: 1; pointer-events: none; }
+.route { fill: none; stroke: var(--xr-glass); stroke-width: 2px; vector-effect: non-scaling-stroke; }
+.piece { position: absolute; transform: translate(-50%, -50%); display: grid; justify-items: center; text-align: center; }
+.piece-art { width: 100%; display: block; overflow: visible; filter: none; }
+.piece-label { display: block; width: max-content; max-width: 100%; white-space: nowrap; }
+.xr-sweep { position: absolute; inset: 0; z-index: 33; pointer-events: none; visibility: hidden; }
+.xr-cover { position: absolute; left: 0; right: 0; background: #050d12; }
+.xr-beam { position: absolute; left: 0; right: 0; height: 10px; margin-top: -5px; background: var(--xr-glass);
+  box-shadow: 0 0 24px 8px #7fd8ff99, 0 0 80px 20px #7fd8ff33; }
+footer.story-caption { align-self: end; position: relative; min-height: 184px; margin: 0; display: grid; place-items: center; box-sizing: border-box;
+  padding: 22px 44px; background: #0c1f29; color: var(--xr-ink); font: 600 42px/1.5 var(--vc-font); text-align: center; text-wrap: balance;
+  border-radius: 6px; box-shadow: inset 0 0 0 2px #7fd8ff40; }
+footer.story-caption::before, footer.story-caption::after { content: ""; position: absolute; width: 34px; height: 34px; border: 5px solid var(--accent, var(--xr-glass)); }
+footer.story-caption::before { left: 8px; top: 8px; border-right: 0; border-bottom: 0; }
+footer.story-caption::after { right: 8px; bottom: 8px; border-left: 0; border-top: 0; }
+.debug { position: absolute; top: 18px; left: var(--x); font-size: 16px; }
+@media (orientation: landscape) {
+  .story-frame { --x: 68px; --y: 42px; }
+  .story-safe { gap: 16px; }
+  footer.story-caption { min-height: 132px; font-size: 38px; padding: 16px 52px; }
+}
+
+/* P018.6 full-bleed presentation. X-Ray voice: an instrument read-out; captions sit in a dark glass HUD panel with a
+   thin glass border; the spoken word takes the amber cut colour (no reflow); the hook is glowing glass-blue type with
+   its key word outlined in amber. */
+html[data-presentation="full-bleed"] { --cap-size: 46px; --cap-lh: 1.36; --cap-pad-y: 12px; --cap-pad-x: 28px; --cap-lower: 1vh; --hook-top: 1vh; }
+html[data-presentation="full-bleed"] .story-frame { background: var(--xr-field); }
+html[data-presentation="full-bleed"] footer.story-caption { font-family: var(--vc-font); font-weight: 700; color: var(--xr-ink); }
+html[data-presentation="full-bleed"] footer .ct { background: #06131bdd; border-radius: 6px; box-shadow: inset 0 0 0 2px #7fd8ff66, 0 0 26px #7fd8ff22; }
+html[data-presentation="full-bleed"] footer .cw.is-active { color: var(--xr-cut); }
+.vc-hook { font: 800 72px/1.18 var(--vc-font); color: var(--xr-glass); text-shadow: 0 0 22px #7fd8ff66; }
+.vc-hook-key { color: var(--xr-cut); box-shadow: inset 0 0 0 3px var(--xr-cut); border-radius: 6px; padding: 0 14px; text-shadow: none; }
+@media (orientation: landscape) { html[data-presentation="full-bleed"] { --cap-size: 38px; --cap-pad-y: 8px; } .vc-hook { font-size: 54px; } }

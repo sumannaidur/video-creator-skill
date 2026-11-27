@@ -1,0 +1,1512 @@
+{
+  "name": "video.mp4",
+  "settings": {
+    "width": 1080,
+    "height": 1920,
+    "scale": 1,
+    "fps": 30,
+    "quality": 95,
+    "options": null,
+    "browserArgs": [
+      "--disable-gpu"
+    ],
+    "deviceScaleFactor": 1
+  },
+  "inputs": {
+    "engine": {
+      "path": "experiments/E10/p013.1/paper-shots.js",
+      "sha256": "2d4bc28be6dcbe22b706ce59300b60bd8d4f00d0048133be241b576c50c8be0e"
+    },
+    "topic": {
+      "path": "experiments/E10/p013-flights/topic-opening.js",
+      "sha256": "f28dcf05e16f72770d628d6fa539112887c6ca47ec18deb3bfc2266d7f7b87b3"
+    },
+    "timeline": {
+      "path": "experiments/E10/p013-flights/narration-DK.timeline.json",
+      "sha256": "de34bcbf1126722369392a8dac12e3607759428b727405ea5891b87b3c77609d"
+    },
+    "audio": {
+      "path": "experiments/E10/p013-flights/narration-DK.wav",
+      "sha256": "71e936410d68ed38b7dea51895b6287e5a6f46e5e9616a228982e7425a9b0c53"
+    },
+    "capture": {
+      "path": "experiments/E05/render.mjs",
+      "sha256": "42fa0f1656ab0902d0ed3521b5960f82395f06336ebd8492bc56884c50319044"
+    },
+    "renderer": {
+      "path": "experiments/E10/p013.1/render.mjs",
+      "sha256": "d644564d0be48699ed8a1c5454451a7487fa4a3759efc79d071c3c530aec7381"
+    },
+    "story.html": {
+      "path": "experiments/E06/paper-explainer/story.html",
+      "sha256": "f5e6a2c43e62df6354c0e20291ae8452735ed934004ba827b3133718fda34a68"
+    },
+    "paper.css": {
+      "path": "experiments/E06/paper-explainer/paper.css",
+      "sha256": "c766e6bc8a70679f652d7b98dd3bc2fb1e2724c25e8523b95223a8d4cc7528dd"
+    },
+    "story.css": {
+      "path": "experiments/E06/paper-explainer/story.css",
+      "sha256": "4793c6efe7d54bad96b63c3b7941fe06ac8c5466a859546d64637ac42f7fbab1"
+    },
+    "story-scenes.js": {
+      "path": "experiments/E06/paper-explainer/story-scenes.js",
+      "sha256": "c109c55ebb85018115ceda3c19cfcda5c72faafa3aa5193739bac7aeaea78cfb"
+    },
+    "story-view.js": {
+      "path": "experiments/E06/paper-explainer/story-view.js",
+      "sha256": "ce69869ed83bb792653e4447ea093a6ce3d5e745d314e0df49b38a0f594482c9"
+    },
+    "story-motion.js": {
+      "path": "experiments/E06/paper-explainer/story-motion.js",
+      "sha256": "439c57fffa852e4105c494655bc61839873a80faf9481844bff43e64ad9dc7b5"
+    }
+  },
+  "output": [
+    1080,
+    1920
+  ],
+  "keyframes": [
+    {
+      "name": "opening",
+      "t": 0.9,
+      "shot": "opening",
+      "captionId": 1,
+      "transition": null,
+      "labels": [],
+      "sha256": "05e438546feb7f8e7e9f483a179918a20d3c80637c704c849023ba438cf00424"
+    },
+    {
+      "name": "ticket-low",
+      "t": 4.99,
+      "shot": "opening",
+      "captionId": 1,
+      "transition": null,
+      "labels": [
+        {
+          "id": "fl-tag-low",
+          "x": 246.89979553222656,
+          "y": 1200.216064453125,
+          "width": 198.4088897705078,
+          "height": 49.88671875
+        },
+        {
+          "id": "fl-price-low",
+          "x": 167.4891357421875,
+          "y": 1289.796875,
+          "width": 235.3900146484375,
+          "height": 112.306640625
+        }
+      ],
+      "sha256": "56376fa1c38b8440eb4429ae3f440982824cde557413d741afbf62b9664ab28f"
+    },
+    {
+      "name": "ticket-high",
+      "t": 6.75,
+      "shot": "opening",
+      "captionId": 2,
+      "transition": null,
+      "labels": [
+        {
+          "id": "fl-tag-low",
+          "x": 241.63259887695312,
+          "y": 1209.570556640625,
+          "width": 197.04263305664062,
+          "height": 49.543212890625
+        },
+        {
+          "id": "fl-price-low",
+          "x": 162.76876831054688,
+          "y": 1298.534423828125,
+          "width": 233.76910400390625,
+          "height": 111.533447265625
+        },
+        {
+          "id": "fl-tag-high",
+          "x": 624.8544921875,
+          "y": 995.5670776367188,
+          "width": 197.042724609375,
+          "height": 49.54327392578125
+        },
+        {
+          "id": "fl-price-high",
+          "x": 542.962890625,
+          "y": 1089.399169921875,
+          "width": 233.76904296875,
+          "height": 111.533447265625
+        }
+      ],
+      "sha256": "122721cf2385e4c3203cb26d775f69900c0b46277c49166dbfb17a1f10d06029"
+    },
+    {
+      "name": "apron",
+      "t": 9.725,
+      "shot": "fuel",
+      "captionId": 4,
+      "transition": null,
+      "labels": [],
+      "sha256": "37804624e0aaba107ac814ed4e05c7c65db4cac68d97913346638b89a92e9042"
+    },
+    {
+      "name": "refuelling",
+      "t": 11.725000000000001,
+      "shot": "fuel",
+      "captionId": 4,
+      "transition": null,
+      "labels": [],
+      "sha256": "d2cca80f6fb9522ed00df8b84dab689080d32650bb8dcc243202fef197b68a9b"
+    },
+    {
+      "name": "fuel-cutaway",
+      "t": 15.575,
+      "shot": "fuel",
+      "captionId": 5,
+      "transition": null,
+      "labels": [
+        {
+          "id": "fe-fuel-label",
+          "x": 682.6521606445312,
+          "y": 608.2962646484375,
+          "width": 241.3057861328125,
+          "height": 125.916015625
+        }
+      ],
+      "sha256": "4311f3a4f36356a1d72e3ad53dc5866a46b7e2cb1cfd3736f76c4a761ab96a4b"
+    },
+    {
+      "name": "personnel",
+      "t": 20.1,
+      "shot": "operations",
+      "captionId": 6,
+      "transition": null,
+      "labels": [
+        {
+          "id": "fo-label-pilot",
+          "x": 247.99749755859375,
+          "y": 1054.715087890625,
+          "width": 273.8203125,
+          "height": 115.5
+        },
+        {
+          "id": "fo-label-staff",
+          "x": 638.2201538085938,
+          "y": 1054.715087890625,
+          "width": 306.44146728515625,
+          "height": 115.5
+        },
+        {
+          "id": "fo-label-pay",
+          "x": 489.52484130859375,
+          "y": 482.875244140625,
+          "width": 231.21875,
+          "height": 115.5
+        }
+      ],
+      "sha256": "236bd22c6199c4361d557e896d5e00eede7cc3b13e290dbef7fcd72f7e725393"
+    },
+    {
+      "name": "maintenance",
+      "t": 21.6,
+      "shot": "operations",
+      "captionId": 7,
+      "transition": null,
+      "labels": [
+        {
+          "id": "fo-label-care",
+          "x": 471.96539306640625,
+          "y": 555.073974609375,
+          "width": 305.5390625,
+          "height": 115.5
+        }
+      ],
+      "sha256": "d831e40c8685198464ee5f4faa2f7946437c58584f0de85dd19e25acee505f4f"
+    },
+    {
+      "name": "leasing",
+      "t": 23.7,
+      "shot": "operations",
+      "captionId": 8,
+      "transition": null,
+      "labels": [
+        {
+          "id": "fo-label-lease",
+          "x": 309.865234375,
+          "y": 558.84326171875,
+          "width": 557.29296875,
+          "height": 115.5
+        }
+      ],
+      "sha256": "a68b6674014020869bdeb4e23b32393ced6ecc3c2694b97889a2ee6332ccfa35"
+    },
+    {
+      "name": "airport-charges",
+      "t": 25.85,
+      "shot": "operations",
+      "captionId": 8,
+      "transition": null,
+      "labels": [
+        {
+          "id": "fo-label-fee",
+          "x": 447.2255859375,
+          "y": 909.15576171875,
+          "width": 463.2578125,
+          "height": 115.5
+        }
+      ],
+      "sha256": "cf636b341eddc3e8848852ca7e691385ab1ef3c1ac686730ed446ded0c52eace"
+    },
+    {
+      "name": "ticket-price",
+      "t": 29.05,
+      "shot": "pricing",
+      "captionId": 9,
+      "transition": null,
+      "labels": [
+        {
+          "id": "fp-price",
+          "x": 373.3302001953125,
+          "y": 567.0008544921875,
+          "width": 121.72103881835938,
+          "height": 119.0013427734375
+        }
+      ],
+      "sha256": "1fc35f3697a32091947aa2f8df9eb062b3b107d2729d7c2c7bd9ba6c64ca6f10"
+    },
+    {
+      "name": "not-only-costs",
+      "t": 31.15,
+      "shot": "pricing",
+      "captionId": 9,
+      "transition": null,
+      "labels": [
+        {
+          "id": "fp-price",
+          "x": 364.398193359375,
+          "y": 571.43310546875,
+          "width": 123.88259887695312,
+          "height": 121.11468505859375
+        },
+        {
+          "id": "fp-not-alone",
+          "x": 362.6575927734375,
+          "y": 868.14111328125,
+          "width": 330.7880859375,
+          "height": 82.18603515625
+        }
+      ],
+      "sha256": "95c9e85e5ff5fc6bb70e7fd1df11bbe60f71f37fbdea27e679f6ca7caa005402"
+    },
+    {
+      "name": "cabin",
+      "t": 35.3,
+      "shot": "cabin",
+      "captionId": 10,
+      "transition": null,
+      "labels": [
+        {
+          "id": "fc-label-fares",
+          "x": 387.34539794921875,
+          "y": 1205.646240234375,
+          "width": 305.29278564453125,
+          "height": 67.27880859375
+        },
+        {
+          "id": "fc-price-low",
+          "x": 177.88548278808594,
+          "y": 1464.140380859375,
+          "width": 176.2873077392578,
+          "height": 72.208251953125
+        },
+        {
+          "id": "fc-price-mid",
+          "x": 451.8481750488281,
+          "y": 1464.140380859375,
+          "width": 176.28732299804688,
+          "height": 72.208251953125
+        },
+        {
+          "id": "fc-price-high",
+          "x": 725.79443359375,
+          "y": 1464.140380859375,
+          "width": 176.287353515625,
+          "height": 72.208251953125
+        }
+      ],
+      "sha256": "35e01884b04c29001e25d335a4bf8a0e81859c36a778c7bda8255bbedf0049d9"
+    },
+    {
+      "name": "bookings",
+      "t": 38.55,
+      "shot": "cabin",
+      "captionId": 11,
+      "transition": null,
+      "labels": [
+        {
+          "id": "fc-label-fares",
+          "x": 382.7080993652344,
+          "y": 1038.4266357421875,
+          "width": 314.5669250488281,
+          "height": 69.322509765625
+        },
+        {
+          "id": "fc-price-low",
+          "x": 166.88528442382812,
+          "y": 1304.7733154296875,
+          "width": 181.64251708984375,
+          "height": 74.40185546875
+        },
+        {
+          "id": "fc-price-mid",
+          "x": 449.1702880859375,
+          "y": 1304.7733154296875,
+          "width": 181.64251708984375,
+          "height": 74.40185546875
+        },
+        {
+          "id": "fc-price-high",
+          "x": 731.4384155273438,
+          "y": 1304.7733154296875,
+          "width": 181.64251708984375,
+          "height": 74.40185546875
+        },
+        {
+          "id": "fc-label-sold",
+          "x": 179.97227478027344,
+          "y": 1210.8375244140625,
+          "width": 155.46958923339844,
+          "height": 58.0675048828125
+        }
+      ],
+      "sha256": "0a219e5dcd5cc267ab752f2f161c8ed37541aefc776ee90572a15964617d69bf"
+    },
+    {
+      "name": "remaining-fares",
+      "t": 40.7,
+      "shot": "cabin",
+      "captionId": 12,
+      "transition": null,
+      "labels": [
+        {
+          "id": "fc-label-fares",
+          "x": 390.44757080078125,
+          "y": 1106.242919921875,
+          "width": 299.0888671875,
+          "height": 65.91162109375
+        },
+        {
+          "id": "fc-price-low",
+          "x": 185.24415588378906,
+          "y": 1359.484130859375,
+          "width": 172.7049102783203,
+          "height": 70.740966796875
+        },
+        {
+          "id": "fc-price-mid",
+          "x": 453.6395263671875,
+          "y": 1359.484130859375,
+          "width": 172.70489501953125,
+          "height": 70.740966796875
+        },
+        {
+          "id": "fc-price-high",
+          "x": 722.0188598632812,
+          "y": 1359.484130859375,
+          "width": 172.70489501953125,
+          "height": 70.740966796875
+        },
+        {
+          "id": "fc-label-sold",
+          "x": 192.83328247070312,
+          "y": 1253.58935546875,
+          "width": 157.52664184570312,
+          "height": 58.835693359375
+        }
+      ],
+      "sha256": "e49ef2fb8fe7871a4e452e3999679d0e9ff840a494735eb3c138ee949b60677c"
+    },
+    {
+      "name": "holiday-period",
+      "t": 44.2,
+      "shot": "holiday",
+      "captionId": 13,
+      "transition": null,
+      "labels": [
+        {
+          "id": "fd-label-holiday",
+          "x": 91.53931427001953,
+          "y": 1056.4339599609375,
+          "width": 497.15167236328125,
+          "height": 94.64013671875
+        }
+      ],
+      "sha256": "55d9e1b88aa1c8a1e2c1b0d7308e3319c151a152aeed77cded78057d414c39d0"
+    },
+    {
+      "name": "increasing-demand",
+      "t": 46.5,
+      "shot": "holiday",
+      "captionId": 13,
+      "transition": null,
+      "labels": [
+        {
+          "id": "fd-label-holiday",
+          "x": 103.87267303466797,
+          "y": 738.3818969726562,
+          "width": 364.03826904296875,
+          "height": 69.29998779296875
+        },
+        {
+          "id": "fd-label-demand",
+          "x": 161.33555603027344,
+          "y": 811.8983154296875,
+          "width": 188.13047790527344,
+          "height": 69.29998779296875
+        }
+      ],
+      "sha256": "37d4b4e70dcd59023aba55cced60f3617fba393286ea8a2170819120850374a2"
+    },
+    {
+      "name": "limited-availability",
+      "t": 50.9,
+      "shot": "holiday",
+      "captionId": 15,
+      "transition": null,
+      "labels": [
+        {
+          "id": "fd-label-limited",
+          "x": 341.3902282714844,
+          "y": 1026.6475830078125,
+          "width": 311.5843811035156,
+          "height": 86.4114990234375
+        },
+        {
+          "id": "fd-label-example",
+          "x": 741.7080078125,
+          "y": 168.73187255859375,
+          "width": 169.9588623046875,
+          "height": 58.385009765625
+        },
+        {
+          "id": "fd-price-new",
+          "x": 673.115234375,
+          "y": 260.587646484375,
+          "width": 220.9989013671875,
+          "height": 102.8536376953125
+        }
+      ],
+      "sha256": "69a06477d005c0877223a7989d94a8d10670bd2ab096a80789b2d2e2df45a21c"
+    },
+    {
+      "name": "two-fares",
+      "t": 56.5,
+      "shot": "journey",
+      "captionId": 16,
+      "transition": null,
+      "labels": [
+        {
+          "id": "fj-tag-a",
+          "x": 267.1615905761719,
+          "y": 461.9557800292969,
+          "width": 162.73675537109375,
+          "height": 40.45758056640625
+        },
+        {
+          "id": "fj-tag-b",
+          "x": 650.0853881835938,
+          "y": 461.9557800292969,
+          "width": 162.7366943359375,
+          "height": 40.45758056640625
+        },
+        {
+          "id": "fj-price-a",
+          "x": 218.34336853027344,
+          "y": 523.90966796875,
+          "width": 175.72364807128906,
+          "height": 81.78240966796875
+        },
+        {
+          "id": "fj-price-b",
+          "x": 601.2671508789062,
+          "y": 523.90966796875,
+          "width": 175.7236328125,
+          "height": 81.78240966796875
+        },
+        {
+          "id": "fj-label-seats",
+          "x": 401.8507385253906,
+          "y": 1293.398681640625,
+          "width": 276.2984924316406,
+          "height": 68.7086181640625
+        }
+      ],
+      "sha256": "a2ad8ac57b59a217c0131e2b004eeb5e4c3d124f692f620b8b5e698a8840bf58"
+    },
+    {
+      "name": "shared-journey",
+      "t": 57.9,
+      "shot": "journey",
+      "captionId": 16,
+      "transition": null,
+      "labels": [
+        {
+          "id": "fj-tag-a",
+          "x": 271.35150146484375,
+          "y": 468.0376892089844,
+          "width": 160.23764038085938,
+          "height": 39.8363037109375
+        },
+        {
+          "id": "fj-tag-b",
+          "x": 648.3948364257812,
+          "y": 468.0376892089844,
+          "width": 160.23760986328125,
+          "height": 39.8363037109375
+        },
+        {
+          "id": "fj-price-a",
+          "x": 223.28294372558594,
+          "y": 529.0401611328125,
+          "width": 173.02513122558594,
+          "height": 80.5264892578125
+        },
+        {
+          "id": "fj-price-b",
+          "x": 600.3262939453125,
+          "y": 529.0401611328125,
+          "width": 173.02508544921875,
+          "height": 80.5264892578125
+        },
+        {
+          "id": "fj-label-seats",
+          "x": 403.9722595214844,
+          "y": 1286.71240234375,
+          "width": 272.0554504394531,
+          "height": 67.653564453125
+        },
+        {
+          "id": "fj-label-journey",
+          "x": 408.03240966796875,
+          "y": 321.75311279296875,
+          "width": 263.91912841796875,
+          "height": 67.65347290039062
+        }
+      ],
+      "sha256": "4b32104c474e3c37b9b5e673d29a814098cbe5bead5690134d402193905019ee"
+    }
+  ],
+  "browser": "Chrome/157.0.8103.79",
+  "duration": 68.8,
+  "shots": [
+    {
+      "id": "opening",
+      "scene": "flights-opening",
+      "start": 0,
+      "end": 7.65,
+      "phrases": [
+        0,
+        1
+      ],
+      "transition": {
+        "type": "sheet",
+        "at": 7.65,
+        "from": 7.430000000000001,
+        "to": 7.87
+      }
+    },
+    {
+      "id": "fuel",
+      "scene": "flights-fuel",
+      "start": 7.65,
+      "end": 15.875,
+      "phrases": [
+        2,
+        4
+      ],
+      "transition": {
+        "type": "sheet",
+        "at": 15.875,
+        "from": 15.675,
+        "to": 16.075
+      }
+    },
+    {
+      "id": "operations",
+      "scene": "flights-operations",
+      "start": 15.875,
+      "end": 26.575,
+      "phrases": [
+        5,
+        7
+      ],
+      "transition": {
+        "type": "sheet",
+        "at": 26.575,
+        "from": 26.375,
+        "to": 26.775
+      }
+    },
+    {
+      "id": "pricing",
+      "scene": "flights-pricing",
+      "start": 26.575,
+      "end": 31.9,
+      "phrases": [
+        8,
+        8
+      ],
+      "transition": {
+        "type": "dissolve",
+        "at": 31.9,
+        "from": 31.779999999999998,
+        "to": 32.15
+      }
+    },
+    {
+      "id": "cabin",
+      "scene": "flights-cabin",
+      "start": 31.9,
+      "end": 41.875,
+      "phrases": [
+        9,
+        11
+      ],
+      "transition": {
+        "type": "dissolve",
+        "at": 41.875,
+        "from": 41.755,
+        "to": 42.125
+      }
+    },
+    {
+      "id": "holiday",
+      "scene": "flights-holiday",
+      "start": 41.875,
+      "end": 51.45,
+      "phrases": [
+        12,
+        14
+      ],
+      "transition": {
+        "type": "sheet",
+        "at": 51.45,
+        "from": 51.25,
+        "to": 51.650000000000006
+      }
+    },
+    {
+      "id": "journey",
+      "scene": "flights-journey",
+      "start": 51.45,
+      "end": 68.8,
+      "phrases": [
+        15,
+        18
+      ],
+      "transition": null
+    }
+  ],
+  "captions": [
+    {
+      "id": 1,
+      "start": 0.525,
+      "end": 5.025,
+      "text": "क्या आपने कभी सोचा है कि एक ही फ्लाइट की टिकट कभी सस्ती,"
+    },
+    {
+      "id": 2,
+      "start": 5.025,
+      "end": 8.35,
+      "text": "तो कभी इतनी महंगी क्यों होती है?"
+    },
+    {
+      "id": 3,
+      "start": 8.35,
+      "end": 9.05,
+      "text": "दरअसल,"
+    },
+    {
+      "id": 4,
+      "start": 9.05,
+      "end": 12.3,
+      "text": "एक विमान को उड़ाने में बहुत खर्च होता है।"
+    },
+    {
+      "id": 5,
+      "start": 12.3,
+      "end": 16.525,
+      "text": "सबसे बड़े खर्चों में से एक है उसका ईंधन।"
+    },
+    {
+      "id": 6,
+      "start": 16.525,
+      "end": 20.375,
+      "text": "इसके अलावा पायलट और बाकी कर्मचारियों की सैलरी,"
+    },
+    {
+      "id": 7,
+      "start": 20.375,
+      "end": 21.85,
+      "text": "विमान की देखभाल,"
+    },
+    {
+      "id": 8,
+      "start": 21.85,
+      "end": 27.275,
+      "text": "उसे किराए पर लेने का खर्च और एयरपोर्ट की फीस भी होती है।"
+    },
+    {
+      "id": 9,
+      "start": 27.275,
+      "end": 32.575,
+      "text": "लेकिन टिकट की कीमत सिर्फ इन खर्चों से तय नहीं होती।"
+    },
+    {
+      "id": 10,
+      "start": 32.575,
+      "end": 36.125,
+      "text": "एयरलाइंस अलग-अलग कीमतों पर सीटें बेचती हैं।"
+    },
+    {
+      "id": 11,
+      "start": 36.125,
+      "end": 38.925,
+      "text": "जैसे-जैसे सस्ती टिकटें बिकती जाती हैं,"
+    },
+    {
+      "id": 12,
+      "start": 38.925,
+      "end": 42.525,
+      "text": "महंगी टिकटें उपलब्ध रह सकती हैं।"
+    },
+    {
+      "id": 13,
+      "start": 42.525,
+      "end": 46.575,
+      "text": "त्योहारों और छुट्टियों में जब यात्रियों की मांग बढ़ती है,"
+    },
+    {
+      "id": 14,
+      "start": 46.575,
+      "end": 48.65,
+      "text": "लेकिन सीटें सीमित होती हैं,"
+    },
+    {
+      "id": 15,
+      "start": 48.65,
+      "end": 52.125,
+      "text": "तो टिकट की कीमत भी बढ़ सकती है।"
+    },
+    {
+      "id": 16,
+      "start": 52.125,
+      "end": 59.15,
+      "text": "इसीलिए एक ही विमान में दो यात्री अलग-अलग कीमत चुकाकर सफर कर सकते हैं।"
+    },
+    {
+      "id": 17,
+      "start": 59.15,
+      "end": 63.725,
+      "text": "यानी फ्लाइट की टिकट की कीमत के पीछे सिर्फ उड़ान का खर्च नहीं,"
+    },
+    {
+      "id": 18,
+      "start": 63.725,
+      "end": 64.825,
+      "text": "बल्कि मांग,"
+    },
+    {
+      "id": 19,
+      "start": 64.825,
+      "end": 68.8,
+      "text": "सीटों की उपलब्धता और बुकिंग का समय भी होता है।"
+    }
+  ],
+  "cues": [
+    {
+      "id": "fl-plane-trail",
+      "phrase": 1,
+      "at": 3.05
+    },
+    {
+      "id": "fl-ticket-low",
+      "phrase": 1,
+      "at": 4.375
+    },
+    {
+      "id": "fl-ticket-high",
+      "phrase": 2,
+      "at": 6
+    },
+    {
+      "id": "fe-spot",
+      "phrase": 4,
+      "at": 9.275
+    },
+    {
+      "id": "fe-coin-0",
+      "phrase": 4,
+      "at": 11.175
+    },
+    {
+      "id": "fe-cutaway",
+      "phrase": 5,
+      "at": 12.3
+    },
+    {
+      "id": "fe-fuel-label",
+      "phrase": 5,
+      "at": 14.875
+    },
+    {
+      "id": "fo-pilot",
+      "phrase": 6,
+      "at": 17.45
+    },
+    {
+      "id": "fo-crew-a",
+      "phrase": 6,
+      "at": 18.7
+    },
+    {
+      "id": "fo-envelope",
+      "phrase": 6,
+      "at": 19.6
+    },
+    {
+      "id": "fo-mechanic",
+      "phrase": 7,
+      "at": 20.975
+    },
+    {
+      "id": "fo-doc",
+      "phrase": 8,
+      "at": 22.175
+    },
+    {
+      "id": "fo-lights",
+      "phrase": 8,
+      "at": 24.175
+    },
+    {
+      "id": "fo-receipt",
+      "phrase": 8,
+      "at": 25.025
+    },
+    {
+      "id": "fp-ticket",
+      "phrase": 9,
+      "at": 27.725
+    },
+    {
+      "id": "fp-price",
+      "phrase": 9,
+      "at": 28.4
+    },
+    {
+      "id": "fp-threads",
+      "phrase": 9,
+      "at": 29.65
+    },
+    {
+      "id": "fp-question",
+      "phrase": 9,
+      "at": 30.625
+    },
+    {
+      "id": "fc-seat-0",
+      "phrase": 10,
+      "at": 32.575
+    },
+    {
+      "id": "fc-rack",
+      "phrase": 10,
+      "at": 33.325
+    },
+    {
+      "id": "fc-seat-glow",
+      "phrase": 10,
+      "at": 34.8
+    },
+    {
+      "id": "fc-ring-low",
+      "phrase": 11,
+      "at": 36.925
+    },
+    {
+      "id": "fc-pax-new-0",
+      "phrase": 11,
+      "at": 37.775
+    },
+    {
+      "id": "fc-ring-high",
+      "phrase": 12,
+      "at": 38.925
+    },
+    {
+      "id": "fc-avail",
+      "phrase": 12,
+      "at": 40
+    },
+    {
+      "id": "fd-calendar",
+      "phrase": 13,
+      "at": 42.525
+    },
+    {
+      "id": "fd-holiday",
+      "phrase": 13,
+      "at": 43.425
+    },
+    {
+      "id": "fd-pax-0",
+      "phrase": 13,
+      "at": 44.65
+    },
+    {
+      "id": "fd-demand",
+      "phrase": 13,
+      "at": 45.375
+    },
+    {
+      "id": "fd-capacity",
+      "phrase": 14,
+      "at": 47.025
+    },
+    {
+      "id": "fd-free",
+      "phrase": 14,
+      "at": 47.5
+    },
+    {
+      "id": "fd-ticket",
+      "phrase": 15,
+      "at": 49.45
+    },
+    {
+      "id": "fd-price-new",
+      "phrase": 15,
+      "at": 50.075
+    },
+    {
+      "id": "fj-sign-a",
+      "phrase": 16,
+      "at": 53.35
+    },
+    {
+      "id": "fj-pax-a",
+      "phrase": 16,
+      "at": 54.175
+    },
+    {
+      "id": "fj-ticket-a",
+      "phrase": 16,
+      "at": 55
+    },
+    {
+      "id": "fj-price-a",
+      "phrase": 16,
+      "at": 55.775
+    },
+    {
+      "id": "fj-link",
+      "phrase": 16,
+      "at": 56.775
+    }
+  ],
+  "checks": {
+    "keyframes": [
+      [
+        "opening",
+        0.9
+      ],
+      [
+        "ticket-low",
+        4.99
+      ],
+      [
+        "ticket-high",
+        6.75
+      ],
+      [
+        "apron",
+        9.725
+      ],
+      [
+        "refuelling",
+        11.725000000000001
+      ],
+      [
+        "fuel-cutaway",
+        15.575
+      ],
+      [
+        "personnel",
+        20.1
+      ],
+      [
+        "maintenance",
+        21.6
+      ],
+      [
+        "leasing",
+        23.7
+      ],
+      [
+        "airport-charges",
+        25.85
+      ],
+      [
+        "ticket-price",
+        29.05
+      ],
+      [
+        "not-only-costs",
+        31.15
+      ],
+      [
+        "cabin",
+        35.3
+      ],
+      [
+        "bookings",
+        38.55
+      ],
+      [
+        "remaining-fares",
+        40.7
+      ],
+      [
+        "holiday-period",
+        44.2
+      ],
+      [
+        "increasing-demand",
+        46.5
+      ],
+      [
+        "limited-availability",
+        50.9
+      ],
+      [
+        "two-fares",
+        56.5
+      ],
+      [
+        "shared-journey",
+        57.9
+      ]
+    ],
+    "repeatAt": 11.725000000000001,
+    "absentAfter": []
+  },
+  "phrases": [
+    {
+      "start": 0.525,
+      "end": 4.875,
+      "text": "क्या आपने कभी सोचा है कि एक ही फ्लाइट की टिकट कभी सस्ती,"
+    },
+    {
+      "start": 5.025,
+      "end": 7.475,
+      "text": "तो कभी इतनी महंगी क्यों होती है?"
+    },
+    {
+      "start": 8.35,
+      "end": 8.95,
+      "text": "दरअसल,"
+    },
+    {
+      "start": 9.05,
+      "end": 12.2,
+      "text": "एक विमान को उड़ाने में बहुत खर्च होता है।"
+    },
+    {
+      "start": 12.3,
+      "end": 15.725,
+      "text": "सबसे बड़े खर्चों में से एक है उसका ईंधन।"
+    },
+    {
+      "start": 16.525,
+      "end": 20.15,
+      "text": "इसके अलावा पायलट और बाकी कर्मचारियों की सैलरी,"
+    },
+    {
+      "start": 20.375,
+      "end": 21.7,
+      "text": "विमान की देखभाल,"
+    },
+    {
+      "start": 21.85,
+      "end": 26.45,
+      "text": "उसे किराए पर लेने का खर्च और एयरपोर्ट की फीस भी होती है।"
+    },
+    {
+      "start": 27.275,
+      "end": 31.75,
+      "text": "लेकिन टिकट की कीमत सिर्फ इन खर्चों से तय नहीं होती।"
+    },
+    {
+      "start": 32.575,
+      "end": 36.025,
+      "text": "एयरलाइंस अलग-अलग कीमतों पर सीटें बेचती हैं।"
+    },
+    {
+      "start": 36.125,
+      "end": 38.8,
+      "text": "जैसे-जैसे सस्ती टिकटें बिकती जाती हैं,"
+    },
+    {
+      "start": 38.925,
+      "end": 41.75,
+      "text": "महंगी टिकटें उपलब्ध रह सकती हैं।"
+    },
+    {
+      "start": 42.525,
+      "end": 46.425,
+      "text": "त्योहारों और छुट्टियों में जब यात्रियों की मांग बढ़ती है,"
+    },
+    {
+      "start": 46.575,
+      "end": 48.55,
+      "text": "लेकिन सीटें सीमित होती हैं,"
+    },
+    {
+      "start": 48.65,
+      "end": 51.325,
+      "text": "तो टिकट की कीमत भी बढ़ सकती है।"
+    },
+    {
+      "start": 52.125,
+      "end": 58.325,
+      "text": "इसीलिए एक ही विमान में दो यात्री अलग-अलग कीमत चुकाकर सफर कर सकते हैं।"
+    },
+    {
+      "start": 59.15,
+      "end": 63.55,
+      "text": "यानी फ्लाइट की टिकट की कीमत के पीछे सिर्फ उड़ान का खर्च नहीं,"
+    },
+    {
+      "start": 63.725,
+      "end": 64.6,
+      "text": "बल्कि मांग,"
+    },
+    {
+      "start": 64.825,
+      "end": 68.775,
+      "text": "सीटों की उपलब्धता और बुकिंग का समय भी होता है।"
+    }
+  ],
+  "cueChecks": [
+    {
+      "id": "fl-plane-trail",
+      "phrase": 1,
+      "at": 3.05,
+      "phraseStart": 0.525,
+      "before": 0,
+      "after": 0.65
+    },
+    {
+      "id": "fl-ticket-low",
+      "phrase": 1,
+      "at": 4.375,
+      "phraseStart": 0.525,
+      "before": 0,
+      "after": 1
+    },
+    {
+      "id": "fl-ticket-high",
+      "phrase": 2,
+      "at": 6,
+      "phraseStart": 5.025,
+      "before": 0,
+      "after": 1
+    },
+    {
+      "id": "fe-spot",
+      "phrase": 4,
+      "at": 9.275,
+      "phraseStart": 9.05,
+      "before": 0,
+      "after": 1
+    },
+    {
+      "id": "fe-coin-0",
+      "phrase": 4,
+      "at": 11.175,
+      "phraseStart": 9.05,
+      "before": 0,
+      "after": 0.960085
+    },
+    {
+      "id": "fe-cutaway",
+      "phrase": 5,
+      "at": 12.3,
+      "phraseStart": 12.3,
+      "before": 0,
+      "after": 1
+    },
+    {
+      "id": "fe-fuel-label",
+      "phrase": 5,
+      "at": 14.875,
+      "phraseStart": 12.3,
+      "before": 0,
+      "after": 1
+    },
+    {
+      "id": "fo-pilot",
+      "phrase": 6,
+      "at": 17.45,
+      "phraseStart": 16.525,
+      "before": 0,
+      "after": 1
+    },
+    {
+      "id": "fo-crew-a",
+      "phrase": 6,
+      "at": 18.7,
+      "phraseStart": 16.525,
+      "before": 0,
+      "after": 1
+    },
+    {
+      "id": "fo-envelope",
+      "phrase": 6,
+      "at": 19.6,
+      "phraseStart": 16.525,
+      "before": 0,
+      "after": 1
+    },
+    {
+      "id": "fo-mechanic",
+      "phrase": 7,
+      "at": 20.975,
+      "phraseStart": 20.375,
+      "before": 0,
+      "after": 1
+    },
+    {
+      "id": "fo-doc",
+      "phrase": 8,
+      "at": 22.175,
+      "phraseStart": 21.85,
+      "before": 0,
+      "after": 1
+    },
+    {
+      "id": "fo-lights",
+      "phrase": 8,
+      "at": 24.175,
+      "phraseStart": 21.85,
+      "before": 0,
+      "after": 0.898405
+    },
+    {
+      "id": "fo-receipt",
+      "phrase": 8,
+      "at": 25.025,
+      "phraseStart": 21.85,
+      "before": 0,
+      "after": 1
+    },
+    {
+      "id": "fp-ticket",
+      "phrase": 9,
+      "at": 27.725,
+      "phraseStart": 27.275,
+      "before": 0,
+      "after": 1
+    },
+    {
+      "id": "fp-price",
+      "phrase": 9,
+      "at": 28.4,
+      "phraseStart": 27.275,
+      "before": 0,
+      "after": 1
+    },
+    {
+      "id": "fp-threads",
+      "phrase": 9,
+      "at": 29.65,
+      "phraseStart": 27.275,
+      "before": 0,
+      "after": 1
+    },
+    {
+      "id": "fp-question",
+      "phrase": 9,
+      "at": 30.625,
+      "phraseStart": 27.275,
+      "before": 0,
+      "after": 1
+    },
+    {
+      "id": "fc-seat-0",
+      "phrase": 10,
+      "at": 32.575,
+      "phraseStart": 32.575,
+      "before": 0,
+      "after": 1
+    },
+    {
+      "id": "fc-rack",
+      "phrase": 10,
+      "at": 33.325,
+      "phraseStart": 32.575,
+      "before": 0,
+      "after": 1
+    },
+    {
+      "id": "fc-seat-glow",
+      "phrase": 10,
+      "at": 34.8,
+      "phraseStart": 32.575,
+      "before": 0,
+      "after": 1
+    },
+    {
+      "id": "fc-ring-low",
+      "phrase": 11,
+      "at": 36.925,
+      "phraseStart": 36.125,
+      "before": 0,
+      "after": 1
+    },
+    {
+      "id": "fc-pax-new-0",
+      "phrase": 11,
+      "at": 37.775,
+      "phraseStart": 36.125,
+      "before": 0,
+      "after": 1
+    },
+    {
+      "id": "fc-ring-high",
+      "phrase": 12,
+      "at": 38.925,
+      "phraseStart": 38.925,
+      "before": 0,
+      "after": 1
+    },
+    {
+      "id": "fc-avail",
+      "phrase": 12,
+      "at": 40,
+      "phraseStart": 38.925,
+      "before": 0,
+      "after": 0.94258
+    },
+    {
+      "id": "fd-calendar",
+      "phrase": 13,
+      "at": 42.525,
+      "phraseStart": 42.525,
+      "before": 0,
+      "after": 1
+    },
+    {
+      "id": "fd-holiday",
+      "phrase": 13,
+      "at": 43.425,
+      "phraseStart": 42.525,
+      "before": 0,
+      "after": 1
+    },
+    {
+      "id": "fd-pax-0",
+      "phrase": 13,
+      "at": 44.65,
+      "phraseStart": 42.525,
+      "before": 0,
+      "after": 1
+    },
+    {
+      "id": "fd-demand",
+      "phrase": 13,
+      "at": 45.375,
+      "phraseStart": 42.525,
+      "before": 0,
+      "after": 1
+    },
+    {
+      "id": "fd-capacity",
+      "phrase": 14,
+      "at": 47.025,
+      "phraseStart": 46.575,
+      "before": 0,
+      "after": 1
+    },
+    {
+      "id": "fd-free",
+      "phrase": 14,
+      "at": 47.5,
+      "phraseStart": 46.575,
+      "before": 0,
+      "after": 0.798697
+    },
+    {
+      "id": "fd-ticket",
+      "phrase": 15,
+      "at": 49.45,
+      "phraseStart": 48.65,
+      "before": 0,
+      "after": 1
+    },
+    {
+      "id": "fd-price-new",
+      "phrase": 15,
+      "at": 50.075,
+      "phraseStart": 48.65,
+      "before": 0,
+      "after": 1
+    },
+    {
+      "id": "fj-sign-a",
+      "phrase": 16,
+      "at": 53.35,
+      "phraseStart": 52.125,
+      "before": 0,
+      "after": 0.922252
+    },
+    {
+      "id": "fj-pax-a",
+      "phrase": 16,
+      "at": 54.175,
+      "phraseStart": 52.125,
+      "before": 0,
+      "after": 1
+    },
+    {
+      "id": "fj-ticket-a",
+      "phrase": 16,
+      "at": 55,
+      "phraseStart": 52.125,
+      "before": 0,
+      "after": 1
+    },
+    {
+      "id": "fj-price-a",
+      "phrase": 16,
+      "at": 55.775,
+      "phraseStart": 52.125,
+      "before": 0,
+      "after": 1
+    },
+    {
+      "id": "fj-link",
+      "phrase": 16,
+      "at": 56.775,
+      "phraseStart": 52.125,
+      "before": 0,
+      "after": 1
+    }
+  ],
+  "repeatability": {
+    "seconds": 11.725000000000001,
+    "sameFrame": false,
+    "sameLabels": true,
+    "ssim": 0.999839
+  },
+  "renderWallSeconds": 49.910748700000006
+}

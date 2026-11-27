@@ -1,0 +1,67 @@
+{
+  "version": 1,
+  "unit": "sample",
+  "locale": "hi-IN",
+  "validation": "unreviewed",
+  "audio": {
+    "path": "experiments/E03/kokoro-hindi/samples/sample-A.wav",
+    "sha256": "456b4d3f4b1a485fcf2e62e22d6e3059a1bf5c2dca3746112e324196d7393f65",
+    "sample_rate": 24000,
+    "sample_count": 178200
+  },
+  "text": {
+    "display": "एक ही शहर की दो सड़कों पर गर्मी अलग क्यों लगती है? शायद जवाब पेड़ों की छाया में छिपा है।",
+    "speech": "एक ही शहर की दो सड़कों पर गर्मी अलग क्यों लगती है? शायद जवाब पेड़ों की छाया में छिपा है।"
+  },
+  "records": [
+    {
+      "kind": "pause",
+      "label": "low energy",
+      "start": 0,
+      "end": 12649,
+      "source": "audio_boundary"
+    },
+    {
+      "kind": "pause",
+      "label": "low energy",
+      "start": 57879,
+      "end": 63829,
+      "source": "audio_boundary"
+    },
+    {
+      "kind": "pause",
+      "label": "low energy",
+      "start": 81384,
+      "end": 84295,
+      "source": "audio_boundary"
+    },
+    {
+      "kind": "pause",
+      "label": "low energy",
+      "start": 91657,
+      "end": 94776,
+      "source": "audio_boundary"
+    },
+    {
+      "kind": "pause",
+      "label": "low energy",
+      "start": 102057,
+      "end": 108626,
+      "source": "audio_boundary"
+    },
+    {
+      "kind": "pause",
+      "label": "low energy",
+      "start": 128386,
+      "end": 131647,
+      "source": "audio_boundary"
+    },
+    {
+      "kind": "pause",
+      "label": "low energy",
+      "start": 166227,
+      "end": 178200,
+      "source": "audio_boundary"
+    }
+  ]
+}

@@ -1,0 +1,118 @@
+{
+  "narration": "../narration/narration-1d6e722da7.wav",
+  "manifest": "assets/assets-manifest.json",
+  "music": {
+    "file": "assets/music-pad.wav",
+    "gain_db": -7,
+    "fade_in": 1.5,
+    "fade_out": 2.5,
+    "duck": {
+      "threshold": 0.03,
+      "ratio": 8,
+      "attack_ms": 30,
+      "release_ms": 600
+    }
+  },
+  "sfx": [
+    {
+      "file": "assets/rumble.wav",
+      "at": 0.1,
+      "gain_db": -31,
+      "why": "the train's rumble under the hook"
+    },
+    {
+      "file": "assets/pop.wav",
+      "at": 3.825,
+      "gain_db": -30,
+      "why": "a steering wheel pops up"
+    },
+    {
+      "file": "assets/pop.wav",
+      "at": 5.05,
+      "gain_db": -29,
+      "why": "red cross: no steering wheel"
+    },
+    {
+      "file": "assets/pop.wav",
+      "at": 7.975,
+      "gain_db": -29,
+      "why": "question mark above the girl"
+    },
+    {
+      "file": "assets/chime.wav",
+      "at": 15.675,
+      "gain_db": -31,
+      "why": "the secret: the wheel shape"
+    },
+    {
+      "file": "assets/whoosh.wav",
+      "at": 16.4,
+      "gain_db": -31,
+      "why": "sheet transition to the view along the track"
+    },
+    {
+      "file": "assets/pop.wav",
+      "at": 19.525,
+      "gain_db": -31,
+      "why": "clamps snap on the axle"
+    },
+    {
+      "file": "assets/chime.wav",
+      "at": 24.725,
+      "gain_db": -31,
+      "why": "the ice-cream cone arrives"
+    },
+    {
+      "file": "assets/whoosh.wav",
+      "at": 30.275,
+      "gain_db": -31,
+      "why": "blueprint sheet lifts away"
+    },
+    {
+      "file": "assets/chime.wav",
+      "at": 37.125,
+      "gain_db": -31,
+      "why": "wheelset settles at the centre"
+    },
+    {
+      "file": "assets/whoosh.wav",
+      "at": 45.825,
+      "gain_db": -34,
+      "why": "long tape unrolls"
+    },
+    {
+      "file": "assets/rumble.wav",
+      "at": 51.45,
+      "gain_db": -32,
+      "why": "the train sweeps round the bend"
+    },
+    {
+      "file": "assets/whoosh.wav",
+      "at": 56.75,
+      "gain_db": -27,
+      "why": "crosswind gust"
+    },
+    {
+      "file": "assets/pop.wav",
+      "at": 60.025,
+      "gain_db": -29,
+      "why": "the flange catches the rail"
+    },
+    {
+      "file": "assets/chime.wav",
+      "at": 63.225,
+      "gain_db": -29,
+      "why": "payoff: the girl raises the cone"
+    }
+  ],
+  "loudness": {
+    "integrated_lufs": -16,
+    "true_peak_db": -1.5
+  },
+  "intelligibility_min_lu": 12,
+  "output": "mix.wav",
+  "video": {
+    "input": "../render/fullhd/video-1080x1920.mp4",
+    "output": "final-1080x1920.mp4"
+  }
+}

@@ -1,0 +1,399 @@
+{
+  "mode": "full",
+  "fps": 30,
+  "canvas": [
+    1080,
+    1920
+  ],
+  "output": [
+    1080,
+    1920
+  ],
+  "audio": {
+    "path": "experiments/E04/native-timing/samples/sample-B-native.wav",
+    "sha256": "a24e05d743f1bfcb63615f3a4609f3847346344dea7b151d6dda7a568b53ac22",
+    "timingStatus": "unreviewed"
+  },
+  "keyframes": [
+    {
+      "name": "opening",
+      "t": 0.45,
+      "shot": "tree-shot-shade",
+      "captionId": null,
+      "transition": null,
+      "labels": [
+        {
+          "id": "q-tag",
+          "x": 214.9837646484375,
+          "y": 113.21221923828125,
+          "width": 643.2325439453125,
+          "height": 83.68948364257812
+        }
+      ],
+      "sha256": "8b66df8dd02d3bccbed526850dead88850d95886550162b7ad71a11c6a1144d4"
+    },
+    {
+      "name": "shade",
+      "t": 1.55,
+      "shot": "tree-shot-shade",
+      "captionId": 1,
+      "transition": null,
+      "labels": [
+        {
+          "id": "s1-sun-label",
+          "x": 275.1251220703125,
+          "y": 405.2740478515625,
+          "width": 96.26165771484375,
+          "height": 70.5184326171875
+        },
+        {
+          "id": "s1-shade-label",
+          "x": 558.434326171875,
+          "y": 1402.78271484375,
+          "width": 129.5174560546875,
+          "height": 70.5184326171875
+        }
+      ],
+      "sha256": "cd2115cce355f5fa9d636bdfce78e78ef6bd9986bafa0e6a9f71de4a07d7437b"
+    },
+    {
+      "name": "leaf-dissolve",
+      "t": 1.9175000000000002,
+      "shot": "tree-shot-leaf",
+      "captionId": 1,
+      "transition": "leaf",
+      "labels": [],
+      "sha256": "cba828dae318924b1d2bcd67a8ef65fb68f4ae2e03d95211eda25dc02c3cea8e"
+    },
+    {
+      "name": "water",
+      "t": 2.9,
+      "shot": "tree-shot-leaf",
+      "captionId": 2,
+      "transition": null,
+      "labels": [
+        {
+          "id": "s2-water-label",
+          "x": 244.72544860839844,
+          "y": 1096.11181640625,
+          "width": 115.34129333496094,
+          "height": 66.886474609375
+        }
+      ],
+      "sha256": "3275e057079f06d8f23b9cfbc8fbed1f754d3d127feda19eb3a10d49df99a3ed"
+    },
+    {
+      "name": "vapour",
+      "t": 3.75,
+      "shot": "tree-shot-leaf",
+      "captionId": 2,
+      "transition": null,
+      "labels": [
+        {
+          "id": "s2-water-label",
+          "x": 213.39447021484375,
+          "y": 1141.752197265625,
+          "width": 118.41146850585938,
+          "height": 68.6669921875
+        },
+        {
+          "id": "s2-vapour-label",
+          "x": 94.28396606445312,
+          "y": 413.2550354003906,
+          "width": 336.45831298828125,
+          "height": 68.66696166992188
+        }
+      ],
+      "sha256": "7dfafcee195d205fb6926a24a0f0f937303d6531264b4ea0438417f19d35037f"
+    },
+    {
+      "name": "paper-wipe",
+      "t": 4.625,
+      "shot": "tree-shot-leaf",
+      "captionId": 2,
+      "transition": "paper",
+      "labels": [
+        {
+          "id": "s2-vapour-label",
+          "x": 104.26448059082031,
+          "y": 509.8178405761719,
+          "width": 357.6182861328125,
+          "height": 72.98538208007812
+        }
+      ],
+      "sha256": "0f17755978d9668eb334a15f42f97eaed3457fbd42ee9a1deb53014e5d405e9b"
+    },
+    {
+      "name": "paper-wipe-mid",
+      "t": 4.675,
+      "shot": "tree-shot-street",
+      "captionId": 2,
+      "transition": "paper",
+      "labels": [],
+      "sha256": "8dfa519284d05d09a9aea497676953ad16afaf9fb6d845f7852663eaa50f8974"
+    },
+    {
+      "name": "street-heat",
+      "t": 5.45,
+      "shot": "tree-shot-street",
+      "captionId": 3,
+      "transition": null,
+      "labels": [
+        {
+          "id": "s3-hot-label",
+          "x": 156.90391540527344,
+          "y": 825.0055541992188,
+          "width": 166.00071716308594,
+          "height": 66.00030517578125
+        }
+      ],
+      "sha256": "3a12bea985580d7dad853559b68f60734080c67ba0be692bfcc850856ae840aa"
+    },
+    {
+      "name": "cooling",
+      "t": 6.9,
+      "shot": "tree-shot-street",
+      "captionId": 3,
+      "transition": null,
+      "labels": [
+        {
+          "id": "s3-hot-label",
+          "x": 136.6380615234375,
+          "y": 817.3345336914062,
+          "width": 169.07827758789062,
+          "height": 67.22393798828125
+        },
+        {
+          "id": "s3-cool-label",
+          "x": 355.5772705078125,
+          "y": 1031.276611328125,
+          "width": 184.7384033203125,
+          "height": 67.223876953125
+        }
+      ],
+      "sha256": "577f6135d903e28cb6d61b761e553243f5ff07e5f747afb48e9c213fdcfa6311"
+    },
+    {
+      "name": "end",
+      "t": 8.925,
+      "shot": "tree-shot-street",
+      "captionId": 3,
+      "transition": null,
+      "labels": [
+        {
+          "id": "s3-hot-label",
+          "x": 101.16117095947266,
+          "y": 803.744384765625,
+          "width": 174.30001831054688,
+          "height": 69.29998779296875
+        },
+        {
+          "id": "s3-cool-label",
+          "x": 326.8619689941406,
+          "y": 1024.2935791015625,
+          "width": 190.44369506835938,
+          "height": 69.2999267578125
+        }
+      ],
+      "sha256": "d99eacb7c7b353480d771eff933902548c9fcafa9db53f7a25c0b67379f157ca"
+    }
+  ],
+  "captions": [
+    {
+      "id": 1,
+      "start": 0.55,
+      "end": 1.925,
+      "text": "पेड़ धूप रोकते हैं।"
+    },
+    {
+      "id": 2,
+      "start": 1.925,
+      "end": 4.725,
+      "text": "पत्तियों से पानी भाप बनकर निकलता है,"
+    },
+    {
+      "id": 3,
+      "start": 4.725,
+      "end": 8.925,
+      "text": "तो आसपास की हवा ठंडी होने में भी मदद मिल सकती है।"
+    }
+  ],
+  "cuts": [
+    1.8875000000000002,
+    4.675
+  ],
+  "cues": [
+    {
+      "id": "s1-beams",
+      "phrase": 1,
+      "at": 0.77
+    },
+    {
+      "id": "s1-shade",
+      "phrase": 1,
+      "at": 1.1
+    },
+    {
+      "id": "s2-water",
+      "phrase": 2,
+      "at": 2.225
+    },
+    {
+      "id": "s2-lens",
+      "phrase": 2,
+      "at": 2.475
+    },
+    {
+      "id": "vap-leaf-0",
+      "phrase": 2,
+      "at": 2.925
+    },
+    {
+      "id": "s3-cool",
+      "phrase": 3,
+      "at": 5.675
+    },
+    {
+      "id": "s3-cool-label",
+      "phrase": 3,
+      "at": 6.0249999999999995
+    }
+  ],
+  "phrases": [
+    {
+      "start": 0.55,
+      "end": 1.85,
+      "text": "पेड़ धूप रोकते हैं।"
+    },
+    {
+      "start": 1.925,
+      "end": 4.625,
+      "text": "पत्तियों से पानी भाप बनकर निकलता है,"
+    },
+    {
+      "start": 4.725,
+      "end": 8.9,
+      "text": "तो आसपास की हवा ठंडी होने में भी मदद मिल सकती है।"
+    }
+  ],
+  "cueChecks": [
+    {
+      "id": "s1-beams",
+      "phrase": 1,
+      "at": 0.77,
+      "phraseStart": 0.55,
+      "before": 0,
+      "after": 1
+    },
+    {
+      "id": "s1-shade",
+      "phrase": 1,
+      "at": 1.1,
+      "phraseStart": 0.55,
+      "before": 0,
+      "after": 1
+    },
+    {
+      "id": "s2-water",
+      "phrase": 2,
+      "at": 2.225,
+      "phraseStart": 1.925,
+      "before": 0,
+      "after": 1
+    },
+    {
+      "id": "s2-lens",
+      "phrase": 2,
+      "at": 2.475,
+      "phraseStart": 1.925,
+      "before": 0,
+      "after": 1
+    },
+    {
+      "id": "vap-leaf-0",
+      "phrase": 2,
+      "at": 2.925,
+      "phraseStart": 1.925,
+      "before": 0,
+      "after": 0.965281
+    },
+    {
+      "id": "s3-cool",
+      "phrase": 3,
+      "at": 5.675,
+      "phraseStart": 4.725,
+      "before": 0,
+      "after": 1
+    },
+    {
+      "id": "s3-cool-label",
+      "phrase": 3,
+      "at": 6.0249999999999995,
+      "phraseStart": 4.725,
+      "before": 0,
+      "after": 1
+    }
+  ],
+  "repeatability": {
+    "seconds": 3.75,
+    "sameFrame": false,
+    "sameLabels": true,
+    "ssim": 0.999933
+  },
+  "file": "trees-v2-1080x1920.mp4",
+  "frames": 268,
+  "seconds": 8.925,
+  "boundsChecked": 278,
+  "shotsSeen": [
+    "tree-shot-shade",
+    "tree-shot-leaf",
+    "tree-shot-street"
+  ],
+  "captionsSeen": [
+    1,
+    2,
+    3
+  ],
+  "transitionsSeen": [
+    "leaf",
+    "paper"
+  ],
+  "media": {
+    "video": {
+      "codec_name": "h264",
+      "profile": "High",
+      "codec_type": "video",
+      "width": 1080,
+      "height": 1920,
+      "pix_fmt": "yuv420p",
+      "r_frame_rate": "30/1",
+      "start_time": "0.000000",
+      "duration": "8.933333",
+      "nb_read_frames": "268",
+      "side_data_list": [
+        {}
+      ]
+    },
+    "audio": {
+      "codec_name": "aac",
+      "profile": "LC",
+      "codec_type": "audio",
+      "sample_rate": "48000",
+      "channels": 1,
+      "r_frame_rate": "0/0",
+      "start_time": "0.000000",
+      "duration": "8.917333",
+      "nb_read_frames": "418"
+    },
+    "container": {
+      "duration": "8.933333"
+    },
+    "decodeErrors": null,
+    "speechOnset": {
+      "sourceWav": 0.545792,
+      "mp4": 0.545542,
+      "offsetSeconds": -0.0002500000000000835
+    }
+  },
+  "renderWallSeconds": 68.08262069999999
+}

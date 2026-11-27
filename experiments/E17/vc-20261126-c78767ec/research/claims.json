@@ -1,0 +1,23 @@
+{
+  "topic": "How does the human heart pump blood?",
+  "claims": [
+    {"id": "c1", "claim": "The heart has four chambers: two upper chambers (atria) and two lower chambers (ventricles).", "sources": ["S1"], "status": "verified"},
+    {"id": "c2", "claim": "Oxygen-poor blood from the body enters the right atrium; the right ventricle pumps it to the lungs.", "sources": ["S2"], "status": "verified"},
+    {"id": "c3", "claim": "Oxygen-rich blood from the lungs enters the left atrium, passes to the left ventricle, and the left ventricle pumps it to the whole body.", "sources": ["S2"], "status": "verified"},
+    {"id": "c4", "claim": "The heart has four valves (tricuspid, pulmonary, mitral, aortic); they prevent blood from flowing backward.", "sources": ["S2"], "status": "verified"},
+    {"id": "c5", "claim": "The heartbeat sounds ('lub-dub') are made by heart valves closing ('lub': valves between atria and ventricles; 'dub': aortic and pulmonary valves).", "sources": ["S3"], "status": "verified"},
+    {"id": "c6", "claim": "Each heartbeat begins with an electrical signal from pacemaker cells in the sinoatrial (SA) node in the right atrium.", "sources": ["S3"], "status": "verified"},
+    {"id": "c7", "claim": "A resting heart rate of 60 to 100 beats per minute is normal for adults.", "sources": ["S3"], "status": "verified", "note": "the script says 'at rest ... 60 to 100 times a minute'"},
+    {"id": "c8", "claim": "The left ventricle generates the high pressure needed to pump blood to the whole body.", "sources": ["S2"], "status": "verified"}
+  ],
+  "rejected": [
+    {"claim": "The heart is about the size of a fist.", "reason": "not found in the sources read; not used"},
+    {"claim": "The heart beats about 100,000 times a day.", "reason": "not found in the sources read; not used"},
+    {"claim": "The left ventricle has the thickest wall.", "reason": "not stated by the sources read; the script says 'pushes hard with high pressure' (c8) instead. The artwork draws the left ventricle wall thicker, which is standard anatomy but is a visual, not a narrated claim."}
+  ],
+  "visual_guardrails": [
+    "Frontal anatomical view: the heart's right side appears on the viewer's left.",
+    "Blue/red colouring of blood is a teaching convention, not literal blood colour; state 'illustrative' in the corner note.",
+    "Simplified, not to scale."
+  ]
+}

@@ -1,0 +1,44 @@
+{
+  "_contract": "See references/narration.md. A provider receives UTF-8 text and returns a mono PCM16 WAV plus a version-1 sample timeline with word and phrase records. Provider-specific timing evidence (for example phoneme durations) stays in its own sidecar files.",
+  "_target_locales": ["kn-IN", "hi-IN", "te-IN", "ta-IN", "en-IN"],
+  "kokoro-onnx": {
+    "status": "experimentally-validated",
+    "implementation": "kokoro_provider.py",
+    "runtime": "python-environment",
+    "timing_method": "native_durations",
+    "timing_review": "model-predicted; not human-validated",
+    "segment_limits": {"max_chars": 300, "reason": "one Kokoro inference batch per segment (the provider rejects longer input)"},
+    "locales": {
+      "hi-IN": {
+        "voices": ["hf_alpha"],
+        "kokoro_lang": "hi",
+        "espeak_lang": "hi",
+        "script_ranges": [["0900", "097F"]],
+        "status": "experimentally validated; native listening and human timing review pending"
+      }
+    }
+  },
+  "mithi": {
+    "status": "experimentally-validated",
+    "implementation": "mithi_provider.py",
+    "runtime": "wsl-python-environment",
+    "runtime_paths": {"model": "dir"},
+    "timing_method": "native_durations",
+    "word_timing": true,
+    "timing_review": "model-predicted; not human-validated",
+    "segment_limits": {"max_pieces": 1, "reason": "one model piece (at most 400 phonemes) per segment; the provider rejects longer input"},
+    "locales": {
+      "te-IN": {
+        "voices": ["ahana"],
+        "lang": "te",
+        "script_ranges": [["0C00", "0C7F"]],
+        "status": "synthesis (P015.2A) and native word/phrase timing (P015.2B) technically validated; native listening and word-boundary review pending"
+      },
+      "kn-IN": {"voices": ["vaidehi"], "lang": "kn", "script_ranges": [["0C80", "0CFF"]], "status": "synthesis and native word/phrase timing technically validated (P016); native listening and word-boundary review pending"},
+      "ta-IN": {"voices": ["malini"], "lang": "ta", "script_ranges": [["0B80", "0BFF"]], "status": "synthesis and native word/phrase timing technically validated (P016); native listening and word-boundary review pending"},
+      "en-IN": {"voices": ["anirban"], "lang": "en", "script_ranges": [["0041", "005A"], ["0061", "007A"]], "status": "synthesis and native word/phrase timing technically validated (P016; apostrophe contractions use group reconciliation); Indian English accent, listening and word-boundary review pending"},
+      "hi-IN": {"voices": ["charvi"], "lang": "hi", "script_ranges": [["0900", "097F"]], "status": "synthesis and native word/phrase timing technically validated (P016) as an alternative to kokoro-onnx; native listening and word-boundary review pending"}
+    },
+    "note": "Mithi v2 Flash (pinned revision) on CPU inside WSL2. Words and phrases are timed from the model's own token durations and token-to-word ownership (mithi_mapping.py); inconsistent mappings are rejected, never estimated. Locales te-IN, kn-IN, ta-IN, en-IN and hi-IN are each validated through this provider on their own samples; further Mithi languages need their own entry and validation."
+  }
+}

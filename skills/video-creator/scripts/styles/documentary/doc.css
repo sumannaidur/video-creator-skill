@@ -1,0 +1,37 @@
+/* Documentary frame: black surround, a full-bleed image stage, restrained serif type, subtitles in the documentary
+   manner (white text on the black band, no card). Works in portrait and landscape. */
+:root { --vc-font: "Nirmala UI", "Segoe UI", sans-serif; }
+html, body { margin: 0; height: 100%; }
+body { background: #000; color: #f3efe6; font-family: var(--vc-font); }
+.story-frame { --x: 0px; --y: 0px; min-height: 100vh; box-sizing: border-box; padding: 0; background: #000; position: relative; isolation: isolate; }
+.story-safe { height: 100vh; min-height: 0; display: grid; grid-template-rows: minmax(0, 1fr) auto; gap: 0; padding: 60px 40px 56px; box-sizing: border-box; }
+.story-body { position: relative; height: 100%; min-height: 0; }
+.story-title { display: none; }
+.story-stage { position: relative; height: 100%; min-height: 0; overflow: hidden; border-radius: 0; background: #0a0a0a; isolation: isolate; }
+.shot-light { display: none; }
+.route-layer { position: absolute; inset: 0; width: 100%; height: 100%; z-index: 1; pointer-events: none; }
+.route { fill: none; stroke: #f3efe6; stroke-width: 2px; vector-effect: non-scaling-stroke; }
+.piece { position: absolute; transform: translate(-50%, -50%); display: grid; justify-items: center; text-align: center; }
+.piece-art { width: 100%; display: block; overflow: visible; filter: none; }
+.piece-label { display: block; width: max-content; max-width: 100%; white-space: nowrap; }
+.doc-dip { position: absolute; inset: 0; z-index: 33; pointer-events: none; background: #000; opacity: 0; }
+footer.story-caption { align-self: end; position: relative; min-height: 178px; margin: 0; display: grid; place-items: center; box-sizing: border-box;
+  padding: 24px 30px 10px; background: transparent; color: #ffffff; font: 600 42px/1.5 var(--vc-font); text-align: center; text-wrap: balance;
+  text-shadow: 0 2px 6px #000; }
+.debug { position: absolute; top: 18px; left: 18px; font-size: 16px; }
+@media (orientation: landscape) {
+  .story-safe { padding: 30px 60px 30px; }
+  footer.story-caption { min-height: 128px; font-size: 38px; padding: 14px 40px 4px; }
+}
+
+/* P018.6 full-bleed presentation. Documentary voice: cinematic subtitles: no card, white text on a soft dark band; the
+   spoken word turns warm gold (colour only); the hook is a restrained title with a thin rule, its key word in gold. The
+   documentary frame is already edge to edge, so full-bleed changes the captions and hook, not the picture. */
+html[data-presentation="full-bleed"] { --cap-size: 44px; --cap-lh: 1.4; --cap-pad-y: 10px; --cap-pad-x: 22px; --cap-lower: 1vh; --hook-top: 2vh; }
+html[data-presentation="full-bleed"] footer.story-caption { font-family: var(--vc-font); font-weight: 600; color: #ffffff; }
+html[data-presentation="full-bleed"] footer .ct { background: linear-gradient(90deg, #0000, #000a 14%, #000a 86%, #0000); text-shadow: 0 2px 6px #000; }
+html[data-presentation="full-bleed"] footer .cw.is-active { color: #f2c46b; }
+.vc-hook { font: 700 64px/1.22 var(--vc-font); color: #ffffff; text-shadow: 0 3px 16px #000c; }
+.vc-hook-text { border-bottom: 3px solid #f2c46b; padding-bottom: 10px; }
+.vc-hook-key { color: #f2c46b; }
+@media (orientation: landscape) { html[data-presentation="full-bleed"] { --cap-size: 36px; --cap-pad-y: 6px; } .vc-hook { font-size: 48px; } }

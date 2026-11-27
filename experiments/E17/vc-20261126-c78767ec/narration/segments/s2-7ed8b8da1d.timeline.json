@@ -1,0 +1,971 @@
+{
+  "version": 1,
+  "unit": "sample",
+  "locale": "te-IN",
+  "validation": "unreviewed",
+  "run_id": "6b6005f13e9746ed8d32384925773af2",
+  "timing": {
+    "method": "native_durations",
+    "provider": "mithi",
+    "word_timing": true,
+    "note": "model-predicted token durations from the same inference, mapped to words by the model's own token-word ownership"
+  },
+  "audio": {
+    "path": "narration/segments/s2-7ed8b8da1d.wav",
+    "sha256": "39c9b599ead0302985a61e6da0310424b493e64884d1c6ff298fa6bd4a56d6b5",
+    "sample_rate": 24000,
+    "sample_count": 133200
+  },
+  "text": {
+    "display": "గుండెలో నాలుగు గదులు ఉంటాయి. పైన రెండు కర్ణికలు, కింద రెండు జఠరికలు.",
+    "speech": "గుండెలో నాలుగు గదులు ఉంటాయి. పైన రెండు కర్ణికలు, కింద రెండు జఠరికలు."
+  },
+  "records": [
+    {
+      "kind": "phoneme",
+      "label": "ɡ",
+      "start": 1200,
+      "end": 1800,
+      "source": "native_model"
+    },
+    {
+      "kind": "phoneme",
+      "label": "ˈ",
+      "start": 1800,
+      "end": 2400,
+      "source": "native_model"
+    },
+    {
+      "kind": "phoneme",
+      "label": "u",
+      "start": 2400,
+      "end": 4200,
+      "source": "native_model"
+    },
+    {
+      "kind": "phoneme",
+      "label": "n",
+      "start": 4200,
+      "end": 6600,
+      "source": "native_model"
+    },
+    {
+      "kind": "phoneme",
+      "label": "ɖ",
+      "start": 6600,
+      "end": 8400,
+      "source": "native_model"
+    },
+    {
+      "kind": "phoneme",
+      "label": "e",
+      "start": 8400,
+      "end": 10200,
+      "source": "native_model"
+    },
+    {
+      "kind": "phoneme",
+      "label": "l",
+      "start": 10200,
+      "end": 12000,
+      "source": "native_model"
+    },
+    {
+      "kind": "phoneme",
+      "label": "o",
+      "start": 12000,
+      "end": 13200,
+      "source": "native_model"
+    },
+    {
+      "kind": "phoneme",
+      "label": "ː",
+      "start": 13200,
+      "end": 15600,
+      "source": "native_model"
+    },
+    {
+      "kind": "phoneme",
+      "label": "n",
+      "start": 17400,
+      "end": 18600,
+      "source": "native_model"
+    },
+    {
+      "kind": "phoneme",
+      "label": "ˈ",
+      "start": 18600,
+      "end": 19200,
+      "source": "native_model"
+    },
+    {
+      "kind": "phoneme",
+      "label": "a",
+      "start": 19200,
+      "end": 21600,
+      "source": "native_model"
+    },
+    {
+      "kind": "phoneme",
+      "label": "ː",
+      "start": 21600,
+      "end": 22200,
+      "source": "native_model"
+    },
+    {
+      "kind": "phoneme",
+      "label": "l",
+      "start": 22200,
+      "end": 24000,
+      "source": "native_model"
+    },
+    {
+      "kind": "phoneme",
+      "label": "u",
+      "start": 24000,
+      "end": 25200,
+      "source": "native_model"
+    },
+    {
+      "kind": "phoneme",
+      "label": "ɡ",
+      "start": 25200,
+      "end": 26400,
+      "source": "native_model"
+    },
+    {
+      "kind": "phoneme",
+      "label": "u",
+      "start": 26400,
+      "end": 27600,
+      "source": "native_model"
+    },
+    {
+      "kind": "phoneme",
+      "label": "ɡ",
+      "start": 28800,
+      "end": 30000,
+      "source": "native_model"
+    },
+    {
+      "kind": "phoneme",
+      "label": "ˈ",
+      "start": 30000,
+      "end": 30600,
+      "source": "native_model"
+    },
+    {
+      "kind": "phoneme",
+      "label": "a",
+      "start": 30600,
+      "end": 31800,
+      "source": "native_model"
+    },
+    {
+      "kind": "phoneme",
+      "label": "d",
+      "start": 31800,
+      "end": 33000,
+      "source": "native_model"
+    },
+    {
+      "kind": "phoneme",
+      "label": "u",
+      "start": 33000,
+      "end": 34200,
+      "source": "native_model"
+    },
+    {
+      "kind": "phoneme",
+      "label": "l",
+      "start": 34200,
+      "end": 35400,
+      "source": "native_model"
+    },
+    {
+      "kind": "phoneme",
+      "label": "u",
+      "start": 35400,
+      "end": 36600,
+      "source": "native_model"
+    },
+    {
+      "kind": "phoneme",
+      "label": "ˈ",
+      "start": 37800,
+      "end": 38400,
+      "source": "native_model"
+    },
+    {
+      "kind": "phoneme",
+      "label": "u",
+      "start": 38400,
+      "end": 39600,
+      "source": "native_model"
+    },
+    {
+      "kind": "phoneme",
+      "label": "n",
+      "start": 39600,
+      "end": 40800,
+      "source": "native_model"
+    },
+    {
+      "kind": "phoneme",
+      "label": "ʈ",
+      "start": 40800,
+      "end": 42600,
+      "source": "native_model"
+    },
+    {
+      "kind": "phoneme",
+      "label": "a",
+      "start": 42600,
+      "end": 44400,
+      "source": "native_model"
+    },
+    {
+      "kind": "phoneme",
+      "label": "ː",
+      "start": 44400,
+      "end": 45000,
+      "source": "native_model"
+    },
+    {
+      "kind": "phoneme",
+      "label": "j",
+      "start": 45000,
+      "end": 46800,
+      "source": "native_model"
+    },
+    {
+      "kind": "phoneme",
+      "label": "i",
+      "start": 46800,
+      "end": 47400,
+      "source": "native_model"
+    },
+    {
+      "kind": "phoneme",
+      "label": "p",
+      "start": 57000,
+      "end": 57600,
+      "source": "native_model"
+    },
+    {
+      "kind": "phoneme",
+      "label": "ˈ",
+      "start": 57600,
+      "end": 58200,
+      "source": "native_model"
+    },
+    {
+      "kind": "phoneme",
+      "label": "I",
+      "start": 58200,
+      "end": 60600,
+      "source": "native_model"
+    },
+    {
+      "kind": "phoneme",
+      "label": "n",
+      "start": 60600,
+      "end": 63000,
+      "source": "native_model"
+    },
+    {
+      "kind": "phoneme",
+      "label": "a",
+      "start": 63000,
+      "end": 64200,
+      "source": "native_model"
+    },
+    {
+      "kind": "phoneme",
+      "label": "r",
+      "start": 65400,
+      "end": 66600,
+      "source": "native_model"
+    },
+    {
+      "kind": "phoneme",
+      "label": "ˈ",
+      "start": 66600,
+      "end": 67200,
+      "source": "native_model"
+    },
+    {
+      "kind": "phoneme",
+      "label": "e",
+      "start": 67200,
+      "end": 68400,
+      "source": "native_model"
+    },
+    {
+      "kind": "phoneme",
+      "label": "n",
+      "start": 68400,
+      "end": 70200,
+      "source": "native_model"
+    },
+    {
+      "kind": "phoneme",
+      "label": "ɖ",
+      "start": 70200,
+      "end": 71400,
+      "source": "native_model"
+    },
+    {
+      "kind": "phoneme",
+      "label": "u",
+      "start": 71400,
+      "end": 72600,
+      "source": "native_model"
+    },
+    {
+      "kind": "phoneme",
+      "label": "k",
+      "start": 73800,
+      "end": 75000,
+      "source": "native_model"
+    },
+    {
+      "kind": "phoneme",
+      "label": "ˈ",
+      "start": 75000,
+      "end": 75600,
+      "source": "native_model"
+    },
+    {
+      "kind": "phoneme",
+      "label": "a",
+      "start": 75600,
+      "end": 76800,
+      "source": "native_model"
+    },
+    {
+      "kind": "phoneme",
+      "label": "r",
+      "start": 76800,
+      "end": 78600,
+      "source": "native_model"
+    },
+    {
+      "kind": "phoneme",
+      "label": "ɳ",
+      "start": 78600,
+      "end": 79800,
+      "source": "native_model"
+    },
+    {
+      "kind": "phoneme",
+      "label": "i",
+      "start": 79800,
+      "end": 81000,
+      "source": "native_model"
+    },
+    {
+      "kind": "phoneme",
+      "label": "k",
+      "start": 81000,
+      "end": 82200,
+      "source": "native_model"
+    },
+    {
+      "kind": "phoneme",
+      "label": "ˌ",
+      "start": 82200,
+      "end": 82800,
+      "source": "native_model"
+    },
+    {
+      "kind": "phoneme",
+      "label": "a",
+      "start": 82800,
+      "end": 84000,
+      "source": "native_model"
+    },
+    {
+      "kind": "phoneme",
+      "label": "l",
+      "start": 84000,
+      "end": 85800,
+      "source": "native_model"
+    },
+    {
+      "kind": "phoneme",
+      "label": "u",
+      "start": 85800,
+      "end": 87600,
+      "source": "native_model"
+    },
+    {
+      "kind": "phoneme",
+      "label": "k",
+      "start": 96600,
+      "end": 97800,
+      "source": "native_model"
+    },
+    {
+      "kind": "phoneme",
+      "label": "ˈ",
+      "start": 97800,
+      "end": 98400,
+      "source": "native_model"
+    },
+    {
+      "kind": "phoneme",
+      "label": "i",
+      "start": 98400,
+      "end": 100200,
+      "source": "native_model"
+    },
+    {
+      "kind": "phoneme",
+      "label": "n",
+      "start": 100200,
+      "end": 102000,
+      "source": "native_model"
+    },
+    {
+      "kind": "phoneme",
+      "label": "d",
+      "start": 102000,
+      "end": 103200,
+      "source": "native_model"
+    },
+    {
+      "kind": "phoneme",
+      "label": "a",
+      "start": 103200,
+      "end": 106200,
+      "source": "native_model"
+    },
+    {
+      "kind": "phoneme",
+      "label": "r",
+      "start": 107400,
+      "end": 108600,
+      "source": "native_model"
+    },
+    {
+      "kind": "phoneme",
+      "label": "ˈ",
+      "start": 108600,
+      "end": 109200,
+      "source": "native_model"
+    },
+    {
+      "kind": "phoneme",
+      "label": "e",
+      "start": 109200,
+      "end": 110400,
+      "source": "native_model"
+    },
+    {
+      "kind": "phoneme",
+      "label": "n",
+      "start": 110400,
+      "end": 112200,
+      "source": "native_model"
+    },
+    {
+      "kind": "phoneme",
+      "label": "ɖ",
+      "start": 112200,
+      "end": 114000,
+      "source": "native_model"
+    },
+    {
+      "kind": "phoneme",
+      "label": "u",
+      "start": 114000,
+      "end": 115200,
+      "source": "native_model"
+    },
+    {
+      "kind": "phoneme",
+      "label": "ɟ",
+      "start": 116400,
+      "end": 117600,
+      "source": "native_model"
+    },
+    {
+      "kind": "phoneme",
+      "label": "ˈ",
+      "start": 117600,
+      "end": 118200,
+      "source": "native_model"
+    },
+    {
+      "kind": "phoneme",
+      "label": "a",
+      "start": 118200,
+      "end": 119400,
+      "source": "native_model"
+    },
+    {
+      "kind": "phoneme",
+      "label": "ʈ",
+      "start": 119400,
+      "end": 121200,
+      "source": "native_model"
+    },
+    {
+      "kind": "phoneme",
+      "label": "ʰ",
+      "start": 121200,
+      "end": 121800,
+      "source": "native_model"
+    },
+    {
+      "kind": "phoneme",
+      "label": "a",
+      "start": 121800,
+      "end": 123000,
+      "source": "native_model"
+    },
+    {
+      "kind": "phoneme",
+      "label": "r",
+      "start": 123000,
+      "end": 124200,
+      "source": "native_model"
+    },
+    {
+      "kind": "phoneme",
+      "label": "ˌ",
+      "start": 124200,
+      "end": 124800,
+      "source": "native_model"
+    },
+    {
+      "kind": "phoneme",
+      "label": "i",
+      "start": 124800,
+      "end": 126000,
+      "source": "native_model"
+    },
+    {
+      "kind": "phoneme",
+      "label": "k",
+      "start": 126000,
+      "end": 127200,
+      "source": "native_model"
+    },
+    {
+      "kind": "phoneme",
+      "label": "a",
+      "start": 127200,
+      "end": 128400,
+      "source": "native_model"
+    },
+    {
+      "kind": "phoneme",
+      "label": "l",
+      "start": 128400,
+      "end": 130200,
+      "source": "native_model"
+    },
+    {
+      "kind": "phoneme",
+      "label": "u",
+      "start": 130200,
+      "end": 131400,
+      "source": "native_model"
+    },
+    {
+      "kind": "pause",
+      "label": "edge silence",
+      "start": 0,
+      "end": 1200,
+      "source": "native_model"
+    },
+    {
+      "kind": "pause",
+      "label": "word gap",
+      "start": 15600,
+      "end": 17400,
+      "source": "native_model"
+    },
+    {
+      "kind": "pause",
+      "label": "word gap",
+      "start": 27600,
+      "end": 28800,
+      "source": "native_model"
+    },
+    {
+      "kind": "pause",
+      "label": "word gap",
+      "start": 36600,
+      "end": 37800,
+      "source": "native_model"
+    },
+    {
+      "kind": "pause",
+      "label": "punctuation pause",
+      "start": 47400,
+      "end": 57000,
+      "source": "native_model"
+    },
+    {
+      "kind": "pause",
+      "label": "word gap",
+      "start": 64200,
+      "end": 65400,
+      "source": "native_model"
+    },
+    {
+      "kind": "pause",
+      "label": "word gap",
+      "start": 72600,
+      "end": 73800,
+      "source": "native_model"
+    },
+    {
+      "kind": "pause",
+      "label": "punctuation pause",
+      "start": 87600,
+      "end": 96600,
+      "source": "native_model"
+    },
+    {
+      "kind": "pause",
+      "label": "word gap",
+      "start": 106200,
+      "end": 107400,
+      "source": "native_model"
+    },
+    {
+      "kind": "pause",
+      "label": "word gap",
+      "start": 115200,
+      "end": 116400,
+      "source": "native_model"
+    },
+    {
+      "kind": "pause",
+      "label": "punctuation pause",
+      "start": 131400,
+      "end": 133200,
+      "source": "native_model"
+    },
+    {
+      "kind": "word",
+      "label": "గుండెలో",
+      "start": 1200,
+      "end": 15600,
+      "source": "native_model",
+      "mapping": {
+        "method": "mithi_token_word_ownership",
+        "model_words": [
+          0
+        ],
+        "first_token": 1,
+        "last_token": 9
+      },
+      "text_ref": {
+        "field": "speech",
+        "start": 0,
+        "end": 7
+      },
+      "display_ref": {
+        "field": "display",
+        "start": 0,
+        "end": 7
+      }
+    },
+    {
+      "kind": "word",
+      "label": "నాలుగు",
+      "start": 17400,
+      "end": 27600,
+      "source": "native_model",
+      "mapping": {
+        "method": "mithi_token_word_ownership",
+        "model_words": [
+          1
+        ],
+        "first_token": 11,
+        "last_token": 18
+      },
+      "text_ref": {
+        "field": "speech",
+        "start": 8,
+        "end": 14
+      },
+      "display_ref": {
+        "field": "display",
+        "start": 8,
+        "end": 14
+      }
+    },
+    {
+      "kind": "word",
+      "label": "గదులు",
+      "start": 28800,
+      "end": 36600,
+      "source": "native_model",
+      "mapping": {
+        "method": "mithi_token_word_ownership",
+        "model_words": [
+          2
+        ],
+        "first_token": 20,
+        "last_token": 26
+      },
+      "text_ref": {
+        "field": "speech",
+        "start": 15,
+        "end": 20
+      },
+      "display_ref": {
+        "field": "display",
+        "start": 15,
+        "end": 20
+      }
+    },
+    {
+      "kind": "word",
+      "label": "ఉంటాయి.",
+      "start": 37800,
+      "end": 47400,
+      "source": "native_model",
+      "mapping": {
+        "method": "mithi_token_word_ownership",
+        "model_words": [
+          3
+        ],
+        "first_token": 28,
+        "last_token": 35
+      },
+      "text_ref": {
+        "field": "speech",
+        "start": 21,
+        "end": 28
+      },
+      "display_ref": {
+        "field": "display",
+        "start": 21,
+        "end": 28
+      }
+    },
+    {
+      "kind": "word",
+      "label": "పైన",
+      "start": 57000,
+      "end": 64200,
+      "source": "native_model",
+      "mapping": {
+        "method": "mithi_token_word_ownership",
+        "model_words": [
+          4
+        ],
+        "first_token": 38,
+        "last_token": 42
+      },
+      "text_ref": {
+        "field": "speech",
+        "start": 29,
+        "end": 32
+      },
+      "display_ref": {
+        "field": "display",
+        "start": 29,
+        "end": 32
+      }
+    },
+    {
+      "kind": "word",
+      "label": "రెండు",
+      "start": 65400,
+      "end": 72600,
+      "source": "native_model",
+      "mapping": {
+        "method": "mithi_token_word_ownership",
+        "model_words": [
+          5
+        ],
+        "first_token": 44,
+        "last_token": 49
+      },
+      "text_ref": {
+        "field": "speech",
+        "start": 33,
+        "end": 38
+      },
+      "display_ref": {
+        "field": "display",
+        "start": 33,
+        "end": 38
+      }
+    },
+    {
+      "kind": "word",
+      "label": "కర్ణికలు,",
+      "start": 73800,
+      "end": 87600,
+      "source": "native_model",
+      "mapping": {
+        "method": "mithi_token_word_ownership",
+        "model_words": [
+          6
+        ],
+        "first_token": 51,
+        "last_token": 61
+      },
+      "text_ref": {
+        "field": "speech",
+        "start": 39,
+        "end": 48
+      },
+      "display_ref": {
+        "field": "display",
+        "start": 39,
+        "end": 48
+      }
+    },
+    {
+      "kind": "word",
+      "label": "కింద",
+      "start": 96600,
+      "end": 106200,
+      "source": "native_model",
+      "mapping": {
+        "method": "mithi_token_word_ownership",
+        "model_words": [
+          7
+        ],
+        "first_token": 64,
+        "last_token": 69
+      },
+      "text_ref": {
+        "field": "speech",
+        "start": 49,
+        "end": 53
+      },
+      "display_ref": {
+        "field": "display",
+        "start": 49,
+        "end": 53
+      }
+    },
+    {
+      "kind": "word",
+      "label": "రెండు",
+      "start": 107400,
+      "end": 115200,
+      "source": "native_model",
+      "mapping": {
+        "method": "mithi_token_word_ownership",
+        "model_words": [
+          8
+        ],
+        "first_token": 71,
+        "last_token": 76
+      },
+      "text_ref": {
+        "field": "speech",
+        "start": 54,
+        "end": 59
+      },
+      "display_ref": {
+        "field": "display",
+        "start": 54,
+        "end": 59
+      }
+    },
+    {
+      "kind": "word",
+      "label": "జఠరికలు.",
+      "start": 116400,
+      "end": 131400,
+      "source": "native_model",
+      "mapping": {
+        "method": "mithi_token_word_ownership",
+        "model_words": [
+          9
+        ],
+        "first_token": 78,
+        "last_token": 90
+      },
+      "text_ref": {
+        "field": "speech",
+        "start": 60,
+        "end": 68
+      },
+      "display_ref": {
+        "field": "display",
+        "start": 60,
+        "end": 68
+      }
+    },
+    {
+      "kind": "phrase",
+      "label": "గుండెలో నాలుగు గదులు ఉంటాయి.",
+      "start": 1200,
+      "end": 47400,
+      "source": "native_model",
+      "mapping": {
+        "method": "contextual_word_union",
+        "first_word": 0,
+        "stop_word": 4
+      },
+      "text_ref": {
+        "field": "speech",
+        "start": 0,
+        "end": 28
+      },
+      "display_ref": {
+        "field": "display",
+        "start": 0,
+        "end": 28
+      }
+    },
+    {
+      "kind": "phrase",
+      "label": "పైన రెండు కర్ణికలు,",
+      "start": 57000,
+      "end": 87600,
+      "source": "native_model",
+      "mapping": {
+        "method": "contextual_word_union",
+        "first_word": 4,
+        "stop_word": 7
+      },
+      "text_ref": {
+        "field": "speech",
+        "start": 29,
+        "end": 48
+      },
+      "display_ref": {
+        "field": "display",
+        "start": 29,
+        "end": 48
+      }
+    },
+    {
+      "kind": "phrase",
+      "label": "కింద రెండు జఠరికలు.",
+      "start": 96600,
+      "end": 131400,
+      "source": "native_model",
+      "mapping": {
+        "method": "contextual_word_union",
+        "first_word": 7,
+        "stop_word": 10
+      },
+      "text_ref": {
+        "field": "speech",
+        "start": 49,
+        "end": 68
+      },
+      "display_ref": {
+        "field": "display",
+        "start": 49,
+        "end": 68
+      }
+    }
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "passage": null,
+  "text_file": "D:\\video-creator-skill\\experiments\\E03\\kokoro-hindi\\inputs\\test-C.txt",
+  "text_sha256": "90fb01e31dda332663d591553779b5a5b3bb5824605a0c29064c38cb2230b751",
+  "display_text": "आज हम सीखेंगे कि बादल कैसे बनते हैं। हवा में मौजूद नमी ठंडी होकर पानी की छोटी बूंदों में बदल जाती है।",
+  "speech_normalized_text": "आज हम सीखेंगे कि बादल कैसे बनते हैं। हवा में मौजूद नमी ठंडी होकर पानी की छोटी बूंदों में बदल जाती है।",
+  "model": "D:\\video-creator-skill-experiments\\E03\\models\\kokoro-v1.0.onnx",
+  "voices": "D:\\video-creator-skill-experiments\\E03\\models\\voices-v1.0.bin",
+  "voice": "hf_alpha",
+  "locale": "hi-IN",
+  "runtime": "kokoro-onnx==0.6.1",
+  "provider": [
+    "CPUExecutionProvider"
+  ],
+  "intra_op_threads": 4,
+  "inter_op_threads": 1,
+  "graph_optimization": "disabled",
+  "prepacking": "disabled",
+  "python_network_guard": true,
+  "load_seconds": 0.580584799987264,
+  "synthesis_seconds": 3.5783016000059433,
+  "audio_duration_seconds": 9.175,
+  "real_time_factor": 0.39000562397884936,
+  "sample_rate": 24000,
+  "output_bytes": 440444
+}

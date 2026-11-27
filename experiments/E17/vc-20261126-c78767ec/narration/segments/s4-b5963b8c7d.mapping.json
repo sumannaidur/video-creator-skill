@@ -1,0 +1,257 @@
+{
+  "result": "mapped",
+  "words": [
+    {
+      "label": "ఊపిరితిత్తుల్లో",
+      "text_start": 0,
+      "text_end": 15,
+      "method": "mithi_token_word_ownership",
+      "model_words": [
+        "ఊపిరితిత్తుల్లో"
+      ],
+      "group": null,
+      "tokens": [
+        1,
+        18
+      ],
+      "samples": [
+        1200,
+        22800
+      ]
+    },
+    {
+      "label": "ఆ",
+      "text_start": 16,
+      "text_end": 17,
+      "method": "mithi_token_word_ownership",
+      "model_words": [
+        "ఆ"
+      ],
+      "group": null,
+      "tokens": [
+        20,
+        21
+      ],
+      "samples": [
+        24600,
+        28200
+      ]
+    },
+    {
+      "label": "రక్తం",
+      "text_start": 18,
+      "text_end": 23,
+      "method": "mithi_token_word_ownership",
+      "model_words": [
+        "రక్తం"
+      ],
+      "group": null,
+      "tokens": [
+        23,
+        29
+      ],
+      "samples": [
+        29400,
+        39600
+      ]
+    },
+    {
+      "label": "ఆక్సిజన్",
+      "text_start": 24,
+      "text_end": 32,
+      "method": "mithi_token_word_ownership",
+      "model_words": [
+        "ఆక్సిజన్"
+      ],
+      "group": null,
+      "tokens": [
+        31,
+        39
+      ],
+      "samples": [
+        42000,
+        55200
+      ]
+    },
+    {
+      "label": "నింపుకొని,",
+      "text_start": 33,
+      "text_end": 43,
+      "method": "mithi_token_word_ownership",
+      "model_words": [
+        "నింపుకొని,"
+      ],
+      "group": null,
+      "tokens": [
+        41,
+        51
+      ],
+      "samples": [
+        56400,
+        69000
+      ]
+    },
+    {
+      "label": "ఎడమ",
+      "text_start": 44,
+      "text_end": 47,
+      "method": "mithi_token_word_ownership",
+      "model_words": [
+        "ఎడమ"
+      ],
+      "group": null,
+      "tokens": [
+        54,
+        60
+      ],
+      "samples": [
+        78600,
+        86400
+      ]
+    },
+    {
+      "label": "కర్ణికలోకి",
+      "text_start": 48,
+      "text_end": 58,
+      "method": "mithi_token_word_ownership",
+      "model_words": [
+        "కర్ణికలోకి"
+      ],
+      "group": null,
+      "tokens": [
+        62,
+        75
+      ],
+      "samples": [
+        87600,
+        103800
+      ]
+    },
+    {
+      "label": "తిరిగి",
+      "text_start": 59,
+      "text_end": 65,
+      "method": "mithi_token_word_ownership",
+      "model_words": [
+        "తిరిగి"
+      ],
+      "group": null,
+      "tokens": [
+        77,
+        83
+      ],
+      "samples": [
+        105000,
+        112200
+      ]
+    },
+    {
+      "label": "వస్తుంది.",
+      "text_start": 66,
+      "text_end": 75,
+      "method": "mithi_token_word_ownership",
+      "model_words": [
+        "వస్తుంది."
+      ],
+      "group": null,
+      "tokens": [
+        85,
+        93
+      ],
+      "samples": [
+        113400,
+        123600
+      ]
+    },
+    {
+      "label": "అక్కడి",
+      "text_start": 76,
+      "text_end": 82,
+      "method": "mithi_token_word_ownership",
+      "model_words": [
+        "అక్కడి"
+      ],
+      "group": null,
+      "tokens": [
+        96,
+        102
+      ],
+      "samples": [
+        137400,
+        145200
+      ]
+    },
+    {
+      "label": "నుంచి",
+      "text_start": 83,
+      "text_end": 88,
+      "method": "mithi_token_word_ownership",
+      "model_words": [
+        "నుంచి"
+      ],
+      "group": null,
+      "tokens": [
+        104,
+        109
+      ],
+      "samples": [
+        146400,
+        154800
+      ]
+    },
+    {
+      "label": "ఎడమ",
+      "text_start": 89,
+      "text_end": 92,
+      "method": "mithi_token_word_ownership",
+      "model_words": [
+        "ఎడమ"
+      ],
+      "group": null,
+      "tokens": [
+        111,
+        116
+      ],
+      "samples": [
+        157800,
+        165000
+      ]
+    },
+    {
+      "label": "జఠరికలోకి",
+      "text_start": 93,
+      "text_end": 102,
+      "method": "mithi_token_word_ownership",
+      "model_words": [
+        "జఠరికలోకి"
+      ],
+      "group": null,
+      "tokens": [
+        118,
+        134
+      ],
+      "samples": [
+        166200,
+        183600
+      ]
+    },
+    {
+      "label": "దిగుతుంది.",
+      "text_start": 103,
+      "text_end": 113,
+      "method": "mithi_token_word_ownership",
+      "model_words": [
+        "దిగుతుంది."
+      ],
+      "group": null,
+      "tokens": [
+        136,
+        146
+      ],
+      "samples": [
+        184800,
+        196800
+      ]
+    }
+  ]
+}

@@ -1,0 +1,254 @@
+{
+  "schema": "video-creator.qa-report",
+  "version": 1,
+  "project": "vc-20261126-ddf90e5d",
+  "config_sha256": "368d66ffc1ed0d02cb761ecc7b7d7ecef7a4d250b50d6e12f9089853b21824f7",
+  "technical": {
+    "status": "passed",
+    "checks": {
+      "stage:research": {
+        "status": "passed",
+        "detail": "completed",
+        "evidence": "research/research-evidence.json"
+      },
+      "stage:script": {
+        "status": "passed",
+        "detail": "completed",
+        "evidence": "script/script-evidence.json"
+      },
+      "stage:narration": {
+        "status": "passed",
+        "detail": "completed",
+        "evidence": "narration/narration-evidence.json"
+      },
+      "stage:creative-plan": {
+        "status": "passed",
+        "detail": "completed",
+        "evidence": "plan/plan-evidence.json"
+      },
+      "stage:visual-production": {
+        "status": "passed",
+        "detail": "completed",
+        "evidence": "qa/preflight/preflight.json"
+      },
+      "stage:sound": {
+        "status": "passed",
+        "detail": "completed",
+        "evidence": "audio/mix.evidence.json"
+      },
+      "artifact:video": {
+        "status": "passed",
+        "detail": "audio/final-1080x1920.mp4",
+        "evidence": null
+      },
+      "artifact:render-evidence": {
+        "status": "passed",
+        "detail": "render/fullhd/video-1080x1920-evidence.json",
+        "evidence": null
+      },
+      "artifact:preflight": {
+        "status": "passed",
+        "detail": "qa/preflight/preflight.json",
+        "evidence": null
+      },
+      "artifact:mix-evidence": {
+        "status": "passed",
+        "detail": "audio/mix.evidence.json",
+        "evidence": null
+      },
+      "narration-timeline": {
+        "status": "passed",
+        "detail": "narration/narration-bc46667d38.timeline.json",
+        "evidence": null
+      },
+      "visual-preflight": {
+        "status": "passed",
+        "detail": "1839 frames at 30 fps",
+        "evidence": "qa/preflight/preflight.json"
+      },
+      "render-media-checks": {
+        "status": "passed",
+        "detail": [],
+        "evidence": null
+      },
+      "captions": {
+        "status": "passed",
+        "detail": "19 cues; files: srt, vtt",
+        "evidence": "captions/captions.json"
+      },
+      "audio-mix": {
+        "status": "passed",
+        "detail": {
+          "lufs": -16.0,
+          "true_peak": -1.5,
+          "speech_over_bed_lu": 17.4,
+          "sync_lag_ms": 0
+        },
+        "evidence": null
+      },
+      "narration-sync": {
+        "status": "passed",
+        "detail": "{\"method\": \"bed-subtracted envelope cross-correlation\", \"lag_ms\": 0, \"correlation\": 0.99922, \"max_lag_ms\": 2, \"min_correlation\": 0.95, \"passed\": true}",
+        "evidence": null
+      },
+      "final-video": {
+        "status": "passed",
+        "detail": {
+          "size": "1080x1920",
+          "fps": "30/1",
+          "frames": "1839",
+          "duration": "61.300000",
+          "codecs": "h264/aac"
+        },
+        "evidence": "audio/final-1080x1920.mp4"
+      }
+    },
+    "blocking": []
+  },
+  "human_review": {
+    "status": "pending",
+    "checklist": [
+      {
+        "id": "factual-accuracy",
+        "question": "Every claim on screen and in narration matches its verified source; nothing implies more than the sources support",
+        "status": "pending"
+      },
+      {
+        "id": "storytelling",
+        "question": "The hook is answered; ideas progress clearly; the ending pays off the opening",
+        "status": "pending"
+      },
+      {
+        "id": "visual-composition",
+        "question": "Each shot has one clear job; framing, balance and empty space work at phone size",
+        "status": "pending"
+      },
+      {
+        "id": "illustration-quality",
+        "question": "Artwork is original, coherent with the style and free of distracting errors",
+        "status": "pending"
+      },
+      {
+        "id": "motion",
+        "question": "Motion supports the spoken explanation; timing, easing and transitions feel deliberate; no static slides",
+        "status": "pending"
+      },
+      {
+        "id": "pronunciation",
+        "question": "Every word is pronounced correctly for the locale (native listener)",
+        "status": "pending"
+      },
+      {
+        "id": "accent",
+        "question": "The accent matches the requested locale and audience (native listener)",
+        "status": "pending"
+      },
+      {
+        "id": "narration-naturalness",
+        "question": "Rhythm, pauses and intonation sound natural, not synthetic (native listener)",
+        "status": "pending"
+      },
+      {
+        "id": "timing-alignment",
+        "question": "Visual cues and captions land on the spoken words (timings are not acoustically verified)",
+        "status": "pending"
+      },
+      {
+        "id": "caption-readability",
+        "question": "Captions read naturally: wording, line breaks, compounds and reading speed (native reader)",
+        "status": "pending"
+      },
+      {
+        "id": "audio-balance",
+        "question": "Narration stays clearly intelligible over music and effects; levels feel comfortable",
+        "status": "pending"
+      },
+      {
+        "id": "licensing",
+        "question": "Fonts, voice and model terms, music, effects and any external assets are cleared for the intended use",
+        "status": "pending"
+      }
+    ],
+    "note": "never approved automatically; record with project.py approve human-review"
+  },
+  "publication": {
+    "status": "not-approved",
+    "ready": false,
+    "note": "needs technical pass, approved human review (including licensing) and an explicit publication approval"
+  },
+  "provenance": {
+    "narration_provider": "kokoro-onnx",
+    "voice": "hf_alpha",
+    "model": "MISSING (not recorded by the narration stage)",
+    "timing_method": "MISSING",
+    "timing_status": "unreviewed",
+    "fonts": {
+      "caption": "\"Nirmala UI\", \"Segoe UI\", sans-serif",
+      "label": "\"Nirmala UI\",\"Segoe UI\",sans-serif",
+      "note": "system fonts as reported by the browser; font licensing is not reviewed"
+    },
+    "audio_assets": {
+      "assets/chime.wav": {
+        "sha256": "4318779372088c36cc4b15cd2c17622c5999da8b8b9b649560cb0b8528f87a94",
+        "license": "Original procedural audio synthesized in this project with FFmpeg lavfi; no third-party samples or recordings.",
+        "kind": "sfx"
+      },
+      "assets/music-pad.wav": {
+        "sha256": "e423a2ab4acba88909a1f8ea93687c28b7852d3a7d8990c162d446ba14024d78",
+        "license": "Original procedural audio synthesized in this project with FFmpeg lavfi; no third-party samples or recordings.",
+        "kind": "music"
+      },
+      "assets/pop.wav": {
+        "sha256": "f922257822ba1b8cad2984d1a9a9cf13b172e05e11666f74cb0b9b9f5a93b0b8",
+        "license": "Original procedural audio synthesized in this project with FFmpeg lavfi; no third-party samples or recordings.",
+        "kind": "sfx"
+      },
+      "assets/whoosh.wav": {
+        "sha256": "0bc928f207f81f61487067ffc65494352da2a1a8348d2d2f02f51224d5ee3659",
+        "license": "Original procedural audio synthesized in this project with FFmpeg lavfi; no third-party samples or recordings.",
+        "kind": "sfx"
+      }
+    },
+    "visual_assets": "topic artwork: see the creative plan's assets list",
+    "renderer": {
+      "browser": "Chrome/157.0.8103.79",
+      "style": "paper-explainer"
+    }
+  },
+  "deliverables": {
+    "video": "audio/final-1080x1920.mp4",
+    "subtitles": [
+      "captions/captions.srt",
+      "captions/captions.vtt"
+    ],
+    "sources": [
+      "research/claims.json",
+      "research/sources.json"
+    ],
+    "supporting": [
+      "audio/assets/assets-manifest.json",
+      "audio/final-1080x1920.mp4",
+      "audio/make-spec.py",
+      "audio/mix-spec.json",
+      "audio/mix.evidence.json",
+      "audio/mix.wav",
+      "captions/captions.json",
+      "captions/captions.srt",
+      "captions/captions.vtt",
+      "narration/narration-bc46667d38.timeline.json",
+      "narration/narration-bc46667d38.wav",
+      "notes/creative-decisions.md",
+      "plan/creative-plan.json",
+      "plan/resolved-plan.json",
+      "qa/preflight/preflight.json",
+      "qa/preflight/preflight.md",
+      "render/fullhd/video-1080x1920-evidence.json",
+      "render/fullhd/video-1080x1920.mp4",
+      "research/claims.json",
+      "research/sources.json",
+      "script/script.json",
+      "visual/topic-sky.js"
+    ]
+  },
+  "passed": true
+}

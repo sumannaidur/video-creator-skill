@@ -1,0 +1,329 @@
+{
+  "result": "mapped",
+  "words": [
+    {
+      "label": "Look,",
+      "text_start": 0,
+      "text_end": 5,
+      "method": "mithi_group_ownership_apostrophe_reconciled",
+      "model_words": null,
+      "group": [
+        0
+      ],
+      "tokens": [
+        1,
+        4
+      ],
+      "samples": [
+        1200,
+        6000
+      ]
+    },
+    {
+      "label": "it's",
+      "text_start": 6,
+      "text_end": 10,
+      "method": "mithi_group_ownership_apostrophe_reconciled",
+      "model_words": null,
+      "group": [
+        1
+      ],
+      "tokens": [
+        7,
+        9
+      ],
+      "samples": [
+        10200,
+        14400
+      ]
+    },
+    {
+      "label": "raining!",
+      "text_start": 11,
+      "text_end": 19,
+      "method": "mithi_group_ownership_apostrophe_reconciled",
+      "model_words": null,
+      "group": [
+        2
+      ],
+      "tokens": [
+        11,
+        16
+      ],
+      "samples": [
+        16200,
+        24000
+      ]
+    },
+    {
+      "label": "After",
+      "text_start": 20,
+      "text_end": 25,
+      "method": "mithi_group_ownership_apostrophe_reconciled",
+      "model_words": null,
+      "group": [
+        3
+      ],
+      "tokens": [
+        19,
+        24
+      ],
+      "samples": [
+        27600,
+        34200
+      ]
+    },
+    {
+      "label": "the",
+      "text_start": 26,
+      "text_end": 29,
+      "method": "mithi_group_ownership_apostrophe_reconciled",
+      "model_words": null,
+      "group": [
+        4
+      ],
+      "tokens": [
+        26,
+        27
+      ],
+      "samples": [
+        35400,
+        37200
+      ]
+    },
+    {
+      "label": "rain,",
+      "text_start": 30,
+      "text_end": 35,
+      "method": "mithi_group_ownership_apostrophe_reconciled",
+      "model_words": null,
+      "group": [
+        5
+      ],
+      "tokens": [
+        29,
+        32
+      ],
+      "samples": [
+        39000,
+        45600
+      ]
+    },
+    {
+      "label": "the",
+      "text_start": 36,
+      "text_end": 39,
+      "method": "mithi_group_ownership_apostrophe_reconciled",
+      "model_words": null,
+      "group": [
+        6
+      ],
+      "tokens": [
+        35,
+        36
+      ],
+      "samples": [
+        53400,
+        56400
+      ]
+    },
+    {
+      "label": "soil",
+      "text_start": 40,
+      "text_end": 44,
+      "method": "mithi_group_ownership_apostrophe_reconciled",
+      "model_words": null,
+      "group": [
+        7
+      ],
+      "tokens": [
+        38,
+        41
+      ],
+      "samples": [
+        58200,
+        64800
+      ]
+    },
+    {
+      "label": "smells",
+      "text_start": 45,
+      "text_end": 51,
+      "method": "mithi_group_ownership_apostrophe_reconciled",
+      "model_words": null,
+      "group": [
+        8
+      ],
+      "tokens": [
+        43,
+        48
+      ],
+      "samples": [
+        66000,
+        74400
+      ]
+    },
+    {
+      "label": "so",
+      "text_start": 52,
+      "text_end": 54,
+      "method": "mithi_group_ownership_apostrophe_reconciled",
+      "model_words": null,
+      "group": [
+        9
+      ],
+      "tokens": [
+        50,
+        52
+      ],
+      "samples": [
+        75600,
+        78600
+      ]
+    },
+    {
+      "label": "lovely,",
+      "text_start": 55,
+      "text_end": 62,
+      "method": "mithi_group_ownership_apostrophe_reconciled",
+      "model_words": null,
+      "group": [
+        10
+      ],
+      "tokens": [
+        54,
+        59
+      ],
+      "samples": [
+        80400,
+        89400
+      ]
+    },
+    {
+      "label": "doesn't",
+      "text_start": 63,
+      "text_end": 70,
+      "method": "mithi_group_ownership_apostrophe_reconciled",
+      "model_words": null,
+      "group": [
+        11
+      ],
+      "tokens": [
+        62,
+        68
+      ],
+      "samples": [
+        95400,
+        105000
+      ]
+    },
+    {
+      "label": "it?",
+      "text_start": 71,
+      "text_end": 74,
+      "method": "mithi_group_ownership_apostrophe_reconciled",
+      "model_words": null,
+      "group": [
+        12
+      ],
+      "tokens": [
+        70,
+        71
+      ],
+      "samples": [
+        106200,
+        108600
+      ]
+    },
+    {
+      "label": "Let's",
+      "text_start": 75,
+      "text_end": 80,
+      "method": "mithi_group_ownership_apostrophe_reconciled",
+      "model_words": null,
+      "group": [
+        13
+      ],
+      "tokens": [
+        74,
+        78
+      ],
+      "samples": [
+        115800,
+        123000
+      ]
+    },
+    {
+      "label": "sit",
+      "text_start": 81,
+      "text_end": 84,
+      "method": "mithi_group_ownership_apostrophe_reconciled",
+      "model_words": null,
+      "group": [
+        14
+      ],
+      "tokens": [
+        80,
+        83
+      ],
+      "samples": [
+        124200,
+        128400
+      ]
+    },
+    {
+      "label": "by",
+      "text_start": 85,
+      "text_end": 87,
+      "method": "mithi_group_ownership_apostrophe_reconciled",
+      "model_words": null,
+      "group": [
+        15
+      ],
+      "tokens": [
+        85,
+        86
+      ],
+      "samples": [
+        129600,
+        132600
+      ]
+    },
+    {
+      "label": "the",
+      "text_start": 88,
+      "text_end": 91,
+      "method": "mithi_group_ownership_apostrophe_reconciled",
+      "model_words": null,
+      "group": [
+        16
+      ],
+      "tokens": [
+        88,
+        89
+      ],
+      "samples": [
+        133800,
+        135600
+      ]
+    },
+    {
+      "label": "window.",
+      "text_start": 92,
+      "text_end": 99,
+      "method": "mithi_group_ownership_apostrophe_reconciled",
+      "model_words": null,
+      "group": [
+        17
+      ],
+      "tokens": [
+        91,
+        96
+      ],
+      "samples": [
+        136800,
+        143400
+      ]
+    }
+  ]
+}

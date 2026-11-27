@@ -1,0 +1,100 @@
+{
+  "spec": "mix-spec.json",
+  "narration": {
+    "path": "../narration-DK.wav",
+    "sha256": "71e936410d68ed38b7dea51895b6287e5a6f46e5e9616a228982e7425a9b0c53",
+    "seconds": 68.8
+  },
+  "output": {
+    "path": "flights-mix.wav",
+    "sha256": "22f635b8e42e2c6dd15df608276297a3190ce0b398951b39a96616a83da66959",
+    "seconds": 68.8,
+    "integrated": -16.0,
+    "true_peak": -1.5
+  },
+  "loudnorm_first_pass": {
+    "input_i": "-19.68",
+    "input_tp": "-4.04",
+    "input_lra": "2.70",
+    "input_thresh": "-29.94",
+    "output_i": "-16.09",
+    "output_tp": "-1.50",
+    "output_lra": "2.50",
+    "output_thresh": "-26.34",
+    "normalization_type": "dynamic",
+    "target_offset": "0.09"
+  },
+  "applied_gain_db": 3.6799999999999997,
+  "narration_lufs_in_mix": -15.719999999999999,
+  "bed_lufs": -31.8,
+  "speech_over_bed_lu": 16.080000000000002,
+  "sync": {
+    "method": "bed-subtracted envelope cross-correlation",
+    "lag_ms": 0,
+    "correlation": 0.99981,
+    "max_lag_ms": 2,
+    "min_correlation": 0.95,
+    "passed": true
+  },
+  "provenance": {
+    "assets/chime.wav": {
+      "sha256": "4318779372088c36cc4b15cd2c17622c5999da8b8b9b649560cb0b8528f87a94",
+      "license": "Original procedural audio synthesized in this project with FFmpeg lavfi; no third-party samples or recordings.",
+      "kind": "sfx"
+    },
+    "assets/music-pad.wav": {
+      "sha256": "967fc1db39e0a27a5b31d3d3500148383d694b8a23ac2635d29742c3d9a313bf",
+      "license": "Original procedural audio synthesized in this project with FFmpeg lavfi; no third-party samples or recordings.",
+      "kind": "music"
+    },
+    "assets/pop.wav": {
+      "sha256": "f922257822ba1b8cad2984d1a9a9cf13b172e05e11666f74cb0b9b9f5a93b0b8",
+      "license": "Original procedural audio synthesized in this project with FFmpeg lavfi; no third-party samples or recordings.",
+      "kind": "sfx"
+    },
+    "assets/rumble.wav": {
+      "sha256": "651afa913cdaeeee243c7972b7172e31c4f7ed13d1902c07ac11f090ff73ebbd",
+      "license": "Original procedural audio synthesized in this project with FFmpeg lavfi; no third-party samples or recordings.",
+      "kind": "sfx"
+    },
+    "assets/whoosh.wav": {
+      "sha256": "0bc928f207f81f61487067ffc65494352da2a1a8348d2d2f02f51224d5ee3659",
+      "license": "Original procedural audio synthesized in this project with FFmpeg lavfi; no third-party samples or recordings.",
+      "kind": "sfx"
+    }
+  },
+  "checks": {
+    "duration_matches_narration": true,
+    "integrated_lufs_within_1lu": true,
+    "true_peak_below_limit": true,
+    "narration_aligned": true,
+    "speech_over_bed_lu": true,
+    "video_stream_copied_unchanged": true,
+    "mp4_decodes": true
+  },
+  "video": {
+    "input": "../preview/flights-preview-540x960.mp4",
+    "output": "flights-preview-540x960-mixed.mp4",
+    "sha256": "302b49ee18ee25bee1d1861f56de3604bd2d0d923aac7c6de5d514edb764659b",
+    "streams": [
+      {
+        "codec_name": "h264",
+        "codec_type": "video",
+        "duration": "68.800000",
+        "nb_frames": "2064",
+        "side_data_list": [
+          {}
+        ]
+      },
+      {
+        "codec_name": "aac",
+        "codec_type": "audio",
+        "sample_rate": "48000",
+        "channels": 2,
+        "duration": "68.800000",
+        "nb_frames": "3226"
+      }
+    ]
+  },
+  "passed": true
+}

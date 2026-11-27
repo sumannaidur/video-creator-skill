@@ -1,0 +1,338 @@
+{
+  "result": {
+    "words": 16,
+    "words_mapped": 16,
+    "phrases": 3,
+    "phrases_mapped": 3,
+    "prefix_exact": 16,
+    "separator_roundtrip_exact": true,
+    "versions": {
+      "kokoro-onnx": "0.6.1",
+      "phonemizer": "3.6.0",
+      "espeakng-loader": "0.2.4"
+    }
+  },
+  "marked": "zˈʌɾaː|ˈupəɾ|dˈeːkʰɪˌeː|ˌaːsmˈaːn|nˈiːlaː|kːjˈõ|dˈɪkʰtˌaː|hɛː,|ɟˈʌbkˌɪ|sˈuːɾəɟ|ki|ɾˈoːʃnˌi|tˈoː|səfˈeːd|lˈʌɡtˌi|hɛː?|",
+  "words": [
+    {
+      "index": 0,
+      "text_ref": {
+        "field": "speech",
+        "start": 0,
+        "end": 4
+      },
+      "spoken": "ज़रा",
+      "backend_group": "zˈʌɾaː",
+      "isolated": "zˈʌɾaː",
+      "prefix": "zˈʌɾaː",
+      "prefix_exact": true,
+      "prefix_agrees_ignoring_stress": true,
+      "isolated_agrees_ignoring_stress": true,
+      "repeated_backend_group": false,
+      "method": "full_context_espeak_separator",
+      "first_symbol": 0,
+      "last_symbol": 5,
+      "mapped": true
+    },
+    {
+      "index": 1,
+      "text_ref": {
+        "field": "speech",
+        "start": 5,
+        "end": 8
+      },
+      "spoken": "ऊपर",
+      "backend_group": "ˈupəɾ",
+      "isolated": "ˈupəɾ",
+      "prefix": "zˈʌɾaː ˈupəɾ",
+      "prefix_exact": true,
+      "prefix_agrees_ignoring_stress": true,
+      "isolated_agrees_ignoring_stress": true,
+      "repeated_backend_group": false,
+      "method": "full_context_espeak_separator",
+      "first_symbol": 7,
+      "last_symbol": 11,
+      "mapped": true
+    },
+    {
+      "index": 2,
+      "text_ref": {
+        "field": "speech",
+        "start": 9,
+        "end": 15
+      },
+      "spoken": "देखिए।",
+      "backend_group": "dˈeːkʰɪˌeː",
+      "isolated": "dˈeːkʰɪˌeː",
+      "prefix": "zˈʌɾaː ˈupəɾ dˈeːkʰɪˌeː",
+      "prefix_exact": true,
+      "prefix_agrees_ignoring_stress": true,
+      "isolated_agrees_ignoring_stress": true,
+      "repeated_backend_group": false,
+      "method": "full_context_espeak_separator",
+      "first_symbol": 13,
+      "last_symbol": 22,
+      "mapped": true
+    },
+    {
+      "index": 3,
+      "text_ref": {
+        "field": "speech",
+        "start": 16,
+        "end": 21
+      },
+      "spoken": "आसमान",
+      "backend_group": "ˌaːsmˈaːn",
+      "isolated": "ˌaːsmˈaːn",
+      "prefix": "zˈʌɾaː ˈupəɾ dˈeːkʰɪˌeː ˌaːsmˈaːn",
+      "prefix_exact": true,
+      "prefix_agrees_ignoring_stress": true,
+      "isolated_agrees_ignoring_stress": true,
+      "repeated_backend_group": false,
+      "method": "full_context_espeak_separator",
+      "first_symbol": 24,
+      "last_symbol": 32,
+      "mapped": true
+    },
+    {
+      "index": 4,
+      "text_ref": {
+        "field": "speech",
+        "start": 22,
+        "end": 26
+      },
+      "spoken": "नीला",
+      "backend_group": "nˈiːlaː",
+      "isolated": "nˈiːlaː",
+      "prefix": "zˈʌɾaː ˈupəɾ dˈeːkʰɪˌeː ˌaːsmˈaːn nˈiːlaː",
+      "prefix_exact": true,
+      "prefix_agrees_ignoring_stress": true,
+      "isolated_agrees_ignoring_stress": true,
+      "repeated_backend_group": false,
+      "method": "full_context_espeak_separator",
+      "first_symbol": 34,
+      "last_symbol": 40,
+      "mapped": true
+    },
+    {
+      "index": 5,
+      "text_ref": {
+        "field": "speech",
+        "start": 27,
+        "end": 32
+      },
+      "spoken": "क्यों",
+      "backend_group": "kːjˈõ",
+      "isolated": "kːjˈõ",
+      "prefix": "zˈʌɾaː ˈupəɾ dˈeːkʰɪˌeː ˌaːsmˈaːn nˈiːlaː kːjˈõ",
+      "prefix_exact": true,
+      "prefix_agrees_ignoring_stress": true,
+      "isolated_agrees_ignoring_stress": true,
+      "repeated_backend_group": false,
+      "method": "full_context_espeak_separator",
+      "first_symbol": 42,
+      "last_symbol": 47,
+      "mapped": true
+    },
+    {
+      "index": 6,
+      "text_ref": {
+        "field": "speech",
+        "start": 33,
+        "end": 38
+      },
+      "spoken": "दिखता",
+      "backend_group": "dˈɪkʰtˌaː",
+      "isolated": "dˈɪkʰtˌaː",
+      "prefix": "zˈʌɾaː ˈupəɾ dˈeːkʰɪˌeː ˌaːsmˈaːn nˈiːlaː kːjˈõ dˈɪkʰtˌaː",
+      "prefix_exact": true,
+      "prefix_agrees_ignoring_stress": true,
+      "isolated_agrees_ignoring_stress": true,
+      "repeated_backend_group": false,
+      "method": "full_context_espeak_separator",
+      "first_symbol": 49,
+      "last_symbol": 57,
+      "mapped": true
+    },
+    {
+      "index": 7,
+      "text_ref": {
+        "field": "speech",
+        "start": 39,
+        "end": 42
+      },
+      "spoken": "है,",
+      "backend_group": "hɛː,",
+      "isolated": "hɛː,",
+      "prefix": "zˈʌɾaː ˈupəɾ dˈeːkʰɪˌeː ˌaːsmˈaːn nˈiːlaː kːjˈõ dˈɪkʰtˌaː hɛː,",
+      "prefix_exact": true,
+      "prefix_agrees_ignoring_stress": true,
+      "isolated_agrees_ignoring_stress": true,
+      "repeated_backend_group": false,
+      "method": "full_context_espeak_separator",
+      "first_symbol": 59,
+      "last_symbol": 61,
+      "mapped": true
+    },
+    {
+      "index": 8,
+      "text_ref": {
+        "field": "speech",
+        "start": 43,
+        "end": 47
+      },
+      "spoken": "जबकि",
+      "backend_group": "ɟˈʌbkˌɪ",
+      "isolated": "ɟˈʌbkˌɪ",
+      "prefix": "zˈʌɾaː ˈupəɾ dˈeːkʰɪˌeː ˌaːsmˈaːn nˈiːlaː kːjˈõ dˈɪkʰtˌaː hɛː, ɟˈʌbkˌɪ",
+      "prefix_exact": true,
+      "prefix_agrees_ignoring_stress": true,
+      "isolated_agrees_ignoring_stress": true,
+      "repeated_backend_group": false,
+      "method": "full_context_espeak_separator",
+      "first_symbol": 64,
+      "last_symbol": 70,
+      "mapped": true
+    },
+    {
+      "index": 9,
+      "text_ref": {
+        "field": "speech",
+        "start": 48,
+        "end": 52
+      },
+      "spoken": "सूरज",
+      "backend_group": "sˈuːɾəɟ",
+      "isolated": "sˈuːɾəɟ",
+      "prefix": "zˈʌɾaː ˈupəɾ dˈeːkʰɪˌeː ˌaːsmˈaːn nˈiːlaː kːjˈõ dˈɪkʰtˌaː hɛː, ɟˈʌbkˌɪ sˈuːɾəɟ",
+      "prefix_exact": true,
+      "prefix_agrees_ignoring_stress": true,
+      "isolated_agrees_ignoring_stress": true,
+      "repeated_backend_group": false,
+      "method": "full_context_espeak_separator",
+      "first_symbol": 72,
+      "last_symbol": 78,
+      "mapped": true
+    },
+    {
+      "index": 10,
+      "text_ref": {
+        "field": "speech",
+        "start": 53,
+        "end": 55
+      },
+      "spoken": "की",
+      "backend_group": "ki",
+      "isolated": "ki",
+      "prefix": "zˈʌɾaː ˈupəɾ dˈeːkʰɪˌeː ˌaːsmˈaːn nˈiːlaː kːjˈõ dˈɪkʰtˌaː hɛː, ɟˈʌbkˌɪ sˈuːɾəɟ ki",
+      "prefix_exact": true,
+      "prefix_agrees_ignoring_stress": true,
+      "isolated_agrees_ignoring_stress": true,
+      "repeated_backend_group": false,
+      "method": "full_context_espeak_separator",
+      "first_symbol": 80,
+      "last_symbol": 81,
+      "mapped": true
+    },
+    {
+      "index": 11,
+      "text_ref": {
+        "field": "speech",
+        "start": 56,
+        "end": 61
+      },
+      "spoken": "रोशनी",
+      "backend_group": "ɾˈoːʃnˌi",
+      "isolated": "ɾˈoːʃnˌi",
+      "prefix": "zˈʌɾaː ˈupəɾ dˈeːkʰɪˌeː ˌaːsmˈaːn nˈiːlaː kːjˈõ dˈɪkʰtˌaː hɛː, ɟˈʌbkˌɪ sˈuːɾəɟ ki ɾˈoːʃnˌi",
+      "prefix_exact": true,
+      "prefix_agrees_ignoring_stress": true,
+      "isolated_agrees_ignoring_stress": true,
+      "repeated_backend_group": false,
+      "method": "full_context_espeak_separator",
+      "first_symbol": 83,
+      "last_symbol": 90,
+      "mapped": true
+    },
+    {
+      "index": 12,
+      "text_ref": {
+        "field": "speech",
+        "start": 62,
+        "end": 64
+      },
+      "spoken": "तो",
+      "backend_group": "tˈoː",
+      "isolated": "tˈoː",
+      "prefix": "zˈʌɾaː ˈupəɾ dˈeːkʰɪˌeː ˌaːsmˈaːn nˈiːlaː kːjˈõ dˈɪkʰtˌaː hɛː, ɟˈʌbkˌɪ sˈuːɾəɟ ki ɾˈoːʃnˌi tˈoː",
+      "prefix_exact": true,
+      "prefix_agrees_ignoring_stress": true,
+      "isolated_agrees_ignoring_stress": true,
+      "repeated_backend_group": false,
+      "method": "full_context_espeak_separator",
+      "first_symbol": 92,
+      "last_symbol": 95,
+      "mapped": true
+    },
+    {
+      "index": 13,
+      "text_ref": {
+        "field": "speech",
+        "start": 65,
+        "end": 70
+      },
+      "spoken": "सफ़ेद",
+      "backend_group": "səfˈeːd",
+      "isolated": "səfˈeːd",
+      "prefix": "zˈʌɾaː ˈupəɾ dˈeːkʰɪˌeː ˌaːsmˈaːn nˈiːlaː kːjˈõ dˈɪkʰtˌaː hɛː, ɟˈʌbkˌɪ sˈuːɾəɟ ki ɾˈoːʃnˌi tˈoː səfˈeːd",
+      "prefix_exact": true,
+      "prefix_agrees_ignoring_stress": true,
+      "isolated_agrees_ignoring_stress": true,
+      "repeated_backend_group": false,
+      "method": "full_context_espeak_separator",
+      "first_symbol": 97,
+      "last_symbol": 103,
+      "mapped": true
+    },
+    {
+      "index": 14,
+      "text_ref": {
+        "field": "speech",
+        "start": 71,
+        "end": 75
+      },
+      "spoken": "लगती",
+      "backend_group": "lˈʌɡtˌi",
+      "isolated": "lˈʌɡtˌi",
+      "prefix": "zˈʌɾaː ˈupəɾ dˈeːkʰɪˌeː ˌaːsmˈaːn nˈiːlaː kːjˈõ dˈɪkʰtˌaː hɛː, ɟˈʌbkˌɪ sˈuːɾəɟ ki ɾˈoːʃnˌi tˈoː səfˈeːd lˈʌɡtˌi",
+      "prefix_exact": true,
+      "prefix_agrees_ignoring_stress": true,
+      "isolated_agrees_ignoring_stress": true,
+      "repeated_backend_group": false,
+      "method": "full_context_espeak_separator",
+      "first_symbol": 105,
+      "last_symbol": 111,
+      "mapped": true
+    },
+    {
+      "index": 15,
+      "text_ref": {
+        "field": "speech",
+        "start": 76,
+        "end": 79
+      },
+      "spoken": "है?",
+      "backend_group": "hɛː?",
+      "isolated": "hɛː?",
+      "prefix": "zˈʌɾaː ˈupəɾ dˈeːkʰɪˌeː ˌaːsmˈaːn nˈiːlaː kːjˈõ dˈɪkʰtˌaː hɛː, ɟˈʌbkˌɪ sˈuːɾəɟ ki ɾˈoːʃnˌi tˈoː səfˈeːd lˈʌɡtˌi hɛː?",
+      "prefix_exact": true,
+      "prefix_agrees_ignoring_stress": true,
+      "isolated_agrees_ignoring_stress": true,
+      "repeated_backend_group": false,
+      "method": "full_context_espeak_separator",
+      "first_symbol": 113,
+      "last_symbol": 115,
+      "mapped": true
+    }
+  ]
+}

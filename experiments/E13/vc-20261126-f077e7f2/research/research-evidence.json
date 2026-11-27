@@ -1,0 +1,12 @@
+{
+ "passed": true,
+ "sources_read": [
+  "S1",
+  "S2"
+ ],
+ "sources_failed": [],
+ "claims": 5,
+ "unverified_claims": [],
+ "single_source_claims": [],
+ "note": "claims paraphrased from pages read on 2026-11-26; source verification remains a human gate"
+}

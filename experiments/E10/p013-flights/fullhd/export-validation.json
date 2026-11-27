@@ -1,0 +1,23 @@
+﻿{
+    "file":  "D:\\video-creator-skill\\experiments\\E10\\p013-flights\\fullhd\\flights-1080x1920-mixed.mp4",
+    "width":  1080,
+    "height":  1920,
+    "pix_fmt":  "yuv420p",
+    "fps":  "30/1",
+    "frames":  "2064",
+    "video_seconds":  "68.800000",
+    "audio_seconds":  "68.800000",
+    "lufs":  -16,
+    "true_peak_dbtp":  -1.5,
+    "sync":  {
+                 "method":  "bed-subtracted envelope cross-correlation",
+                 "lag_ms":  0,
+                 "correlation":  0.99979,
+                 "max_lag_ms":  2,
+                 "min_correlation":  0.95,
+                 "passed":  true
+             },
+    "failures":  [
+
+                 ]
+}

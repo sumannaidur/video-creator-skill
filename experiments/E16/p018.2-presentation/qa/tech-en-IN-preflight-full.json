@@ -1,0 +1,114 @@
+{
+  "schema": "video-creator.preflight",
+  "version": 1,
+  "status": "passed",
+  "passed": true,
+  "scope": "technical geometry, visibility and timing checks only; not an assessment of artistic quality",
+  "binding": {
+    "sha256": "4c700049cd7ed1ef306aaae1427437e07c88f13ec477fca1362786a2d8143f0f",
+    "topic": "df7a0e04e2c4eff5b3a7195c53e62fe83864c5fd3a1f47ca8ec974471cac2917",
+    "timeline": "af1e8e0a353c7bf4ac1d625e1ec39b4f5a12298888751d77345cbc3b031dc7d0",
+    "plan": "994cf481aceffdc92dfbcf61579a1e6709c6fa4c9958cf8e505f882c7457c2ac",
+    "backend": "tech-explainer",
+    "browser": "Chrome/157.0.8103.79",
+    "settings": {
+      "style": "tech-explainer",
+      "width": 1080,
+      "height": 1920,
+      "scale": null,
+      "fps": 30,
+      "quality": null,
+      "options": null,
+      "locale": "en-IN",
+      "font": null,
+      "browserArgs": [
+        "--disable-gpu"
+      ],
+      "deviceScaleFactor": 1,
+      "captions": "artifact"
+    }
+  },
+  "frames": {
+    "inspected": 180,
+    "fps": 30,
+    "duration": 6,
+    "transitionFrames": 35,
+    "cameraZoomRange": [
+      1,
+      1.176
+    ]
+  },
+  "exempt": {
+    "transition": 0,
+    "decorativeOffStage": 0
+  },
+  "checks": {
+    "safe-area": {
+      "status": "passed",
+      "scope": "backend",
+      "defects": 0
+    },
+    "text-clipping": {
+      "status": "passed",
+      "scope": "backend",
+      "defects": 0
+    },
+    "required-object-bounds": {
+      "status": "passed",
+      "scope": "backend",
+      "defects": 0
+    },
+    "invalid-transform": {
+      "status": "passed",
+      "scope": "backend",
+      "defects": 0
+    },
+    "visibility-requirement": {
+      "status": "passed",
+      "scope": "backend",
+      "defects": 0
+    },
+    "plate-coverage": {
+      "status": "passed",
+      "scope": "backend",
+      "defects": 0
+    },
+    "viewport": {
+      "status": "passed",
+      "scope": "backend",
+      "defects": 0
+    },
+    "caption-layout": {
+      "status": "passed",
+      "scope": "backend",
+      "defects": 0
+    },
+    "frame-cadence": {
+      "status": "passed",
+      "scope": "core",
+      "inspected": 180,
+      "expected": 180,
+      "fps": 30
+    },
+    "cue-visibility": {
+      "status": "passed",
+      "scope": "core",
+      "cues": 4,
+      "defects": 0
+    },
+    "speech-cue-timing": {
+      "status": "passed",
+      "scope": "core",
+      "cues": 6,
+      "defects": 0
+    },
+    "camera-timing": {
+      "status": "passed",
+      "scope": "core",
+      "moments": 2,
+      "defects": 0
+    }
+  },
+  "defects": [],
+  "wallSeconds": 1.8
+}

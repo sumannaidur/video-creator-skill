@@ -1,0 +1,10 @@
+﻿{
+    "passage":  "B",
+    "exit_code":  0,
+    "stop_reason":  null,
+    "elapsed_seconds":  9.046,
+    "peak_sampled_process_tree_resident_bytes":  609873920,
+    "available_gib_before":  4.949,
+    "available_gib_lowest_sampled":  4.4,
+    "available_gib_after":  4.929
+}

@@ -1,0 +1,8 @@
+{
+  "unit": "sample",
+  "status": "awaiting Hindi reviewer",
+  "samples": [
+    {"id": "A-native", "sha256": "944eae330bda371fa11541a3b56eb21e8f0423928c3255025eba125085c2eeee", "annotations": []},
+    {"id": "B-native", "sha256": "a24e05d743f1bfcb63615f3a4609f3847346344dea7b151d6dda7a568b53ac22", "annotations": []}
+  ]
+}

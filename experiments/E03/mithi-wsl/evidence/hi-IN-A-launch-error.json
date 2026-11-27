@@ -1,0 +1,11 @@
+{
+  "revision": "1fc0dd68496a2483508ec764d310146c41ff90be",
+  "host_available_before_bytes": 3602157568,
+  "guest_available_before_bytes": 7595458560,
+  "host_available_min_sampled_bytes": 3589013504,
+  "guest_available_min_sampled_bytes": 7595458560,
+  "peak_sampled_process_tree_bytes": 0,
+  "process_seconds": 0.9072051020002618,
+  "exit_code": 1,
+  "stop_reason": null
+}

@@ -1,0 +1,7 @@
+{
+  "sources": [
+    {"id": "S1", "title": "How the Heart Works - What the Heart Looks Like", "publisher": "National Heart, Lung, and Blood Institute (NHLBI), NIH", "url": "https://www.nhlbi.nih.gov/health/heart/anatomy", "accessed": "2026-11-26", "status": "read", "note": "page last updated March 24, 2022"},
+    {"id": "S2", "title": "How the Heart Works - How Blood Flows through the Heart", "publisher": "National Heart, Lung, and Blood Institute (NHLBI), NIH", "url": "https://www.nhlbi.nih.gov/health/heart/blood-flow", "accessed": "2026-11-26", "status": "read", "note": "page last updated June 25, 2025"},
+    {"id": "S3", "title": "How the Heart Works - How the Heart Beats", "publisher": "National Heart, Lung, and Blood Institute (NHLBI), NIH", "url": "https://www.nhlbi.nih.gov/health/heart/heart-beats", "accessed": "2026-11-26", "status": "read", "note": "page last updated June 25, 2025"}
+  ]
+}

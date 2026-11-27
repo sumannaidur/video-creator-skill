@@ -1,0 +1,106 @@
+{
+  "narration": "../narration/narration-7480761c4b.wav",
+  "manifest": "assets/assets-manifest.json",
+  "music": {
+    "file": "assets/music-pad.wav",
+    "gain_db": -7,
+    "fade_in": 1.5,
+    "fade_out": 2.5,
+    "duck": {
+      "threshold": 0.03,
+      "ratio": 8,
+      "attack_ms": 30,
+      "release_ms": 600
+    }
+  },
+  "sfx": [
+    {
+      "file": "assets/chime.wav",
+      "at": 3.5,
+      "gain_db": -32,
+      "why": "the 60–100 tag lands"
+    },
+    {
+      "file": "assets/whoosh.wav",
+      "at": 10.2,
+      "gain_db": -31,
+      "why": "push through the chest window into the heart"
+    },
+    {
+      "file": "assets/pop.wav",
+      "at": 11.325,
+      "gain_db": -31,
+      "why": "the heart opens into its cross-section"
+    },
+    {
+      "file": "assets/whoosh.wav",
+      "at": 16.3,
+      "gain_db": -35,
+      "why": "blue cells rush in"
+    },
+    {
+      "file": "assets/whoosh.wav",
+      "at": 24.85,
+      "gain_db": -32,
+      "why": "dissolve to the lungs"
+    },
+    {
+      "file": "assets/chime.wav",
+      "at": 26.95,
+      "gain_db": -31,
+      "why": "oxygen at the air sacs"
+    },
+    {
+      "file": "assets/rumble.wav",
+      "at": 34.65,
+      "gain_db": -31,
+      "why": "the left ventricle squeezes"
+    },
+    {
+      "file": "assets/whoosh.wav",
+      "at": 37.175,
+      "gain_db": -34,
+      "why": "arteries race to the head"
+    },
+    {
+      "file": "assets/whoosh.wav",
+      "at": 37.925,
+      "gain_db": -34,
+      "why": "arteries race to the toes"
+    },
+    {
+      "file": "assets/pop.wav",
+      "at": 45.575,
+      "gain_db": -30,
+      "why": "the valve doors snap shut"
+    },
+    {
+      "file": "assets/pop.wav",
+      "at": 50.0,
+      "gain_db": -27,
+      "why": "LUB"
+    },
+    {
+      "file": "assets/pop.wav",
+      "at": 50.225,
+      "gain_db": -28,
+      "why": "DUB"
+    },
+    {
+      "file": "assets/chime.wav",
+      "at": 53.2,
+      "gain_db": -29,
+      "why": "the SA node sparks"
+    }
+  ],
+  "loudness": {
+    "integrated_lufs": -16,
+    "true_peak_db": -1.5
+  },
+  "intelligibility_min_lu": 12,
+  "output": "mix.wav",
+  "video": {
+    "input": "../render/fullhd/video-1080x1920.mp4",
+    "output": "final-1080x1920.mp4"
+  }
+}

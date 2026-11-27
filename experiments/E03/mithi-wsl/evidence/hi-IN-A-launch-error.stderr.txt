@@ -1,0 +1,5 @@
+Traceback (most recent call last):
+  File "/mnt/d/video-creator-skill/experiments/E03/mithi/synthesize.py", line 17, in <module>
+    passage = next(p for p in dataset["tests"] if p["id"] == passage_id)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+StopIteration

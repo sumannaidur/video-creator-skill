@@ -1,0 +1,92 @@
+{
+  "schema": "video-creator.creative-plan",
+  "version": 1,
+  "narration": {
+    "timeline": "narration/narration.timeline.json",
+    "sha256": "fdaf29f961a4826ce889d2a671b1f724e3dd1bbdac61db45d485218331c1ad5e"
+  },
+  "style": "paper-explainer",
+  "style_reason": "validation",
+  "guardrails": [
+    "none"
+  ],
+  "story": [
+    {
+      "segment": "s1",
+      "role": "hook",
+      "idea": "a"
+    },
+    {
+      "segment": "s2",
+      "role": "resolution",
+      "idea": "b"
+    }
+  ],
+  "motifs": [
+    {
+      "id": "m1",
+      "stands_for": "x"
+    }
+  ],
+  "assets": [
+    {
+      "id": "a1",
+      "kind": "original",
+      "description": "x"
+    }
+  ],
+  "shots": [
+    {
+      "id": "x",
+      "purpose": "p",
+      "objects": [
+        {
+          "id": "o1",
+          "asset": "a1",
+          "description": "x"
+        }
+      ],
+      "cues": [
+        {
+          "id": "rep",
+          "object": "o1",
+          "action": "a",
+          "at": {
+            "sample": 286200,
+            "seconds": 11.925,
+            "kind": "word",
+            "label": "the",
+            "segment": "s2",
+            "timing_source": "native_model",
+            "edge": "start",
+            "offset_ms": 0
+          }
+        }
+      ],
+      "start": {
+        "sample": 0,
+        "seconds": 0.0,
+        "kind": "bounds",
+        "label": "narration-start",
+        "timing_source": "narration_bounds"
+      },
+      "end": {
+        "sample": 297600,
+        "seconds": 12.4
+      },
+      "camera": []
+    }
+  ],
+  "resolution": {
+    "timeline_sha256": "fdaf29f961a4826ce889d2a671b1f724e3dd1bbdac61db45d485218331c1ad5e",
+    "audio_sha256": "404bd45080967261b0236fcdbf01e4fc730ed7985f21682f20e19a5f2ed8cba6",
+    "sample_rate": 24000,
+    "sample_count": 297600,
+    "timing_status": "unreviewed",
+    "record_sources": [
+      "native_model"
+    ],
+    "run_id": "combined-65838b7010b50fcb9caa39f1",
+    "timeline": "narration/narration.timeline.json"
+  }
+}

@@ -1,0 +1,642 @@
+{
+  "version": 1,
+  "unit": "sample",
+  "locale": "te-IN",
+  "validation": "unreviewed",
+  "run_id": "8fbe0517c0e64a53a2c5dc837209a981",
+  "timing": {
+    "method": "native_durations",
+    "provider": "mithi",
+    "word_timing": true,
+    "note": "model-predicted token durations from the same inference, mapped to words by the model's own token-word ownership"
+  },
+  "audio": {
+    "path": "narration/segments/s7-55b06c51e3.wav",
+    "sha256": "b544790cfa148195ec4687a0be7b4e57863aab02f18ad3e3feb4c102103dacdb",
+    "sample_rate": 24000,
+    "sample_count": 79800
+  },
+  "text": {
+    "display": "అవి మూసుకునే శబ్దమే మనకు వినిపించే లబ్ డబ్.",
+    "speech": "అవి మూసుకునే శబ్దమే మనకు వినిపించే లబ్ డబ్."
+  },
+  "records": [
+    {
+      "kind": "phoneme",
+      "label": "ˈ",
+      "start": 1200,
+      "end": 1800,
+      "source": "native_model"
+    },
+    {
+      "kind": "phoneme",
+      "label": "a",
+      "start": 1800,
+      "end": 3600,
+      "source": "native_model"
+    },
+    {
+      "kind": "phoneme",
+      "label": "ʋ",
+      "start": 3600,
+      "end": 5400,
+      "source": "native_model"
+    },
+    {
+      "kind": "phoneme",
+      "label": "i",
+      "start": 5400,
+      "end": 8400,
+      "source": "native_model"
+    },
+    {
+      "kind": "phoneme",
+      "label": "m",
+      "start": 10200,
+      "end": 11400,
+      "source": "native_model"
+    },
+    {
+      "kind": "phoneme",
+      "label": "ˈ",
+      "start": 11400,
+      "end": 12000,
+      "source": "native_model"
+    },
+    {
+      "kind": "phoneme",
+      "label": "u",
+      "start": 12000,
+      "end": 13800,
+      "source": "native_model"
+    },
+    {
+      "kind": "phoneme",
+      "label": "ː",
+      "start": 13800,
+      "end": 14400,
+      "source": "native_model"
+    },
+    {
+      "kind": "phoneme",
+      "label": "s",
+      "start": 14400,
+      "end": 16200,
+      "source": "native_model"
+    },
+    {
+      "kind": "phoneme",
+      "label": "u",
+      "start": 16200,
+      "end": 17400,
+      "source": "native_model"
+    },
+    {
+      "kind": "phoneme",
+      "label": "k",
+      "start": 17400,
+      "end": 18600,
+      "source": "native_model"
+    },
+    {
+      "kind": "phoneme",
+      "label": "ˌ",
+      "start": 18600,
+      "end": 19200,
+      "source": "native_model"
+    },
+    {
+      "kind": "phoneme",
+      "label": "u",
+      "start": 19200,
+      "end": 20400,
+      "source": "native_model"
+    },
+    {
+      "kind": "phoneme",
+      "label": "n",
+      "start": 20400,
+      "end": 21600,
+      "source": "native_model"
+    },
+    {
+      "kind": "phoneme",
+      "label": "e",
+      "start": 21600,
+      "end": 22800,
+      "source": "native_model"
+    },
+    {
+      "kind": "phoneme",
+      "label": "ː",
+      "start": 22800,
+      "end": 23400,
+      "source": "native_model"
+    },
+    {
+      "kind": "phoneme",
+      "label": "ɕ",
+      "start": 25200,
+      "end": 26400,
+      "source": "native_model"
+    },
+    {
+      "kind": "phoneme",
+      "label": "ˈ",
+      "start": 26400,
+      "end": 27000,
+      "source": "native_model"
+    },
+    {
+      "kind": "phoneme",
+      "label": "a",
+      "start": 27000,
+      "end": 28800,
+      "source": "native_model"
+    },
+    {
+      "kind": "phoneme",
+      "label": "b",
+      "start": 28800,
+      "end": 30600,
+      "source": "native_model"
+    },
+    {
+      "kind": "phoneme",
+      "label": "d",
+      "start": 30600,
+      "end": 32400,
+      "source": "native_model"
+    },
+    {
+      "kind": "phoneme",
+      "label": "a",
+      "start": 32400,
+      "end": 33600,
+      "source": "native_model"
+    },
+    {
+      "kind": "phoneme",
+      "label": "m",
+      "start": 33600,
+      "end": 35400,
+      "source": "native_model"
+    },
+    {
+      "kind": "phoneme",
+      "label": "e",
+      "start": 35400,
+      "end": 36600,
+      "source": "native_model"
+    },
+    {
+      "kind": "phoneme",
+      "label": "ː",
+      "start": 36600,
+      "end": 39000,
+      "source": "native_model"
+    },
+    {
+      "kind": "phoneme",
+      "label": "m",
+      "start": 42600,
+      "end": 43800,
+      "source": "native_model"
+    },
+    {
+      "kind": "phoneme",
+      "label": "ˈ",
+      "start": 43800,
+      "end": 44400,
+      "source": "native_model"
+    },
+    {
+      "kind": "phoneme",
+      "label": "a",
+      "start": 44400,
+      "end": 45600,
+      "source": "native_model"
+    },
+    {
+      "kind": "phoneme",
+      "label": "n",
+      "start": 45600,
+      "end": 46800,
+      "source": "native_model"
+    },
+    {
+      "kind": "phoneme",
+      "label": "a",
+      "start": 46800,
+      "end": 48600,
+      "source": "native_model"
+    },
+    {
+      "kind": "phoneme",
+      "label": "k",
+      "start": 48600,
+      "end": 50400,
+      "source": "native_model"
+    },
+    {
+      "kind": "phoneme",
+      "label": "u",
+      "start": 50400,
+      "end": 51600,
+      "source": "native_model"
+    },
+    {
+      "kind": "phoneme",
+      "label": "ʋ",
+      "start": 52800,
+      "end": 53400,
+      "source": "native_model"
+    },
+    {
+      "kind": "phoneme",
+      "label": "ˈ",
+      "start": 53400,
+      "end": 54000,
+      "source": "native_model"
+    },
+    {
+      "kind": "phoneme",
+      "label": "i",
+      "start": 54000,
+      "end": 55200,
+      "source": "native_model"
+    },
+    {
+      "kind": "phoneme",
+      "label": "n",
+      "start": 55200,
+      "end": 56400,
+      "source": "native_model"
+    },
+    {
+      "kind": "phoneme",
+      "label": "i",
+      "start": 56400,
+      "end": 57600,
+      "source": "native_model"
+    },
+    {
+      "kind": "phoneme",
+      "label": "p",
+      "start": 57600,
+      "end": 58800,
+      "source": "native_model"
+    },
+    {
+      "kind": "phoneme",
+      "label": "ˌ",
+      "start": 58800,
+      "end": 59400,
+      "source": "native_model"
+    },
+    {
+      "kind": "phoneme",
+      "label": "i",
+      "start": 59400,
+      "end": 60600,
+      "source": "native_model"
+    },
+    {
+      "kind": "phoneme",
+      "label": "n",
+      "start": 60600,
+      "end": 62400,
+      "source": "native_model"
+    },
+    {
+      "kind": "phoneme",
+      "label": "c",
+      "start": 62400,
+      "end": 64200,
+      "source": "native_model"
+    },
+    {
+      "kind": "phoneme",
+      "label": "e",
+      "start": 64200,
+      "end": 65400,
+      "source": "native_model"
+    },
+    {
+      "kind": "phoneme",
+      "label": "ː",
+      "start": 65400,
+      "end": 66000,
+      "source": "native_model"
+    },
+    {
+      "kind": "phoneme",
+      "label": "l",
+      "start": 67800,
+      "end": 69000,
+      "source": "native_model"
+    },
+    {
+      "kind": "phoneme",
+      "label": "ˈ",
+      "start": 69000,
+      "end": 69600,
+      "source": "native_model"
+    },
+    {
+      "kind": "phoneme",
+      "label": "a",
+      "start": 69600,
+      "end": 70800,
+      "source": "native_model"
+    },
+    {
+      "kind": "phoneme",
+      "label": "b",
+      "start": 70800,
+      "end": 72000,
+      "source": "native_model"
+    },
+    {
+      "kind": "phoneme",
+      "label": "ɖ",
+      "start": 73200,
+      "end": 74400,
+      "source": "native_model"
+    },
+    {
+      "kind": "phoneme",
+      "label": "ˈ",
+      "start": 74400,
+      "end": 75000,
+      "source": "native_model"
+    },
+    {
+      "kind": "phoneme",
+      "label": "a",
+      "start": 75000,
+      "end": 76800,
+      "source": "native_model"
+    },
+    {
+      "kind": "phoneme",
+      "label": "b",
+      "start": 76800,
+      "end": 78000,
+      "source": "native_model"
+    },
+    {
+      "kind": "pause",
+      "label": "edge silence",
+      "start": 0,
+      "end": 1200,
+      "source": "native_model"
+    },
+    {
+      "kind": "pause",
+      "label": "word gap",
+      "start": 8400,
+      "end": 10200,
+      "source": "native_model"
+    },
+    {
+      "kind": "pause",
+      "label": "word gap",
+      "start": 23400,
+      "end": 25200,
+      "source": "native_model"
+    },
+    {
+      "kind": "pause",
+      "label": "word gap",
+      "start": 39000,
+      "end": 42600,
+      "source": "native_model"
+    },
+    {
+      "kind": "pause",
+      "label": "word gap",
+      "start": 51600,
+      "end": 52800,
+      "source": "native_model"
+    },
+    {
+      "kind": "pause",
+      "label": "word gap",
+      "start": 66000,
+      "end": 67800,
+      "source": "native_model"
+    },
+    {
+      "kind": "pause",
+      "label": "word gap",
+      "start": 72000,
+      "end": 73200,
+      "source": "native_model"
+    },
+    {
+      "kind": "pause",
+      "label": "punctuation pause",
+      "start": 78000,
+      "end": 79800,
+      "source": "native_model"
+    },
+    {
+      "kind": "word",
+      "label": "అవి",
+      "start": 1200,
+      "end": 8400,
+      "source": "native_model",
+      "mapping": {
+        "method": "mithi_token_word_ownership",
+        "model_words": [
+          0
+        ],
+        "first_token": 1,
+        "last_token": 4
+      },
+      "text_ref": {
+        "field": "speech",
+        "start": 0,
+        "end": 3
+      },
+      "display_ref": {
+        "field": "display",
+        "start": 0,
+        "end": 3
+      }
+    },
+    {
+      "kind": "word",
+      "label": "మూసుకునే",
+      "start": 10200,
+      "end": 23400,
+      "source": "native_model",
+      "mapping": {
+        "method": "mithi_token_word_ownership",
+        "model_words": [
+          1
+        ],
+        "first_token": 6,
+        "last_token": 17
+      },
+      "text_ref": {
+        "field": "speech",
+        "start": 4,
+        "end": 12
+      },
+      "display_ref": {
+        "field": "display",
+        "start": 4,
+        "end": 12
+      }
+    },
+    {
+      "kind": "word",
+      "label": "శబ్దమే",
+      "start": 25200,
+      "end": 39000,
+      "source": "native_model",
+      "mapping": {
+        "method": "mithi_token_word_ownership",
+        "model_words": [
+          2
+        ],
+        "first_token": 19,
+        "last_token": 27
+      },
+      "text_ref": {
+        "field": "speech",
+        "start": 13,
+        "end": 19
+      },
+      "display_ref": {
+        "field": "display",
+        "start": 13,
+        "end": 19
+      }
+    },
+    {
+      "kind": "word",
+      "label": "మనకు",
+      "start": 42600,
+      "end": 51600,
+      "source": "native_model",
+      "mapping": {
+        "method": "mithi_token_word_ownership",
+        "model_words": [
+          3
+        ],
+        "first_token": 29,
+        "last_token": 35
+      },
+      "text_ref": {
+        "field": "speech",
+        "start": 20,
+        "end": 24
+      },
+      "display_ref": {
+        "field": "display",
+        "start": 20,
+        "end": 24
+      }
+    },
+    {
+      "kind": "word",
+      "label": "వినిపించే",
+      "start": 52800,
+      "end": 66000,
+      "source": "native_model",
+      "mapping": {
+        "method": "mithi_token_word_ownership",
+        "model_words": [
+          4
+        ],
+        "first_token": 37,
+        "last_token": 48
+      },
+      "text_ref": {
+        "field": "speech",
+        "start": 25,
+        "end": 34
+      },
+      "display_ref": {
+        "field": "display",
+        "start": 25,
+        "end": 34
+      }
+    },
+    {
+      "kind": "word",
+      "label": "లబ్",
+      "start": 67800,
+      "end": 72000,
+      "source": "native_model",
+      "mapping": {
+        "method": "mithi_token_word_ownership",
+        "model_words": [
+          5
+        ],
+        "first_token": 50,
+        "last_token": 53
+      },
+      "text_ref": {
+        "field": "speech",
+        "start": 35,
+        "end": 38
+      },
+      "display_ref": {
+        "field": "display",
+        "start": 35,
+        "end": 38
+      }
+    },
+    {
+      "kind": "word",
+      "label": "డబ్.",
+      "start": 73200,
+      "end": 78000,
+      "source": "native_model",
+      "mapping": {
+        "method": "mithi_token_word_ownership",
+        "model_words": [
+          6
+        ],
+        "first_token": 55,
+        "last_token": 58
+      },
+      "text_ref": {
+        "field": "speech",
+        "start": 39,
+        "end": 43
+      },
+      "display_ref": {
+        "field": "display",
+        "start": 39,
+        "end": 43
+      }
+    },
+    {
+      "kind": "phrase",
+      "label": "అవి మూసుకునే శబ్దమే మనకు వినిపించే లబ్ డబ్.",
+      "start": 1200,
+      "end": 78000,
+      "source": "native_model",
+      "mapping": {
+        "method": "contextual_word_union",
+        "first_word": 0,
+        "stop_word": 7
+      },
+      "text_ref": {
+        "field": "speech",
+        "start": 0,
+        "end": 43
+      },
+      "display_ref": {
+        "field": "display",
+        "start": 0,
+        "end": 43
+      }
+    }
+  ]
+}

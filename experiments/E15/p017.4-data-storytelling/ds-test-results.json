@@ -1,0 +1,86 @@
+[
+  {
+    "name": "kn-IN: plan resolves for the data-storytelling style",
+    "ok": true,
+    "err": ""
+  },
+  {
+    "name": "kn-IN: caption artifact builds with the original text",
+    "ok": true,
+    "err": ""
+  },
+  {
+    "name": "kn-IN-portrait: keyframes render with speech-cue checks",
+    "ok": true,
+    "out": "keyframes only: 4 keyframes, 4 cue checks passed\n"
+  },
+  {
+    "name": "kn-IN-portrait: preflight passes every frame (caption layout and empty-caption checks included)",
+    "ok": true,
+    "out": "preflight passed: 168 frames, 0 defect(s), 0 unsupported check(s); 1.6 s\n"
+  },
+  {
+    "name": "kn-IN-landscape: keyframes render with speech-cue checks",
+    "ok": true,
+    "out": "keyframes only: 4 keyframes, 4 cue checks passed\n"
+  },
+  {
+    "name": "kn-IN-landscape: preflight passes every frame (caption layout and empty-caption checks included)",
+    "ok": true,
+    "out": "preflight passed: 168 frames, 0 defect(s), 0 unsupported check(s); 1.5 s\n"
+  },
+  {
+    "name": "bars transition active around the cut; camera moments present",
+    "ok": true,
+    "facts": {
+      "shots": [
+        [
+          "chart",
+          2,
+          "bars"
+        ],
+        [
+          "total",
+          2,
+          null
+        ]
+      ],
+      "mid": [
+        "bars",
+        "bars",
+        null
+      ]
+    }
+  },
+  {
+    "name": "data integrity: invalid data refused, circle areas and bar heights proportional to values",
+    "ok": true,
+    "integ": {
+      "negative": "refused",
+      "domainBelowData": "refused",
+      "nonIntegerCounter": "refused",
+      "unitsOverTotal": "refused",
+      "valid": "drawn",
+      "areaRatio": 4,
+      "barHeights": [
+        180,
+        420
+      ]
+    }
+  },
+  {
+    "name": "motion preview renders, decodes and passes media checks",
+    "ok": true,
+    "out": "ds-preview.mp4: 168 frames, 5.600 s; reused 0, rendered 168, corrupt 0, missing 168, invalidated 0; 16.4 s wall\n"
+  },
+  {
+    "name": "contact sheet written",
+    "ok": true,
+    "err": ""
+  },
+  {
+    "name": "installed package unchanged",
+    "ok": true,
+    "changed": []
+  }
+]

@@ -1,0 +1,1133 @@
+{
+  "name": "video.mp4",
+  "backend": "D:\\video-creator-skill\\skills\\video-creator\\scripts\\styles\\paper-explainer\\backend.mjs",
+  "settings": {
+    "style": "paper-explainer",
+    "width": 1080,
+    "height": 1920,
+    "scale": 1,
+    "fps": 30,
+    "quality": 95,
+    "options": null,
+    "locale": null,
+    "font": null,
+    "browserArgs": [
+      "--disable-gpu"
+    ],
+    "deviceScaleFactor": 1,
+    "captions": "artifact"
+  },
+  "inputs": {
+    "renderer": {
+      "path": "D:\\video-creator-skill\\skills\\video-creator\\scripts\\render.mjs",
+      "sha256": "d51318592a1cecac2b5dc23e03d064b2f1043b8dd29a1f0e312f94b9ad320c18"
+    },
+    "topic": {
+      "path": "D:\\video-creator-skill\\experiments\\E11\\vc-20261126-ddf90e5d\\visual\\topic-sky.js",
+      "sha256": "fcfd485d85b6a2a663145cf38d1c0dc712ab6af560dc52b06b7c6ba15b7f46cf"
+    },
+    "timeline": {
+      "path": "D:\\video-creator-skill\\experiments\\E11\\vc-20261126-ddf90e5d\\narration\\narration-bc46667d38.timeline.json",
+      "sha256": "7b13ae42a8e5c6645dcdc9c071351fe9dc11f8a9dff264b6c08b8d9a93710866"
+    },
+    "audio": {
+      "path": "D:\\video-creator-skill\\experiments\\E11\\vc-20261126-ddf90e5d\\narration\\narration-bc46667d38.wav",
+      "sha256": "7d426dbe0d15596de8c96d40fcfb242fd57111a324efcbdfc7eeb503ff3c4d32"
+    },
+    "plan": {
+      "path": "D:\\video-creator-skill\\experiments\\E11\\vc-20261126-ddf90e5d\\plan\\resolved-plan.json",
+      "sha256": "5f53cf3ef021bb2ce3f22f1477c08c6035a2b2984e28f0ebd224f8c92799dc3d"
+    },
+    "plan-loader": {
+      "path": "D:\\video-creator-skill\\skills\\video-creator\\scripts\\lib\\resolved-plan.mjs",
+      "sha256": "f93698df132528619f4b7d0b1eaa4ca9add2bbac2996dec20b8b6b3ac8ede93a"
+    },
+    "captions": {
+      "path": "D:\\video-creator-skill\\experiments\\E11\\vc-20261126-ddf90e5d\\captions\\captions.json",
+      "sha256": "7b43130b95674f68ef93fcffaccd44c142e7094526c2cd9ad743f7d08adeacfe"
+    },
+    "captions-loader": {
+      "path": "D:\\video-creator-skill\\skills\\video-creator\\scripts\\lib\\captions.mjs",
+      "sha256": "f61be7d2dd2811745d726edbd2d4e4f42ea33efdb517efd7813ac96ada2a9084"
+    },
+    "backend:engine.js": {
+      "path": "D:\\video-creator-skill\\skills\\video-creator\\scripts\\styles\\paper-explainer\\engine.js",
+      "sha256": "fe497f0f155873b4f64eb93f2c8a9feeaadafba90d8731932dc572fca876e628"
+    },
+    "backend:kit.js": {
+      "path": "D:\\video-creator-skill\\skills\\video-creator\\scripts\\styles\\paper-explainer\\kit.js",
+      "sha256": "b6342cc3c063da85cac408bcac1e20e8508f47d7f9fa7fbf75ea09f5d2c21b2f"
+    },
+    "backend:view.js": {
+      "path": "D:\\video-creator-skill\\skills\\video-creator\\scripts\\styles\\paper-explainer\\view.js",
+      "sha256": "73498e9558a4868e5a0050d35eb494e29ff96d9ef50c4019db22b4bb65fa1e74"
+    },
+    "backend:host.html": {
+      "path": "D:\\video-creator-skill\\skills\\video-creator\\scripts\\styles\\paper-explainer\\host.html",
+      "sha256": "5c1b9e6777079ee0f8de622248027ba0c65c5cfa818d30b6696ffddbf43bcadd"
+    },
+    "backend:paper.css": {
+      "path": "D:\\video-creator-skill\\skills\\video-creator\\scripts\\styles\\paper-explainer\\paper.css",
+      "sha256": "c766e6bc8a70679f652d7b98dd3bc2fb1e2724c25e8523b95223a8d4cc7528dd"
+    },
+    "backend:story.css": {
+      "path": "D:\\video-creator-skill\\skills\\video-creator\\scripts\\styles\\paper-explainer\\story.css",
+      "sha256": "4793c6efe7d54bad96b63c3b7941fe06ac8c5466a859546d64637ac42f7fbab1"
+    },
+    "backend:backend.mjs": {
+      "path": "D:\\video-creator-skill\\skills\\video-creator\\scripts\\styles\\paper-explainer\\backend.mjs",
+      "sha256": "1752808334d697ab1357324714487a439e95ad0ac7a7ac16873c53f5351fcebf"
+    },
+    "backend:chrome.mjs": {
+      "path": "D:\\video-creator-skill\\skills\\video-creator\\scripts\\lib\\chrome.mjs",
+      "sha256": "8a181ba10e08187334e9d8f1dbfbb67cb95c22d63d7ba10e3a17245ec0dc0e5c"
+    }
+  },
+  "output": [
+    1080,
+    1920
+  ],
+  "keyframes": [
+    {
+      "name": "rooftop-question",
+      "t": 3.75,
+      "shot": "rooftop",
+      "captionId": 2,
+      "transition": null,
+      "labels": [],
+      "sha256": "534f4ce8d661f241b038576d6cc3ef659d312d8d79ed410f763d5bd0b67b1918"
+    },
+    {
+      "name": "rooftop-sun",
+      "t": 6.7,
+      "shot": "rooftop",
+      "captionId": 3,
+      "transition": null,
+      "labels": [
+        {
+          "id": "r-tag-white",
+          "x": 611.7122802734375,
+          "y": 563.105712890625,
+          "width": 290.208984375,
+          "height": 73.91717529296875
+        }
+      ],
+      "sha256": "538a803da1fb2547c172d81a6ee2af8f30703e330c4c5c9140e8ca4761e4e96e"
+    },
+    {
+      "name": "prism-beam",
+      "t": 11.025,
+      "shot": "prism",
+      "captionId": 4,
+      "transition": null,
+      "labels": [
+        {
+          "id": "p-tag-beam",
+          "x": 133.3327178955078,
+          "y": 603.5400390625,
+          "width": 278.10418701171875,
+          "height": 70.83404541015625
+        }
+      ],
+      "sha256": "864abb2dc2848ff05c23adc230ed01a20f5728e697b6cb23e2003794a3757df9"
+    },
+    {
+      "name": "prism-fan",
+      "t": 15.7,
+      "shot": "prism",
+      "captionId": 5,
+      "transition": null,
+      "labels": [
+        {
+          "id": "p-tag-beam",
+          "x": 70.80368041992188,
+          "y": 570.2001342773438,
+          "width": 290.0910339355469,
+          "height": 73.88714599609375
+        },
+        {
+          "id": "p-tag-prism",
+          "x": 406.2083435058594,
+          "y": 1057.953369140625,
+          "width": 139.46548461914062,
+          "height": 73.88720703125
+        },
+        {
+          "id": "p-tag-fan",
+          "x": 717.9285278320312,
+          "y": 1374.755126953125,
+          "width": 166.2286376953125,
+          "height": 67.3798828125
+        }
+      ],
+      "sha256": "9b85ba0f07e16b081968cd782651910d1f486036862cf2f75db63588b027469c"
+    },
+    {
+      "name": "air-burst",
+      "t": 23.3,
+      "shot": "air",
+      "captionId": 7,
+      "transition": null,
+      "labels": [
+        {
+          "id": "a-tag-mol",
+          "x": 380.4848327636719,
+          "y": 1037.50732421875,
+          "width": 319.0303649902344,
+          "height": 69.9935302734375
+        },
+        {
+          "id": "a-tag-all",
+          "x": 443.5187072753906,
+          "y": 365.195556640625,
+          "width": 192.96261596679688,
+          "height": 61.509429931640625
+        }
+      ],
+      "sha256": "880110b4b02c3f64e7378abf7c05cc3d638c9ba89da213254149c6e195612e1a"
+    },
+    {
+      "name": "waves",
+      "t": 28.775000000000002,
+      "shot": "waves",
+      "captionId": 9,
+      "transition": null,
+      "labels": [
+        {
+          "id": "w-tag-blue",
+          "x": 202.05039978027344,
+          "y": 471.0329284667969,
+          "width": 94.95625305175781,
+          "height": 58.011505126953125
+        },
+        {
+          "id": "w-tag-red",
+          "x": 206.7388153076172,
+          "y": 969.05322265625,
+          "width": 85.57942199707031,
+          "height": 58.011474609375
+        },
+        {
+          "id": "w-tag-more",
+          "x": 605.333251953125,
+          "y": 329.8800354003906,
+          "width": 256.5819091796875,
+          "height": 60.19940185546875
+        }
+      ],
+      "sha256": "abc49b68993fef2e60daa91f737a1ac0dfcb07af0f980e578b1da0f0ac7982de"
+    },
+    {
+      "name": "whole-sky-eyes",
+      "t": 34.9,
+      "shot": "whole-sky",
+      "captionId": 10,
+      "transition": null,
+      "labels": [
+        {
+          "id": "ws-tag",
+          "x": 508.72454833984375,
+          "y": 262.0931701660156,
+          "width": 298.41363525390625,
+          "height": 67.00863647460938
+        }
+      ],
+      "sha256": "3858193ffd5c73d786d0cbbe0b33866872877339ebe51eb5dd9ffd01fa37cb59"
+    },
+    {
+      "name": "whole-sky-glow",
+      "t": 37.974999999999994,
+      "shot": "whole-sky",
+      "captionId": 11,
+      "transition": null,
+      "labels": [
+        {
+          "id": "ws-tag",
+          "x": 508.5802307128906,
+          "y": 259.34326171875,
+          "width": 299.7906799316406,
+          "height": 67.31784057617188
+        }
+      ],
+      "sha256": "01f2595128e58f74ba00ec290d202f03954c22fbf0f2147108de5be0cd87fc3e"
+    },
+    {
+      "name": "violet-strip",
+      "t": 43.925,
+      "shot": "violet",
+      "captionId": 13,
+      "transition": null,
+      "labels": [
+        {
+          "id": "v-tag-blue",
+          "x": 268.93585205078125,
+          "y": 580.3438110351562,
+          "width": 95.2730712890625,
+          "height": 58.20501708984375
+        },
+        {
+          "id": "v-tag-violet",
+          "x": 700.7615966796875,
+          "y": 611.578857421875,
+          "width": 105.8885498046875,
+          "height": 58.20501708984375
+        },
+        {
+          "id": "v-tag-less",
+          "x": 445.26788330078125,
+          "y": 985.23876953125,
+          "width": 189.46417236328125,
+          "height": 60.4002685546875
+        }
+      ],
+      "sha256": "f3d0cde78474da7f95e0a3722e88e37c180ea516364bde98e3ee8e2ddb70969f"
+    },
+    {
+      "name": "violet-eye",
+      "t": 46.425,
+      "shot": "violet",
+      "captionId": 14,
+      "transition": null,
+      "labels": [
+        {
+          "id": "v-tag-blue",
+          "x": 269.76947021484375,
+          "y": 577.3541870117188,
+          "width": 94.98007202148438,
+          "height": 58.0260009765625
+        },
+        {
+          "id": "v-tag-violet",
+          "x": 700.26708984375,
+          "y": 608.4931640625,
+          "width": 105.56298828125,
+          "height": 58.0260009765625
+        },
+        {
+          "id": "v-tag-less",
+          "x": 445.5592041015625,
+          "y": 981.00390625,
+          "width": 188.881591796875,
+          "height": 60.2144775390625
+        }
+      ],
+      "sha256": "a9af585b6bdd3322098c255a7538257f81d25ec44b1fe43e517fde6ca303a29d"
+    },
+    {
+      "name": "sunset-path",
+      "t": 54.9,
+      "shot": "sunset",
+      "captionId": 17,
+      "transition": null,
+      "labels": [
+        {
+          "id": "e-tag",
+          "x": 275.39068603515625,
+          "y": 985.2620239257812,
+          "width": 275.0218505859375,
+          "height": 83.31732177734375
+        }
+      ],
+      "sha256": "f2a4825f23cdbb3e1c78c1a28f84a69cb06ce5ef932f9a8b59b6659a74eaf7c5"
+    },
+    {
+      "name": "sunset-flecks",
+      "t": 57.875,
+      "shot": "sunset",
+      "captionId": 18,
+      "transition": null,
+      "labels": [
+        {
+          "id": "e-tag",
+          "x": 273.797607421875,
+          "y": 986.0282592773438,
+          "width": 276.6776123046875,
+          "height": 83.81890869140625
+        }
+      ],
+      "sha256": "72c41f0b124169dc3d862da16ce12cf499c8d4c111a2389ca7541f421577fd28"
+    },
+    {
+      "name": "dusk",
+      "t": 60.800000000000004,
+      "shot": "dusk",
+      "captionId": 19,
+      "transition": null,
+      "labels": [],
+      "sha256": "957ccfd7db13bfe819ecc9a9d054d17c341bff7a49ff0952a587303e4db88c38"
+    }
+  ],
+  "browser": "Chrome/157.0.8103.79",
+  "duration": 61.275,
+  "shots": [
+    {
+      "id": "rooftop",
+      "scene": "sk-rooftop",
+      "start": 0,
+      "end": 7.475,
+      "phrases": null,
+      "cameraTimes": [
+        0,
+        1.45,
+        7.475
+      ],
+      "transition": {
+        "type": "dissolve",
+        "at": 7.475,
+        "from": 7.335,
+        "to": 7.734999999999999
+      }
+    },
+    {
+      "id": "prism",
+      "scene": "sk-prism",
+      "start": 7.475,
+      "end": 16.875,
+      "phrases": null,
+      "cameraTimes": [
+        7.475,
+        12.85,
+        16.875
+      ],
+      "transition": {
+        "type": "sheet",
+        "at": 16.875,
+        "from": 16.655,
+        "to": 17.095
+      }
+    },
+    {
+      "id": "air",
+      "scene": "sk-air",
+      "start": 16.875,
+      "end": 23.85,
+      "phrases": null,
+      "cameraTimes": [
+        16.875,
+        21.15,
+        23.85
+      ],
+      "transition": null
+    },
+    {
+      "id": "waves",
+      "scene": "sk-waves",
+      "start": 23.85,
+      "end": 29.7,
+      "phrases": null,
+      "cameraTimes": [
+        23.85,
+        29.7
+      ],
+      "transition": {
+        "type": "sheet",
+        "at": 29.7,
+        "from": 29.48,
+        "to": 29.919999999999998
+      }
+    },
+    {
+      "id": "whole-sky",
+      "scene": "sk-whole",
+      "start": 29.7,
+      "end": 38.7,
+      "phrases": null,
+      "cameraTimes": [
+        29.7,
+        32.55,
+        38.7
+      ],
+      "transition": {
+        "type": "dissolve",
+        "at": 38.7,
+        "from": 38.56,
+        "to": 38.96
+      }
+    },
+    {
+      "id": "violet",
+      "scene": "sk-violet",
+      "start": 38.7,
+      "end": 48.95,
+      "phrases": null,
+      "cameraTimes": [
+        38.7,
+        48.95
+      ],
+      "transition": {
+        "type": "sheet",
+        "at": 48.95,
+        "from": 48.730000000000004,
+        "to": 49.17
+      }
+    },
+    {
+      "id": "sunset",
+      "scene": "sk-sunset",
+      "start": 48.95,
+      "end": 58.325,
+      "phrases": null,
+      "cameraTimes": [
+        48.95,
+        53.6,
+        58.325
+      ],
+      "transition": {
+        "type": "dissolve",
+        "at": 58.325,
+        "from": 58.185,
+        "to": 58.585
+      }
+    },
+    {
+      "id": "dusk",
+      "scene": "sk-dusk",
+      "start": 58.325,
+      "end": 61.275,
+      "phrases": null,
+      "cameraTimes": [
+        58.325,
+        60.1,
+        61.275
+      ],
+      "transition": null
+    }
+  ],
+  "captions": [
+    {
+      "id": 1,
+      "cue": "c1",
+      "start": 0.625,
+      "end": 2.075,
+      "text": "ज़रा ऊपर देखिए।"
+    },
+    {
+      "id": 2,
+      "cue": "c2",
+      "start": 2.075,
+      "end": 4.125,
+      "text": "आसमान नीला क्यों दिखता है,"
+    },
+    {
+      "id": 3,
+      "cue": "c3",
+      "start": 4.125,
+      "end": 7.9,
+      "text": "जबकि सूरज की रोशनी तो सफ़ेद लगती है?"
+    },
+    {
+      "id": 4,
+      "cue": "c4",
+      "start": 8.05,
+      "end": 12.85,
+      "text": "असल में इस सफ़ेद रोशनी में इंद्रधनुष के सारे रंग छिपे हैं।"
+    },
+    {
+      "id": 5,
+      "cue": "c5",
+      "start": 12.85,
+      "end": 17.35,
+      "text": "प्रिज़्म से गुज़रते ही वे अलग-अलग दिखने लगते हैं।"
+    },
+    {
+      "id": 6,
+      "cue": "c6",
+      "start": 17.475,
+      "end": 19.975,
+      "text": "यह रोशनी जब हवा से टकराती है,"
+    },
+    {
+      "id": 7,
+      "cue": "c7",
+      "start": 19.975,
+      "end": 23.85,
+      "text": "तो हवा के नन्हे अणु उसे चारों तरफ़ बिखेर देते हैं।"
+    },
+    {
+      "id": 8,
+      "cue": "c8",
+      "start": 23.85,
+      "end": 26.425,
+      "text": "नीला रंग छोटी तरंगों में चलता है,"
+    },
+    {
+      "id": 9,
+      "cue": "c9",
+      "start": 26.425,
+      "end": 30.175,
+      "text": "इसलिए वह लाल से कहीं ज़्यादा बिखरता है।"
+    },
+    {
+      "id": 10,
+      "cue": "c10",
+      "start": 30.3,
+      "end": 35.425,
+      "text": "यही बिखरी नीली रोशनी पूरे आसमान से हमारी आँखों तक आती है,"
+    },
+    {
+      "id": 11,
+      "cue": "c11",
+      "start": 35.425,
+      "end": 39.175,
+      "text": "इसलिए हर तरफ़ आसमान नीला दिखता है।"
+    },
+    {
+      "id": 12,
+      "cue": "c12",
+      "start": 39.3,
+      "end": 41.875,
+      "text": "बैंगनी तो और भी ज़्यादा बिखरता है,"
+    },
+    {
+      "id": 13,
+      "cue": "c13",
+      "start": 41.875,
+      "end": 44.175,
+      "text": "पर धूप में बैंगनी कम होता है,"
+    },
+    {
+      "id": 14,
+      "cue": "c14",
+      "start": 44.175,
+      "end": 49.425,
+      "text": "और हमारी आँखें नीले को ज़्यादा आसानी से पहचानती हैं।"
+    },
+    {
+      "id": 15,
+      "cue": "c15",
+      "start": 49.525,
+      "end": 50.575,
+      "text": "और शाम को?"
+    },
+    {
+      "id": 16,
+      "cue": "c16",
+      "start": 50.575,
+      "end": 52.125,
+      "text": "सूरज नीचे होता है,"
+    },
+    {
+      "id": 17,
+      "cue": "c17",
+      "start": 52.125,
+      "end": 56.05,
+      "text": "तो रोशनी को हवा में लंबा रास्ता तय करना पड़ता है।"
+    },
+    {
+      "id": 18,
+      "cue": "c18",
+      "start": 56.05,
+      "end": 58.325,
+      "text": "नीला रास्ते में ही बिखर जाता है,"
+    },
+    {
+      "id": 19,
+      "cue": "c19",
+      "start": 58.325,
+      "end": 61.275,
+      "text": "और लाल-नारंगी रंग हम तक पहुँचते हैं।"
+    }
+  ],
+  "cues": [
+    {
+      "id": "r-kid-up",
+      "cue": "kid-up",
+      "at": 1.05
+    },
+    {
+      "id": "r-q",
+      "cue": "sky-question",
+      "at": 3.05
+    },
+    {
+      "id": "r-rays",
+      "cue": "sun-white",
+      "at": 5.9
+    },
+    {
+      "id": "p-beam",
+      "cue": "beam-in",
+      "at": 9.575
+    },
+    {
+      "id": "p-hidden",
+      "cue": "colours-hidden",
+      "at": 10.525
+    },
+    {
+      "id": "p-prism",
+      "cue": "prism-in",
+      "at": 12.85
+    },
+    {
+      "id": "p-fan",
+      "cue": "fan-out",
+      "at": 14.7
+    },
+    {
+      "id": "a-mol",
+      "cue": "air-hit",
+      "at": 19.025
+    },
+    {
+      "id": "a-dots",
+      "cue": "molecules-in",
+      "at": 21.15
+    },
+    {
+      "id": "a-burst",
+      "cue": "scatter-burst",
+      "at": 22.6
+    },
+    {
+      "id": "w-blue",
+      "cue": "blue-wave",
+      "at": 24.55
+    },
+    {
+      "id": "w-red",
+      "cue": "red-wave",
+      "at": 27.175
+    },
+    {
+      "id": "w-splinter",
+      "cue": "blue-splinters",
+      "at": 27.975
+    },
+    {
+      "id": "ws-flecks",
+      "cue": "flecks-in",
+      "at": 30.625
+    },
+    {
+      "id": "ws-arrows",
+      "cue": "to-eyes",
+      "at": 34
+    },
+    {
+      "id": "ws-glow",
+      "cue": "sky-glow",
+      "at": 37.175
+    },
+    {
+      "id": "v-burst",
+      "cue": "violet-scatter",
+      "at": 40.95
+    },
+    {
+      "id": "v-ring",
+      "cue": "violet-less",
+      "at": 43.125
+    },
+    {
+      "id": "v-iris",
+      "cue": "eye-blue",
+      "at": 45.425
+    },
+    {
+      "id": "e-path",
+      "cue": "long-path",
+      "at": 53.6
+    },
+    {
+      "id": "e-flecks",
+      "cue": "blue-away",
+      "at": 57.175
+    },
+    {
+      "id": "d-sun",
+      "cue": "dusk-red",
+      "at": 58.55
+    },
+    {
+      "id": "d-glow",
+      "cue": "dusk-glow",
+      "at": 60.1
+    }
+  ],
+  "checks": {
+    "keyframes": [
+      [
+        "rooftop-question",
+        3.75
+      ],
+      [
+        "rooftop-sun",
+        6.7
+      ],
+      [
+        "prism-beam",
+        11.025
+      ],
+      [
+        "prism-fan",
+        15.7
+      ],
+      [
+        "air-burst",
+        23.3
+      ],
+      [
+        "waves",
+        28.775000000000002
+      ],
+      [
+        "whole-sky-eyes",
+        34.9
+      ],
+      [
+        "whole-sky-glow",
+        37.974999999999994
+      ],
+      [
+        "violet-strip",
+        43.925
+      ],
+      [
+        "violet-eye",
+        46.425
+      ],
+      [
+        "sunset-path",
+        54.9
+      ],
+      [
+        "sunset-flecks",
+        57.875
+      ],
+      [
+        "dusk",
+        60.800000000000004
+      ]
+    ],
+    "repeatAt": 1.65,
+    "absentAfter": []
+  },
+  "phrases": [
+    {
+      "start": 0.625,
+      "end": 1.975,
+      "text": "ज़रा ऊपर देखिए।"
+    },
+    {
+      "start": 2.075,
+      "end": 3.975,
+      "text": "आसमान नीला क्यों दिखता है,"
+    },
+    {
+      "start": 4.125,
+      "end": 7.2,
+      "text": "जबकि सूरज की रोशनी तो सफ़ेद लगती है?"
+    },
+    {
+      "start": 8.05,
+      "end": 12.775,
+      "text": "असल में इस सफ़ेद रोशनी में इंद्रधनुष के सारे रंग छिपे हैं।"
+    },
+    {
+      "start": 12.85,
+      "end": 16.65,
+      "text": "प्रिज़्म से गुज़रते ही वे अलग-अलग दिखने लगते हैं।"
+    },
+    {
+      "start": 17.475,
+      "end": 19.875,
+      "text": "यह रोशनी जब हवा से टकराती है,"
+    },
+    {
+      "start": 19.975,
+      "end": 23.75,
+      "text": "तो हवा के नन्हे अणु उसे चारों तरफ़ बिखेर देते हैं।"
+    },
+    {
+      "start": 23.85,
+      "end": 26.3,
+      "text": "नीला रंग छोटी तरंगों में चलता है,"
+    },
+    {
+      "start": 26.425,
+      "end": 29.475,
+      "text": "इसलिए वह लाल से कहीं ज़्यादा बिखरता है।"
+    },
+    {
+      "start": 30.3,
+      "end": 35.3,
+      "text": "यही बिखरी नीली रोशनी पूरे आसमान से हमारी आँखों तक आती है,"
+    },
+    {
+      "start": 35.425,
+      "end": 38.475,
+      "text": "इसलिए हर तरफ़ आसमान नीला दिखता है।"
+    },
+    {
+      "start": 39.3,
+      "end": 41.775,
+      "text": "बैंगनी तो और भी ज़्यादा बिखरता है,"
+    },
+    {
+      "start": 41.875,
+      "end": 44.025,
+      "text": "पर धूप में बैंगनी कम होता है,"
+    },
+    {
+      "start": 44.175,
+      "end": 48.725,
+      "text": "और हमारी आँखें नीले को ज़्यादा आसानी से पहचानती हैं।"
+    },
+    {
+      "start": 49.525,
+      "end": 50.4,
+      "text": "और शाम को?"
+    },
+    {
+      "start": 50.575,
+      "end": 52.025,
+      "text": "सूरज नीचे होता है,"
+    },
+    {
+      "start": 52.125,
+      "end": 55.925,
+      "text": "तो रोशनी को हवा में लंबा रास्ता तय करना पड़ता है।"
+    },
+    {
+      "start": 56.05,
+      "end": 58.175,
+      "text": "नीला रास्ते में ही बिखर जाता है,"
+    },
+    {
+      "start": 58.325,
+      "end": 61.25,
+      "text": "और लाल-नारंगी रंग हम तक पहुँचते हैं।"
+    }
+  ],
+  "planCuesUsed": [
+    "kid-up",
+    "sky-question",
+    "sun-white",
+    "beam-in",
+    "colours-hidden",
+    "prism-in",
+    "fan-out",
+    "air-hit",
+    "molecules-in",
+    "scatter-burst",
+    "blue-wave",
+    "red-wave",
+    "blue-splinters",
+    "flecks-in",
+    "to-eyes",
+    "sky-glow",
+    "violet-scatter",
+    "violet-less",
+    "eye-blue",
+    "sun-low",
+    "long-path",
+    "blue-away",
+    "dusk-red",
+    "dusk-glow"
+  ],
+  "plan": {
+    "path": "plan/resolved-plan.json",
+    "sha256": "5f53cf3ef021bb2ce3f22f1477c08c6035a2b2984e28f0ebd224f8c92799dc3d",
+    "timeline_sha256": "7b13ae42a8e5c6645dcdc9c071351fe9dc11f8a9dff264b6c08b8d9a93710866",
+    "timing_status": "unreviewed"
+  },
+  "presentation": {
+    "lang": "und",
+    "captionFont": "\"Nirmala UI\", \"Segoe UI\", sans-serif",
+    "labelFont": "\"Nirmala UI\",\"Segoe UI\",sans-serif"
+  },
+  "cueChecks": [
+    {
+      "id": "r-kid-up",
+      "cue": "kid-up",
+      "at": 1.05,
+      "phraseStart": null,
+      "before": 0,
+      "after": 1
+    },
+    {
+      "id": "r-q",
+      "cue": "sky-question",
+      "at": 3.05,
+      "phraseStart": null,
+      "before": 0,
+      "after": 1
+    },
+    {
+      "id": "r-rays",
+      "cue": "sun-white",
+      "at": 5.9,
+      "phraseStart": null,
+      "before": 0,
+      "after": 1
+    },
+    {
+      "id": "p-beam",
+      "cue": "beam-in",
+      "at": 9.575,
+      "phraseStart": null,
+      "before": 0,
+      "after": 1
+    },
+    {
+      "id": "p-hidden",
+      "cue": "colours-hidden",
+      "at": 10.525,
+      "phraseStart": null,
+      "before": 0,
+      "after": 1
+    },
+    {
+      "id": "p-prism",
+      "cue": "prism-in",
+      "at": 12.85,
+      "phraseStart": null,
+      "before": 0,
+      "after": 1
+    },
+    {
+      "id": "p-fan",
+      "cue": "fan-out",
+      "at": 14.7,
+      "phraseStart": null,
+      "before": 0,
+      "after": 1
+    },
+    {
+      "id": "a-mol",
+      "cue": "air-hit",
+      "at": 19.025,
+      "phraseStart": null,
+      "before": 0,
+      "after": 1
+    },
+    {
+      "id": "a-dots",
+      "cue": "molecules-in",
+      "at": 21.15,
+      "phraseStart": null,
+      "before": 0,
+      "after": 1
+    },
+    {
+      "id": "a-burst",
+      "cue": "scatter-burst",
+      "at": 22.6,
+      "phraseStart": null,
+      "before": 0,
+      "after": 1
+    },
+    {
+      "id": "w-blue",
+      "cue": "blue-wave",
+      "at": 24.55,
+      "phraseStart": null,
+      "before": 0,
+      "after": 1
+    },
+    {
+      "id": "w-red",
+      "cue": "red-wave",
+      "at": 27.175,
+      "phraseStart": null,
+      "before": 0,
+      "after": 1
+    },
+    {
+      "id": "w-splinter",
+      "cue": "blue-splinters",
+      "at": 27.975,
+      "phraseStart": null,
+      "before": 0,
+      "after": 1
+    },
+    {
+      "id": "ws-flecks",
+      "cue": "flecks-in",
+      "at": 30.625,
+      "phraseStart": null,
+      "before": 0,
+      "after": 1
+    },
+    {
+      "id": "ws-arrows",
+      "cue": "to-eyes",
+      "at": 34,
+      "phraseStart": null,
+      "before": 0,
+      "after": 1
+    },
+    {
+      "id": "ws-glow",
+      "cue": "sky-glow",
+      "at": 37.175,
+      "phraseStart": null,
+      "before": 0,
+      "after": 1
+    },
+    {
+      "id": "v-burst",
+      "cue": "violet-scatter",
+      "at": 40.95,
+      "phraseStart": null,
+      "before": 0,
+      "after": 1
+    },
+    {
+      "id": "v-ring",
+      "cue": "violet-less",
+      "at": 43.125,
+      "phraseStart": null,
+      "before": 0,
+      "after": 1
+    },
+    {
+      "id": "v-iris",
+      "cue": "eye-blue",
+      "at": 45.425,
+      "phraseStart": null,
+      "before": 0,
+      "after": 1
+    },
+    {
+      "id": "e-path",
+      "cue": "long-path",
+      "at": 53.6,
+      "phraseStart": null,
+      "before": 0,
+      "after": 1
+    },
+    {
+      "id": "e-flecks",
+      "cue": "blue-away",
+      "at": 57.175,
+      "phraseStart": null,
+      "before": 0,
+      "after": 0.997085
+    },
+    {
+      "id": "d-sun",
+      "cue": "dusk-red",
+      "at": 58.55,
+      "phraseStart": null,
+      "before": 0,
+      "after": 1
+    },
+    {
+      "id": "d-glow",
+      "cue": "dusk-glow",
+      "at": 60.1,
+      "phraseStart": null,
+      "before": 0,
+      "after": 1
+    }
+  ],
+  "repeatability": {
+    "seconds": 1.65,
+    "sameFrame": false,
+    "sameLabels": true,
+    "ssim": 0.999833
+  },
+  "renderWallSeconds": 49.0368592
+}

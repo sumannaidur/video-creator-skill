@@ -1,0 +1,365 @@
+{
+  "result": "mapped",
+  "words": [
+    {
+      "label": "విశ్రాంతిగా",
+      "text_start": 0,
+      "text_end": 11,
+      "method": "mithi_token_word_ownership",
+      "model_words": [
+        "విశ్రాంతిగా"
+      ],
+      "group": null,
+      "tokens": [
+        1,
+        14
+      ],
+      "samples": [
+        1200,
+        17400
+      ]
+    },
+    {
+      "label": "ఉన్నప్పుడు",
+      "text_start": 12,
+      "text_end": 22,
+      "method": "mithi_token_word_ownership",
+      "model_words": [
+        "ఉన్నప్పుడు"
+      ],
+      "group": null,
+      "tokens": [
+        16,
+        26
+      ],
+      "samples": [
+        18600,
+        29400
+      ]
+    },
+    {
+      "label": "కూడా,",
+      "text_start": 23,
+      "text_end": 28,
+      "method": "mithi_token_word_ownership",
+      "model_words": [
+        "కూడా,"
+      ],
+      "group": null,
+      "tokens": [
+        28,
+        34
+      ],
+      "samples": [
+        30600,
+        39000
+      ]
+    },
+    {
+      "label": "మీ",
+      "text_start": 29,
+      "text_end": 31,
+      "method": "mithi_token_word_ownership",
+      "model_words": [
+        "మీ"
+      ],
+      "group": null,
+      "tokens": [
+        37,
+        40
+      ],
+      "samples": [
+        47400,
+        51600
+      ]
+    },
+    {
+      "label": "గుండె",
+      "text_start": 32,
+      "text_end": 37,
+      "method": "mithi_token_word_ownership",
+      "model_words": [
+        "గుండె"
+      ],
+      "group": null,
+      "tokens": [
+        42,
+        47
+      ],
+      "samples": [
+        53400,
+        61200
+      ]
+    },
+    {
+      "label": "నిమిషానికి",
+      "text_start": 38,
+      "text_end": 48,
+      "method": "mithi_token_word_ownership",
+      "model_words": [
+        "నిమిషానికి"
+      ],
+      "group": null,
+      "tokens": [
+        49,
+        61
+      ],
+      "samples": [
+        62400,
+        81000
+      ]
+    },
+    {
+      "label": "అరవై",
+      "text_start": 49,
+      "text_end": 53,
+      "method": "mithi_token_word_ownership",
+      "model_words": [
+        "అరవై"
+      ],
+      "group": null,
+      "tokens": [
+        63,
+        68
+      ],
+      "samples": [
+        84000,
+        91200
+      ]
+    },
+    {
+      "label": "నుంచి",
+      "text_start": 54,
+      "text_end": 59,
+      "method": "mithi_token_word_ownership",
+      "model_words": [
+        "నుంచి"
+      ],
+      "group": null,
+      "tokens": [
+        70,
+        75
+      ],
+      "samples": [
+        93000,
+        102000
+      ]
+    },
+    {
+      "label": "వంద",
+      "text_start": 60,
+      "text_end": 63,
+      "method": "mithi_token_word_ownership",
+      "model_words": [
+        "వంద"
+      ],
+      "group": null,
+      "tokens": [
+        77,
+        82
+      ],
+      "samples": [
+        103800,
+        110400
+      ]
+    },
+    {
+      "label": "సార్లు",
+      "text_start": 64,
+      "text_end": 70,
+      "method": "mithi_token_word_ownership",
+      "model_words": [
+        "సార్లు"
+      ],
+      "group": null,
+      "tokens": [
+        84,
+        90
+      ],
+      "samples": [
+        111600,
+        119400
+      ]
+    },
+    {
+      "label": "కొట్టుకుంటుంది.",
+      "text_start": 71,
+      "text_end": 86,
+      "method": "mithi_token_word_ownership",
+      "model_words": [
+        "కొట్టుకుంటుంది."
+      ],
+      "group": null,
+      "tokens": [
+        92,
+        106
+      ],
+      "samples": [
+        120600,
+        137400
+      ]
+    },
+    {
+      "label": "ఒక్క",
+      "text_start": 87,
+      "text_end": 91,
+      "method": "mithi_token_word_ownership",
+      "model_words": [
+        "ఒక్క"
+      ],
+      "group": null,
+      "tokens": [
+        109,
+        113
+      ],
+      "samples": [
+        151800,
+        158400
+      ]
+    },
+    {
+      "label": "క్షణం",
+      "text_start": 92,
+      "text_end": 97,
+      "method": "mithi_token_word_ownership",
+      "model_words": [
+        "క్షణం"
+      ],
+      "group": null,
+      "tokens": [
+        115,
+        121
+      ],
+      "samples": [
+        159600,
+        168000
+      ]
+    },
+    {
+      "label": "కూడా",
+      "text_start": 98,
+      "text_end": 102,
+      "method": "mithi_token_word_ownership",
+      "model_words": [
+        "కూడా"
+      ],
+      "group": null,
+      "tokens": [
+        123,
+        129
+      ],
+      "samples": [
+        169200,
+        175800
+      ]
+    },
+    {
+      "label": "ఆగకుండా.",
+      "text_start": 103,
+      "text_end": 111,
+      "method": "mithi_token_word_ownership",
+      "model_words": [
+        "ఆగకుండా."
+      ],
+      "group": null,
+      "tokens": [
+        131,
+        142
+      ],
+      "samples": [
+        177000,
+        189000
+      ]
+    },
+    {
+      "label": "మరి",
+      "text_start": 112,
+      "text_end": 115,
+      "method": "mithi_token_word_ownership",
+      "model_words": [
+        "మరి"
+      ],
+      "group": null,
+      "tokens": [
+        145,
+        149
+      ],
+      "samples": [
+        199200,
+        206400
+      ]
+    },
+    {
+      "label": "అది",
+      "text_start": 116,
+      "text_end": 119,
+      "method": "mithi_token_word_ownership",
+      "model_words": [
+        "అది"
+      ],
+      "group": null,
+      "tokens": [
+        151,
+        154
+      ],
+      "samples": [
+        209400,
+        214800
+      ]
+    },
+    {
+      "label": "రక్తాన్ని",
+      "text_start": 120,
+      "text_end": 129,
+      "method": "mithi_token_word_ownership",
+      "model_words": [
+        "రక్తాన్ని"
+      ],
+      "group": null,
+      "tokens": [
+        156,
+        165
+      ],
+      "samples": [
+        216000,
+        228000
+      ]
+    },
+    {
+      "label": "ఎలా",
+      "text_start": 130,
+      "text_end": 133,
+      "method": "mithi_token_word_ownership",
+      "model_words": [
+        "ఎలా"
+      ],
+      "group": null,
+      "tokens": [
+        167,
+        171
+      ],
+      "samples": [
+        229200,
+        233400
+      ]
+    },
+    {
+      "label": "పంపుతుంది?",
+      "text_start": 134,
+      "text_end": 144,
+      "method": "mithi_token_word_ownership",
+      "model_words": [
+        "పంపుతుంది?"
+      ],
+      "group": null,
+      "tokens": [
+        173,
+        184
+      ],
+      "samples": [
+        234600,
+        247800
+      ]
+    }
+  ]
+}

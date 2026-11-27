@@ -1,0 +1,498 @@
+{
+  "result": {
+    "words": 24,
+    "words_mapped": 24,
+    "phrases": 3,
+    "phrases_mapped": 3,
+    "prefix_exact": 23,
+    "separator_roundtrip_exact": true,
+    "versions": {
+      "kokoro-onnx": "0.6.1",
+      "phonemizer": "3.6.0",
+      "espeakng-loader": "0.2.4"
+    }
+  },
+  "marked": "bˈɛ̃ɡnˌi|tˈoː|ɔːɾ|bʰˈi|zjˈaːdaː|bˈɪkʰəɾtaː|hɛː,|pˈʌɾ|dʰˈuːp|mẽː|bˈɛ̃ɡnˌi|kˈʌm|hˈoːtaː|hɛː,|ɔːɾ|həmˌaːɾi|ˈaːnkʰẽː|nˈiːleː|koː|zjˈaːdaː|aːsˈaːni|seː|pˌəhəcˈaːntˌi|hɛ̃|",
+  "words": [
+    {
+      "index": 0,
+      "text_ref": {
+        "field": "speech",
+        "start": 0,
+        "end": 6
+      },
+      "spoken": "बैंगनी",
+      "backend_group": "bˈɛ̃ɡnˌi",
+      "isolated": "bˈɛ̃ɡnˌi",
+      "prefix": "bˈɛ̃ɡnˌi",
+      "prefix_exact": true,
+      "prefix_agrees_ignoring_stress": true,
+      "isolated_agrees_ignoring_stress": true,
+      "repeated_backend_group": true,
+      "method": "full_context_espeak_separator",
+      "first_symbol": 0,
+      "last_symbol": 7,
+      "mapped": true
+    },
+    {
+      "index": 1,
+      "text_ref": {
+        "field": "speech",
+        "start": 7,
+        "end": 9
+      },
+      "spoken": "तो",
+      "backend_group": "tˈoː",
+      "isolated": "tˈoː",
+      "prefix": "bˈɛ̃ɡnˌi tˈoː",
+      "prefix_exact": true,
+      "prefix_agrees_ignoring_stress": true,
+      "isolated_agrees_ignoring_stress": true,
+      "repeated_backend_group": false,
+      "method": "full_context_espeak_separator",
+      "first_symbol": 9,
+      "last_symbol": 12,
+      "mapped": true
+    },
+    {
+      "index": 2,
+      "text_ref": {
+        "field": "speech",
+        "start": 10,
+        "end": 12
+      },
+      "spoken": "और",
+      "backend_group": "ɔːɾ",
+      "isolated": "ɔːɾ",
+      "prefix": "bˈɛ̃ɡnˌi tˈoː ɔːɾ",
+      "prefix_exact": true,
+      "prefix_agrees_ignoring_stress": true,
+      "isolated_agrees_ignoring_stress": true,
+      "repeated_backend_group": true,
+      "method": "full_context_espeak_separator",
+      "first_symbol": 14,
+      "last_symbol": 16,
+      "mapped": true
+    },
+    {
+      "index": 3,
+      "text_ref": {
+        "field": "speech",
+        "start": 13,
+        "end": 15
+      },
+      "spoken": "भी",
+      "backend_group": "bʰˈi",
+      "isolated": "bʰˈi",
+      "prefix": "bˈɛ̃ɡnˌi tˈoː ɔːɾ bʰˈi",
+      "prefix_exact": true,
+      "prefix_agrees_ignoring_stress": true,
+      "isolated_agrees_ignoring_stress": true,
+      "repeated_backend_group": false,
+      "method": "full_context_espeak_separator",
+      "first_symbol": 18,
+      "last_symbol": 21,
+      "mapped": true
+    },
+    {
+      "index": 4,
+      "text_ref": {
+        "field": "speech",
+        "start": 16,
+        "end": 23
+      },
+      "spoken": "ज़्यादा",
+      "backend_group": "zjˈaːdaː",
+      "isolated": "zjˈaːdaː",
+      "prefix": "bˈɛ̃ɡnˌi tˈoː ɔːɾ bʰˈi zjˈaːdaː",
+      "prefix_exact": true,
+      "prefix_agrees_ignoring_stress": true,
+      "isolated_agrees_ignoring_stress": true,
+      "repeated_backend_group": true,
+      "method": "full_context_espeak_separator",
+      "first_symbol": 23,
+      "last_symbol": 30,
+      "mapped": true
+    },
+    {
+      "index": 5,
+      "text_ref": {
+        "field": "speech",
+        "start": 24,
+        "end": 30
+      },
+      "spoken": "बिखरता",
+      "backend_group": "bˈɪkʰəɾtaː",
+      "isolated": "bˈɪkʰəɾtaː",
+      "prefix": "bˈɛ̃ɡnˌi tˈoː ɔːɾ bʰˈi zjˈaːdaː bˈɪkʰəɾtaː",
+      "prefix_exact": true,
+      "prefix_agrees_ignoring_stress": true,
+      "isolated_agrees_ignoring_stress": true,
+      "repeated_backend_group": false,
+      "method": "full_context_espeak_separator",
+      "first_symbol": 32,
+      "last_symbol": 41,
+      "mapped": true
+    },
+    {
+      "index": 6,
+      "text_ref": {
+        "field": "speech",
+        "start": 31,
+        "end": 34
+      },
+      "spoken": "है,",
+      "backend_group": "hɛː,",
+      "isolated": "hɛː,",
+      "prefix": "bˈɛ̃ɡnˌi tˈoː ɔːɾ bʰˈi zjˈaːdaː bˈɪkʰəɾtaː hɛː,",
+      "prefix_exact": true,
+      "prefix_agrees_ignoring_stress": true,
+      "isolated_agrees_ignoring_stress": true,
+      "repeated_backend_group": true,
+      "method": "full_context_espeak_separator",
+      "first_symbol": 43,
+      "last_symbol": 45,
+      "mapped": true
+    },
+    {
+      "index": 7,
+      "text_ref": {
+        "field": "speech",
+        "start": 35,
+        "end": 37
+      },
+      "spoken": "पर",
+      "backend_group": "pˈʌɾ",
+      "isolated": "pˈʌɾ",
+      "prefix": "bˈɛ̃ɡnˌi tˈoː ɔːɾ bʰˈi zjˈaːdaː bˈɪkʰəɾtaː hɛː, pˈʌɾ",
+      "prefix_exact": true,
+      "prefix_agrees_ignoring_stress": true,
+      "isolated_agrees_ignoring_stress": true,
+      "repeated_backend_group": false,
+      "method": "full_context_espeak_separator",
+      "first_symbol": 48,
+      "last_symbol": 51,
+      "mapped": true
+    },
+    {
+      "index": 8,
+      "text_ref": {
+        "field": "speech",
+        "start": 38,
+        "end": 41
+      },
+      "spoken": "धूप",
+      "backend_group": "dʰˈuːp",
+      "isolated": "dʰˈuːp",
+      "prefix": "bˈɛ̃ɡnˌi tˈoː ɔːɾ bʰˈi zjˈaːdaː bˈɪkʰəɾtaː hɛː, pˈʌɾ dʰˈuːp",
+      "prefix_exact": true,
+      "prefix_agrees_ignoring_stress": true,
+      "isolated_agrees_ignoring_stress": true,
+      "repeated_backend_group": false,
+      "method": "full_context_espeak_separator",
+      "first_symbol": 53,
+      "last_symbol": 58,
+      "mapped": true
+    },
+    {
+      "index": 9,
+      "text_ref": {
+        "field": "speech",
+        "start": 42,
+        "end": 45
+      },
+      "spoken": "में",
+      "backend_group": "mẽː",
+      "isolated": "mˈẽː",
+      "prefix": "bˈɛ̃ɡnˌi tˈoː ɔːɾ bʰˈi zjˈaːdaː bˈɪkʰəɾtaː hɛː, pˈʌɾ dʰˈuːp mˈẽː",
+      "prefix_exact": false,
+      "prefix_agrees_ignoring_stress": true,
+      "isolated_agrees_ignoring_stress": true,
+      "repeated_backend_group": false,
+      "method": "full_context_espeak_separator",
+      "first_symbol": 60,
+      "last_symbol": 63,
+      "mapped": true
+    },
+    {
+      "index": 10,
+      "text_ref": {
+        "field": "speech",
+        "start": 46,
+        "end": 52
+      },
+      "spoken": "बैंगनी",
+      "backend_group": "bˈɛ̃ɡnˌi",
+      "isolated": "bˈɛ̃ɡnˌi",
+      "prefix": "bˈɛ̃ɡnˌi tˈoː ɔːɾ bʰˈi zjˈaːdaː bˈɪkʰəɾtaː hɛː, pˈʌɾ dʰˈuːp mẽː bˈɛ̃ɡnˌi",
+      "prefix_exact": true,
+      "prefix_agrees_ignoring_stress": true,
+      "isolated_agrees_ignoring_stress": true,
+      "repeated_backend_group": true,
+      "method": "full_context_espeak_separator",
+      "first_symbol": 65,
+      "last_symbol": 72,
+      "mapped": true
+    },
+    {
+      "index": 11,
+      "text_ref": {
+        "field": "speech",
+        "start": 53,
+        "end": 55
+      },
+      "spoken": "कम",
+      "backend_group": "kˈʌm",
+      "isolated": "kˈʌm",
+      "prefix": "bˈɛ̃ɡnˌi tˈoː ɔːɾ bʰˈi zjˈaːdaː bˈɪkʰəɾtaː hɛː, pˈʌɾ dʰˈuːp mẽː bˈɛ̃ɡnˌi kˈʌm",
+      "prefix_exact": true,
+      "prefix_agrees_ignoring_stress": true,
+      "isolated_agrees_ignoring_stress": true,
+      "repeated_backend_group": false,
+      "method": "full_context_espeak_separator",
+      "first_symbol": 74,
+      "last_symbol": 77,
+      "mapped": true
+    },
+    {
+      "index": 12,
+      "text_ref": {
+        "field": "speech",
+        "start": 56,
+        "end": 60
+      },
+      "spoken": "होता",
+      "backend_group": "hˈoːtaː",
+      "isolated": "hˈoːtaː",
+      "prefix": "bˈɛ̃ɡnˌi tˈoː ɔːɾ bʰˈi zjˈaːdaː bˈɪkʰəɾtaː hɛː, pˈʌɾ dʰˈuːp mẽː bˈɛ̃ɡnˌi kˈʌm hˈoːtaː",
+      "prefix_exact": true,
+      "prefix_agrees_ignoring_stress": true,
+      "isolated_agrees_ignoring_stress": true,
+      "repeated_backend_group": false,
+      "method": "full_context_espeak_separator",
+      "first_symbol": 79,
+      "last_symbol": 85,
+      "mapped": true
+    },
+    {
+      "index": 13,
+      "text_ref": {
+        "field": "speech",
+        "start": 61,
+        "end": 64
+      },
+      "spoken": "है,",
+      "backend_group": "hɛː,",
+      "isolated": "hɛː,",
+      "prefix": "bˈɛ̃ɡnˌi tˈoː ɔːɾ bʰˈi zjˈaːdaː bˈɪkʰəɾtaː hɛː, pˈʌɾ dʰˈuːp mẽː bˈɛ̃ɡnˌi kˈʌm hˈoːtaː hɛː,",
+      "prefix_exact": true,
+      "prefix_agrees_ignoring_stress": true,
+      "isolated_agrees_ignoring_stress": true,
+      "repeated_backend_group": true,
+      "method": "full_context_espeak_separator",
+      "first_symbol": 87,
+      "last_symbol": 89,
+      "mapped": true
+    },
+    {
+      "index": 14,
+      "text_ref": {
+        "field": "speech",
+        "start": 65,
+        "end": 67
+      },
+      "spoken": "और",
+      "backend_group": "ɔːɾ",
+      "isolated": "ɔːɾ",
+      "prefix": "bˈɛ̃ɡnˌi tˈoː ɔːɾ bʰˈi zjˈaːdaː bˈɪkʰəɾtaː hɛː, pˈʌɾ dʰˈuːp mẽː bˈɛ̃ɡnˌi kˈʌm hˈoːtaː hɛː, ɔːɾ",
+      "prefix_exact": true,
+      "prefix_agrees_ignoring_stress": true,
+      "isolated_agrees_ignoring_stress": true,
+      "repeated_backend_group": true,
+      "method": "full_context_espeak_separator",
+      "first_symbol": 92,
+      "last_symbol": 94,
+      "mapped": true
+    },
+    {
+      "index": 15,
+      "text_ref": {
+        "field": "speech",
+        "start": 68,
+        "end": 73
+      },
+      "spoken": "हमारी",
+      "backend_group": "həmˌaːɾi",
+      "isolated": "həmˌaːɾi",
+      "prefix": "bˈɛ̃ɡnˌi tˈoː ɔːɾ bʰˈi zjˈaːdaː bˈɪkʰəɾtaː hɛː, pˈʌɾ dʰˈuːp mẽː bˈɛ̃ɡnˌi kˈʌm hˈoːtaː hɛː, ɔːɾ həmˌaːɾi",
+      "prefix_exact": true,
+      "prefix_agrees_ignoring_stress": true,
+      "isolated_agrees_ignoring_stress": true,
+      "repeated_backend_group": false,
+      "method": "full_context_espeak_separator",
+      "first_symbol": 96,
+      "last_symbol": 103,
+      "mapped": true
+    },
+    {
+      "index": 16,
+      "text_ref": {
+        "field": "speech",
+        "start": 74,
+        "end": 79
+      },
+      "spoken": "आँखें",
+      "backend_group": "ˈaːnkʰẽː",
+      "isolated": "ˈaːnkʰẽː",
+      "prefix": "bˈɛ̃ɡnˌi tˈoː ɔːɾ bʰˈi zjˈaːdaː bˈɪkʰəɾtaː hɛː, pˈʌɾ dʰˈuːp mẽː bˈɛ̃ɡnˌi kˈʌm hˈoːtaː hɛː, ɔːɾ həmˌaːɾi ˈaːnkʰẽː",
+      "prefix_exact": true,
+      "prefix_agrees_ignoring_stress": true,
+      "isolated_agrees_ignoring_stress": true,
+      "repeated_backend_group": false,
+      "method": "full_context_espeak_separator",
+      "first_symbol": 105,
+      "last_symbol": 113,
+      "mapped": true
+    },
+    {
+      "index": 17,
+      "text_ref": {
+        "field": "speech",
+        "start": 80,
+        "end": 84
+      },
+      "spoken": "नीले",
+      "backend_group": "nˈiːleː",
+      "isolated": "nˈiːleː",
+      "prefix": "bˈɛ̃ɡnˌi tˈoː ɔːɾ bʰˈi zjˈaːdaː bˈɪkʰəɾtaː hɛː, pˈʌɾ dʰˈuːp mẽː bˈɛ̃ɡnˌi kˈʌm hˈoːtaː hɛː, ɔːɾ həmˌaːɾi ˈaːnkʰẽː nˈiːleː",
+      "prefix_exact": true,
+      "prefix_agrees_ignoring_stress": true,
+      "isolated_agrees_ignoring_stress": true,
+      "repeated_backend_group": false,
+      "method": "full_context_espeak_separator",
+      "first_symbol": 115,
+      "last_symbol": 121,
+      "mapped": true
+    },
+    {
+      "index": 18,
+      "text_ref": {
+        "field": "speech",
+        "start": 85,
+        "end": 87
+      },
+      "spoken": "को",
+      "backend_group": "koː",
+      "isolated": "koː",
+      "prefix": "bˈɛ̃ɡnˌi tˈoː ɔːɾ bʰˈi zjˈaːdaː bˈɪkʰəɾtaː hɛː, pˈʌɾ dʰˈuːp mẽː bˈɛ̃ɡnˌi kˈʌm hˈoːtaː hɛː, ɔːɾ həmˌaːɾi ˈaːnkʰẽː nˈiːleː koː",
+      "prefix_exact": true,
+      "prefix_agrees_ignoring_stress": true,
+      "isolated_agrees_ignoring_stress": true,
+      "repeated_backend_group": false,
+      "method": "full_context_espeak_separator",
+      "first_symbol": 123,
+      "last_symbol": 125,
+      "mapped": true
+    },
+    {
+      "index": 19,
+      "text_ref": {
+        "field": "speech",
+        "start": 88,
+        "end": 95
+      },
+      "spoken": "ज़्यादा",
+      "backend_group": "zjˈaːdaː",
+      "isolated": "zjˈaːdaː",
+      "prefix": "bˈɛ̃ɡnˌi tˈoː ɔːɾ bʰˈi zjˈaːdaː bˈɪkʰəɾtaː hɛː, pˈʌɾ dʰˈuːp mẽː bˈɛ̃ɡnˌi kˈʌm hˈoːtaː hɛː, ɔːɾ həmˌaːɾi ˈaːnkʰẽː nˈiːleː koː zjˈaːdaː",
+      "prefix_exact": true,
+      "prefix_agrees_ignoring_stress": true,
+      "isolated_agrees_ignoring_stress": true,
+      "repeated_backend_group": true,
+      "method": "full_context_espeak_separator",
+      "first_symbol": 127,
+      "last_symbol": 134,
+      "mapped": true
+    },
+    {
+      "index": 20,
+      "text_ref": {
+        "field": "speech",
+        "start": 96,
+        "end": 101
+      },
+      "spoken": "आसानी",
+      "backend_group": "aːsˈaːni",
+      "isolated": "aːsˈaːni",
+      "prefix": "bˈɛ̃ɡnˌi tˈoː ɔːɾ bʰˈi zjˈaːdaː bˈɪkʰəɾtaː hɛː, pˈʌɾ dʰˈuːp mẽː bˈɛ̃ɡnˌi kˈʌm hˈoːtaː hɛː, ɔːɾ həmˌaːɾi ˈaːnkʰẽː nˈiːleː koː zjˈaːdaː aːsˈaːni",
+      "prefix_exact": true,
+      "prefix_agrees_ignoring_stress": true,
+      "isolated_agrees_ignoring_stress": true,
+      "repeated_backend_group": false,
+      "method": "full_context_espeak_separator",
+      "first_symbol": 136,
+      "last_symbol": 143,
+      "mapped": true
+    },
+    {
+      "index": 21,
+      "text_ref": {
+        "field": "speech",
+        "start": 102,
+        "end": 104
+      },
+      "spoken": "से",
+      "backend_group": "seː",
+      "isolated": "seː",
+      "prefix": "bˈɛ̃ɡnˌi tˈoː ɔːɾ bʰˈi zjˈaːdaː bˈɪkʰəɾtaː hɛː, pˈʌɾ dʰˈuːp mẽː bˈɛ̃ɡnˌi kˈʌm hˈoːtaː hɛː, ɔːɾ həmˌaːɾi ˈaːnkʰẽː nˈiːleː koː zjˈaːdaː aːsˈaːni seː",
+      "prefix_exact": true,
+      "prefix_agrees_ignoring_stress": true,
+      "isolated_agrees_ignoring_stress": true,
+      "repeated_backend_group": false,
+      "method": "full_context_espeak_separator",
+      "first_symbol": 145,
+      "last_symbol": 147,
+      "mapped": true
+    },
+    {
+      "index": 22,
+      "text_ref": {
+        "field": "speech",
+        "start": 105,
+        "end": 112
+      },
+      "spoken": "पहचानती",
+      "backend_group": "pˌəhəcˈaːntˌi",
+      "isolated": "pˌəhəcˈaːntˌi",
+      "prefix": "bˈɛ̃ɡnˌi tˈoː ɔːɾ bʰˈi zjˈaːdaː bˈɪkʰəɾtaː hɛː, pˈʌɾ dʰˈuːp mẽː bˈɛ̃ɡnˌi kˈʌm hˈoːtaː hɛː, ɔːɾ həmˌaːɾi ˈaːnkʰẽː nˈiːleː koː zjˈaːdaː aːsˈaːni seː pˌəhəcˈaːntˌi",
+      "prefix_exact": true,
+      "prefix_agrees_ignoring_stress": true,
+      "isolated_agrees_ignoring_stress": true,
+      "repeated_backend_group": false,
+      "method": "full_context_espeak_separator",
+      "first_symbol": 149,
+      "last_symbol": 161,
+      "mapped": true
+    },
+    {
+      "index": 23,
+      "text_ref": {
+        "field": "speech",
+        "start": 113,
+        "end": 117
+      },
+      "spoken": "हैं।",
+      "backend_group": "hɛ̃",
+      "isolated": "hɛ̃",
+      "prefix": "bˈɛ̃ɡnˌi tˈoː ɔːɾ bʰˈi zjˈaːdaː bˈɪkʰəɾtaː hɛː, pˈʌɾ dʰˈuːp mẽː bˈɛ̃ɡnˌi kˈʌm hˈoːtaː hɛː, ɔːɾ həmˌaːɾi ˈaːnkʰẽː nˈiːleː koː zjˈaːdaː aːsˈaːni seː pˌəhəcˈaːntˌi hɛ̃",
+      "prefix_exact": true,
+      "prefix_agrees_ignoring_stress": true,
+      "isolated_agrees_ignoring_stress": true,
+      "repeated_backend_group": false,
+      "method": "full_context_espeak_separator",
+      "first_symbol": 163,
+      "last_symbol": 165,
+      "mapped": true
+    }
+  ]
+}

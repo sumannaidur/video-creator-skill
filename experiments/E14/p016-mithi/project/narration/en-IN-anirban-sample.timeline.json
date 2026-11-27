@@ -1,0 +1,433 @@
+{
+  "version": 1,
+  "unit": "sample",
+  "locale": "en-IN",
+  "validation": "unreviewed",
+  "run_id": "401fcb00420a43aab207f22a67244d9c",
+  "timing": {
+    "method": "native_durations",
+    "provider": "mithi",
+    "word_timing": false,
+    "note": "word mapping rejected: [word-group-mismatch] 18 token groups but 21 model words"
+  },
+  "audio": {
+    "path": "narration/en-IN-anirban-sample.wav",
+    "sha256": "4223a5e204a9cbe758bdd1afb859e850d654f23b44d2425143a3fb29160bc15f",
+    "sample_rate": 24000,
+    "sample_count": 145200
+  },
+  "text": {
+    "display": "Look, it's raining! After the rain, the soil smells so lovely, doesn't it? Let's sit by the window.",
+    "speech": "Look, it's raining! After the rain, the soil smells so lovely, doesn't it? Let's sit by the window."
+  },
+  "records": [
+    {
+      "kind": "word",
+      "label": "Look,",
+      "start": null,
+      "end": null,
+      "source": null,
+      "text_ref": {
+        "field": "speech",
+        "start": 0,
+        "end": 5
+      },
+      "display_ref": {
+        "field": "display",
+        "start": 0,
+        "end": 5
+      }
+    },
+    {
+      "kind": "phrase",
+      "label": "Look,",
+      "start": null,
+      "end": null,
+      "source": null,
+      "text_ref": {
+        "field": "speech",
+        "start": 0,
+        "end": 5
+      },
+      "display_ref": {
+        "field": "display",
+        "start": 0,
+        "end": 5
+      }
+    },
+    {
+      "kind": "word",
+      "label": "it's",
+      "start": null,
+      "end": null,
+      "source": null,
+      "text_ref": {
+        "field": "speech",
+        "start": 6,
+        "end": 10
+      },
+      "display_ref": {
+        "field": "display",
+        "start": 6,
+        "end": 10
+      }
+    },
+    {
+      "kind": "word",
+      "label": "raining!",
+      "start": null,
+      "end": null,
+      "source": null,
+      "text_ref": {
+        "field": "speech",
+        "start": 11,
+        "end": 19
+      },
+      "display_ref": {
+        "field": "display",
+        "start": 11,
+        "end": 19
+      }
+    },
+    {
+      "kind": "phrase",
+      "label": "it's raining!",
+      "start": null,
+      "end": null,
+      "source": null,
+      "text_ref": {
+        "field": "speech",
+        "start": 6,
+        "end": 19
+      },
+      "display_ref": {
+        "field": "display",
+        "start": 6,
+        "end": 19
+      }
+    },
+    {
+      "kind": "word",
+      "label": "After",
+      "start": null,
+      "end": null,
+      "source": null,
+      "text_ref": {
+        "field": "speech",
+        "start": 20,
+        "end": 25
+      },
+      "display_ref": {
+        "field": "display",
+        "start": 20,
+        "end": 25
+      }
+    },
+    {
+      "kind": "word",
+      "label": "the",
+      "start": null,
+      "end": null,
+      "source": null,
+      "text_ref": {
+        "field": "speech",
+        "start": 26,
+        "end": 29
+      },
+      "display_ref": {
+        "field": "display",
+        "start": 26,
+        "end": 29
+      }
+    },
+    {
+      "kind": "word",
+      "label": "rain,",
+      "start": null,
+      "end": null,
+      "source": null,
+      "text_ref": {
+        "field": "speech",
+        "start": 30,
+        "end": 35
+      },
+      "display_ref": {
+        "field": "display",
+        "start": 30,
+        "end": 35
+      }
+    },
+    {
+      "kind": "phrase",
+      "label": "After the rain,",
+      "start": null,
+      "end": null,
+      "source": null,
+      "text_ref": {
+        "field": "speech",
+        "start": 20,
+        "end": 35
+      },
+      "display_ref": {
+        "field": "display",
+        "start": 20,
+        "end": 35
+      }
+    },
+    {
+      "kind": "word",
+      "label": "the",
+      "start": null,
+      "end": null,
+      "source": null,
+      "text_ref": {
+        "field": "speech",
+        "start": 36,
+        "end": 39
+      },
+      "display_ref": {
+        "field": "display",
+        "start": 36,
+        "end": 39
+      }
+    },
+    {
+      "kind": "word",
+      "label": "soil",
+      "start": null,
+      "end": null,
+      "source": null,
+      "text_ref": {
+        "field": "speech",
+        "start": 40,
+        "end": 44
+      },
+      "display_ref": {
+        "field": "display",
+        "start": 40,
+        "end": 44
+      }
+    },
+    {
+      "kind": "word",
+      "label": "smells",
+      "start": null,
+      "end": null,
+      "source": null,
+      "text_ref": {
+        "field": "speech",
+        "start": 45,
+        "end": 51
+      },
+      "display_ref": {
+        "field": "display",
+        "start": 45,
+        "end": 51
+      }
+    },
+    {
+      "kind": "word",
+      "label": "so",
+      "start": null,
+      "end": null,
+      "source": null,
+      "text_ref": {
+        "field": "speech",
+        "start": 52,
+        "end": 54
+      },
+      "display_ref": {
+        "field": "display",
+        "start": 52,
+        "end": 54
+      }
+    },
+    {
+      "kind": "word",
+      "label": "lovely,",
+      "start": null,
+      "end": null,
+      "source": null,
+      "text_ref": {
+        "field": "speech",
+        "start": 55,
+        "end": 62
+      },
+      "display_ref": {
+        "field": "display",
+        "start": 55,
+        "end": 62
+      }
+    },
+    {
+      "kind": "phrase",
+      "label": "the soil smells so lovely,",
+      "start": null,
+      "end": null,
+      "source": null,
+      "text_ref": {
+        "field": "speech",
+        "start": 36,
+        "end": 62
+      },
+      "display_ref": {
+        "field": "display",
+        "start": 36,
+        "end": 62
+      }
+    },
+    {
+      "kind": "word",
+      "label": "doesn't",
+      "start": null,
+      "end": null,
+      "source": null,
+      "text_ref": {
+        "field": "speech",
+        "start": 63,
+        "end": 70
+      },
+      "display_ref": {
+        "field": "display",
+        "start": 63,
+        "end": 70
+      }
+    },
+    {
+      "kind": "word",
+      "label": "it?",
+      "start": null,
+      "end": null,
+      "source": null,
+      "text_ref": {
+        "field": "speech",
+        "start": 71,
+        "end": 74
+      },
+      "display_ref": {
+        "field": "display",
+        "start": 71,
+        "end": 74
+      }
+    },
+    {
+      "kind": "phrase",
+      "label": "doesn't it?",
+      "start": null,
+      "end": null,
+      "source": null,
+      "text_ref": {
+        "field": "speech",
+        "start": 63,
+        "end": 74
+      },
+      "display_ref": {
+        "field": "display",
+        "start": 63,
+        "end": 74
+      }
+    },
+    {
+      "kind": "word",
+      "label": "Let's",
+      "start": null,
+      "end": null,
+      "source": null,
+      "text_ref": {
+        "field": "speech",
+        "start": 75,
+        "end": 80
+      },
+      "display_ref": {
+        "field": "display",
+        "start": 75,
+        "end": 80
+      }
+    },
+    {
+      "kind": "word",
+      "label": "sit",
+      "start": null,
+      "end": null,
+      "source": null,
+      "text_ref": {
+        "field": "speech",
+        "start": 81,
+        "end": 84
+      },
+      "display_ref": {
+        "field": "display",
+        "start": 81,
+        "end": 84
+      }
+    },
+    {
+      "kind": "word",
+      "label": "by",
+      "start": null,
+      "end": null,
+      "source": null,
+      "text_ref": {
+        "field": "speech",
+        "start": 85,
+        "end": 87
+      },
+      "display_ref": {
+        "field": "display",
+        "start": 85,
+        "end": 87
+      }
+    },
+    {
+      "kind": "word",
+      "label": "the",
+      "start": null,
+      "end": null,
+      "source": null,
+      "text_ref": {
+        "field": "speech",
+        "start": 88,
+        "end": 91
+      },
+      "display_ref": {
+        "field": "display",
+        "start": 88,
+        "end": 91
+      }
+    },
+    {
+      "kind": "word",
+      "label": "window.",
+      "start": null,
+      "end": null,
+      "source": null,
+      "text_ref": {
+        "field": "speech",
+        "start": 92,
+        "end": 99
+      },
+      "display_ref": {
+        "field": "display",
+        "start": 92,
+        "end": 99
+      }
+    },
+    {
+      "kind": "phrase",
+      "label": "Let's sit by the window.",
+      "start": null,
+      "end": null,
+      "source": null,
+      "text_ref": {
+        "field": "speech",
+        "start": 75,
+        "end": 99
+      },
+      "display_ref": {
+        "field": "display",
+        "start": 75,
+        "end": 99
+      }
+    }
+  ]
+}

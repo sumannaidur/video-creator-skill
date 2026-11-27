@@ -1,0 +1,1422 @@
+{
+  "version": 1,
+  "unit": "sample",
+  "locale": "hi-IN",
+  "validation": "unreviewed",
+  "run_id": "665568c2e2694e6abbc7d8c247e118b1",
+  "audio": {
+    "path": "experiments/E04/native-timing/samples/sample-B-native.wav",
+    "sha256": "a24e05d743f1bfcb63615f3a4609f3847346344dea7b151d6dda7a568b53ac22",
+    "sample_rate": 24000,
+    "sample_count": 214200
+  },
+  "text": {
+    "display": "पेड़ धूप रोकते हैं। पत्तियों से पानी भाप बनकर निकलता है, तो आसपास की हवा ठंडी होने में भी मदद मिल सकती है।",
+    "speech": "पेड़ धूप रोकते हैं। पत्तियों से पानी भाप बनकर निकलता है, तो आसपास की हवा ठंडी होने में भी मदद मिल सकती है।"
+  },
+  "records": [
+    {
+      "kind": "phoneme",
+      "label": "p",
+      "start": 13200,
+      "end": 14400,
+      "source": "native_model"
+    },
+    {
+      "kind": "phoneme",
+      "label": "ˈ",
+      "start": 14400,
+      "end": 15600,
+      "source": "native_model"
+    },
+    {
+      "kind": "phoneme",
+      "label": "e",
+      "start": 15600,
+      "end": 16200,
+      "source": "native_model"
+    },
+    {
+      "kind": "phoneme",
+      "label": "ː",
+      "start": 16200,
+      "end": 17400,
+      "source": "native_model"
+    },
+    {
+      "kind": "phoneme",
+      "label": "r",
+      "start": 17400,
+      "end": 18000,
+      "source": "native_model"
+    },
+    {
+      "kind": "phoneme",
+      "label": ".",
+      "start": 18000,
+      "end": 18600,
+      "source": "native_model"
+    },
+    {
+      "kind": "phoneme",
+      "label": " ",
+      "start": 18600,
+      "end": 20400,
+      "source": "native_model"
+    },
+    {
+      "kind": "phoneme",
+      "label": "d",
+      "start": 20400,
+      "end": 21600,
+      "source": "native_model"
+    },
+    {
+      "kind": "phoneme",
+      "label": "ʰ",
+      "start": 21600,
+      "end": 22200,
+      "source": "native_model"
+    },
+    {
+      "kind": "phoneme",
+      "label": "ˈ",
+      "start": 22200,
+      "end": 23400,
+      "source": "native_model"
+    },
+    {
+      "kind": "phoneme",
+      "label": "u",
+      "start": 23400,
+      "end": 24000,
+      "source": "native_model"
+    },
+    {
+      "kind": "phoneme",
+      "label": "ː",
+      "start": 24000,
+      "end": 25800,
+      "source": "native_model"
+    },
+    {
+      "kind": "phoneme",
+      "label": "p",
+      "start": 25800,
+      "end": 27000,
+      "source": "native_model"
+    },
+    {
+      "kind": "phoneme",
+      "label": " ",
+      "start": 27000,
+      "end": 28200,
+      "source": "native_model"
+    },
+    {
+      "kind": "phoneme",
+      "label": "ɾ",
+      "start": 28200,
+      "end": 28800,
+      "source": "native_model"
+    },
+    {
+      "kind": "phoneme",
+      "label": "ˈ",
+      "start": 28800,
+      "end": 30000,
+      "source": "native_model"
+    },
+    {
+      "kind": "phoneme",
+      "label": "o",
+      "start": 30000,
+      "end": 30600,
+      "source": "native_model"
+    },
+    {
+      "kind": "phoneme",
+      "label": "ː",
+      "start": 30600,
+      "end": 31800,
+      "source": "native_model"
+    },
+    {
+      "kind": "phoneme",
+      "label": "k",
+      "start": 31800,
+      "end": 33600,
+      "source": "native_model"
+    },
+    {
+      "kind": "phoneme",
+      "label": "t",
+      "start": 33600,
+      "end": 34800,
+      "source": "native_model"
+    },
+    {
+      "kind": "phoneme",
+      "label": "ˌ",
+      "start": 34800,
+      "end": 35400,
+      "source": "native_model"
+    },
+    {
+      "kind": "phoneme",
+      "label": "e",
+      "start": 35400,
+      "end": 36000,
+      "source": "native_model"
+    },
+    {
+      "kind": "phoneme",
+      "label": "ː",
+      "start": 36000,
+      "end": 36600,
+      "source": "native_model"
+    },
+    {
+      "kind": "phoneme",
+      "label": " ",
+      "start": 36600,
+      "end": 37800,
+      "source": "native_model"
+    },
+    {
+      "kind": "phoneme",
+      "label": "h",
+      "start": 37800,
+      "end": 39000,
+      "source": "native_model"
+    },
+    {
+      "kind": "phoneme",
+      "label": "ɛ",
+      "start": 39000,
+      "end": 40800,
+      "source": "native_model"
+    },
+    {
+      "kind": "phoneme",
+      "label": "̃",
+      "start": 40800,
+      "end": 44400,
+      "source": "native_model"
+    },
+    {
+      "kind": "phoneme",
+      "label": " ",
+      "start": 44400,
+      "end": 46200,
+      "source": "native_model"
+    },
+    {
+      "kind": "phoneme",
+      "label": "p",
+      "start": 46200,
+      "end": 46800,
+      "source": "native_model"
+    },
+    {
+      "kind": "phoneme",
+      "label": "ˈ",
+      "start": 46800,
+      "end": 47400,
+      "source": "native_model"
+    },
+    {
+      "kind": "phoneme",
+      "label": "ʌ",
+      "start": 47400,
+      "end": 49200,
+      "source": "native_model"
+    },
+    {
+      "kind": "phoneme",
+      "label": "t",
+      "start": 49200,
+      "end": 51000,
+      "source": "native_model"
+    },
+    {
+      "kind": "phoneme",
+      "label": "ː",
+      "start": 51000,
+      "end": 52200,
+      "source": "native_model"
+    },
+    {
+      "kind": "phoneme",
+      "label": "ɪ",
+      "start": 52200,
+      "end": 52800,
+      "source": "native_model"
+    },
+    {
+      "kind": "phoneme",
+      "label": "j",
+      "start": 52800,
+      "end": 53400,
+      "source": "native_model"
+    },
+    {
+      "kind": "phoneme",
+      "label": "ˌ",
+      "start": 53400,
+      "end": 54000,
+      "source": "native_model"
+    },
+    {
+      "kind": "phoneme",
+      "label": "o",
+      "start": 54000,
+      "end": 54600,
+      "source": "native_model"
+    },
+    {
+      "kind": "phoneme",
+      "label": "̃",
+      "start": 54600,
+      "end": 55200,
+      "source": "native_model"
+    },
+    {
+      "kind": "phoneme",
+      "label": " ",
+      "start": 55200,
+      "end": 56400,
+      "source": "native_model"
+    },
+    {
+      "kind": "phoneme",
+      "label": "s",
+      "start": 56400,
+      "end": 58200,
+      "source": "native_model"
+    },
+    {
+      "kind": "phoneme",
+      "label": "e",
+      "start": 58200,
+      "end": 59400,
+      "source": "native_model"
+    },
+    {
+      "kind": "phoneme",
+      "label": "ː",
+      "start": 59400,
+      "end": 61200,
+      "source": "native_model"
+    },
+    {
+      "kind": "phoneme",
+      "label": " ",
+      "start": 61200,
+      "end": 63000,
+      "source": "native_model"
+    },
+    {
+      "kind": "phoneme",
+      "label": "p",
+      "start": 63000,
+      "end": 64200,
+      "source": "native_model"
+    },
+    {
+      "kind": "phoneme",
+      "label": "ˈ",
+      "start": 64200,
+      "end": 66000,
+      "source": "native_model"
+    },
+    {
+      "kind": "phoneme",
+      "label": "a",
+      "start": 66000,
+      "end": 66600,
+      "source": "native_model"
+    },
+    {
+      "kind": "phoneme",
+      "label": "ː",
+      "start": 66600,
+      "end": 67800,
+      "source": "native_model"
+    },
+    {
+      "kind": "phoneme",
+      "label": "n",
+      "start": 67800,
+      "end": 69000,
+      "source": "native_model"
+    },
+    {
+      "kind": "phoneme",
+      "label": "i",
+      "start": 69000,
+      "end": 70800,
+      "source": "native_model"
+    },
+    {
+      "kind": "phoneme",
+      "label": " ",
+      "start": 70800,
+      "end": 72000,
+      "source": "native_model"
+    },
+    {
+      "kind": "phoneme",
+      "label": "b",
+      "start": 72000,
+      "end": 73200,
+      "source": "native_model"
+    },
+    {
+      "kind": "phoneme",
+      "label": "ʰ",
+      "start": 73200,
+      "end": 74400,
+      "source": "native_model"
+    },
+    {
+      "kind": "phoneme",
+      "label": "ˈ",
+      "start": 74400,
+      "end": 76200,
+      "source": "native_model"
+    },
+    {
+      "kind": "phoneme",
+      "label": "a",
+      "start": 76200,
+      "end": 76800,
+      "source": "native_model"
+    },
+    {
+      "kind": "phoneme",
+      "label": "ː",
+      "start": 76800,
+      "end": 78600,
+      "source": "native_model"
+    },
+    {
+      "kind": "phoneme",
+      "label": "p",
+      "start": 78600,
+      "end": 79800,
+      "source": "native_model"
+    },
+    {
+      "kind": "phoneme",
+      "label": " ",
+      "start": 79800,
+      "end": 81600,
+      "source": "native_model"
+    },
+    {
+      "kind": "phoneme",
+      "label": "b",
+      "start": 81600,
+      "end": 82800,
+      "source": "native_model"
+    },
+    {
+      "kind": "phoneme",
+      "label": "ˈ",
+      "start": 82800,
+      "end": 83400,
+      "source": "native_model"
+    },
+    {
+      "kind": "phoneme",
+      "label": "ʌ",
+      "start": 83400,
+      "end": 84600,
+      "source": "native_model"
+    },
+    {
+      "kind": "phoneme",
+      "label": "n",
+      "start": 84600,
+      "end": 85800,
+      "source": "native_model"
+    },
+    {
+      "kind": "phoneme",
+      "label": "ə",
+      "start": 85800,
+      "end": 87000,
+      "source": "native_model"
+    },
+    {
+      "kind": "phoneme",
+      "label": "k",
+      "start": 87000,
+      "end": 87600,
+      "source": "native_model"
+    },
+    {
+      "kind": "phoneme",
+      "label": "ˌ",
+      "start": 87600,
+      "end": 88200,
+      "source": "native_model"
+    },
+    {
+      "kind": "phoneme",
+      "label": "ə",
+      "start": 88200,
+      "end": 89400,
+      "source": "native_model"
+    },
+    {
+      "kind": "phoneme",
+      "label": "ɾ",
+      "start": 89400,
+      "end": 90600,
+      "source": "native_model"
+    },
+    {
+      "kind": "phoneme",
+      "label": " ",
+      "start": 90600,
+      "end": 91800,
+      "source": "native_model"
+    },
+    {
+      "kind": "phoneme",
+      "label": "n",
+      "start": 91800,
+      "end": 92400,
+      "source": "native_model"
+    },
+    {
+      "kind": "phoneme",
+      "label": "ˈ",
+      "start": 92400,
+      "end": 93000,
+      "source": "native_model"
+    },
+    {
+      "kind": "phoneme",
+      "label": "ɪ",
+      "start": 93000,
+      "end": 94200,
+      "source": "native_model"
+    },
+    {
+      "kind": "phoneme",
+      "label": "k",
+      "start": 94200,
+      "end": 95400,
+      "source": "native_model"
+    },
+    {
+      "kind": "phoneme",
+      "label": "ə",
+      "start": 95400,
+      "end": 96600,
+      "source": "native_model"
+    },
+    {
+      "kind": "phoneme",
+      "label": "l",
+      "start": 96600,
+      "end": 98400,
+      "source": "native_model"
+    },
+    {
+      "kind": "phoneme",
+      "label": "t",
+      "start": 98400,
+      "end": 100200,
+      "source": "native_model"
+    },
+    {
+      "kind": "phoneme",
+      "label": "a",
+      "start": 100200,
+      "end": 101400,
+      "source": "native_model"
+    },
+    {
+      "kind": "phoneme",
+      "label": "ː",
+      "start": 101400,
+      "end": 102000,
+      "source": "native_model"
+    },
+    {
+      "kind": "phoneme",
+      "label": " ",
+      "start": 102000,
+      "end": 103200,
+      "source": "native_model"
+    },
+    {
+      "kind": "phoneme",
+      "label": "h",
+      "start": 103200,
+      "end": 104400,
+      "source": "native_model"
+    },
+    {
+      "kind": "phoneme",
+      "label": "ɛ",
+      "start": 104400,
+      "end": 106200,
+      "source": "native_model"
+    },
+    {
+      "kind": "phoneme",
+      "label": "ː",
+      "start": 106200,
+      "end": 111000,
+      "source": "native_model"
+    },
+    {
+      "kind": "phoneme",
+      "label": ",",
+      "start": 111000,
+      "end": 112200,
+      "source": "native_model"
+    },
+    {
+      "kind": "phoneme",
+      "label": " ",
+      "start": 112200,
+      "end": 113400,
+      "source": "native_model"
+    },
+    {
+      "kind": "phoneme",
+      "label": "t",
+      "start": 113400,
+      "end": 114000,
+      "source": "native_model"
+    },
+    {
+      "kind": "phoneme",
+      "label": "ˈ",
+      "start": 114000,
+      "end": 114600,
+      "source": "native_model"
+    },
+    {
+      "kind": "phoneme",
+      "label": "o",
+      "start": 114600,
+      "end": 115200,
+      "source": "native_model"
+    },
+    {
+      "kind": "phoneme",
+      "label": "ː",
+      "start": 115200,
+      "end": 116400,
+      "source": "native_model"
+    },
+    {
+      "kind": "phoneme",
+      "label": " ",
+      "start": 116400,
+      "end": 118200,
+      "source": "native_model"
+    },
+    {
+      "kind": "phoneme",
+      "label": "ˌ",
+      "start": 118200,
+      "end": 120000,
+      "source": "native_model"
+    },
+    {
+      "kind": "phoneme",
+      "label": "a",
+      "start": 120000,
+      "end": 120600,
+      "source": "native_model"
+    },
+    {
+      "kind": "phoneme",
+      "label": "ː",
+      "start": 120600,
+      "end": 122400,
+      "source": "native_model"
+    },
+    {
+      "kind": "phoneme",
+      "label": "s",
+      "start": 122400,
+      "end": 124800,
+      "source": "native_model"
+    },
+    {
+      "kind": "phoneme",
+      "label": "p",
+      "start": 124800,
+      "end": 126000,
+      "source": "native_model"
+    },
+    {
+      "kind": "phoneme",
+      "label": "ˈ",
+      "start": 126000,
+      "end": 127800,
+      "source": "native_model"
+    },
+    {
+      "kind": "phoneme",
+      "label": "a",
+      "start": 127800,
+      "end": 128400,
+      "source": "native_model"
+    },
+    {
+      "kind": "phoneme",
+      "label": "ː",
+      "start": 128400,
+      "end": 130200,
+      "source": "native_model"
+    },
+    {
+      "kind": "phoneme",
+      "label": "s",
+      "start": 130200,
+      "end": 132000,
+      "source": "native_model"
+    },
+    {
+      "kind": "phoneme",
+      "label": " ",
+      "start": 132000,
+      "end": 133200,
+      "source": "native_model"
+    },
+    {
+      "kind": "phoneme",
+      "label": "k",
+      "start": 133200,
+      "end": 134400,
+      "source": "native_model"
+    },
+    {
+      "kind": "phoneme",
+      "label": "i",
+      "start": 134400,
+      "end": 135600,
+      "source": "native_model"
+    },
+    {
+      "kind": "phoneme",
+      "label": " ",
+      "start": 135600,
+      "end": 136800,
+      "source": "native_model"
+    },
+    {
+      "kind": "phoneme",
+      "label": "h",
+      "start": 136800,
+      "end": 137400,
+      "source": "native_model"
+    },
+    {
+      "kind": "phoneme",
+      "label": "ˈ",
+      "start": 137400,
+      "end": 138000,
+      "source": "native_model"
+    },
+    {
+      "kind": "phoneme",
+      "label": "ʌ",
+      "start": 138000,
+      "end": 139200,
+      "source": "native_model"
+    },
+    {
+      "kind": "phoneme",
+      "label": "ʋ",
+      "start": 139200,
+      "end": 141000,
+      "source": "native_model"
+    },
+    {
+      "kind": "phoneme",
+      "label": "a",
+      "start": 141000,
+      "end": 142200,
+      "source": "native_model"
+    },
+    {
+      "kind": "phoneme",
+      "label": "ː",
+      "start": 142200,
+      "end": 143400,
+      "source": "native_model"
+    },
+    {
+      "kind": "phoneme",
+      "label": " ",
+      "start": 143400,
+      "end": 145200,
+      "source": "native_model"
+    },
+    {
+      "kind": "phoneme",
+      "label": "ʈ",
+      "start": 145200,
+      "end": 146400,
+      "source": "native_model"
+    },
+    {
+      "kind": "phoneme",
+      "label": "ʰ",
+      "start": 146400,
+      "end": 147000,
+      "source": "native_model"
+    },
+    {
+      "kind": "phoneme",
+      "label": "ˈ",
+      "start": 147000,
+      "end": 147600,
+      "source": "native_model"
+    },
+    {
+      "kind": "phoneme",
+      "label": "ʌ",
+      "start": 147600,
+      "end": 148800,
+      "source": "native_model"
+    },
+    {
+      "kind": "phoneme",
+      "label": "ɳ",
+      "start": 148800,
+      "end": 150600,
+      "source": "native_model"
+    },
+    {
+      "kind": "phoneme",
+      "label": "ɖ",
+      "start": 150600,
+      "end": 151800,
+      "source": "native_model"
+    },
+    {
+      "kind": "phoneme",
+      "label": "i",
+      "start": 151800,
+      "end": 153000,
+      "source": "native_model"
+    },
+    {
+      "kind": "phoneme",
+      "label": " ",
+      "start": 153000,
+      "end": 154200,
+      "source": "native_model"
+    },
+    {
+      "kind": "phoneme",
+      "label": "h",
+      "start": 154200,
+      "end": 154800,
+      "source": "native_model"
+    },
+    {
+      "kind": "phoneme",
+      "label": "ˈ",
+      "start": 154800,
+      "end": 156000,
+      "source": "native_model"
+    },
+    {
+      "kind": "phoneme",
+      "label": "o",
+      "start": 156000,
+      "end": 156600,
+      "source": "native_model"
+    },
+    {
+      "kind": "phoneme",
+      "label": "ː",
+      "start": 156600,
+      "end": 157800,
+      "source": "native_model"
+    },
+    {
+      "kind": "phoneme",
+      "label": "n",
+      "start": 157800,
+      "end": 159000,
+      "source": "native_model"
+    },
+    {
+      "kind": "phoneme",
+      "label": "e",
+      "start": 159000,
+      "end": 159600,
+      "source": "native_model"
+    },
+    {
+      "kind": "phoneme",
+      "label": "ː",
+      "start": 159600,
+      "end": 160200,
+      "source": "native_model"
+    },
+    {
+      "kind": "phoneme",
+      "label": " ",
+      "start": 160200,
+      "end": 161400,
+      "source": "native_model"
+    },
+    {
+      "kind": "phoneme",
+      "label": "m",
+      "start": 161400,
+      "end": 162600,
+      "source": "native_model"
+    },
+    {
+      "kind": "phoneme",
+      "label": "e",
+      "start": 162600,
+      "end": 163200,
+      "source": "native_model"
+    },
+    {
+      "kind": "phoneme",
+      "label": "̃",
+      "start": 163200,
+      "end": 163800,
+      "source": "native_model"
+    },
+    {
+      "kind": "phoneme",
+      "label": "ː",
+      "start": 163800,
+      "end": 164400,
+      "source": "native_model"
+    },
+    {
+      "kind": "phoneme",
+      "label": " ",
+      "start": 164400,
+      "end": 165600,
+      "source": "native_model"
+    },
+    {
+      "kind": "phoneme",
+      "label": "b",
+      "start": 165600,
+      "end": 166800,
+      "source": "native_model"
+    },
+    {
+      "kind": "phoneme",
+      "label": "ʰ",
+      "start": 166800,
+      "end": 167400,
+      "source": "native_model"
+    },
+    {
+      "kind": "phoneme",
+      "label": "ˈ",
+      "start": 167400,
+      "end": 168600,
+      "source": "native_model"
+    },
+    {
+      "kind": "phoneme",
+      "label": "i",
+      "start": 168600,
+      "end": 173400,
+      "source": "native_model"
+    },
+    {
+      "kind": "phoneme",
+      "label": " ",
+      "start": 173400,
+      "end": 176400,
+      "source": "native_model"
+    },
+    {
+      "kind": "phoneme",
+      "label": "m",
+      "start": 176400,
+      "end": 177000,
+      "source": "native_model"
+    },
+    {
+      "kind": "phoneme",
+      "label": "ˈ",
+      "start": 177000,
+      "end": 177600,
+      "source": "native_model"
+    },
+    {
+      "kind": "phoneme",
+      "label": "ʌ",
+      "start": 177600,
+      "end": 178800,
+      "source": "native_model"
+    },
+    {
+      "kind": "phoneme",
+      "label": "d",
+      "start": 178800,
+      "end": 180000,
+      "source": "native_model"
+    },
+    {
+      "kind": "phoneme",
+      "label": "ə",
+      "start": 180000,
+      "end": 181800,
+      "source": "native_model"
+    },
+    {
+      "kind": "phoneme",
+      "label": "d",
+      "start": 181800,
+      "end": 183000,
+      "source": "native_model"
+    },
+    {
+      "kind": "phoneme",
+      "label": " ",
+      "start": 183000,
+      "end": 184200,
+      "source": "native_model"
+    },
+    {
+      "kind": "phoneme",
+      "label": "m",
+      "start": 184200,
+      "end": 184800,
+      "source": "native_model"
+    },
+    {
+      "kind": "phoneme",
+      "label": "ˈ",
+      "start": 184800,
+      "end": 185400,
+      "source": "native_model"
+    },
+    {
+      "kind": "phoneme",
+      "label": "ɪ",
+      "start": 185400,
+      "end": 186600,
+      "source": "native_model"
+    },
+    {
+      "kind": "phoneme",
+      "label": "l",
+      "start": 186600,
+      "end": 187800,
+      "source": "native_model"
+    },
+    {
+      "kind": "phoneme",
+      "label": " ",
+      "start": 187800,
+      "end": 189000,
+      "source": "native_model"
+    },
+    {
+      "kind": "phoneme",
+      "label": "s",
+      "start": 189000,
+      "end": 190200,
+      "source": "native_model"
+    },
+    {
+      "kind": "phoneme",
+      "label": "ˈ",
+      "start": 190200,
+      "end": 190800,
+      "source": "native_model"
+    },
+    {
+      "kind": "phoneme",
+      "label": "ʌ",
+      "start": 190800,
+      "end": 192000,
+      "source": "native_model"
+    },
+    {
+      "kind": "phoneme",
+      "label": "k",
+      "start": 192000,
+      "end": 193800,
+      "source": "native_model"
+    },
+    {
+      "kind": "phoneme",
+      "label": "t",
+      "start": 193800,
+      "end": 195000,
+      "source": "native_model"
+    },
+    {
+      "kind": "phoneme",
+      "label": "ˌ",
+      "start": 195000,
+      "end": 196200,
+      "source": "native_model"
+    },
+    {
+      "kind": "phoneme",
+      "label": "i",
+      "start": 196200,
+      "end": 197400,
+      "source": "native_model"
+    },
+    {
+      "kind": "phoneme",
+      "label": " ",
+      "start": 197400,
+      "end": 198600,
+      "source": "native_model"
+    },
+    {
+      "kind": "phoneme",
+      "label": "h",
+      "start": 198600,
+      "end": 200400,
+      "source": "native_model"
+    },
+    {
+      "kind": "phoneme",
+      "label": "ɛ",
+      "start": 200400,
+      "end": 205800,
+      "source": "native_model"
+    },
+    {
+      "kind": "phoneme",
+      "label": "ː",
+      "start": 205800,
+      "end": 213600,
+      "source": "native_model"
+    },
+    {
+      "kind": "pause",
+      "label": "low energy",
+      "start": 0,
+      "end": 13099,
+      "source": "audio_boundary"
+    },
+    {
+      "kind": "pause",
+      "label": "low energy",
+      "start": 40303,
+      "end": 45841,
+      "source": "audio_boundary"
+    },
+    {
+      "kind": "pause",
+      "label": "low energy",
+      "start": 105656,
+      "end": 113035,
+      "source": "audio_boundary"
+    },
+    {
+      "kind": "pause",
+      "label": "low energy",
+      "start": 169387,
+      "end": 174558,
+      "source": "audio_boundary"
+    },
+    {
+      "kind": "pause",
+      "label": "low energy",
+      "start": 201688,
+      "end": 214200,
+      "source": "audio_boundary"
+    },
+    {
+      "kind": "word",
+      "label": "पेड़",
+      "start": null,
+      "end": null,
+      "source": null,
+      "text_ref": {
+        "field": "speech",
+        "start": 0,
+        "end": 4
+      }
+    },
+    {
+      "kind": "word",
+      "label": "धूप",
+      "start": null,
+      "end": null,
+      "source": null,
+      "text_ref": {
+        "field": "speech",
+        "start": 5,
+        "end": 8
+      }
+    },
+    {
+      "kind": "word",
+      "label": "रोकते",
+      "start": null,
+      "end": null,
+      "source": null,
+      "text_ref": {
+        "field": "speech",
+        "start": 9,
+        "end": 14
+      }
+    },
+    {
+      "kind": "word",
+      "label": "हैं।",
+      "start": null,
+      "end": null,
+      "source": null,
+      "text_ref": {
+        "field": "speech",
+        "start": 15,
+        "end": 19
+      }
+    },
+    {
+      "kind": "word",
+      "label": "पत्तियों",
+      "start": null,
+      "end": null,
+      "source": null,
+      "text_ref": {
+        "field": "speech",
+        "start": 20,
+        "end": 28
+      }
+    },
+    {
+      "kind": "word",
+      "label": "से",
+      "start": null,
+      "end": null,
+      "source": null,
+      "text_ref": {
+        "field": "speech",
+        "start": 29,
+        "end": 31
+      }
+    },
+    {
+      "kind": "word",
+      "label": "पानी",
+      "start": null,
+      "end": null,
+      "source": null,
+      "text_ref": {
+        "field": "speech",
+        "start": 32,
+        "end": 36
+      }
+    },
+    {
+      "kind": "word",
+      "label": "भाप",
+      "start": null,
+      "end": null,
+      "source": null,
+      "text_ref": {
+        "field": "speech",
+        "start": 37,
+        "end": 40
+      }
+    },
+    {
+      "kind": "word",
+      "label": "बनकर",
+      "start": null,
+      "end": null,
+      "source": null,
+      "text_ref": {
+        "field": "speech",
+        "start": 41,
+        "end": 45
+      }
+    },
+    {
+      "kind": "word",
+      "label": "निकलता",
+      "start": null,
+      "end": null,
+      "source": null,
+      "text_ref": {
+        "field": "speech",
+        "start": 46,
+        "end": 52
+      }
+    },
+    {
+      "kind": "word",
+      "label": "है,",
+      "start": null,
+      "end": null,
+      "source": null,
+      "text_ref": {
+        "field": "speech",
+        "start": 53,
+        "end": 56
+      }
+    },
+    {
+      "kind": "word",
+      "label": "तो",
+      "start": null,
+      "end": null,
+      "source": null,
+      "text_ref": {
+        "field": "speech",
+        "start": 57,
+        "end": 59
+      }
+    },
+    {
+      "kind": "word",
+      "label": "आसपास",
+      "start": null,
+      "end": null,
+      "source": null,
+      "text_ref": {
+        "field": "speech",
+        "start": 60,
+        "end": 65
+      }
+    },
+    {
+      "kind": "word",
+      "label": "की",
+      "start": null,
+      "end": null,
+      "source": null,
+      "text_ref": {
+        "field": "speech",
+        "start": 66,
+        "end": 68
+      }
+    },
+    {
+      "kind": "word",
+      "label": "हवा",
+      "start": null,
+      "end": null,
+      "source": null,
+      "text_ref": {
+        "field": "speech",
+        "start": 69,
+        "end": 72
+      }
+    },
+    {
+      "kind": "word",
+      "label": "ठंडी",
+      "start": null,
+      "end": null,
+      "source": null,
+      "text_ref": {
+        "field": "speech",
+        "start": 73,
+        "end": 77
+      }
+    },
+    {
+      "kind": "word",
+      "label": "होने",
+      "start": null,
+      "end": null,
+      "source": null,
+      "text_ref": {
+        "field": "speech",
+        "start": 78,
+        "end": 82
+      }
+    },
+    {
+      "kind": "word",
+      "label": "में",
+      "start": null,
+      "end": null,
+      "source": null,
+      "text_ref": {
+        "field": "speech",
+        "start": 83,
+        "end": 86
+      }
+    },
+    {
+      "kind": "word",
+      "label": "भी",
+      "start": null,
+      "end": null,
+      "source": null,
+      "text_ref": {
+        "field": "speech",
+        "start": 87,
+        "end": 89
+      }
+    },
+    {
+      "kind": "word",
+      "label": "मदद",
+      "start": null,
+      "end": null,
+      "source": null,
+      "text_ref": {
+        "field": "speech",
+        "start": 90,
+        "end": 93
+      }
+    },
+    {
+      "kind": "word",
+      "label": "मिल",
+      "start": null,
+      "end": null,
+      "source": null,
+      "text_ref": {
+        "field": "speech",
+        "start": 94,
+        "end": 97
+      }
+    },
+    {
+      "kind": "word",
+      "label": "सकती",
+      "start": null,
+      "end": null,
+      "source": null,
+      "text_ref": {
+        "field": "speech",
+        "start": 98,
+        "end": 102
+      }
+    },
+    {
+      "kind": "word",
+      "label": "है।",
+      "start": null,
+      "end": null,
+      "source": null,
+      "text_ref": {
+        "field": "speech",
+        "start": 103,
+        "end": 106
+      }
+    }
+  ]
+}

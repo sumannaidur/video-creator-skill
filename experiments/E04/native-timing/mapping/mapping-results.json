@@ -1,0 +1,22 @@
+[
+  {
+    "passage": "A",
+    "word_total": 20,
+    "word_mapped": 20,
+    "phrase_total": 2,
+    "phrase_mapped": 2,
+    "repeated_group_spans": 2,
+    "prefix_exact": 19,
+    "accuracy": "pending human annotations"
+  },
+  {
+    "passage": "B",
+    "word_total": 23,
+    "word_mapped": 23,
+    "phrase_total": 3,
+    "phrase_mapped": 3,
+    "repeated_group_spans": 0,
+    "prefix_exact": 22,
+    "accuracy": "pending human annotations"
+  }
+]

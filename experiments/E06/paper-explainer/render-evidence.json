@@ -1,0 +1,1369 @@
+{
+  "browser": "Chrome/157.0.8103.79",
+  "profile": "temporary isolated profile",
+  "layouts": [
+    {
+      "name": "vertical",
+      "scene": "hook",
+      "viewport": [
+        1080,
+        1920
+      ],
+      "document": [
+        1080,
+        1920
+      ],
+      "safeArea": {
+        "x": 84,
+        "y": 104,
+        "width": 912,
+        "height": 1712,
+        "top": 104,
+        "right": 996,
+        "bottom": 1816,
+        "left": 84
+      },
+      "safeFailures": [],
+      "missingAssets": 0,
+      "blocks": [
+        {
+          "text": "Paper Explainer",
+          "lang": "",
+          "className": "brand",
+          "lines": 1,
+          "splitGraphemes": 0,
+          "overflow": false,
+          "outsideViewport": false,
+          "fonts": [
+            {
+              "familyName": "Segoe UI",
+              "postScriptName": "SegoeUI-Bold",
+              "isCustomFont": false,
+              "glyphCount": 15
+            }
+          ]
+        },
+        {
+          "text": "Hook",
+          "lang": "",
+          "className": "micro",
+          "lines": 1,
+          "splitGraphemes": 0,
+          "overflow": false,
+          "outsideViewport": false,
+          "fonts": [
+            {
+              "familyName": "Segoe UI",
+              "postScriptName": "SegoeUI-Bold",
+              "isCustomFont": false,
+              "glyphCount": 4
+            }
+          ]
+        },
+        {
+          "text": "Airfare, unpacked",
+          "lang": "",
+          "className": "section",
+          "lines": 1,
+          "splitGraphemes": 0,
+          "overflow": false,
+          "outsideViewport": false,
+          "fonts": [
+            {
+              "familyName": "Segoe UI",
+              "postScriptName": "SegoeUI-Bold",
+              "isCustomFont": false,
+              "glyphCount": 17
+            }
+          ]
+        },
+        {
+          "text": "Why are flights so expensive?",
+          "lang": "",
+          "className": "",
+          "lines": 2,
+          "splitGraphemes": 0,
+          "overflow": false,
+          "outsideViewport": false,
+          "fonts": [
+            {
+              "familyName": "Georgia",
+              "postScriptName": "Georgia-Bold",
+              "isCustomFont": false,
+              "glyphCount": 28
+            }
+          ]
+        },
+        {
+          "text": "One ticket carries more than the cost of your seat.",
+          "lang": "",
+          "className": "lede",
+          "lines": 2,
+          "splitGraphemes": 0,
+          "overflow": false,
+          "outsideViewport": false,
+          "fonts": [
+            {
+              "familyName": "Segoe UI",
+              "postScriptName": "SegoeUI",
+              "isCustomFont": false,
+              "glyphCount": 50
+            }
+          ]
+        },
+        {
+          "text": "Why does a plane ticket cost so much?हवाई टिकट इतना महँगा क्यों होता है?",
+          "lang": "",
+          "className": "caption",
+          "lines": 2,
+          "splitGraphemes": 0,
+          "overflow": false,
+          "outsideViewport": false,
+          "fonts": [
+            {
+              "familyName": "Segoe UI",
+              "postScriptName": "SegoeUI",
+              "isCustomFont": false,
+              "glyphCount": 37
+            },
+            {
+              "familyName": "Nirmala UI",
+              "postScriptName": "NirmalaUI",
+              "isCustomFont": false,
+              "glyphCount": 33
+            }
+          ]
+        }
+      ],
+      "png": [
+        1080,
+        1920
+      ]
+    },
+    {
+      "name": "horizontal",
+      "scene": "hook",
+      "viewport": [
+        1920,
+        1080
+      ],
+      "document": [
+        1920,
+        1080
+      ],
+      "safeArea": {
+        "x": 92,
+        "y": 62,
+        "width": 1736,
+        "height": 956,
+        "top": 62,
+        "right": 1828,
+        "bottom": 1018,
+        "left": 92
+      },
+      "safeFailures": [],
+      "missingAssets": 0,
+      "blocks": [
+        {
+          "text": "Paper Explainer",
+          "lang": "",
+          "className": "brand",
+          "lines": 1,
+          "splitGraphemes": 0,
+          "overflow": false,
+          "outsideViewport": false,
+          "fonts": [
+            {
+              "familyName": "Segoe UI",
+              "postScriptName": "SegoeUI-Bold",
+              "isCustomFont": false,
+              "glyphCount": 15
+            }
+          ]
+        },
+        {
+          "text": "Hook",
+          "lang": "",
+          "className": "micro",
+          "lines": 1,
+          "splitGraphemes": 0,
+          "overflow": false,
+          "outsideViewport": false,
+          "fonts": [
+            {
+              "familyName": "Segoe UI",
+              "postScriptName": "SegoeUI-Bold",
+              "isCustomFont": false,
+              "glyphCount": 4
+            }
+          ]
+        },
+        {
+          "text": "Airfare, unpacked",
+          "lang": "",
+          "className": "section",
+          "lines": 1,
+          "splitGraphemes": 0,
+          "overflow": false,
+          "outsideViewport": false,
+          "fonts": [
+            {
+              "familyName": "Segoe UI",
+              "postScriptName": "SegoeUI-Bold",
+              "isCustomFont": false,
+              "glyphCount": 17
+            }
+          ]
+        },
+        {
+          "text": "Why are flights so expensive?",
+          "lang": "",
+          "className": "",
+          "lines": 2,
+          "splitGraphemes": 0,
+          "overflow": false,
+          "outsideViewport": false,
+          "fonts": [
+            {
+              "familyName": "Georgia",
+              "postScriptName": "Georgia-Bold",
+              "isCustomFont": false,
+              "glyphCount": 28
+            }
+          ]
+        },
+        {
+          "text": "One ticket carries more than the cost of your seat.",
+          "lang": "",
+          "className": "lede",
+          "lines": 2,
+          "splitGraphemes": 0,
+          "overflow": false,
+          "outsideViewport": false,
+          "fonts": [
+            {
+              "familyName": "Segoe UI",
+              "postScriptName": "SegoeUI",
+              "isCustomFont": false,
+              "glyphCount": 50
+            }
+          ]
+        },
+        {
+          "text": "Why does a plane ticket cost so much?हवाई टिकट इतना महँगा क्यों होता है?",
+          "lang": "",
+          "className": "caption",
+          "lines": 2,
+          "splitGraphemes": 0,
+          "overflow": false,
+          "outsideViewport": false,
+          "fonts": [
+            {
+              "familyName": "Segoe UI",
+              "postScriptName": "SegoeUI",
+              "isCustomFont": false,
+              "glyphCount": 37
+            },
+            {
+              "familyName": "Nirmala UI",
+              "postScriptName": "NirmalaUI",
+              "isCustomFont": false,
+              "glyphCount": 33
+            }
+          ]
+        }
+      ],
+      "png": [
+        1920,
+        1080
+      ]
+    },
+    {
+      "name": "vertical",
+      "scene": "mechanism",
+      "viewport": [
+        1080,
+        1920
+      ],
+      "document": [
+        1080,
+        1920
+      ],
+      "safeArea": {
+        "x": 84,
+        "y": 104,
+        "width": 912,
+        "height": 1712,
+        "top": 104,
+        "right": 996,
+        "bottom": 1816,
+        "left": 84
+      },
+      "safeFailures": [],
+      "missingAssets": 0,
+      "blocks": [
+        {
+          "text": "Paper Explainer",
+          "lang": "",
+          "className": "brand",
+          "lines": 1,
+          "splitGraphemes": 0,
+          "overflow": false,
+          "outsideViewport": false,
+          "fonts": [
+            {
+              "familyName": "Segoe UI",
+              "postScriptName": "SegoeUI-Bold",
+              "isCustomFont": false,
+              "glyphCount": 15
+            }
+          ]
+        },
+        {
+          "text": "Mechanism",
+          "lang": "",
+          "className": "micro",
+          "lines": 1,
+          "splitGraphemes": 0,
+          "overflow": false,
+          "outsideViewport": false,
+          "fonts": [
+            {
+              "familyName": "Segoe UI",
+              "postScriptName": "SegoeUI-Bold",
+              "isCustomFont": false,
+              "glyphCount": 9
+            }
+          ]
+        },
+        {
+          "text": "Cost mechanism",
+          "lang": "",
+          "className": "section",
+          "lines": 1,
+          "splitGraphemes": 0,
+          "overflow": false,
+          "outsideViewport": false,
+          "fonts": [
+            {
+              "familyName": "Segoe UI",
+              "postScriptName": "SegoeUI-Bold",
+              "isCustomFont": false,
+              "glyphCount": 14
+            }
+          ]
+        },
+        {
+          "text": "What it takes to fly",
+          "lang": "",
+          "className": "",
+          "lines": 1,
+          "splitGraphemes": 0,
+          "overflow": false,
+          "outsideViewport": false,
+          "fonts": [
+            {
+              "familyName": "Georgia",
+              "postScriptName": "Georgia-Bold",
+              "isCustomFont": false,
+              "glyphCount": 20
+            }
+          ]
+        },
+        {
+          "text": "A flight draws on several kinds of operating costs.",
+          "lang": "",
+          "className": "lede",
+          "lines": 1,
+          "splitGraphemes": 0,
+          "overflow": false,
+          "outsideViewport": false,
+          "fonts": [
+            {
+              "familyName": "Segoe UI",
+              "postScriptName": "SegoeUI",
+              "isCustomFont": false,
+              "glyphCount": 51
+            }
+          ]
+        },
+        {
+          "text": "Airline operating costs",
+          "lang": "",
+          "className": "hub",
+          "lines": 1,
+          "splitGraphemes": 0,
+          "overflow": false,
+          "outsideViewport": false,
+          "fonts": [
+            {
+              "familyName": "Segoe UI",
+              "postScriptName": "SegoeUI-Bold",
+              "isCustomFont": false,
+              "glyphCount": 23
+            }
+          ]
+        },
+        {
+          "text": "Fuel",
+          "lang": "",
+          "className": "",
+          "lines": 1,
+          "splitGraphemes": 0,
+          "overflow": false,
+          "outsideViewport": false,
+          "fonts": [
+            {
+              "familyName": "Georgia",
+              "postScriptName": "Georgia-Bold",
+              "isCustomFont": false,
+              "glyphCount": 4
+            }
+          ]
+        },
+        {
+          "text": "Energy to move the aircraft.",
+          "lang": "",
+          "className": "",
+          "lines": 1,
+          "splitGraphemes": 0,
+          "overflow": false,
+          "outsideViewport": false,
+          "fonts": [
+            {
+              "familyName": "Segoe UI",
+              "postScriptName": "SegoeUI",
+              "isCustomFont": false,
+              "glyphCount": 28
+            }
+          ]
+        },
+        {
+          "text": "People",
+          "lang": "",
+          "className": "",
+          "lines": 1,
+          "splitGraphemes": 0,
+          "overflow": false,
+          "outsideViewport": false,
+          "fonts": [
+            {
+              "familyName": "Georgia",
+              "postScriptName": "Georgia-Bold",
+              "isCustomFont": false,
+              "glyphCount": 6
+            }
+          ]
+        },
+        {
+          "text": "Flight crew and ground staff.",
+          "lang": "",
+          "className": "",
+          "lines": 1,
+          "splitGraphemes": 0,
+          "overflow": false,
+          "outsideViewport": false,
+          "fonts": [
+            {
+              "familyName": "Segoe UI",
+              "postScriptName": "SegoeUI",
+              "isCustomFont": false,
+              "glyphCount": 29
+            }
+          ]
+        },
+        {
+          "text": "Aircraft",
+          "lang": "",
+          "className": "",
+          "lines": 1,
+          "splitGraphemes": 0,
+          "overflow": false,
+          "outsideViewport": false,
+          "fonts": [
+            {
+              "familyName": "Georgia",
+              "postScriptName": "Georgia-Bold",
+              "isCustomFont": false,
+              "glyphCount": 8
+            }
+          ]
+        },
+        {
+          "text": "Ownership or leases, plus upkeep.",
+          "lang": "",
+          "className": "",
+          "lines": 1,
+          "splitGraphemes": 0,
+          "overflow": false,
+          "outsideViewport": false,
+          "fonts": [
+            {
+              "familyName": "Segoe UI",
+              "postScriptName": "SegoeUI",
+              "isCustomFont": false,
+              "glyphCount": 33
+            }
+          ]
+        },
+        {
+          "text": "Airports",
+          "lang": "",
+          "className": "",
+          "lines": 1,
+          "splitGraphemes": 0,
+          "overflow": false,
+          "outsideViewport": false,
+          "fonts": [
+            {
+              "familyName": "Georgia",
+              "postScriptName": "Georgia-Bold",
+              "isCustomFont": false,
+              "glyphCount": 8
+            }
+          ]
+        },
+        {
+          "text": "Landing and other airport charges.",
+          "lang": "",
+          "className": "",
+          "lines": 1,
+          "splitGraphemes": 0,
+          "overflow": false,
+          "outsideViewport": false,
+          "fonts": [
+            {
+              "familyName": "Segoe UI",
+              "postScriptName": "SegoeUI",
+              "isCustomFont": false,
+              "glyphCount": 34
+            }
+          ]
+        },
+        {
+          "text": "Category map Examples only. Card size does not represent a share.",
+          "lang": "",
+          "className": "note",
+          "lines": 1,
+          "splitGraphemes": 0,
+          "overflow": false,
+          "outsideViewport": false,
+          "fonts": [
+            {
+              "familyName": "Segoe UI",
+              "postScriptName": "SegoeUI",
+              "isCustomFont": false,
+              "glyphCount": 53
+            },
+            {
+              "familyName": "Segoe UI",
+              "postScriptName": "SegoeUI-Bold",
+              "isCustomFont": false,
+              "glyphCount": 12
+            }
+          ]
+        },
+        {
+          "text": "Airlines pay for fuel, people, aircraft and airports.",
+          "lang": "",
+          "className": "caption",
+          "lines": 1,
+          "splitGraphemes": 0,
+          "overflow": false,
+          "outsideViewport": false,
+          "fonts": [
+            {
+              "familyName": "Segoe UI",
+              "postScriptName": "SegoeUI",
+              "isCustomFont": false,
+              "glyphCount": 53
+            }
+          ]
+        }
+      ],
+      "png": [
+        1080,
+        1920
+      ]
+    },
+    {
+      "name": "horizontal",
+      "scene": "mechanism",
+      "viewport": [
+        1920,
+        1080
+      ],
+      "document": [
+        1920,
+        1080
+      ],
+      "safeArea": {
+        "x": 92,
+        "y": 62,
+        "width": 1736,
+        "height": 956,
+        "top": 62,
+        "right": 1828,
+        "bottom": 1018,
+        "left": 92
+      },
+      "safeFailures": [],
+      "missingAssets": 0,
+      "blocks": [
+        {
+          "text": "Paper Explainer",
+          "lang": "",
+          "className": "brand",
+          "lines": 1,
+          "splitGraphemes": 0,
+          "overflow": false,
+          "outsideViewport": false,
+          "fonts": [
+            {
+              "familyName": "Segoe UI",
+              "postScriptName": "SegoeUI-Bold",
+              "isCustomFont": false,
+              "glyphCount": 15
+            }
+          ]
+        },
+        {
+          "text": "Mechanism",
+          "lang": "",
+          "className": "micro",
+          "lines": 1,
+          "splitGraphemes": 0,
+          "overflow": false,
+          "outsideViewport": false,
+          "fonts": [
+            {
+              "familyName": "Segoe UI",
+              "postScriptName": "SegoeUI-Bold",
+              "isCustomFont": false,
+              "glyphCount": 9
+            }
+          ]
+        },
+        {
+          "text": "Cost mechanism",
+          "lang": "",
+          "className": "section",
+          "lines": 1,
+          "splitGraphemes": 0,
+          "overflow": false,
+          "outsideViewport": false,
+          "fonts": [
+            {
+              "familyName": "Segoe UI",
+              "postScriptName": "SegoeUI-Bold",
+              "isCustomFont": false,
+              "glyphCount": 14
+            }
+          ]
+        },
+        {
+          "text": "What it takes to fly",
+          "lang": "",
+          "className": "",
+          "lines": 1,
+          "splitGraphemes": 0,
+          "overflow": false,
+          "outsideViewport": false,
+          "fonts": [
+            {
+              "familyName": "Georgia",
+              "postScriptName": "Georgia-Bold",
+              "isCustomFont": false,
+              "glyphCount": 20
+            }
+          ]
+        },
+        {
+          "text": "A flight draws on several kinds of operating costs.",
+          "lang": "",
+          "className": "lede",
+          "lines": 1,
+          "splitGraphemes": 0,
+          "overflow": false,
+          "outsideViewport": false,
+          "fonts": [
+            {
+              "familyName": "Segoe UI",
+              "postScriptName": "SegoeUI",
+              "isCustomFont": false,
+              "glyphCount": 51
+            }
+          ]
+        },
+        {
+          "text": "Airline operating costs",
+          "lang": "",
+          "className": "hub",
+          "lines": 1,
+          "splitGraphemes": 0,
+          "overflow": false,
+          "outsideViewport": false,
+          "fonts": [
+            {
+              "familyName": "Segoe UI",
+              "postScriptName": "SegoeUI-Bold",
+              "isCustomFont": false,
+              "glyphCount": 23
+            }
+          ]
+        },
+        {
+          "text": "Fuel",
+          "lang": "",
+          "className": "",
+          "lines": 1,
+          "splitGraphemes": 0,
+          "overflow": false,
+          "outsideViewport": false,
+          "fonts": [
+            {
+              "familyName": "Georgia",
+              "postScriptName": "Georgia-Bold",
+              "isCustomFont": false,
+              "glyphCount": 4
+            }
+          ]
+        },
+        {
+          "text": "Energy to move the aircraft.",
+          "lang": "",
+          "className": "",
+          "lines": 1,
+          "splitGraphemes": 0,
+          "overflow": false,
+          "outsideViewport": false,
+          "fonts": [
+            {
+              "familyName": "Segoe UI",
+              "postScriptName": "SegoeUI",
+              "isCustomFont": false,
+              "glyphCount": 28
+            }
+          ]
+        },
+        {
+          "text": "People",
+          "lang": "",
+          "className": "",
+          "lines": 1,
+          "splitGraphemes": 0,
+          "overflow": false,
+          "outsideViewport": false,
+          "fonts": [
+            {
+              "familyName": "Georgia",
+              "postScriptName": "Georgia-Bold",
+              "isCustomFont": false,
+              "glyphCount": 6
+            }
+          ]
+        },
+        {
+          "text": "Flight crew and ground staff.",
+          "lang": "",
+          "className": "",
+          "lines": 1,
+          "splitGraphemes": 0,
+          "overflow": false,
+          "outsideViewport": false,
+          "fonts": [
+            {
+              "familyName": "Segoe UI",
+              "postScriptName": "SegoeUI",
+              "isCustomFont": false,
+              "glyphCount": 29
+            }
+          ]
+        },
+        {
+          "text": "Aircraft",
+          "lang": "",
+          "className": "",
+          "lines": 1,
+          "splitGraphemes": 0,
+          "overflow": false,
+          "outsideViewport": false,
+          "fonts": [
+            {
+              "familyName": "Georgia",
+              "postScriptName": "Georgia-Bold",
+              "isCustomFont": false,
+              "glyphCount": 8
+            }
+          ]
+        },
+        {
+          "text": "Ownership or leases, plus upkeep.",
+          "lang": "",
+          "className": "",
+          "lines": 1,
+          "splitGraphemes": 0,
+          "overflow": false,
+          "outsideViewport": false,
+          "fonts": [
+            {
+              "familyName": "Segoe UI",
+              "postScriptName": "SegoeUI",
+              "isCustomFont": false,
+              "glyphCount": 33
+            }
+          ]
+        },
+        {
+          "text": "Airports",
+          "lang": "",
+          "className": "",
+          "lines": 1,
+          "splitGraphemes": 0,
+          "overflow": false,
+          "outsideViewport": false,
+          "fonts": [
+            {
+              "familyName": "Georgia",
+              "postScriptName": "Georgia-Bold",
+              "isCustomFont": false,
+              "glyphCount": 8
+            }
+          ]
+        },
+        {
+          "text": "Landing and other airport charges.",
+          "lang": "",
+          "className": "",
+          "lines": 1,
+          "splitGraphemes": 0,
+          "overflow": false,
+          "outsideViewport": false,
+          "fonts": [
+            {
+              "familyName": "Segoe UI",
+              "postScriptName": "SegoeUI",
+              "isCustomFont": false,
+              "glyphCount": 34
+            }
+          ]
+        },
+        {
+          "text": "Category map Examples only. Card size does not represent a share.",
+          "lang": "",
+          "className": "note",
+          "lines": 1,
+          "splitGraphemes": 0,
+          "overflow": false,
+          "outsideViewport": false,
+          "fonts": [
+            {
+              "familyName": "Segoe UI",
+              "postScriptName": "SegoeUI",
+              "isCustomFont": false,
+              "glyphCount": 53
+            },
+            {
+              "familyName": "Segoe UI",
+              "postScriptName": "SegoeUI-Bold",
+              "isCustomFont": false,
+              "glyphCount": 12
+            }
+          ]
+        },
+        {
+          "text": "Airlines pay for fuel, people, aircraft and airports.",
+          "lang": "",
+          "className": "caption",
+          "lines": 1,
+          "splitGraphemes": 0,
+          "overflow": false,
+          "outsideViewport": false,
+          "fonts": [
+            {
+              "familyName": "Segoe UI",
+              "postScriptName": "SegoeUI",
+              "isCustomFont": false,
+              "glyphCount": 53
+            }
+          ]
+        }
+      ],
+      "png": [
+        1920,
+        1080
+      ]
+    },
+    {
+      "name": "vertical",
+      "scene": "closing",
+      "viewport": [
+        1080,
+        1920
+      ],
+      "document": [
+        1080,
+        1920
+      ],
+      "safeArea": {
+        "x": 84,
+        "y": 104,
+        "width": 912,
+        "height": 1712,
+        "top": 104,
+        "right": 996,
+        "bottom": 1816,
+        "left": 84
+      },
+      "safeFailures": [],
+      "missingAssets": 0,
+      "blocks": [
+        {
+          "text": "Paper Explainer",
+          "lang": "",
+          "className": "brand",
+          "lines": 1,
+          "splitGraphemes": 0,
+          "overflow": false,
+          "outsideViewport": false,
+          "fonts": [
+            {
+              "familyName": "Segoe UI",
+              "postScriptName": "SegoeUI-Bold",
+              "isCustomFont": false,
+              "glyphCount": 15
+            }
+          ]
+        },
+        {
+          "text": "Takeaway",
+          "lang": "",
+          "className": "micro",
+          "lines": 1,
+          "splitGraphemes": 0,
+          "overflow": false,
+          "outsideViewport": false,
+          "fonts": [
+            {
+              "familyName": "Segoe UI",
+              "postScriptName": "SegoeUI-Bold",
+              "isCustomFont": false,
+              "glyphCount": 8
+            }
+          ]
+        },
+        {
+          "text": "The takeaway",
+          "lang": "",
+          "className": "section",
+          "lines": 1,
+          "splitGraphemes": 0,
+          "overflow": false,
+          "outsideViewport": false,
+          "fonts": [
+            {
+              "familyName": "Segoe UI",
+              "postScriptName": "SegoeUI-Bold",
+              "isCustomFont": false,
+              "glyphCount": 12
+            }
+          ]
+        },
+        {
+          "text": "Same route.Different fare.",
+          "lang": "",
+          "className": "",
+          "lines": 2,
+          "splitGraphemes": 0,
+          "overflow": false,
+          "outsideViewport": false,
+          "fonts": [
+            {
+              "familyName": "Georgia",
+              "postScriptName": "Georgia-Bold",
+              "isCustomFont": false,
+              "glyphCount": 26
+            }
+          ]
+        },
+        {
+          "text": "Operating costs matter. So does demand for the seats on your flight.",
+          "lang": "",
+          "className": "lede",
+          "lines": 2,
+          "splitGraphemes": 0,
+          "overflow": false,
+          "outsideViewport": false,
+          "fonts": [
+            {
+              "familyName": "Segoe UI",
+              "postScriptName": "SegoeUI",
+              "isCustomFont": false,
+              "glyphCount": 67
+            }
+          ]
+        },
+        {
+          "text": "Cost to fly",
+          "lang": "",
+          "className": "",
+          "lines": 1,
+          "splitGraphemes": 0,
+          "overflow": false,
+          "outsideViewport": false,
+          "fonts": [
+            {
+              "familyName": "Georgia",
+              "postScriptName": "Georgia-Bold",
+              "isCustomFont": false,
+              "glyphCount": 11
+            }
+          ]
+        },
+        {
+          "text": "What it takes to operate the flight.",
+          "lang": "",
+          "className": "",
+          "lines": 2,
+          "splitGraphemes": 0,
+          "overflow": false,
+          "outsideViewport": false,
+          "fonts": [
+            {
+              "familyName": "Segoe UI",
+              "postScriptName": "SegoeUI",
+              "isCustomFont": false,
+              "glyphCount": 35
+            }
+          ]
+        },
+        {
+          "text": "Seat demand",
+          "lang": "",
+          "className": "",
+          "lines": 1,
+          "splitGraphemes": 0,
+          "overflow": false,
+          "outsideViewport": false,
+          "fonts": [
+            {
+              "familyName": "Georgia",
+              "postScriptName": "Georgia-Bold",
+              "isCustomFont": false,
+              "glyphCount": 11
+            }
+          ]
+        },
+        {
+          "text": "How many people want to travel then.",
+          "lang": "",
+          "className": "",
+          "lines": 2,
+          "splitGraphemes": 0,
+          "overflow": false,
+          "outsideViewport": false,
+          "fonts": [
+            {
+              "familyName": "Segoe UI",
+              "postScriptName": "SegoeUI",
+              "isCustomFont": false,
+              "glyphCount": 35
+            }
+          ]
+        },
+        {
+          "text": "Compare nearby dates if you can.",
+          "lang": "",
+          "className": "action",
+          "lines": 1,
+          "splitGraphemes": 0,
+          "overflow": false,
+          "outsideViewport": false,
+          "fonts": [
+            {
+              "familyName": "Segoe UI",
+              "postScriptName": "SegoeUI-Bold",
+              "isCustomFont": false,
+              "glyphCount": 32
+            }
+          ]
+        },
+        {
+          "text": "For the same route, compare fares on nearby dates.",
+          "lang": "",
+          "className": "caption",
+          "lines": 1,
+          "splitGraphemes": 0,
+          "overflow": false,
+          "outsideViewport": false,
+          "fonts": [
+            {
+              "familyName": "Segoe UI",
+              "postScriptName": "SegoeUI",
+              "isCustomFont": false,
+              "glyphCount": 50
+            }
+          ]
+        }
+      ],
+      "png": [
+        1080,
+        1920
+      ]
+    },
+    {
+      "name": "horizontal",
+      "scene": "closing",
+      "viewport": [
+        1920,
+        1080
+      ],
+      "document": [
+        1920,
+        1080
+      ],
+      "safeArea": {
+        "x": 92,
+        "y": 62,
+        "width": 1736,
+        "height": 956,
+        "top": 62,
+        "right": 1828,
+        "bottom": 1018,
+        "left": 92
+      },
+      "safeFailures": [],
+      "missingAssets": 0,
+      "blocks": [
+        {
+          "text": "Paper Explainer",
+          "lang": "",
+          "className": "brand",
+          "lines": 1,
+          "splitGraphemes": 0,
+          "overflow": false,
+          "outsideViewport": false,
+          "fonts": [
+            {
+              "familyName": "Segoe UI",
+              "postScriptName": "SegoeUI-Bold",
+              "isCustomFont": false,
+              "glyphCount": 15
+            }
+          ]
+        },
+        {
+          "text": "Takeaway",
+          "lang": "",
+          "className": "micro",
+          "lines": 1,
+          "splitGraphemes": 0,
+          "overflow": false,
+          "outsideViewport": false,
+          "fonts": [
+            {
+              "familyName": "Segoe UI",
+              "postScriptName": "SegoeUI-Bold",
+              "isCustomFont": false,
+              "glyphCount": 8
+            }
+          ]
+        },
+        {
+          "text": "The takeaway",
+          "lang": "",
+          "className": "section",
+          "lines": 1,
+          "splitGraphemes": 0,
+          "overflow": false,
+          "outsideViewport": false,
+          "fonts": [
+            {
+              "familyName": "Segoe UI",
+              "postScriptName": "SegoeUI-Bold",
+              "isCustomFont": false,
+              "glyphCount": 12
+            }
+          ]
+        },
+        {
+          "text": "Same route.Different fare.",
+          "lang": "",
+          "className": "",
+          "lines": 2,
+          "splitGraphemes": 0,
+          "overflow": false,
+          "outsideViewport": false,
+          "fonts": [
+            {
+              "familyName": "Georgia",
+              "postScriptName": "Georgia-Bold",
+              "isCustomFont": false,
+              "glyphCount": 26
+            }
+          ]
+        },
+        {
+          "text": "Operating costs matter. So does demand for the seats on your flight.",
+          "lang": "",
+          "className": "lede",
+          "lines": 2,
+          "splitGraphemes": 0,
+          "overflow": false,
+          "outsideViewport": false,
+          "fonts": [
+            {
+              "familyName": "Segoe UI",
+              "postScriptName": "SegoeUI",
+              "isCustomFont": false,
+              "glyphCount": 67
+            }
+          ]
+        },
+        {
+          "text": "Cost to fly",
+          "lang": "",
+          "className": "",
+          "lines": 1,
+          "splitGraphemes": 0,
+          "overflow": false,
+          "outsideViewport": false,
+          "fonts": [
+            {
+              "familyName": "Georgia",
+              "postScriptName": "Georgia-Bold",
+              "isCustomFont": false,
+              "glyphCount": 11
+            }
+          ]
+        },
+        {
+          "text": "What it takes to operate the flight.",
+          "lang": "",
+          "className": "",
+          "lines": 1,
+          "splitGraphemes": 0,
+          "overflow": false,
+          "outsideViewport": false,
+          "fonts": [
+            {
+              "familyName": "Segoe UI",
+              "postScriptName": "SegoeUI",
+              "isCustomFont": false,
+              "glyphCount": 36
+            }
+          ]
+        },
+        {
+          "text": "Seat demand",
+          "lang": "",
+          "className": "",
+          "lines": 1,
+          "splitGraphemes": 0,
+          "overflow": false,
+          "outsideViewport": false,
+          "fonts": [
+            {
+              "familyName": "Georgia",
+              "postScriptName": "Georgia-Bold",
+              "isCustomFont": false,
+              "glyphCount": 11
+            }
+          ]
+        },
+        {
+          "text": "How many people want to travel then.",
+          "lang": "",
+          "className": "",
+          "lines": 2,
+          "splitGraphemes": 0,
+          "overflow": false,
+          "outsideViewport": false,
+          "fonts": [
+            {
+              "familyName": "Segoe UI",
+              "postScriptName": "SegoeUI",
+              "isCustomFont": false,
+              "glyphCount": 35
+            }
+          ]
+        },
+        {
+          "text": "Compare nearby dates if you can.",
+          "lang": "",
+          "className": "action",
+          "lines": 1,
+          "splitGraphemes": 0,
+          "overflow": false,
+          "outsideViewport": false,
+          "fonts": [
+            {
+              "familyName": "Segoe UI",
+              "postScriptName": "SegoeUI-Bold",
+              "isCustomFont": false,
+              "glyphCount": 32
+            }
+          ]
+        },
+        {
+          "text": "For the same route, compare fares on nearby dates.",
+          "lang": "",
+          "className": "caption",
+          "lines": 1,
+          "splitGraphemes": 0,
+          "overflow": false,
+          "outsideViewport": false,
+          "fonts": [
+            {
+              "familyName": "Segoe UI",
+              "postScriptName": "SegoeUI",
+              "isCustomFont": false,
+              "glyphCount": 50
+            }
+          ]
+        }
+      ],
+      "png": [
+        1920,
+        1080
+      ]
+    }
+  ],
+  "contrast": {
+    "colors": {
+      "ink": "#252A30",
+      "paper": "#F4EFE4",
+      "texturedPaper": "#e0dacb",
+      "card": "#FFF9EE",
+      "mustard": "#DAB357"
+    },
+    "pairs": [
+      {
+        "text": "ink",
+        "background": "paper",
+        "ratio": 12.60801710012733
+      },
+      {
+        "text": "ink",
+        "background": "texturedPaper",
+        "ratio": 10.368386508407335
+      },
+      {
+        "text": "ink",
+        "background": "card",
+        "ratio": 13.79448218314006
+      },
+      {
+        "text": "ink",
+        "background": "mustard",
+        "ratio": 7.2747262521677944
+      },
+      {
+        "text": "paper",
+        "background": "ink",
+        "ratio": 12.60801710012733
+      }
+    ],
+    "minimum": 4.5
+  }
+}

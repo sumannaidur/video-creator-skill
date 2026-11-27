@@ -1,0 +1,131 @@
+{
+  "result": "mapped",
+  "words": [
+    {
+      "label": "అవి",
+      "text_start": 0,
+      "text_end": 3,
+      "method": "mithi_token_word_ownership",
+      "model_words": [
+        "అవి"
+      ],
+      "group": null,
+      "tokens": [
+        1,
+        4
+      ],
+      "samples": [
+        1200,
+        8400
+      ]
+    },
+    {
+      "label": "మూసుకునే",
+      "text_start": 4,
+      "text_end": 12,
+      "method": "mithi_token_word_ownership",
+      "model_words": [
+        "మూసుకునే"
+      ],
+      "group": null,
+      "tokens": [
+        6,
+        17
+      ],
+      "samples": [
+        10200,
+        23400
+      ]
+    },
+    {
+      "label": "శబ్దమే",
+      "text_start": 13,
+      "text_end": 19,
+      "method": "mithi_token_word_ownership",
+      "model_words": [
+        "శబ్దమే"
+      ],
+      "group": null,
+      "tokens": [
+        19,
+        27
+      ],
+      "samples": [
+        25200,
+        39000
+      ]
+    },
+    {
+      "label": "మనకు",
+      "text_start": 20,
+      "text_end": 24,
+      "method": "mithi_token_word_ownership",
+      "model_words": [
+        "మనకు"
+      ],
+      "group": null,
+      "tokens": [
+        29,
+        35
+      ],
+      "samples": [
+        42600,
+        51600
+      ]
+    },
+    {
+      "label": "వినిపించే",
+      "text_start": 25,
+      "text_end": 34,
+      "method": "mithi_token_word_ownership",
+      "model_words": [
+        "వినిపించే"
+      ],
+      "group": null,
+      "tokens": [
+        37,
+        48
+      ],
+      "samples": [
+        52800,
+        66000
+      ]
+    },
+    {
+      "label": "లబ్",
+      "text_start": 35,
+      "text_end": 38,
+      "method": "mithi_token_word_ownership",
+      "model_words": [
+        "లబ్"
+      ],
+      "group": null,
+      "tokens": [
+        50,
+        53
+      ],
+      "samples": [
+        67800,
+        72000
+      ]
+    },
+    {
+      "label": "డబ్.",
+      "text_start": 39,
+      "text_end": 43,
+      "method": "mithi_token_word_ownership",
+      "model_words": [
+        "డబ్."
+      ],
+      "group": null,
+      "tokens": [
+        55,
+        58
+      ],
+      "samples": [
+        73200,
+        78000
+      ]
+    }
+  ]
+}

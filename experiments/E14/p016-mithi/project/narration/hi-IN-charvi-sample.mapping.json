@@ -1,0 +1,261 @@
+{
+  "result": "mapped",
+  "words": [
+    {
+      "label": "देखो,",
+      "text_start": 0,
+      "text_end": 5,
+      "model_words": [
+        "देखो,"
+      ],
+      "tokens": [
+        1,
+        8
+      ],
+      "samples": [
+        1200,
+        13800
+      ]
+    },
+    {
+      "label": "बारिश",
+      "text_start": 6,
+      "text_end": 11,
+      "model_words": [
+        "बारिश"
+      ],
+      "tokens": [
+        11,
+        17
+      ],
+      "samples": [
+        18600,
+        28200
+      ]
+    },
+    {
+      "label": "आ",
+      "text_start": 12,
+      "text_end": 13,
+      "model_words": [
+        "आ"
+      ],
+      "tokens": [
+        19,
+        21
+      ],
+      "samples": [
+        29400,
+        31200
+      ]
+    },
+    {
+      "label": "गई!",
+      "text_start": 14,
+      "text_end": 17,
+      "model_words": [
+        "गई!"
+      ],
+      "tokens": [
+        23,
+        26
+      ],
+      "samples": [
+        32400,
+        37200
+      ]
+    },
+    {
+      "label": "बारिश",
+      "text_start": 18,
+      "text_end": 23,
+      "model_words": [
+        "बारिश"
+      ],
+      "tokens": [
+        29,
+        35
+      ],
+      "samples": [
+        48600,
+        58200
+      ]
+    },
+    {
+      "label": "के",
+      "text_start": 24,
+      "text_end": 26,
+      "model_words": [
+        "के"
+      ],
+      "tokens": [
+        37,
+        39
+      ],
+      "samples": [
+        59400,
+        61800
+      ]
+    },
+    {
+      "label": "बाद",
+      "text_start": 27,
+      "text_end": 30,
+      "model_words": [
+        "बाद"
+      ],
+      "tokens": [
+        41,
+        45
+      ],
+      "samples": [
+        63000,
+        68400
+      ]
+    },
+    {
+      "label": "मिट्टी",
+      "text_start": 31,
+      "text_end": 37,
+      "model_words": [
+        "मिट्टी"
+      ],
+      "tokens": [
+        47,
+        52
+      ],
+      "samples": [
+        70200,
+        77400
+      ]
+    },
+    {
+      "label": "की",
+      "text_start": 38,
+      "text_end": 40,
+      "model_words": [
+        "की"
+      ],
+      "tokens": [
+        54,
+        55
+      ],
+      "samples": [
+        79200,
+        81000
+      ]
+    },
+    {
+      "label": "ख़ुशबू",
+      "text_start": 41,
+      "text_end": 47,
+      "model_words": [
+        "ख़ुशबू"
+      ],
+      "tokens": [
+        57,
+        64
+      ],
+      "samples": [
+        82800,
+        91800
+      ]
+    },
+    {
+      "label": "कितनी",
+      "text_start": 48,
+      "text_end": 53,
+      "model_words": [
+        "कितनी"
+      ],
+      "tokens": [
+        66,
+        72
+      ],
+      "samples": [
+        93600,
+        102600
+      ]
+    },
+    {
+      "label": "अच्छी",
+      "text_start": 54,
+      "text_end": 59,
+      "model_words": [
+        "अच्छी"
+      ],
+      "tokens": [
+        74,
+        80
+      ],
+      "samples": [
+        103800,
+        109800
+      ]
+    },
+    {
+      "label": "लगती",
+      "text_start": 60,
+      "text_end": 64,
+      "model_words": [
+        "लगती"
+      ],
+      "tokens": [
+        82,
+        88
+      ],
+      "samples": [
+        111000,
+        117600
+      ]
+    },
+    {
+      "label": "है,",
+      "text_start": 65,
+      "text_end": 68,
+      "model_words": [
+        "है,"
+      ],
+      "tokens": [
+        90,
+        92
+      ],
+      "samples": [
+        118800,
+        121800
+      ]
+    },
+    {
+      "label": "है",
+      "text_start": 69,
+      "text_end": 71,
+      "model_words": [
+        "है"
+      ],
+      "tokens": [
+        95,
+        97
+      ],
+      "samples": [
+        129000,
+        132000
+      ]
+    },
+    {
+      "label": "ना?",
+      "text_start": 72,
+      "text_end": 75,
+      "model_words": [
+        "ना?"
+      ],
+      "tokens": [
+        99,
+        102
+      ],
+      "samples": [
+        133200,
+        136800
+      ]
+    }
+  ]
+}
