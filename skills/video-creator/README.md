@@ -43,10 +43,11 @@ The agent makes the editorial and creative decisions: research, script, art dire
 
 | Host | Status |
 |---|---|
-| Claude Code (Windows 11, desktop app, Code tab) | **Verified:** v0.1.0 personal-skill install and invocation (P019, 2.1.330); 0.2.0 development runs invoked natively (E30–E32, E39–E42) |
+| Claude Code (Windows 11, desktop app, Code tab) | **Verified:** v0.1.0 personal-skill install and invocation (P019, 2.1.330). 0.2.0 content used natively (E30–E32, E39–E42), including the complete E42 Full HD production |
 | Claude Code headless (`claude -p`) | Discovery verified. End-to-end invocation **not yet verified** (the CLI was not signed in) |
-| Codex | Native development keyframe workflows with the 0.2.0 development install reported in project evidence (P024.5–P024.10). Release-candidate discovery: see RELEASE-NOTES |
-| Antigravity, ChatGPT, other Agent Skill hosts | **Untested.** No compatibility claimed |
+| Codex (Windows 11) | **Discovery verified:** the v0.2.0 release-candidate content (development install `video-creator-dev` 0.2.0-beta-dev) was natively discovered and enabled from `~/.agents/skills`. Development keyframe runs (P024.5–P024.10) were invoked natively. No complete Codex production has been run yet |
+| Antigravity | **Unverified.** Not tested; no compatibility claimed |
+| ChatGPT, other Agent Skill hosts | **Untested.** No compatibility claimed |
 | Linux, macOS | **Untested** |
 
 ## Requirements (all free, none bundled)
@@ -70,6 +71,8 @@ Expand-Archive video-creator-v0.2.0-beta.zip -DestinationPath $env:TEMP\vc-relea
 New-Item -ItemType Directory -Force "$HOME\.claude\skills" | Out-Null
 Copy-Item -Recurse "$env:TEMP\vc-release\video-creator" "$HOME\.claude\skills\video-creator"
 ```
+
+**Codex:** copy the same folder to `$HOME\.agents\skills\video-creator` instead, start a new Codex session, and ask in plain language or mention `$video-creator`. In the commands below, replace `.claude\skills` with `.agents\skills`.
 
 Restart Claude Code, or start a new session. `video-creator` then appears among the available skills. To install it for one project only, copy the folder to `<project>\.claude\skills\video-creator` instead (not exercised in this release).
 
