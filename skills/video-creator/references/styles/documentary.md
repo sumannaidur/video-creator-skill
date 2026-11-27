@@ -51,8 +51,16 @@ Real-world imagery, told with restraint. Photographs and footage are framed with
 - `host.html` (grain filter), `doc.css` and `kit.js` (`globalThis.docKit`, which registers `dip`, the label styles and the provenance check via `globalThis.vcShotStyle`).
 - The topic contract: `globalThis.documentaryTopic = {shots, symbols(ctx), css, build(ctx)}`. Use `docAsset: '<id>'` on objects that show manifest media so the provenance rule can check them.
 
+## Photographic storytelling (P023.8, optional)
+
+- **Cinematic cropping of one photograph:** `docKit.cover(photoAspect, stageAspect)` and `docKit.focus(G, [u, v], scale)` bring a photo point to frame centre without ever exposing an edge. Crop to the person or detail the narration names, then pull back to context.
+- **Pinned marks:** draw rings in the photo's own coordinates (`art.ring`) and give them the photo's track (sample it per frame), so they stay on the subject while the camera crops. Show a mark only while its subject is named.
+- **Honest parallax:** cut-out parallax needs a separate clean background plate. Never fake depth from a single photograph (the cut-out leaves a ghost), and never present inpainted or synthetic fill as the original photograph.
+- **Credit on screen:** show `credit(id)` while the photo is visible. Keep the manifest licence field short (details go in `source`) so the credit fits one safe line.
+
 ## Self-review additions
 
+- Does each crop expose the archival detail being discussed? Put credits and annotations where they leave that evidence visible.
 - Does every image and clip trace to a manifest entry with a clear licence and attribution?
 - Is every non-authentic image labelled on screen, and is nothing reconstructed dated or captioned as evidence?
 - Does each image have one clear point of interest, and is the camera move motivated?
@@ -77,4 +85,4 @@ Any topic's images, places, maps, layouts or cue times. The P017.7 fixture (`scr
 - Manifest, licence and provenance refusals.
 - Preflight, a 5.6 s preview, and cue, camera and transition checks.
 
-There has been no full production, no real photographs, no licensed third-party media and no human editorial or licence review. Fonts are system fonts, with licensing review pending.
+Since then, development keyframe studies have used authentic public-domain photographs through verified manifests, downloaded with owner approval: E28 (Library of Congress, 1903) and E32 (four NASA Apollo 11 photographs, keyframes only). There has been no full production, no licensed (non-public-domain) third-party media, and no human editorial or licence review; licence review of those photographs remains a human gate. Fonts are system fonts, with licensing review pending.

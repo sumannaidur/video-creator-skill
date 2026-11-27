@@ -1,0 +1,254 @@
+{
+  "schema": "video-creator.captions",
+  "version": 1,
+  "locale": "en-IN",
+  "narration": {
+    "timeline": "narration/narration.timeline.json",
+    "timeline_sha256": "6d7bee592627ccd27184e5735f1a81c6b1b73cf34609a78d01b447745e2b8dc9",
+    "audio_sha256": "caa1dfeae32c247141d7d4cee325aaa27999e1e27a2fce29c6c4d5e653a880ba",
+    "sample_rate": 24000,
+    "sample_count": 268800,
+    "timing_status": "unreviewed",
+    "timing_method": "forced_alignment",
+    "run_id": "synthetic-star"
+  },
+  "config": {
+    "enabled": true,
+    "burn_in": true,
+    "subtitle_files": [
+      "srt",
+      "vtt"
+    ],
+    "mode": "words",
+    "max_chars": 28,
+    "max_words": 4,
+    "max_lines": 2,
+    "hold_ms": 700
+  },
+  "cues": [
+    {
+      "start_sample": 4800,
+      "speech_end_sample": 26924,
+      "text": "A star begins as",
+      "text_ref": {
+        "field": "speech",
+        "start": 0,
+        "end": 16
+      },
+      "segment": "s1",
+      "timing_sources": [
+        "forced_alignment"
+      ],
+      "long": false,
+      "end_sample": 27491,
+      "id": "c1",
+      "start": 0.2,
+      "end": 1.1454583333333332
+    },
+    {
+      "start_sample": 27491,
+      "speech_end_sample": 49615,
+      "text": "a cold cloud of",
+      "text_ref": {
+        "field": "speech",
+        "start": 17,
+        "end": 32
+      },
+      "segment": "s1",
+      "timing_sources": [
+        "forced_alignment"
+      ],
+      "long": false,
+      "end_sample": 50182,
+      "id": "c2",
+      "start": 1.1454583333333332,
+      "end": 2.0909166666666668
+    },
+    {
+      "start_sample": 50182,
+      "speech_end_sample": 66633,
+      "text": "gas and dust.",
+      "text_ref": {
+        "field": "speech",
+        "start": 33,
+        "end": 46
+      },
+      "segment": "s1",
+      "timing_sources": [
+        "forced_alignment"
+      ],
+      "long": false,
+      "end_sample": 81600,
+      "id": "c3",
+      "start": 2.0909166666666668,
+      "end": 3.4
+    },
+    {
+      "start_sample": 81600,
+      "speech_end_sample": 106560,
+      "text": "Gravity pulls the cloud",
+      "text_ref": {
+        "field": "speech",
+        "start": 47,
+        "end": 70
+      },
+      "segment": "s2",
+      "timing_sources": [
+        "forced_alignment"
+      ],
+      "long": false,
+      "end_sample": 107200,
+      "id": "c4",
+      "start": 3.4,
+      "end": 4.466666666666667
+    },
+    {
+      "start_sample": 107200,
+      "speech_end_sample": 112960,
+      "text": "inward,",
+      "text_ref": {
+        "field": "speech",
+        "start": 71,
+        "end": 78
+      },
+      "segment": "s2",
+      "timing_sources": [
+        "forced_alignment"
+      ],
+      "long": false,
+      "end_sample": 113600,
+      "id": "c5",
+      "start": 4.466666666666667,
+      "end": 4.733333333333333
+    },
+    {
+      "start_sample": 113600,
+      "speech_end_sample": 138560,
+      "text": "and it spins into",
+      "text_ref": {
+        "field": "speech",
+        "start": 79,
+        "end": 96
+      },
+      "segment": "s2",
+      "timing_sources": [
+        "forced_alignment"
+      ],
+      "long": false,
+      "end_sample": 139200,
+      "id": "c6",
+      "start": 4.733333333333333,
+      "end": 5.8
+    },
+    {
+      "start_sample": 139200,
+      "speech_end_sample": 157760,
+      "text": "a flat disc.",
+      "text_ref": {
+        "field": "speech",
+        "start": 97,
+        "end": 109
+      },
+      "segment": "s2",
+      "timing_sources": [
+        "forced_alignment"
+      ],
+      "long": false,
+      "end_sample": 172800,
+      "id": "c7",
+      "start": 5.8,
+      "end": 7.2
+    },
+    {
+      "start_sample": 172800,
+      "speech_end_sample": 199320,
+      "text": "When the core is",
+      "text_ref": {
+        "field": "speech",
+        "start": 110,
+        "end": 126
+      },
+      "segment": "s3",
+      "timing_sources": [
+        "forced_alignment"
+      ],
+      "long": false,
+      "end_sample": 200000,
+      "id": "c8",
+      "start": 7.2,
+      "end": 8.333333333333334
+    },
+    {
+      "start_sample": 200000,
+      "speech_end_sample": 212920,
+      "text": "hot enough,",
+      "text_ref": {
+        "field": "speech",
+        "start": 127,
+        "end": 138
+      },
+      "segment": "s3",
+      "timing_sources": [
+        "forced_alignment"
+      ],
+      "long": false,
+      "end_sample": 213600,
+      "id": "c9",
+      "start": 8.333333333333334,
+      "end": 8.9
+    },
+    {
+      "start_sample": 213600,
+      "speech_end_sample": 240120,
+      "text": "hydrogen fuses and the",
+      "text_ref": {
+        "field": "speech",
+        "start": 139,
+        "end": 161
+      },
+      "segment": "s3",
+      "timing_sources": [
+        "forced_alignment"
+      ],
+      "long": false,
+      "end_sample": 240800,
+      "id": "c10",
+      "start": 8.9,
+      "end": 10.033333333333333
+    },
+    {
+      "start_sample": 240800,
+      "speech_end_sample": 253720,
+      "text": "star shines.",
+      "text_ref": {
+        "field": "speech",
+        "start": 162,
+        "end": 174
+      },
+      "segment": "s3",
+      "timing_sources": [
+        "forced_alignment"
+      ],
+      "long": false,
+      "end_sample": 268800,
+      "id": "c11",
+      "start": 10.033333333333333,
+      "end": 11.2
+    }
+  ],
+  "files": {
+    "srt": {
+      "path": "captions/captions.srt",
+      "sha256": "4932cf0a3f666dc7a49698f8e0b094720a779e1b1b0edd88678fabb31be033a3"
+    },
+    "vtt": {
+      "path": "captions/captions.vtt",
+      "sha256": "00418c196979fac4defae007cbf8c87d48324753ea8c1b07961ad5091682f809"
+    }
+  },
+  "review": {
+    "technical": "passed",
+    "language": "pending native-reader review",
+    "readability": "pending human review"
+  }
+}

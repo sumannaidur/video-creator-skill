@@ -1,0 +1,25 @@
+{
+  "name": "bootprint",
+  "t": 26.6,
+  "status": "failed",
+  "findings": [
+    {
+      "status": "failed",
+      "check": "overlap",
+      "id": "o-boot",
+      "reason": "Protected evidence overlaps l-boot"
+    },
+    {
+      "status": "unsupported",
+      "check": "anchor",
+      "id": "l-boot",
+      "reason": "Endpoint attribution needs separate visible target and label boxes"
+    },
+    {
+      "status": "unsupported",
+      "check": "contrast",
+      "id": "l-boot",
+      "reason": "Contrast requires an opaque, solid sRGB background on the label and unmodified text"
+    }
+  ]
+}

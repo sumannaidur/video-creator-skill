@@ -1,0 +1,235 @@
+{
+  "schema": "video-creator.captions",
+  "version": 1,
+  "locale": "en-IN",
+  "narration": {
+    "timeline": "narration/narration.timeline.json",
+    "timeline_sha256": "22bc9a45e0f63910858dd13fab952bdbf0414b4e1d947b8b7c89d6e3ef06ffc7",
+    "audio_sha256": "caa1dfeae32c247141d7d4cee325aaa27999e1e27a2fce29c6c4d5e653a880ba",
+    "sample_rate": 24000,
+    "sample_count": 268800,
+    "timing_status": "unreviewed",
+    "timing_method": "forced_alignment",
+    "run_id": "synthetic-bike"
+  },
+  "config": {
+    "enabled": true,
+    "burn_in": true,
+    "subtitle_files": [
+      "srt",
+      "vtt"
+    ],
+    "mode": "words",
+    "max_chars": 28,
+    "max_words": 4,
+    "max_lines": 2,
+    "hold_ms": 700
+  },
+  "cues": [
+    {
+      "start_sample": 4800,
+      "speech_end_sample": 28200,
+      "text": "On many city bikes,",
+      "text_ref": {
+        "field": "speech",
+        "start": 0,
+        "end": 19
+      },
+      "segment": "s1",
+      "timing_sources": [
+        "forced_alignment"
+      ],
+      "long": false,
+      "end_sample": 28800,
+      "id": "c1",
+      "start": 0.2,
+      "end": 1.2
+    },
+    {
+      "start_sample": 28800,
+      "speech_end_sample": 52200,
+      "text": "the chain hides inside",
+      "text_ref": {
+        "field": "speech",
+        "start": 20,
+        "end": 42
+      },
+      "segment": "s1",
+      "timing_sources": [
+        "forced_alignment"
+      ],
+      "long": false,
+      "end_sample": 52800,
+      "id": "c2",
+      "start": 1.2,
+      "end": 2.2
+    },
+    {
+      "start_sample": 52800,
+      "speech_end_sample": 76200,
+      "text": "a closed chain guard.",
+      "text_ref": {
+        "field": "speech",
+        "start": 43,
+        "end": 64
+      },
+      "segment": "s1",
+      "timing_sources": [
+        "forced_alignment"
+      ],
+      "long": false,
+      "end_sample": 91200,
+      "id": "c3",
+      "start": 2.2,
+      "end": 3.8
+    },
+    {
+      "start_sample": 91200,
+      "speech_end_sample": 118429,
+      "text": "The front gear has",
+      "text_ref": {
+        "field": "speech",
+        "start": 65,
+        "end": 83
+      },
+      "segment": "s2",
+      "timing_sources": [
+        "forced_alignment"
+      ],
+      "long": false,
+      "end_sample": 119127,
+      "id": "c4",
+      "start": 3.8,
+      "end": 4.963625
+    },
+    {
+      "start_sample": 119127,
+      "speech_end_sample": 132393,
+      "text": "forty-eight teeth;",
+      "text_ref": {
+        "field": "speech",
+        "start": 84,
+        "end": 102
+      },
+      "segment": "s2",
+      "timing_sources": [
+        "forced_alignment"
+      ],
+      "long": false,
+      "end_sample": 133091,
+      "id": "c5",
+      "start": 4.963625,
+      "end": 5.545458333333333
+    },
+    {
+      "start_sample": 133091,
+      "speech_end_sample": 160320,
+      "text": "the rear gear has",
+      "text_ref": {
+        "field": "speech",
+        "start": 103,
+        "end": 120
+      },
+      "segment": "s2",
+      "timing_sources": [
+        "forced_alignment"
+      ],
+      "long": false,
+      "end_sample": 161018,
+      "id": "c6",
+      "start": 5.545458333333333,
+      "end": 6.709083333333333
+    },
+    {
+      "start_sample": 161018,
+      "speech_end_sample": 167302,
+      "text": "sixteen.",
+      "text_ref": {
+        "field": "speech",
+        "start": 121,
+        "end": 129
+      },
+      "segment": "s2",
+      "timing_sources": [
+        "forced_alignment"
+      ],
+      "long": false,
+      "end_sample": 182400,
+      "id": "c7",
+      "start": 6.709083333333333,
+      "end": 7.6
+    },
+    {
+      "start_sample": 182400,
+      "speech_end_sample": 205800,
+      "text": "So one turn of",
+      "text_ref": {
+        "field": "speech",
+        "start": 130,
+        "end": 144
+      },
+      "segment": "s3",
+      "timing_sources": [
+        "forced_alignment"
+      ],
+      "long": false,
+      "end_sample": 206400,
+      "id": "c8",
+      "start": 7.6,
+      "end": 8.6
+    },
+    {
+      "start_sample": 206400,
+      "speech_end_sample": 229800,
+      "text": "the pedals turns the",
+      "text_ref": {
+        "field": "speech",
+        "start": 145,
+        "end": 165
+      },
+      "segment": "s3",
+      "timing_sources": [
+        "forced_alignment"
+      ],
+      "long": false,
+      "end_sample": 230400,
+      "id": "c9",
+      "start": 8.6,
+      "end": 9.6
+    },
+    {
+      "start_sample": 230400,
+      "speech_end_sample": 253800,
+      "text": "rear wheel three times.",
+      "text_ref": {
+        "field": "speech",
+        "start": 166,
+        "end": 189
+      },
+      "segment": "s3",
+      "timing_sources": [
+        "forced_alignment"
+      ],
+      "long": false,
+      "end_sample": 268800,
+      "id": "c10",
+      "start": 9.6,
+      "end": 11.2
+    }
+  ],
+  "files": {
+    "srt": {
+      "path": "captions/captions.srt",
+      "sha256": "c265a37cb7917b5423850998eaa818de014b4497edde3a3ff13cce082f2360a2"
+    },
+    "vtt": {
+      "path": "captions/captions.vtt",
+      "sha256": "f38959c8e4598bb3541f96a031aa5b44269bd175981c5b389d75dd82344c8450"
+    }
+  },
+  "review": {
+    "technical": "passed",
+    "language": "pending native-reader review",
+    "readability": "pending human review"
+  }
+}

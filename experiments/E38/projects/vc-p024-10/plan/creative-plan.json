@@ -1,0 +1,99 @@
+{
+  "schema": "video-creator.creative-plan",
+  "version": 1,
+  "style": "data-storytelling",
+  "style_reason": "One editorial chart accumulates the published Census data without moving the baseline or changing scale.",
+  "story": [
+    {
+      "segment": "s1",
+      "role": "hook",
+      "idea": "Reveal the first Census rate."
+    },
+    {
+      "segment": "s2",
+      "role": "mechanism",
+      "idea": "Reveal the intervening values and emphasize 2001."
+    },
+    {
+      "segment": "s3",
+      "role": "resolution",
+      "idea": "Reveal the last Census rate."
+    }
+  ],
+  "motifs": [
+    {
+      "id": "scale",
+      "stands_for": "The same zero to one hundred percent scale across the series."
+    }
+  ],
+  "assets": [
+    {
+      "id": "chart",
+      "kind": "procedural",
+      "description": "Original chart from sourced Census rates in the RBI table."
+    }
+  ],
+  "guardrails": [
+    "Chart uses reported Census rates and marks the age base change and coverage exclusions.",
+    "No causal claim, extrapolation, or current rate estimate."
+  ],
+  "shots": [
+    {
+      "id": "series",
+      "purpose": "Show how the reported rates increased across the Census decades.",
+      "objects": [
+        {
+          "id": "first",
+          "description": "Reveal the first Census rate.",
+          "asset": "chart",
+          "motif": "scale"
+        },
+        {
+          "id": "decades",
+          "description": "Reveal the intervening values and emphasize 2001.",
+          "asset": "chart",
+          "motif": "scale"
+        },
+        {
+          "id": "last",
+          "description": "Reveal the last Census rate.",
+          "asset": "chart",
+          "motif": "scale"
+        }
+      ],
+      "cues": [
+        {
+          "id": "below-cue",
+          "object": "first",
+          "at": {
+            "word": "below",
+            "segment": "s1"
+          },
+          "action": "Reveal the first Census rate."
+        },
+        {
+          "id": "two-thirds-cue",
+          "object": "decades",
+          "at": {
+            "word": "nearly",
+            "segment": "s2"
+          },
+          "action": "Reveal the intervening values and emphasize 2001."
+        },
+        {
+          "id": "final-cue",
+          "object": "last",
+          "at": {
+            "word": "eleven",
+            "segment": "s3"
+          },
+          "action": "Reveal the last Census rate."
+        }
+      ]
+    }
+  ],
+  "narration": {
+    "timeline": "narration/narration-bde0d901f3.timeline.json",
+    "sha256": "afcb56a279ed0098861f13944843a1cde98558d6baf190e3d9e7012a8e98024f"
+  }
+}

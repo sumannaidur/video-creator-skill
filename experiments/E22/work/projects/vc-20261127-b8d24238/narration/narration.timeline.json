@@ -1,0 +1,491 @@
+{
+  "version": 1,
+  "unit": "sample",
+  "locale": "en-IN",
+  "validation": "unreviewed",
+  "run_id": "synthetic-heat",
+  "timing": {
+    "method": "forced_alignment",
+    "provider": "synthetic-test"
+  },
+  "audio": {
+    "path": "narration/narration.wav",
+    "sha256": "45386b2130e2ebdd5c8450d4cbae4127f937206480c803d9923accf303e6559a",
+    "sample_rate": 24000,
+    "sample_count": 273600
+  },
+  "text": {
+    "display": "Sunlight bakes the city's roads and roofs all day. Concrete stores that heat like a hot frying pan. At night it leaks back out, so trees and shade keep streets cooler.",
+    "speech": "Sunlight bakes the city's roads and roofs all day. Concrete stores that heat like a hot frying pan. At night it leaks back out, so trees and shade keep streets cooler."
+  },
+  "segments": [
+    {
+      "id": "s1",
+      "run_id": "synthetic",
+      "validation": "unreviewed",
+      "offset_samples": 0,
+      "sample_count": 81600,
+      "gap_after_samples": 0
+    },
+    {
+      "id": "s2",
+      "run_id": "synthetic",
+      "validation": "unreviewed",
+      "offset_samples": 81600,
+      "sample_count": 81600,
+      "gap_after_samples": 0
+    },
+    {
+      "id": "s3",
+      "run_id": "synthetic",
+      "validation": "unreviewed",
+      "offset_samples": 163200,
+      "sample_count": 110400,
+      "gap_after_samples": 0
+    }
+  ],
+  "records": [
+    {
+      "kind": "word",
+      "label": "Sunlight",
+      "start": 4800,
+      "end": 11520,
+      "source": "forced_alignment",
+      "segment": "s1",
+      "text_ref": {
+        "field": "speech",
+        "start": 0,
+        "end": 8
+      }
+    },
+    {
+      "kind": "word",
+      "label": "bakes",
+      "start": 12267,
+      "end": 18987,
+      "source": "forced_alignment",
+      "segment": "s1",
+      "text_ref": {
+        "field": "speech",
+        "start": 9,
+        "end": 14
+      }
+    },
+    {
+      "kind": "word",
+      "label": "the",
+      "start": 19733,
+      "end": 26453,
+      "source": "forced_alignment",
+      "segment": "s1",
+      "text_ref": {
+        "field": "speech",
+        "start": 15,
+        "end": 18
+      }
+    },
+    {
+      "kind": "word",
+      "label": "city's",
+      "start": 27200,
+      "end": 33920,
+      "source": "forced_alignment",
+      "segment": "s1",
+      "text_ref": {
+        "field": "speech",
+        "start": 19,
+        "end": 25
+      }
+    },
+    {
+      "kind": "word",
+      "label": "roads",
+      "start": 34667,
+      "end": 41387,
+      "source": "forced_alignment",
+      "segment": "s1",
+      "text_ref": {
+        "field": "speech",
+        "start": 26,
+        "end": 31
+      }
+    },
+    {
+      "kind": "word",
+      "label": "and",
+      "start": 42133,
+      "end": 48853,
+      "source": "forced_alignment",
+      "segment": "s1",
+      "text_ref": {
+        "field": "speech",
+        "start": 32,
+        "end": 35
+      }
+    },
+    {
+      "kind": "word",
+      "label": "roofs",
+      "start": 49600,
+      "end": 56320,
+      "source": "forced_alignment",
+      "segment": "s1",
+      "text_ref": {
+        "field": "speech",
+        "start": 36,
+        "end": 41
+      }
+    },
+    {
+      "kind": "word",
+      "label": "all",
+      "start": 57067,
+      "end": 63787,
+      "source": "forced_alignment",
+      "segment": "s1",
+      "text_ref": {
+        "field": "speech",
+        "start": 42,
+        "end": 45
+      }
+    },
+    {
+      "kind": "word",
+      "label": "day.",
+      "start": 64533,
+      "end": 71253,
+      "source": "forced_alignment",
+      "segment": "s1",
+      "text_ref": {
+        "field": "speech",
+        "start": 46,
+        "end": 50
+      }
+    },
+    {
+      "kind": "word",
+      "label": "Concrete",
+      "start": 86400,
+      "end": 93120,
+      "source": "forced_alignment",
+      "segment": "s2",
+      "text_ref": {
+        "field": "speech",
+        "start": 51,
+        "end": 59
+      }
+    },
+    {
+      "kind": "word",
+      "label": "stores",
+      "start": 93867,
+      "end": 100587,
+      "source": "forced_alignment",
+      "segment": "s2",
+      "text_ref": {
+        "field": "speech",
+        "start": 60,
+        "end": 66
+      }
+    },
+    {
+      "kind": "word",
+      "label": "that",
+      "start": 101333,
+      "end": 108053,
+      "source": "forced_alignment",
+      "segment": "s2",
+      "text_ref": {
+        "field": "speech",
+        "start": 67,
+        "end": 71
+      }
+    },
+    {
+      "kind": "word",
+      "label": "heat",
+      "start": 108800,
+      "end": 115520,
+      "source": "forced_alignment",
+      "segment": "s2",
+      "text_ref": {
+        "field": "speech",
+        "start": 72,
+        "end": 76
+      }
+    },
+    {
+      "kind": "word",
+      "label": "like",
+      "start": 116267,
+      "end": 122987,
+      "source": "forced_alignment",
+      "segment": "s2",
+      "text_ref": {
+        "field": "speech",
+        "start": 77,
+        "end": 81
+      }
+    },
+    {
+      "kind": "word",
+      "label": "a",
+      "start": 123733,
+      "end": 130453,
+      "source": "forced_alignment",
+      "segment": "s2",
+      "text_ref": {
+        "field": "speech",
+        "start": 82,
+        "end": 83
+      }
+    },
+    {
+      "kind": "word",
+      "label": "hot",
+      "start": 131200,
+      "end": 137920,
+      "source": "forced_alignment",
+      "segment": "s2",
+      "text_ref": {
+        "field": "speech",
+        "start": 84,
+        "end": 87
+      }
+    },
+    {
+      "kind": "word",
+      "label": "frying",
+      "start": 138667,
+      "end": 145387,
+      "source": "forced_alignment",
+      "segment": "s2",
+      "text_ref": {
+        "field": "speech",
+        "start": 88,
+        "end": 94
+      }
+    },
+    {
+      "kind": "word",
+      "label": "pan.",
+      "start": 146133,
+      "end": 152853,
+      "source": "forced_alignment",
+      "segment": "s2",
+      "text_ref": {
+        "field": "speech",
+        "start": 95,
+        "end": 99
+      }
+    },
+    {
+      "kind": "word",
+      "label": "At",
+      "start": 168000,
+      "end": 174314,
+      "source": "forced_alignment",
+      "segment": "s3",
+      "text_ref": {
+        "field": "speech",
+        "start": 100,
+        "end": 102
+      }
+    },
+    {
+      "kind": "word",
+      "label": "night",
+      "start": 175015,
+      "end": 181329,
+      "source": "forced_alignment",
+      "segment": "s3",
+      "text_ref": {
+        "field": "speech",
+        "start": 103,
+        "end": 108
+      }
+    },
+    {
+      "kind": "word",
+      "label": "it",
+      "start": 182031,
+      "end": 188345,
+      "source": "forced_alignment",
+      "segment": "s3",
+      "text_ref": {
+        "field": "speech",
+        "start": 109,
+        "end": 111
+      }
+    },
+    {
+      "kind": "word",
+      "label": "leaks",
+      "start": 189046,
+      "end": 195360,
+      "source": "forced_alignment",
+      "segment": "s3",
+      "text_ref": {
+        "field": "speech",
+        "start": 112,
+        "end": 117
+      }
+    },
+    {
+      "kind": "word",
+      "label": "back",
+      "start": 196062,
+      "end": 202375,
+      "source": "forced_alignment",
+      "segment": "s3",
+      "text_ref": {
+        "field": "speech",
+        "start": 118,
+        "end": 122
+      }
+    },
+    {
+      "kind": "word",
+      "label": "out,",
+      "start": 203077,
+      "end": 209391,
+      "source": "forced_alignment",
+      "segment": "s3",
+      "text_ref": {
+        "field": "speech",
+        "start": 123,
+        "end": 127
+      }
+    },
+    {
+      "kind": "word",
+      "label": "so",
+      "start": 210092,
+      "end": 216406,
+      "source": "forced_alignment",
+      "segment": "s3",
+      "text_ref": {
+        "field": "speech",
+        "start": 128,
+        "end": 130
+      }
+    },
+    {
+      "kind": "word",
+      "label": "trees",
+      "start": 217108,
+      "end": 223422,
+      "source": "forced_alignment",
+      "segment": "s3",
+      "text_ref": {
+        "field": "speech",
+        "start": 131,
+        "end": 136
+      }
+    },
+    {
+      "kind": "word",
+      "label": "and",
+      "start": 224123,
+      "end": 230437,
+      "source": "forced_alignment",
+      "segment": "s3",
+      "text_ref": {
+        "field": "speech",
+        "start": 137,
+        "end": 140
+      }
+    },
+    {
+      "kind": "word",
+      "label": "shade",
+      "start": 231138,
+      "end": 237452,
+      "source": "forced_alignment",
+      "segment": "s3",
+      "text_ref": {
+        "field": "speech",
+        "start": 141,
+        "end": 146
+      }
+    },
+    {
+      "kind": "word",
+      "label": "keep",
+      "start": 238154,
+      "end": 244468,
+      "source": "forced_alignment",
+      "segment": "s3",
+      "text_ref": {
+        "field": "speech",
+        "start": 147,
+        "end": 151
+      }
+    },
+    {
+      "kind": "word",
+      "label": "streets",
+      "start": 245169,
+      "end": 251483,
+      "source": "forced_alignment",
+      "segment": "s3",
+      "text_ref": {
+        "field": "speech",
+        "start": 152,
+        "end": 159
+      }
+    },
+    {
+      "kind": "word",
+      "label": "cooler.",
+      "start": 252185,
+      "end": 258498,
+      "source": "forced_alignment",
+      "segment": "s3",
+      "text_ref": {
+        "field": "speech",
+        "start": 160,
+        "end": 167
+      }
+    },
+    {
+      "kind": "phrase",
+      "label": "Sunlight bakes the city's roads and roofs all day.",
+      "start": 4800,
+      "end": 71253,
+      "source": "forced_alignment",
+      "segment": "s1",
+      "text_ref": {
+        "field": "speech",
+        "start": 0,
+        "end": 50
+      }
+    },
+    {
+      "kind": "phrase",
+      "label": "Concrete stores that heat like a hot frying pan.",
+      "start": 86400,
+      "end": 152853,
+      "source": "forced_alignment",
+      "segment": "s2",
+      "text_ref": {
+        "field": "speech",
+        "start": 51,
+        "end": 99
+      }
+    },
+    {
+      "kind": "phrase",
+      "label": "At night it leaks back out, so trees and shade keep streets cooler.",
+      "start": 168000,
+      "end": 258498,
+      "source": "forced_alignment",
+      "segment": "s3",
+      "text_ref": {
+        "field": "speech",
+        "start": 100,
+        "end": 167
+      }
+    }
+  ]
+}

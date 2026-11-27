@@ -1,0 +1,16 @@
+{
+  "passed": true,
+  "shots": 4,
+  "cues": 10,
+  "camera_keys": 0,
+  "timeline_sha256": "4c35a1c845738e85ca5bc7582d7d29850194b2690ab66ae81c74668c56cc24dd",
+  "audio_sha256": "c0e5b0d6621eeb67eb8c1d6b0916a8ae5db35aabfe87b424f119a7501812b7ef",
+  "sample_rate": 24000,
+  "sample_count": 733800,
+  "timing_status": "unreviewed",
+  "record_sources": [
+    "native_model"
+  ],
+  "run_id": "combined-31ed22cbd7b83f0d6cee0204",
+  "timeline": "narration/narration-f7bde5a1a8.timeline.json"
+}

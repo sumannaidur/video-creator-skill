@@ -1,0 +1,16 @@
+{
+  "passed": true,
+  "shots": 3,
+  "cues": 5,
+  "camera_keys": 0,
+  "timeline_sha256": "6d7bee592627ccd27184e5735f1a81c6b1b73cf34609a78d01b447745e2b8dc9",
+  "audio_sha256": "caa1dfeae32c247141d7d4cee325aaa27999e1e27a2fce29c6c4d5e653a880ba",
+  "sample_rate": 24000,
+  "sample_count": 268800,
+  "timing_status": "unreviewed",
+  "record_sources": [
+    "forced_alignment"
+  ],
+  "run_id": "synthetic-star",
+  "timeline": "narration/narration.timeline.json"
+}

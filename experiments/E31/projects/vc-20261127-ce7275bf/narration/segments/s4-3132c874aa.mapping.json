@@ -1,0 +1,149 @@
+{
+  "result": "mapped",
+  "words": [
+    {
+      "label": "ಸರಿಯಾದ",
+      "text_start": 0,
+      "text_end": 6,
+      "method": "mithi_token_word_ownership",
+      "model_words": [
+        "ಸರಿಯಾದ"
+      ],
+      "group": null,
+      "tokens": [
+        1,
+        11
+      ],
+      "samples": [
+        1200,
+        14400
+      ]
+    },
+    {
+      "label": "ಕೀಲಿ",
+      "text_start": 7,
+      "text_end": 11,
+      "method": "mithi_token_word_ownership",
+      "model_words": [
+        "ಕೀಲಿ"
+      ],
+      "group": null,
+      "tokens": [
+        13,
+        18
+      ],
+      "samples": [
+        16200,
+        25200
+      ]
+    },
+    {
+      "label": "ಪ್ರತಿಯೊಂದು",
+      "text_start": 12,
+      "text_end": 22,
+      "method": "mithi_token_word_ownership",
+      "model_words": [
+        "ಪ್ರತಿಯೊಂದು"
+      ],
+      "group": null,
+      "tokens": [
+        20,
+        31
+      ],
+      "samples": [
+        31200,
+        47400
+      ]
+    },
+    {
+      "label": "ಪಿನ್",
+      "text_start": 23,
+      "text_end": 27,
+      "method": "mithi_token_word_ownership",
+      "model_words": [
+        "ಪಿನ್"
+      ],
+      "group": null,
+      "tokens": [
+        33,
+        36
+      ],
+      "samples": [
+        49200,
+        54600
+      ]
+    },
+    {
+      "label": "ಅನ್ನು",
+      "text_start": 28,
+      "text_end": 33,
+      "method": "mithi_token_word_ownership",
+      "model_words": [
+        "ಅನ್ನು"
+      ],
+      "group": null,
+      "tokens": [
+        38,
+        42
+      ],
+      "samples": [
+        55800,
+        63000
+      ]
+    },
+    {
+      "label": "ಸರಿಯಾದ",
+      "text_start": 34,
+      "text_end": 40,
+      "method": "mithi_token_word_ownership",
+      "model_words": [
+        "ಸರಿಯಾದ"
+      ],
+      "group": null,
+      "tokens": [
+        44,
+        54
+      ],
+      "samples": [
+        64800,
+        78000
+      ]
+    },
+    {
+      "label": "ಎತ್ತರಕ್ಕೆ",
+      "text_start": 41,
+      "text_end": 50,
+      "method": "mithi_token_word_ownership",
+      "model_words": [
+        "ಎತ್ತರಕ್ಕೆ"
+      ],
+      "group": null,
+      "tokens": [
+        56,
+        66
+      ],
+      "samples": [
+        79800,
+        92400
+      ]
+    },
+    {
+      "label": "ಎತ್ತುತ್ತದೆ.",
+      "text_start": 51,
+      "text_end": 62,
+      "method": "mithi_token_word_ownership",
+      "model_words": [
+        "ಎತ್ತುತ್ತದೆ."
+      ],
+      "group": null,
+      "tokens": [
+        68,
+        78
+      ],
+      "samples": [
+        94200,
+        106800
+      ]
+    }
+  ]
+}

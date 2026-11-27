@@ -1,0 +1,275 @@
+{
+  "result": "mapped",
+  "words": [
+    {
+      "label": "In",
+      "text_start": 0,
+      "text_end": 2,
+      "method": "mithi_token_word_ownership",
+      "model_words": [
+        "In"
+      ],
+      "group": null,
+      "tokens": [
+        1,
+        2
+      ],
+      "samples": [
+        1200,
+        5400
+      ]
+    },
+    {
+      "label": "July",
+      "text_start": 3,
+      "text_end": 7,
+      "method": "mithi_token_word_ownership",
+      "model_words": [
+        "July"
+      ],
+      "group": null,
+      "tokens": [
+        4,
+        8
+      ],
+      "samples": [
+        7200,
+        14400
+      ]
+    },
+    {
+      "label": "nineteen",
+      "text_start": 8,
+      "text_end": 16,
+      "method": "mithi_token_word_ownership",
+      "model_words": [
+        "nineteen"
+      ],
+      "group": null,
+      "tokens": [
+        10,
+        17
+      ],
+      "samples": [
+        16200,
+        27000
+      ]
+    },
+    {
+      "label": "sixty",
+      "text_start": 17,
+      "text_end": 22,
+      "method": "mithi_token_word_ownership",
+      "model_words": [
+        "sixty"
+      ],
+      "group": null,
+      "tokens": [
+        19,
+        25
+      ],
+      "samples": [
+        28200,
+        36600
+      ]
+    },
+    {
+      "label": "nine,",
+      "text_start": 23,
+      "text_end": 28,
+      "method": "mithi_token_word_ownership",
+      "model_words": [
+        "nine,"
+      ],
+      "group": null,
+      "tokens": [
+        27,
+        30
+      ],
+      "samples": [
+        38400,
+        45000
+      ]
+    },
+    {
+      "label": "a",
+      "text_start": 29,
+      "text_end": 30,
+      "method": "mithi_token_word_ownership",
+      "model_words": [
+        "a"
+      ],
+      "group": null,
+      "tokens": [
+        33,
+        33
+      ],
+      "samples": [
+        53400,
+        55800
+      ]
+    },
+    {
+      "label": "Saturn",
+      "text_start": 31,
+      "text_end": 37,
+      "method": "mithi_token_word_ownership",
+      "model_words": [
+        "Saturn"
+      ],
+      "group": null,
+      "tokens": [
+        35,
+        41
+      ],
+      "samples": [
+        57600,
+        67800
+      ]
+    },
+    {
+      "label": "Five",
+      "text_start": 38,
+      "text_end": 42,
+      "method": "mithi_token_word_ownership",
+      "model_words": [
+        "Five"
+      ],
+      "group": null,
+      "tokens": [
+        43,
+        46
+      ],
+      "samples": [
+        69600,
+        75600
+      ]
+    },
+    {
+      "label": "rocket",
+      "text_start": 43,
+      "text_end": 49,
+      "method": "mithi_token_word_ownership",
+      "model_words": [
+        "rocket"
+      ],
+      "group": null,
+      "tokens": [
+        48,
+        53
+      ],
+      "samples": [
+        77400,
+        85800
+      ]
+    },
+    {
+      "label": "carried",
+      "text_start": 50,
+      "text_end": 57,
+      "method": "mithi_token_word_ownership",
+      "model_words": [
+        "carried"
+      ],
+      "group": null,
+      "tokens": [
+        55,
+        60
+      ],
+      "samples": [
+        87000,
+        96000
+      ]
+    },
+    {
+      "label": "three",
+      "text_start": 58,
+      "text_end": 63,
+      "method": "mithi_token_word_ownership",
+      "model_words": [
+        "three"
+      ],
+      "group": null,
+      "tokens": [
+        62,
+        65
+      ],
+      "samples": [
+        98400,
+        103200
+      ]
+    },
+    {
+      "label": "men",
+      "text_start": 64,
+      "text_end": 67,
+      "method": "mithi_token_word_ownership",
+      "model_words": [
+        "men"
+      ],
+      "group": null,
+      "tokens": [
+        67,
+        70
+      ],
+      "samples": [
+        105000,
+        109800
+      ]
+    },
+    {
+      "label": "towards",
+      "text_start": 68,
+      "text_end": 75,
+      "method": "mithi_token_word_ownership",
+      "model_words": [
+        "towards"
+      ],
+      "group": null,
+      "tokens": [
+        72,
+        77
+      ],
+      "samples": [
+        111600,
+        118800
+      ]
+    },
+    {
+      "label": "the",
+      "text_start": 76,
+      "text_end": 79,
+      "method": "mithi_token_word_ownership",
+      "model_words": [
+        "the"
+      ],
+      "group": null,
+      "tokens": [
+        79,
+        80
+      ],
+      "samples": [
+        120000,
+        121800
+      ]
+    },
+    {
+      "label": "Moon.",
+      "text_start": 80,
+      "text_end": 85,
+      "method": "mithi_token_word_ownership",
+      "model_words": [
+        "Moon."
+      ],
+      "group": null,
+      "tokens": [
+        82,
+        85
+      ],
+      "samples": [
+        123000,
+        127800
+      ]
+    }
+  ]
+}

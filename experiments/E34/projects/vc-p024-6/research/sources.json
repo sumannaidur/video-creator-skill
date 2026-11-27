@@ -1,0 +1,18 @@
+{
+  "sources": [
+    {
+      "id": "S1",
+      "title": "Why Leaves Change Color",
+      "url": "https://www.govinfo.gov/content/pkg/GOVPUB-A13-PURL-LPS95750/pdf/GOVPUB-A13-PURL-LPS95750.pdf",
+      "kind": "USDA Forest Service fact sheet",
+      "accessed": "2026-11-27"
+    },
+    {
+      "id": "S2",
+      "title": "Resorption Protection",
+      "kind": "primary experiment",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC281624/",
+      "accessed": "2026-11-27"
+    }
+  ]
+}

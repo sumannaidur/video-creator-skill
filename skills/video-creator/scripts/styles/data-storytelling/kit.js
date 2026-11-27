@@ -93,7 +93,7 @@
     return {counter: {from, to, prefix, suffix, system}};
   };
 
-  const LABEL_STYLES = ['headline', 'value', 'note', 'source'];
+  const LABEL_STYLES = ['headline', 'value', 'note', 'source', 'deck', 'callout', 'direct'];
   const css = `
     ${COUNTER_CSS}
     .piece-label { font:700 36px/1.5 var(--vc-font); color:${INK} }
@@ -101,6 +101,9 @@
     .label-value .piece-label { font:800 96px/1.25 var(--vc-font); color:var(--label-accent, ${INK}); font-variant-numeric:tabular-nums }
     .label-note .piece-label { font:600 30px/1.5 var(--vc-font); color:#3b3f45; padding-left:16px; border-left:5px solid var(--label-accent, ${ACCENT}) }
     .label-source .piece-label { font:500 22px/1.5 var(--vc-font); color:#7a7f87 }
+    .label-deck .piece-label { font:500 34px/1.4 var(--vc-font); color:#5b6068; text-align:left; white-space:normal; width:auto }
+    .label-callout .piece-label { font:600 30px/1.45 var(--vc-font); color:${INK}; background:#ffffff; padding:14px 20px; border-left:6px solid var(--label-accent, ${ACCENT}); box-shadow:0 6px 18px #0000001f; white-space:normal; width:auto }
+    .label-direct .piece-label { font:700 30px/1.3 var(--vc-font); color:var(--label-accent, ${INK}); font-variant-numeric:tabular-nums }
     .piece[data-counter] .piece-label { --vc-n: calc(var(--from) + (var(--to) - var(--from)) * var(--draw, 1)); counter-reset: vcn var(--vc-n) }
     .piece[data-counter] .piece-label::after { content: var(--prefix) counter(vcn, var(--system)) var(--suffix) }
   `;
@@ -157,5 +160,21 @@
     };
   }
 
-  globalThis.dataKit = {art: {barChart, lineChart, circles, units, timeline, annotate, niceStep}, counter, COLORS: {INK, MUTED, GRID, ACCENT, BLUE}, css, LABEL_STYLES, motion};
+  // P023.4 editorial ranked bars (reference: The Pudding / FT style): one symbol per row so topics can transform rows
+  // (E20 morph technique) while keeping identity; direct labels instead of legends; one highlight, the rest muted.
+  // Each row symbol is a full-length bar (width w = value max) scaled by its object's --draw (scaleX, origin left), so a
+  // row shows value v on domain [0, max] at --draw = v / max. Returns {rows: [{id, markup, y}], axis(max, step), x0, w}.
+  const hbars = ({x, y, w, rowH, data, colors = {base: MUTED, highlight: ACCENT}, thick = .56, prefix = 'hb'}) => {
+    if (!Array.isArray(data) || !data.length) fail('hbars needs data');
+    data.forEach((d, i) => { if (num(d.value, `value ${i}`) < 0) fail('hbars values must be ≥ 0'); });
+    const rows = data.map((d, i) => { const cy = y + (i + .5) * rowH, h = rowH * thick;
+      return {id: `${prefix}${i}`, y: cy, markup: `<rect x="${f(x)}" y="${f(cy - h / 2)}" width="${f(w)}" height="${f(h)}" rx="${f(h * .12)}" fill="${d.highlight ? colors.highlight : colors.base}" style="transform-box:fill-box;transform-origin:0% 50%;transform:scaleX(var(--draw, 1))"/>`}; });
+    const axis = (max, step, {font = 22, unit = ''} = {}) => { if (num(max, 'max') <= 0) fail('axis max must be > 0'); let s = '';
+      for (let v = 0; v <= max + 1e-9; v += step) { const X = x + v / max * w; s += `<path d="M${f(X)} ${f(y - 10)}V${f(y + rowH * data.length)}" stroke="${v === 0 ? INK : GRID}" stroke-width="${v === 0 ? 3 : 2}"/>` +
+        `<text x="${f(X)}" y="${f(y - 22)}" text-anchor="middle" font-size="${font}" fill="#6b7078" style="letter-spacing:.06em">${esc(String(+v.toFixed(6)))}</text>`; }
+      return s + (unit ? `<text x="${f(x + w)}" y="${f(y - 22 - font * 1.4)}" text-anchor="end" font-size="${font}" fill="#6b7078" style="letter-spacing:.08em;text-transform:uppercase">${esc(unit)}</text>` : ''); };
+    return {rows, axis, x0: x, w, end: (i, v, max) => x + v / max * w};
+  };
+
+  globalThis.dataKit = {art: {barChart, lineChart, circles, units, timeline, annotate, niceStep, hbars}, counter, COLORS: {INK, MUTED, GRID, ACCENT, BLUE}, css, LABEL_STYLES, motion};
 })();

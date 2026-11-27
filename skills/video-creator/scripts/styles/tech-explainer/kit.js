@@ -240,6 +240,10 @@
     };
   }
 
-  globalThis.techKit = {art: {iso, isoBox, isoGrid, isoCylinder, trace, packet, glowDot, device, studio, contact, leader, poly,
+  // P023.6 raster layer: a pre-rendered image (for example a static Blender product layer) as symbol markup that fills the
+  // symbol's view box exactly. href is a data: URI carried by the topic (verified, original artwork only). Render the
+  // layers with an orthographic camera when the engine must rotate parts in 2D (rotations then stay physically exact).
+  const raster = (href, w, h) => `<image href="${href}" x="0" y="0" width="${w}" height="${h}" preserveAspectRatio="xMidYMid slice"/>`;
+  globalThis.techKit = {art: {raster, iso, isoBox, isoGrid, isoCylinder, trace, packet, glowDot, device, studio, contact, leader, poly,
     mix, darkStudio, litBox, glassBack, glassFront, halo, beam, isoSpiral, textures}, css, LABEL_STYLES, motion};
 })();

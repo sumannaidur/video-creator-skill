@@ -1,0 +1,53 @@
+{
+  "topic": "How does a seed know which way is up?",
+  "claims": [
+    {
+      "id": "c1",
+      "claim": "Roots grow in the direction of gravity (down); stems grow the opposite way (up).",
+      "sources": [
+        "S1"
+      ],
+      "status": "verified",
+      "passage": "roots show positive gravitropism and stems show negative gravitropism ... roots grow in the direction of gravitational pull (i.e., downward) and stems grow in the opposite direction (i.e., upwards)",
+      "segment": "s1"
+    },
+    {
+      "id": "c2",
+      "claim": "Starch-filled amyloplasts (statoliths) in root-cap cells settle with gravity; their sedimentation transmits the gravity signal.",
+      "sources": [
+        "S1"
+      ],
+      "status": "verified",
+      "passage": "Statoliths ... their sedimentation transmits the gravitropic signal",
+      "segment": "s2"
+    },
+    {
+      "id": "c3",
+      "claim": "Auxin collects on the lower side of the root and suppresses elongation there; the upper side elongates, so the root curves down.",
+      "sources": [
+        "S1"
+      ],
+      "status": "verified",
+      "passage": "high concentrations of auxin move towards the cells on the bottom side of the root. This suppresses growth on this side, while allowing cell elongation on the top of the root ... the root is directed downwards",
+      "segment": "s4"
+    },
+    {
+      "id": "c4",
+      "claim": "In shoots, auxin moves to the lower side, whose cells elongate, so the shoot curves upward.",
+      "sources": [
+        "S1"
+      ],
+      "status": "verified",
+      "passage": "elongate its cells upward, away from the pull of gravity as the auxin move towards the bottom of the shoot",
+      "segment": "s5"
+    }
+  ],
+  "guardrails": [
+    "'like sand' is an explicit simile, not a claim about composition",
+    "the source notes the sensing model is still being refined; narration presents the textbook mechanism only",
+    "cells, grains and auxin are drawn schematically, not to scale"
+  ],
+  "open_questions": [
+    "secondary source; native Telugu review of terms (ఆక్సిన్, పిండి రేణువులు)"
+  ]
+}

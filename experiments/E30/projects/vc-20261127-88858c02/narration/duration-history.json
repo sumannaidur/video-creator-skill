@@ -1,0 +1,20 @@
+[
+  {
+    "at": "2026-11-27T08:15:06+00:00",
+    "measured_seconds": 25.9,
+    "target_seconds": 30,
+    "deviation": -0.1367,
+    "within": false,
+    "script_sha256": "1a0e21c5818e012a57a94747a1a0449fabdec9599ca6c754776a98ac28011c88",
+    "combined": "narration/narration-efdbb02a1d.wav"
+  },
+  {
+    "at": "2026-11-27T08:15:50+00:00",
+    "measured_seconds": 28.475,
+    "target_seconds": 30,
+    "deviation": -0.0508,
+    "within": true,
+    "script_sha256": "59de052e3910a5233a6023ff0442587c02054bc9f0cdd20ef460815d6e5f2e8b",
+    "combined": "narration/narration-aa91a66b25.wav"
+  }
+]

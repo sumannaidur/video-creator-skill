@@ -1,0 +1,748 @@
+{
+  "schema": "video-creator.captions",
+  "version": 1,
+  "locale": "en-IN",
+  "narration": {
+    "timeline": "narration/narration-cb6fd13a17.timeline.json",
+    "timeline_sha256": "64762c8d48f586d4fbf24a8d1f1eae0125d95740af519776cacbaecfa8964c58",
+    "audio_sha256": "d0ff6cfc3f3ee1e7c0a88913fc88478de7a2a15f4dd6a3ff3d1b0dae2bfc5fb8",
+    "sample_rate": 24000,
+    "sample_count": 727200,
+    "timing_status": "unreviewed",
+    "timing_method": null,
+    "run_id": "combined-d032310b0d31a108f6945c77"
+  },
+  "config": {
+    "enabled": true,
+    "burn_in": true,
+    "subtitle_files": [
+      "srt",
+      "vtt"
+    ],
+    "mode": "words",
+    "max_chars": 26,
+    "max_words": 3,
+    "max_lines": 2,
+    "hold_ms": 700
+  },
+  "cues": [
+    {
+      "start_sample": 1200,
+      "speech_end_sample": 24600,
+      "text": "A lighthouse holds",
+      "text_ref": {
+        "field": "speech",
+        "start": 0,
+        "end": 18
+      },
+      "segment": "s1",
+      "timing_sources": [
+        "native_model"
+      ],
+      "long": false,
+      "end_sample": 25800,
+      "id": "c1",
+      "start": 0.05,
+      "end": 1.075
+    },
+    {
+      "start_sample": 25800,
+      "speech_end_sample": 46800,
+      "text": "just one lamp,",
+      "text_ref": {
+        "field": "speech",
+        "start": 19,
+        "end": 33
+      },
+      "segment": "s1",
+      "timing_sources": [
+        "native_model"
+      ],
+      "long": false,
+      "end_sample": 55800,
+      "id": "c2",
+      "start": 1.075,
+      "end": 2.325
+    },
+    {
+      "start_sample": 55800,
+      "speech_end_sample": 76800,
+      "text": "yet ships far",
+      "text_ref": {
+        "field": "speech",
+        "start": 34,
+        "end": 47
+      },
+      "segment": "s1",
+      "timing_sources": [
+        "native_model"
+      ],
+      "long": false,
+      "end_sample": 78000,
+      "id": "c3",
+      "start": 2.325,
+      "end": 3.25
+    },
+    {
+      "start_sample": 78000,
+      "speech_end_sample": 91800,
+      "text": "out at sea",
+      "text_ref": {
+        "field": "speech",
+        "start": 48,
+        "end": 58
+      },
+      "segment": "s1",
+      "timing_sources": [
+        "native_model"
+      ],
+      "long": false,
+      "end_sample": 93000,
+      "id": "c4",
+      "start": 3.25,
+      "end": 3.875
+    },
+    {
+      "start_sample": 93000,
+      "speech_end_sample": 105000,
+      "text": "can see it.",
+      "text_ref": {
+        "field": "speech",
+        "start": 59,
+        "end": 70
+      },
+      "segment": "s1",
+      "timing_sources": [
+        "native_model"
+      ],
+      "long": false,
+      "end_sample": 112200,
+      "id": "c5",
+      "start": 3.875,
+      "end": 4.675
+    },
+    {
+      "start_sample": 112200,
+      "speech_end_sample": 115200,
+      "text": "How?",
+      "text_ref": {
+        "field": "speech",
+        "start": 71,
+        "end": 75
+      },
+      "segment": "s1",
+      "timing_sources": [
+        "native_model"
+      ],
+      "long": false,
+      "end_sample": 123000,
+      "id": "c6",
+      "start": 4.675,
+      "end": 5.125
+    },
+    {
+      "start_sample": 123000,
+      "speech_end_sample": 138600,
+      "text": "On its own,",
+      "text_ref": {
+        "field": "speech",
+        "start": 76,
+        "end": 87
+      },
+      "segment": "s2",
+      "timing_sources": [
+        "native_model"
+      ],
+      "long": false,
+      "end_sample": 146400,
+      "id": "c7",
+      "start": 5.125,
+      "end": 6.1
+    },
+    {
+      "start_sample": 146400,
+      "speech_end_sample": 169200,
+      "text": "a flame spills",
+      "text_ref": {
+        "field": "speech",
+        "start": 88,
+        "end": 102
+      },
+      "segment": "s2",
+      "timing_sources": [
+        "native_model"
+      ],
+      "long": false,
+      "end_sample": 171000,
+      "id": "c8",
+      "start": 6.1,
+      "end": 7.125
+    },
+    {
+      "start_sample": 171000,
+      "speech_end_sample": 188400,
+      "text": "light in every",
+      "text_ref": {
+        "field": "speech",
+        "start": 103,
+        "end": 117
+      },
+      "segment": "s2",
+      "timing_sources": [
+        "native_model"
+      ],
+      "long": false,
+      "end_sample": 190200,
+      "id": "c9",
+      "start": 7.125,
+      "end": 7.925
+    },
+    {
+      "start_sample": 190200,
+      "speech_end_sample": 200400,
+      "text": "direction,",
+      "text_ref": {
+        "field": "speech",
+        "start": 118,
+        "end": 128
+      },
+      "segment": "s2",
+      "timing_sources": [
+        "native_model"
+      ],
+      "long": false,
+      "end_sample": 209400,
+      "id": "c10",
+      "start": 7.925,
+      "end": 8.725
+    },
+    {
+      "start_sample": 209400,
+      "speech_end_sample": 224400,
+      "text": "and most of",
+      "text_ref": {
+        "field": "speech",
+        "start": 129,
+        "end": 140
+      },
+      "segment": "s2",
+      "timing_sources": [
+        "native_model"
+      ],
+      "long": false,
+      "end_sample": 225600,
+      "id": "c11",
+      "start": 8.725,
+      "end": 9.4
+    },
+    {
+      "start_sample": 225600,
+      "speech_end_sample": 246000,
+      "text": "it never reaches",
+      "text_ref": {
+        "field": "speech",
+        "start": 141,
+        "end": 157
+      },
+      "segment": "s2",
+      "timing_sources": [
+        "native_model"
+      ],
+      "long": false,
+      "end_sample": 247200,
+      "id": "c12",
+      "start": 9.4,
+      "end": 10.3
+    },
+    {
+      "start_sample": 247200,
+      "speech_end_sample": 253200,
+      "text": "a ship.",
+      "text_ref": {
+        "field": "speech",
+        "start": 158,
+        "end": 165
+      },
+      "segment": "s2",
+      "timing_sources": [
+        "native_model"
+      ],
+      "long": false,
+      "end_sample": 261000,
+      "id": "c13",
+      "start": 10.3,
+      "end": 10.875
+    },
+    {
+      "start_sample": 261000,
+      "speech_end_sample": 294600,
+      "text": "So Augustin Fresnel",
+      "text_ref": {
+        "field": "speech",
+        "start": 166,
+        "end": 185
+      },
+      "segment": "s3",
+      "timing_sources": [
+        "native_model"
+      ],
+      "long": false,
+      "end_sample": 295800,
+      "id": "c14",
+      "start": 10.875,
+      "end": 12.325
+    },
+    {
+      "start_sample": 295800,
+      "speech_end_sample": 313200,
+      "text": "wrapped the lamp",
+      "text_ref": {
+        "field": "speech",
+        "start": 186,
+        "end": 202
+      },
+      "segment": "s3",
+      "timing_sources": [
+        "native_model"
+      ],
+      "long": false,
+      "end_sample": 314400,
+      "id": "c15",
+      "start": 12.325,
+      "end": 13.1
+    },
+    {
+      "start_sample": 314400,
+      "speech_end_sample": 327600,
+      "text": "in rings of",
+      "text_ref": {
+        "field": "speech",
+        "start": 203,
+        "end": 214
+      },
+      "segment": "s3",
+      "timing_sources": [
+        "native_model"
+      ],
+      "long": false,
+      "end_sample": 328800,
+      "id": "c16",
+      "start": 13.1,
+      "end": 13.7
+    },
+    {
+      "start_sample": 328800,
+      "speech_end_sample": 336000,
+      "text": "glass.",
+      "text_ref": {
+        "field": "speech",
+        "start": 215,
+        "end": 221
+      },
+      "segment": "s3",
+      "timing_sources": [
+        "native_model"
+      ],
+      "long": false,
+      "end_sample": 346200,
+      "id": "c17",
+      "start": 13.7,
+      "end": 14.425
+    },
+    {
+      "start_sample": 346200,
+      "speech_end_sample": 367200,
+      "text": "The central rings",
+      "text_ref": {
+        "field": "speech",
+        "start": 222,
+        "end": 239
+      },
+      "segment": "s3",
+      "timing_sources": [
+        "native_model"
+      ],
+      "long": false,
+      "end_sample": 369000,
+      "id": "c18",
+      "start": 14.425,
+      "end": 15.375
+    },
+    {
+      "start_sample": 369000,
+      "speech_end_sample": 384000,
+      "text": "bend the light",
+      "text_ref": {
+        "field": "speech",
+        "start": 240,
+        "end": 254
+      },
+      "segment": "s3",
+      "timing_sources": [
+        "native_model"
+      ],
+      "long": false,
+      "end_sample": 385200,
+      "id": "c19",
+      "start": 15.375,
+      "end": 16.05
+    },
+    {
+      "start_sample": 385200,
+      "speech_end_sample": 408000,
+      "text": "into one straight",
+      "text_ref": {
+        "field": "speech",
+        "start": 255,
+        "end": 272
+      },
+      "segment": "s3",
+      "timing_sources": [
+        "native_model"
+      ],
+      "long": false,
+      "end_sample": 409200,
+      "id": "c20",
+      "start": 16.05,
+      "end": 17.05
+    },
+    {
+      "start_sample": 409200,
+      "speech_end_sample": 414600,
+      "text": "beam.",
+      "text_ref": {
+        "field": "speech",
+        "start": 273,
+        "end": 278
+      },
+      "segment": "s3",
+      "timing_sources": [
+        "native_model"
+      ],
+      "long": false,
+      "end_sample": 422400,
+      "id": "c21",
+      "start": 17.05,
+      "end": 17.6
+    },
+    {
+      "start_sample": 422400,
+      "speech_end_sample": 445200,
+      "text": "The outer prisms",
+      "text_ref": {
+        "field": "speech",
+        "start": 279,
+        "end": 295
+      },
+      "segment": "s4",
+      "timing_sources": [
+        "native_model"
+      ],
+      "long": false,
+      "end_sample": 446400,
+      "id": "c22",
+      "start": 17.6,
+      "end": 18.6
+    },
+    {
+      "start_sample": 446400,
+      "speech_end_sample": 465000,
+      "text": "catch the steep",
+      "text_ref": {
+        "field": "speech",
+        "start": 296,
+        "end": 311
+      },
+      "segment": "s4",
+      "timing_sources": [
+        "native_model"
+      ],
+      "long": false,
+      "end_sample": 466800,
+      "id": "c23",
+      "start": 18.6,
+      "end": 19.45
+    },
+    {
+      "start_sample": 466800,
+      "speech_end_sample": 473400,
+      "text": "rays,",
+      "text_ref": {
+        "field": "speech",
+        "start": 312,
+        "end": 317
+      },
+      "segment": "s4",
+      "timing_sources": [
+        "native_model"
+      ],
+      "long": false,
+      "end_sample": 483600,
+      "id": "c24",
+      "start": 19.45,
+      "end": 20.15
+    },
+    {
+      "start_sample": 483600,
+      "speech_end_sample": 507600,
+      "text": "reflect them inside",
+      "text_ref": {
+        "field": "speech",
+        "start": 318,
+        "end": 337
+      },
+      "segment": "s4",
+      "timing_sources": [
+        "native_model"
+      ],
+      "long": false,
+      "end_sample": 508200,
+      "id": "c25",
+      "start": 20.15,
+      "end": 21.175
+    },
+    {
+      "start_sample": 508200,
+      "speech_end_sample": 519600,
+      "text": "the glass,",
+      "text_ref": {
+        "field": "speech",
+        "start": 338,
+        "end": 348
+      },
+      "segment": "s4",
+      "timing_sources": [
+        "native_model"
+      ],
+      "long": false,
+      "end_sample": 529200,
+      "id": "c26",
+      "start": 21.175,
+      "end": 22.05
+    },
+    {
+      "start_sample": 529200,
+      "speech_end_sample": 543600,
+      "text": "and add them",
+      "text_ref": {
+        "field": "speech",
+        "start": 349,
+        "end": 361
+      },
+      "segment": "s4",
+      "timing_sources": [
+        "native_model"
+      ],
+      "long": false,
+      "end_sample": 544800,
+      "id": "c27",
+      "start": 22.05,
+      "end": 22.7
+    },
+    {
+      "start_sample": 544800,
+      "speech_end_sample": 555600,
+      "text": "to the same",
+      "text_ref": {
+        "field": "speech",
+        "start": 362,
+        "end": 373
+      },
+      "segment": "s4",
+      "timing_sources": [
+        "native_model"
+      ],
+      "long": false,
+      "end_sample": 557400,
+      "id": "c28",
+      "start": 22.7,
+      "end": 23.225
+    },
+    {
+      "start_sample": 557400,
+      "speech_end_sample": 562200,
+      "text": "beam.",
+      "text_ref": {
+        "field": "speech",
+        "start": 374,
+        "end": 379
+      },
+      "segment": "s4",
+      "timing_sources": [
+        "native_model"
+      ],
+      "long": false,
+      "end_sample": 570000,
+      "id": "c29",
+      "start": 23.225,
+      "end": 23.75
+    },
+    {
+      "start_sample": 570000,
+      "speech_end_sample": 585000,
+      "text": "Then the whole",
+      "text_ref": {
+        "field": "speech",
+        "start": 380,
+        "end": 394
+      },
+      "segment": "s5",
+      "timing_sources": [
+        "native_model"
+      ],
+      "long": false,
+      "end_sample": 586800,
+      "id": "c30",
+      "start": 23.75,
+      "end": 24.45
+    },
+    {
+      "start_sample": 586800,
+      "speech_end_sample": 615600,
+      "text": "lens slowly turns,",
+      "text_ref": {
+        "field": "speech",
+        "start": 395,
+        "end": 413
+      },
+      "segment": "s5",
+      "timing_sources": [
+        "native_model"
+      ],
+      "long": false,
+      "end_sample": 623400,
+      "id": "c31",
+      "start": 24.45,
+      "end": 25.975
+    },
+    {
+      "start_sample": 623400,
+      "speech_end_sample": 640200,
+      "text": "and far out",
+      "text_ref": {
+        "field": "speech",
+        "start": 414,
+        "end": 425
+      },
+      "segment": "s5",
+      "timing_sources": [
+        "native_model"
+      ],
+      "long": false,
+      "end_sample": 641400,
+      "id": "c32",
+      "start": 25.975,
+      "end": 26.725
+    },
+    {
+      "start_sample": 641400,
+      "speech_end_sample": 651000,
+      "text": "at sea,",
+      "text_ref": {
+        "field": "speech",
+        "start": 426,
+        "end": 433
+      },
+      "segment": "s5",
+      "timing_sources": [
+        "native_model"
+      ],
+      "long": false,
+      "end_sample": 660600,
+      "id": "c33",
+      "start": 26.725,
+      "end": 27.525
+    },
+    {
+      "start_sample": 660600,
+      "speech_end_sample": 678600,
+      "text": "sailors see the",
+      "text_ref": {
+        "field": "speech",
+        "start": 434,
+        "end": 449
+      },
+      "segment": "s5",
+      "timing_sources": [
+        "native_model"
+      ],
+      "long": false,
+      "end_sample": 679800,
+      "id": "c34",
+      "start": 27.525,
+      "end": 28.325
+    },
+    {
+      "start_sample": 679800,
+      "speech_end_sample": 702600,
+      "text": "beam sweep past",
+      "text_ref": {
+        "field": "speech",
+        "start": 450,
+        "end": 465
+      },
+      "segment": "s5",
+      "timing_sources": [
+        "native_model"
+      ],
+      "long": false,
+      "end_sample": 704400,
+      "id": "c35",
+      "start": 28.325,
+      "end": 29.35
+    },
+    {
+      "start_sample": 704400,
+      "speech_end_sample": 716400,
+      "text": "as a bright",
+      "text_ref": {
+        "field": "speech",
+        "start": 466,
+        "end": 477
+      },
+      "segment": "s5",
+      "timing_sources": [
+        "native_model"
+      ],
+      "long": false,
+      "end_sample": 718200,
+      "id": "c36",
+      "start": 29.35,
+      "end": 29.925
+    },
+    {
+      "start_sample": 718200,
+      "speech_end_sample": 725400,
+      "text": "flash.",
+      "text_ref": {
+        "field": "speech",
+        "start": 478,
+        "end": 484
+      },
+      "segment": "s5",
+      "timing_sources": [
+        "native_model"
+      ],
+      "long": false,
+      "end_sample": 727200,
+      "id": "c37",
+      "start": 29.925,
+      "end": 30.3
+    }
+  ],
+  "files": {
+    "srt": {
+      "path": "captions/captions.srt",
+      "sha256": "c92c885a10f00512b7c552b50e92b4beb390a13d4a5358094a5ae4c836d48b72"
+    },
+    "vtt": {
+      "path": "captions/captions.vtt",
+      "sha256": "47a5cb31fd8fc3635ab143fa54e7ef254d3a4d58eecba16789f477172bd00a5e"
+    }
+  },
+  "review": {
+    "technical": "passed",
+    "language": "pending native-reader review",
+    "readability": "pending human review"
+  }
+}

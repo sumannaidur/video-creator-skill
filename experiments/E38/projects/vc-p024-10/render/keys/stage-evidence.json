@@ -1,0 +1,9 @@
+{
+  "repeatability": true,
+  "human_review": "pending",
+  "scope": "keyframes-only",
+  "cue_checks": 3,
+  "passed": true,
+  "keyframes": 3,
+  "geometry": "7 sourced proportional bars verified"
+}

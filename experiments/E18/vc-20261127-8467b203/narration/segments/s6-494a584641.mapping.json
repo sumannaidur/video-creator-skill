@@ -1,0 +1,221 @@
+{
+  "result": "mapped",
+  "words": [
+    {
+      "label": "ఫోన్‌కి",
+      "text_start": 0,
+      "text_end": 7,
+      "method": "mithi_token_word_ownership",
+      "model_words": [
+        "ఫోన్‌కి"
+      ],
+      "group": null,
+      "tokens": [
+        1,
+        8
+      ],
+      "samples": [
+        1200,
+        10200
+      ]
+    },
+    {
+      "label": "చేరగానే",
+      "text_start": 8,
+      "text_end": 15,
+      "method": "mithi_token_word_ownership",
+      "model_words": [
+        "చేరగానే"
+      ],
+      "group": null,
+      "tokens": [
+        10,
+        22
+      ],
+      "samples": [
+        11400,
+        27000
+      ]
+    },
+    {
+      "label": "రెండు",
+      "text_start": 16,
+      "text_end": 21,
+      "method": "mithi_token_word_ownership",
+      "model_words": [
+        "రెండు"
+      ],
+      "group": null,
+      "tokens": [
+        24,
+        29
+      ],
+      "samples": [
+        28800,
+        36600
+      ]
+    },
+    {
+      "label": "గ్రే",
+      "text_start": 22,
+      "text_end": 26,
+      "method": "mithi_token_word_ownership",
+      "model_words": [
+        "గ్రే"
+      ],
+      "group": null,
+      "tokens": [
+        31,
+        35
+      ],
+      "samples": [
+        37800,
+        42600
+      ]
+    },
+    {
+      "label": "టిక్‌లు",
+      "text_start": 27,
+      "text_end": 34,
+      "method": "mithi_token_word_ownership",
+      "model_words": [
+        "టిక్‌లు"
+      ],
+      "group": null,
+      "tokens": [
+        37,
+        42
+      ],
+      "samples": [
+        43800,
+        51000
+      ]
+    },
+    {
+      "label": "వస్తాయి.",
+      "text_start": 35,
+      "text_end": 43,
+      "method": "mithi_token_word_ownership",
+      "model_words": [
+        "వస్తాయి."
+      ],
+      "group": null,
+      "tokens": [
+        44,
+        52
+      ],
+      "samples": [
+        52200,
+        61800
+      ]
+    },
+    {
+      "label": "అప్పుడు",
+      "text_start": 44,
+      "text_end": 51,
+      "method": "mithi_token_word_ownership",
+      "model_words": [
+        "అప్పుడు"
+      ],
+      "group": null,
+      "tokens": [
+        55,
+        61
+      ],
+      "samples": [
+        70800,
+        81600
+      ]
+    },
+    {
+      "label": "సర్వర్",
+      "text_start": 52,
+      "text_end": 58,
+      "method": "mithi_token_word_ownership",
+      "model_words": [
+        "సర్వర్"
+      ],
+      "group": null,
+      "tokens": [
+        63,
+        69
+      ],
+      "samples": [
+        83400,
+        92400
+      ]
+    },
+    {
+      "label": "నుంచి",
+      "text_start": 59,
+      "text_end": 64,
+      "method": "mithi_token_word_ownership",
+      "model_words": [
+        "నుంచి"
+      ],
+      "group": null,
+      "tokens": [
+        71,
+        76
+      ],
+      "samples": [
+        93600,
+        102000
+      ]
+    },
+    {
+      "label": "ఆ",
+      "text_start": 65,
+      "text_end": 66,
+      "method": "mithi_token_word_ownership",
+      "model_words": [
+        "ఆ"
+      ],
+      "group": null,
+      "tokens": [
+        78,
+        79
+      ],
+      "samples": [
+        104400,
+        106200
+      ]
+    },
+    {
+      "label": "మెసేజ్",
+      "text_start": 67,
+      "text_end": 73,
+      "method": "mithi_token_word_ownership",
+      "model_words": [
+        "మెసేజ్"
+      ],
+      "group": null,
+      "tokens": [
+        81,
+        87
+      ],
+      "samples": [
+        108000,
+        116400
+      ]
+    },
+    {
+      "label": "తొలగిపోతుంది.",
+      "text_start": 74,
+      "text_end": 87,
+      "method": "mithi_token_word_ownership",
+      "model_words": [
+        "తొలగిపోతుంది."
+      ],
+      "group": null,
+      "tokens": [
+        89,
+        105
+      ],
+      "samples": [
+        117600,
+        135600
+      ]
+    }
+  ]
+}

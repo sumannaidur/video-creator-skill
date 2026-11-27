@@ -1,0 +1,187 @@
+{
+  "schema": "video-creator.creative-plan",
+  "version": 1,
+  "style": "flat-science",
+  "style_reason": "A repeated antigen silhouette connects first exposure, specific binding and later recognition.",
+  "story": [
+    {
+      "segment": "s1",
+      "role": "hook",
+      "idea": "Introduce the antigen motif on its own."
+    },
+    {
+      "segment": "s2",
+      "role": "mechanism",
+      "idea": "Reveal antibodies matching antigen tips."
+    },
+    {
+      "segment": "s3",
+      "role": "resolution",
+      "idea": "Bring back the matching response beside retained memory cells."
+    }
+  ],
+  "motifs": [
+    {
+      "id": "signature",
+      "stands_for": "The same antigen signature across exposure and recall."
+    }
+  ],
+  "assets": [
+    {
+      "id": "cell-art",
+      "kind": "procedural",
+      "description": "Original conceptual cells and molecular silhouettes."
+    }
+  ],
+  "guardrails": [
+    "Conceptual, not to scale. The free antigen illustrates one vaccine route.",
+    "The immune system has additional pathways. Antibody placement is schematic and the figure shows no instant or guaranteed protection."
+  ],
+  "shots": [
+    {
+      "id": "exposure",
+      "purpose": "Introduce the antigen motif on its own.",
+      "objects": [
+        {
+          "id": "free-marker",
+          "description": "Introduce the antigen motif on its own.",
+          "asset": "cell-art",
+          "motif": "signature"
+        }
+      ],
+      "cues": [
+        {
+          "id": "antigen-cue",
+          "object": "free-marker",
+          "at": {
+            "sample": 201000,
+            "seconds": 8.375,
+            "kind": "word",
+            "label": "యాంటిజెన్",
+            "segment": "s1",
+            "timing_source": "native_model",
+            "edge": "start",
+            "offset_ms": 0
+          },
+          "action": "Introduce the antigen motif on its own."
+        }
+      ],
+      "start": {
+        "sample": 0,
+        "seconds": 0.0,
+        "kind": "bounds",
+        "label": "narration-start",
+        "timing_source": "narration_bounds"
+      },
+      "end": {
+        "sample": 229800,
+        "seconds": 9.575
+      },
+      "camera": []
+    },
+    {
+      "id": "recognition",
+      "start": {
+        "sample": 229800,
+        "seconds": 9.575,
+        "kind": "segment",
+        "label": "s2",
+        "segment": null,
+        "timing_source": "segment_boundary",
+        "edge": "start",
+        "offset_ms": 0
+      },
+      "purpose": "Reveal antibodies matching antigen tips.",
+      "objects": [
+        {
+          "id": "bound",
+          "description": "Reveal antibodies matching antigen tips.",
+          "asset": "cell-art",
+          "motif": "signature"
+        }
+      ],
+      "cues": [
+        {
+          "id": "binding-cue",
+          "object": "bound",
+          "at": {
+            "sample": 305400,
+            "seconds": 12.725,
+            "kind": "word",
+            "label": "అంటుకుంటాయి.",
+            "segment": "s2",
+            "timing_source": "native_model",
+            "edge": "start",
+            "offset_ms": 0
+          },
+          "action": "Reveal antibodies matching antigen tips."
+        }
+      ],
+      "end": {
+        "sample": 478800,
+        "seconds": 19.95
+      },
+      "camera": []
+    },
+    {
+      "id": "memory",
+      "start": {
+        "sample": 478800,
+        "seconds": 19.95,
+        "kind": "segment",
+        "label": "s3",
+        "segment": null,
+        "timing_source": "segment_boundary",
+        "edge": "start",
+        "offset_ms": 0
+      },
+      "purpose": "Bring back the matching response beside retained memory cells.",
+      "objects": [
+        {
+          "id": "recall",
+          "description": "Bring back the matching response beside retained memory cells.",
+          "asset": "cell-art",
+          "motif": "signature"
+        }
+      ],
+      "cues": [
+        {
+          "id": "recall-cue",
+          "object": "recall",
+          "at": {
+            "sample": 672600,
+            "seconds": 28.025,
+            "kind": "word",
+            "label": "త్వరగా",
+            "segment": "s3",
+            "timing_source": "native_model",
+            "edge": "start",
+            "offset_ms": 0
+          },
+          "action": "Bring back the matching response beside retained memory cells."
+        }
+      ],
+      "end": {
+        "sample": 705000,
+        "seconds": 29.375
+      },
+      "camera": []
+    }
+  ],
+  "narration": {
+    "timeline": "narration/narration-d4da6a0bd7.timeline.json",
+    "sha256": "2f02ec2c623633aaee5d1c94152a892c6249c36faea6b6f4c46520bb731cf871"
+  },
+  "resolution": {
+    "timeline_sha256": "2f02ec2c623633aaee5d1c94152a892c6249c36faea6b6f4c46520bb731cf871",
+    "audio_sha256": "de3f21ceb5d46701abe35c7b111ee9fb8b2bd02c107f2af6f4224d296a2385ec",
+    "sample_rate": 24000,
+    "sample_count": 705000,
+    "timing_status": "unreviewed",
+    "record_sources": [
+      "native_model"
+    ],
+    "run_id": "combined-f9a874ac71b4ece192cef239",
+    "timeline": "narration/narration-d4da6a0bd7.timeline.json"
+  }
+}

@@ -1,0 +1,84 @@
+{
+  "blender": "5.2.2 LTS",
+  "engine": "BLENDER_EEVEE",
+  "resolution": [
+    540,
+    960
+  ],
+  "samples": 32,
+  "gpu": "Windows",
+  "python_start_to_scene_built_s": 1.754,
+  "frames": [
+    {
+      "frame": 84,
+      "seconds": 6.671
+    },
+    {
+      "frame": 85,
+      "seconds": 5.489
+    },
+    {
+      "frame": 86,
+      "seconds": 5.331
+    },
+    {
+      "frame": 87,
+      "seconds": 5.371
+    },
+    {
+      "frame": 88,
+      "seconds": 5.248
+    },
+    {
+      "frame": 89,
+      "seconds": 5.353
+    },
+    {
+      "frame": 90,
+      "seconds": 5.234
+    },
+    {
+      "frame": 91,
+      "seconds": 5.654
+    }
+  ],
+  "compositor": {
+    "bloom": true,
+    "settings": {
+      "glare_type": false,
+      "quality": false,
+      "threshold": false,
+      "mix": false,
+      "size": false,
+      "type-input": true,
+      "quality-input": true,
+      "threshold-input": true,
+      "strength-input": true,
+      "size-input": true
+    },
+    "inputs": [
+      "Image",
+      "Type",
+      "Quality",
+      "Threshold",
+      "Smoothness",
+      "Clamp",
+      "Maximum",
+      "Strength",
+      "Saturation",
+      "Tint",
+      "Size",
+      "Streaks",
+      "Streaks Angle",
+      "Iterations",
+      "Fade",
+      "Color Modulation",
+      "Diagonal",
+      "Sun Position",
+      "Jitter",
+      "Kernel Data Type",
+      "Kernel",
+      "Kernel"
+    ]
+  }
+}

@@ -1,0 +1,52 @@
+{
+ "narration": "../narration/narration-ca1e95afa3.wav",
+ "manifest": "assets/assets-manifest.json",
+ "music": {
+  "file": "assets/music-pad.wav",
+  "gain_db": -9,
+  "fade_in": 1.5,
+  "fade_out": 2.5,
+  "duck": {
+   "threshold": 0.03,
+   "ratio": 8,
+   "attack_ms": 30,
+   "release_ms": 600
+  }
+ },
+ "sfx": [
+  {
+   "file": "assets/whoosh.wav",
+   "at": 6.7,
+   "gain_db": -24,
+   "why": "glass turns see-through, coil revealed"
+  },
+  {
+   "file": "assets/rumble.wav",
+   "at": 15.55,
+   "gain_db": -26,
+   "why": "magnetic field rises through the glass"
+  },
+  {
+   "file": "assets/pop.wav",
+   "at": 20.62,
+   "gain_db": -24,
+   "why": "eddy currents appear in the pan base"
+  },
+  {
+   "file": "assets/chime.wav",
+   "at": 27.2,
+   "gain_db": -22,
+   "why": "resolution: heat is born in the pan"
+  }
+ ],
+ "loudness": {
+  "integrated_lufs": -16,
+  "true_peak_db": -1.5
+ },
+ "intelligibility_min_lu": 12,
+ "output": "mix.wav",
+ "video": {
+  "input": "../render/final/e42.mp4",
+  "output": "../render/final/e42-final.mp4"
+ }
+}

@@ -35,6 +35,15 @@ Premium editorial data visualisation. Charts build themselves from the true numb
 - **Building:** `motion.build(id, at, dur)` grows a chart from zero through the `--draw` channel. Bars rise in sequence, lines draw along their path, circles and units fill in order, and value labels appear as each bar completes.
 - **Counting:** `motion.count(id, at, dur)` counts a `counter` object from its start to its exact end value.
 - **Camera:** small, steady push-ins at plan moments. Never move the camera while a value is being read.
+- **Transformations (P022.2):**
+  - When the story changes the form of the same quantity (parts to a total, values to shares), move the same marks so the viewer can follow them. Keep their identity, order and colour, and keep every intermediate state honest (one shared scale while they move).
+  - Bars can stack into a total column by rescaling their `--draw` channel and translating them.
+  - Data marks use `inOut` or `outQuart`, **never `overshoot` or `settle`**, which would show false values. Labels and notes may use them. Flag data objects with `dataMark: true`, and preflight's `data-marks` check then refuses those curves.
+- **Emphasis:** dim what the narration is not about rather than enlarging what it is about, and put the note next to the mark.
+- **Editorial ranked rows (P023.4):** `art.hbars({x, y, w, rowH, data})` returns one symbol per row, so rows can be transformed with identity kept, plus `axis(max, step, {unit})`.
+  - Label directly at the bar end (label style `direct`), never with a legend.
+  - Headline plus `deck` subtitle; notes as `callout` cards placed where they cover no data.
+- **Changing what a mark encodes** (height, then a gap): retract the rows together, swap and relabel the axis, then grow the new values. Never show a mix of two scales.
 - **`bars` transition:** chart columns rise across the frame (charcoal with accent columns) to cover the cut, then fall away to reveal the next shot.
 
 ## Implementation
@@ -46,9 +55,10 @@ Premium editorial data visualisation. Charts build themselves from the true numb
 
 ## Self-review additions
 
+- Can the viewer name the comparison from the opening and see its answer in the final emphasis? Keep the scale stable and make any denominator or coverage change visible where it matters.
 - Does every number trace to a ledger claim, and does every data shot show its source?
 - Would the chart look the same if drawn on graph paper from the numbers (zero baseline, true areas, honest domain)?
-- Is exactly one thing highlighted, and is it the thing the narration is saying?
+- Do highlights distinguish the comparison or value being discussed?
 - Are units visible wherever a number is?
 - Does any animation suggest a value the data does not contain?
 

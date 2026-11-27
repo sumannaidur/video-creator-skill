@@ -1,0 +1,672 @@
+{
+  "schema": "video-creator.captions",
+  "version": 1,
+  "locale": "en-IN",
+  "narration": {
+    "timeline": "narration/narration-10adab5f79.timeline.json",
+    "timeline_sha256": "30799d91230257dc8a41c4c4454a1948f108f5063e7024eef23511b2636db4a3",
+    "audio_sha256": "4491bb7adb38a06ac307b4add97263caabc6f633e9f0d1729ab27dcb795da92a",
+    "sample_rate": 24000,
+    "sample_count": 733800,
+    "timing_status": "unreviewed",
+    "timing_method": null,
+    "run_id": "combined-175c5450524432ea098efdc5"
+  },
+  "config": {
+    "enabled": true,
+    "burn_in": true,
+    "subtitle_files": [
+      "srt",
+      "vtt"
+    ],
+    "mode": "words",
+    "max_chars": 26,
+    "max_words": 3,
+    "max_lines": 2,
+    "hold_ms": 700
+  },
+  "cues": [
+    {
+      "start_sample": 1200,
+      "speech_end_sample": 27000,
+      "text": "In July nineteen",
+      "text_ref": {
+        "field": "speech",
+        "start": 0,
+        "end": 16
+      },
+      "segment": "s1",
+      "timing_sources": [
+        "native_model"
+      ],
+      "long": false,
+      "end_sample": 28200,
+      "id": "c1",
+      "start": 0.05,
+      "end": 1.175
+    },
+    {
+      "start_sample": 28200,
+      "speech_end_sample": 45000,
+      "text": "sixty nine,",
+      "text_ref": {
+        "field": "speech",
+        "start": 17,
+        "end": 28
+      },
+      "segment": "s1",
+      "timing_sources": [
+        "native_model"
+      ],
+      "long": false,
+      "end_sample": 53400,
+      "id": "c2",
+      "start": 1.175,
+      "end": 2.225
+    },
+    {
+      "start_sample": 53400,
+      "speech_end_sample": 75600,
+      "text": "a Saturn Five",
+      "text_ref": {
+        "field": "speech",
+        "start": 29,
+        "end": 42
+      },
+      "segment": "s1",
+      "timing_sources": [
+        "native_model"
+      ],
+      "long": false,
+      "end_sample": 77400,
+      "id": "c3",
+      "start": 2.225,
+      "end": 3.225
+    },
+    {
+      "start_sample": 77400,
+      "speech_end_sample": 103200,
+      "text": "rocket carried three",
+      "text_ref": {
+        "field": "speech",
+        "start": 43,
+        "end": 63
+      },
+      "segment": "s1",
+      "timing_sources": [
+        "native_model"
+      ],
+      "long": false,
+      "end_sample": 105000,
+      "id": "c4",
+      "start": 3.225,
+      "end": 4.375
+    },
+    {
+      "start_sample": 105000,
+      "speech_end_sample": 121800,
+      "text": "men towards the",
+      "text_ref": {
+        "field": "speech",
+        "start": 64,
+        "end": 79
+      },
+      "segment": "s1",
+      "timing_sources": [
+        "native_model"
+      ],
+      "long": false,
+      "end_sample": 123000,
+      "id": "c5",
+      "start": 4.375,
+      "end": 5.125
+    },
+    {
+      "start_sample": 123000,
+      "speech_end_sample": 127800,
+      "text": "Moon.",
+      "text_ref": {
+        "field": "speech",
+        "start": 80,
+        "end": 85
+      },
+      "segment": "s1",
+      "timing_sources": [
+        "native_model"
+      ],
+      "long": false,
+      "end_sample": 135600,
+      "id": "c6",
+      "start": 5.125,
+      "end": 5.65
+    },
+    {
+      "start_sample": 135600,
+      "speech_end_sample": 150600,
+      "text": "Seen from the",
+      "text_ref": {
+        "field": "speech",
+        "start": 86,
+        "end": 99
+      },
+      "segment": "s2",
+      "timing_sources": [
+        "native_model"
+      ],
+      "long": false,
+      "end_sample": 151800,
+      "id": "c7",
+      "start": 5.65,
+      "end": 6.325
+    },
+    {
+      "start_sample": 151800,
+      "speech_end_sample": 184800,
+      "text": "command module Columbia,",
+      "text_ref": {
+        "field": "speech",
+        "start": 100,
+        "end": 124
+      },
+      "segment": "s2",
+      "timing_sources": [
+        "native_model"
+      ],
+      "long": false,
+      "end_sample": 192600,
+      "id": "c8",
+      "start": 6.325,
+      "end": 8.025
+    },
+    {
+      "start_sample": 192600,
+      "speech_end_sample": 214800,
+      "text": "the lunar module",
+      "text_ref": {
+        "field": "speech",
+        "start": 125,
+        "end": 141
+      },
+      "segment": "s2",
+      "timing_sources": [
+        "native_model"
+      ],
+      "long": false,
+      "end_sample": 217200,
+      "id": "c9",
+      "start": 8.025,
+      "end": 9.05
+    },
+    {
+      "start_sample": 217200,
+      "speech_end_sample": 242400,
+      "text": "Eagle carried Neil",
+      "text_ref": {
+        "field": "speech",
+        "start": 142,
+        "end": 160
+      },
+      "segment": "s2",
+      "timing_sources": [
+        "native_model"
+      ],
+      "long": false,
+      "end_sample": 244200,
+      "id": "c10",
+      "start": 9.05,
+      "end": 10.175
+    },
+    {
+      "start_sample": 244200,
+      "speech_end_sample": 271800,
+      "text": "Armstrong and Buzz",
+      "text_ref": {
+        "field": "speech",
+        "start": 161,
+        "end": 179
+      },
+      "segment": "s2",
+      "timing_sources": [
+        "native_model"
+      ],
+      "long": false,
+      "end_sample": 273600,
+      "id": "c11",
+      "start": 10.175,
+      "end": 11.4
+    },
+    {
+      "start_sample": 273600,
+      "speech_end_sample": 291000,
+      "text": "Aldrin down to",
+      "text_ref": {
+        "field": "speech",
+        "start": 180,
+        "end": 194
+      },
+      "segment": "s2",
+      "timing_sources": [
+        "native_model"
+      ],
+      "long": false,
+      "end_sample": 292200,
+      "id": "c12",
+      "start": 11.4,
+      "end": 12.175
+    },
+    {
+      "start_sample": 292200,
+      "speech_end_sample": 300000,
+      "text": "the Moon.",
+      "text_ref": {
+        "field": "speech",
+        "start": 195,
+        "end": 204
+      },
+      "segment": "s2",
+      "timing_sources": [
+        "native_model"
+      ],
+      "long": false,
+      "end_sample": 307800,
+      "id": "c13",
+      "start": 12.175,
+      "end": 12.825
+    },
+    {
+      "start_sample": 307800,
+      "speech_end_sample": 322200,
+      "text": "Then came the",
+      "text_ref": {
+        "field": "speech",
+        "start": 205,
+        "end": 218
+      },
+      "segment": "s3",
+      "timing_sources": [
+        "native_model"
+      ],
+      "long": false,
+      "end_sample": 324000,
+      "id": "c14",
+      "start": 12.825,
+      "end": 13.5
+    },
+    {
+      "start_sample": 324000,
+      "speech_end_sample": 333000,
+      "text": "words:",
+      "text_ref": {
+        "field": "speech",
+        "start": 219,
+        "end": 225
+      },
+      "segment": "s3",
+      "timing_sources": [
+        "native_model"
+      ],
+      "long": false,
+      "end_sample": 342000,
+      "id": "c15",
+      "start": 13.5,
+      "end": 14.25
+    },
+    {
+      "start_sample": 342000,
+      "speech_end_sample": 355800,
+      "text": "Houston,",
+      "text_ref": {
+        "field": "speech",
+        "start": 226,
+        "end": 234
+      },
+      "segment": "s3",
+      "timing_sources": [
+        "native_model"
+      ],
+      "long": false,
+      "end_sample": 363000,
+      "id": "c16",
+      "start": 14.25,
+      "end": 15.125
+    },
+    {
+      "start_sample": 363000,
+      "speech_end_sample": 392400,
+      "text": "Tranquility Base here.",
+      "text_ref": {
+        "field": "speech",
+        "start": 235,
+        "end": 257
+      },
+      "segment": "s3",
+      "timing_sources": [
+        "native_model"
+      ],
+      "long": false,
+      "end_sample": 402000,
+      "id": "c17",
+      "start": 15.125,
+      "end": 16.75
+    },
+    {
+      "start_sample": 402000,
+      "speech_end_sample": 420000,
+      "text": "The Eagle has",
+      "text_ref": {
+        "field": "speech",
+        "start": 258,
+        "end": 271
+      },
+      "segment": "s3",
+      "timing_sources": [
+        "native_model"
+      ],
+      "long": false,
+      "end_sample": 421800,
+      "id": "c18",
+      "start": 16.75,
+      "end": 17.575
+    },
+    {
+      "start_sample": 421800,
+      "speech_end_sample": 430800,
+      "text": "landed.",
+      "text_ref": {
+        "field": "speech",
+        "start": 272,
+        "end": 279
+      },
+      "segment": "s3",
+      "timing_sources": [
+        "native_model"
+      ],
+      "long": false,
+      "end_sample": 438600,
+      "id": "c19",
+      "start": 17.575,
+      "end": 18.275
+    },
+    {
+      "start_sample": 438600,
+      "speech_end_sample": 460200,
+      "text": "Armstrong took this",
+      "text_ref": {
+        "field": "speech",
+        "start": 280,
+        "end": 299
+      },
+      "segment": "s4",
+      "timing_sources": [
+        "native_model"
+      ],
+      "long": false,
+      "end_sample": 461400,
+      "id": "c20",
+      "start": 18.275,
+      "end": 19.225
+    },
+    {
+      "start_sample": 461400,
+      "speech_end_sample": 489000,
+      "text": "photograph of Aldrin.",
+      "text_ref": {
+        "field": "speech",
+        "start": 300,
+        "end": 321
+      },
+      "segment": "s4",
+      "timing_sources": [
+        "native_model"
+      ],
+      "long": false,
+      "end_sample": 501600,
+      "id": "c21",
+      "start": 19.225,
+      "end": 20.9
+    },
+    {
+      "start_sample": 501600,
+      "speech_end_sample": 516000,
+      "text": "Look into the",
+      "text_ref": {
+        "field": "speech",
+        "start": 322,
+        "end": 335
+      },
+      "segment": "s4",
+      "timing_sources": [
+        "native_model"
+      ],
+      "long": false,
+      "end_sample": 517200,
+      "id": "c22",
+      "start": 20.9,
+      "end": 21.55
+    },
+    {
+      "start_sample": 517200,
+      "speech_end_sample": 526200,
+      "text": "visor,",
+      "text_ref": {
+        "field": "speech",
+        "start": 336,
+        "end": 342
+      },
+      "segment": "s4",
+      "timing_sources": [
+        "native_model"
+      ],
+      "long": false,
+      "end_sample": 535200,
+      "id": "c23",
+      "start": 21.55,
+      "end": 22.3
+    },
+    {
+      "start_sample": 535200,
+      "speech_end_sample": 545400,
+      "text": "and you can",
+      "text_ref": {
+        "field": "speech",
+        "start": 343,
+        "end": 354
+      },
+      "segment": "s4",
+      "timing_sources": [
+        "native_model"
+      ],
+      "long": false,
+      "end_sample": 547200,
+      "id": "c24",
+      "start": 22.3,
+      "end": 22.8
+    },
+    {
+      "start_sample": 547200,
+      "speech_end_sample": 576600,
+      "text": "see Armstrong himself.",
+      "text_ref": {
+        "field": "speech",
+        "start": 355,
+        "end": 377
+      },
+      "segment": "s4",
+      "timing_sources": [
+        "native_model"
+      ],
+      "long": false,
+      "end_sample": 584400,
+      "id": "c25",
+      "start": 22.8,
+      "end": 24.35
+    },
+    {
+      "start_sample": 584400,
+      "speech_end_sample": 613200,
+      "text": "Aldrin photographed his",
+      "text_ref": {
+        "field": "speech",
+        "start": 378,
+        "end": 401
+      },
+      "segment": "s5",
+      "timing_sources": [
+        "native_model"
+      ],
+      "long": false,
+      "end_sample": 614400,
+      "id": "c26",
+      "start": 24.35,
+      "end": 25.6
+    },
+    {
+      "start_sample": 614400,
+      "speech_end_sample": 627000,
+      "text": "bootprint,",
+      "text_ref": {
+        "field": "speech",
+        "start": 402,
+        "end": 412
+      },
+      "segment": "s5",
+      "timing_sources": [
+        "native_model"
+      ],
+      "long": false,
+      "end_sample": 635400,
+      "id": "c27",
+      "start": 25.6,
+      "end": 26.475
+    },
+    {
+      "start_sample": 635400,
+      "speech_end_sample": 649200,
+      "text": "to study the",
+      "text_ref": {
+        "field": "speech",
+        "start": 413,
+        "end": 425
+      },
+      "segment": "s5",
+      "timing_sources": [
+        "native_model"
+      ],
+      "long": false,
+      "end_sample": 650400,
+      "id": "c28",
+      "start": 26.475,
+      "end": 27.1
+    },
+    {
+      "start_sample": 650400,
+      "speech_end_sample": 657600,
+      "text": "soil.",
+      "text_ref": {
+        "field": "speech",
+        "start": 426,
+        "end": 431
+      },
+      "segment": "s5",
+      "timing_sources": [
+        "native_model"
+      ],
+      "long": false,
+      "end_sample": 666000,
+      "id": "c29",
+      "start": 27.1,
+      "end": 27.75
+    },
+    {
+      "start_sample": 666000,
+      "speech_end_sample": 683400,
+      "text": "By the twenty",
+      "text_ref": {
+        "field": "speech",
+        "start": 432,
+        "end": 445
+      },
+      "segment": "s5",
+      "timing_sources": [
+        "native_model"
+      ],
+      "long": false,
+      "end_sample": 685200,
+      "id": "c30",
+      "start": 27.75,
+      "end": 28.55
+    },
+    {
+      "start_sample": 685200,
+      "speech_end_sample": 703200,
+      "text": "fourth of July,",
+      "text_ref": {
+        "field": "speech",
+        "start": 446,
+        "end": 461
+      },
+      "segment": "s5",
+      "timing_sources": [
+        "native_model"
+      ],
+      "long": false,
+      "end_sample": 710400,
+      "id": "c31",
+      "start": 28.55,
+      "end": 29.6
+    },
+    {
+      "start_sample": 710400,
+      "speech_end_sample": 726600,
+      "text": "all three were",
+      "text_ref": {
+        "field": "speech",
+        "start": 462,
+        "end": 476
+      },
+      "segment": "s5",
+      "timing_sources": [
+        "native_model"
+      ],
+      "long": false,
+      "end_sample": 727800,
+      "id": "c32",
+      "start": 29.6,
+      "end": 30.325
+    },
+    {
+      "start_sample": 727800,
+      "speech_end_sample": 732000,
+      "text": "home.",
+      "text_ref": {
+        "field": "speech",
+        "start": 477,
+        "end": 482
+      },
+      "segment": "s5",
+      "timing_sources": [
+        "native_model"
+      ],
+      "long": false,
+      "end_sample": 733800,
+      "id": "c33",
+      "start": 30.325,
+      "end": 30.575
+    }
+  ],
+  "files": {
+    "srt": {
+      "path": "captions/captions.srt",
+      "sha256": "b4fa7a18d405c5968199236beffd78b6e8b3b8425e64747f4cbd120aba796d16"
+    },
+    "vtt": {
+      "path": "captions/captions.vtt",
+      "sha256": "afd3996087bd4683aa181fc3e3c0625a0731aa69930b771747db2587c5f4c7c8"
+    }
+  },
+  "review": {
+    "technical": "passed",
+    "language": "pending native-reader review",
+    "readability": "pending human review"
+  }
+}

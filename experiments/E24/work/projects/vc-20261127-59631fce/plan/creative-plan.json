@@ -1,0 +1,131 @@
+{
+  "schema": "video-creator.creative-plan",
+  "version": 1,
+  "narration": {
+    "timeline": "narration/narration.timeline.json",
+    "sha256": "c6f5adf0ea43002f1d5291848321881062adb2ad0c82d8807e0d4452e2cf5147"
+  },
+  "style": "data-storytelling",
+  "style_reason": "fixture",
+  "guardrails": [
+    "simplified, not to scale"
+  ],
+  "motifs": [
+    {
+      "id": "m1",
+      "stands_for": "x"
+    }
+  ],
+  "story": [
+    {
+      "segment": "s1",
+      "role": "hook",
+      "idea": "x"
+    },
+    {
+      "segment": "s2",
+      "role": "mechanism",
+      "idea": "x"
+    },
+    {
+      "segment": "s3",
+      "role": "resolution",
+      "idea": "x"
+    }
+  ],
+  "assets": [
+    {
+      "id": "a1",
+      "kind": "procedural",
+      "description": "procedural fixture art"
+    }
+  ],
+  "shots": [
+    {
+      "id": "heights",
+      "purpose": "p",
+      "objects": [
+        {
+          "id": "o-pk-row0",
+          "asset": "a1",
+          "description": "o-pk-row0"
+        }
+      ],
+      "cues": [
+        {
+          "id": "highest",
+          "object": "o-pk-row0",
+          "action": "appear",
+          "at": {
+            "word": "highest",
+            "segment": "s1"
+          }
+        }
+      ]
+    },
+    {
+      "id": "gap",
+      "purpose": "p",
+      "start": {
+        "segment": "s2"
+      },
+      "objects": [
+        {
+          "id": "o-pk-row1",
+          "asset": "a1",
+          "description": "o-pk-row1"
+        },
+        {
+          "id": "l-k2",
+          "asset": "a1",
+          "description": "l-k2"
+        }
+      ],
+      "cues": [
+        {
+          "id": "only",
+          "object": "o-pk-row1",
+          "action": "appear",
+          "at": {
+            "word": "only",
+            "segment": "s2"
+          }
+        },
+        {
+          "id": "lower",
+          "object": "l-k2",
+          "action": "appear",
+          "at": {
+            "word": "lower.",
+            "segment": "s2"
+          }
+        }
+      ]
+    },
+    {
+      "id": "band",
+      "purpose": "p",
+      "start": {
+        "segment": "s3"
+      },
+      "objects": [
+        {
+          "id": "l-band",
+          "asset": "a1",
+          "description": "l-band"
+        }
+      ],
+      "cues": [
+        {
+          "id": "within",
+          "object": "l-band",
+          "action": "appear",
+          "at": {
+            "word": "within",
+            "segment": "s3"
+          }
+        }
+      ]
+    }
+  ]
+}

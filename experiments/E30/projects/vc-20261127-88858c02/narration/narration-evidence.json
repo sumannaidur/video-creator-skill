@@ -1,0 +1,88 @@
+{
+  "stage": "narration",
+  "passed": true,
+  "integrity": true,
+  "timing_status": "unreviewed",
+  "measured_seconds": 28.475,
+  "target_seconds": 30,
+  "tolerance": 0.1,
+  "deviation": -0.0508,
+  "within_tolerance": true,
+  "accepted_deviation": null,
+  "attempt": 1,
+  "max_attempts": 3,
+  "revision_hints": [],
+  "combined": {
+    "wav": "narration/narration-aa91a66b25.wav",
+    "timeline": "narration/narration-aa91a66b25.timeline.json",
+    "sha256": "27ee3f81579e71d2e12596aa33a0d8227ae661d6297db3d09ea7d0e9dbd106fe",
+    "run_id": "combined-d955639d3594c88887e8de9a"
+  },
+  "run_at": "2026-11-27T08:15:16+00:00",
+  "provider": "mithi",
+  "voice": "anirban",
+  "locale": "en-IN",
+  "segments": [
+    {
+      "id": "s1",
+      "role": "hook",
+      "file": "s1-0dd48593b9",
+      "reused": false,
+      "chars": 98,
+      "seconds": 5.875,
+      "words": 20,
+      "words_mapped": 20,
+      "sha256": "08680697ee6e30684f5c33f3e735cac6de090eef9836320e42a1341e1fa3e92e",
+      "run_id": "a91538c05f084b999b0b08dc4c67a5ac"
+    },
+    {
+      "id": "s2",
+      "role": "mechanism",
+      "file": "s2-5ae2af1326",
+      "reused": true,
+      "chars": 90,
+      "seconds": 4.925,
+      "words": 15,
+      "words_mapped": 15,
+      "sha256": "5c94dcfed25c3d320ae0c269834cba953575f4a0f9ae93726988ff3303b1b2d0",
+      "run_id": "a9de966d5bf94d5aa2b5ef0f787c078a"
+    },
+    {
+      "id": "s3",
+      "role": "mechanism",
+      "file": "s3-1de7da7825",
+      "reused": true,
+      "chars": 95,
+      "seconds": 5.875,
+      "words": 18,
+      "words_mapped": 18,
+      "sha256": "3d4986582002c309b95140bfc42d2854fc432ef89273cae6d117fd8206ec9cf9",
+      "run_id": "9868bea95f1e4b9b8d64f462d6f3e1b6"
+    },
+    {
+      "id": "s4",
+      "role": "example",
+      "file": "s4-f162e9036d",
+      "reused": true,
+      "chars": 94,
+      "seconds": 5.775,
+      "words": 19,
+      "words_mapped": 19,
+      "sha256": "f3dece918c986c99f9ec62c7c82deb5fa571980167112cb58c72a4b763bc7616",
+      "run_id": "c74f8b0a622f48499e06b6dd71aeddd7"
+    },
+    {
+      "id": "s5",
+      "role": "resolution",
+      "file": "s5-e4373434ca",
+      "reused": false,
+      "chars": 92,
+      "seconds": 5.225,
+      "words": 17,
+      "words_mapped": 17,
+      "sha256": "980aa6802e8ebd6373c8cc5dc8d0dbb398a10e517bcb407d5e0dc02474e5d44a",
+      "run_id": "a756be746b1340c0b5ed0bbb0b136aa8"
+    }
+  ],
+  "combined_reused": false
+}

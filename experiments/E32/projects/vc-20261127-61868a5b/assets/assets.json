@@ -1,0 +1,70 @@
+{
+  "schema": "video-creator.assets",
+  "version": 1,
+  "assets": [
+    {
+      "id": "launch",
+      "kind": "public-domain",
+      "media": "image",
+      "file": "launch.jpg",
+      "sha256": "6d8bfdf70b71db2fb140344cae78bb38becb04c81a081eb012725fb776a855f7",
+      "license": "Public domain (NASA)",
+      "source": "https://commons.wikimedia.org/wiki/File:Apollo_11_Launch_-_GPN-2000-000630.jpg; Commons licence tag: public domain (NASA)",
+      "attribution": "NASA",
+      "authenticity": "authentic",
+      "captured": "1969-07-16",
+      "retrieved": "2026-11-27",
+      "width": 1280,
+      "height": 1600,
+      "title": "Apollo 11 Saturn V lift-off (GPN-2000-000630), 1280 px rendition"
+    },
+    {
+      "id": "eagle",
+      "kind": "public-domain",
+      "media": "image",
+      "file": "eagle.jpg",
+      "sha256": "f8cb081cef41c107a62a9c98131e8909c499ccb89c9c1de2a249abfcee327e70",
+      "license": "Public domain (NASA)",
+      "source": "https://commons.wikimedia.org/wiki/File:Apollo_11_Lunar_Module_Eagle_in_landing_configuration_in_lunar_orbit_from_the_Command_and_Service_Module_Columbia.jpg; Commons licence tag: public domain (NASA)",
+      "attribution": "NASA",
+      "authenticity": "authentic",
+      "captured": "1969-07-20",
+      "retrieved": "2026-11-27",
+      "width": 2480,
+      "height": 2229,
+      "title": "Lunar Module Eagle in lunar orbit, seen from Columbia"
+    },
+    {
+      "id": "aldrin",
+      "kind": "public-domain",
+      "media": "image",
+      "file": "aldrin.jpg",
+      "sha256": "24df7374a24fce00ee56cafc543d6c3f4407940f4976e8486673898e39e60cc3",
+      "license": "Public domain (NASA)",
+      "source": "https://commons.wikimedia.org/wiki/File:Aldrin_Apollo_11_original.jpg; Commons licence tag: public domain (NASA)",
+      "attribution": "NASA / Neil Armstrong",
+      "authenticity": "authentic",
+      "captured": "1969-07-20",
+      "retrieved": "2026-11-27",
+      "width": 1920,
+      "height": 1932,
+      "title": "Buzz Aldrin on the Moon (AS11-40-5903), 1920 px rendition"
+    },
+    {
+      "id": "bootprint",
+      "kind": "public-domain",
+      "media": "image",
+      "file": "bootprint.jpg",
+      "sha256": "783c7951df855235aa2074ec92308febb9f8553a3fc3850d9c834daf705ab244",
+      "license": "Public domain (NASA)",
+      "source": "https://commons.wikimedia.org/wiki/File:Apollo_11_bootprint.jpg; Commons licence tag: public domain (NASA)",
+      "attribution": "NASA / Buzz Aldrin",
+      "authenticity": "authentic",
+      "captured": "1969-07-20",
+      "retrieved": "2026-11-27",
+      "width": 1280,
+      "height": 1291,
+      "title": "Aldrin's bootprint (AS11-40-5877), 1280 px rendition"
+    }
+  ]
+}

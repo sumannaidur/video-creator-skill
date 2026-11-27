@@ -1,0 +1,273 @@
+{
+  "schema": "video-creator.captions",
+  "version": 1,
+  "locale": "en-IN",
+  "narration": {
+    "timeline": "narration/narration.timeline.json",
+    "timeline_sha256": "41804bc6f3b7e2eb6501c5d0499ad0e678c42ca16f719890a1407b7427a4cdfa",
+    "audio_sha256": "45386b2130e2ebdd5c8450d4cbae4127f937206480c803d9923accf303e6559a",
+    "sample_rate": 24000,
+    "sample_count": 273600,
+    "timing_status": "unreviewed",
+    "timing_method": "forced_alignment",
+    "run_id": "synthetic-hdd"
+  },
+  "config": {
+    "enabled": true,
+    "burn_in": true,
+    "subtitle_files": [
+      "srt",
+      "vtt"
+    ],
+    "mode": "words",
+    "max_chars": 28,
+    "max_words": 4,
+    "max_lines": 2,
+    "hold_ms": 700
+  },
+  "cues": [
+    {
+      "start_sample": 4800,
+      "speech_end_sample": 27840,
+      "text": "Inside a hard drive,",
+      "text_ref": {
+        "field": "speech",
+        "start": 0,
+        "end": 20
+      },
+      "segment": "s1",
+      "timing_sources": [
+        "forced_alignment"
+      ],
+      "long": false,
+      "end_sample": 28431,
+      "id": "c1",
+      "start": 0.2,
+      "end": 1.184625
+    },
+    {
+      "start_sample": 28431,
+      "speech_end_sample": 51471,
+      "text": "a mirror-smooth platter spins",
+      "text_ref": {
+        "field": "speech",
+        "start": 21,
+        "end": 50
+      },
+      "segment": "s1",
+      "timing_sources": [
+        "forced_alignment"
+      ],
+      "long": false,
+      "end_sample": 52062,
+      "id": "c2",
+      "start": 1.184625,
+      "end": 2.16925
+    },
+    {
+      "start_sample": 52062,
+      "speech_end_sample": 75102,
+      "text": "thousands of times a",
+      "text_ref": {
+        "field": "speech",
+        "start": 51,
+        "end": 71
+      },
+      "segment": "s1",
+      "timing_sources": [
+        "forced_alignment"
+      ],
+      "long": false,
+      "end_sample": 75692,
+      "id": "c3",
+      "start": 2.16925,
+      "end": 3.1538333333333335
+    },
+    {
+      "start_sample": 75692,
+      "speech_end_sample": 81009,
+      "text": "minute.",
+      "text_ref": {
+        "field": "speech",
+        "start": 72,
+        "end": 79
+      },
+      "segment": "s1",
+      "timing_sources": [
+        "forced_alignment"
+      ],
+      "long": false,
+      "end_sample": 96000,
+      "id": "c4",
+      "start": 3.1538333333333335,
+      "end": 4.0
+    },
+    {
+      "start_sample": 96000,
+      "speech_end_sample": 117600,
+      "text": "An arm swings the",
+      "text_ref": {
+        "field": "speech",
+        "start": 80,
+        "end": 97
+      },
+      "segment": "s2",
+      "timing_sources": [
+        "forced_alignment"
+      ],
+      "long": false,
+      "end_sample": 118154,
+      "id": "c5",
+      "start": 4.0,
+      "end": 4.9230833333333335
+    },
+    {
+      "start_sample": 118154,
+      "speech_end_sample": 134215,
+      "text": "read head across,",
+      "text_ref": {
+        "field": "speech",
+        "start": 98,
+        "end": 115
+      },
+      "segment": "s2",
+      "timing_sources": [
+        "forced_alignment"
+      ],
+      "long": false,
+      "end_sample": 134769,
+      "id": "c6",
+      "start": 4.9230833333333335,
+      "end": 5.615375
+    },
+    {
+      "start_sample": 134769,
+      "speech_end_sample": 156369,
+      "text": "to the exact track",
+      "text_ref": {
+        "field": "speech",
+        "start": 116,
+        "end": 134
+      },
+      "segment": "s2",
+      "timing_sources": [
+        "forced_alignment"
+      ],
+      "long": false,
+      "end_sample": 156923,
+      "id": "c7",
+      "start": 5.615375,
+      "end": 6.538458333333334
+    },
+    {
+      "start_sample": 156923,
+      "speech_end_sample": 167446,
+      "text": "it needs.",
+      "text_ref": {
+        "field": "speech",
+        "start": 135,
+        "end": 144
+      },
+      "segment": "s2",
+      "timing_sources": [
+        "forced_alignment"
+      ],
+      "long": false,
+      "end_sample": 182400,
+      "id": "c8",
+      "start": 6.538458333333334,
+      "end": 7.6
+    },
+    {
+      "start_sample": 182400,
+      "speech_end_sample": 203794,
+      "text": "The head never touches",
+      "text_ref": {
+        "field": "speech",
+        "start": 145,
+        "end": 167
+      },
+      "segment": "s3",
+      "timing_sources": [
+        "forced_alignment"
+      ],
+      "long": false,
+      "end_sample": 204343,
+      "id": "c9",
+      "start": 7.6,
+      "end": 8.514291666666667
+    },
+    {
+      "start_sample": 204343,
+      "speech_end_sample": 214766,
+      "text": "the disk;",
+      "text_ref": {
+        "field": "speech",
+        "start": 168,
+        "end": 177
+      },
+      "segment": "s3",
+      "timing_sources": [
+        "forced_alignment"
+      ],
+      "long": false,
+      "end_sample": 215314,
+      "id": "c10",
+      "start": 8.514291666666667,
+      "end": 8.971416666666666
+    },
+    {
+      "start_sample": 215314,
+      "speech_end_sample": 236709,
+      "text": "it floats on a",
+      "text_ref": {
+        "field": "speech",
+        "start": 178,
+        "end": 192
+      },
+      "segment": "s3",
+      "timing_sources": [
+        "forced_alignment"
+      ],
+      "long": false,
+      "end_sample": 237257,
+      "id": "c11",
+      "start": 8.971416666666666,
+      "end": 9.885708333333334
+    },
+    {
+      "start_sample": 237257,
+      "speech_end_sample": 258651,
+      "text": "thin cushion of air.",
+      "text_ref": {
+        "field": "speech",
+        "start": 193,
+        "end": 213
+      },
+      "segment": "s3",
+      "timing_sources": [
+        "forced_alignment"
+      ],
+      "long": false,
+      "end_sample": 273600,
+      "id": "c12",
+      "start": 9.885708333333334,
+      "end": 11.4
+    }
+  ],
+  "files": {
+    "srt": {
+      "path": "captions/captions.srt",
+      "sha256": "b3d6aacdba62ab487d6b51b3bf637d0f757eeef8dc63b9a1400e07ce4ba9d603"
+    },
+    "vtt": {
+      "path": "captions/captions.vtt",
+      "sha256": "31680b1c431ce7665a0dfc5e890ce56c7edda595bce6d1600bd2311629614864"
+    }
+  },
+  "review": {
+    "technical": "passed",
+    "language": "pending native-reader review",
+    "readability": "pending human review"
+  }
+}

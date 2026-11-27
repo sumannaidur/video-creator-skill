@@ -1,0 +1,223 @@
+{
+  "schema": "video-creator.creative-plan",
+  "version": 1,
+  "narration": {
+    "timeline": "narration/narration.timeline.json",
+    "sha256": "6d7bee592627ccd27184e5735f1a81c6b1b73cf34609a78d01b447745e2b8dc9"
+  },
+  "style": "flat-science",
+  "style_reason": "fixture",
+  "guardrails": [
+    "simplified, not to scale"
+  ],
+  "motifs": [
+    {
+      "id": "m1",
+      "stands_for": "x"
+    }
+  ],
+  "story": [
+    {
+      "segment": "s1",
+      "role": "hook",
+      "idea": "x"
+    },
+    {
+      "segment": "s2",
+      "role": "mechanism",
+      "idea": "x"
+    },
+    {
+      "segment": "s3",
+      "role": "resolution",
+      "idea": "x"
+    }
+  ],
+  "assets": [
+    {
+      "id": "a1",
+      "kind": "procedural",
+      "description": "procedural fixture art"
+    }
+  ],
+  "shots": [
+    {
+      "id": "cloud",
+      "purpose": "p",
+      "objects": [
+        {
+          "id": "o-c4",
+          "asset": "a1",
+          "description": "o-c4"
+        }
+      ],
+      "cues": [
+        {
+          "id": "cloud",
+          "object": "o-c4",
+          "action": "appear",
+          "at": {
+            "sample": 38836,
+            "seconds": 1.6182,
+            "kind": "word",
+            "label": "cloud",
+            "segment": "s1",
+            "timing_source": "forced_alignment",
+            "edge": "start",
+            "offset_ms": 0
+          }
+        }
+      ],
+      "start": {
+        "sample": 0,
+        "seconds": 0.0,
+        "kind": "bounds",
+        "label": "narration-start",
+        "timing_source": "narration_bounds"
+      },
+      "end": {
+        "sample": 76800,
+        "seconds": 3.2
+      },
+      "camera": []
+    },
+    {
+      "id": "collapse",
+      "purpose": "p",
+      "start": {
+        "sample": 76800,
+        "seconds": 3.2,
+        "kind": "segment",
+        "label": "s2",
+        "segment": null,
+        "timing_source": "segment_boundary",
+        "edge": "start",
+        "offset_ms": 0
+      },
+      "objects": [
+        {
+          "id": "o-pull",
+          "asset": "a1",
+          "description": "o-pull"
+        },
+        {
+          "id": "o-disc",
+          "asset": "a1",
+          "description": "o-disc"
+        }
+      ],
+      "cues": [
+        {
+          "id": "gravity",
+          "object": "o-pull",
+          "action": "appear",
+          "at": {
+            "sample": 81600,
+            "seconds": 3.4,
+            "kind": "word",
+            "label": "Gravity",
+            "segment": "s2",
+            "timing_source": "forced_alignment",
+            "edge": "start",
+            "offset_ms": 0
+          }
+        },
+        {
+          "id": "spins",
+          "object": "o-disc",
+          "action": "appear",
+          "at": {
+            "sample": 126400,
+            "seconds": 5.2667,
+            "kind": "word",
+            "label": "spins",
+            "segment": "s2",
+            "timing_source": "forced_alignment",
+            "edge": "start",
+            "offset_ms": 0
+          }
+        }
+      ],
+      "end": {
+        "sample": 168000,
+        "seconds": 7.0
+      },
+      "camera": []
+    },
+    {
+      "id": "ignite",
+      "purpose": "p",
+      "start": {
+        "sample": 168000,
+        "seconds": 7.0,
+        "kind": "segment",
+        "label": "s3",
+        "segment": null,
+        "timing_source": "segment_boundary",
+        "edge": "start",
+        "offset_ms": 0
+      },
+      "objects": [
+        {
+          "id": "o-core",
+          "asset": "a1",
+          "description": "o-core"
+        },
+        {
+          "id": "o-star",
+          "asset": "a1",
+          "description": "o-star"
+        }
+      ],
+      "cues": [
+        {
+          "id": "hot",
+          "object": "o-core",
+          "action": "appear",
+          "at": {
+            "sample": 200000,
+            "seconds": 8.3333,
+            "kind": "word",
+            "label": "hot",
+            "segment": "s3",
+            "timing_source": "forced_alignment",
+            "edge": "start",
+            "offset_ms": 0
+          }
+        },
+        {
+          "id": "fuses",
+          "object": "o-star",
+          "action": "appear",
+          "at": {
+            "sample": 220400,
+            "seconds": 9.1833,
+            "kind": "word",
+            "label": "fuses",
+            "segment": "s3",
+            "timing_source": "forced_alignment",
+            "edge": "start",
+            "offset_ms": 0
+          }
+        }
+      ],
+      "end": {
+        "sample": 268800,
+        "seconds": 11.2
+      },
+      "camera": []
+    }
+  ],
+  "resolution": {
+    "timeline_sha256": "6d7bee592627ccd27184e5735f1a81c6b1b73cf34609a78d01b447745e2b8dc9",
+    "audio_sha256": "caa1dfeae32c247141d7d4cee325aaa27999e1e27a2fce29c6c4d5e653a880ba",
+    "sample_rate": 24000,
+    "sample_count": 268800,
+    "timing_status": "unreviewed",
+    "record_sources": [
+      "forced_alignment"
+    ],
+    "run_id": "synthetic-star",
+    "timeline": "narration/narration.timeline.json"
+  }
+}

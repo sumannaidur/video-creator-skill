@@ -23,7 +23,9 @@
 
   // ---------- motion primitives ----------
   const N = [0, 0, 0, 1, 1];
-  const ease = {linear: p => p, out: p => 1 - (1 - p) ** 3, in: p => p ** 3, smooth: p => p * p * (3 - 2 * p)};
+  // P022.2: shared/motion.js (when loaded) adds curves (inOut, outQuart, anticipate, overshoot, settle, hold); the four
+  // original curves are defined first and never replaced, so legacy topics render identically.
+  const ease = {...(globalThis.vcMotion?.ease ?? {}), linear: p => p, out: p => 1 - (1 - p) ** 3, in: p => p ** 3, smooth: p => p * p * (3 - 2 * p)};
   const clamp = v => Math.max(0, Math.min(1, v));
   const key = (t, v, curve = 'smooth') => [t, v, curve];
   const interp = (keys, t) => {
@@ -191,6 +193,8 @@
       // Resolved speech cue: returns its time in seconds and registers a visibility check on the object
       // (the plan's object id unless the topic names its own). Offsets are the topic's own animation lead/lag.
       speechCue: (cueId, objectId) => { const c = speech(cueId); cues.push({id: objectId ?? c.object, cue: cueId, at: c.seconds}); return c.seconds; },
+      // P024.1B: an object's track rotation (degrees) as a function of t, for checks.ratios (mechanism verification).
+      angle: id => t => (tracks[id] ? interp(tracks[id], t) : N)[2],
       // A symbol that appears, drifts by (dx, dy) stage fractions, grows slightly and fades.
       emit: (id, art, [x, y], width, layer, dx, dy, start, dur, scale) => {
         tracks[id] = [key(start, [0, 0, -10, scale * .45, 0]), key(start + dur * .25, [dx * .25, dy * .25, 0, scale * .85, 1], 'out'),
@@ -255,7 +259,15 @@
         ['end', duration]].sort((a, b) => a[1] - b[1]),
       repeatAt: built.checks?.repeatAt ?? Math.min(firstCue, duration),
       absentAfter: built.checks?.absentAfter ?? [],
+      // P024.1B production checks (evaluated by preflight): data marks never use overshooting curves; declared mechanism
+      // ratios hold at every frame ({a, b, ratio, tol, label}: a/b are functions of t, e.g. motion.angle(id)).
+      dataMarks: [], ratios: built.checks?.ratios ?? [],
     };
+    const NOT_FOR_DATA = ['overshoot', 'settle', 'anticipate'];
+    for (const scene of Object.values(scenes)) for (const o of scene.objects) if (o.dataMark)
+      for (const [kind, keys] of [['track', tracks[o.id]], ['stroke', strokes[o.id]]]) for (const k of keys ?? [])
+        if (NOT_FOR_DATA.includes(k[2])) checks.dataMarks.push({id: o.id, kind, at: k[0], curve: k[2]});
+    for (const r of checks.ratios) if (typeof r?.a !== 'function' || typeof r?.b !== 'function' || !isNum(r.ratio)) fail('checks.ratios entries need {a: t => number, b: t => number, ratio}');
 
     // ---------- evaluation ----------
     const stage = document.querySelector('.story-stage');
@@ -314,6 +326,7 @@
       camera.style.transform = `scale(${zoom}) translate(${-cx * W}px,${-cy * H}px)`;
       for (const object of globalThis.techScenes[shot.scene].objects) {
         const v = [...(tracks[object.id] ? interp(tracks[object.id], t) : N)];
+        v[4] = Math.min(1, Math.max(0, v[4]));   // P022.2: overshoot/settle curves act on every channel; opacity stays in [0, 1] (CSS clamps it anyway)
         const a = ambient[object.id] ?? {};
         if (a.sway) v[2] += wave(t, a.sway);
         if (a.spin) v[2] += a.spin * t;

@@ -1,0 +1,401 @@
+{
+  "schema": "video-creator.creative-plan",
+  "version": 1,
+  "narration": {
+    "timeline": "narration/narration-5a86cdec93.timeline.json",
+    "sha256": "852d85ca750b16cb7e0f58aa41b2b63f1f974eefdaa71376d418fb2ae1e50d48"
+  },
+  "style": "tech-explainer",
+  "style_reason": "An invisible electrical mechanism under familiar glass: precise lit hardware, traced conductors and glowing signals make it visible.",
+  "visual_hook": "a hidden grid glowing up through a phone's glass under a hovering fingertip",
+  "transformation": "glass becomes a layered stack, then a scanned grid whose one crossing dips under the finger",
+  "payoff": "the crosshair locks onto the dipped crossing",
+  "story": [
+    {
+      "segment": "s1",
+      "role": "hook",
+      "idea": "hidden grid under glass"
+    },
+    {
+      "segment": "s2",
+      "role": "mechanism",
+      "idea": "rows and columns cross without touching"
+    },
+    {
+      "segment": "s3",
+      "role": "mechanism",
+      "idea": "capacitors scanned line by line"
+    },
+    {
+      "segment": "s4",
+      "role": "mechanism",
+      "idea": "finger draws field; signal drops"
+    },
+    {
+      "segment": "s5",
+      "role": "resolution",
+      "idea": "dip located"
+    }
+  ],
+  "motifs": [
+    {
+      "id": "m-cross",
+      "stands_for": "the crossing: where rows meet columns, where the finger lands, where the crosshair locks"
+    }
+  ],
+  "assets": [
+    {
+      "id": "a-touch",
+      "kind": "original",
+      "description": "procedural SVG phone, exploded sensor stack, grid, fingertip, field lines and readouts"
+    }
+  ],
+  "guardrails": [
+    "schematic grid, not to scale",
+    "mutual-capacitance design only",
+    "readout values illustrative, labelled as such"
+  ],
+  "shots": [
+    {
+      "id": "hook",
+      "purpose": "Hook: a phone in a dark studio, a fingertip hovering; on 'grid' a hidden grid glows through the glass.",
+      "objects": [
+        {
+          "id": "o-grid",
+          "asset": "a-touch",
+          "description": "grid seen through the glass"
+        }
+      ],
+      "cues": [
+        {
+          "id": "grid",
+          "object": "o-grid",
+          "action": "grid glows through",
+          "at": {
+            "sample": 91800,
+            "seconds": 3.825,
+            "kind": "word",
+            "label": "grid,",
+            "segment": "s1",
+            "timing_source": "native_model",
+            "edge": "start",
+            "offset_ms": 0
+          }
+        }
+      ],
+      "start": {
+        "sample": 0,
+        "seconds": 0.0,
+        "kind": "bounds",
+        "label": "narration-start",
+        "timing_source": "narration_bounds"
+      },
+      "end": {
+        "sample": 140400,
+        "seconds": 5.85
+      },
+      "camera": []
+    },
+    {
+      "id": "layers",
+      "start": {
+        "sample": 140400,
+        "seconds": 5.85,
+        "kind": "segment",
+        "label": "s2",
+        "segment": null,
+        "timing_source": "segment_boundary",
+        "edge": "start",
+        "offset_ms": 0
+      },
+      "purpose": "Exploded stack: cover glass, row conductors, column conductors, display; rows trace on, then columns; a callout shows they cross without touching.",
+      "objects": [
+        {
+          "id": "o-rows",
+          "asset": "a-touch",
+          "description": "row conductors"
+        },
+        {
+          "id": "o-cols",
+          "asset": "a-touch",
+          "description": "column conductors"
+        },
+        {
+          "id": "l-gap",
+          "asset": "a-touch",
+          "description": "no-contact callout"
+        }
+      ],
+      "cues": [
+        {
+          "id": "rows",
+          "object": "o-rows",
+          "action": "rows trace on",
+          "at": {
+            "sample": 206400,
+            "seconds": 8.6,
+            "kind": "word",
+            "label": "rows,",
+            "segment": "s2",
+            "timing_source": "native_model",
+            "edge": "start",
+            "offset_ms": 0
+          }
+        },
+        {
+          "id": "cols",
+          "object": "o-cols",
+          "action": "columns trace on",
+          "at": {
+            "sample": 238800,
+            "seconds": 9.95,
+            "kind": "word",
+            "label": "columns,",
+            "segment": "s2",
+            "timing_source": "native_model",
+            "edge": "start",
+            "offset_ms": 0
+          }
+        },
+        {
+          "id": "gap",
+          "object": "l-gap",
+          "action": "no contact",
+          "at": {
+            "sample": 271200,
+            "seconds": 11.3,
+            "kind": "word",
+            "label": "without",
+            "segment": "s2",
+            "timing_source": "native_model",
+            "edge": "start",
+            "offset_ms": 0
+          }
+        }
+      ],
+      "end": {
+        "sample": 301200,
+        "seconds": 12.55
+      },
+      "camera": []
+    },
+    {
+      "id": "scan",
+      "start": {
+        "sample": 301200,
+        "seconds": 12.55,
+        "kind": "segment",
+        "label": "s3",
+        "segment": null,
+        "timing_source": "segment_boundary",
+        "edge": "start",
+        "offset_ms": 0
+      },
+      "purpose": "Top view of the grid: each crossing a capacitor; the chip pulses one line at a time and reads every crossing.",
+      "objects": [
+        {
+          "id": "l-cap",
+          "asset": "a-touch",
+          "description": "capacitor callout"
+        },
+        {
+          "id": "o-pulse",
+          "asset": "a-touch",
+          "description": "active line"
+        },
+        {
+          "id": "o-bars",
+          "asset": "a-touch",
+          "description": "signal readout"
+        }
+      ],
+      "cues": [
+        {
+          "id": "cap",
+          "object": "l-cap",
+          "action": "crossing named capacitor",
+          "at": {
+            "sample": 339000,
+            "seconds": 14.125,
+            "kind": "word",
+            "label": "capacitor.",
+            "segment": "s3",
+            "timing_source": "native_model",
+            "edge": "start",
+            "offset_ms": 0
+          }
+        },
+        {
+          "id": "pulse",
+          "object": "o-pulse",
+          "action": "line pulses, steps across",
+          "at": {
+            "sample": 375000,
+            "seconds": 15.625,
+            "kind": "word",
+            "label": "pulses",
+            "segment": "s3",
+            "timing_source": "native_model",
+            "edge": "start",
+            "offset_ms": 0
+          }
+        },
+        {
+          "id": "measure",
+          "object": "o-bars",
+          "action": "signal bars",
+          "at": {
+            "sample": 423600,
+            "seconds": 17.65,
+            "kind": "word",
+            "label": "measures",
+            "segment": "s3",
+            "timing_source": "native_model",
+            "edge": "start",
+            "offset_ms": 0
+          }
+        }
+      ],
+      "end": {
+        "sample": 460800,
+        "seconds": 19.2
+      },
+      "camera": []
+    },
+    {
+      "id": "touch",
+      "start": {
+        "sample": 460800,
+        "seconds": 19.2,
+        "kind": "segment",
+        "label": "s4",
+        "segment": null,
+        "timing_source": "segment_boundary",
+        "edge": "start",
+        "offset_ms": 0
+      },
+      "purpose": "A fingertip lands on a crossing; field lines bend into it; that crossing's signal drops; the chip locks onto the dip.",
+      "objects": [
+        {
+          "id": "o-finger",
+          "asset": "a-touch",
+          "description": "fingertip"
+        },
+        {
+          "id": "o-field",
+          "asset": "a-touch",
+          "description": "field into finger"
+        },
+        {
+          "id": "o-dip",
+          "asset": "a-touch",
+          "description": "dropped bar"
+        },
+        {
+          "id": "o-lock",
+          "asset": "a-touch",
+          "description": "crosshair"
+        },
+        {
+          "id": "l-xy",
+          "asset": "a-touch",
+          "description": "location readout"
+        }
+      ],
+      "cues": [
+        {
+          "id": "finger",
+          "object": "o-finger",
+          "action": "finger lands",
+          "at": {
+            "sample": 468000,
+            "seconds": 19.5,
+            "kind": "word",
+            "label": "finger",
+            "segment": "s4",
+            "timing_source": "native_model",
+            "edge": "start",
+            "offset_ms": 0
+          }
+        },
+        {
+          "id": "field",
+          "object": "o-field",
+          "action": "field bends into the finger",
+          "at": {
+            "sample": 525000,
+            "seconds": 21.875,
+            "kind": "word",
+            "label": "steals",
+            "segment": "s4",
+            "timing_source": "native_model",
+            "edge": "start",
+            "offset_ms": 0
+          }
+        },
+        {
+          "id": "drop",
+          "object": "o-dip",
+          "action": "signal drops",
+          "at": {
+            "sample": 603000,
+            "seconds": 25.125,
+            "kind": "word",
+            "label": "drops.",
+            "segment": "s4",
+            "timing_source": "native_model",
+            "edge": "start",
+            "offset_ms": 0
+          }
+        },
+        {
+          "id": "lock",
+          "object": "o-lock",
+          "action": "crosshair locks",
+          "at": {
+            "sample": 639000,
+            "seconds": 26.625,
+            "kind": "word",
+            "label": "where",
+            "segment": "s5",
+            "timing_source": "native_model",
+            "edge": "start",
+            "offset_ms": 0
+          }
+        },
+        {
+          "id": "xy",
+          "object": "l-xy",
+          "action": "location readout",
+          "at": {
+            "sample": 655200,
+            "seconds": 27.3,
+            "kind": "word",
+            "label": "dropped,",
+            "segment": "s5",
+            "timing_source": "native_model",
+            "edge": "start",
+            "offset_ms": 0
+          }
+        }
+      ],
+      "end": {
+        "sample": 702000,
+        "seconds": 29.25
+      },
+      "camera": []
+    }
+  ],
+  "resolution": {
+    "timeline_sha256": "852d85ca750b16cb7e0f58aa41b2b63f1f974eefdaa71376d418fb2ae1e50d48",
+    "audio_sha256": "330a8451e12b962ce0ae39ee5826e27ad193b56384f39c594c9b8fd540e2e209",
+    "sample_rate": 24000,
+    "sample_count": 702000,
+    "timing_status": "unreviewed",
+    "record_sources": [
+      "native_model"
+    ],
+    "run_id": "combined-93a693ecab1cf1f2f62ac912",
+    "timeline": "narration/narration-5a86cdec93.timeline.json"
+  }
+}

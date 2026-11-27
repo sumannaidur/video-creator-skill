@@ -1,0 +1,582 @@
+{
+  "version": 1,
+  "unit": "sample",
+  "locale": "en-IN",
+  "validation": "unreviewed",
+  "run_id": "synthetic-flight",
+  "timing": {
+    "method": "forced_alignment",
+    "provider": "synthetic-test"
+  },
+  "audio": {
+    "path": "narration/narration.wav",
+    "sha256": "45386b2130e2ebdd5c8450d4cbae4127f937206480c803d9923accf303e6559a",
+    "sample_rate": 24000,
+    "sample_count": 273600
+  },
+  "text": {
+    "display": "On the seventeenth of December, 1903, a camera caught the first powered aeroplane flight. Orville Wright lay on the lower wing and steered the machine. Wilbur, who had run alongside, watched it fly 120 feet in 12 seconds.",
+    "speech": "On the seventeenth of December, 1903, a camera caught the first powered aeroplane flight. Orville Wright lay on the lower wing and steered the machine. Wilbur, who had run alongside, watched it fly 120 feet in 12 seconds."
+  },
+  "segments": [
+    {
+      "id": "s1",
+      "run_id": "synthetic",
+      "validation": "unreviewed",
+      "offset_samples": 0,
+      "sample_count": 96000,
+      "gap_after_samples": 0
+    },
+    {
+      "id": "s2",
+      "run_id": "synthetic",
+      "validation": "unreviewed",
+      "offset_samples": 96000,
+      "sample_count": 81600,
+      "gap_after_samples": 0
+    },
+    {
+      "id": "s3",
+      "run_id": "synthetic",
+      "validation": "unreviewed",
+      "offset_samples": 177600,
+      "sample_count": 96000,
+      "gap_after_samples": 0
+    }
+  ],
+  "records": [
+    {
+      "kind": "word",
+      "label": "On",
+      "start": 4800,
+      "end": 10046,
+      "source": "forced_alignment",
+      "segment": "s1",
+      "text_ref": {
+        "field": "speech",
+        "start": 0,
+        "end": 2
+      }
+    },
+    {
+      "kind": "word",
+      "label": "the",
+      "start": 10629,
+      "end": 15874,
+      "source": "forced_alignment",
+      "segment": "s1",
+      "text_ref": {
+        "field": "speech",
+        "start": 3,
+        "end": 6
+      }
+    },
+    {
+      "kind": "word",
+      "label": "seventeenth",
+      "start": 16457,
+      "end": 21703,
+      "source": "forced_alignment",
+      "segment": "s1",
+      "text_ref": {
+        "field": "speech",
+        "start": 7,
+        "end": 18
+      }
+    },
+    {
+      "kind": "word",
+      "label": "of",
+      "start": 22286,
+      "end": 27531,
+      "source": "forced_alignment",
+      "segment": "s1",
+      "text_ref": {
+        "field": "speech",
+        "start": 19,
+        "end": 21
+      }
+    },
+    {
+      "kind": "word",
+      "label": "December,",
+      "start": 28114,
+      "end": 33360,
+      "source": "forced_alignment",
+      "segment": "s1",
+      "text_ref": {
+        "field": "speech",
+        "start": 22,
+        "end": 31
+      }
+    },
+    {
+      "kind": "word",
+      "label": "1903,",
+      "start": 33943,
+      "end": 39189,
+      "source": "forced_alignment",
+      "segment": "s1",
+      "text_ref": {
+        "field": "speech",
+        "start": 32,
+        "end": 37
+      }
+    },
+    {
+      "kind": "word",
+      "label": "a",
+      "start": 39771,
+      "end": 45017,
+      "source": "forced_alignment",
+      "segment": "s1",
+      "text_ref": {
+        "field": "speech",
+        "start": 38,
+        "end": 39
+      }
+    },
+    {
+      "kind": "word",
+      "label": "camera",
+      "start": 45600,
+      "end": 50846,
+      "source": "forced_alignment",
+      "segment": "s1",
+      "text_ref": {
+        "field": "speech",
+        "start": 40,
+        "end": 46
+      }
+    },
+    {
+      "kind": "word",
+      "label": "caught",
+      "start": 51429,
+      "end": 56674,
+      "source": "forced_alignment",
+      "segment": "s1",
+      "text_ref": {
+        "field": "speech",
+        "start": 47,
+        "end": 53
+      }
+    },
+    {
+      "kind": "word",
+      "label": "the",
+      "start": 57257,
+      "end": 62503,
+      "source": "forced_alignment",
+      "segment": "s1",
+      "text_ref": {
+        "field": "speech",
+        "start": 54,
+        "end": 57
+      }
+    },
+    {
+      "kind": "word",
+      "label": "first",
+      "start": 63086,
+      "end": 68331,
+      "source": "forced_alignment",
+      "segment": "s1",
+      "text_ref": {
+        "field": "speech",
+        "start": 58,
+        "end": 63
+      }
+    },
+    {
+      "kind": "word",
+      "label": "powered",
+      "start": 68914,
+      "end": 74160,
+      "source": "forced_alignment",
+      "segment": "s1",
+      "text_ref": {
+        "field": "speech",
+        "start": 64,
+        "end": 71
+      }
+    },
+    {
+      "kind": "word",
+      "label": "aeroplane",
+      "start": 74743,
+      "end": 79989,
+      "source": "forced_alignment",
+      "segment": "s1",
+      "text_ref": {
+        "field": "speech",
+        "start": 72,
+        "end": 81
+      }
+    },
+    {
+      "kind": "word",
+      "label": "flight.",
+      "start": 80571,
+      "end": 85817,
+      "source": "forced_alignment",
+      "segment": "s1",
+      "text_ref": {
+        "field": "speech",
+        "start": 82,
+        "end": 89
+      }
+    },
+    {
+      "kind": "word",
+      "label": "Orville",
+      "start": 100800,
+      "end": 106298,
+      "source": "forced_alignment",
+      "segment": "s2",
+      "text_ref": {
+        "field": "speech",
+        "start": 90,
+        "end": 97
+      }
+    },
+    {
+      "kind": "word",
+      "label": "Wright",
+      "start": 106909,
+      "end": 112407,
+      "source": "forced_alignment",
+      "segment": "s2",
+      "text_ref": {
+        "field": "speech",
+        "start": 98,
+        "end": 104
+      }
+    },
+    {
+      "kind": "word",
+      "label": "lay",
+      "start": 113018,
+      "end": 118516,
+      "source": "forced_alignment",
+      "segment": "s2",
+      "text_ref": {
+        "field": "speech",
+        "start": 105,
+        "end": 108
+      }
+    },
+    {
+      "kind": "word",
+      "label": "on",
+      "start": 119127,
+      "end": 124625,
+      "source": "forced_alignment",
+      "segment": "s2",
+      "text_ref": {
+        "field": "speech",
+        "start": 109,
+        "end": 111
+      }
+    },
+    {
+      "kind": "word",
+      "label": "the",
+      "start": 125236,
+      "end": 130735,
+      "source": "forced_alignment",
+      "segment": "s2",
+      "text_ref": {
+        "field": "speech",
+        "start": 112,
+        "end": 115
+      }
+    },
+    {
+      "kind": "word",
+      "label": "lower",
+      "start": 131345,
+      "end": 136844,
+      "source": "forced_alignment",
+      "segment": "s2",
+      "text_ref": {
+        "field": "speech",
+        "start": 116,
+        "end": 121
+      }
+    },
+    {
+      "kind": "word",
+      "label": "wing",
+      "start": 137455,
+      "end": 142953,
+      "source": "forced_alignment",
+      "segment": "s2",
+      "text_ref": {
+        "field": "speech",
+        "start": 122,
+        "end": 126
+      }
+    },
+    {
+      "kind": "word",
+      "label": "and",
+      "start": 143564,
+      "end": 149062,
+      "source": "forced_alignment",
+      "segment": "s2",
+      "text_ref": {
+        "field": "speech",
+        "start": 127,
+        "end": 130
+      }
+    },
+    {
+      "kind": "word",
+      "label": "steered",
+      "start": 149673,
+      "end": 155171,
+      "source": "forced_alignment",
+      "segment": "s2",
+      "text_ref": {
+        "field": "speech",
+        "start": 131,
+        "end": 138
+      }
+    },
+    {
+      "kind": "word",
+      "label": "the",
+      "start": 155782,
+      "end": 161280,
+      "source": "forced_alignment",
+      "segment": "s2",
+      "text_ref": {
+        "field": "speech",
+        "start": 139,
+        "end": 142
+      }
+    },
+    {
+      "kind": "word",
+      "label": "machine.",
+      "start": 161891,
+      "end": 167389,
+      "source": "forced_alignment",
+      "segment": "s2",
+      "text_ref": {
+        "field": "speech",
+        "start": 143,
+        "end": 151
+      }
+    },
+    {
+      "kind": "word",
+      "label": "Wilbur,",
+      "start": 182400,
+      "end": 187717,
+      "source": "forced_alignment",
+      "segment": "s3",
+      "text_ref": {
+        "field": "speech",
+        "start": 152,
+        "end": 159
+      }
+    },
+    {
+      "kind": "word",
+      "label": "who",
+      "start": 188308,
+      "end": 193625,
+      "source": "forced_alignment",
+      "segment": "s3",
+      "text_ref": {
+        "field": "speech",
+        "start": 160,
+        "end": 163
+      }
+    },
+    {
+      "kind": "word",
+      "label": "had",
+      "start": 194215,
+      "end": 199532,
+      "source": "forced_alignment",
+      "segment": "s3",
+      "text_ref": {
+        "field": "speech",
+        "start": 164,
+        "end": 167
+      }
+    },
+    {
+      "kind": "word",
+      "label": "run",
+      "start": 200123,
+      "end": 205440,
+      "source": "forced_alignment",
+      "segment": "s3",
+      "text_ref": {
+        "field": "speech",
+        "start": 168,
+        "end": 171
+      }
+    },
+    {
+      "kind": "word",
+      "label": "alongside,",
+      "start": 206031,
+      "end": 211348,
+      "source": "forced_alignment",
+      "segment": "s3",
+      "text_ref": {
+        "field": "speech",
+        "start": 172,
+        "end": 182
+      }
+    },
+    {
+      "kind": "word",
+      "label": "watched",
+      "start": 211938,
+      "end": 217255,
+      "source": "forced_alignment",
+      "segment": "s3",
+      "text_ref": {
+        "field": "speech",
+        "start": 183,
+        "end": 190
+      }
+    },
+    {
+      "kind": "word",
+      "label": "it",
+      "start": 217846,
+      "end": 223163,
+      "source": "forced_alignment",
+      "segment": "s3",
+      "text_ref": {
+        "field": "speech",
+        "start": 191,
+        "end": 193
+      }
+    },
+    {
+      "kind": "word",
+      "label": "fly",
+      "start": 223754,
+      "end": 229071,
+      "source": "forced_alignment",
+      "segment": "s3",
+      "text_ref": {
+        "field": "speech",
+        "start": 194,
+        "end": 197
+      }
+    },
+    {
+      "kind": "word",
+      "label": "120",
+      "start": 229662,
+      "end": 234978,
+      "source": "forced_alignment",
+      "segment": "s3",
+      "text_ref": {
+        "field": "speech",
+        "start": 198,
+        "end": 201
+      }
+    },
+    {
+      "kind": "word",
+      "label": "feet",
+      "start": 235569,
+      "end": 240886,
+      "source": "forced_alignment",
+      "segment": "s3",
+      "text_ref": {
+        "field": "speech",
+        "start": 202,
+        "end": 206
+      }
+    },
+    {
+      "kind": "word",
+      "label": "in",
+      "start": 241477,
+      "end": 246794,
+      "source": "forced_alignment",
+      "segment": "s3",
+      "text_ref": {
+        "field": "speech",
+        "start": 207,
+        "end": 209
+      }
+    },
+    {
+      "kind": "word",
+      "label": "12",
+      "start": 247385,
+      "end": 252702,
+      "source": "forced_alignment",
+      "segment": "s3",
+      "text_ref": {
+        "field": "speech",
+        "start": 210,
+        "end": 212
+      }
+    },
+    {
+      "kind": "word",
+      "label": "seconds.",
+      "start": 253292,
+      "end": 258609,
+      "source": "forced_alignment",
+      "segment": "s3",
+      "text_ref": {
+        "field": "speech",
+        "start": 213,
+        "end": 221
+      }
+    },
+    {
+      "kind": "phrase",
+      "label": "On the seventeenth of December, 1903, a camera caught the first powered aeroplane flight.",
+      "start": 4800,
+      "end": 85817,
+      "source": "forced_alignment",
+      "segment": "s1",
+      "text_ref": {
+        "field": "speech",
+        "start": 0,
+        "end": 89
+      }
+    },
+    {
+      "kind": "phrase",
+      "label": "Orville Wright lay on the lower wing and steered the machine.",
+      "start": 100800,
+      "end": 167389,
+      "source": "forced_alignment",
+      "segment": "s2",
+      "text_ref": {
+        "field": "speech",
+        "start": 90,
+        "end": 151
+      }
+    },
+    {
+      "kind": "phrase",
+      "label": "Wilbur, who had run alongside, watched it fly 120 feet in 12 seconds.",
+      "start": 182400,
+      "end": 258609,
+      "source": "forced_alignment",
+      "segment": "s3",
+      "text_ref": {
+        "field": "speech",
+        "start": 152,
+        "end": 221
+      }
+    }
+  ]
+}

@@ -25,7 +25,7 @@ from timeline import validate as validate_timeline  # noqa: E402
 
 SCHEMA, VERSION = "video-creator.creative-plan", 1
 ROLES = {"hook", "context", "mechanism", "contrast", "example", "transition", "resolution"}
-ASSET_KINDS = {"original", "procedural", "licensed", "user-supplied"}
+ASSET_KINDS = {"original", "procedural", "licensed", "public-domain", "user-supplied"}
 MIN_SHOT_SECONDS = 0.3
 CUE_ID = re.compile(r"^[a-z0-9][a-z0-9._-]*$")  # an id makes a cue addressable by topic modules
 
@@ -153,7 +153,7 @@ def validate_plan(plan, timeline, styles):
     for a in plan.get("assets", []):
         if not a.get("id") or a["id"] in assets or a.get("kind") not in ASSET_KINDS or not a.get("description"):
             raise PlanError("invalid-asset", f"asset {a.get('id')!r}: needs a unique id, a description and kind in {sorted(ASSET_KINDS)}")
-        if a["kind"] in ("licensed", "user-supplied") and not (a.get("source") and a.get("license")):
+        if a["kind"] in ("licensed", "public-domain", "user-supplied") and not (a.get("source") and a.get("license")):
             raise PlanError("asset-provenance", f"asset {a['id']!r}: {a['kind']} assets need source and license")
         assets[a["id"]] = a
     motifs = {m["id"]: m for m in plan.get("motifs", []) if m.get("id") and m.get("stands_for")}

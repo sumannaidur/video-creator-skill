@@ -1,0 +1,482 @@
+{
+  "schema": "video-creator.captions",
+  "version": 1,
+  "locale": "te-IN",
+  "narration": {
+    "timeline": "narration/narration-ca1e95afa3.timeline.json",
+    "timeline_sha256": "a0739de79d43ab19fddd74c8df71009338b82472f5b78eb6be4ef10d124bb327",
+    "audio_sha256": "52e3eb3ba6bf25827458090225791feafc89589c93c464209c8a15e7b7589a2a",
+    "sample_rate": 24000,
+    "sample_count": 695400,
+    "timing_status": "unreviewed",
+    "timing_method": null,
+    "run_id": "combined-e1e69151c88cbc36fd5328cd"
+  },
+  "config": {
+    "enabled": true,
+    "burn_in": true,
+    "subtitle_files": [
+      "srt",
+      "vtt"
+    ],
+    "mode": "words",
+    "max_chars": 26,
+    "max_words": 3,
+    "max_lines": 2,
+    "hold_ms": 700
+  },
+  "cues": [
+    {
+      "start_sample": 1200,
+      "speech_end_sample": 28800,
+      "text": "ఇండక్షన్ స్టవ్ మీద",
+      "text_ref": {
+        "field": "speech",
+        "start": 0,
+        "end": 18
+      },
+      "segment": "s1",
+      "timing_sources": [
+        "native_model"
+      ],
+      "long": false,
+      "end_sample": 30000,
+      "id": "c1",
+      "start": 0.05,
+      "end": 1.25
+    },
+    {
+      "start_sample": 30000,
+      "speech_end_sample": 46800,
+      "text": "మంట లేదు,",
+      "text_ref": {
+        "field": "speech",
+        "start": 19,
+        "end": 28
+      },
+      "segment": "s1",
+      "timing_sources": [
+        "native_model"
+      ],
+      "long": false,
+      "end_sample": 55800,
+      "id": "c2",
+      "start": 1.25,
+      "end": 2.325
+    },
+    {
+      "start_sample": 55800,
+      "speech_end_sample": 84000,
+      "text": "ఎర్రగా కాలే కాయిల్",
+      "text_ref": {
+        "field": "speech",
+        "start": 29,
+        "end": 47
+      },
+      "segment": "s1",
+      "timing_sources": [
+        "native_model"
+      ],
+      "long": false,
+      "end_sample": 85200,
+      "id": "c3",
+      "start": 2.325,
+      "end": 3.55
+    },
+    {
+      "start_sample": 85200,
+      "speech_end_sample": 91800,
+      "text": "లేదు.",
+      "text_ref": {
+        "field": "speech",
+        "start": 48,
+        "end": 53
+      },
+      "segment": "s1",
+      "timing_sources": [
+        "native_model"
+      ],
+      "long": false,
+      "end_sample": 102600,
+      "id": "c4",
+      "start": 3.55,
+      "end": 4.275
+    },
+    {
+      "start_sample": 102600,
+      "speech_end_sample": 138000,
+      "text": "అయినా పాన్ వేడెక్కుతుంది.",
+      "text_ref": {
+        "field": "speech",
+        "start": 54,
+        "end": 79
+      },
+      "segment": "s1",
+      "timing_sources": [
+        "native_model"
+      ],
+      "long": false,
+      "end_sample": 145800,
+      "id": "c5",
+      "start": 4.275,
+      "end": 6.075
+    },
+    {
+      "start_sample": 145800,
+      "speech_end_sample": 174000,
+      "text": "గాజు పలక కింద,",
+      "text_ref": {
+        "field": "speech",
+        "start": 80,
+        "end": 94
+      },
+      "segment": "s2",
+      "timing_sources": [
+        "native_model"
+      ],
+      "long": false,
+      "end_sample": 181200,
+      "id": "c6",
+      "start": 6.075,
+      "end": 7.55
+    },
+    {
+      "start_sample": 181200,
+      "speech_end_sample": 210000,
+      "text": "రాగి తీగల చుట్ట",
+      "text_ref": {
+        "field": "speech",
+        "start": 95,
+        "end": 110
+      },
+      "segment": "s2",
+      "timing_sources": [
+        "native_model"
+      ],
+      "long": false,
+      "end_sample": 211200,
+      "id": "c7",
+      "start": 7.55,
+      "end": 8.8
+    },
+    {
+      "start_sample": 211200,
+      "speech_end_sample": 220800,
+      "text": "ఉంటుంది.",
+      "text_ref": {
+        "field": "speech",
+        "start": 111,
+        "end": 119
+      },
+      "segment": "s2",
+      "timing_sources": [
+        "native_model"
+      ],
+      "long": false,
+      "end_sample": 231000,
+      "id": "c8",
+      "start": 8.8,
+      "end": 9.625
+    },
+    {
+      "start_sample": 231000,
+      "speech_end_sample": 267600,
+      "text": "దానిలో కరెంట్ ముందుకీ",
+      "text_ref": {
+        "field": "speech",
+        "start": 120,
+        "end": 141
+      },
+      "segment": "s2",
+      "timing_sources": [
+        "native_model"
+      ],
+      "long": false,
+      "end_sample": 268800,
+      "id": "c9",
+      "start": 9.625,
+      "end": 11.2
+    },
+    {
+      "start_sample": 268800,
+      "speech_end_sample": 305400,
+      "text": "వెనక్కీ వేగంగా మారుతూ",
+      "text_ref": {
+        "field": "speech",
+        "start": 142,
+        "end": 163
+      },
+      "segment": "s2",
+      "timing_sources": [
+        "native_model"
+      ],
+      "long": false,
+      "end_sample": 306600,
+      "id": "c10",
+      "start": 11.2,
+      "end": 12.775
+    },
+    {
+      "start_sample": 306600,
+      "speech_end_sample": 324600,
+      "text": "ప్రవహిస్తుంది.",
+      "text_ref": {
+        "field": "speech",
+        "start": 164,
+        "end": 178
+      },
+      "segment": "s2",
+      "timing_sources": [
+        "native_model"
+      ],
+      "long": false,
+      "end_sample": 332400,
+      "id": "c11",
+      "start": 12.775,
+      "end": 13.85
+    },
+    {
+      "start_sample": 332400,
+      "speech_end_sample": 345000,
+      "text": "దాంతో,",
+      "text_ref": {
+        "field": "speech",
+        "start": 179,
+        "end": 185
+      },
+      "segment": "s3",
+      "timing_sources": [
+        "native_model"
+      ],
+      "long": false,
+      "end_sample": 351000,
+      "id": "c12",
+      "start": 13.85,
+      "end": 14.625
+    },
+    {
+      "start_sample": 351000,
+      "speech_end_sample": 391200,
+      "text": "మారుతూ ఉండే అయస్కాంత",
+      "text_ref": {
+        "field": "speech",
+        "start": 186,
+        "end": 206
+      },
+      "segment": "s3",
+      "timing_sources": [
+        "native_model"
+      ],
+      "long": false,
+      "end_sample": 392400,
+      "id": "c13",
+      "start": 14.625,
+      "end": 16.35
+    },
+    {
+      "start_sample": 392400,
+      "speech_end_sample": 430200,
+      "text": "క్షేత్రం గాజు గుండా",
+      "text_ref": {
+        "field": "speech",
+        "start": 207,
+        "end": 226
+      },
+      "segment": "s3",
+      "timing_sources": [
+        "native_model"
+      ],
+      "long": false,
+      "end_sample": 431400,
+      "id": "c14",
+      "start": 16.35,
+      "end": 17.975
+    },
+    {
+      "start_sample": 431400,
+      "speech_end_sample": 449400,
+      "text": "పైకి వెళ్తుంది.",
+      "text_ref": {
+        "field": "speech",
+        "start": 227,
+        "end": 242
+      },
+      "segment": "s3",
+      "timing_sources": [
+        "native_model"
+      ],
+      "long": false,
+      "end_sample": 457200,
+      "id": "c15",
+      "start": 17.975,
+      "end": 19.05
+    },
+    {
+      "start_sample": 457200,
+      "speech_end_sample": 483000,
+      "text": "ఆ క్షేత్రం పాన్",
+      "text_ref": {
+        "field": "speech",
+        "start": 243,
+        "end": 258
+      },
+      "segment": "s4",
+      "timing_sources": [
+        "native_model"
+      ],
+      "long": false,
+      "end_sample": 484200,
+      "id": "c16",
+      "start": 19.05,
+      "end": 20.175
+    },
+    {
+      "start_sample": 484200,
+      "speech_end_sample": 518400,
+      "text": "అడుగులో సుడి కరెంట్లను",
+      "text_ref": {
+        "field": "speech",
+        "start": 259,
+        "end": 281
+      },
+      "segment": "s4",
+      "timing_sources": [
+        "native_model"
+      ],
+      "long": false,
+      "end_sample": 519600,
+      "id": "c17",
+      "start": 20.175,
+      "end": 21.65
+    },
+    {
+      "start_sample": 519600,
+      "speech_end_sample": 535800,
+      "text": "పుట్టిస్తుంది.",
+      "text_ref": {
+        "field": "speech",
+        "start": 282,
+        "end": 296
+      },
+      "segment": "s4",
+      "timing_sources": [
+        "native_model"
+      ],
+      "long": false,
+      "end_sample": 549000,
+      "id": "c18",
+      "start": 21.65,
+      "end": 22.875
+    },
+    {
+      "start_sample": 549000,
+      "speech_end_sample": 583200,
+      "text": "ఆ కరెంట్లే లోహాన్ని",
+      "text_ref": {
+        "field": "speech",
+        "start": 297,
+        "end": 316
+      },
+      "segment": "s4",
+      "timing_sources": [
+        "native_model"
+      ],
+      "long": false,
+      "end_sample": 584400,
+      "id": "c19",
+      "start": 22.875,
+      "end": 24.35
+    },
+    {
+      "start_sample": 584400,
+      "speech_end_sample": 603000,
+      "text": "వేడి చేస్తాయి.",
+      "text_ref": {
+        "field": "speech",
+        "start": 317,
+        "end": 331
+      },
+      "segment": "s4",
+      "timing_sources": [
+        "native_model"
+      ],
+      "long": false,
+      "end_sample": 610800,
+      "id": "c20",
+      "start": 24.35,
+      "end": 25.45
+    },
+    {
+      "start_sample": 610800,
+      "speech_end_sample": 646200,
+      "text": "అందుకే వేడి పుట్టేది",
+      "text_ref": {
+        "field": "speech",
+        "start": 332,
+        "end": 352
+      },
+      "segment": "s5",
+      "timing_sources": [
+        "native_model"
+      ],
+      "long": false,
+      "end_sample": 648000,
+      "id": "c21",
+      "start": 25.45,
+      "end": 27.0
+    },
+    {
+      "start_sample": 648000,
+      "speech_end_sample": 666600,
+      "text": "పాన్ లోనే,",
+      "text_ref": {
+        "field": "speech",
+        "start": 353,
+        "end": 363
+      },
+      "segment": "s5",
+      "timing_sources": [
+        "native_model"
+      ],
+      "long": false,
+      "end_sample": 673200,
+      "id": "c22",
+      "start": 27.0,
+      "end": 28.05
+    },
+    {
+      "start_sample": 673200,
+      "speech_end_sample": 693600,
+      "text": "గాజులో కాదు.",
+      "text_ref": {
+        "field": "speech",
+        "start": 364,
+        "end": 376
+      },
+      "segment": "s5",
+      "timing_sources": [
+        "native_model"
+      ],
+      "long": false,
+      "end_sample": 695400,
+      "id": "c23",
+      "start": 28.05,
+      "end": 28.975
+    }
+  ],
+  "files": {
+    "srt": {
+      "path": "captions/captions.srt",
+      "sha256": "fc5d4d6d1871a1948e9883479b0bd7b76a81bc0fab9911d4a0642d6b0e237fba"
+    },
+    "vtt": {
+      "path": "captions/captions.vtt",
+      "sha256": "ccc831fcec3dc62c4f1ea60675ea49b80a23ce0c7846ba5012b775d70be588e5"
+    }
+  },
+  "review": {
+    "technical": "passed",
+    "language": "pending native-reader review",
+    "readability": "pending human review"
+  }
+}

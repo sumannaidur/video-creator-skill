@@ -1,0 +1,100 @@
+{
+  "spec": "mix-spec.json",
+  "narration": {
+    "path": "../narration/narration-ca1e95afa3.wav",
+    "sha256": "52e3eb3ba6bf25827458090225791feafc89589c93c464209c8a15e7b7589a2a",
+    "seconds": 28.975
+  },
+  "output": {
+    "path": "mix.wav",
+    "sha256": "7f1b70360762cca411260ae23df6a253237a66672fcef72cbca8538d6a3900ba",
+    "seconds": 28.975,
+    "integrated": -16.0,
+    "true_peak": -1.6
+  },
+  "loudnorm_first_pass": {
+    "input_i": "-26.41",
+    "input_tp": "-11.97",
+    "input_lra": "1.90",
+    "input_thresh": "-36.53",
+    "output_i": "-16.14",
+    "output_tp": "-1.50",
+    "output_lra": "1.90",
+    "output_thresh": "-26.26",
+    "normalization_type": "dynamic",
+    "target_offset": "0.14"
+  },
+  "applied_gain_db": 10.41,
+  "narration_lufs_in_mix": -15.989999999999998,
+  "bed_lufs": -31.2,
+  "speech_over_bed_lu": 15.21,
+  "sync": {
+    "method": "bed-subtracted envelope cross-correlation",
+    "lag_ms": 0,
+    "correlation": 1.0,
+    "max_lag_ms": 2,
+    "min_correlation": 0.95,
+    "passed": true
+  },
+  "provenance": {
+    "assets/chime.wav": {
+      "sha256": "4318779372088c36cc4b15cd2c17622c5999da8b8b9b649560cb0b8528f87a94",
+      "license": "Original procedural audio synthesized in this project with FFmpeg lavfi; no third-party samples or recordings.",
+      "kind": "sfx"
+    },
+    "assets/music-pad.wav": {
+      "sha256": "03a82bc5658ee0916140e1e890dd4fcee75ba3a77441f0e5b17ca49d64da9d40",
+      "license": "Original procedural audio synthesized in this project with FFmpeg lavfi; no third-party samples or recordings.",
+      "kind": "music"
+    },
+    "assets/pop.wav": {
+      "sha256": "f922257822ba1b8cad2984d1a9a9cf13b172e05e11666f74cb0b9b9f5a93b0b8",
+      "license": "Original procedural audio synthesized in this project with FFmpeg lavfi; no third-party samples or recordings.",
+      "kind": "sfx"
+    },
+    "assets/rumble.wav": {
+      "sha256": "651afa913cdaeeee243c7972b7172e31c4f7ed13d1902c07ac11f090ff73ebbd",
+      "license": "Original procedural audio synthesized in this project with FFmpeg lavfi; no third-party samples or recordings.",
+      "kind": "sfx"
+    },
+    "assets/whoosh.wav": {
+      "sha256": "0bc928f207f81f61487067ffc65494352da2a1a8348d2d2f02f51224d5ee3659",
+      "license": "Original procedural audio synthesized in this project with FFmpeg lavfi; no third-party samples or recordings.",
+      "kind": "sfx"
+    }
+  },
+  "checks": {
+    "duration_matches_narration": true,
+    "integrated_lufs_within_1lu": true,
+    "true_peak_below_limit": true,
+    "narration_aligned": true,
+    "speech_over_bed_lu": true,
+    "video_stream_copied_unchanged": true,
+    "mp4_decodes": true
+  },
+  "video": {
+    "input": "../render/final/e42.mp4",
+    "output": "../render/final/e42-final.mp4",
+    "sha256": "158b43e53af5eae006564742d69cbf053203ccbc1cdebee5a92df87c0daa1ff8",
+    "streams": [
+      {
+        "codec_name": "h264",
+        "codec_type": "video",
+        "duration": "29.000000",
+        "nb_frames": "870",
+        "side_data_list": [
+          {}
+        ]
+      },
+      {
+        "codec_name": "aac",
+        "codec_type": "audio",
+        "sample_rate": "48000",
+        "channels": 2,
+        "duration": "28.992000",
+        "nb_frames": "1360"
+      }
+    ]
+  },
+  "passed": true
+}

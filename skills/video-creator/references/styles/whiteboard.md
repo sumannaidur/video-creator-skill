@@ -18,6 +18,28 @@ A hand-drawn explanation on a real whiteboard. The viewer watches ideas being dr
 - **Connections:** draw hand arrows and loops between ideas at the word that relates them.
 - **Erasing and redrawing:** rub out a part (`motion.erase`), then redraw it changed. A bud becomes a taller stem; a wrong answer is replaced. Only erase when the change means something.
 
+## Reference-derived craft (P023.2; RSA Animate / Cognitive)
+
+Observed in RSA Animate frames:
+- strongly varied marker line weight (heavy contours, light interior detail);
+- expressive caricature faces and gestures;
+- a dense board that fills edge to edge as the talk goes;
+- hand-lettered capitals fitted into the spaces between drawings;
+- one spot colour that links ideas, plus hatching for shade;
+- concrete visual metaphors (an economy as a coin with a globe).
+
+Use these where they serve the explanation:
+
+- **`art.brush(points, {width, taper, pressure})`:** one organic stroke with thin ends and a full-weight middle. It is returned as consecutive segments, so it draws in the order a hand would. Spread it into `art.ink([...])`. Use about 10 for contours and about 4–5 for interior detail.
+- **`art.ribbon(points, {color})`:** a spot-colour band linking ideas. Its inked outline draws first, then it is coloured in. Route it through empty board space, never across drawings.
+- **Lettering:** the `caps` label style gives hand-lettered capitals in the board font. Place lettering in a clear space beside its drawing, never on top of it.
+- **Continuous board:** one scene can serve several shots. The board fills up, the camera travels between regions, and a final pull-back can reveal the whole argument.
+- **Board lettering (P023.2B):** `art.letter(text, x, y, {size, color, dir})` goes inside an `ink()` list. It is written in stroke order as part of the drawing, travels with the board, and may be cropped by deliberate camera framing.
+  - Use it for words that belong to a drawing.
+  - Keep UI labels (callouts that must always be fully readable) as labels. Their safe-area rules are unchanged.
+  - Board lettering keeps its own checks, run by preflight (`ink-legibility`): a minimum on-screen size (`minPx`, default 26 px at 1080 wide) wherever it is mostly in view, and never under a visible caption.
+  - Script shaping is the browser's. `caps` affects only cased scripts; use `dir: 'rtl'` for right-to-left text.
+
 ## Composition
 
 - Build one drawing per idea and grow it. Prefer adding to and transforming a drawing over starting a new one.
@@ -49,9 +71,9 @@ A hand-drawn explanation on a real whiteboard. The viewer watches ideas being dr
 
 ## Self-review additions
 
+- When the board accumulates marks, can the eye follow new ink back to its cause? Keep lettering adjacent to the drawing and route connectors through open board space.
 - Does every drawing appear at the word that introduces it, in the order a person would draw it?
 - Is colour rare and meaningful?
-- Is there at least one transformation (erase and redraw, add and change) instead of only new drawings?
 - Does it look like a person explaining at a board, rather than a slide or clip art?
 
 ## Full-bleed presentation (optional, P018.6)

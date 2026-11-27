@@ -1,0 +1,21 @@
+{
+ "ship_box_xy_top_left": [
+  0.118,
+  0.419,
+  0.4,
+  0.562
+ ],
+ "lamp_screen": [
+  0.689,
+  0.662
+ ],
+ "horizon_from_top": 0.534,
+ "hdri_bright_u": 0.635,
+ "cliff_turned": false,
+ "lighthouse_base_z": 15.49,
+ "setup_seconds": 2.95,
+ "ship_fully_in_frame": true,
+ "render_seconds": 24.52,
+ "engine": "BLENDER_EEVEE",
+ "blender": "5.2.2 LTS"
+}

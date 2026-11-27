@@ -36,6 +36,20 @@
     for (let s = -h; s < w; s += gap) out.push(hand([[x + Math.max(0, s), y + Math.max(0, -s)], [x + Math.min(w, s + h), y + Math.min(h, h - (s + h - w > 0 ? s + h - w : 0))]], {seed: seed + s, wobble: 1}));
     return out;
   };
+  // Board lettering (P023.2B): text written in ink on the board itself, part of a drawing plate, so it travels and crops
+  // with the board like any drawing (camera framing may crop it on purpose). It is revealed in the stroke order of its
+  // ink() list (writing direction: dir 'ltr' or 'rtl'). Shaping is the browser's (any script; caps only change Latin-like
+  // scripts). Not a UI label: label safe-area rules do not apply, but data-ink-text/data-min-px let a legibility check
+  // verify its on-screen size wherever it is substantially in view. Add to an ink() list as {text, x, y, size, ...}.
+  const letter = (text, x, y, {size = 46, color, anchor = 'middle', caps = true, dir = 'ltr', weight = 1, minPx = 26, rotate = 0} = {}) =>
+    ({text: String(text), x, y, size, color, anchor, caps, dir, weight: weight * Math.max(.4, String(text).length / 6), minPx, rotate});
+  const esc = t => t.replace(/[&<>"]/g, c => ({'&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;'}[c]));
+  const letterInk = (s, p, ink) => {
+    const cut = s.dir === 'rtl' ? `inset(-30% -6% -30% calc((1 - ${p}) * 106%))` : `inset(-30% calc((1 - ${p}) * 106%) -30% -6%)`;
+    return `<text x="${f(s.x)}" y="${f(s.y)}" text-anchor="${s.anchor}" direction="${s.dir}" data-ink-text="1" data-min-px="${s.minPx}"` +
+      `${s.rotate ? ` transform="rotate(${s.rotate} ${f(s.x)} ${f(s.y)})"` : ''} fill="${s.color ?? ink}" ` +
+      `style="font:700 ${f(s.size)}px var(--hand);${s.caps ? 'text-transform:uppercase;' : ''}letter-spacing:.02em;clip-path:${cut}">${esc(s.text)}</text>`;
+  };
   // Marker ink: each stroke draws in turn as the object's --draw channel goes 0 → 1 (windows weighted by `weight`).
   // Variable weight: every stroke gets a seeded width and a thin offset second pass, like a chisel marker.
   const ink = (strokes, {color = INK, width = 7, seed = 1, fills = []} = {}) => {
@@ -47,23 +61,50 @@
     const fillMarkup = fills.map(({d, color: c = COLORS.yellow, after = 1, opacity = .55}) =>
       `<path d="${d}" fill="${c}" style="mix-blend-mode:multiply;opacity:calc(${opacity} * clamp(0, calc((var(--draw, 1) - ${after}) * 20 + 1), 1))"/>`).join('');
     return fillMarkup + list.map((s, i) => {
-      const w = (s.width ?? width) * (.85 + rnd(seed + i) * .3), c = s.color ?? color;
+      if (s.text !== undefined) return letterInk(s, prog(win[i]), color);
+      const w = (s.width ?? width) * (s.exact ? 1 : .85 + rnd(seed + i) * .3), c = s.color ?? color;   // exact: keep a brush's own width profile
       const dash = `stroke-dasharray:1 1;stroke-dashoffset:calc(1 - ${prog(win[i])})`;
       return `<path d="${s.d}" pathLength="1" fill="none" stroke="${c}" stroke-width="${f(w)}" stroke-linecap="round" stroke-linejoin="round" style="${dash}"/>` +
         `<path d="${s.d}" pathLength="1" fill="none" stroke="${c}" stroke-width="${f(w * .45)}" stroke-linecap="round" opacity=".55" transform="translate(${f(w * .18)} ${f(w * .12)})" style="${dash}"/>`;
     }).join('');
+  };
+  // ---------- P023.2 (reference study: RSA Animate / Cognitive) ----------
+  // Professional whiteboard art varies line weight strongly (heavy contours, light interior detail), draws each line in
+  // the order a hand would, and links ideas with one spot-colour band across a continuous board.
+  // brush: one organic stroke through pts, returned as consecutive segments for art.ink (they draw in order, so the line
+  // grows from its start); width swells from thin ends (taper) to full weight with seeded pressure. Spread the result into
+  // an ink() stroke list: art.ink([...art.brush(pts, {width: 10})]).
+  const brush = (pts, {seed = 1, width = 9, taper = .3, wobble = 2, segs = 9, pressure = .18, color, weight = 1} = {}) => {
+    const p = pts.map(([x, y], i) => [x + (rnd(seed + i * 3) - .5) * wobble * 2, y + (rnd(seed + i * 3 + 1) - .5) * wobble * 2]);
+    const cr = (a, b, c, d, t) => [0, 1].map(k => .5 * (2 * b[k] + (-a[k] + c[k]) * t + (2 * a[k] - 5 * b[k] + 4 * c[k] - d[k]) * t * t + (-a[k] + 3 * b[k] - 3 * c[k] + d[k]) * t ** 3));
+    const dense = [p[0]];
+    for (let i = 0; i < p.length - 1; i++) for (let k = 1; k <= 8; k++) dense.push(cr(p[Math.max(0, i - 1)], p[i], p[i + 1], p[Math.min(p.length - 1, i + 2)], k / 8));
+    const n = Math.max(1, Math.min(segs, dense.length - 1)), per = (dense.length - 1) / n, out = [];
+    for (let j = 0; j < n; j++) {
+      const a = Math.round(j * per), b = Math.round((j + 1) * per), part = dense.slice(a, b + 1), u = (j + .5) / n;
+      const len = part.slice(1).reduce((acc, q, i) => acc + Math.hypot(q[0] - part[i][0], q[1] - part[i][1]), 0);
+      const w = width * (taper + (1 - taper) * Math.sin(Math.PI * u) ** .7) * (1 + (rnd(seed + 50 + j) - .5) * pressure);
+      out.push({d: `M${part.map(q => q.map(f).join(' ')).join('L')}`, width: w, exact: true, weight: weight * len / 100, ...(color ? {color} : {})});
+    }
+    return out;
+  };
+  // ribbon: the spot-colour band that links ideas across the board; the inked outline draws first, then it is coloured in.
+  const ribbon = (pts, {seed = 1, width = 26, color = COLORS.red, outline = INK, weight = 1} = {}) => {
+    const d = hand(pts, {seed, wobble: 2});
+    return [{d, width: width + 9, color: outline, exact: true, weight}, {d, width, color, exact: true, weight: weight * .5}];
   };
   // The marker pen that follows a drawing (cap off, angled like a hand holding it). Tip at (0, 0) of its 0 0 120 260 frame → place with origin.
   const pen = (body = '#2758c4') => `<g transform="translate(18 10) rotate(-28 40 120)"><rect x="22" y="40" width="36" height="170" rx="10" fill="${body}"/>` +
     `<rect x="22" y="40" width="12" height="170" rx="6" fill="#ffffff" opacity=".25"/><rect x="20" y="150" width="40" height="20" fill="#e8eaee"/>` +
     `<path d="M26 40L40 4L54 40Z" fill="#f4f4f2"/><path d="M36 14L40 2L44 14Z" fill="${body}"/></g>`;
 
-  const LABEL_STYLES = ['marker', 'boxed', 'highlight', 'note'];
+  const LABEL_STYLES = ['marker', 'boxed', 'highlight', 'note', 'caps'];
   const css = `
     .piece-label { font:700 44px/1.8 var(--hand); padding:4px 16px; color:var(--label-accent, ${INK}) }
     .label-boxed .piece-label { padding:4px 18px; border:4px solid var(--label-accent, ${INK}); border-radius:14px 22px 12px 26px / 22px 12px 26px 14px }
     .label-highlight .piece-label { background:linear-gradient(transparent 42%, #ffd93bcc 42%, #ffd93bcc 84%, transparent 84%) }
     .label-note .piece-label { font-size:36px; padding:16px 22px; background:#fff3a8; box-shadow:0 8px 14px #00000022; transform:rotate(-2deg) }
+    .label-caps .piece-label { font-weight:700; text-transform:uppercase; letter-spacing:.02em; padding:2px 18px }   /* hand fonts overhang their advance width */
   `;
 
   // ---------- the whiteboard's transition: erase the board, then the next drawing starts on a clean board ----------
@@ -124,5 +165,5 @@
     };
   }
 
-  globalThis.wbKit = {art: {hand, loop, arrow, hatch, ink, pen}, COLORS, css, LABEL_STYLES, motion};
+  globalThis.wbKit = {art: {hand, loop, arrow, hatch, ink, pen, brush, ribbon, letter}, COLORS, css, LABEL_STYLES, motion};
 })();

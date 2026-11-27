@@ -1,0 +1,349 @@
+{
+  "schema": "video-creator.captions",
+  "version": 1,
+  "locale": "te-IN",
+  "narration": {
+    "timeline": "narration/narration-d4da6a0bd7.timeline.json",
+    "timeline_sha256": "2f02ec2c623633aaee5d1c94152a892c6249c36faea6b6f4c46520bb731cf871",
+    "audio_sha256": "de3f21ceb5d46701abe35c7b111ee9fb8b2bd02c107f2af6f4224d296a2385ec",
+    "sample_rate": 24000,
+    "sample_count": 705000,
+    "timing_status": "unreviewed",
+    "timing_method": null,
+    "run_id": "combined-f9a874ac71b4ece192cef239"
+  },
+  "config": {
+    "enabled": true,
+    "burn_in": true,
+    "subtitle_files": [
+      "srt",
+      "vtt"
+    ],
+    "mode": "words",
+    "max_chars": 23,
+    "max_words": 4,
+    "max_lines": 2,
+    "hold_ms": 700
+  },
+  "cues": [
+    {
+      "start_sample": 1200,
+      "speech_end_sample": 52200,
+      "text": "వ్యాధి రాకముందే శరీరం ఎలా",
+      "text_ref": {
+        "field": "speech",
+        "start": 0,
+        "end": 25
+      },
+      "segment": "s1",
+      "timing_sources": [
+        "native_model"
+      ],
+      "long": false,
+      "end_sample": 53400,
+      "id": "c1",
+      "start": 0.05,
+      "end": 2.225
+    },
+    {
+      "start_sample": 53400,
+      "speech_end_sample": 72600,
+      "text": "సిద్ధమవుతుంది?",
+      "text_ref": {
+        "field": "speech",
+        "start": 26,
+        "end": 40
+      },
+      "segment": "s1",
+      "timing_sources": [
+        "native_model"
+      ],
+      "long": false,
+      "end_sample": 85800,
+      "id": "c2",
+      "start": 2.225,
+      "end": 3.575
+    },
+    {
+      "start_sample": 85800,
+      "speech_end_sample": 141600,
+      "text": "టీకా సూక్ష్మజీవికి సంబంధించిన ఒక",
+      "text_ref": {
+        "field": "speech",
+        "start": 41,
+        "end": 73
+      },
+      "segment": "s1",
+      "timing_sources": [
+        "native_model"
+      ],
+      "long": false,
+      "end_sample": 142800,
+      "id": "c3",
+      "start": 3.575,
+      "end": 5.95
+    },
+    {
+      "start_sample": 142800,
+      "speech_end_sample": 177000,
+      "text": "గుర్తును పరిచయం చేస్తుంది.",
+      "text_ref": {
+        "field": "speech",
+        "start": 74,
+        "end": 100
+      },
+      "segment": "s1",
+      "timing_sources": [
+        "native_model"
+      ],
+      "long": false,
+      "end_sample": 188400,
+      "id": "c4",
+      "start": 5.95,
+      "end": 7.85
+    },
+    {
+      "start_sample": 188400,
+      "speech_end_sample": 223200,
+      "text": "దాన్నే యాంటిజెన్ అంటారు.",
+      "text_ref": {
+        "field": "speech",
+        "start": 101,
+        "end": 125
+      },
+      "segment": "s1",
+      "timing_sources": [
+        "native_model"
+      ],
+      "long": false,
+      "end_sample": 231000,
+      "id": "c5",
+      "start": 7.85,
+      "end": 9.625
+    },
+    {
+      "start_sample": 231000,
+      "speech_end_sample": 286800,
+      "text": "శరీరం తయారు చేసే యాంటీబాడీలు",
+      "text_ref": {
+        "field": "speech",
+        "start": 126,
+        "end": 154
+      },
+      "segment": "s2",
+      "timing_sources": [
+        "native_model"
+      ],
+      "long": false,
+      "end_sample": 289800,
+      "id": "c6",
+      "start": 9.625,
+      "end": 12.075
+    },
+    {
+      "start_sample": 289800,
+      "speech_end_sample": 321600,
+      "text": "ఆ గుర్తుకు అంటుకుంటాయి.",
+      "text_ref": {
+        "field": "speech",
+        "start": 155,
+        "end": 178
+      },
+      "segment": "s2",
+      "timing_sources": [
+        "native_model"
+      ],
+      "long": false,
+      "end_sample": 330600,
+      "id": "c7",
+      "start": 12.075,
+      "end": 13.775
+    },
+    {
+      "start_sample": 330600,
+      "speech_end_sample": 379200,
+      "text": "అన్ని యాంటీబాడీలు ఒకే గుర్తుకు",
+      "text_ref": {
+        "field": "speech",
+        "start": 179,
+        "end": 209
+      },
+      "segment": "s2",
+      "timing_sources": [
+        "native_model"
+      ],
+      "long": false,
+      "end_sample": 380400,
+      "id": "c8",
+      "start": 13.775,
+      "end": 15.85
+    },
+    {
+      "start_sample": 380400,
+      "speech_end_sample": 392400,
+      "text": "సరిపోవు.",
+      "text_ref": {
+        "field": "speech",
+        "start": 210,
+        "end": 218
+      },
+      "segment": "s2",
+      "timing_sources": [
+        "native_model"
+      ],
+      "long": false,
+      "end_sample": 402000,
+      "id": "c9",
+      "start": 15.85,
+      "end": 16.75
+    },
+    {
+      "start_sample": 402000,
+      "speech_end_sample": 437400,
+      "text": "ఈ స్పందన తర్వాత కొన్ని",
+      "text_ref": {
+        "field": "speech",
+        "start": 219,
+        "end": 241
+      },
+      "segment": "s2",
+      "timing_sources": [
+        "native_model"
+      ],
+      "long": false,
+      "end_sample": 438600,
+      "id": "c10",
+      "start": 16.75,
+      "end": 18.275
+    },
+    {
+      "start_sample": 438600,
+      "speech_end_sample": 472200,
+      "text": "జ్ఞాపక కణాలు మిగులుతాయి.",
+      "text_ref": {
+        "field": "speech",
+        "start": 242,
+        "end": 266
+      },
+      "segment": "s2",
+      "timing_sources": [
+        "native_model"
+      ],
+      "long": false,
+      "end_sample": 480000,
+      "id": "c11",
+      "start": 18.275,
+      "end": 20.0
+    },
+    {
+      "start_sample": 480000,
+      "speech_end_sample": 535200,
+      "text": "తర్వాత అదే సూక్ష్మజీవి ఎదురైతే,",
+      "text_ref": {
+        "field": "speech",
+        "start": 267,
+        "end": 298
+      },
+      "segment": "s3",
+      "timing_sources": [
+        "native_model"
+      ],
+      "long": false,
+      "end_sample": 543600,
+      "id": "c12",
+      "start": 20.0,
+      "end": 22.65
+    },
+    {
+      "start_sample": 543600,
+      "speech_end_sample": 595800,
+      "text": "జ్ఞాపక కణాలు దాన్ని గుర్తించడంలో",
+      "text_ref": {
+        "field": "speech",
+        "start": 299,
+        "end": 331
+      },
+      "segment": "s3",
+      "timing_sources": [
+        "native_model"
+      ],
+      "long": false,
+      "end_sample": 597000,
+      "id": "c13",
+      "start": 22.65,
+      "end": 24.875
+    },
+    {
+      "start_sample": 597000,
+      "speech_end_sample": 616800,
+      "text": "సహాయపడతాయి.",
+      "text_ref": {
+        "field": "speech",
+        "start": 332,
+        "end": 343
+      },
+      "segment": "s3",
+      "timing_sources": [
+        "native_model"
+      ],
+      "long": false,
+      "end_sample": 624600,
+      "id": "c14",
+      "start": 24.875,
+      "end": 26.025
+    },
+    {
+      "start_sample": 624600,
+      "speech_end_sample": 682200,
+      "text": "దాంతో రోగనిరోధక వ్యవస్థ త్వరగా",
+      "text_ref": {
+        "field": "speech",
+        "start": 344,
+        "end": 374
+      },
+      "segment": "s3",
+      "timing_sources": [
+        "native_model"
+      ],
+      "long": false,
+      "end_sample": 683400,
+      "id": "c15",
+      "start": 26.025,
+      "end": 28.475
+    },
+    {
+      "start_sample": 683400,
+      "speech_end_sample": 703200,
+      "text": "స్పందించగలదు.",
+      "text_ref": {
+        "field": "speech",
+        "start": 375,
+        "end": 388
+      },
+      "segment": "s3",
+      "timing_sources": [
+        "native_model"
+      ],
+      "long": false,
+      "end_sample": 705000,
+      "id": "c16",
+      "start": 28.475,
+      "end": 29.375
+    }
+  ],
+  "files": {
+    "srt": {
+      "path": "captions/captions.srt",
+      "sha256": "4b50122e562f917a8b52309b45e6c617104c672d2cd691f74c9de5c7173cb50f"
+    },
+    "vtt": {
+      "path": "captions/captions.vtt",
+      "sha256": "01ad72a910764d043fc3ba5f512fc8dc5355ca6f543cb3426eec5e86483ee32b"
+    }
+  },
+  "review": {
+    "technical": "passed",
+    "language": "pending native-reader review",
+    "readability": "pending human review"
+  }
+}

@@ -22,7 +22,9 @@
 
   // ---------- motion primitives ----------
   const N = [0, 0, 0, 1, 1];
-  const ease = {linear: p => p, out: p => 1 - (1 - p) ** 3, in: p => p ** 3, smooth: p => p * p * (3 - 2 * p)};
+  // P022.2: shared/motion.js (when loaded) adds curves (inOut, outQuart, anticipate, overshoot, settle, hold); the four
+  // original curves are defined first and never replaced, so legacy topics render identically.
+  const ease = {...(globalThis.vcMotion?.ease ?? {}), linear: p => p, out: p => 1 - (1 - p) ** 3, in: p => p ** 3, smooth: p => p * p * (3 - 2 * p)};
   const clamp = v => Math.max(0, Math.min(1, v));
   const key = (t, v, curve = 'smooth') => [t, v, curve];
   const interp = (keys, t) => {
@@ -296,6 +298,7 @@
       camera.style.transform = `scale(${zoom}) translate(${-cx * W}px,${-cy * H}px)`;
       for (const object of globalThis.paperScenes[shot.scene].objects) {
         const v = [...(tracks[object.id] ? interp(tracks[object.id], t) : N)];
+        v[4] = Math.min(1, Math.max(0, v[4]));   // P022.2: overshoot/settle curves act on every channel; opacity stays in [0, 1] (CSS clamps it anyway)
         const a = ambient[object.id] ?? {};
         if (a.sway) v[2] += wave(t, a.sway);
         if (a.spin) v[2] += a.spin * t;

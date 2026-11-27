@@ -1,0 +1,329 @@
+{
+  "result": "mapped",
+  "words": [
+    {
+      "label": "The",
+      "text_start": 0,
+      "text_end": 3,
+      "method": "mithi_token_word_ownership",
+      "model_words": [
+        "The"
+      ],
+      "group": null,
+      "tokens": [
+        1,
+        2
+      ],
+      "samples": [
+        1200,
+        3600
+      ]
+    },
+    {
+      "label": "engine",
+      "text_start": 4,
+      "text_end": 10,
+      "method": "mithi_token_word_ownership",
+      "model_words": [
+        "engine"
+      ],
+      "group": null,
+      "tokens": [
+        4,
+        9
+      ],
+      "samples": [
+        5400,
+        13200
+      ]
+    },
+    {
+      "label": "turns",
+      "text_start": 11,
+      "text_end": 16,
+      "method": "mithi_token_word_ownership",
+      "model_words": [
+        "turns"
+      ],
+      "group": null,
+      "tokens": [
+        11,
+        16
+      ],
+      "samples": [
+        15000,
+        23400
+      ]
+    },
+    {
+      "label": "a",
+      "text_start": 17,
+      "text_end": 18,
+      "method": "mithi_token_word_ownership",
+      "model_words": [
+        "a"
+      ],
+      "group": null,
+      "tokens": [
+        18,
+        18
+      ],
+      "samples": [
+        24600,
+        25200
+      ]
+    },
+    {
+      "label": "ring",
+      "text_start": 19,
+      "text_end": 23,
+      "method": "mithi_token_word_ownership",
+      "model_words": [
+        "ring"
+      ],
+      "group": null,
+      "tokens": [
+        20,
+        23
+      ],
+      "samples": [
+        27000,
+        33000
+      ]
+    },
+    {
+      "label": "gear",
+      "text_start": 24,
+      "text_end": 28,
+      "method": "mithi_token_word_ownership",
+      "model_words": [
+        "gear"
+      ],
+      "group": null,
+      "tokens": [
+        25,
+        28
+      ],
+      "samples": [
+        34800,
+        40800
+      ]
+    },
+    {
+      "label": "and",
+      "text_start": 29,
+      "text_end": 32,
+      "method": "mithi_token_word_ownership",
+      "model_words": [
+        "and"
+      ],
+      "group": null,
+      "tokens": [
+        30,
+        32
+      ],
+      "samples": [
+        42600,
+        45000
+      ]
+    },
+    {
+      "label": "its",
+      "text_start": 33,
+      "text_end": 36,
+      "method": "mithi_token_word_ownership",
+      "model_words": [
+        "its"
+      ],
+      "group": null,
+      "tokens": [
+        34,
+        36
+      ],
+      "samples": [
+        46200,
+        49800
+      ]
+    },
+    {
+      "label": "carrier,",
+      "text_start": 37,
+      "text_end": 45,
+      "method": "mithi_token_word_ownership",
+      "model_words": [
+        "carrier,"
+      ],
+      "group": null,
+      "tokens": [
+        38,
+        44
+      ],
+      "samples": [
+        51000,
+        60600
+      ]
+    },
+    {
+      "label": "and",
+      "text_start": 46,
+      "text_end": 49,
+      "method": "mithi_token_word_ownership",
+      "model_words": [
+        "and"
+      ],
+      "group": null,
+      "tokens": [
+        47,
+        49
+      ],
+      "samples": [
+        69000,
+        72600
+      ]
+    },
+    {
+      "label": "small",
+      "text_start": 50,
+      "text_end": 55,
+      "method": "mithi_token_word_ownership",
+      "model_words": [
+        "small"
+      ],
+      "group": null,
+      "tokens": [
+        51,
+        55
+      ],
+      "samples": [
+        74400,
+        82200
+      ]
+    },
+    {
+      "label": "planet",
+      "text_start": 56,
+      "text_end": 62,
+      "method": "mithi_token_word_ownership",
+      "model_words": [
+        "planet"
+      ],
+      "group": null,
+      "tokens": [
+        57,
+        63
+      ],
+      "samples": [
+        84000,
+        93000
+      ]
+    },
+    {
+      "label": "gears",
+      "text_start": 63,
+      "text_end": 68,
+      "method": "mithi_token_word_ownership",
+      "model_words": [
+        "gears"
+      ],
+      "group": null,
+      "tokens": [
+        65,
+        69
+      ],
+      "samples": [
+        94800,
+        101400
+      ]
+    },
+    {
+      "label": "inside",
+      "text_start": 69,
+      "text_end": 75,
+      "method": "mithi_token_word_ownership",
+      "model_words": [
+        "inside"
+      ],
+      "group": null,
+      "tokens": [
+        71,
+        76
+      ],
+      "samples": [
+        102600,
+        111600
+      ]
+    },
+    {
+      "label": "link",
+      "text_start": 76,
+      "text_end": 80,
+      "method": "mithi_token_word_ownership",
+      "model_words": [
+        "link"
+      ],
+      "group": null,
+      "tokens": [
+        78,
+        82
+      ],
+      "samples": [
+        112800,
+        118200
+      ]
+    },
+    {
+      "label": "the",
+      "text_start": 81,
+      "text_end": 84,
+      "method": "mithi_token_word_ownership",
+      "model_words": [
+        "the"
+      ],
+      "group": null,
+      "tokens": [
+        84,
+        85
+      ],
+      "samples": [
+        119400,
+        121800
+      ]
+    },
+    {
+      "label": "two",
+      "text_start": 85,
+      "text_end": 88,
+      "method": "mithi_token_word_ownership",
+      "model_words": [
+        "two"
+      ],
+      "group": null,
+      "tokens": [
+        87,
+        89
+      ],
+      "samples": [
+        123600,
+        127200
+      ]
+    },
+    {
+      "label": "axles.",
+      "text_start": 89,
+      "text_end": 95,
+      "method": "mithi_token_word_ownership",
+      "model_words": [
+        "axles."
+      ],
+      "group": null,
+      "tokens": [
+        91,
+        97
+      ],
+      "samples": [
+        129000,
+        139200
+      ]
+    }
+  ]
+}

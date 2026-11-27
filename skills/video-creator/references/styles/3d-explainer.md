@@ -44,11 +44,12 @@ Genuine three-dimensional explanation: real meshes in perspective, lit by a key 
 
 ## Self-review additions
 
+- Does the chosen viewpoint separate the moving parts and expose the relevant fit? Check that cutaways, lighting and leaders keep the same parts identifiable through the change.
 - Is it genuinely 3D: parts with depth, lit and shadowed, seen in perspective, and moving in three dimensions?
 - Do mechanical relationships hold (meshing ratio, containment, axes)?
 - Does every camera move have a reason (reveal, follow the mechanism, settle), timed to the plan's moments?
-- Is exactly one part highlighted at a time, and is it the one the narration names?
-- Is the scene framed for its orientation, with no subject clipped?
+- Does each highlight clarify the part or relationship being discussed?
+- Does framing protect the working parts and keep intentional crops clear?
 
 ## Full-bleed presentation (optional, P018.6)
 
@@ -68,3 +69,10 @@ Any topic's machines, models, layouts or cue times. The P017.8 fixture (`scripts
 - Preflight through proxies, a 5.6 s preview and a 1080×1920 measurement render.
 
 There has been no full production and no human review. Gear teeth are a simplified (non-involute) profile. There is no anti-aliasing beyond what SwiftShader's multisampling provides, no textures and no imported models (glTF/OBJ). Fonts are system fonts, with licensing review pending.
+
+## Modelling and materials (P023.9, optional)
+
+- **`mesh.lathe(profile, seg, {from, to})`:** surfaces of revolution (rings, shafts, bottles, lenses, pistons). Normals are smooth around the axis and crisp at profile corners. A partial sweep is a cutaway and returns `.caps` (section faces) for a separate "cut" material. `mesh.sphere(r)`.
+- **Studio reflections:** `scene.env: 0..1` adds a sky/ground gradient and softbox reflections, blurred by roughness and tinted for metals. It's off by default, so existing scenes render unchanged.
+- **Coordinated physical motion:** compose with parent nodes (for example balls as children of a cage), so relative motions add correctly. Derive speeds from the physics (pure rolling, gear ratios) and declare them as `checks.ratios: [{a: t => angleA(t), b: t => angleB(t), ratio, label}]`. Preflight's `mechanism` check verifies every frame.
+- **Renderer choice:** this WebGL path measured about 0.8 s per Full HD frame and 0.68 s at 540×960, against about 5–18 s per frame for Blender EEVEE (reference laptop). Use Blender (optional) only for static layers via `scripts/blender_layers.py`. For environments built with verified external assets (CC0 HDRIs, scanned models), see [rich artwork](../visual-production.md#rich-artwork-technique-selection-p02416b). The explanatory parts always stay WebGL geometry.

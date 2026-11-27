@@ -1,0 +1,16 @@
+{
+  "passed": true,
+  "shots": 3,
+  "cues": 5,
+  "camera_keys": 0,
+  "timeline_sha256": "e4f3e80a814e6fb69a1588986c87b4ea8b5493e9ca5341eb827df760333221a7",
+  "audio_sha256": "45386b2130e2ebdd5c8450d4cbae4127f937206480c803d9923accf303e6559a",
+  "sample_rate": 24000,
+  "sample_count": 273600,
+  "timing_status": "unreviewed",
+  "record_sources": [
+    "forced_alignment"
+  ],
+  "run_id": "synthetic-heat",
+  "timeline": "narration/narration.timeline.json"
+}

@@ -1,0 +1,183 @@
+{
+  "schema": "video-creator.creative-plan",
+  "version": 1,
+  "narration": {
+    "timeline": "narration/narration.timeline.json",
+    "sha256": "bd5574c348b8dd79db969b222a17e14a439e51d058e6fd5a95d85f9d1271ef82"
+  },
+  "style": "documentary",
+  "style_reason": "fixture",
+  "guardrails": [
+    "simplified, not to scale"
+  ],
+  "motifs": [
+    {
+      "id": "m1",
+      "stands_for": "x"
+    }
+  ],
+  "story": [
+    {
+      "segment": "s1",
+      "role": "hook",
+      "idea": "x"
+    },
+    {
+      "segment": "s2",
+      "role": "mechanism",
+      "idea": "x"
+    },
+    {
+      "segment": "s3",
+      "role": "resolution",
+      "idea": "x"
+    }
+  ],
+  "assets": [
+    {
+      "id": "a1",
+      "kind": "procedural",
+      "description": "procedural fixture art"
+    }
+  ],
+  "shots": [
+    {
+      "id": "wide",
+      "purpose": "p",
+      "objects": [
+        {
+          "id": "l-date",
+          "asset": "a1",
+          "description": "l-date"
+        }
+      ],
+      "cues": [
+        {
+          "id": "december",
+          "object": "l-date",
+          "action": "appear",
+          "at": {
+            "sample": 28114,
+            "seconds": 1.1714,
+            "kind": "word",
+            "label": "December,",
+            "segment": "s1",
+            "timing_source": "forced_alignment",
+            "edge": "start",
+            "offset_ms": 0
+          }
+        }
+      ],
+      "start": {
+        "sample": 0,
+        "seconds": 0.0,
+        "kind": "bounds",
+        "label": "narration-start",
+        "timing_source": "narration_bounds"
+      },
+      "end": {
+        "sample": 96000,
+        "seconds": 4.0
+      },
+      "camera": []
+    },
+    {
+      "id": "orville",
+      "purpose": "p",
+      "start": {
+        "sample": 96000,
+        "seconds": 4.0,
+        "kind": "segment",
+        "label": "s2",
+        "segment": null,
+        "timing_source": "segment_boundary",
+        "edge": "start",
+        "offset_ms": 0
+      },
+      "objects": [
+        {
+          "id": "l-orv",
+          "asset": "a1",
+          "description": "l-orv"
+        }
+      ],
+      "cues": [
+        {
+          "id": "orville",
+          "object": "l-orv",
+          "action": "appear",
+          "at": {
+            "sample": 100800,
+            "seconds": 4.2,
+            "kind": "word",
+            "label": "Orville",
+            "segment": "s2",
+            "timing_source": "forced_alignment",
+            "edge": "start",
+            "offset_ms": 0
+          }
+        }
+      ],
+      "end": {
+        "sample": 177600,
+        "seconds": 7.4
+      },
+      "camera": []
+    },
+    {
+      "id": "wilbur",
+      "purpose": "p",
+      "start": {
+        "sample": 177600,
+        "seconds": 7.4,
+        "kind": "segment",
+        "label": "s3",
+        "segment": null,
+        "timing_source": "segment_boundary",
+        "edge": "start",
+        "offset_ms": 0
+      },
+      "objects": [
+        {
+          "id": "l-wil",
+          "asset": "a1",
+          "description": "l-wil"
+        }
+      ],
+      "cues": [
+        {
+          "id": "wilbur",
+          "object": "l-wil",
+          "action": "appear",
+          "at": {
+            "sample": 182400,
+            "seconds": 7.6,
+            "kind": "word",
+            "label": "Wilbur,",
+            "segment": "s3",
+            "timing_source": "forced_alignment",
+            "edge": "start",
+            "offset_ms": 0
+          }
+        }
+      ],
+      "end": {
+        "sample": 273600,
+        "seconds": 11.4
+      },
+      "camera": []
+    }
+  ],
+  "resolution": {
+    "timeline_sha256": "bd5574c348b8dd79db969b222a17e14a439e51d058e6fd5a95d85f9d1271ef82",
+    "audio_sha256": "45386b2130e2ebdd5c8450d4cbae4127f937206480c803d9923accf303e6559a",
+    "sample_rate": 24000,
+    "sample_count": 273600,
+    "timing_status": "unreviewed",
+    "record_sources": [
+      "forced_alignment"
+    ],
+    "run_id": "synthetic-flight",
+    "timeline": "narration/narration.timeline.json"
+  }
+}

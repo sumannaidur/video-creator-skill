@@ -1,0 +1,385 @@
+{
+  "schema": "video-creator.creative-plan",
+  "version": 1,
+  "narration": {
+    "timeline": "narration/narration-ca1e95afa3.timeline.json",
+    "sha256": "a0739de79d43ab19fddd74c8df71009338b82472f5b78eb6be4ef10d124bb327"
+  },
+  "style": "tech-explainer",
+  "style_reason": "A product whose materials matter (black glass, steel, copper) and an invisible mechanism: Blender material layers plus aligned SVG fields and currents.",
+  "visual_hook": "a cold-looking hob with a pan shimmering with heat",
+  "transformation": "the glass turns see-through; field loops rise from the coil and become swirling currents in the pan",
+  "payoff": "the pan base glows; the glass does not",
+  "technique": "Blender static layers (procedural; no external assets) for materials; SVG overlays from projected GEOMETRY for field, currents and labels",
+  "story": [
+    {
+      "segment": "s1",
+      "role": "hook",
+      "idea": "no flame, yet hot"
+    },
+    {
+      "segment": "s2",
+      "role": "mechanism",
+      "idea": "copper coil, alternating current"
+    },
+    {
+      "segment": "s3",
+      "role": "mechanism",
+      "idea": "changing field through the glass"
+    },
+    {
+      "segment": "s4",
+      "role": "mechanism",
+      "idea": "eddy currents heat the metal"
+    },
+    {
+      "segment": "s5",
+      "role": "resolution",
+      "idea": "heat born in the pan"
+    }
+  ],
+  "motifs": [
+    {
+      "id": "m-loop",
+      "stands_for": "loops: coil turns, field loops, eddy loops"
+    }
+  ],
+  "assets": [
+    {
+      "id": "a-hob",
+      "kind": "procedural",
+      "description": "Blender-rendered procedural hob, coil, pan layers (visual/hob_scene.py) and SVG overlays"
+    }
+  ],
+  "guardrails": [
+    "glass warms from the pan; heat is produced in the pan",
+    "schematic field loops",
+    "pan must be ferromagnetic (not narrated)"
+  ],
+  "shots": [
+    {
+      "id": "hook",
+      "purpose": "Hook: a steel pan on a black glass hob; no flame, no glowing element, yet heat shimmers above it.",
+      "objects": [
+        {
+          "id": "o-shimmer",
+          "asset": "a-hob",
+          "description": "heat shimmer"
+        }
+      ],
+      "cues": [
+        {
+          "id": "heat",
+          "object": "o-shimmer",
+          "action": "heat shimmers",
+          "at": {
+            "sample": 121200,
+            "seconds": 5.05,
+            "kind": "word",
+            "label": "వేడెక్కుతుంది.",
+            "segment": "s1",
+            "timing_source": "native_model",
+            "edge": "start",
+            "offset_ms": 0
+          }
+        }
+      ],
+      "start": {
+        "sample": 0,
+        "seconds": 0.0,
+        "kind": "bounds",
+        "label": "narration-start",
+        "timing_source": "narration_bounds"
+      },
+      "end": {
+        "sample": 144600,
+        "seconds": 6.025
+      },
+      "camera": []
+    },
+    {
+      "id": "coil",
+      "start": {
+        "sample": 144600,
+        "seconds": 6.025,
+        "kind": "segment",
+        "label": "s2",
+        "segment": null,
+        "timing_source": "segment_boundary",
+        "edge": "start",
+        "offset_ms": 0
+      },
+      "purpose": "The glass turns see-through: a copper coil below; current reverses back and forth.",
+      "objects": [
+        {
+          "id": "o-under",
+          "asset": "a-hob",
+          "description": "see-through hob"
+        },
+        {
+          "id": "o-coilglow",
+          "asset": "a-hob",
+          "description": "coil highlight"
+        },
+        {
+          "id": "o-ac",
+          "asset": "a-hob",
+          "description": "alternating current arrows"
+        }
+      ],
+      "cues": [
+        {
+          "id": "under",
+          "object": "o-under",
+          "action": "glass turns see-through",
+          "at": {
+            "sample": 164400,
+            "seconds": 6.85,
+            "kind": "word",
+            "label": "కింద,",
+            "segment": "s2",
+            "timing_source": "native_model",
+            "edge": "start",
+            "offset_ms": 0
+          }
+        },
+        {
+          "id": "coil",
+          "object": "o-coilglow",
+          "action": "coil glows",
+          "at": {
+            "sample": 201600,
+            "seconds": 8.4,
+            "kind": "word",
+            "label": "చుట్ట",
+            "segment": "s2",
+            "timing_source": "native_model",
+            "edge": "start",
+            "offset_ms": 0
+          }
+        },
+        {
+          "id": "ac",
+          "object": "o-ac",
+          "action": "current flips",
+          "at": {
+            "sample": 256200,
+            "seconds": 10.675,
+            "kind": "word",
+            "label": "ముందుకీ",
+            "segment": "s2",
+            "timing_source": "native_model",
+            "edge": "start",
+            "offset_ms": 0
+          }
+        }
+      ],
+      "end": {
+        "sample": 331200,
+        "seconds": 13.8
+      },
+      "camera": []
+    },
+    {
+      "id": "field",
+      "start": {
+        "sample": 331200,
+        "seconds": 13.8,
+        "kind": "segment",
+        "label": "s3",
+        "segment": null,
+        "timing_source": "segment_boundary",
+        "edge": "start",
+        "offset_ms": 0
+      },
+      "purpose": "A changing magnetic field loops up through the glass into the pan.",
+      "objects": [
+        {
+          "id": "o-field",
+          "asset": "a-hob",
+          "description": "field loops"
+        },
+        {
+          "id": "l-glass",
+          "asset": "a-hob",
+          "description": "glass tag"
+        }
+      ],
+      "cues": [
+        {
+          "id": "field",
+          "object": "o-field",
+          "action": "field loops rise",
+          "at": {
+            "sample": 376200,
+            "seconds": 15.675,
+            "kind": "word",
+            "label": "అయస్కాంత",
+            "segment": "s3",
+            "timing_source": "native_model",
+            "edge": "start",
+            "offset_ms": 0
+          }
+        },
+        {
+          "id": "glass",
+          "object": "l-glass",
+          "action": "through the glass",
+          "at": {
+            "sample": 412200,
+            "seconds": 17.175,
+            "kind": "word",
+            "label": "గాజు",
+            "segment": "s3",
+            "timing_source": "native_model",
+            "edge": "start",
+            "offset_ms": 0
+          }
+        }
+      ],
+      "end": {
+        "sample": 456000,
+        "seconds": 19.0
+      },
+      "camera": []
+    },
+    {
+      "id": "eddy",
+      "start": {
+        "sample": 456000,
+        "seconds": 19.0,
+        "kind": "segment",
+        "label": "s4",
+        "segment": null,
+        "timing_source": "segment_boundary",
+        "edge": "start",
+        "offset_ms": 0
+      },
+      "purpose": "Swirling currents appear in the pan base; the metal begins to glow with heat.",
+      "objects": [
+        {
+          "id": "o-eddy",
+          "asset": "a-hob",
+          "description": "eddy rings"
+        },
+        {
+          "id": "o-hot",
+          "asset": "a-hob",
+          "description": "hot pan base"
+        }
+      ],
+      "cues": [
+        {
+          "id": "eddy",
+          "object": "o-eddy",
+          "action": "eddy currents swirl",
+          "at": {
+            "sample": 498000,
+            "seconds": 20.75,
+            "kind": "word",
+            "label": "సుడి",
+            "segment": "s4",
+            "timing_source": "native_model",
+            "edge": "start",
+            "offset_ms": 0
+          }
+        },
+        {
+          "id": "hot",
+          "object": "o-hot",
+          "action": "pan base glows",
+          "at": {
+            "sample": 584400,
+            "seconds": 24.35,
+            "kind": "word",
+            "label": "వేడి",
+            "segment": "s4",
+            "timing_source": "native_model",
+            "edge": "start",
+            "offset_ms": 0
+          }
+        }
+      ],
+      "end": {
+        "sample": 609600,
+        "seconds": 25.4
+      },
+      "camera": []
+    },
+    {
+      "id": "payoff",
+      "start": {
+        "sample": 609600,
+        "seconds": 25.4,
+        "kind": "segment",
+        "label": "s5",
+        "segment": null,
+        "timing_source": "segment_boundary",
+        "edge": "start",
+        "offset_ms": 0
+      },
+      "purpose": "Payoff: the heat is born in the pan, not the glass.",
+      "objects": [
+        {
+          "id": "l-here",
+          "asset": "a-hob",
+          "description": "heat-here tag"
+        },
+        {
+          "id": "l-notglass",
+          "asset": "a-hob",
+          "description": "not-the-glass tag"
+        }
+      ],
+      "cues": [
+        {
+          "id": "here",
+          "object": "l-here",
+          "action": "heat here",
+          "at": {
+            "sample": 656400,
+            "seconds": 27.35,
+            "kind": "word",
+            "label": "లోనే,",
+            "segment": "s5",
+            "timing_source": "native_model",
+            "edge": "start",
+            "offset_ms": 0
+          }
+        },
+        {
+          "id": "notglass",
+          "object": "l-notglass",
+          "action": "not in the glass",
+          "at": {
+            "sample": 673200,
+            "seconds": 28.05,
+            "kind": "word",
+            "label": "గాజులో",
+            "segment": "s5",
+            "timing_source": "native_model",
+            "edge": "start",
+            "offset_ms": 0
+          }
+        }
+      ],
+      "end": {
+        "sample": 695400,
+        "seconds": 28.975
+      },
+      "camera": []
+    }
+  ],
+  "resolution": {
+    "timeline_sha256": "a0739de79d43ab19fddd74c8df71009338b82472f5b78eb6be4ef10d124bb327",
+    "audio_sha256": "52e3eb3ba6bf25827458090225791feafc89589c93c464209c8a15e7b7589a2a",
+    "sample_rate": 24000,
+    "sample_count": 695400,
+    "timing_status": "unreviewed",
+    "record_sources": [
+      "native_model"
+    ],
+    "run_id": "combined-e1e69151c88cbc36fd5328cd",
+    "timeline": "narration/narration-ca1e95afa3.timeline.json"
+  }
+}

@@ -1,0 +1,45 @@
+{
+  "source": "S1",
+  "table": 6,
+  "series": "All India reported Census literacy rate",
+  "unit": "percent",
+  "values": [
+    {
+      "year": 1951,
+      "value": 18.33,
+      "ages": "5+"
+    },
+    {
+      "year": 1961,
+      "value": 28.3,
+      "ages": "5+"
+    },
+    {
+      "year": 1971,
+      "value": 34.45,
+      "ages": "5+"
+    },
+    {
+      "year": 1981,
+      "value": 43.57,
+      "ages": "7+",
+      "coverage": "Excludes Assam"
+    },
+    {
+      "year": 1991,
+      "value": 52.21,
+      "ages": "7+",
+      "coverage": "Excludes Jammu and Kashmir"
+    },
+    {
+      "year": 2001,
+      "value": 64.84,
+      "ages": "7+"
+    },
+    {
+      "year": 2011,
+      "value": 72.99,
+      "ages": "7+"
+    }
+  ]
+}

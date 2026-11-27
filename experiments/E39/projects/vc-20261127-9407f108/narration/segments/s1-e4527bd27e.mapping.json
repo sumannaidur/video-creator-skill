@@ -1,0 +1,167 @@
+{
+  "result": "mapped",
+  "words": [
+    {
+      "label": "విత్తనాన్ని",
+      "text_start": 0,
+      "text_end": 11,
+      "method": "mithi_token_word_ownership",
+      "model_words": [
+        "విత్తనాన్ని"
+      ],
+      "group": null,
+      "tokens": [
+        1,
+        13
+      ],
+      "samples": [
+        1200,
+        18000
+      ]
+    },
+    {
+      "label": "తలకిందులుగా",
+      "text_start": 12,
+      "text_end": 23,
+      "method": "mithi_token_word_ownership",
+      "model_words": [
+        "తలకిందులుగా"
+      ],
+      "group": null,
+      "tokens": [
+        15,
+        31
+      ],
+      "samples": [
+        19200,
+        38400
+      ]
+    },
+    {
+      "label": "నాటినా,",
+      "text_start": 24,
+      "text_end": 31,
+      "method": "mithi_token_word_ownership",
+      "model_words": [
+        "నాటినా,"
+      ],
+      "group": null,
+      "tokens": [
+        33,
+        41
+      ],
+      "samples": [
+        39600,
+        52200
+      ]
+    },
+    {
+      "label": "వేరు",
+      "text_start": 32,
+      "text_end": 36,
+      "method": "mithi_token_word_ownership",
+      "model_words": [
+        "వేరు"
+      ],
+      "group": null,
+      "tokens": [
+        44,
+        49
+      ],
+      "samples": [
+        61800,
+        71400
+      ]
+    },
+    {
+      "label": "కిందికే,",
+      "text_start": 37,
+      "text_end": 45,
+      "method": "mithi_token_word_ownership",
+      "model_words": [
+        "కిందికే,"
+      ],
+      "group": null,
+      "tokens": [
+        51,
+        59
+      ],
+      "samples": [
+        72600,
+        85800
+      ]
+    },
+    {
+      "label": "మొలక",
+      "text_start": 46,
+      "text_end": 50,
+      "method": "mithi_token_word_ownership",
+      "model_words": [
+        "మొలక"
+      ],
+      "group": null,
+      "tokens": [
+        62,
+        68
+      ],
+      "samples": [
+        94200,
+        103800
+      ]
+    },
+    {
+      "label": "పైకే",
+      "text_start": 51,
+      "text_end": 55,
+      "method": "mithi_token_word_ownership",
+      "model_words": [
+        "పైకే"
+      ],
+      "group": null,
+      "tokens": [
+        70,
+        75
+      ],
+      "samples": [
+        105000,
+        112200
+      ]
+    },
+    {
+      "label": "పెరుగుతుంది.",
+      "text_start": 56,
+      "text_end": 68,
+      "method": "mithi_token_word_ownership",
+      "model_words": [
+        "పెరుగుతుంది."
+      ],
+      "group": null,
+      "tokens": [
+        77,
+        89
+      ],
+      "samples": [
+        113400,
+        128400
+      ]
+    },
+    {
+      "label": "ఎలా?",
+      "text_start": 69,
+      "text_end": 73,
+      "method": "mithi_token_word_ownership",
+      "model_words": [
+        "ఎలా?"
+      ],
+      "group": null,
+      "tokens": [
+        92,
+        97
+      ],
+      "samples": [
+        138000,
+        144600
+      ]
+    }
+  ]
+}

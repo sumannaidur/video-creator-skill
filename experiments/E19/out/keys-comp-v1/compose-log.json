@@ -1,0 +1,15 @@
+{
+ "captions": "E18 captions.json (contract-validated)",
+ "frames": [
+  {
+   "frame": 144,
+   "t": 4.8,
+   "captionWord": "మీ",
+   "hook": {
+    "opacity": 0,
+    "visible": false
+   },
+   "cue": "c4"
+  }
+ ]
+}

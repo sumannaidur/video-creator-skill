@@ -1,0 +1,221 @@
+{
+  "result": "mapped",
+  "words": [
+    {
+      "label": "సర్వర్",
+      "text_start": 0,
+      "text_end": 6,
+      "method": "mithi_token_word_ownership",
+      "model_words": [
+        "సర్వర్"
+      ],
+      "group": null,
+      "tokens": [
+        1,
+        7
+      ],
+      "samples": [
+        1200,
+        10800
+      ]
+    },
+    {
+      "label": "ఆ",
+      "text_start": 7,
+      "text_end": 8,
+      "method": "mithi_token_word_ownership",
+      "model_words": [
+        "ఆ"
+      ],
+      "group": null,
+      "tokens": [
+        9,
+        10
+      ],
+      "samples": [
+        12000,
+        13200
+      ]
+    },
+    {
+      "label": "మెసేజ్‌ని",
+      "text_start": 9,
+      "text_end": 18,
+      "method": "mithi_token_word_ownership",
+      "model_words": [
+        "మెసేజ్‌ని"
+      ],
+      "group": null,
+      "tokens": [
+        12,
+        20
+      ],
+      "samples": [
+        15000,
+        27600
+      ]
+    },
+    {
+      "label": "చదవలేదు.",
+      "text_start": 19,
+      "text_end": 27,
+      "method": "mithi_token_word_ownership",
+      "model_words": [
+        "చదవలేదు."
+      ],
+      "group": null,
+      "tokens": [
+        22,
+        34
+      ],
+      "samples": [
+        28800,
+        44400
+      ]
+    },
+    {
+      "label": "వాట్సాప్",
+      "text_start": 28,
+      "text_end": 36,
+      "method": "mithi_token_word_ownership",
+      "model_words": [
+        "వాట్సాప్"
+      ],
+      "group": null,
+      "tokens": [
+        37,
+        45
+      ],
+      "samples": [
+        54600,
+        66000
+      ]
+    },
+    {
+      "label": "కూడా",
+      "text_start": 37,
+      "text_end": 41,
+      "method": "mithi_token_word_ownership",
+      "model_words": [
+        "కూడా"
+      ],
+      "group": null,
+      "tokens": [
+        47,
+        53
+      ],
+      "samples": [
+        67200,
+        72600
+      ]
+    },
+    {
+      "label": "చదవలేదు.",
+      "text_start": 42,
+      "text_end": 50,
+      "method": "mithi_token_word_ownership",
+      "model_words": [
+        "చదవలేదు."
+      ],
+      "group": null,
+      "tokens": [
+        55,
+        67
+      ],
+      "samples": [
+        73800,
+        88200
+      ]
+    },
+    {
+      "label": "అది",
+      "text_start": 51,
+      "text_end": 54,
+      "method": "mithi_token_word_ownership",
+      "model_words": [
+        "అది"
+      ],
+      "group": null,
+      "tokens": [
+        70,
+        73
+      ],
+      "samples": [
+        98400,
+        103800
+      ]
+    },
+    {
+      "label": "కేవలం",
+      "text_start": 55,
+      "text_end": 60,
+      "method": "mithi_token_word_ownership",
+      "model_words": [
+        "కేవలం"
+      ],
+      "group": null,
+      "tokens": [
+        75,
+        83
+      ],
+      "samples": [
+        105000,
+        115800
+      ]
+    },
+    {
+      "label": "సరైన",
+      "text_start": 61,
+      "text_end": 65,
+      "method": "mithi_token_word_ownership",
+      "model_words": [
+        "సరైన"
+      ],
+      "group": null,
+      "tokens": [
+        85,
+        91
+      ],
+      "samples": [
+        117600,
+        126600
+      ]
+    },
+    {
+      "label": "ఫోన్‌కి",
+      "text_start": 66,
+      "text_end": 73,
+      "method": "mithi_token_word_ownership",
+      "model_words": [
+        "ఫోన్‌కి"
+      ],
+      "group": null,
+      "tokens": [
+        93,
+        100
+      ],
+      "samples": [
+        127800,
+        135600
+      ]
+    },
+    {
+      "label": "అందిస్తుంది.",
+      "text_start": 74,
+      "text_end": 86,
+      "method": "mithi_token_word_ownership",
+      "model_words": [
+        "అందిస్తుంది."
+      ],
+      "group": null,
+      "tokens": [
+        102,
+        113
+      ],
+      "samples": [
+        136800,
+        151200
+      ]
+    }
+  ]
+}

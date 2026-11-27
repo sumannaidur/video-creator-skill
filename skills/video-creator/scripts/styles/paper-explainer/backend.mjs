@@ -5,6 +5,8 @@ import { dirname, join } from 'node:path';
 import { fileURLToPath, pathToFileURL } from 'node:url';
 import { setTimeout as delay } from 'node:timers/promises';
 import { findChrome, launch } from '../../lib/chrome.mjs';
+import { inspectComposition } from '../../lib/composition.mjs';
+import { inspectDom } from '../../lib/prerender.mjs';
 
 const here = dirname(fileURLToPath(import.meta.url));
 const BROWSER_ARGS = ['--disable-gpu'];
@@ -12,7 +14,7 @@ const BROWSER_ARGS = ['--disable-gpu'];
 export const backend = {
   name: 'paper-explainer',
   // Files whose contents can change pixels; hashed into the checkpoint configuration.
-  sources: ['engine.js', 'kit.js', 'view.js', 'host.html', 'paper.css', 'story.css', 'backend.mjs', '../shared/presentation.js', '../shared/texture.js', '../../lib/chrome.mjs'].map(f => join(here, f)),
+  sources: ['engine.js', 'kit.js', 'view.js', 'host.html', 'paper.css', 'story.css', 'backend.mjs', '../shared/presentation.js', '../shared/texture.js', '../shared/motion.js', '../../lib/chrome.mjs'].map(f => join(here, f)),
   settings: {browserArgs: BROWSER_ARGS, deviceScaleFactor: 1},
   // Resolved-plan timing contracts this backend consumes (scripts/lib/resolved-plan.mjs).
   plans: ['video-creator.render-plan/1'],
@@ -39,19 +41,25 @@ export const backend = {
     } catch (error) { await page.close(); throw error; }
     const engine = await readFile(join(here, 'engine.js'), 'utf8'), kit = await readFile(join(here, 'kit.js'), 'utf8');
     const presentationSource = await readFile(join(here, '../shared/presentation.js'), 'utf8'), texture = await readFile(join(here, '../shared/texture.js'), 'utf8');
+    const motionSource = await readFile(join(here, '../shared/motion.js'), 'utf8');
     return {
       version: page.version,
       close: page.close,
       async install({timeline, topicSource, topicOptions, plan, captions, presentation}) {
         return evaluate(`(() => { ${presentationSource}
           ${texture}
+          ${motionSource}
           ${engine}
           ${kit}
           globalThis.paperTopicOptions = ${JSON.stringify(topicOptions ?? null)} ?? undefined;
           ${topicSource}
-          return installPaperShots({timeline: ${JSON.stringify(timeline)}, topic: globalThis.paperTopic,
-            locale: ${JSON.stringify(locale ?? null)}, font: ${JSON.stringify(font ?? null)}${plan ? `, plan: ${JSON.stringify(plan)}` : ''}${captions ? `, captions: ${JSON.stringify(captions)}` : ''}${presentation ? `, presentation: ${JSON.stringify(presentation)}` : ''}}); })()`);
+          const topic = globalThis.paperTopic;
+          const result = installPaperShots({timeline: ${JSON.stringify(timeline)}, topic,
+            locale: ${JSON.stringify(locale ?? null)}, font: ${JSON.stringify(font ?? null)}${plan ? `, plan: ${JSON.stringify(plan)}` : ''}${captions ? `, captions: ${JSON.stringify(captions)}` : ''}${presentation ? `, presentation: ${JSON.stringify(presentation)}` : ''}});
+          return {...result, composition: topic.composition}; })()`);
       },
+      inspectComposition: spec => evaluate(`(${inspectComposition})(${JSON.stringify(spec)})`),
+      inspectDom: (width, height) => evaluate(`(${inspectDom})(${Number(width)}, ${Number(height)})`),
       describe: () => evaluate(`({presentation: document.documentElement.dataset.presentation ?? 'framed', lang: document.documentElement.lang, captionFont: getComputedStyle(document.querySelector('footer')).fontFamily,
         labelFont: getComputedStyle(document.documentElement).getPropertyValue('--vc-font').trim()})`),
       seek: t => evaluate(`(() => {

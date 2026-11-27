@@ -1,0 +1,257 @@
+{
+  "result": "mapped",
+  "words": [
+    {
+      "label": "శరీరం",
+      "text_start": 0,
+      "text_end": 5,
+      "method": "mithi_token_word_ownership",
+      "model_words": [
+        "శరీరం"
+      ],
+      "group": null,
+      "tokens": [
+        1,
+        9
+      ],
+      "samples": [
+        1200,
+        13200
+      ]
+    },
+    {
+      "label": "తయారు",
+      "text_start": 6,
+      "text_end": 11,
+      "method": "mithi_token_word_ownership",
+      "model_words": [
+        "తయారు"
+      ],
+      "group": null,
+      "tokens": [
+        11,
+        18
+      ],
+      "samples": [
+        14400,
+        22800
+      ]
+    },
+    {
+      "label": "చేసే",
+      "text_start": 12,
+      "text_end": 16,
+      "method": "mithi_token_word_ownership",
+      "model_words": [
+        "చేసే"
+      ],
+      "group": null,
+      "tokens": [
+        20,
+        26
+      ],
+      "samples": [
+        24000,
+        31800
+      ]
+    },
+    {
+      "label": "యాంటీబాడీలు",
+      "text_start": 17,
+      "text_end": 28,
+      "method": "mithi_token_word_ownership",
+      "model_words": [
+        "యాంటీబాడీలు"
+      ],
+      "group": null,
+      "tokens": [
+        28,
+        44
+      ],
+      "samples": [
+        33600,
+        55800
+      ]
+    },
+    {
+      "label": "ఆ",
+      "text_start": 29,
+      "text_end": 30,
+      "method": "mithi_token_word_ownership",
+      "model_words": [
+        "ఆ"
+      ],
+      "group": null,
+      "tokens": [
+        46,
+        47
+      ],
+      "samples": [
+        59400,
+        62400
+      ]
+    },
+    {
+      "label": "గుర్తుకు",
+      "text_start": 31,
+      "text_end": 39,
+      "method": "mithi_token_word_ownership",
+      "model_words": [
+        "గుర్తుకు"
+      ],
+      "group": null,
+      "tokens": [
+        49,
+        56
+      ],
+      "samples": [
+        63600,
+        73800
+      ]
+    },
+    {
+      "label": "అంటుకుంటాయి.",
+      "text_start": 40,
+      "text_end": 52,
+      "method": "mithi_token_word_ownership",
+      "model_words": [
+        "అంటుకుంటాయి."
+      ],
+      "group": null,
+      "tokens": [
+        58,
+        71
+      ],
+      "samples": [
+        75000,
+        90600
+      ]
+    },
+    {
+      "label": "ఈ",
+      "text_start": 53,
+      "text_end": 54,
+      "method": "mithi_token_word_ownership",
+      "model_words": [
+        "ఈ"
+      ],
+      "group": null,
+      "tokens": [
+        74,
+        76
+      ],
+      "samples": [
+        102600,
+        104400
+      ]
+    },
+    {
+      "label": "స్పందన",
+      "text_start": 55,
+      "text_end": 61,
+      "method": "mithi_token_word_ownership",
+      "model_words": [
+        "స్పందన"
+      ],
+      "group": null,
+      "tokens": [
+        78,
+        86
+      ],
+      "samples": [
+        106200,
+        117600
+      ]
+    },
+    {
+      "label": "తర్వాత",
+      "text_start": 62,
+      "text_end": 68,
+      "method": "mithi_token_word_ownership",
+      "model_words": [
+        "తర్వాత"
+      ],
+      "group": null,
+      "tokens": [
+        88,
+        96
+      ],
+      "samples": [
+        118800,
+        130200
+      ]
+    },
+    {
+      "label": "కొన్ని",
+      "text_start": 69,
+      "text_end": 75,
+      "method": "mithi_token_word_ownership",
+      "model_words": [
+        "కొన్ని"
+      ],
+      "group": null,
+      "tokens": [
+        98,
+        103
+      ],
+      "samples": [
+        134400,
+        141000
+      ]
+    },
+    {
+      "label": "జ్ఞాపక",
+      "text_start": 76,
+      "text_end": 82,
+      "method": "mithi_token_word_ownership",
+      "model_words": [
+        "జ్ఞాపక"
+      ],
+      "group": null,
+      "tokens": [
+        105,
+        113
+      ],
+      "samples": [
+        142800,
+        154200
+      ]
+    },
+    {
+      "label": "కణాలు",
+      "text_start": 83,
+      "text_end": 88,
+      "method": "mithi_token_word_ownership",
+      "model_words": [
+        "కణాలు"
+      ],
+      "group": null,
+      "tokens": [
+        115,
+        122
+      ],
+      "samples": [
+        155400,
+        163800
+      ]
+    },
+    {
+      "label": "మిగులుతాయి.",
+      "text_start": 89,
+      "text_end": 100,
+      "method": "mithi_token_word_ownership",
+      "model_words": [
+        "మిగులుతాయి."
+      ],
+      "group": null,
+      "tokens": [
+        124,
+        136
+      ],
+      "samples": [
+        165000,
+        178800
+      ]
+    }
+  ]
+}

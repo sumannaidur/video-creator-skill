@@ -25,9 +25,9 @@ Schema `video-creator.creative-plan` v1. The plan records **your** decisions; `s
 
 1. **Story-role map** (`story`): each script segment's role (hook, context, mechanism, contrast, example, transition, resolution) and its idea.
 2. **Motif ledger** (`motifs`): each symbol and the idea it stands for. Reuse a motif whenever its idea returns; add new art only for new ideas, so the ending can call back the opening.
-3. **Assets:** `kind` is original, procedural, licensed or user-supplied. Licensed and user-supplied assets need `source` and `license`.
+3. **Assets:** `kind` is original, procedural, licensed, public-domain or user-supplied. Licensed, public-domain and user-supplied assets need `source` and `license`; their file integrity and rights are checked by the style's asset manifest (for example [Documentary](styles/documentary.md)).
 4. **Shots:** any number. The first starts at 0; each later shot needs a `start` anchor strictly after the previous one, and ends where the next starts (the last at the end of the narration). Minimum 0.3 s. Record purpose, metaphor, objects, camera intentions and the transition with its reason.
-5. **Cues:** each key reveal is tied to the word that introduces its concept. Give a cue an `id` (lowercase, unique in the plan) to make it addressable from the topic module; the renderer requires every such cue to be used. Allow at most one major reveal about every 0.8 s.
+5. **Cues:** each key reveal is tied to the word that introduces its concept. Give a cue an `id` (lowercase, unique in the plan) to make it addressable from the topic module; the renderer requires every such cue to be used.
 6. **Guardrails:** for example a formula, a guaranteed outcome, a ranking the sources don't support.
 7. **Extensions:** keyed by registered style ID; their contents pass through unchanged for that style's backend.
 
@@ -53,101 +53,43 @@ python scripts/plan.py resolve  <project> [--plan plan/creative-plan.json] [--ou
 - The timeline must be a verified output of the completed narration stage, and `narration.sha256` must match it. When narration changes, the ledger invalidates the plan stage and the old plan is refused until you review it against the new narration.
 - Only contract fields are read (`audio`, `segments`, word and phrase records with `source` and `segment`), so any provider's timeline works. The resolved plan keeps the timeline and audio hashes, the timing method and sources, and the review status (`unreviewed` stays unreviewed).
 
-## Think like a production team, not a diagram generator
+## Plan the visual argument
 
-Work through each shot four times, each time in a different role, before you write any artwork code. These are ways of thinking, not templates. You still invent every scene.
+Use the existing plan and a brief `creative-decisions` note. Sketch the opening, the change that explains the mechanism, and the payoff. These are story beats and may share a shot.
 
-| Role | The question you answer | What it produces |
+- **Open on evidence.** Put a recognisable subject in a specific situation. Show a contrast, tension or unexpected state that raises the question before the explanation. A quiet opening can work when the image itself creates curiosity.
+- **Make the change do the explaining.** Identify what stays recognisable and what changes, then tie the visible cause and result to speech cues. Keep symbolic scale, colours and shapes faithful to the claim guardrails. Show the answer at the end through a changed object, relationship or value the viewer can compare with the opening.
+- **Compose for the actual delivery frame.** Name the first read and direct attention through scale, contrast, placement or detail. Decide where the subject, supporting context and captions fit. Keep annotations beside their targets and use leaders where the referent is ambiguous. Leave negative space where it serves the reading order.
+- **Pick the craft and tool together.** Identify the material, shape, stroke, evidence crop or typographic relationship that makes this subject recognisable. In the note, connect each consequential capability choice to the intended visual result and its cost. Use styled SVG for precise silhouettes, diagrams and labels, optional raster layers when material or photographic evidence does explanatory work, and 3D when geometry or viewpoint needs to remain coherent. Check the selected style reference for supported tools. Reuse simpler working techniques when they carry the idea as clearly.
+
+Keep art independent of narration word order and label length. Bind motion to resolved cues and reserve space for localised text. Choose cuts, camera moves and effects when they clarify an action, reveal a relationship or carry a motif forward.
+
+### Motion primitives (optional, `scripts/styles/shared/motion.js`)
+
+Loaded by the Paper and shared shot-core engines (all styles except 3D Explainer). They are tools, not requirements. Choose them per object for a story reason:
+
+| Primitive | Use when | Avoid when |
 |---|---|---|
-| **Storyboard artist** | What single image would make this idea land for someone scrolling on a phone? Where is the viewer standing? | A sentence-long thumbnail per shot: shot scale, viewpoint, focal subject, what fills the top, middle and bottom of the frame |
-| **Illustrator** | What does this place or thing actually look like, specifically? What details make it recognisable and this topic's own? | A list of specific, observed details: materials, wear, local objects, characteristic shapes |
-| **Art director** | Where does the eye go first, second and third? Where is the light coming from? What is the mood? | A focal hierarchy, light direction, palette temperature and value plan (where the darkest and lightest areas are) |
-| **Motion designer** | What moves *because of* the narration, and what does that motion explain? What carries over into the next shot? | Cause-and-effect motion per cue, a camera intention, and a transition that continues an action or motif |
+| Curve `inOut` | Natural acceleration and braking of objects and cameras | |
+| Curve `outQuart` | Launches and arrivals that should feel quick, then soft | |
+| Curve `anticipate`, or `vcMotion.arrive(..., {anticipate})` | A wind-up before a deliberate action (a gate swing, a throw, a jump) | Small UI changes; anything on a data value |
+| Curve `overshoot` | Lively arrival of labels, notes, icons and characters | **Data marks.** A bar, line or circle never passes its true value |
+| Curve `settle` | Weight and impact (a heavy gate closing, a boat coming to rest), and follow-through | Precise readouts |
+| `vcMotion.follow(keys, {lag})` | Secondary parts answering a primary one (a head after an arm, a beam after a gate) | |
+| `vcMotion.stagger(items, start, gap)` | Related objects that build or move together in sequence | Items the narration names one by one (use their own cues) |
+| `vcMotion.stepped(keys, fps)` | Handmade styles (cut paper, chalk) when a held-pose, on-twos feel suits the tone | Data, UI, the camera, technical precision styles |
+| `vcMotion.jitter(seed, i, amp)` | Hand-placed irregularity, deterministic | Aligned grids and charts |
 
-Record the thumbnails and the art-direction choices in the project's `creative-decisions` note (the plan schema doesn't need new fields for this).
+Every curve starts at 0 and ends exactly at 1, so key values, speech-cue timing and data values hold at key times. Everything is deterministic.
 
-## Universal principles (any style, any language)
+## Keyframe review gate
 
-These apply to every style and are independent of the narration language and TTS provider. A style reference adds its own medium-specific rules on top.
+Before any preview or full render, inspect the rendered hook, change and payoff at delivery aspect ratio and phone size with sound off. Read them first without relying on captions. Use the selected style's review criteria for the medium.
 
-### Opening hook
+| Check | Evidence to record |
+|---|---|
+| Visual argument | Name the subject and question in the opening, the visible change and its cause in the middle, and what answers the question at the end. Record any essential inference carried only by narration. |
+| Composition | Identify the first read in each frame. Verify captions and labels remain readable, leaders terminate at their subjects and critical evidence stays visible. Note intentional crops. |
+| Craft and accuracy | Point to a topic-specific detail that serves recognition or explanation, and compare the result against the style reference and claim guardrails. |
 
-- The first 2–3 seconds decide whether a mobile viewer stays. Open on a **specific, striking image with a question already visible in it**, not on a title or an empty establishing shot.
-- Prefer tension, scale or surprise: a close-up of something familiar behaving unexpectedly, a person reacting, an object mid-action, a contrast placed side by side.
-- Motion must start within the first second. A static first frame reads as a slide.
-
-### Composition and visual hierarchy
-
-- **One focal point per moment.** Decide what the eye lands on first and make it win on at least two of: size, contrast (value or colour), detail density, motion and position. Keep secondary elements quieter.
-- **Use the whole vertical frame.** A 9:16 frame is tall. Plan what sits in the upper, middle and lower thirds. Stacking (sky over subject over foreground), vertical journeys (a beam travelling downwards, something rising) and tall subjects suit it. Avoid a single horizontal band of content with dead space above and below it.
-- **Layer for depth.** Most shots benefit from a foreground (framing elements, partly out of frame, darker or larger), a middle ground (the subject and the action) and a background (environment, atmosphere, receding detail). Layers that move at different speeds give parallax.
-- **Place the subject in a world.** Even an abstract mechanism (molecules, waves, money, data) can sit inside a physical setting: a room, a landscape, a hand, a machine, a cross-section. Scenes floating on a plain coloured backdrop read as textbook diagrams.
-- **Negative space is intentional, not left over.** An empty area must do a job: give a label room, isolate the focal point or suggest scale. Unplanned empty space larger than about a third of the frame is a defect.
-
-### Shot variation and cinematic language
-
-- **Vary the shot scale** across the video: extreme wide (where we are), wide, medium, close-up (detail, emotion) and macro (the invisible made visible). Avoid three similar medium shots in a row.
-- **Vary the viewpoint** where the story allows: eye level, looking up (awe, scale), looking down (overview, a map) and through or behind something (a window, a lens, a leaf).
-- **Repeat for a reason.** A callback shot should change: a new time of day, a new pose, a new camera position, or a detail that now carries the answer.
-- **Continuity:** keep the light direction, scale relationships and motif colours consistent within a scene, so cuts feel like one world.
-
-### Characters and expression (when a character helps)
-
-- A character gives the viewer someone to identify with. Show the character's **face or a clear gesture** at moments of curiosity, surprise and understanding, not only the back of the head.
-- Build characters from separately animated parts (head, torso, arms, and eyes or brows where possible) so they can turn, point, look and react **on the cue**.
-- Give each appearance a new pose or action that matches what the narration says at that moment.
-- Represent people respectfully and specifically for the audience's own setting. Avoid stereotypes.
-
-### Motion that explains
-
-- Every major motion should answer "what does this show?". Prefer **cause and effect**: something pushes, splits, fills, bends, travels or transforms *because* the narration says it does.
-- Keep ambient motion (sway, drift, flicker, breathing) on most layers so no frame is completely still, but keep it subordinate to the explanatory motion.
-- Use **anticipation and follow-through**: a small wind-up before a big reveal, and a settle after it. Stagger related objects instead of revealing them all at once.
-- **Transitions continue an action:** a beam that keeps travelling into the next scene, a zoom into a detail that becomes the next setting, or a motif that morphs. A transition without a story reason is decoration.
-
-### Richness versus clutter
-
-- Richness means **specific, meaningful detail at several scales**: a big readable shape, mid-size supporting objects and small textures or details that reward a second look.
-- Clutter means competing focal points, unreadable small text, decoration unrelated to the topic, or detail that buries the explanation.
-- Test: at phone size, can a viewer say what the shot is about in one second? If not, simplify the middle ground, not the environment's texture.
-- There is no required object count. A single well-lit, well-composed object can be richer than twenty flat icons.
-
-### Explanatory accuracy
-
-- Make abstract ideas concrete with objects from the topic's own world. Invisible processes may be symbolic, but stay faithful to the facts and to the guardrails.
-- Mark illustrative visuals (symbolic scale, illustrative colours) as such in the plan's guardrails, and never imply measured values.
-
-## Heuristics (guidance, not rules)
-
-- **Shots:** use one shot per distinct setting or idea. Keep a single continuous shot when one sentence builds toward one image. Cut in the pause between phrases unless the metaphor needs to continue across the cut.
-- **Labels:** reuse the narration's own words, and keep them few and large; the picture should carry most of the meaning. Every on-screen word in the target language needs native review.
-- **Language independence:** never place art or labels based on a language's word order or text length. Bind motion to resolved cue IDs, leave room for longer or shorter labels, and leave the caption card to the caption system. Changing the narration language or provider must not need changes to the artistic design.
-- **Endings:** the conclusion should answer the hook visibly, for example by calling back the opening objects or values in a changed state.
-
-## Budgeted self-review
-
-After the first keyframes, review in two passes. Write down an answer to every question, then spend your **one** correction on the worst problem and record the rest.
-
-**Defects:**
-
-- Overlaps, and labels crowding icons.
-- Unplanned empty regions larger than about a third of the frame.
-- Cropped subjects, and small detail that won't read at phone size.
-- Guardrail violations.
-
-**Art direction (judge every keyframe at phone size):**
-
-1. **Hook:** would the first frame stop a scrolling viewer? Is the question visible?
-2. **Focal point:** is there one clear first read in each keyframe?
-3. **Vertical frame:** are the upper, middle and lower thirds all doing a job?
-4. **Depth:** can you name the foreground, middle ground and background of each shot?
-5. **World:** does every scene sit in a place, or do some float on a plain backdrop like a textbook diagram?
-6. **Specificity:** would someone recognise this topic, and this place, from the art alone?
-7. **Light and material:** is there a consistent light direction, and do surfaces look like the style's medium?
-8. **Variety:** do the shot scale and viewpoint change across the video? Do repeated settings change?
-9. **Character:** where a character appears, does it react to the narration?
-10. **Motion:** does each major motion show cause and effect, tied to a cue?
-
-Rank the problems by how much they hurt understanding and engagement. Fix composition and storytelling problems before polish.
-
-Write the decisions, thumbnails, the self-review answers and known weaknesses to a `creative-decisions` note in the project. Don't claim the visuals are high quality: artistic quality is a human review gate.
+Record the strongest frame and the most consequential weakness in the same note. Address failures that obscure the explanation or violate guardrails before advancing. Use the available correction budget on the highest-impact failure. If scope or budget prevents a correction, preserve the frames and stop for review. Technical checks and self-review support the decision to advance; artistic acceptance stays with the owner.

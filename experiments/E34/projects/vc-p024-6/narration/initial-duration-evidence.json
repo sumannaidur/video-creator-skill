@@ -1,0 +1,77 @@
+{
+  "stage": "narration",
+  "passed": false,
+  "integrity": true,
+  "timing_status": "unreviewed",
+  "measured_seconds": 25.925,
+  "target_seconds": 30,
+  "tolerance": 0.1,
+  "deviation": -0.1358,
+  "within_tolerance": false,
+  "accepted_deviation": null,
+  "attempt": 1,
+  "max_attempts": 3,
+  "revision_hints": [
+    {
+      "id": "s1",
+      "role": "hook",
+      "seconds": 7.9,
+      "suggestion": "expand or add a segment"
+    },
+    {
+      "id": "s3",
+      "role": "resolution",
+      "seconds": 8.675,
+      "suggestion": "expand or add a segment"
+    }
+  ],
+  "combined": {
+    "wav": "narration/narration-b9566b1711.wav",
+    "timeline": "narration/narration-b9566b1711.timeline.json",
+    "sha256": "1beca025e16b7738149dfc7de9a79ce57ba7ca30d286763577c1307587f1ed8d",
+    "run_id": "combined-9499e523c35b7c40b1664f82"
+  },
+  "run_at": "2026-11-27T10:02:33+00:00",
+  "provider": "mithi",
+  "voice": "anirban",
+  "locale": "en-IN",
+  "segments": [
+    {
+      "id": "s1",
+      "role": "hook",
+      "file": "s1-477f00d201",
+      "reused": false,
+      "chars": 134,
+      "seconds": 7.9,
+      "words": 25,
+      "words_mapped": 25,
+      "sha256": "e3e298045b975fd7b678681dddef9a21e626bd2741e2a1751403c8e2c35bdf1e",
+      "run_id": "dd7fda9b78e04511acb86c331b3be793"
+    },
+    {
+      "id": "s2",
+      "role": "mechanism",
+      "file": "s2-5ff5d223bb",
+      "reused": false,
+      "chars": 152,
+      "seconds": 8.95,
+      "words": 28,
+      "words_mapped": 28,
+      "sha256": "1dff214b23c37516e3906db36d30af931bd32a26b00976775a446580ca8d8491",
+      "run_id": "f8dc92c1b06444b9a324d46f45887b6e"
+    },
+    {
+      "id": "s3",
+      "role": "resolution",
+      "file": "s3-abe172d8af",
+      "reused": false,
+      "chars": 139,
+      "seconds": 8.675,
+      "words": 24,
+      "words_mapped": 24,
+      "sha256": "d2dd637c02dffd9d3abb40b8dea68053f5c0430a7c3d15d7b0b5dd8d9a107a16",
+      "run_id": "0b5280ef565d4022bc98c87192224906"
+    }
+  ],
+  "combined_reused": false
+}

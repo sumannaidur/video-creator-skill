@@ -1,0 +1,44 @@
+1
+00:00:00,200 --> 00:00:01,218
+A ball bearing lets
+
+2
+00:00:01,218 --> 00:00:02,236
+a shaft spin with
+
+3
+00:00:02,236 --> 00:00:03,600
+very little friction.
+
+4
+00:00:03,600 --> 00:00:04,691
+Steel balls roll between
+
+5
+00:00:04,691 --> 00:00:05,782
+an inner ring and
+
+6
+00:00:05,782 --> 00:00:07,200
+an outer ring.
+
+7
+00:00:07,200 --> 00:00:08,100
+They roll instead of
+
+8
+00:00:08,100 --> 00:00:08,325
+sliding,
+
+9
+00:00:08,325 --> 00:00:09,225
+so the balls circle
+
+10
+00:00:09,225 --> 00:00:10,125
+at less than half
+
+11
+00:00:10,125 --> 00:00:11,400
+the shaft speed.
+

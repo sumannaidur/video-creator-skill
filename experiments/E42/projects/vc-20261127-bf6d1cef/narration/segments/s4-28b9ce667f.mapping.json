@@ -1,0 +1,221 @@
+{
+  "result": "mapped",
+  "words": [
+    {
+      "label": "ఆ",
+      "text_start": 0,
+      "text_end": 1,
+      "method": "mithi_token_word_ownership",
+      "model_words": [
+        "ఆ"
+      ],
+      "group": null,
+      "tokens": [
+        1,
+        2
+      ],
+      "samples": [
+        1200,
+        2400
+      ]
+    },
+    {
+      "label": "క్షేత్రం",
+      "text_start": 2,
+      "text_end": 10,
+      "method": "mithi_token_word_ownership",
+      "model_words": [
+        "క్షేత్రం"
+      ],
+      "group": null,
+      "tokens": [
+        4,
+        12
+      ],
+      "samples": [
+        4200,
+        19200
+      ]
+    },
+    {
+      "label": "పాన్",
+      "text_start": 11,
+      "text_end": 15,
+      "method": "mithi_token_word_ownership",
+      "model_words": [
+        "పాన్"
+      ],
+      "group": null,
+      "tokens": [
+        14,
+        18
+      ],
+      "samples": [
+        20400,
+        27000
+      ]
+    },
+    {
+      "label": "అడుగులో",
+      "text_start": 16,
+      "text_end": 23,
+      "method": "mithi_token_word_ownership",
+      "model_words": [
+        "అడుగులో"
+      ],
+      "group": null,
+      "tokens": [
+        20,
+        29
+      ],
+      "samples": [
+        28200,
+        40200
+      ]
+    },
+    {
+      "label": "సుడి",
+      "text_start": 24,
+      "text_end": 28,
+      "method": "mithi_token_word_ownership",
+      "model_words": [
+        "సుడి"
+      ],
+      "group": null,
+      "tokens": [
+        31,
+        35
+      ],
+      "samples": [
+        42000,
+        48000
+      ]
+    },
+    {
+      "label": "కరెంట్లను",
+      "text_start": 29,
+      "text_end": 38,
+      "method": "mithi_token_word_ownership",
+      "model_words": [
+        "కరెంట్లను"
+      ],
+      "group": null,
+      "tokens": [
+        37,
+        48
+      ],
+      "samples": [
+        49200,
+        62400
+      ]
+    },
+    {
+      "label": "పుట్టిస్తుంది.",
+      "text_start": 39,
+      "text_end": 53,
+      "method": "mithi_token_word_ownership",
+      "model_words": [
+        "పుట్టిస్తుంది."
+      ],
+      "group": null,
+      "tokens": [
+        50,
+        62
+      ],
+      "samples": [
+        63600,
+        79800
+      ]
+    },
+    {
+      "label": "ఆ",
+      "text_start": 54,
+      "text_end": 55,
+      "method": "mithi_token_word_ownership",
+      "model_words": [
+        "ఆ"
+      ],
+      "group": null,
+      "tokens": [
+        65,
+        66
+      ],
+      "samples": [
+        93000,
+        96000
+      ]
+    },
+    {
+      "label": "కరెంట్లే",
+      "text_start": 56,
+      "text_end": 64,
+      "method": "mithi_token_word_ownership",
+      "model_words": [
+        "కరెంట్లే"
+      ],
+      "group": null,
+      "tokens": [
+        68,
+        77
+      ],
+      "samples": [
+        97800,
+        113400
+      ]
+    },
+    {
+      "label": "లోహాన్ని",
+      "text_start": 65,
+      "text_end": 73,
+      "method": "mithi_token_word_ownership",
+      "model_words": [
+        "లోహాన్ని"
+      ],
+      "group": null,
+      "tokens": [
+        79,
+        88
+      ],
+      "samples": [
+        114600,
+        127200
+      ]
+    },
+    {
+      "label": "వేడి",
+      "text_start": 74,
+      "text_end": 78,
+      "method": "mithi_token_word_ownership",
+      "model_words": [
+        "వేడి"
+      ],
+      "group": null,
+      "tokens": [
+        90,
+        95
+      ],
+      "samples": [
+        128400,
+        135000
+      ]
+    },
+    {
+      "label": "చేస్తాయి.",
+      "text_start": 79,
+      "text_end": 88,
+      "method": "mithi_token_word_ownership",
+      "model_words": [
+        "చేస్తాయి."
+      ],
+      "group": null,
+      "tokens": [
+        97,
+        106
+      ],
+      "samples": [
+        136200,
+        147000
+      ]
+    }
+  ]
+}

@@ -1,0 +1,148 @@
+{
+  "schema": "video-creator.creative-plan",
+  "version": 1,
+  "narration": {
+    "timeline": "narration/narration.timeline.json",
+    "sha256": "ba3a75b4290894485a5a4ef95e6cd9b099ce6cf3933871152bf9f136d76e37b1"
+  },
+  "style": "paper-explainer",
+  "style_reason": "fixture",
+  "guardrails": [
+    "simplified, not to scale"
+  ],
+  "motifs": [
+    {
+      "id": "m1",
+      "stands_for": "x"
+    }
+  ],
+  "story": [
+    {
+      "segment": "s1",
+      "role": "hook",
+      "idea": "x"
+    },
+    {
+      "segment": "s2",
+      "role": "mechanism",
+      "idea": "x"
+    },
+    {
+      "segment": "s3",
+      "role": "resolution",
+      "idea": "x"
+    }
+  ],
+  "assets": [
+    {
+      "id": "a1",
+      "kind": "procedural",
+      "description": "procedural fixture art"
+    }
+  ],
+  "shots": [
+    {
+      "id": "meadow",
+      "purpose": "p",
+      "objects": [
+        {
+          "id": "m-bee",
+          "asset": "a1",
+          "description": "m-bee"
+        },
+        {
+          "id": "m-flower",
+          "asset": "a1",
+          "description": "m-flower"
+        }
+      ],
+      "cues": [
+        {
+          "id": "visits",
+          "object": "m-bee",
+          "action": "appear",
+          "at": {
+            "word": "visits",
+            "segment": "s1"
+          }
+        },
+        {
+          "id": "nectar",
+          "object": "m-flower",
+          "action": "appear",
+          "at": {
+            "word": "nectar.",
+            "segment": "s1"
+          }
+        }
+      ]
+    },
+    {
+      "id": "hive",
+      "purpose": "p",
+      "start": {
+        "segment": "s2"
+      },
+      "objects": [
+        {
+          "id": "h-drop",
+          "asset": "a1",
+          "description": "h-drop"
+        },
+        {
+          "id": "h-bee1-wing",
+          "asset": "a1",
+          "description": "h-bee1-wing"
+        },
+        {
+          "id": "h-honey",
+          "asset": "a1",
+          "description": "h-honey"
+        },
+        {
+          "id": "h-cap",
+          "asset": "a1",
+          "description": "h-cap"
+        }
+      ],
+      "cues": [
+        {
+          "id": "pass",
+          "object": "h-drop",
+          "action": "appear",
+          "at": {
+            "word": "pass",
+            "segment": "s2"
+          }
+        },
+        {
+          "id": "fan",
+          "object": "h-bee1-wing",
+          "action": "appear",
+          "at": {
+            "word": "fan",
+            "segment": "s2"
+          }
+        },
+        {
+          "id": "thickens",
+          "object": "h-honey",
+          "action": "appear",
+          "at": {
+            "word": "thickens",
+            "segment": "s3"
+          }
+        },
+        {
+          "id": "seal",
+          "object": "h-cap",
+          "action": "appear",
+          "at": {
+            "word": "seal",
+            "segment": "s3"
+          }
+        }
+      ]
+    }
+  ]
+}

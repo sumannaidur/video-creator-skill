@@ -1,0 +1,748 @@
+{
+  "schema": "video-creator.creative-plan",
+  "version": 1,
+  "narration": {
+    "timeline": "narration/narration-7430209a7b.timeline.json",
+    "sha256": "9e5e983e60b77db33cb05c4c88397e029a6f8cf322efc1380316cb231e604565"
+  },
+  "style": "tech-explainer",
+  "style_reason": "A message's journey is a device-and-network story; the Tech Explainer's dark product studio, glass, beams and isometric cities (P018.3) show phones, a city network and a server hall as one lit world, close to the reference's 3D/X-Ray look.",
+  "story": [
+    {
+      "segment": "s1",
+      "role": "hook",
+      "idea": "Send 'hi'; it appears in moments. What happens in between?"
+    },
+    {
+      "segment": "s2",
+      "role": "mechanism",
+      "idea": "The message is locked on your phone; only you and your friend hold the key."
+    },
+    {
+      "segment": "s3",
+      "role": "mechanism",
+      "idea": "The locked message travels to the server; one grey tick."
+    },
+    {
+      "segment": "s4",
+      "role": "contrast",
+      "idea": "The server and WhatsApp cannot read it; it only routes it."
+    },
+    {
+      "segment": "s5",
+      "role": "example",
+      "idea": "If the phone is off it waits, locked, up to 30 days."
+    },
+    {
+      "segment": "s6",
+      "role": "mechanism",
+      "idea": "Delivered: two grey ticks; removed from the server."
+    },
+    {
+      "segment": "s7",
+      "role": "mechanism",
+      "idea": "Only the friend's key opens it; read: blue ticks."
+    },
+    {
+      "segment": "s8",
+      "role": "resolution",
+      "idea": "All of it happens automatically for every message."
+    }
+  ],
+  "motifs": [
+    {
+      "id": "m-capsule",
+      "stands_for": "the encrypted message (glass capsule + padlock)"
+    },
+    {
+      "id": "m-keys",
+      "stands_for": "the keys only you and your friend hold"
+    },
+    {
+      "id": "m-ticks",
+      "stands_for": "the tick scoreboard (sent, delivered, read)"
+    }
+  ],
+  "assets": [
+    {
+      "id": "art-desk",
+      "kind": "original",
+      "description": "night desk: phone with generic chat UI, lamp beam, window city bokeh, mug, plant"
+    },
+    {
+      "id": "art-capsule",
+      "kind": "original",
+      "description": "glass message capsule, padlock and shackle, gold keys"
+    },
+    {
+      "id": "art-city",
+      "kind": "original",
+      "description": "isometric night city network, fibre routes, server tower, mini phones"
+    },
+    {
+      "id": "art-hall",
+      "kind": "original",
+      "description": "server hall racks, pedestal, scanner, vault drawer, insets"
+    },
+    {
+      "id": "art-room",
+      "kind": "original",
+      "description": "bedside at dawn, friend's phone, arrival beam, tick chips"
+    }
+  ],
+  "guardrails": [
+    "no WhatsApp logo or trade dress; generic chat UI",
+    "personal text chat only",
+    "server is one illustrative building",
+    "'not even WhatsApp' applies to personal chats",
+    "ticks shown simply; no claim that grey means unread",
+    "simplified, not to scale"
+  ],
+  "shots": [
+    {
+      "id": "send",
+      "purpose": "Hook: 'హాయ్' types itself on a phone at a night desk; send glows; what happens in between?",
+      "metaphor": "the message as a physical object about to travel",
+      "objects": [
+        {
+          "id": "d-typed",
+          "asset": "art-desk",
+          "description": "typed text"
+        },
+        {
+          "id": "d-bubble",
+          "asset": "art-desk",
+          "description": "sent bubble"
+        },
+        {
+          "id": "d-q",
+          "asset": "art-desk",
+          "description": "question badge"
+        }
+      ],
+      "cues": [
+        {
+          "id": "type",
+          "object": "d-typed",
+          "action": "the word types itself",
+          "at": {
+            "sample": 13800,
+            "seconds": 0.575,
+            "kind": "word",
+            "label": "హాయ్",
+            "segment": "s1",
+            "timing_source": "native_model",
+            "edge": "start",
+            "offset_ms": 0
+          }
+        },
+        {
+          "id": "send",
+          "object": "d-bubble",
+          "action": "send glows; the bubble jumps up",
+          "at": {
+            "sample": 57600,
+            "seconds": 2.4,
+            "kind": "word",
+            "label": "సెండ్",
+            "segment": "s1",
+            "timing_source": "native_model",
+            "edge": "start",
+            "offset_ms": 0
+          }
+        },
+        {
+          "id": "mid",
+          "object": "d-q",
+          "action": "a question badge appears",
+          "at": {
+            "sample": 175200,
+            "seconds": 7.3,
+            "kind": "word",
+            "label": "మధ్యలో",
+            "segment": "s1",
+            "timing_source": "native_model",
+            "edge": "start",
+            "offset_ms": 0
+          }
+        }
+      ],
+      "start": {
+        "sample": 0,
+        "seconds": 0.0,
+        "kind": "bounds",
+        "label": "narration-start",
+        "timing_source": "narration_bounds"
+      },
+      "end": {
+        "sample": 223200,
+        "seconds": 9.3
+      },
+      "camera": []
+    },
+    {
+      "id": "lock",
+      "start": {
+        "sample": 223200,
+        "seconds": 9.3,
+        "kind": "segment",
+        "label": "s2",
+        "segment": null,
+        "timing_source": "segment_boundary",
+        "edge": "start",
+        "offset_ms": 0
+      },
+      "purpose": "The message is sealed in a glass capsule with a padlock on the phone; two keys: you and your friend.",
+      "objects": [
+        {
+          "id": "d-lock",
+          "asset": "art-capsule",
+          "description": "padlock"
+        },
+        {
+          "id": "d-key1",
+          "asset": "art-capsule",
+          "description": "your key"
+        },
+        {
+          "id": "d-key2",
+          "asset": "art-capsule",
+          "description": "friend's key"
+        },
+        {
+          "id": "d-tfriend",
+          "asset": "art-capsule",
+          "description": "friend key tag"
+        }
+      ],
+      "cues": [
+        {
+          "id": "lock",
+          "object": "d-lock",
+          "action": "padlock snaps shut on the capsule",
+          "at": {
+            "sample": 301800,
+            "seconds": 12.575,
+            "kind": "word",
+            "label": "తాళం",
+            "segment": "s2",
+            "timing_source": "native_model",
+            "edge": "start",
+            "offset_ms": 0
+          }
+        },
+        {
+          "id": "key",
+          "object": "d-key1",
+          "action": "two keys appear",
+          "at": {
+            "sample": 373800,
+            "seconds": 15.575,
+            "kind": "word",
+            "label": "తాళంచెవి",
+            "segment": "s2",
+            "timing_source": "native_model",
+            "edge": "start",
+            "offset_ms": 0
+          }
+        },
+        {
+          "id": "friendkey",
+          "object": "d-tfriend",
+          "action": "the friend's key is tagged, then flies away",
+          "at": {
+            "sample": 421800,
+            "seconds": 17.575,
+            "kind": "word",
+            "label": "ఫ్రెండ్",
+            "segment": "s2",
+            "timing_source": "native_model",
+            "edge": "start",
+            "offset_ms": 0
+          }
+        }
+      ],
+      "end": {
+        "sample": 467400,
+        "seconds": 19.475
+      },
+      "camera": []
+    },
+    {
+      "id": "travel",
+      "start": {
+        "sample": 467400,
+        "seconds": 19.475,
+        "kind": "segment",
+        "label": "s3",
+        "segment": null,
+        "timing_source": "segment_boundary",
+        "edge": "start",
+        "offset_ms": 0
+      },
+      "purpose": "The locked capsule streaks across a glowing city network to the server tower; one grey tick.",
+      "objects": [
+        {
+          "id": "n-route",
+          "asset": "art-city",
+          "description": "fibre route"
+        },
+        {
+          "id": "n-tick",
+          "asset": "art-city",
+          "description": "one grey tick"
+        },
+        {
+          "id": "n-srv",
+          "asset": "art-city",
+          "description": "server tag"
+        }
+      ],
+      "cues": [
+        {
+          "id": "net",
+          "object": "n-route",
+          "action": "the route lights and the capsule races along it",
+          "at": {
+            "sample": 501000,
+            "seconds": 20.875,
+            "kind": "word",
+            "label": "ఇంటర్నెట్",
+            "segment": "s3",
+            "timing_source": "native_model",
+            "edge": "start",
+            "offset_ms": 0
+          }
+        },
+        {
+          "id": "server3",
+          "object": "n-srv",
+          "action": "the server tower is tagged",
+          "at": {
+            "sample": 541800,
+            "seconds": 22.575,
+            "kind": "word",
+            "label": "సర్వర్‌",
+            "segment": "s3",
+            "timing_source": "native_model",
+            "edge": "start",
+            "offset_ms": 0
+          }
+        },
+        {
+          "id": "tick1",
+          "object": "n-tick",
+          "action": "one grey tick lights",
+          "at": {
+            "sample": 634200,
+            "seconds": 26.425,
+            "kind": "word",
+            "label": "టిక్",
+            "segment": "s3",
+            "timing_source": "native_model",
+            "edge": "start",
+            "offset_ms": 0
+          }
+        }
+      ],
+      "end": {
+        "sample": 658200,
+        "seconds": 27.425
+      },
+      "camera": []
+    },
+    {
+      "id": "server",
+      "start": {
+        "sample": 658200,
+        "seconds": 27.425,
+        "kind": "segment",
+        "label": "s4",
+        "segment": null,
+        "timing_source": "segment_boundary",
+        "edge": "start",
+        "offset_ms": 0
+      },
+      "purpose": "Inside the server hall a scanner tries to read the capsule and is refused; the server only routes it.",
+      "objects": [
+        {
+          "id": "h-x",
+          "asset": "art-hall",
+          "description": "refusal mark"
+        },
+        {
+          "id": "h-cant",
+          "asset": "art-hall",
+          "description": "cannot read tag"
+        },
+        {
+          "id": "h-exit",
+          "asset": "art-hall",
+          "description": "route to the right phone"
+        }
+      ],
+      "cues": [
+        {
+          "id": "cant",
+          "object": "h-x",
+          "action": "scanner refused: red mark",
+          "at": {
+            "sample": 687000,
+            "seconds": 28.625,
+            "kind": "word",
+            "label": "చదవలేదు.",
+            "segment": "s4",
+            "timing_source": "native_model",
+            "edge": "start",
+            "offset_ms": 0
+          }
+        },
+        {
+          "id": "wa",
+          "object": "h-cant",
+          "action": "'cannot read' tag",
+          "at": {
+            "sample": 712800,
+            "seconds": 29.7,
+            "kind": "word",
+            "label": "వాట్సాప్",
+            "segment": "s4",
+            "timing_source": "native_model",
+            "edge": "start",
+            "offset_ms": 0
+          }
+        },
+        {
+          "id": "right",
+          "object": "h-exit",
+          "action": "the route to the right phone lights",
+          "at": {
+            "sample": 775800,
+            "seconds": 32.325,
+            "kind": "word",
+            "label": "సరైన",
+            "segment": "s4",
+            "timing_source": "native_model",
+            "edge": "start",
+            "offset_ms": 0
+          }
+        }
+      ],
+      "end": {
+        "sample": 816000,
+        "seconds": 34.0
+      },
+      "camera": []
+    },
+    {
+      "id": "wait",
+      "start": {
+        "sample": 816000,
+        "seconds": 34.0,
+        "kind": "segment",
+        "label": "s5",
+        "segment": null,
+        "timing_source": "segment_boundary",
+        "edge": "start",
+        "offset_ms": 0
+      },
+      "purpose": "If the friend's phone is off, the locked capsule waits in a vault drawer for up to 30 days.",
+      "objects": [
+        {
+          "id": "h-off",
+          "asset": "art-hall",
+          "description": "inset: friend's phone off at night"
+        },
+        {
+          "id": "h-days",
+          "asset": "art-hall",
+          "description": "30 days read-out"
+        }
+      ],
+      "cues": [
+        {
+          "id": "off",
+          "object": "h-off",
+          "action": "inset of the dark phone",
+          "at": {
+            "sample": 838800,
+            "seconds": 34.95,
+            "kind": "word",
+            "label": "ఆఫ్‌లో",
+            "segment": "s5",
+            "timing_source": "native_model",
+            "edge": "start",
+            "offset_ms": 0
+          }
+        },
+        {
+          "id": "days",
+          "object": "h-days",
+          "action": "30 days read-out",
+          "at": {
+            "sample": 911400,
+            "seconds": 37.975,
+            "kind": "word",
+            "label": "ముప్పై",
+            "segment": "s5",
+            "timing_source": "native_model",
+            "edge": "start",
+            "offset_ms": 0
+          }
+        }
+      ],
+      "end": {
+        "sample": 963000,
+        "seconds": 40.125
+      },
+      "camera": []
+    },
+    {
+      "id": "delivered",
+      "start": {
+        "sample": 963000,
+        "seconds": 40.125,
+        "kind": "segment",
+        "label": "s6",
+        "segment": null,
+        "timing_source": "segment_boundary",
+        "edge": "start",
+        "offset_ms": 0
+      },
+      "purpose": "Dawn: the friend's phone wakes, the capsule arrives on a beam, two grey ticks, the server copy dissolves.",
+      "objects": [
+        {
+          "id": "r-beam",
+          "asset": "art-room",
+          "description": "arrival beam"
+        },
+        {
+          "id": "r-t2",
+          "asset": "art-room",
+          "description": "two grey ticks"
+        },
+        {
+          "id": "r-srv",
+          "asset": "art-room",
+          "description": "server copy inset"
+        }
+      ],
+      "cues": [
+        {
+          "id": "reach",
+          "object": "r-beam",
+          "action": "the beam brings the capsule down",
+          "at": {
+            "sample": 974400,
+            "seconds": 40.6,
+            "kind": "word",
+            "label": "చేరగానే",
+            "segment": "s6",
+            "timing_source": "native_model",
+            "edge": "start",
+            "offset_ms": 0
+          }
+        },
+        {
+          "id": "tick2",
+          "object": "r-t2",
+          "action": "two grey ticks",
+          "at": {
+            "sample": 1006800,
+            "seconds": 41.95,
+            "kind": "word",
+            "label": "టిక్‌లు",
+            "segment": "s6",
+            "timing_source": "native_model",
+            "edge": "start",
+            "offset_ms": 0
+          }
+        },
+        {
+          "id": "srv6",
+          "object": "r-srv",
+          "action": "the server copy dissolves",
+          "at": {
+            "sample": 1046400,
+            "seconds": 43.6,
+            "kind": "word",
+            "label": "సర్వర్",
+            "segment": "s6",
+            "timing_source": "native_model",
+            "edge": "start",
+            "offset_ms": 0
+          }
+        }
+      ],
+      "end": {
+        "sample": 1105200,
+        "seconds": 46.05
+      },
+      "camera": []
+    },
+    {
+      "id": "unlock",
+      "start": {
+        "sample": 1105200,
+        "seconds": 46.05,
+        "kind": "segment",
+        "label": "s7",
+        "segment": null,
+        "timing_source": "segment_boundary",
+        "edge": "start",
+        "offset_ms": 0
+      },
+      "purpose": "Only the friend's key opens the lock; the bubble appears and the ticks turn blue.",
+      "objects": [
+        {
+          "id": "r-key",
+          "asset": "art-room",
+          "description": "friend's key"
+        },
+        {
+          "id": "r-bubble",
+          "asset": "art-room",
+          "description": "received bubble"
+        },
+        {
+          "id": "r-t2b",
+          "asset": "art-room",
+          "description": "blue ticks"
+        }
+      ],
+      "cues": [
+        {
+          "id": "key7",
+          "object": "r-key",
+          "action": "the friend's key flies in",
+          "at": {
+            "sample": 1121400,
+            "seconds": 46.725,
+            "kind": "word",
+            "label": "తాళంచెవితోనే",
+            "segment": "s7",
+            "timing_source": "native_model",
+            "edge": "start",
+            "offset_ms": 0
+          }
+        },
+        {
+          "id": "open",
+          "object": "r-bubble",
+          "action": "the lock pops; the bubble appears",
+          "at": {
+            "sample": 1153800,
+            "seconds": 48.075,
+            "kind": "word",
+            "label": "తెరుచుకుంటుంది.",
+            "segment": "s7",
+            "timing_source": "native_model",
+            "edge": "start",
+            "offset_ms": 0
+          }
+        },
+        {
+          "id": "blue",
+          "object": "r-t2b",
+          "action": "ticks turn blue",
+          "at": {
+            "sample": 1226400,
+            "seconds": 51.1,
+            "kind": "word",
+            "label": "నీలం",
+            "segment": "s7",
+            "timing_source": "native_model",
+            "edge": "start",
+            "offset_ms": 0
+          }
+        }
+      ],
+      "end": {
+        "sample": 1266600,
+        "seconds": 52.775
+      },
+      "camera": []
+    },
+    {
+      "id": "auto",
+      "start": {
+        "sample": 1266600,
+        "seconds": 52.775,
+        "kind": "segment",
+        "label": "s8",
+        "segment": null,
+        "timing_source": "segment_boundary",
+        "edge": "start",
+        "offset_ms": 0
+      },
+      "purpose": "Pull back over the city: every message travels locked, automatically.",
+      "objects": [
+        {
+          "id": "n-c0",
+          "asset": "art-city",
+          "description": "many capsules"
+        },
+        {
+          "id": "n-blue",
+          "asset": "art-city",
+          "description": "blue ticks"
+        }
+      ],
+      "cues": [
+        {
+          "id": "every",
+          "object": "n-c0",
+          "action": "many capsules race between phones",
+          "at": {
+            "sample": 1324200,
+            "seconds": 55.175,
+            "kind": "word",
+            "label": "ప్రతి",
+            "segment": "s8",
+            "timing_source": "native_model",
+            "edge": "start",
+            "offset_ms": 0
+          }
+        },
+        {
+          "id": "auto",
+          "object": "n-blue",
+          "action": "blue ticks land",
+          "at": {
+            "sample": 1348800,
+            "seconds": 56.2,
+            "kind": "word",
+            "label": "ఆటోమేటిక్‌గా",
+            "segment": "s8",
+            "timing_source": "native_model",
+            "edge": "start",
+            "offset_ms": 0
+          }
+        }
+      ],
+      "end": {
+        "sample": 1381800,
+        "seconds": 57.575
+      },
+      "camera": []
+    }
+  ],
+  "extensions": {
+    "tech-explainer": {
+      "labels": "narration words only",
+      "presentation": "full-bleed, word captions, hook headline"
+    }
+  },
+  "resolution": {
+    "timeline_sha256": "9e5e983e60b77db33cb05c4c88397e029a6f8cf322efc1380316cb231e604565",
+    "audio_sha256": "54857e91416fbe07d55416b5fc50082b9f97a9b342ad6eeac2ee76461164dbbc",
+    "sample_rate": 24000,
+    "sample_count": 1381800,
+    "timing_status": "unreviewed",
+    "record_sources": [
+      "native_model"
+    ],
+    "run_id": "combined-ef4542e0b9915a3ef29f4b32",
+    "timeline": "narration/narration-7430209a7b.timeline.json"
+  }
+}

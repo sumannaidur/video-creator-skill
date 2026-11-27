@@ -1,0 +1,293 @@
+{
+  "result": "mapped",
+  "words": [
+    {
+      "label": "Armstrong",
+      "text_start": 0,
+      "text_end": 9,
+      "method": "mithi_token_word_ownership",
+      "model_words": [
+        "Armstrong"
+      ],
+      "group": null,
+      "tokens": [
+        1,
+        9
+      ],
+      "samples": [
+        1200,
+        12600
+      ]
+    },
+    {
+      "label": "took",
+      "text_start": 10,
+      "text_end": 14,
+      "method": "mithi_token_word_ownership",
+      "model_words": [
+        "took"
+      ],
+      "group": null,
+      "tokens": [
+        11,
+        14
+      ],
+      "samples": [
+        13800,
+        18000
+      ]
+    },
+    {
+      "label": "this",
+      "text_start": 15,
+      "text_end": 19,
+      "method": "mithi_token_word_ownership",
+      "model_words": [
+        "this"
+      ],
+      "group": null,
+      "tokens": [
+        16,
+        18
+      ],
+      "samples": [
+        19200,
+        22800
+      ]
+    },
+    {
+      "label": "photograph",
+      "text_start": 20,
+      "text_end": 30,
+      "method": "mithi_token_word_ownership",
+      "model_words": [
+        "photograph"
+      ],
+      "group": null,
+      "tokens": [
+        20,
+        29
+      ],
+      "samples": [
+        24000,
+        36600
+      ]
+    },
+    {
+      "label": "of",
+      "text_start": 31,
+      "text_end": 33,
+      "method": "mithi_token_word_ownership",
+      "model_words": [
+        "of"
+      ],
+      "group": null,
+      "tokens": [
+        31,
+        32
+      ],
+      "samples": [
+        37800,
+        40200
+      ]
+    },
+    {
+      "label": "Aldrin.",
+      "text_start": 34,
+      "text_end": 41,
+      "method": "mithi_token_word_ownership",
+      "model_words": [
+        "Aldrin."
+      ],
+      "group": null,
+      "tokens": [
+        34,
+        40
+      ],
+      "samples": [
+        42000,
+        51600
+      ]
+    },
+    {
+      "label": "Look",
+      "text_start": 42,
+      "text_end": 46,
+      "method": "mithi_token_word_ownership",
+      "model_words": [
+        "Look"
+      ],
+      "group": null,
+      "tokens": [
+        43,
+        46
+      ],
+      "samples": [
+        64200,
+        69000
+      ]
+    },
+    {
+      "label": "into",
+      "text_start": 47,
+      "text_end": 51,
+      "method": "mithi_token_word_ownership",
+      "model_words": [
+        "into"
+      ],
+      "group": null,
+      "tokens": [
+        48,
+        52
+      ],
+      "samples": [
+        70200,
+        75000
+      ]
+    },
+    {
+      "label": "the",
+      "text_start": 52,
+      "text_end": 55,
+      "method": "mithi_token_word_ownership",
+      "model_words": [
+        "the"
+      ],
+      "group": null,
+      "tokens": [
+        54,
+        55
+      ],
+      "samples": [
+        76200,
+        78600
+      ]
+    },
+    {
+      "label": "visor,",
+      "text_start": 56,
+      "text_end": 62,
+      "method": "mithi_token_word_ownership",
+      "model_words": [
+        "visor,"
+      ],
+      "group": null,
+      "tokens": [
+        57,
+        62
+      ],
+      "samples": [
+        79800,
+        88800
+      ]
+    },
+    {
+      "label": "and",
+      "text_start": 63,
+      "text_end": 66,
+      "method": "mithi_token_word_ownership",
+      "model_words": [
+        "and"
+      ],
+      "group": null,
+      "tokens": [
+        65,
+        67
+      ],
+      "samples": [
+        97800,
+        100800
+      ]
+    },
+    {
+      "label": "you",
+      "text_start": 67,
+      "text_end": 70,
+      "method": "mithi_token_word_ownership",
+      "model_words": [
+        "you"
+      ],
+      "group": null,
+      "tokens": [
+        69,
+        70
+      ],
+      "samples": [
+        102000,
+        103800
+      ]
+    },
+    {
+      "label": "can",
+      "text_start": 71,
+      "text_end": 74,
+      "method": "mithi_token_word_ownership",
+      "model_words": [
+        "can"
+      ],
+      "group": null,
+      "tokens": [
+        72,
+        74
+      ],
+      "samples": [
+        104400,
+        108000
+      ]
+    },
+    {
+      "label": "see",
+      "text_start": 75,
+      "text_end": 78,
+      "method": "mithi_token_word_ownership",
+      "model_words": [
+        "see"
+      ],
+      "group": null,
+      "tokens": [
+        76,
+        78
+      ],
+      "samples": [
+        109800,
+        113400
+      ]
+    },
+    {
+      "label": "Armstrong",
+      "text_start": 79,
+      "text_end": 88,
+      "method": "mithi_token_word_ownership",
+      "model_words": [
+        "Armstrong"
+      ],
+      "group": null,
+      "tokens": [
+        80,
+        88
+      ],
+      "samples": [
+        115800,
+        127800
+      ]
+    },
+    {
+      "label": "himself.",
+      "text_start": 89,
+      "text_end": 97,
+      "method": "mithi_token_word_ownership",
+      "model_words": [
+        "himself."
+      ],
+      "group": null,
+      "tokens": [
+        90,
+        97
+      ],
+      "samples": [
+        129600,
+        139200
+      ]
+    }
+  ]
+}

@@ -1,0 +1,241 @@
+{
+  "schema": "video-creator.creative-plan",
+  "version": 1,
+  "narration": {
+    "timeline": "narration/narration-f7bde5a1a8.timeline.json",
+    "sha256": "4c35a1c845738e85ca5bc7582d7d29850194b2690ab66ae81c74668c56cc24dd"
+  },
+  "style": "paper-explainer",
+  "style_reason": "A seed in soil is a tactile, layered world: cut-paper strata, a gouache bean and paper-cell roots make growth and gravity physical.",
+  "story": [
+    {
+      "segment": "s1",
+      "role": "hook",
+      "idea": "upside-down seed still sorts up from down"
+    },
+    {
+      "segment": "s2",
+      "role": "mechanism",
+      "idea": "starch grains in root-cap cells"
+    },
+    {
+      "segment": "s3",
+      "role": "mechanism",
+      "idea": "grains settle like sand: the direction signal"
+    },
+    {
+      "segment": "s4",
+      "role": "mechanism",
+      "idea": "auxin below, more growth above, root bends down"
+    },
+    {
+      "segment": "s5",
+      "role": "resolution",
+      "idea": "stem's lower side grows more: the sprout rises"
+    }
+  ],
+  "visual_hook": "a seed upside down, roots and shoot both making U-turns",
+  "transformation": "a straight sideways root bending downward cell by cell",
+  "payoff": "the stem breaking the soil surface into light, leaves opening",
+  "motifs": [
+    {
+      "id": "m-down",
+      "stands_for": "the sideways-to-down turn: grains, then roots, obey the same down"
+    }
+  ],
+  "assets": [
+    {
+      "id": "a-seed",
+      "kind": "original",
+      "description": "procedural cut-paper soil section, bean, segmented root and stem, root-tip cells and starch grains"
+    }
+  ],
+  "guardrails": [
+    "'like sand' is a simile",
+    "cells, grains and auxin schematic, not to scale",
+    "textbook mechanism only; the source notes refinement"
+  ],
+  "shots": [
+    {
+      "id": "hook",
+      "purpose": "Hook: a bean planted upside down in a cut-paper soil section; its root climbs, hooks over and dives down while its shoot hooks round and climbs.",
+      "objects": [
+        {
+          "id": "h-r0",
+          "asset": "a-seed",
+          "description": "first root segment"
+        },
+        {
+          "id": "h-s0",
+          "asset": "a-seed",
+          "description": "first shoot segment"
+        }
+      ],
+      "cues": [
+        {
+          "id": "root",
+          "object": "h-r0",
+          "action": "root grows, U-turns down",
+          "at": {
+            "word": "కిందికే,",
+            "segment": "s1"
+          }
+        },
+        {
+          "id": "shoot",
+          "object": "h-s0",
+          "action": "shoot grows, U-turns up",
+          "at": {
+            "word": "పైకే",
+            "segment": "s1"
+          }
+        }
+      ]
+    },
+    {
+      "id": "tip",
+      "start": {
+        "segment": "s2"
+      },
+      "purpose": "Inside the root tip: cap cells hold starch grains resting on the floor; the root tips over and the grains slide to the new floor like sand.",
+      "objects": [
+        {
+          "id": "l-grains",
+          "asset": "a-seed",
+          "description": "grains tag"
+        },
+        {
+          "id": "o-arrow",
+          "asset": "a-seed",
+          "description": "gravity arrow"
+        },
+        {
+          "id": "l-signal",
+          "asset": "a-seed",
+          "description": "signal tag"
+        }
+      ],
+      "cues": [
+        {
+          "id": "grains",
+          "object": "l-grains",
+          "action": "grains tagged",
+          "at": {
+            "word": "రేణువులు",
+            "segment": "s2"
+          }
+        },
+        {
+          "id": "slide",
+          "object": "o-arrow",
+          "action": "grains slide; gravity arrow",
+          "at": {
+            "word": "జారి",
+            "segment": "s3"
+          }
+        },
+        {
+          "id": "signal",
+          "object": "l-signal",
+          "action": "direction signal tag",
+          "at": {
+            "word": "సంకేతం.",
+            "segment": "s3"
+          }
+        }
+      ]
+    },
+    {
+      "id": "bend",
+      "start": {
+        "segment": "s4"
+      },
+      "purpose": "Transformation: a sideways root, cell by cell; auxin gathers on its lower side; the upper side grows more and the root bends down.",
+      "objects": [
+        {
+          "id": "l-auxin",
+          "asset": "a-seed",
+          "description": "auxin tag"
+        },
+        {
+          "id": "b-a4",
+          "asset": "a-seed",
+          "description": "auxin on the lower side"
+        },
+        {
+          "id": "l-grow",
+          "asset": "a-seed",
+          "description": "upper side grows tag"
+        }
+      ],
+      "cues": [
+        {
+          "id": "auxin",
+          "object": "l-auxin",
+          "action": "auxin tagged",
+          "at": {
+            "word": "ఆక్సిన్",
+            "segment": "s4"
+          }
+        },
+        {
+          "id": "lower",
+          "object": "b-a4",
+          "action": "auxin collects below",
+          "at": {
+            "word": "కింది",
+            "segment": "s4"
+          }
+        },
+        {
+          "id": "grow",
+          "object": "l-grow",
+          "action": "upper side grows; root bends",
+          "at": {
+            "word": "ఎక్కువ",
+            "segment": "s4"
+          }
+        }
+      ]
+    },
+    {
+      "id": "rise",
+      "start": {
+        "segment": "s5"
+      },
+      "purpose": "Payoff: the stem's lower side grows more, so it curls up through the soil surface and opens two leaves into the light.",
+      "objects": [
+        {
+          "id": "l-stem",
+          "asset": "a-seed",
+          "description": "stem tag"
+        },
+        {
+          "id": "p-leaf-l",
+          "asset": "a-seed",
+          "description": "first leaf"
+        }
+      ],
+      "cues": [
+        {
+          "id": "stem",
+          "object": "l-stem",
+          "action": "stem tagged",
+          "at": {
+            "word": "కాండంలో",
+            "segment": "s5"
+          }
+        },
+        {
+          "id": "up",
+          "object": "p-leaf-l",
+          "action": "leaves open above ground",
+          "at": {
+            "word": "పైకి",
+            "segment": "s5"
+          }
+        }
+      ]
+    }
+  ]
+}

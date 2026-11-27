@@ -1,0 +1,1 @@
+How can a square on a label hold a message? Look closely at a QR code. Its light and dark squares form a grid, with information arranged across rows and columns.

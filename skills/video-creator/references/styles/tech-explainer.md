@@ -66,9 +66,8 @@ This style's `engine.js`, `view.js` and `backend.mjs` are the shot core shared w
 
 ## Self-review additions
 
-Add these to the universal art-direction questions:
-
-- Is there exactly one signal colour carrying the explanation in each shot?
+- Does the product view establish what the viewer is looking at, and does the cutaway or overlay explain what it does? Keep the sensing surface or working part identifiable across both views.
+- Do signal colours express stable roles and direct attention to the current explanation?
 - Does every glow belong to something emissive?
 - Do objects stand on the floor with contact shadows, or do they float?
 - Do routes and data visibly move in the direction of the explanation, at the spoken word?
@@ -110,3 +109,10 @@ These are additions to `techKit.art` and `techKit.motion`. None of them is appli
 Any topic's objects, networks, devices, layouts or cue times. The P017.1 fixture (`scripts/tests/fixtures/tech-topic.js`) is an example, not a template.
 
 **Status:** P017.1. Validated on a compact synthetic fixture only: portrait and landscape keyframes, preflight, a 6 s preview and cue/camera checks. No full production or human artistic review yet. Fonts are system fonts, and their licensing review is pending.
+
+## Pre-rendered product layers (optional, P023.6)
+
+- **When:** a product's materials (brushed metal, mirror, glass) carry the explanation, and SVG can't make them convincing. Render static layers once with `scripts/blender_layers.py render` (Blender EEVEE, about 10 s per layer at 810×1440 on the reference laptop), embed them with `blender_layers.py pack`, and composite them with `techKit.art.raster(vcLayers.<name>, w, h)`. Keep SVG for mechanisms, overlays and text.
+- **Moving parts:** render them as separate transparent layers with an orthographic camera aligned to their rotation axis. The engine's 2D rotation about the rendered pivot is then physically exact. Solve positions from the render's geometry, never by eye.
+- **Precise motion:** real mechanisms accelerate, brake and settle (for example servo settling in a seek), so use `settle` or `inOut`. Label any slowed speeds.
+- **Blender is optional:** `doctor.py` reports it under `tools.blender` (required: false), and `blender_layers.py detect` checks it directly. Without it, `render` fails with `[blender-unavailable]`; keep the SVG renderer and report the limitation, never substitute silently. The scene script is your own original `bpy` code defining `LAYERS` (and optional `GEOMETRY` such as pivots).

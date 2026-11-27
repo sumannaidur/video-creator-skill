@@ -1,0 +1,1 @@
+The chip finds where the signal dropped, and that is where you touched.

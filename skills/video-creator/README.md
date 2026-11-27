@@ -1,10 +1,10 @@
-# Video Creator: Agent Skill, v0.1.0-beta
+# Video Creator: Agent Skill, v0.2.0-beta
 
 Video Creator is an Agent Skill that turns a topic into a **sourced, narrated, animated explainer video**. Everything runs with free, local, CPU-first tools; no paid service or API is required.
 
 The agent makes the editorial and creative decisions: research, script, art direction, shots and motion. Packaged deterministic tools synthesize speech, time it, render, mix and measure. Humans own the quality gates.
 
-> **Permanent quality objective:** meet or exceed professional animation references through original, topic-specific artistic direction. The v0.1.0 beta does **not** claim that level yet; see [Known limitations](#known-limitations).
+> **Permanent quality objective:** meet or exceed professional animation references through original, topic-specific artistic direction. The v0.2.0 beta does **not** claim that level yet; see [Known limitations](#known-limitations).
 
 ## Contents
 
@@ -14,32 +14,38 @@ The agent makes the editorial and creative decisions: research, script, art dire
   - Preflight `doctor.py`, `preferences.py` and the `project.py` ledger.
   - Narration stage (Kokoro ONNX and Mithi providers).
   - `plan.py`, `captions.py`.
-  - Renderer `render.mjs`, visual `preflight.mjs` and nine style backends.
+  - Renderer `render.mjs` (with pre-render validation, keyframe composition checks and exact short `--window` renders), visual `preflight.mjs` and nine style backends.
+  - Narration duration estimator `narration/estimate.py`.
+  - Optional Blender artwork layers `blender_layers.py` (Blender is never required).
   - Audio mixer and procedural audio.
   - Unified `qa.py`.
 - `scripts/tests/`: optional, self-contained validation suites. Each copies the package to a temporary folder first.
 
-## Capability matrix (v0.1.0-beta)
+## Capability matrix (v0.2.0-beta)
 
 | Area | Supported | Validation level |
 |---|---|---|
 | **Visual styles** (9) | Paper Explainer | Production videos E11 and E13 (framed) and E17 (full-bleed). Human artistic review is pending |
-| | Tech Explainer, Whiteboard, Flat Science, Data Storytelling, Kinetic Typography, X-Ray Explainer, Documentary, 3D Explainer | Fixture-validated only: keyframes, full-cadence preflight, short previews |
+| | Tech Explainer | One development Full HD production (E42, Telugu, Blender material layers): delivery QA passed technically. Development keyframes and 540×960 windows (E26, E35, E40). Human review pending |
+| | Whiteboard, Flat Science, Data Storytelling, Kinetic Typography, X-Ray Explainer, Documentary, 3D Explainer | Fixtures plus development keyframes on unseen topics (P023, P024); one 540×960 window for Paper (E39). No production video yet |
 | **Presentation modes** | `framed`, `full-bleed` (word-synchronised captions with active-word emphasis, optional hook) for all nine styles | Full-bleed: fixture-validated per style; one production video (E17, Paper) |
 | **Languages** (5) | te-IN, kn-IN, ta-IN, en-IN, hi-IN | Synthesis and native word/phrase timing technically validated. **Native-speaker listening, caption and wording review pending for every language** |
 | **Narration** | `mithi` (Mithi v2 Flash in WSL2): te `ahana`, kn `vaidehi`, ta `malini`, en `anirban`, hi `charvi` | Technically validated. Timings are model-predicted, not acoustically verified |
 | | `kokoro-onnx`: hi-IN `hf_alpha` | Experimentally validated |
 | **Captions** | Burned-in captions plus SRT/VTT, phrase or word-group cues, sample-exact timing | Technically validated |
 | **Sound** | Original procedural music and effects (FFmpeg lavfi), ducking, loudness and sync checks | Technically validated |
-| **Output** | 1080×1920 or 1920×1080 at 24/25/30/60 fps, H.264 and AAC MP4. Checkpointed, resumable rendering | Technically validated |
+| **Output** | 1080×1920 or 1920×1080 at 24/25/30/60 fps, H.264 and AAC MP4. Checkpointed, resumable rendering; exact short windows sharing the full-render checkpoint | Technically validated |
+| **Checks before capture** | Pre-render validation (duplicate IDs, canvas, cue/keyframe/transition timing, project paths); keyframe composition checks (protected regions, label overlap, crops, contrast; unsupported cases reported) | Technically validated on fixtures and E39–E42 |
+| **Duration estimate** | Per-voice measured speaking rates before synthesis | en-IN moderate confidence (held-out script error −4.3 % to +5.9 %); Indic voices low confidence; Kokoro unmeasured |
+| **Rich artwork (optional)** | Blender static layers and verified CC0 or public-domain assets, with provenance (`references/visual-production.md`) | Blender 5.2.2 verified on Windows 11 (E26, E41, E42). WebGL 3D has no texture or model import |
 
 ### Host compatibility
 
 | Host | Status |
 |---|---|
-| Claude Code 2.1.330 (Windows 11, desktop app, Code tab) | **Verified (P019):** personal-skill install, native discovery, invocation through the Skill tool, tools running from the installed location, project initialisation |
+| Claude Code (Windows 11, desktop app, Code tab) | **Verified:** v0.1.0 personal-skill install and invocation (P019, 2.1.330); 0.2.0 development runs invoked natively (E30–E32, E39–E42) |
 | Claude Code headless (`claude -p`) | Discovery verified. End-to-end invocation **not yet verified** (the CLI was not signed in) |
-| Codex | Earlier discovery probe only (E01). **Not validated** for this release |
+| Codex | Native development keyframe workflows with the 0.2.0 development install reported in project evidence (P024.5–P024.10). Release-candidate discovery: see RELEASE-NOTES |
 | Antigravity, ChatGPT, other Agent Skill hosts | **Untested.** No compatibility claimed |
 | Linux, macOS | **Untested** |
 
@@ -48,6 +54,7 @@ The agent makes the editorial and creative decisions: research, script, art dire
 - Agent Skill host with shell access (verified: Claude Code).
 - Node.js 22+, Python 3.10+, FFmpeg and FFprobe on PATH.
 - A local Chromium browser: Chrome, Edge or Chromium, found automatically or given with `--chrome`.
+- Optional: Blender (verified 5.2.2) for pre-rendered artwork layers. `doctor.py` reports it as not required; without it the styles use their own renderers.
 - At least one narration runtime, configured **outside** the package:
   - **Mithi v2 Flash** (te, kn, ta, en, hi): a WSL2 Linux Python environment plus the pinned model folder, which is checked against `scripts/narration/providers/mithi-v2-flash.manifest.json`.
   - **Kokoro ONNX** (hi-IN): a Python environment with the ONNX model and voices files.
@@ -59,7 +66,7 @@ The models are **not** included. Obtain them under their own licences and keep t
 PowerShell. Extract the archive and copy the `video-creator` folder into your personal skills folder:
 
 ```powershell
-Expand-Archive video-creator-v0.1.0-beta.zip -DestinationPath $env:TEMP\vc-release -Force
+Expand-Archive video-creator-v0.2.0-beta.zip -DestinationPath $env:TEMP\vc-release -Force
 New-Item -ItemType Directory -Force "$HOME\.claude\skills" | Out-Null
 Copy-Item -Recurse "$env:TEMP\vc-release\video-creator" "$HOME\.claude\skills\video-creator"
 ```
@@ -149,16 +156,21 @@ Optional: also remove the saved preferences with `Remove-Item -Recurse "$env:APP
 | `stale-narration`, `stale-captions`, `preflight-stale` | An input changed after verification. Re-run the stage the error names; verified stages are reused |
 | Narration duration off target | The stage reports revision hints. The agent revises the script; speech speed is never changed |
 | Headless `claude -p` says "Not logged in" | Run `claude /login` for that CLI |
+| `[validation]` or `Composition at …` before rendering | Fix the named object, time or region in the topic; intentional crops and overlaps need an `allow` entry with a reason |
+| `[blender-unavailable]` | Blender is optional; install it or keep the style's own renderer |
 | Slow 3D Explainer renders | It runs WebGL on the CPU, about 0.6 s per 1080×1920 frame. Use previews (`--scale 0.5`) before Full HD |
 
 ## Known limitations
 
 - **Artistic quality:** the reference benchmark is a professional animation library. Our own audit (E17) still finds the artwork below it in illustration finish, compositional variety and character animation. No video is premium-certified.
-- **Validation depth:** eight of the nine styles and the full-bleed mode for seven of them are fixture-validated only, with no production video yet.
+- **Validation depth:** Paper and Tech have production evidence (Tech: one development production, E42); the other seven styles have development keyframes only, with no production video. No video has passed human review.
+- **Recurring artistic weaknesses (E30–E42 self-reviews):** subject-to-frame fit, tags without leaders, overlay legibility in perspective views. Most keyframes rate mid quality.
+- **Checks:** composition checks need declared regions; anchors without leaders, non-solid label contrast and 3D occlusion are reported unsupported.
+- **Sources:** recent development topics rely on single secondary sources.
 - **Timing:** narration timings are model-predicted, not acoustically measured.
 - **Safe areas:** the full-bleed text-safe insets are assumptions, not measured platform UI zones.
 - **Fonts:** fonts are the system's (Nirmala UI, Segoe UI); their redistribution licence has not been reviewed, and none are bundled.
-- **Platform:** Windows 11 only. Mithi requires WSL2.
+- **Platform:** Windows 11 only. Mithi requires WSL2. Linux and macOS untested.
 
 ## Outstanding acceptance gates (owner and human reviewers)
 

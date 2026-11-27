@@ -100,5 +100,39 @@
     };
   }
 
-  globalThis.fsKit = {art: {organic, ball, molecule, particles, flow, section, rays, tone}, HUES, css, LABEL_STYLES, motion};
+  // ---------- P023.3 craft (reference study: Kurzgesagt-style scientific vector art) ----------
+  // Flat-vector depth without gradients: one darker crescent on the shadow side and a thin bright rim on the lit side,
+  // both clipped to the shape; glows as stepped flat halos; four-point star flares; restrained harmonious palettes.
+  let clipN = 0;
+  // A flat-lit form: base fill, flat shadow crescent (shape offset along the light, clipped), lit rim. `dir` = light travel.
+  const litForm = (d, color, {dir = [.6, .8], depth = 22, shade = .72, rim = 1.45, rimWidth = 6} = {}) => {
+    const id = `fs-clip-${++clipN}`, [dx, dy] = dir;
+    // all fills (works for compound/union shapes, no inner outlines): dark base; rim colour shifted against the light;
+    // lit colour shifted slightly less, leaving a rim sliver on the lit edge and a dark crescent on the shadow side
+    return `<clipPath id="${id}"><path d="${d}"/></clipPath><path d="${d}" fill="${tone(color, shade)}"/>` +
+      `<g clip-path="url(#${id})"><path d="${d}" fill="${tone(color, rim)}" transform="translate(${f(-dx * depth)} ${f(-dy * depth)})"/>` +
+      `<path d="${d}" fill="${color}" transform="translate(${f(-dx * (depth - rimWidth))} ${f(-dy * (depth - rimWidth))})"/></g>`;
+  };
+  // Stepped flat glow: concentric discs fading out (no blur filter; cheap, reads as Kurzgesagt-style light).
+  const halo = (cx, cy, r, color, {steps = 5, core = '#ffffff', spread = 2.6, opacity = .5} = {}) =>
+    Array.from({length: steps}, (_, i) => { const k = 1 - i / steps; return `<circle cx="${f(cx)}" cy="${f(cy)}" r="${f(r * (1 + (spread - 1) * k))}" fill="${color}" opacity="${f(opacity * (1 - k) ** 1.4 + .04)}"/>`; }).join('') +
+    `<circle cx="${f(cx)}" cy="${f(cy)}" r="${f(r)}" fill="${color}"/><circle cx="${f(cx)}" cy="${f(cy)}" r="${f(r * .55)}" fill="${core}" opacity=".85"/>`;
+  // Four-point star flare (long thin rays plus a bright core).
+  const flare = (cx, cy, len, color = '#ffffff', {width = .06, tilt = 0} = {}) => {
+    const w = len * width, ray = a => { const c = Math.cos(a), s = Math.sin(a), nx = -s * w, ny = c * w;
+      return `M${f(cx - c * len)} ${f(cy - s * len)}Q${f(cx + nx)} ${f(cy + ny)} ${f(cx + c * len)} ${f(cy + s * len)}Q${f(cx - nx)} ${f(cy - ny)} ${f(cx - c * len)} ${f(cy - s * len)}Z`; };
+    return `<path d="${ray(tilt)}${ray(tilt + Math.PI / 2)}" fill="${color}"/><circle cx="${f(cx)}" cy="${f(cy)}" r="${f(w * 1.6)}" fill="#ffffff"/>`;
+  };
+  // Seeded starfield: many tiny dots, a few flares, in a box.
+  const starfield = (seed, w, h, {n = 120, flares = 6, colors = ['#ffffff', '#bfd4ff', '#ffd9a8']} = {}) =>
+    Array.from({length: n}, (_, i) => `<circle cx="${f(rnd(seed + i) * w)}" cy="${f(rnd(seed + 300 + i) * h)}" r="${f(.8 + rnd(seed + 600 + i) ** 3 * 3)}" fill="${colors[i % colors.length]}" opacity="${f(.35 + rnd(seed + 900 + i) * .6)}"/>`).join('') +
+    Array.from({length: flares}, (_, i) => flare(rnd(seed + 50 + i) * w, rnd(seed + 80 + i) * h, 10 + rnd(seed + 110 + i) * 22, colors[i % colors.length], {tilt: rnd(seed + 140 + i) * .4})).join('');
+  // Curated harmonious palettes (background, mid, accent, warm highlight, text-safe ink); choose one per video and keep it.
+  const PALETTES = {
+    space: {bg: '#0f1035', deep: '#1c1d5e', mid: '#4b2f8f', cool: '#38b6ff', accent: '#ff5fa2', warm: '#ffb347', ink: '#ffffff'},
+    ocean: {bg: '#06324a', deep: '#0b4f6c', mid: '#147a8c', cool: '#5ce1e6', accent: '#ff7a59', warm: '#ffd166', ink: '#ffffff'},
+    cell: {bg: '#fde9d9', deep: '#f6b8a8', mid: '#e86a6a', cool: '#5aa9e6', accent: '#7c5cff', warm: '#ffd166', ink: '#2a1a3a'},
+  };
+
+  globalThis.fsKit = {art: {organic, ball, molecule, particles, flow, section, rays, tone, litForm, halo, flare, starfield}, HUES, PALETTES, css, LABEL_STYLES, motion};
 })();

@@ -1,0 +1,223 @@
+{
+  "schema": "video-creator.creative-plan",
+  "version": 1,
+  "narration": {
+    "timeline": "narration/narration.timeline.json",
+    "sha256": "8012eb79a885189cd784d63278f0e83cd71ea888f860a62ad405eeda174d38b0"
+  },
+  "style": "3d-explainer",
+  "style_reason": "fixture",
+  "guardrails": [
+    "simplified, not to scale"
+  ],
+  "motifs": [
+    {
+      "id": "m1",
+      "stands_for": "x"
+    }
+  ],
+  "story": [
+    {
+      "segment": "s1",
+      "role": "hook",
+      "idea": "x"
+    },
+    {
+      "segment": "s2",
+      "role": "mechanism",
+      "idea": "x"
+    },
+    {
+      "segment": "s3",
+      "role": "resolution",
+      "idea": "x"
+    }
+  ],
+  "assets": [
+    {
+      "id": "a1",
+      "kind": "procedural",
+      "description": "procedural fixture art"
+    }
+  ],
+  "shots": [
+    {
+      "id": "bearing",
+      "purpose": "p",
+      "objects": [
+        {
+          "id": "l-title",
+          "asset": "a1",
+          "description": "l-title"
+        }
+      ],
+      "cues": [
+        {
+          "id": "bearing",
+          "object": "l-title",
+          "action": "appear",
+          "at": {
+            "sample": 17018,
+            "seconds": 0.7091,
+            "kind": "word",
+            "label": "bearing",
+            "segment": "s1",
+            "timing_source": "forced_alignment",
+            "edge": "start",
+            "offset_ms": 0
+          }
+        }
+      ],
+      "start": {
+        "sample": 0,
+        "seconds": 0.0,
+        "kind": "bounds",
+        "label": "narration-start",
+        "timing_source": "narration_bounds"
+      },
+      "end": {
+        "sample": 81600,
+        "seconds": 3.4
+      },
+      "camera": []
+    },
+    {
+      "id": "balls",
+      "purpose": "p",
+      "start": {
+        "sample": 81600,
+        "seconds": 3.4,
+        "kind": "segment",
+        "label": "s2",
+        "segment": null,
+        "timing_source": "segment_boundary",
+        "edge": "start",
+        "offset_ms": 0
+      },
+      "objects": [
+        {
+          "id": "p-balls",
+          "asset": "a1",
+          "description": "p-balls"
+        },
+        {
+          "id": "l-inner",
+          "asset": "a1",
+          "description": "l-inner"
+        },
+        {
+          "id": "l-outer",
+          "asset": "a1",
+          "description": "l-outer"
+        }
+      ],
+      "cues": [
+        {
+          "id": "balls",
+          "object": "p-balls",
+          "action": "appear",
+          "at": {
+            "sample": 92945,
+            "seconds": 3.8727,
+            "kind": "word",
+            "label": "balls",
+            "segment": "s2",
+            "timing_source": "forced_alignment",
+            "edge": "start",
+            "offset_ms": 0
+          }
+        },
+        {
+          "id": "inner",
+          "object": "l-inner",
+          "action": "appear",
+          "at": {
+            "sample": 119127,
+            "seconds": 4.9636,
+            "kind": "word",
+            "label": "inner",
+            "segment": "s2",
+            "timing_source": "forced_alignment",
+            "edge": "start",
+            "offset_ms": 0
+          }
+        },
+        {
+          "id": "outer",
+          "object": "l-outer",
+          "action": "appear",
+          "at": {
+            "sample": 145309,
+            "seconds": 6.0545,
+            "kind": "word",
+            "label": "outer",
+            "segment": "s2",
+            "timing_source": "forced_alignment",
+            "edge": "start",
+            "offset_ms": 0
+          }
+        }
+      ],
+      "end": {
+        "sample": 168000,
+        "seconds": 7.0
+      },
+      "camera": []
+    },
+    {
+      "id": "speed",
+      "purpose": "p",
+      "start": {
+        "sample": 168000,
+        "seconds": 7.0,
+        "kind": "segment",
+        "label": "s3",
+        "segment": null,
+        "timing_source": "segment_boundary",
+        "edge": "start",
+        "offset_ms": 0
+      },
+      "objects": [
+        {
+          "id": "l-ratio",
+          "asset": "a1",
+          "description": "l-ratio"
+        }
+      ],
+      "cues": [
+        {
+          "id": "half",
+          "object": "l-ratio",
+          "action": "appear",
+          "at": {
+            "sample": 237600,
+            "seconds": 9.9,
+            "kind": "word",
+            "label": "half",
+            "segment": "s3",
+            "timing_source": "forced_alignment",
+            "edge": "start",
+            "offset_ms": 0
+          }
+        }
+      ],
+      "end": {
+        "sample": 273600,
+        "seconds": 11.4
+      },
+      "camera": []
+    }
+  ],
+  "resolution": {
+    "timeline_sha256": "8012eb79a885189cd784d63278f0e83cd71ea888f860a62ad405eeda174d38b0",
+    "audio_sha256": "45386b2130e2ebdd5c8450d4cbae4127f937206480c803d9923accf303e6559a",
+    "sample_rate": 24000,
+    "sample_count": 273600,
+    "timing_status": "unreviewed",
+    "record_sources": [
+      "forced_alignment"
+    ],
+    "run_id": "synthetic-bearing",
+    "timeline": "narration/narration.timeline.json"
+  }
+}

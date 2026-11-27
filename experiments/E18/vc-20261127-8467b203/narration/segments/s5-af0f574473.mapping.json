@@ -1,0 +1,239 @@
+{
+  "result": "mapped",
+  "words": [
+    {
+      "label": "మీ",
+      "text_start": 0,
+      "text_end": 2,
+      "method": "mithi_token_word_ownership",
+      "model_words": [
+        "మీ"
+      ],
+      "group": null,
+      "tokens": [
+        1,
+        4
+      ],
+      "samples": [
+        1200,
+        4800
+      ]
+    },
+    {
+      "label": "ఫ్రెండ్",
+      "text_start": 3,
+      "text_end": 10,
+      "method": "mithi_token_word_ownership",
+      "model_words": [
+        "ఫ్రెండ్"
+      ],
+      "group": null,
+      "tokens": [
+        6,
+        12
+      ],
+      "samples": [
+        6600,
+        14400
+      ]
+    },
+    {
+      "label": "ఫోన్",
+      "text_start": 11,
+      "text_end": 15,
+      "method": "mithi_token_word_ownership",
+      "model_words": [
+        "ఫోన్"
+      ],
+      "group": null,
+      "tokens": [
+        14,
+        19
+      ],
+      "samples": [
+        15600,
+        21600
+      ]
+    },
+    {
+      "label": "ఆఫ్‌లో",
+      "text_start": 16,
+      "text_end": 22,
+      "method": "mithi_token_word_ownership",
+      "model_words": [
+        "ఆఫ్‌లో"
+      ],
+      "group": null,
+      "tokens": [
+        21,
+        28
+      ],
+      "samples": [
+        22800,
+        30000
+      ]
+    },
+    {
+      "label": "ఉంటే?",
+      "text_start": 23,
+      "text_end": 28,
+      "method": "mithi_token_word_ownership",
+      "model_words": [
+        "ఉంటే?"
+      ],
+      "group": null,
+      "tokens": [
+        30,
+        35
+      ],
+      "samples": [
+        31200,
+        39000
+      ]
+    },
+    {
+      "label": "మెసేజ్",
+      "text_start": 29,
+      "text_end": 35,
+      "method": "mithi_token_word_ownership",
+      "model_words": [
+        "మెసేజ్"
+      ],
+      "group": null,
+      "tokens": [
+        38,
+        44
+      ],
+      "samples": [
+        49800,
+        59400
+      ]
+    },
+    {
+      "label": "తాళంతోనే",
+      "text_start": 36,
+      "text_end": 44,
+      "method": "mithi_token_word_ownership",
+      "model_words": [
+        "తాళంతోనే"
+      ],
+      "group": null,
+      "tokens": [
+        46,
+        59
+      ],
+      "samples": [
+        60600,
+        77400
+      ]
+    },
+    {
+      "label": "సర్వర్‌లో",
+      "text_start": 45,
+      "text_end": 54,
+      "method": "mithi_token_word_ownership",
+      "model_words": [
+        "సర్వర్‌లో"
+      ],
+      "group": null,
+      "tokens": [
+        61,
+        70
+      ],
+      "samples": [
+        78600,
+        93600
+      ]
+    },
+    {
+      "label": "ముప్పై",
+      "text_start": 55,
+      "text_end": 61,
+      "method": "mithi_token_word_ownership",
+      "model_words": [
+        "ముప్పై"
+      ],
+      "group": null,
+      "tokens": [
+        72,
+        77
+      ],
+      "samples": [
+        95400,
+        104400
+      ]
+    },
+    {
+      "label": "రోజుల",
+      "text_start": 62,
+      "text_end": 67,
+      "method": "mithi_token_word_ownership",
+      "model_words": [
+        "రోజుల"
+      ],
+      "group": null,
+      "tokens": [
+        79,
+        86
+      ],
+      "samples": [
+        106200,
+        114600
+      ]
+    },
+    {
+      "label": "వరకు",
+      "text_start": 68,
+      "text_end": 72,
+      "method": "mithi_token_word_ownership",
+      "model_words": [
+        "వరకు"
+      ],
+      "group": null,
+      "tokens": [
+        88,
+        94
+      ],
+      "samples": [
+        115200,
+        121800
+      ]
+    },
+    {
+      "label": "వేచి",
+      "text_start": 73,
+      "text_end": 77,
+      "method": "mithi_token_word_ownership",
+      "model_words": [
+        "వేచి"
+      ],
+      "group": null,
+      "tokens": [
+        96,
+        101
+      ],
+      "samples": [
+        123000,
+        129000
+      ]
+    },
+    {
+      "label": "ఉంటుంది.",
+      "text_start": 78,
+      "text_end": 86,
+      "method": "mithi_token_word_ownership",
+      "model_words": [
+        "ఉంటుంది."
+      ],
+      "group": null,
+      "tokens": [
+        103,
+        110
+      ],
+      "samples": [
+        130200,
+        140400
+      ]
+    }
+  ]
+}

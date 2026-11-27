@@ -1,0 +1,254 @@
+{
+  "schema": "video-creator.captions",
+  "version": 1,
+  "locale": "en-IN",
+  "narration": {
+    "timeline": "narration/narration.timeline.json",
+    "timeline_sha256": "8012eb79a885189cd784d63278f0e83cd71ea888f860a62ad405eeda174d38b0",
+    "audio_sha256": "45386b2130e2ebdd5c8450d4cbae4127f937206480c803d9923accf303e6559a",
+    "sample_rate": 24000,
+    "sample_count": 273600,
+    "timing_status": "unreviewed",
+    "timing_method": "forced_alignment",
+    "run_id": "synthetic-bearing"
+  },
+  "config": {
+    "enabled": true,
+    "burn_in": true,
+    "subtitle_files": [
+      "srt",
+      "vtt"
+    ],
+    "mode": "words",
+    "max_chars": 28,
+    "max_words": 4,
+    "max_lines": 2,
+    "hold_ms": 700
+  },
+  "cues": [
+    {
+      "start_sample": 4800,
+      "speech_end_sample": 28625,
+      "text": "A ball bearing lets",
+      "text_ref": {
+        "field": "speech",
+        "start": 0,
+        "end": 19
+      },
+      "segment": "s1",
+      "timing_sources": [
+        "forced_alignment"
+      ],
+      "long": false,
+      "end_sample": 29236,
+      "id": "c1",
+      "start": 0.2,
+      "end": 1.2181666666666666
+    },
+    {
+      "start_sample": 29236,
+      "speech_end_sample": 53062,
+      "text": "a shaft spin with",
+      "text_ref": {
+        "field": "speech",
+        "start": 20,
+        "end": 37
+      },
+      "segment": "s1",
+      "timing_sources": [
+        "forced_alignment"
+      ],
+      "long": false,
+      "end_sample": 53673,
+      "id": "c2",
+      "start": 1.2181666666666666,
+      "end": 2.236375
+    },
+    {
+      "start_sample": 53673,
+      "speech_end_sample": 71389,
+      "text": "very little friction.",
+      "text_ref": {
+        "field": "speech",
+        "start": 38,
+        "end": 59
+      },
+      "segment": "s1",
+      "timing_sources": [
+        "forced_alignment"
+      ],
+      "long": false,
+      "end_sample": 86400,
+      "id": "c3",
+      "start": 2.236375,
+      "end": 3.6
+    },
+    {
+      "start_sample": 86400,
+      "speech_end_sample": 111927,
+      "text": "Steel balls roll between",
+      "text_ref": {
+        "field": "speech",
+        "start": 60,
+        "end": 84
+      },
+      "segment": "s2",
+      "timing_sources": [
+        "forced_alignment"
+      ],
+      "long": false,
+      "end_sample": 112582,
+      "id": "c4",
+      "start": 3.6,
+      "end": 4.690916666666666
+    },
+    {
+      "start_sample": 112582,
+      "speech_end_sample": 138109,
+      "text": "an inner ring and",
+      "text_ref": {
+        "field": "speech",
+        "start": 85,
+        "end": 102
+      },
+      "segment": "s2",
+      "timing_sources": [
+        "forced_alignment"
+      ],
+      "long": false,
+      "end_sample": 138764,
+      "id": "c5",
+      "start": 4.690916666666666,
+      "end": 5.781833333333333
+    },
+    {
+      "start_sample": 138764,
+      "speech_end_sample": 157745,
+      "text": "an outer ring.",
+      "text_ref": {
+        "field": "speech",
+        "start": 103,
+        "end": 117
+      },
+      "segment": "s2",
+      "timing_sources": [
+        "forced_alignment"
+      ],
+      "long": false,
+      "end_sample": 172800,
+      "id": "c6",
+      "start": 5.781833333333333,
+      "end": 7.2
+    },
+    {
+      "start_sample": 172800,
+      "speech_end_sample": 193860,
+      "text": "They roll instead of",
+      "text_ref": {
+        "field": "speech",
+        "start": 118,
+        "end": 138
+      },
+      "segment": "s3",
+      "timing_sources": [
+        "forced_alignment"
+      ],
+      "long": false,
+      "end_sample": 194400,
+      "id": "c7",
+      "start": 7.2,
+      "end": 8.1
+    },
+    {
+      "start_sample": 194400,
+      "speech_end_sample": 199260,
+      "text": "sliding,",
+      "text_ref": {
+        "field": "speech",
+        "start": 139,
+        "end": 147
+      },
+      "segment": "s3",
+      "timing_sources": [
+        "forced_alignment"
+      ],
+      "long": false,
+      "end_sample": 199800,
+      "id": "c8",
+      "start": 8.1,
+      "end": 8.325
+    },
+    {
+      "start_sample": 199800,
+      "speech_end_sample": 220860,
+      "text": "so the balls circle",
+      "text_ref": {
+        "field": "speech",
+        "start": 148,
+        "end": 167
+      },
+      "segment": "s3",
+      "timing_sources": [
+        "forced_alignment"
+      ],
+      "long": false,
+      "end_sample": 221400,
+      "id": "c9",
+      "start": 8.325,
+      "end": 9.225
+    },
+    {
+      "start_sample": 221400,
+      "speech_end_sample": 242460,
+      "text": "at less than half",
+      "text_ref": {
+        "field": "speech",
+        "start": 168,
+        "end": 185
+      },
+      "segment": "s3",
+      "timing_sources": [
+        "forced_alignment"
+      ],
+      "long": false,
+      "end_sample": 243000,
+      "id": "c10",
+      "start": 9.225,
+      "end": 10.125
+    },
+    {
+      "start_sample": 243000,
+      "speech_end_sample": 258660,
+      "text": "the shaft speed.",
+      "text_ref": {
+        "field": "speech",
+        "start": 186,
+        "end": 202
+      },
+      "segment": "s3",
+      "timing_sources": [
+        "forced_alignment"
+      ],
+      "long": false,
+      "end_sample": 273600,
+      "id": "c11",
+      "start": 10.125,
+      "end": 11.4
+    }
+  ],
+  "files": {
+    "srt": {
+      "path": "captions/captions.srt",
+      "sha256": "08c7dc47e6034a633d5aabbb998d6c317f902dd5f005db3489a8bb49d84b62f6"
+    },
+    "vtt": {
+      "path": "captions/captions.vtt",
+      "sha256": "51d0bc0dcde363f5e32b1bd52380adabffb9bdec5298561ca81b4b724086f405"
+    }
+  },
+  "review": {
+    "technical": "passed",
+    "language": "pending native-reader review",
+    "readability": "pending human review"
+  }
+}

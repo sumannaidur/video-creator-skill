@@ -1,0 +1,235 @@
+{
+  "schema": "video-creator.captions",
+  "version": 1,
+  "locale": "en-IN",
+  "narration": {
+    "timeline": "narration/narration.timeline.json",
+    "timeline_sha256": "e4f3e80a814e6fb69a1588986c87b4ea8b5493e9ca5341eb827df760333221a7",
+    "audio_sha256": "45386b2130e2ebdd5c8450d4cbae4127f937206480c803d9923accf303e6559a",
+    "sample_rate": 24000,
+    "sample_count": 273600,
+    "timing_status": "unreviewed",
+    "timing_method": "forced_alignment",
+    "run_id": "synthetic-heat"
+  },
+  "config": {
+    "enabled": true,
+    "burn_in": true,
+    "subtitle_files": [
+      "srt",
+      "vtt"
+    ],
+    "mode": "words",
+    "max_chars": 28,
+    "max_words": 4,
+    "max_lines": 2,
+    "hold_ms": 700
+  },
+  "cues": [
+    {
+      "start_sample": 4800,
+      "speech_end_sample": 33920,
+      "text": "Sunlight bakes the city's",
+      "text_ref": {
+        "field": "speech",
+        "start": 0,
+        "end": 25
+      },
+      "segment": "s1",
+      "timing_sources": [
+        "forced_alignment"
+      ],
+      "long": false,
+      "end_sample": 34667,
+      "id": "c1",
+      "start": 0.2,
+      "end": 1.4444583333333334
+    },
+    {
+      "start_sample": 34667,
+      "speech_end_sample": 63787,
+      "text": "roads and roofs all",
+      "text_ref": {
+        "field": "speech",
+        "start": 26,
+        "end": 45
+      },
+      "segment": "s1",
+      "timing_sources": [
+        "forced_alignment"
+      ],
+      "long": false,
+      "end_sample": 64533,
+      "id": "c2",
+      "start": 1.4444583333333334,
+      "end": 2.688875
+    },
+    {
+      "start_sample": 64533,
+      "speech_end_sample": 71253,
+      "text": "day.",
+      "text_ref": {
+        "field": "speech",
+        "start": 46,
+        "end": 50
+      },
+      "segment": "s1",
+      "timing_sources": [
+        "forced_alignment"
+      ],
+      "long": false,
+      "end_sample": 86400,
+      "id": "c3",
+      "start": 2.688875,
+      "end": 3.6
+    },
+    {
+      "start_sample": 86400,
+      "speech_end_sample": 115520,
+      "text": "Concrete stores that heat",
+      "text_ref": {
+        "field": "speech",
+        "start": 51,
+        "end": 76
+      },
+      "segment": "s2",
+      "timing_sources": [
+        "forced_alignment"
+      ],
+      "long": false,
+      "end_sample": 116267,
+      "id": "c4",
+      "start": 3.6,
+      "end": 4.844458333333334
+    },
+    {
+      "start_sample": 116267,
+      "speech_end_sample": 145387,
+      "text": "like a hot frying",
+      "text_ref": {
+        "field": "speech",
+        "start": 77,
+        "end": 94
+      },
+      "segment": "s2",
+      "timing_sources": [
+        "forced_alignment"
+      ],
+      "long": false,
+      "end_sample": 146133,
+      "id": "c5",
+      "start": 4.844458333333334,
+      "end": 6.088875
+    },
+    {
+      "start_sample": 146133,
+      "speech_end_sample": 152853,
+      "text": "pan.",
+      "text_ref": {
+        "field": "speech",
+        "start": 95,
+        "end": 99
+      },
+      "segment": "s2",
+      "timing_sources": [
+        "forced_alignment"
+      ],
+      "long": false,
+      "end_sample": 168000,
+      "id": "c6",
+      "start": 6.088875,
+      "end": 7.0
+    },
+    {
+      "start_sample": 168000,
+      "speech_end_sample": 195360,
+      "text": "At night it leaks",
+      "text_ref": {
+        "field": "speech",
+        "start": 100,
+        "end": 117
+      },
+      "segment": "s3",
+      "timing_sources": [
+        "forced_alignment"
+      ],
+      "long": false,
+      "end_sample": 196062,
+      "id": "c7",
+      "start": 7.0,
+      "end": 8.16925
+    },
+    {
+      "start_sample": 196062,
+      "speech_end_sample": 209391,
+      "text": "back out,",
+      "text_ref": {
+        "field": "speech",
+        "start": 118,
+        "end": 127
+      },
+      "segment": "s3",
+      "timing_sources": [
+        "forced_alignment"
+      ],
+      "long": false,
+      "end_sample": 210092,
+      "id": "c8",
+      "start": 8.16925,
+      "end": 8.753833333333333
+    },
+    {
+      "start_sample": 210092,
+      "speech_end_sample": 237452,
+      "text": "so trees and shade",
+      "text_ref": {
+        "field": "speech",
+        "start": 128,
+        "end": 146
+      },
+      "segment": "s3",
+      "timing_sources": [
+        "forced_alignment"
+      ],
+      "long": false,
+      "end_sample": 238154,
+      "id": "c9",
+      "start": 8.753833333333333,
+      "end": 9.923083333333333
+    },
+    {
+      "start_sample": 238154,
+      "speech_end_sample": 258498,
+      "text": "keep streets cooler.",
+      "text_ref": {
+        "field": "speech",
+        "start": 147,
+        "end": 167
+      },
+      "segment": "s3",
+      "timing_sources": [
+        "forced_alignment"
+      ],
+      "long": false,
+      "end_sample": 273600,
+      "id": "c10",
+      "start": 9.923083333333333,
+      "end": 11.4
+    }
+  ],
+  "files": {
+    "srt": {
+      "path": "captions/captions.srt",
+      "sha256": "78524b3be6dee8f3029b834fedf7848e08032507c47cb72a44833eaed735b27e"
+    },
+    "vtt": {
+      "path": "captions/captions.vtt",
+      "sha256": "2361a527b560ff44e02fd9f9b2c36936524c5bb2a02c9d329790ae287dfaf966"
+    }
+  },
+  "review": {
+    "technical": "passed",
+    "language": "pending native-reader review",
+    "readability": "pending human review"
+  }
+}

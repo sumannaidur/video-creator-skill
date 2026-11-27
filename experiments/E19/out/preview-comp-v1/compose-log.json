@@ -1,0 +1,1355 @@
+{
+ "captions": "E18 captions.json (contract-validated)",
+ "frames": [
+  {
+   "frame": 27,
+   "t": 0.9,
+   "captionWord": "హాయ్",
+   "hook": {
+    "opacity": 1,
+    "visible": true
+   },
+   "cue": "c1"
+  },
+  {
+   "frame": 28,
+   "t": 0.933,
+   "captionWord": "హాయ్",
+   "hook": {
+    "opacity": 1,
+    "visible": true
+   },
+   "cue": "c1"
+  },
+  {
+   "frame": 29,
+   "t": 0.967,
+   "captionWord": "హాయ్",
+   "hook": {
+    "opacity": 1,
+    "visible": true
+   },
+   "cue": "c1"
+  },
+  {
+   "frame": 30,
+   "t": 1,
+   "captionWord": "అని",
+   "hook": {
+    "opacity": 1,
+    "visible": true
+   },
+   "cue": "c1"
+  },
+  {
+   "frame": 31,
+   "t": 1.033,
+   "captionWord": "అని",
+   "hook": {
+    "opacity": 1,
+    "visible": true
+   },
+   "cue": "c1"
+  },
+  {
+   "frame": 32,
+   "t": 1.067,
+   "captionWord": "అని",
+   "hook": {
+    "opacity": 1,
+    "visible": true
+   },
+   "cue": "c1"
+  },
+  {
+   "frame": 33,
+   "t": 1.1,
+   "captionWord": "అని",
+   "hook": {
+    "opacity": 1,
+    "visible": true
+   },
+   "cue": "c1"
+  },
+  {
+   "frame": 34,
+   "t": 1.133,
+   "captionWord": "అని",
+   "hook": {
+    "opacity": 1,
+    "visible": true
+   },
+   "cue": "c1"
+  },
+  {
+   "frame": 35,
+   "t": 1.167,
+   "captionWord": "అని",
+   "hook": {
+    "opacity": 1,
+    "visible": true
+   },
+   "cue": "c1"
+  },
+  {
+   "frame": 36,
+   "t": 1.2,
+   "captionWord": "అని",
+   "hook": {
+    "opacity": 1,
+    "visible": true
+   },
+   "cue": "c1"
+  },
+  {
+   "frame": 37,
+   "t": 1.233,
+   "captionWord": "అని",
+   "hook": {
+    "opacity": 1,
+    "visible": true
+   },
+   "cue": "c1"
+  },
+  {
+   "frame": 38,
+   "t": 1.267,
+   "captionWord": "అని",
+   "hook": {
+    "opacity": 1,
+    "visible": true
+   },
+   "cue": "c1"
+  },
+  {
+   "frame": 39,
+   "t": 1.3,
+   "captionWord": "టైప్",
+   "hook": {
+    "opacity": 1,
+    "visible": true
+   },
+   "cue": "c1"
+  },
+  {
+   "frame": 40,
+   "t": 1.333,
+   "captionWord": "టైప్",
+   "hook": {
+    "opacity": 1,
+    "visible": true
+   },
+   "cue": "c1"
+  },
+  {
+   "frame": 41,
+   "t": 1.367,
+   "captionWord": "టైప్",
+   "hook": {
+    "opacity": 1,
+    "visible": true
+   },
+   "cue": "c1"
+  },
+  {
+   "frame": 42,
+   "t": 1.4,
+   "captionWord": "టైప్",
+   "hook": {
+    "opacity": 1,
+    "visible": true
+   },
+   "cue": "c1"
+  },
+  {
+   "frame": 43,
+   "t": 1.433,
+   "captionWord": "టైప్",
+   "hook": {
+    "opacity": 1,
+    "visible": true
+   },
+   "cue": "c1"
+  },
+  {
+   "frame": 44,
+   "t": 1.467,
+   "captionWord": "టైప్",
+   "hook": {
+    "opacity": 1,
+    "visible": true
+   },
+   "cue": "c1"
+  },
+  {
+   "frame": 45,
+   "t": 1.5,
+   "captionWord": "టైప్",
+   "hook": {
+    "opacity": 1,
+    "visible": true
+   },
+   "cue": "c1"
+  },
+  {
+   "frame": 46,
+   "t": 1.533,
+   "captionWord": "టైప్",
+   "hook": {
+    "opacity": 1,
+    "visible": true
+   },
+   "cue": "c1"
+  },
+  {
+   "frame": 47,
+   "t": 1.567,
+   "captionWord": "టైప్",
+   "hook": {
+    "opacity": 1,
+    "visible": true
+   },
+   "cue": "c1"
+  },
+  {
+   "frame": 48,
+   "t": 1.6,
+   "captionWord": "టైప్",
+   "hook": {
+    "opacity": 1,
+    "visible": true
+   },
+   "cue": "c1"
+  },
+  {
+   "frame": 49,
+   "t": 1.633,
+   "captionWord": "చేసి,",
+   "hook": {
+    "opacity": 1,
+    "visible": true
+   },
+   "cue": "c2"
+  },
+  {
+   "frame": 50,
+   "t": 1.667,
+   "captionWord": "చేసి,",
+   "hook": {
+    "opacity": 1,
+    "visible": true
+   },
+   "cue": "c2"
+  },
+  {
+   "frame": 51,
+   "t": 1.7,
+   "captionWord": "చేసి,",
+   "hook": {
+    "opacity": 1,
+    "visible": true
+   },
+   "cue": "c2"
+  },
+  {
+   "frame": 52,
+   "t": 1.733,
+   "captionWord": "చేసి,",
+   "hook": {
+    "opacity": 1,
+    "visible": true
+   },
+   "cue": "c2"
+  },
+  {
+   "frame": 53,
+   "t": 1.767,
+   "captionWord": "చేసి,",
+   "hook": {
+    "opacity": 1,
+    "visible": true
+   },
+   "cue": "c2"
+  },
+  {
+   "frame": 54,
+   "t": 1.8,
+   "captionWord": "చేసి,",
+   "hook": {
+    "opacity": 1,
+    "visible": true
+   },
+   "cue": "c2"
+  },
+  {
+   "frame": 55,
+   "t": 1.833,
+   "captionWord": "చేసి,",
+   "hook": {
+    "opacity": 1,
+    "visible": true
+   },
+   "cue": "c2"
+  },
+  {
+   "frame": 56,
+   "t": 1.867,
+   "captionWord": "చేసి,",
+   "hook": {
+    "opacity": 0.9934,
+    "visible": true
+   },
+   "cue": "c2"
+  },
+  {
+   "frame": 57,
+   "t": 1.9,
+   "captionWord": "చేసి,",
+   "hook": {
+    "opacity": 0.9446,
+    "visible": true
+   },
+   "cue": "c2"
+  },
+  {
+   "frame": 58,
+   "t": 1.933,
+   "captionWord": "చేసి,",
+   "hook": {
+    "opacity": 0.8569,
+    "visible": true
+   },
+   "cue": "c2"
+  },
+  {
+   "frame": 59,
+   "t": 1.967,
+   "captionWord": "చేసి,",
+   "hook": {
+    "opacity": 0.7407,
+    "visible": true
+   },
+   "cue": "c2"
+  },
+  {
+   "frame": 60,
+   "t": 2,
+   "captionWord": "చేసి,",
+   "hook": {
+    "opacity": 0.6064,
+    "visible": true
+   },
+   "cue": "c2"
+  },
+  {
+   "frame": 61,
+   "t": 2.033,
+   "captionWord": "చేసి,",
+   "hook": {
+    "opacity": 0.4643,
+    "visible": true
+   },
+   "cue": "c2"
+  },
+  {
+   "frame": 62,
+   "t": 2.067,
+   "captionWord": "చేసి,",
+   "hook": {
+    "opacity": 0.3248,
+    "visible": true
+   },
+   "cue": "c2"
+  },
+  {
+   "frame": 63,
+   "t": 2.1,
+   "captionWord": "చేసి,",
+   "hook": {
+    "opacity": 0.1983,
+    "visible": true
+   },
+   "cue": "c2"
+  },
+  {
+   "frame": 64,
+   "t": 2.133,
+   "captionWord": "చేసి,",
+   "hook": {
+    "opacity": 0.095,
+    "visible": true
+   },
+   "cue": "c2"
+  },
+  {
+   "frame": 65,
+   "t": 2.167,
+   "captionWord": "చేసి,",
+   "hook": {
+    "opacity": 0.0255,
+    "visible": true
+   },
+   "cue": "c2"
+  },
+  {
+   "frame": 66,
+   "t": 2.2,
+   "captionWord": "చేసి,",
+   "hook": {
+    "opacity": 0,
+    "visible": false
+   },
+   "cue": "c2"
+  },
+  {
+   "frame": 67,
+   "t": 2.233,
+   "captionWord": "చేసి,",
+   "hook": {
+    "opacity": 0,
+    "visible": false
+   },
+   "cue": "c2"
+  },
+  {
+   "frame": 68,
+   "t": 2.267,
+   "captionWord": "చేసి,",
+   "hook": {
+    "opacity": 0,
+    "visible": false
+   },
+   "cue": "c2"
+  },
+  {
+   "frame": 69,
+   "t": 2.3,
+   "captionWord": "చేసి,",
+   "hook": {
+    "opacity": 0,
+    "visible": false
+   },
+   "cue": "c2"
+  },
+  {
+   "frame": 70,
+   "t": 2.333,
+   "captionWord": "చేసి,",
+   "hook": {
+    "opacity": 0,
+    "visible": false
+   },
+   "cue": "c2"
+  },
+  {
+   "frame": 71,
+   "t": 2.367,
+   "captionWord": "చేసి,",
+   "hook": {
+    "opacity": 0,
+    "visible": false
+   },
+   "cue": "c2"
+  },
+  {
+   "frame": 72,
+   "t": 2.4,
+   "captionWord": "సెండ్",
+   "hook": {
+    "opacity": 0,
+    "visible": false
+   },
+   "cue": "c3"
+  },
+  {
+   "frame": 73,
+   "t": 2.433,
+   "captionWord": "సెండ్",
+   "hook": {
+    "opacity": 0,
+    "visible": false
+   },
+   "cue": "c3"
+  },
+  {
+   "frame": 74,
+   "t": 2.467,
+   "captionWord": "సెండ్",
+   "hook": {
+    "opacity": 0,
+    "visible": false
+   },
+   "cue": "c3"
+  },
+  {
+   "frame": 75,
+   "t": 2.5,
+   "captionWord": "సెండ్",
+   "hook": {
+    "opacity": 0,
+    "visible": false
+   },
+   "cue": "c3"
+  },
+  {
+   "frame": 76,
+   "t": 2.533,
+   "captionWord": "సెండ్",
+   "hook": {
+    "opacity": 0,
+    "visible": false
+   },
+   "cue": "c3"
+  },
+  {
+   "frame": 77,
+   "t": 2.567,
+   "captionWord": "సెండ్",
+   "hook": {
+    "opacity": 0,
+    "visible": false
+   },
+   "cue": "c3"
+  },
+  {
+   "frame": 78,
+   "t": 2.6,
+   "captionWord": "సెండ్",
+   "hook": {
+    "opacity": 0,
+    "visible": false
+   },
+   "cue": "c3"
+  },
+  {
+   "frame": 79,
+   "t": 2.633,
+   "captionWord": "సెండ్",
+   "hook": {
+    "opacity": 0,
+    "visible": false
+   },
+   "cue": "c3"
+  },
+  {
+   "frame": 80,
+   "t": 2.667,
+   "captionWord": "సెండ్",
+   "hook": {
+    "opacity": 0,
+    "visible": false
+   },
+   "cue": "c3"
+  },
+  {
+   "frame": 81,
+   "t": 2.7,
+   "captionWord": "నొక్కుతారు.",
+   "hook": {
+    "opacity": 0,
+    "visible": false
+   },
+   "cue": "c3"
+  },
+  {
+   "frame": 82,
+   "t": 2.733,
+   "captionWord": "నొక్కుతారు.",
+   "hook": {
+    "opacity": 0,
+    "visible": false
+   },
+   "cue": "c3"
+  },
+  {
+   "frame": 83,
+   "t": 2.767,
+   "captionWord": "నొక్కుతారు.",
+   "hook": {
+    "opacity": 0,
+    "visible": false
+   },
+   "cue": "c3"
+  },
+  {
+   "frame": 84,
+   "t": 2.8,
+   "captionWord": "నొక్కుతారు.",
+   "hook": {
+    "opacity": 0,
+    "visible": false
+   },
+   "cue": "c3"
+  },
+  {
+   "frame": 85,
+   "t": 2.833,
+   "captionWord": "నొక్కుతారు.",
+   "hook": {
+    "opacity": 0,
+    "visible": false
+   },
+   "cue": "c3"
+  },
+  {
+   "frame": 86,
+   "t": 2.867,
+   "captionWord": "నొక్కుతారు.",
+   "hook": {
+    "opacity": 0,
+    "visible": false
+   },
+   "cue": "c3"
+  },
+  {
+   "frame": 87,
+   "t": 2.9,
+   "captionWord": "నొక్కుతారు.",
+   "hook": {
+    "opacity": 0,
+    "visible": false
+   },
+   "cue": "c3"
+  },
+  {
+   "frame": 88,
+   "t": 2.933,
+   "captionWord": "నొక్కుతారు.",
+   "hook": {
+    "opacity": 0,
+    "visible": false
+   },
+   "cue": "c3"
+  },
+  {
+   "frame": 89,
+   "t": 2.967,
+   "captionWord": "నొక్కుతారు.",
+   "hook": {
+    "opacity": 0,
+    "visible": false
+   },
+   "cue": "c3"
+  },
+  {
+   "frame": 90,
+   "t": 3,
+   "captionWord": "నొక్కుతారు.",
+   "hook": {
+    "opacity": 0,
+    "visible": false
+   },
+   "cue": "c3"
+  },
+  {
+   "frame": 91,
+   "t": 3.033,
+   "captionWord": "నొక్కుతారు.",
+   "hook": {
+    "opacity": 0,
+    "visible": false
+   },
+   "cue": "c3"
+  },
+  {
+   "frame": 92,
+   "t": 3.067,
+   "captionWord": "నొక్కుతారు.",
+   "hook": {
+    "opacity": 0,
+    "visible": false
+   },
+   "cue": "c3"
+  },
+  {
+   "frame": 93,
+   "t": 3.1,
+   "captionWord": "నొక్కుతారు.",
+   "hook": {
+    "opacity": 0,
+    "visible": false
+   },
+   "cue": "c3"
+  },
+  {
+   "frame": 94,
+   "t": 3.133,
+   "captionWord": "నొక్కుతారు.",
+   "hook": {
+    "opacity": 0,
+    "visible": false
+   },
+   "cue": "c3"
+  },
+  {
+   "frame": 95,
+   "t": 3.167,
+   "captionWord": "నొక్కుతారు.",
+   "hook": {
+    "opacity": 0,
+    "visible": false
+   },
+   "cue": "c3"
+  },
+  {
+   "frame": 96,
+   "t": 3.2,
+   "captionWord": "నొక్కుతారు.",
+   "hook": {
+    "opacity": 0,
+    "visible": false
+   },
+   "cue": "c3"
+  },
+  {
+   "frame": 97,
+   "t": 3.233,
+   "captionWord": "నొక్కుతారు.",
+   "hook": {
+    "opacity": 0,
+    "visible": false
+   },
+   "cue": "c3"
+  },
+  {
+   "frame": 98,
+   "t": 3.267,
+   "captionWord": "నొక్కుతారు.",
+   "hook": {
+    "opacity": 0,
+    "visible": false
+   },
+   "cue": "c3"
+  },
+  {
+   "frame": 99,
+   "t": 3.3,
+   "captionWord": "నొక్కుతారు.",
+   "hook": {
+    "opacity": 0,
+    "visible": false
+   },
+   "cue": "c3"
+  },
+  {
+   "frame": 100,
+   "t": 3.333,
+   "captionWord": "నొక్కుతారు.",
+   "hook": {
+    "opacity": 0,
+    "visible": false
+   },
+   "cue": "c3"
+  },
+  {
+   "frame": 101,
+   "t": 3.367,
+   "captionWord": "నొక్కుతారు.",
+   "hook": {
+    "opacity": 0,
+    "visible": false
+   },
+   "cue": "c3"
+  },
+  {
+   "frame": 102,
+   "t": 3.4,
+   "captionWord": "నొక్కుతారు.",
+   "hook": {
+    "opacity": 0,
+    "visible": false
+   },
+   "cue": "c3"
+  },
+  {
+   "frame": 103,
+   "t": 3.433,
+   "captionWord": "నొక్కుతారు.",
+   "hook": {
+    "opacity": 0,
+    "visible": false
+   },
+   "cue": "c3"
+  },
+  {
+   "frame": 104,
+   "t": 3.467,
+   "captionWord": "నొక్కుతారు.",
+   "hook": {
+    "opacity": 0,
+    "visible": false
+   },
+   "cue": "c3"
+  },
+  {
+   "frame": 105,
+   "t": 3.5,
+   "captionWord": "నొక్కుతారు.",
+   "hook": {
+    "opacity": 0,
+    "visible": false
+   },
+   "cue": "c3"
+  },
+  {
+   "frame": 106,
+   "t": 3.533,
+   "captionWord": "నొక్కుతారు.",
+   "hook": {
+    "opacity": 0,
+    "visible": false
+   },
+   "cue": "c3"
+  },
+  {
+   "frame": 107,
+   "t": 3.567,
+   "captionWord": "నొక్కుతారు.",
+   "hook": {
+    "opacity": 0,
+    "visible": false
+   },
+   "cue": "c3"
+  },
+  {
+   "frame": 108,
+   "t": 3.6,
+   "captionWord": "నొక్కుతారు.",
+   "hook": {
+    "opacity": 0,
+    "visible": false
+   },
+   "cue": "c3"
+  },
+  {
+   "frame": 109,
+   "t": 3.633,
+   "captionWord": "నొక్కుతారు.",
+   "hook": {
+    "opacity": 0,
+    "visible": false
+   },
+   "cue": "c3"
+  },
+  {
+   "frame": 110,
+   "t": 3.667,
+   "captionWord": "నొక్కుతారు.",
+   "hook": {
+    "opacity": 0,
+    "visible": false
+   },
+   "cue": "c3"
+  },
+  {
+   "frame": 111,
+   "t": 3.7,
+   "captionWord": "క్షణాల్లోనే",
+   "hook": {
+    "opacity": 0,
+    "visible": false
+   },
+   "cue": "c4"
+  },
+  {
+   "frame": 112,
+   "t": 3.733,
+   "captionWord": "క్షణాల్లోనే",
+   "hook": {
+    "opacity": 0,
+    "visible": false
+   },
+   "cue": "c4"
+  },
+  {
+   "frame": 113,
+   "t": 3.767,
+   "captionWord": "క్షణాల్లోనే",
+   "hook": {
+    "opacity": 0,
+    "visible": false
+   },
+   "cue": "c4"
+  },
+  {
+   "frame": 114,
+   "t": 3.8,
+   "captionWord": "క్షణాల్లోనే",
+   "hook": {
+    "opacity": 0,
+    "visible": false
+   },
+   "cue": "c4"
+  },
+  {
+   "frame": 115,
+   "t": 3.833,
+   "captionWord": "క్షణాల్లోనే",
+   "hook": {
+    "opacity": 0,
+    "visible": false
+   },
+   "cue": "c4"
+  },
+  {
+   "frame": 116,
+   "t": 3.867,
+   "captionWord": "క్షణాల్లోనే",
+   "hook": {
+    "opacity": 0,
+    "visible": false
+   },
+   "cue": "c4"
+  },
+  {
+   "frame": 117,
+   "t": 3.9,
+   "captionWord": "క్షణాల్లోనే",
+   "hook": {
+    "opacity": 0,
+    "visible": false
+   },
+   "cue": "c4"
+  },
+  {
+   "frame": 118,
+   "t": 3.933,
+   "captionWord": "క్షణాల్లోనే",
+   "hook": {
+    "opacity": 0,
+    "visible": false
+   },
+   "cue": "c4"
+  },
+  {
+   "frame": 119,
+   "t": 3.967,
+   "captionWord": "క్షణాల్లోనే",
+   "hook": {
+    "opacity": 0,
+    "visible": false
+   },
+   "cue": "c4"
+  },
+  {
+   "frame": 120,
+   "t": 4,
+   "captionWord": "క్షణాల్లోనే",
+   "hook": {
+    "opacity": 0,
+    "visible": false
+   },
+   "cue": "c4"
+  },
+  {
+   "frame": 121,
+   "t": 4.033,
+   "captionWord": "క్షణాల్లోనే",
+   "hook": {
+    "opacity": 0,
+    "visible": false
+   },
+   "cue": "c4"
+  },
+  {
+   "frame": 122,
+   "t": 4.067,
+   "captionWord": "క్షణాల్లోనే",
+   "hook": {
+    "opacity": 0,
+    "visible": false
+   },
+   "cue": "c4"
+  },
+  {
+   "frame": 123,
+   "t": 4.1,
+   "captionWord": "క్షణాల్లోనే",
+   "hook": {
+    "opacity": 0,
+    "visible": false
+   },
+   "cue": "c4"
+  },
+  {
+   "frame": 124,
+   "t": 4.133,
+   "captionWord": "క్షణాల్లోనే",
+   "hook": {
+    "opacity": 0,
+    "visible": false
+   },
+   "cue": "c4"
+  },
+  {
+   "frame": 125,
+   "t": 4.167,
+   "captionWord": "క్షణాల్లోనే",
+   "hook": {
+    "opacity": 0,
+    "visible": false
+   },
+   "cue": "c4"
+  },
+  {
+   "frame": 126,
+   "t": 4.2,
+   "captionWord": "క్షణాల్లోనే",
+   "hook": {
+    "opacity": 0,
+    "visible": false
+   },
+   "cue": "c4"
+  },
+  {
+   "frame": 127,
+   "t": 4.233,
+   "captionWord": "క్షణాల్లోనే",
+   "hook": {
+    "opacity": 0,
+    "visible": false
+   },
+   "cue": "c4"
+  },
+  {
+   "frame": 128,
+   "t": 4.267,
+   "captionWord": "క్షణాల్లోనే",
+   "hook": {
+    "opacity": 0,
+    "visible": false
+   },
+   "cue": "c4"
+  },
+  {
+   "frame": 129,
+   "t": 4.3,
+   "captionWord": "క్షణాల్లోనే",
+   "hook": {
+    "opacity": 0,
+    "visible": false
+   },
+   "cue": "c4"
+  },
+  {
+   "frame": 130,
+   "t": 4.333,
+   "captionWord": "క్షణాల్లోనే",
+   "hook": {
+    "opacity": 0,
+    "visible": false
+   },
+   "cue": "c4"
+  },
+  {
+   "frame": 131,
+   "t": 4.367,
+   "captionWord": "క్షణాల్లోనే",
+   "hook": {
+    "opacity": 0,
+    "visible": false
+   },
+   "cue": "c4"
+  },
+  {
+   "frame": 132,
+   "t": 4.4,
+   "captionWord": "క్షణాల్లోనే",
+   "hook": {
+    "opacity": 0,
+    "visible": false
+   },
+   "cue": "c4"
+  },
+  {
+   "frame": 133,
+   "t": 4.433,
+   "captionWord": "క్షణాల్లోనే",
+   "hook": {
+    "opacity": 0,
+    "visible": false
+   },
+   "cue": "c4"
+  },
+  {
+   "frame": 134,
+   "t": 4.467,
+   "captionWord": "క్షణాల్లోనే",
+   "hook": {
+    "opacity": 0,
+    "visible": false
+   },
+   "cue": "c4"
+  },
+  {
+   "frame": 135,
+   "t": 4.5,
+   "captionWord": "అది",
+   "hook": {
+    "opacity": 0,
+    "visible": false
+   },
+   "cue": "c4"
+  },
+  {
+   "frame": 136,
+   "t": 4.533,
+   "captionWord": "అది",
+   "hook": {
+    "opacity": 0,
+    "visible": false
+   },
+   "cue": "c4"
+  },
+  {
+   "frame": 137,
+   "t": 4.567,
+   "captionWord": "అది",
+   "hook": {
+    "opacity": 0,
+    "visible": false
+   },
+   "cue": "c4"
+  },
+  {
+   "frame": 138,
+   "t": 4.6,
+   "captionWord": "అది",
+   "hook": {
+    "opacity": 0,
+    "visible": false
+   },
+   "cue": "c4"
+  },
+  {
+   "frame": 139,
+   "t": 4.633,
+   "captionWord": "అది",
+   "hook": {
+    "opacity": 0,
+    "visible": false
+   },
+   "cue": "c4"
+  },
+  {
+   "frame": 140,
+   "t": 4.667,
+   "captionWord": "అది",
+   "hook": {
+    "opacity": 0,
+    "visible": false
+   },
+   "cue": "c4"
+  },
+  {
+   "frame": 141,
+   "t": 4.7,
+   "captionWord": "మీ",
+   "hook": {
+    "opacity": 0,
+    "visible": false
+   },
+   "cue": "c4"
+  },
+  {
+   "frame": 142,
+   "t": 4.733,
+   "captionWord": "మీ",
+   "hook": {
+    "opacity": 0,
+    "visible": false
+   },
+   "cue": "c4"
+  },
+  {
+   "frame": 143,
+   "t": 4.767,
+   "captionWord": "మీ",
+   "hook": {
+    "opacity": 0,
+    "visible": false
+   },
+   "cue": "c4"
+  },
+  {
+   "frame": 144,
+   "t": 4.8,
+   "captionWord": "మీ",
+   "hook": {
+    "opacity": 0,
+    "visible": false
+   },
+   "cue": "c4"
+  },
+  {
+   "frame": 145,
+   "t": 4.833,
+   "captionWord": "మీ",
+   "hook": {
+    "opacity": 0,
+    "visible": false
+   },
+   "cue": "c4"
+  },
+  {
+   "frame": 146,
+   "t": 4.867,
+   "captionWord": "మీ",
+   "hook": {
+    "opacity": 0,
+    "visible": false
+   },
+   "cue": "c4"
+  },
+  {
+   "frame": 147,
+   "t": 4.9,
+   "captionWord": "ఫ్రెండ్",
+   "hook": {
+    "opacity": 0,
+    "visible": false
+   },
+   "cue": "c4"
+  },
+  {
+   "frame": 148,
+   "t": 4.933,
+   "captionWord": "ఫ్రెండ్",
+   "hook": {
+    "opacity": 0,
+    "visible": false
+   },
+   "cue": "c4"
+  },
+  {
+   "frame": 149,
+   "t": 4.967,
+   "captionWord": "ఫ్రెండ్",
+   "hook": {
+    "opacity": 0,
+    "visible": false
+   },
+   "cue": "c4"
+  },
+  {
+   "frame": 150,
+   "t": 5,
+   "captionWord": "ఫ్రెండ్",
+   "hook": {
+    "opacity": 0,
+    "visible": false
+   },
+   "cue": "c4"
+  },
+  {
+   "frame": 151,
+   "t": 5.033,
+   "captionWord": "ఫ్రెండ్",
+   "hook": {
+    "opacity": 0,
+    "visible": false
+   },
+   "cue": "c4"
+  },
+  {
+   "frame": 152,
+   "t": 5.067,
+   "captionWord": "ఫ్రెండ్",
+   "hook": {
+    "opacity": 0,
+    "visible": false
+   },
+   "cue": "c4"
+  },
+  {
+   "frame": 153,
+   "t": 5.1,
+   "captionWord": "ఫ్రెండ్",
+   "hook": {
+    "opacity": 0,
+    "visible": false
+   },
+   "cue": "c4"
+  },
+  {
+   "frame": 154,
+   "t": 5.133,
+   "captionWord": "ఫ్రెండ్",
+   "hook": {
+    "opacity": 0,
+    "visible": false
+   },
+   "cue": "c4"
+  },
+  {
+   "frame": 155,
+   "t": 5.167,
+   "captionWord": "ఫ్రెండ్",
+   "hook": {
+    "opacity": 0,
+    "visible": false
+   },
+   "cue": "c4"
+  },
+  {
+   "frame": 156,
+   "t": 5.2,
+   "captionWord": "ఫ్రెండ్",
+   "hook": {
+    "opacity": 0,
+    "visible": false
+   },
+   "cue": "c4"
+  },
+  {
+   "frame": 157,
+   "t": 5.233,
+   "captionWord": "ఫోన్‌లో",
+   "hook": {
+    "opacity": 0,
+    "visible": false
+   },
+   "cue": "c5"
+  },
+  {
+   "frame": 158,
+   "t": 5.267,
+   "captionWord": "ఫోన్‌లో",
+   "hook": {
+    "opacity": 0,
+    "visible": false
+   },
+   "cue": "c5"
+  },
+  {
+   "frame": 159,
+   "t": 5.3,
+   "captionWord": "ఫోన్‌లో",
+   "hook": {
+    "opacity": 0,
+    "visible": false
+   },
+   "cue": "c5"
+  },
+  {
+   "frame": 160,
+   "t": 5.333,
+   "captionWord": "ఫోన్‌లో",
+   "hook": {
+    "opacity": 0,
+    "visible": false
+   },
+   "cue": "c5"
+  },
+  {
+   "frame": 161,
+   "t": 5.367,
+   "captionWord": "ఫోన్‌లో",
+   "hook": {
+    "opacity": 0,
+    "visible": false
+   },
+   "cue": "c5"
+  }
+ ]
+}

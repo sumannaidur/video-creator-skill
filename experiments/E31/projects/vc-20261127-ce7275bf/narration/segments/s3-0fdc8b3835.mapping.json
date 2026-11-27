@@ -1,0 +1,275 @@
+{
+  "result": "mapped",
+  "words": [
+    {
+      "label": "ಕೀಲಿ",
+      "text_start": 0,
+      "text_end": 4,
+      "method": "mithi_token_word_ownership",
+      "model_words": [
+        "ಕೀಲಿ"
+      ],
+      "group": null,
+      "tokens": [
+        1,
+        6
+      ],
+      "samples": [
+        1200,
+        8400
+      ]
+    },
+    {
+      "label": "ಇಲ್ಲದಿದ್ದಾಗ,",
+      "text_start": 5,
+      "text_end": 17,
+      "method": "mithi_token_word_ownership",
+      "model_words": [
+        "ಇಲ್ಲದಿದ್ದಾಗ,"
+      ],
+      "group": null,
+      "tokens": [
+        8,
+        21
+      ],
+      "samples": [
+        9600,
+        29400
+      ]
+    },
+    {
+      "label": "ಮೇಲಿನ",
+      "text_start": 18,
+      "text_end": 23,
+      "method": "mithi_token_word_ownership",
+      "model_words": [
+        "ಮೇಲಿನ"
+      ],
+      "group": null,
+      "tokens": [
+        24,
+        31
+      ],
+      "samples": [
+        38400,
+        51000
+      ]
+    },
+    {
+      "label": "ಪಿನ್‌ಗಳು",
+      "text_start": 24,
+      "text_end": 32,
+      "method": "mithi_token_word_ownership",
+      "model_words": [
+        "ಪಿನ್‌ಗಳು"
+      ],
+      "group": null,
+      "tokens": [
+        33,
+        40
+      ],
+      "samples": [
+        52200,
+        64200
+      ]
+    },
+    {
+      "label": "ಒಳಗಿನ",
+      "text_start": 33,
+      "text_end": 38,
+      "method": "mithi_token_word_ownership",
+      "model_words": [
+        "ಒಳಗಿನ"
+      ],
+      "group": null,
+      "tokens": [
+        42,
+        50
+      ],
+      "samples": [
+        69600,
+        81000
+      ]
+    },
+    {
+      "label": "ಸಿಲಿಂಡರ್",
+      "text_start": 39,
+      "text_end": 47,
+      "method": "mithi_token_word_ownership",
+      "model_words": [
+        "ಸಿಲಿಂಡರ್"
+      ],
+      "group": null,
+      "tokens": [
+        52,
+        60
+      ],
+      "samples": [
+        82800,
+        94800
+      ]
+    },
+    {
+      "label": "ಮತ್ತು",
+      "text_start": 48,
+      "text_end": 53,
+      "method": "mithi_token_word_ownership",
+      "model_words": [
+        "ಮತ್ತು"
+      ],
+      "group": null,
+      "tokens": [
+        62,
+        67
+      ],
+      "samples": [
+        96600,
+        103800
+      ]
+    },
+    {
+      "label": "ಹೊರಗಿನ",
+      "text_start": 54,
+      "text_end": 60,
+      "method": "mithi_token_word_ownership",
+      "model_words": [
+        "ಹೊರಗಿನ"
+      ],
+      "group": null,
+      "tokens": [
+        69,
+        78
+      ],
+      "samples": [
+        105600,
+        117600
+      ]
+    },
+    {
+      "label": "ಕವಚದ",
+      "text_start": 61,
+      "text_end": 65,
+      "method": "mithi_token_word_ownership",
+      "model_words": [
+        "ಕವಚದ"
+      ],
+      "group": null,
+      "tokens": [
+        80,
+        89
+      ],
+      "samples": [
+        118800,
+        129600
+      ]
+    },
+    {
+      "label": "ನಡುವಿನ",
+      "text_start": 66,
+      "text_end": 72,
+      "method": "mithi_token_word_ownership",
+      "model_words": [
+        "ನಡುವಿನ"
+      ],
+      "group": null,
+      "tokens": [
+        91,
+        100
+      ],
+      "samples": [
+        130800,
+        141600
+      ]
+    },
+    {
+      "label": "ಗೆರೆಯನ್ನು",
+      "text_start": 73,
+      "text_end": 82,
+      "method": "mithi_token_word_ownership",
+      "model_words": [
+        "ಗೆರೆಯನ್ನು"
+      ],
+      "group": null,
+      "tokens": [
+        102,
+        112
+      ],
+      "samples": [
+        142800,
+        154800
+      ]
+    },
+    {
+      "label": "ದಾಟಿ,",
+      "text_start": 83,
+      "text_end": 88,
+      "method": "mithi_token_word_ownership",
+      "model_words": [
+        "ದಾಟಿ,"
+      ],
+      "group": null,
+      "tokens": [
+        114,
+        119
+      ],
+      "samples": [
+        156600,
+        165000
+      ]
+    },
+    {
+      "label": "ಅದು",
+      "text_start": 89,
+      "text_end": 92,
+      "method": "mithi_token_word_ownership",
+      "model_words": [
+        "ಅದು"
+      ],
+      "group": null,
+      "tokens": [
+        122,
+        125
+      ],
+      "samples": [
+        174600,
+        179400
+      ]
+    },
+    {
+      "label": "ತಿರುಗದಂತೆ",
+      "text_start": 93,
+      "text_end": 102,
+      "method": "mithi_token_word_ownership",
+      "model_words": [
+        "ತಿರುಗದಂತೆ"
+      ],
+      "group": null,
+      "tokens": [
+        127,
+        139
+      ],
+      "samples": [
+        181200,
+        197400
+      ]
+    },
+    {
+      "label": "ತಡೆಯುತ್ತವೆ.",
+      "text_start": 103,
+      "text_end": 114,
+      "method": "mithi_token_word_ownership",
+      "model_words": [
+        "ತಡೆಯುತ್ತವೆ."
+      ],
+      "group": null,
+      "tokens": [
+        141,
+        153
+      ],
+      "samples": [
+        198600,
+        213000
+      ]
+    }
+  ]
+}

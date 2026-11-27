@@ -74,6 +74,11 @@
       wipe: (id, t, d) => { track(id, [key(t, [0, 0, 0, 1, 0]), key(t + .04, N)]); reveal(id, t, t + d, 'rightward'); },
       // drop: falls in from above and settles
       drop: (id, t, d) => track(id, [key(t, [0, -.06, 0, 1, 0]), key(t + d, N, 'out')]),
+      // P023.5 directional entries, masked along the direction of travel (whole words only; shaping untouched)
+      'from-left': (id, t, d) => { track(id, [key(t, [-.08, 0, 0, 1, 0]), key(t + .03, [-.08, 0, 0, 1, 1]), key(t + d, N, 'outQuart')]); reveal(id, t, t + d * .8, 'rightward'); },
+      'from-right': (id, t, d) => { track(id, [key(t, [.08, 0, 0, 1, 0]), key(t + .03, [.08, 0, 0, 1, 1]), key(t + d, N, 'outQuart')]); reveal(id, t, t + d * .8, 'leftward'); },
+      // stamp: lands with weight from slightly small and settles (never larger than 1.03x, so fitted words stay inside)
+      stamp: (id, t, d) => track(id, [key(t, [0, 0, 0, .72, 0]), key(t + d * .35, [0, 0, 0, .95, 1], 'outQuart'), key(t + d, N, 'settle')]),
     };
     return {
       // Reveal a word on its own speech cue (required) with an effect.
@@ -82,6 +87,13 @@
       emphasize: (id, when, hold = 99) => { const t = at(when); glow(id, [key(t, [0]), key(t + .2, [1], 'out'), key(t + .2 + hold, [1])]); return t; },
       // Push a word out (up and away), e.g. when the next line takes its place.
       exit: (id, when, dur = .3, keys = []) => { const t = at(when); track(id, [...keys, key(t, N), key(t + dur, [0, -.04, 0, .9, 0], 'in')]); return t; },
+      // Shape interaction: a shape object crosses [fromX → toX] (stage fractions) around a word's cue while the word is
+      // revealed in the same direction, as if the shape uncovers it. The word keeps its own speech cue.
+      sweep: (shapeId, wordId, cueId, {fromX = -.7, toX = .7, lead = .25, dur = .7} = {}) => {
+        const t = cueTime(cueId, wordId), dir = toX > fromX ? 'rightward' : 'leftward';
+        track(shapeId, [key(t - lead, [fromX, 0, 0, 1, 1]), key(t - lead + dur, [toX, 0, 0, 1, 1], 'inOut')]);
+        track(wordId, [key(t, [0, 0, 0, 1, 0]), key(t + .03, N)]); reveal(wordId, t, t + dur * .55, dir); return t;
+      },
       // Typographic transformation: `from` gives way as `to` is said (to's own cue).
       swap: (from, to, cueId, effect = 'slam', dur = .32) => {
         const t = cueTime(cueId, to);
@@ -98,5 +110,8 @@
     };
   }
 
-  globalThis.kineticKit = {art: {field}, word, narrationWords, fit, FONT, css, LABEL_STYLES, motion};
+  // Simple meaningful shapes for type to interact with (Bass-style): a disc and a slab, as symbol markup (viewBox 0 0 200 200 / w h).
+  const disc = (color, {ring = null} = {}) => `<circle cx="100" cy="100" r="98" fill="${color}"/>` + (ring ? `<circle cx="100" cy="100" r="92" fill="none" stroke="${ring}" stroke-width="6"/>` : '');
+  const slab = (w, h, color) => `<rect width="${w}" height="${h}" fill="${color}"/>`;
+  globalThis.kineticKit = {art: {field, disc, slab}, word, narrationWords, fit, FONT, css, LABEL_STYLES, motion};
 })();

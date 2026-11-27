@@ -275,6 +275,59 @@
     return {body, head, arm, blink, origin: {arm: `${(198 / 300 * 100).toFixed(1)}% ${(196 / 640 * 100).toFixed(1)}%`, head: `${(156 / 300 * 100).toFixed(1)}% ${(168 / 640 * 100).toFixed(1)}%`}, viewBox: '0 0 300 640'};
   };
 
+  // ---------- P023.1 craft: hand-cut paper (extracted from E21; reference study: layered cut-paper illustration) ----------
+  // Observed in professional layered paper work: wide, low-opacity shadows that are darkest at the cut edge and fade
+  // outward, all along one light; crisp but irregular hand-cut silhouettes; a lighter paper core visible on cut edges;
+  // folded pieces with a lit and a shaded half; translucent vellum. All optional; the topic decides where they serve.
+  const smoothClosed = pts => { const n = pts.length, md = (p, q) => [(p[0] + q[0]) / 2, (p[1] + q[1]) / 2];
+    let d = `M${md(pts[n - 1], pts[0]).map(f).join(' ')}`;
+    for (let i = 0; i < n; i++) d += ` Q${pts[i].map(f).join(' ')} ${md(pts[i], pts[(i + 1) % n]).map(f).join(' ')}`; return d + 'Z'; };
+  // Hand-cut outline: a polygon densified every `step` units and nudged by up to ±amp/2 (seeded), then smoothed.
+  const deckle = (pts, seed = 1, amp = 2.4, step = 16) => {
+    const out = [];
+    pts.forEach((p, i) => { const q = pts[(i + 1) % pts.length], n = Math.max(1, Math.round(Math.hypot(q[0] - p[0], q[1] - p[1]) / step));
+      for (let k = 0; k < n; k++) out.push([p[0] + (q[0] - p[0]) * k / n + (rnd(seed + out.length) - .5) * amp, p[1] + (q[1] - p[1]) * k / n + (rnd(seed + 99 + out.length) - .5) * amp]); });
+    return smoothClosed(out);
+  };
+  // Soft paper shadow without a blur filter (no per-frame filter cost): three stacked silhouettes, each further along the
+  // light and wider (round-joined stroke), at low opacity, so the shadow is darkest near the cut edge and fades outward.
+  const penumbra = (d, {lit = light(), depth = 8, opacity = .16} = {}) => [[.7, 2, .5], [1.4, depth * .9, .32], [2.2, depth * 1.8, .18]].map(([k, w, o]) =>
+    `<path d="${d}" fill="${lit.shade}" stroke="${lit.shade}" stroke-width="${f(w)}" stroke-linejoin="round" opacity="${f(opacity * o * 2)}" transform="translate(${f(lit.dir[0] * depth * k)} ${f(lit.dir[1] * depth * k)})"/>`).join('');
+  // A paper piece: soft penumbra + cut (crisp contact shadow, lit rim, optional texture) + the lighter cut-edge core.
+  // `soft: 'blur'` uses an SVG blur filter instead (pass `filter`, an existing filter id); prefer the default for animated pieces.
+  const piece = (d, {fill, lit = light(), depth = 8, ambient = .16, rim = .45, texture = null, textureOpacity = .95, core = .5, soft = 'stack', filter = null} = {}) =>
+    (soft === 'blur' && filter ? `<path d="${d}" fill="${lit.shade}" opacity="${ambient}" filter="url(#${filter})" transform="translate(${f(lit.dir[0] * depth * 2.2)} ${f(lit.dir[1] * depth * 2.2)})"/>`
+      : soft ? penumbra(d, {lit, depth, opacity: ambient}) : '') +
+    cut(d, {fill, lit, depth: depth * .5, rim, shadowOpacity: .34, texture, textureOpacity}) +
+    (core ? `<path d="${d}" fill="none" stroke="${mix(fill, '#ffffff', core)}" stroke-width="1.6" opacity=".75"/>` : '');
+  // Folded piece (petal, leaf, wing, paper fold): crease from base b to tip t, half-width wd; the half facing away from the
+  // light is shaded, the crease catches a highlight.
+  const folded = (b, t, wd, {fill, lit = light(), depth = 6, seed = 1, texture = null} = {}) => {
+    const [bx, by] = b, [tx, ty] = t, dx = tx - bx, dy = ty - by, L = Math.hypot(dx, dy) || 1, nx = -dy / L, ny = dx / L;
+    const side = sgn => [b, ...[.25, .5, .75].map(k => [bx + dx * k + nx * sgn * wd * Math.sin(Math.PI * (k * .9 + .05)), by + dy * k + ny * sgn * wd * Math.sin(Math.PI * (k * .9 + .05))]), t];
+    const away = nx * lit.dir[0] + ny * lit.dir[1] < 0 ? -1 : 1;
+    return piece(deckle([...side(1), ...side(-1).slice(1, -1).reverse()], seed, 2), {fill, lit, depth, texture}) +
+      `<path d="${deckle(side(away), seed + 7, 1.4)}" fill="${mix(fill, lit.shade, .22)}" opacity=".85"/>` +
+      `<path d="M${f(bx)} ${f(by)}L${f(tx)} ${f(ty)}" stroke="${mix(fill, '#ffffff', .45)}" stroke-width="2" opacity=".7"/>`;
+  };
+  // Vellum (tracing paper): translucent sheet with optional vein or fold lines and a bright cut edge.
+  const vellum = (d, {lines = '', texture = null, opacity = .62} = {}) => `<path d="${d}" fill="#2a1d10" opacity=".08" transform="translate(6 10)"/>` +
+    `<path d="${d}" fill="#f4f8f6" opacity="${opacity}"/>` + (texture ? `<path d="${d}" fill="url(#${texture})" opacity=".7"/>` : '') +
+    (lines ? `<path d="${lines}" stroke="#8b8a80" stroke-width="1.6" fill="none" opacity=".7"/>` : '') + `<path d="${d}" fill="none" stroke="#ffffff" stroke-width="2" opacity=".8"/>`;
+  // Nested layers receding to a lit core (tunnel / burrow / cell / portal framing): n deckled rings from the frame edge
+  // toward (cx, cy), darkest outside and brightest at the core, each with a soft penumbra. A strong focal device; use it
+  // when the story pulls the eye into one place.
+  const recede = (w, h, cx, cy, {colors, seed = 1, lit = light(), depth = 10, amp = 10, n = colors?.length ?? 5} = {}) => {
+    if (!Array.isArray(colors) || colors.length < 2) fail('recede needs colors (outer to core)');
+    let s = `<rect width="${f(w)}" height="${f(h)}" fill="${colors[0]}"/>`;
+    for (let i = 1; i < colors.length; i++) {
+      const k = 1 - i / (colors.length + .4), rx = Math.max(cx, w - cx) * k * 1.15, ry = Math.max(cy, h - cy) * k * 1.1;
+      const pts = Array.from({length: 24}, (_, j) => { const a = j / 24 * Math.PI * 2, wob = 1 + (rnd(seed + i * 31 + j) - .5) * .16; return [cx + Math.cos(a) * rx * wob, cy + Math.sin(a) * ry * wob]; });
+      s += piece(deckle(pts, seed + i * 7, amp, 30), {fill: colors[i], lit, depth, rim: .3, core: .3});
+    }
+    return s;
+  };
+
   // ---------- label treatments (object option labelStyle; CSS below, include kit.css in topic.css) ----------
   const LABEL_STYLES = ['tag', 'accent', 'plain', 'chip'];
   const css = `
@@ -344,5 +397,5 @@
   }
 
   globalThis.paperKit = {art: {fibres, sheet, layered, castShadow, ring, connector, tileTexture, parts,
-    light, mix, cut, gouache, wave, ridge, strata, sky, haze, textures, masonry, facade, foliage, water, figure}, css, LABEL_STYLES, motion};
+    light, mix, cut, gouache, wave, ridge, strata, sky, haze, textures, masonry, facade, foliage, water, figure, deckle, penumbra, piece, folded, vellum, recede}, css, LABEL_STYLES, motion};
 })();

@@ -1,0 +1,99 @@
+{
+  "schema": "video-creator.creative-plan",
+  "version": 1,
+  "style": "whiteboard",
+  "style_reason": "Progressively add the balance and interest beside the savings illustrations on one board.",
+  "story": [
+    {
+      "segment": "s1",
+      "role": "hook",
+      "idea": "Hypothetical starting deposit and rate"
+    },
+    {
+      "segment": "s2",
+      "role": "mechanism",
+      "idea": "Retain the first interest"
+    },
+    {
+      "segment": "s3",
+      "role": "resolution",
+      "idea": "Earn interest on the higher balance"
+    }
+  ],
+  "motifs": [
+    {
+      "id": "balance",
+      "stands_for": "The same savings carried into the following year."
+    }
+  ],
+  "assets": [
+    {
+      "id": "ink",
+      "kind": "procedural",
+      "description": "Original marker strokes, banknote and coin cuts, and Hindi board lettering."
+    }
+  ],
+  "guardrails": [
+    "Hypothetical fixed annual rate; no extra contributions or withdrawals.",
+    "The coin drawings are conceptual, not a count."
+  ],
+  "shots": [
+    {
+      "id": "board",
+      "purpose": "Grow one board from the deposit to the compound-interest payoff.",
+      "objects": [
+        {
+          "id": "principal",
+          "description": "Draw the deposit and the hypothetical rate.",
+          "asset": "ink",
+          "motif": "balance"
+        },
+        {
+          "id": "first-year",
+          "description": "Connect the deposit to the first interest and balance.",
+          "asset": "ink",
+          "motif": "balance"
+        },
+        {
+          "id": "second-year",
+          "description": "Show the second balance and call out the extra rupee.",
+          "asset": "ink",
+          "motif": "balance"
+        }
+      ],
+      "cues": [
+        {
+          "id": "saved-cue",
+          "object": "principal",
+          "action": "Draw the deposit and the hypothetical rate.",
+          "at": {
+            "word": "बचाए",
+            "segment": "s1"
+          }
+        },
+        {
+          "id": "balance-cue",
+          "object": "first-year",
+          "action": "Connect the deposit to the first interest and balance.",
+          "at": {
+            "word": "खाते",
+            "segment": "s2"
+          }
+        },
+        {
+          "id": "compound-cue",
+          "object": "second-year",
+          "action": "Show the second balance and call out the extra rupee.",
+          "at": {
+            "word": "इक्कीस",
+            "segment": "s3"
+          }
+        }
+      ]
+    }
+  ],
+  "narration": {
+    "sha256": "0e31e57b321b0fd6d2557c136581bdfa02910c4b877c16d3d8002dee5627535f",
+    "timeline": "narration/narration-6add7fb71b.timeline.json"
+  }
+}

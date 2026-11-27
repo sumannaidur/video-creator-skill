@@ -1,0 +1,455 @@
+{
+  "result": "mapped",
+  "words": [
+    {
+      "label": "Hold",
+      "text_start": 0,
+      "text_end": 4,
+      "method": "mithi_token_word_ownership",
+      "model_words": [
+        "Hold"
+      ],
+      "group": null,
+      "tokens": [
+        1,
+        5
+      ],
+      "samples": [
+        1200,
+        7800
+      ]
+    },
+    {
+      "label": "an",
+      "text_start": 5,
+      "text_end": 7,
+      "method": "mithi_token_word_ownership",
+      "model_words": [
+        "an"
+      ],
+      "group": null,
+      "tokens": [
+        7,
+        8
+      ],
+      "samples": [
+        9000,
+        11400
+      ]
+    },
+    {
+      "label": "autumn",
+      "text_start": 8,
+      "text_end": 14,
+      "method": "mithi_token_word_ownership",
+      "model_words": [
+        "autumn"
+      ],
+      "group": null,
+      "tokens": [
+        10,
+        14
+      ],
+      "samples": [
+        13200,
+        20400
+      ]
+    },
+    {
+      "label": "leaf",
+      "text_start": 15,
+      "text_end": 19,
+      "method": "mithi_token_word_ownership",
+      "model_words": [
+        "leaf"
+      ],
+      "group": null,
+      "tokens": [
+        16,
+        19
+      ],
+      "samples": [
+        22200,
+        26400
+      ]
+    },
+    {
+      "label": "up",
+      "text_start": 20,
+      "text_end": 22,
+      "method": "mithi_token_word_ownership",
+      "model_words": [
+        "up"
+      ],
+      "group": null,
+      "tokens": [
+        21,
+        23
+      ],
+      "samples": [
+        28200,
+        31200
+      ]
+    },
+    {
+      "label": "to",
+      "text_start": 23,
+      "text_end": 25,
+      "method": "mithi_token_word_ownership",
+      "model_words": [
+        "to"
+      ],
+      "group": null,
+      "tokens": [
+        25,
+        26
+      ],
+      "samples": [
+        32400,
+        34200
+      ]
+    },
+    {
+      "label": "the",
+      "text_start": 26,
+      "text_end": 29,
+      "method": "mithi_token_word_ownership",
+      "model_words": [
+        "the"
+      ],
+      "group": null,
+      "tokens": [
+        28,
+        29
+      ],
+      "samples": [
+        35400,
+        37200
+      ]
+    },
+    {
+      "label": "light.",
+      "text_start": 30,
+      "text_end": 36,
+      "method": "mithi_token_word_ownership",
+      "model_words": [
+        "light."
+      ],
+      "group": null,
+      "tokens": [
+        31,
+        34
+      ],
+      "samples": [
+        38400,
+        45000
+      ]
+    },
+    {
+      "label": "Where",
+      "text_start": 37,
+      "text_end": 42,
+      "method": "mithi_token_word_ownership",
+      "model_words": [
+        "Where"
+      ],
+      "group": null,
+      "tokens": [
+        37,
+        40
+      ],
+      "samples": [
+        54600,
+        59400
+      ]
+    },
+    {
+      "label": "did",
+      "text_start": 43,
+      "text_end": 46,
+      "method": "mithi_token_word_ownership",
+      "model_words": [
+        "did"
+      ],
+      "group": null,
+      "tokens": [
+        42,
+        45
+      ],
+      "samples": [
+        60600,
+        64200
+      ]
+    },
+    {
+      "label": "that",
+      "text_start": 47,
+      "text_end": 51,
+      "method": "mithi_token_word_ownership",
+      "model_words": [
+        "that"
+      ],
+      "group": null,
+      "tokens": [
+        47,
+        50
+      ],
+      "samples": [
+        64800,
+        69000
+      ]
+    },
+    {
+      "label": "gold",
+      "text_start": 52,
+      "text_end": 56,
+      "method": "mithi_token_word_ownership",
+      "model_words": [
+        "gold"
+      ],
+      "group": null,
+      "tokens": [
+        52,
+        56
+      ],
+      "samples": [
+        70800,
+        77400
+      ]
+    },
+    {
+      "label": "come",
+      "text_start": 57,
+      "text_end": 61,
+      "method": "mithi_token_word_ownership",
+      "model_words": [
+        "come"
+      ],
+      "group": null,
+      "tokens": [
+        58,
+        61
+      ],
+      "samples": [
+        78600,
+        82800
+      ]
+    },
+    {
+      "label": "from?",
+      "text_start": 62,
+      "text_end": 67,
+      "method": "mithi_token_word_ownership",
+      "model_words": [
+        "from?"
+      ],
+      "group": null,
+      "tokens": [
+        63,
+        66
+      ],
+      "samples": [
+        84600,
+        90600
+      ]
+    },
+    {
+      "label": "All",
+      "text_start": 68,
+      "text_end": 71,
+      "method": "mithi_token_word_ownership",
+      "model_words": [
+        "All"
+      ],
+      "group": null,
+      "tokens": [
+        69,
+        71
+      ],
+      "samples": [
+        100200,
+        105000
+      ]
+    },
+    {
+      "label": "summer,",
+      "text_start": 72,
+      "text_end": 79,
+      "method": "mithi_token_word_ownership",
+      "model_words": [
+        "summer,"
+      ],
+      "group": null,
+      "tokens": [
+        73,
+        78
+      ],
+      "samples": [
+        106800,
+        115800
+      ]
+    },
+    {
+      "label": "a",
+      "text_start": 80,
+      "text_end": 81,
+      "method": "mithi_token_word_ownership",
+      "model_words": [
+        "a"
+      ],
+      "group": null,
+      "tokens": [
+        81,
+        81
+      ],
+      "samples": [
+        123600,
+        126000
+      ]
+    },
+    {
+      "label": "pigment",
+      "text_start": 82,
+      "text_end": 89,
+      "method": "mithi_token_word_ownership",
+      "model_words": [
+        "pigment"
+      ],
+      "group": null,
+      "tokens": [
+        83,
+        90
+      ],
+      "samples": [
+        128400,
+        138600
+      ]
+    },
+    {
+      "label": "called",
+      "text_start": 90,
+      "text_end": 96,
+      "method": "mithi_token_word_ownership",
+      "model_words": [
+        "called"
+      ],
+      "group": null,
+      "tokens": [
+        92,
+        96
+      ],
+      "samples": [
+        139800,
+        145800
+      ]
+    },
+    {
+      "label": "chlorophyll",
+      "text_start": 97,
+      "text_end": 108,
+      "method": "mithi_token_word_ownership",
+      "model_words": [
+        "chlorophyll"
+      ],
+      "group": null,
+      "tokens": [
+        98,
+        107
+      ],
+      "samples": [
+        147600,
+        159600
+      ]
+    },
+    {
+      "label": "made",
+      "text_start": 109,
+      "text_end": 113,
+      "method": "mithi_token_word_ownership",
+      "model_words": [
+        "made"
+      ],
+      "group": null,
+      "tokens": [
+        109,
+        112
+      ],
+      "samples": [
+        160800,
+        165600
+      ]
+    },
+    {
+      "label": "the",
+      "text_start": 114,
+      "text_end": 117,
+      "method": "mithi_token_word_ownership",
+      "model_words": [
+        "the"
+      ],
+      "group": null,
+      "tokens": [
+        114,
+        115
+      ],
+      "samples": [
+        166800,
+        168600
+      ]
+    },
+    {
+      "label": "leaf",
+      "text_start": 118,
+      "text_end": 122,
+      "method": "mithi_token_word_ownership",
+      "model_words": [
+        "leaf"
+      ],
+      "group": null,
+      "tokens": [
+        117,
+        120
+      ],
+      "samples": [
+        169800,
+        174600
+      ]
+    },
+    {
+      "label": "look",
+      "text_start": 123,
+      "text_end": 127,
+      "method": "mithi_token_word_ownership",
+      "model_words": [
+        "look"
+      ],
+      "group": null,
+      "tokens": [
+        122,
+        125
+      ],
+      "samples": [
+        176400,
+        181200
+      ]
+    },
+    {
+      "label": "green.",
+      "text_start": 128,
+      "text_end": 134,
+      "method": "mithi_token_word_ownership",
+      "model_words": [
+        "green."
+      ],
+      "group": null,
+      "tokens": [
+        127,
+        131
+      ],
+      "samples": [
+        182400,
+        187800
+      ]
+    }
+  ]
+}

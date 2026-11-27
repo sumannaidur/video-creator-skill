@@ -1,0 +1,361 @@
+{
+  "schema": "video-creator.creative-plan",
+  "version": 1,
+  "narration": {
+    "timeline": "narration/narration-f7bde5a1a8.timeline.json",
+    "sha256": "4c35a1c845738e85ca5bc7582d7d29850194b2690ab66ae81c74668c56cc24dd"
+  },
+  "style": "paper-explainer",
+  "style_reason": "A seed in soil is a tactile, layered world: cut-paper strata, a gouache bean and paper-cell roots make growth and gravity physical.",
+  "story": [
+    {
+      "segment": "s1",
+      "role": "hook",
+      "idea": "upside-down seed still sorts up from down"
+    },
+    {
+      "segment": "s2",
+      "role": "mechanism",
+      "idea": "starch grains in root-cap cells"
+    },
+    {
+      "segment": "s3",
+      "role": "mechanism",
+      "idea": "grains settle like sand: the direction signal"
+    },
+    {
+      "segment": "s4",
+      "role": "mechanism",
+      "idea": "auxin below, more growth above, root bends down"
+    },
+    {
+      "segment": "s5",
+      "role": "resolution",
+      "idea": "stem's lower side grows more: the sprout rises"
+    }
+  ],
+  "visual_hook": "a seed upside down, roots and shoot both making U-turns",
+  "transformation": "a straight sideways root bending downward cell by cell",
+  "payoff": "the stem breaking the soil surface into light, leaves opening",
+  "motifs": [
+    {
+      "id": "m-down",
+      "stands_for": "the sideways-to-down turn: grains, then roots, obey the same down"
+    }
+  ],
+  "assets": [
+    {
+      "id": "a-seed",
+      "kind": "original",
+      "description": "procedural cut-paper soil section, bean, segmented root and stem, root-tip cells and starch grains"
+    }
+  ],
+  "guardrails": [
+    "'like sand' is a simile",
+    "cells, grains and auxin schematic, not to scale",
+    "textbook mechanism only; the source notes refinement"
+  ],
+  "shots": [
+    {
+      "id": "hook",
+      "purpose": "Hook: a bean planted upside down in a cut-paper soil section; its root climbs, hooks over and dives down while its shoot hooks round and climbs.",
+      "objects": [
+        {
+          "id": "h-r0",
+          "asset": "a-seed",
+          "description": "first root segment"
+        },
+        {
+          "id": "h-s0",
+          "asset": "a-seed",
+          "description": "first shoot segment"
+        }
+      ],
+      "cues": [
+        {
+          "id": "root",
+          "object": "h-r0",
+          "action": "root grows, U-turns down",
+          "at": {
+            "sample": 72600,
+            "seconds": 3.025,
+            "kind": "word",
+            "label": "కిందికే,",
+            "segment": "s1",
+            "timing_source": "native_model",
+            "edge": "start",
+            "offset_ms": 0
+          }
+        },
+        {
+          "id": "shoot",
+          "object": "h-s0",
+          "action": "shoot grows, U-turns up",
+          "at": {
+            "sample": 105000,
+            "seconds": 4.375,
+            "kind": "word",
+            "label": "పైకే",
+            "segment": "s1",
+            "timing_source": "native_model",
+            "edge": "start",
+            "offset_ms": 0
+          }
+        }
+      ],
+      "start": {
+        "sample": 0,
+        "seconds": 0.0,
+        "kind": "bounds",
+        "label": "narration-start",
+        "timing_source": "narration_bounds"
+      },
+      "end": {
+        "sample": 151200,
+        "seconds": 6.3
+      },
+      "camera": []
+    },
+    {
+      "id": "tip",
+      "start": {
+        "sample": 151200,
+        "seconds": 6.3,
+        "kind": "segment",
+        "label": "s2",
+        "segment": null,
+        "timing_source": "segment_boundary",
+        "edge": "start",
+        "offset_ms": 0
+      },
+      "purpose": "Inside the root tip: cap cells hold starch grains resting on the floor; the root tips over and the grains slide to the new floor like sand.",
+      "objects": [
+        {
+          "id": "l-grains",
+          "asset": "a-seed",
+          "description": "grains tag"
+        },
+        {
+          "id": "o-arrow",
+          "asset": "a-seed",
+          "description": "gravity arrow"
+        },
+        {
+          "id": "l-signal",
+          "asset": "a-seed",
+          "description": "signal tag"
+        }
+      ],
+      "cues": [
+        {
+          "id": "grains",
+          "object": "l-grains",
+          "action": "grains tagged",
+          "at": {
+            "sample": 246600,
+            "seconds": 10.275,
+            "kind": "word",
+            "label": "రేణువులు",
+            "segment": "s2",
+            "timing_source": "native_model",
+            "edge": "start",
+            "offset_ms": 0
+          }
+        },
+        {
+          "id": "slide",
+          "object": "o-arrow",
+          "action": "grains slide; gravity arrow",
+          "at": {
+            "sample": 330600,
+            "seconds": 13.775,
+            "kind": "word",
+            "label": "జారి",
+            "segment": "s3",
+            "timing_source": "native_model",
+            "edge": "start",
+            "offset_ms": 0
+          }
+        },
+        {
+          "id": "signal",
+          "object": "l-signal",
+          "action": "direction signal tag",
+          "at": {
+            "sample": 375000,
+            "seconds": 15.625,
+            "kind": "word",
+            "label": "సంకేతం.",
+            "segment": "s3",
+            "timing_source": "native_model",
+            "edge": "start",
+            "offset_ms": 0
+          }
+        }
+      ],
+      "end": {
+        "sample": 394200,
+        "seconds": 16.425
+      },
+      "camera": []
+    },
+    {
+      "id": "bend",
+      "start": {
+        "sample": 394200,
+        "seconds": 16.425,
+        "kind": "segment",
+        "label": "s4",
+        "segment": null,
+        "timing_source": "segment_boundary",
+        "edge": "start",
+        "offset_ms": 0
+      },
+      "purpose": "Transformation: a sideways root, cell by cell; auxin gathers on its lower side; the upper side grows more and the root bends down.",
+      "objects": [
+        {
+          "id": "l-auxin",
+          "asset": "a-seed",
+          "description": "auxin tag"
+        },
+        {
+          "id": "b-a4",
+          "asset": "a-seed",
+          "description": "auxin on the lower side"
+        },
+        {
+          "id": "l-grow",
+          "asset": "a-seed",
+          "description": "upper side grows tag"
+        }
+      ],
+      "cues": [
+        {
+          "id": "auxin",
+          "object": "l-auxin",
+          "action": "auxin tagged",
+          "at": {
+            "sample": 411000,
+            "seconds": 17.125,
+            "kind": "word",
+            "label": "ఆక్సిన్",
+            "segment": "s4",
+            "timing_source": "native_model",
+            "edge": "start",
+            "offset_ms": 0
+          }
+        },
+        {
+          "id": "lower",
+          "object": "b-a4",
+          "action": "auxin collects below",
+          "at": {
+            "sample": 450000,
+            "seconds": 18.75,
+            "kind": "word",
+            "label": "కింది",
+            "segment": "s4",
+            "timing_source": "native_model",
+            "edge": "start",
+            "offset_ms": 0
+          }
+        },
+        {
+          "id": "grow",
+          "object": "l-grow",
+          "action": "upper side grows; root bends",
+          "at": {
+            "sample": 556200,
+            "seconds": 23.175,
+            "kind": "word",
+            "label": "ఎక్కువ",
+            "segment": "s4",
+            "timing_source": "native_model",
+            "edge": "start",
+            "offset_ms": 0
+          }
+        }
+      ],
+      "end": {
+        "sample": 622800,
+        "seconds": 25.95
+      },
+      "camera": []
+    },
+    {
+      "id": "rise",
+      "start": {
+        "sample": 622800,
+        "seconds": 25.95,
+        "kind": "segment",
+        "label": "s5",
+        "segment": null,
+        "timing_source": "segment_boundary",
+        "edge": "start",
+        "offset_ms": 0
+      },
+      "purpose": "Payoff: the stem's lower side grows more, so it curls up through the soil surface and opens two leaves into the light.",
+      "objects": [
+        {
+          "id": "l-stem",
+          "asset": "a-seed",
+          "description": "stem tag"
+        },
+        {
+          "id": "p-leaf-l",
+          "asset": "a-seed",
+          "description": "first leaf"
+        }
+      ],
+      "cues": [
+        {
+          "id": "stem",
+          "object": "l-stem",
+          "action": "stem tagged",
+          "at": {
+            "sample": 624000,
+            "seconds": 26.0,
+            "kind": "word",
+            "label": "కాండంలో",
+            "segment": "s5",
+            "timing_source": "native_model",
+            "edge": "start",
+            "offset_ms": 0
+          }
+        },
+        {
+          "id": "up",
+          "object": "p-leaf-l",
+          "action": "leaves open above ground",
+          "at": {
+            "sample": 712800,
+            "seconds": 29.7,
+            "kind": "word",
+            "label": "పైకి",
+            "segment": "s5",
+            "timing_source": "native_model",
+            "edge": "start",
+            "offset_ms": 0
+          }
+        }
+      ],
+      "end": {
+        "sample": 733800,
+        "seconds": 30.575
+      },
+      "camera": []
+    }
+  ],
+  "resolution": {
+    "timeline_sha256": "4c35a1c845738e85ca5bc7582d7d29850194b2690ab66ae81c74668c56cc24dd",
+    "audio_sha256": "c0e5b0d6621eeb67eb8c1d6b0916a8ae5db35aabfe87b424f119a7501812b7ef",
+    "sample_rate": 24000,
+    "sample_count": 733800,
+    "timing_status": "unreviewed",
+    "record_sources": [
+      "native_model"
+    ],
+    "run_id": "combined-31ed22cbd7b83f0d6cee0204",
+    "timeline": "narration/narration-f7bde5a1a8.timeline.json"
+  }
+}

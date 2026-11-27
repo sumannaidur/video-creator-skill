@@ -1,0 +1,177 @@
+{
+  "schema": "video-creator.preflight",
+  "version": 1,
+  "status": "failed",
+  "passed": false,
+  "scope": "technical geometry, visibility and timing checks only; not an assessment of artistic quality",
+  "binding": {
+    "sha256": "66ec887f2933f9b6e8339c66d67e3d45627a5f25e351a94c03dfa871b2298dcf",
+    "topic": "8a9a818efede1b73e2f2bc9168e02b229a06608fd9e3c6eab807120b4c83e2bb",
+    "timeline": "e4f3e80a814e6fb69a1588986c87b4ea8b5493e9ca5341eb827df760333221a7",
+    "plan": "d31c939e4b5c25c70f94753900e5101e5addfea2c29c6252f6b0a6e01cfa404b",
+    "backend": "whiteboard",
+    "browser": "Chrome/157.0.8103.79",
+    "settings": {
+      "style": "whiteboard",
+      "width": 1080,
+      "height": 1920,
+      "scale": null,
+      "fps": 30,
+      "quality": null,
+      "options": null,
+      "locale": "en-IN",
+      "font": null,
+      "browserArgs": [
+        "--disable-gpu"
+      ],
+      "deviceScaleFactor": 1,
+      "captions": "artifact"
+    }
+  },
+  "frames": {
+    "inspected": 342,
+    "fps": 30,
+    "duration": 11.4,
+    "transitionFrames": 0,
+    "cameraZoomRange": [
+      1.00049,
+      1.42
+    ]
+  },
+  "exempt": {
+    "transition": 0,
+    "decorativeOffStage": 0
+  },
+  "checks": {
+    "safe-area": {
+      "status": "passed",
+      "scope": "backend",
+      "defects": 0
+    },
+    "text-clipping": {
+      "status": "passed",
+      "scope": "backend",
+      "defects": 0
+    },
+    "required-object-bounds": {
+      "status": "passed",
+      "scope": "backend",
+      "defects": 0
+    },
+    "invalid-transform": {
+      "status": "passed",
+      "scope": "backend",
+      "defects": 0
+    },
+    "visibility-requirement": {
+      "status": "passed",
+      "scope": "backend",
+      "defects": 0
+    },
+    "plate-coverage": {
+      "status": "passed",
+      "scope": "backend",
+      "defects": 0
+    },
+    "viewport": {
+      "status": "passed",
+      "scope": "backend",
+      "defects": 0
+    },
+    "caption-layout": {
+      "status": "passed",
+      "scope": "backend",
+      "defects": 0
+    },
+    "ink-legibility": {
+      "status": "failed",
+      "scope": "backend",
+      "defects": 3
+    },
+    "data-marks": {
+      "status": "passed",
+      "scope": "backend",
+      "defects": 0
+    },
+    "mechanism": {
+      "status": "passed",
+      "scope": "backend",
+      "defects": 0
+    },
+    "frame-cadence": {
+      "status": "passed",
+      "scope": "core",
+      "inspected": 342,
+      "expected": 342,
+      "fps": 30
+    },
+    "cue-visibility": {
+      "status": "passed",
+      "scope": "core",
+      "cues": 5,
+      "defects": 0
+    },
+    "speech-cue-timing": {
+      "status": "passed",
+      "scope": "core",
+      "cues": 5,
+      "defects": 0
+    },
+    "camera-timing": {
+      "status": "not-applicable",
+      "scope": "core",
+      "reason": "the plan declares no camera moments"
+    }
+  },
+  "defects": [
+    {
+      "type": "ink-legibility",
+      "object": "o-bake",
+      "shot": "bake",
+      "firstFrame": 40,
+      "lastFrame": 101,
+      "seconds": 1.3333333333333333,
+      "endSeconds": 3.3666666666666667,
+      "frames": 62,
+      "evidence": {
+        "reason": "board lettering smaller than its minimum",
+        "text": "bakes",
+        "px": 17.8,
+        "min": 26
+      }
+    },
+    {
+      "type": "ink-legibility",
+      "object": "o-bake",
+      "shot": "store",
+      "firstFrame": 102,
+      "lastFrame": 169,
+      "seconds": 3.4,
+      "endSeconds": 5.633333333333334,
+      "frames": 68,
+      "evidence": {
+        "reason": "board lettering smaller than its minimum",
+        "text": "bakes",
+        "px": 17.4,
+        "min": 26
+      }
+    },
+    {
+      "type": "ink-legibility",
+      "object": "o-bake",
+      "shot": "night",
+      "firstFrame": 317,
+      "lastFrame": 341,
+      "seconds": 10.566666666666666,
+      "endSeconds": 11.366666666666667,
+      "frames": 25,
+      "evidence": {
+        "reason": "board lettering smaller than its minimum",
+        "text": "bakes",
+        "px": 15.8,
+        "min": 26
+      }
+    }
+  ],
+  "wallSeconds": 3.7
+}

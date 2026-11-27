@@ -1,0 +1,348 @@
+{
+  "version": 1,
+  "unit": "sample",
+  "locale": "en-IN",
+  "validation": "unreviewed",
+  "run_id": "f97bd39251e54f378b073133b532a413",
+  "timing": {
+    "method": "native_durations",
+    "provider": "mithi",
+    "word_timing": false,
+    "note": "word mapping rejected: [word-mismatch] text word '1969,' does not match the model words ['one']"
+  },
+  "audio": {
+    "path": "narration/segments/s1-806853e295.wav",
+    "sha256": "d6c9b66ad3941b7dfe3f6a5aeef9c64e52a86fcbb84ab3de199699b8547b58c8",
+    "sample_rate": 24000,
+    "sample_count": 173400
+  },
+  "text": {
+    "display": "On the sixteenth of July, 1969, a Saturn Five rocket lifted three men off the Earth.",
+    "speech": "On the sixteenth of July, 1969, a Saturn Five rocket lifted three men off the Earth."
+  },
+  "records": [
+    {
+      "kind": "word",
+      "label": "On",
+      "start": null,
+      "end": null,
+      "source": null,
+      "text_ref": {
+        "field": "speech",
+        "start": 0,
+        "end": 2
+      },
+      "display_ref": {
+        "field": "display",
+        "start": 0,
+        "end": 2
+      }
+    },
+    {
+      "kind": "word",
+      "label": "the",
+      "start": null,
+      "end": null,
+      "source": null,
+      "text_ref": {
+        "field": "speech",
+        "start": 3,
+        "end": 6
+      },
+      "display_ref": {
+        "field": "display",
+        "start": 3,
+        "end": 6
+      }
+    },
+    {
+      "kind": "word",
+      "label": "sixteenth",
+      "start": null,
+      "end": null,
+      "source": null,
+      "text_ref": {
+        "field": "speech",
+        "start": 7,
+        "end": 16
+      },
+      "display_ref": {
+        "field": "display",
+        "start": 7,
+        "end": 16
+      }
+    },
+    {
+      "kind": "word",
+      "label": "of",
+      "start": null,
+      "end": null,
+      "source": null,
+      "text_ref": {
+        "field": "speech",
+        "start": 17,
+        "end": 19
+      },
+      "display_ref": {
+        "field": "display",
+        "start": 17,
+        "end": 19
+      }
+    },
+    {
+      "kind": "word",
+      "label": "July,",
+      "start": null,
+      "end": null,
+      "source": null,
+      "text_ref": {
+        "field": "speech",
+        "start": 20,
+        "end": 25
+      },
+      "display_ref": {
+        "field": "display",
+        "start": 20,
+        "end": 25
+      }
+    },
+    {
+      "kind": "phrase",
+      "label": "On the sixteenth of July,",
+      "start": null,
+      "end": null,
+      "source": null,
+      "text_ref": {
+        "field": "speech",
+        "start": 0,
+        "end": 25
+      },
+      "display_ref": {
+        "field": "display",
+        "start": 0,
+        "end": 25
+      }
+    },
+    {
+      "kind": "word",
+      "label": "1969,",
+      "start": null,
+      "end": null,
+      "source": null,
+      "text_ref": {
+        "field": "speech",
+        "start": 26,
+        "end": 31
+      },
+      "display_ref": {
+        "field": "display",
+        "start": 26,
+        "end": 31
+      }
+    },
+    {
+      "kind": "phrase",
+      "label": "1969,",
+      "start": null,
+      "end": null,
+      "source": null,
+      "text_ref": {
+        "field": "speech",
+        "start": 26,
+        "end": 31
+      },
+      "display_ref": {
+        "field": "display",
+        "start": 26,
+        "end": 31
+      }
+    },
+    {
+      "kind": "word",
+      "label": "a",
+      "start": null,
+      "end": null,
+      "source": null,
+      "text_ref": {
+        "field": "speech",
+        "start": 32,
+        "end": 33
+      },
+      "display_ref": {
+        "field": "display",
+        "start": 32,
+        "end": 33
+      }
+    },
+    {
+      "kind": "word",
+      "label": "Saturn",
+      "start": null,
+      "end": null,
+      "source": null,
+      "text_ref": {
+        "field": "speech",
+        "start": 34,
+        "end": 40
+      },
+      "display_ref": {
+        "field": "display",
+        "start": 34,
+        "end": 40
+      }
+    },
+    {
+      "kind": "word",
+      "label": "Five",
+      "start": null,
+      "end": null,
+      "source": null,
+      "text_ref": {
+        "field": "speech",
+        "start": 41,
+        "end": 45
+      },
+      "display_ref": {
+        "field": "display",
+        "start": 41,
+        "end": 45
+      }
+    },
+    {
+      "kind": "word",
+      "label": "rocket",
+      "start": null,
+      "end": null,
+      "source": null,
+      "text_ref": {
+        "field": "speech",
+        "start": 46,
+        "end": 52
+      },
+      "display_ref": {
+        "field": "display",
+        "start": 46,
+        "end": 52
+      }
+    },
+    {
+      "kind": "word",
+      "label": "lifted",
+      "start": null,
+      "end": null,
+      "source": null,
+      "text_ref": {
+        "field": "speech",
+        "start": 53,
+        "end": 59
+      },
+      "display_ref": {
+        "field": "display",
+        "start": 53,
+        "end": 59
+      }
+    },
+    {
+      "kind": "word",
+      "label": "three",
+      "start": null,
+      "end": null,
+      "source": null,
+      "text_ref": {
+        "field": "speech",
+        "start": 60,
+        "end": 65
+      },
+      "display_ref": {
+        "field": "display",
+        "start": 60,
+        "end": 65
+      }
+    },
+    {
+      "kind": "word",
+      "label": "men",
+      "start": null,
+      "end": null,
+      "source": null,
+      "text_ref": {
+        "field": "speech",
+        "start": 66,
+        "end": 69
+      },
+      "display_ref": {
+        "field": "display",
+        "start": 66,
+        "end": 69
+      }
+    },
+    {
+      "kind": "word",
+      "label": "off",
+      "start": null,
+      "end": null,
+      "source": null,
+      "text_ref": {
+        "field": "speech",
+        "start": 70,
+        "end": 73
+      },
+      "display_ref": {
+        "field": "display",
+        "start": 70,
+        "end": 73
+      }
+    },
+    {
+      "kind": "word",
+      "label": "the",
+      "start": null,
+      "end": null,
+      "source": null,
+      "text_ref": {
+        "field": "speech",
+        "start": 74,
+        "end": 77
+      },
+      "display_ref": {
+        "field": "display",
+        "start": 74,
+        "end": 77
+      }
+    },
+    {
+      "kind": "word",
+      "label": "Earth.",
+      "start": null,
+      "end": null,
+      "source": null,
+      "text_ref": {
+        "field": "speech",
+        "start": 78,
+        "end": 84
+      },
+      "display_ref": {
+        "field": "display",
+        "start": 78,
+        "end": 84
+      }
+    },
+    {
+      "kind": "phrase",
+      "label": "a Saturn Five rocket lifted three men off the Earth.",
+      "start": null,
+      "end": null,
+      "source": null,
+      "text_ref": {
+        "field": "speech",
+        "start": 32,
+        "end": 84
+      },
+      "display_ref": {
+        "field": "display",
+        "start": 32,
+        "end": 84
+      }
+    }
+  ]
+}

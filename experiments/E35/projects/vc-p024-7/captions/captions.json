@@ -1,0 +1,349 @@
+{
+  "schema": "video-creator.captions",
+  "version": 1,
+  "locale": "en-IN",
+  "narration": {
+    "timeline": "narration/narration-0de6f3bec8.timeline.json",
+    "timeline_sha256": "5f127b68a8de753d9494e7bdbe96c1e945c6d487770f813b28f3a0ad601f01ef",
+    "audio_sha256": "431895cb665c05d6631ac1148228a12c736f70103476a5b8dfadce645813e96e",
+    "sample_rate": 24000,
+    "sample_count": 762000,
+    "timing_status": "unreviewed",
+    "timing_method": null,
+    "run_id": "combined-c57e9ac369ef5abd0212a5cf"
+  },
+  "config": {
+    "enabled": true,
+    "burn_in": true,
+    "subtitle_files": [
+      "srt",
+      "vtt"
+    ],
+    "mode": "phrase",
+    "max_chars": 42,
+    "max_words": 6,
+    "max_lines": 2,
+    "hold_ms": 700
+  },
+  "cues": [
+    {
+      "start_sample": 1200,
+      "speech_end_sample": 56400,
+      "text": "How can a square on a label hold a message?",
+      "text_ref": {
+        "field": "speech",
+        "start": 0,
+        "end": 43
+      },
+      "segment": "s1",
+      "timing_sources": [
+        "native_model"
+      ],
+      "long": false,
+      "end_sample": 67200,
+      "id": "c1",
+      "start": 0.05,
+      "end": 2.8
+    },
+    {
+      "start_sample": 67200,
+      "speech_end_sample": 107400,
+      "text": "Look closely at a QR code.",
+      "text_ref": {
+        "field": "speech",
+        "start": 44,
+        "end": 70
+      },
+      "segment": "s1",
+      "timing_sources": [
+        "native_model"
+      ],
+      "long": false,
+      "end_sample": 117600,
+      "id": "c2",
+      "start": 2.8,
+      "end": 4.9
+    },
+    {
+      "start_sample": 117600,
+      "speech_end_sample": 168000,
+      "text": "Its light and dark squares form a grid,",
+      "text_ref": {
+        "field": "speech",
+        "start": 71,
+        "end": 110
+      },
+      "segment": "s1",
+      "timing_sources": [
+        "native_model"
+      ],
+      "long": false,
+      "end_sample": 175800,
+      "id": "c3",
+      "start": 4.9,
+      "end": 7.325
+    },
+    {
+      "start_sample": 175800,
+      "speech_end_sample": 224400,
+      "text": "with information arranged across rows and",
+      "text_ref": {
+        "field": "speech",
+        "start": 111,
+        "end": 152
+      },
+      "segment": "s1",
+      "timing_sources": [
+        "native_model"
+      ],
+      "long": false,
+      "end_sample": 225600,
+      "id": "c4",
+      "start": 7.325,
+      "end": 9.4
+    },
+    {
+      "start_sample": 225600,
+      "speech_end_sample": 234600,
+      "text": "columns.",
+      "text_ref": {
+        "field": "speech",
+        "start": 153,
+        "end": 161
+      },
+      "segment": "s1",
+      "timing_sources": [
+        "native_model"
+      ],
+      "long": false,
+      "end_sample": 242400,
+      "id": "c5",
+      "start": 9.4,
+      "end": 10.1
+    },
+    {
+      "start_sample": 242400,
+      "speech_end_sample": 251400,
+      "text": "First,",
+      "text_ref": {
+        "field": "speech",
+        "start": 162,
+        "end": 168
+      },
+      "segment": "s2",
+      "timing_sources": [
+        "native_model"
+      ],
+      "long": false,
+      "end_sample": 259800,
+      "id": "c6",
+      "start": 10.1,
+      "end": 10.825
+    },
+    {
+      "start_sample": 259800,
+      "speech_end_sample": 316200,
+      "text": "the scanner finds three large corner patterns.",
+      "text_ref": {
+        "field": "speech",
+        "start": 169,
+        "end": 215
+      },
+      "segment": "s2",
+      "timing_sources": [
+        "native_model"
+      ],
+      "long": false,
+      "end_sample": 327600,
+      "id": "c7",
+      "start": 10.825,
+      "end": 13.65
+    },
+    {
+      "start_sample": 327600,
+      "speech_end_sample": 386400,
+      "text": "They show where the code is and which way it faces.",
+      "text_ref": {
+        "field": "speech",
+        "start": 216,
+        "end": 267
+      },
+      "segment": "s2",
+      "timing_sources": [
+        "native_model"
+      ],
+      "long": false,
+      "end_sample": 396600,
+      "id": "c8",
+      "start": 13.65,
+      "end": 16.525
+    },
+    {
+      "start_sample": 396600,
+      "speech_end_sample": 456600,
+      "text": "Alternating timing marks help the scanner line up",
+      "text_ref": {
+        "field": "speech",
+        "start": 268,
+        "end": 317
+      },
+      "segment": "s2",
+      "timing_sources": [
+        "native_model"
+      ],
+      "long": false,
+      "end_sample": 457800,
+      "id": "c9",
+      "start": 16.525,
+      "end": 19.075
+    },
+    {
+      "start_sample": 457800,
+      "speech_end_sample": 478800,
+      "text": "with the little squares.",
+      "text_ref": {
+        "field": "speech",
+        "start": 318,
+        "end": 342
+      },
+      "segment": "s2",
+      "timing_sources": [
+        "native_model"
+      ],
+      "long": false,
+      "end_sample": 486600,
+      "id": "c10",
+      "start": 19.075,
+      "end": 20.275
+    },
+    {
+      "start_sample": 486600,
+      "speech_end_sample": 512400,
+      "text": "Once it has the grid,",
+      "text_ref": {
+        "field": "speech",
+        "start": 343,
+        "end": 364
+      },
+      "segment": "s3",
+      "timing_sources": [
+        "native_model"
+      ],
+      "long": false,
+      "end_sample": 521400,
+      "id": "c11",
+      "start": 20.275,
+      "end": 21.725
+    },
+    {
+      "start_sample": 521400,
+      "speech_end_sample": 573000,
+      "text": "the reader can interpret the encoded data.",
+      "text_ref": {
+        "field": "speech",
+        "start": 365,
+        "end": 407
+      },
+      "segment": "s3",
+      "timing_sources": [
+        "native_model"
+      ],
+      "long": false,
+      "end_sample": 586200,
+      "id": "c12",
+      "start": 21.725,
+      "end": 24.425
+    },
+    {
+      "start_sample": 586200,
+      "speech_end_sample": 648000,
+      "text": "Some of those squares carry extra information for",
+      "text_ref": {
+        "field": "speech",
+        "start": 408,
+        "end": 457
+      },
+      "segment": "s3",
+      "timing_sources": [
+        "native_model"
+      ],
+      "long": false,
+      "end_sample": 649200,
+      "id": "c13",
+      "start": 24.425,
+      "end": 27.05
+    },
+    {
+      "start_sample": 649200,
+      "speech_end_sample": 665400,
+      "text": "error correction,",
+      "text_ref": {
+        "field": "speech",
+        "start": 458,
+        "end": 475
+      },
+      "segment": "s3",
+      "timing_sources": [
+        "native_model"
+      ],
+      "long": false,
+      "end_sample": 676200,
+      "id": "c14",
+      "start": 27.05,
+      "end": 28.175
+    },
+    {
+      "start_sample": 676200,
+      "speech_end_sample": 739200,
+      "text": "which can help recover a message even if part of the",
+      "text_ref": {
+        "field": "speech",
+        "start": 476,
+        "end": 528
+      },
+      "segment": "s3",
+      "timing_sources": [
+        "native_model"
+      ],
+      "long": false,
+      "end_sample": 740400,
+      "id": "c15",
+      "start": 28.175,
+      "end": 30.85
+    },
+    {
+      "start_sample": 740400,
+      "speech_end_sample": 760200,
+      "text": "code is damaged.",
+      "text_ref": {
+        "field": "speech",
+        "start": 529,
+        "end": 545
+      },
+      "segment": "s3",
+      "timing_sources": [
+        "native_model"
+      ],
+      "long": false,
+      "end_sample": 762000,
+      "id": "c16",
+      "start": 30.85,
+      "end": 31.75
+    }
+  ],
+  "files": {
+    "srt": {
+      "path": "captions/captions.srt",
+      "sha256": "76bbc1e605c3b41bf70c25fcb945fd5d934d8dab0e2504e493d20a03e1005060"
+    },
+    "vtt": {
+      "path": "captions/captions.vtt",
+      "sha256": "39731bb95cc4ad3b23bb32e59039e002980ba1331407110b96e79c9fea861c6f"
+    }
+  },
+  "review": {
+    "technical": "passed",
+    "language": "pending native-reader review",
+    "readability": "pending human review"
+  }
+}

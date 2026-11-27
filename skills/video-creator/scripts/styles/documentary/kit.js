@@ -97,5 +97,22 @@
     };
   }
 
-  globalThis.docKit = {art: {photo, footage, sea, land, route, place, compass, grain, vignette}, asset, credit, treatmentCss, css, LABEL_STYLES, motion};
+  // P023.8 cinematic cropping of one photograph into the frame (Ken Burns with intent): the photo object is placed at the
+  // stage centre at width 100 (the view caps widths at 100 %); the cover factor travels in the track's scale. cover(...)
+  // gives that factor; focus(...) returns the track value [dx, dy, 0, base·scale, 1] that brings photo point (u, v)
+  // (fractions of the photo) to the frame centre at `scale` (1 = just covering), clamped so the photo always covers the
+  // frame (no empty edges). Use the same values on pinned layers (below).
+  const cover = (photoAspect, stageAspect) => Math.max(1, photoAspect / stageAspect);
+  const focus = ({photoAspect, stageAspect, base}, [u, v], scale = 1) => {
+    const wf = base * scale, hf = base * scale / photoAspect * stageAspect, mx = Math.max(0, (wf - 1) / 2), my = Math.max(0, (hf - 1) / 2);
+    const cl = (x, m) => Math.max(-m, Math.min(m, x));
+    return [cl((.5 - u) * wf, mx), cl((.5 - v) * hf, my), 0, base * scale, 1];
+  };
+  // Pinned annotation art: drawn in the photo's own pixel coordinates (view box 0 0 photoW photoH), placed and tracked
+  // exactly like the photo, so circles and leaders stay on the people and objects they mark while the camera crops.
+  const ring = (x, y, r, {color = '#f2e6c9', width = 4} = {}) => `<circle cx="${f(x)}" cy="${f(y)}" r="${f(r)}" fill="none" stroke="${color}" stroke-width="${width}"/>` +
+    `<circle cx="${f(x)}" cy="${f(y)}" r="${f(r + width * 2)}" fill="none" stroke="#000" stroke-opacity=".35" stroke-width="${width * .6}"/>`;
+  const leader = ([x0, y0], [x1, y1], {color = '#f2e6c9', width = 3} = {}) => `<path d="M${f(x0)} ${f(y0)}L${f(x1)} ${f(y1)}" stroke="${color}" stroke-width="${width}"/><circle cx="${f(x1)}" cy="${f(y1)}" r="${f(width * 1.6)}" fill="${color}"/>`;
+
+  globalThis.docKit = {art: {photo, footage, sea, land, route, place, compass, grain, vignette, ring, leader}, asset, credit, treatmentCss, css, LABEL_STYLES, motion, cover, focus};
 })();

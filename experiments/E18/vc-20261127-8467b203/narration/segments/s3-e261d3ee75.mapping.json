@@ -1,0 +1,275 @@
+{
+  "result": "mapped",
+  "words": [
+    {
+      "label": "తాళం",
+      "text_start": 0,
+      "text_end": 4,
+      "method": "mithi_token_word_ownership",
+      "model_words": [
+        "తాళం"
+      ],
+      "group": null,
+      "tokens": [
+        1,
+        7
+      ],
+      "samples": [
+        1200,
+        9600
+      ]
+    },
+    {
+      "label": "వేసిన",
+      "text_start": 5,
+      "text_end": 10,
+      "method": "mithi_token_word_ownership",
+      "model_words": [
+        "వేసిన"
+      ],
+      "group": null,
+      "tokens": [
+        9,
+        16
+      ],
+      "samples": [
+        10800,
+        20400
+      ]
+    },
+    {
+      "label": "మెసేజ్",
+      "text_start": 11,
+      "text_end": 17,
+      "method": "mithi_token_word_ownership",
+      "model_words": [
+        "మెసేజ్"
+      ],
+      "group": null,
+      "tokens": [
+        18,
+        24
+      ],
+      "samples": [
+        22200,
+        31800
+      ]
+    },
+    {
+      "label": "ఇంటర్నెట్",
+      "text_start": 18,
+      "text_end": 27,
+      "method": "mithi_token_word_ownership",
+      "model_words": [
+        "ఇంటర్నెట్"
+      ],
+      "group": null,
+      "tokens": [
+        26,
+        34
+      ],
+      "samples": [
+        33600,
+        45600
+      ]
+    },
+    {
+      "label": "ద్వారా",
+      "text_start": 28,
+      "text_end": 34,
+      "method": "mithi_token_word_ownership",
+      "model_words": [
+        "ద్వారా"
+      ],
+      "group": null,
+      "tokens": [
+        36,
+        43
+      ],
+      "samples": [
+        46800,
+        55200
+      ]
+    },
+    {
+      "label": "వాట్సాప్",
+      "text_start": 35,
+      "text_end": 43,
+      "method": "mithi_token_word_ownership",
+      "model_words": [
+        "వాట్సాప్"
+      ],
+      "group": null,
+      "tokens": [
+        45,
+        53
+      ],
+      "samples": [
+        60600,
+        73200
+      ]
+    },
+    {
+      "label": "సర్వర్‌",
+      "text_start": 44,
+      "text_end": 51,
+      "method": "mithi_token_word_ownership",
+      "model_words": [
+        "సర్వర్‌"
+      ],
+      "group": null,
+      "tokens": [
+        55,
+        61
+      ],
+      "samples": [
+        74400,
+        82200
+      ]
+    },
+    {
+      "label": "వైపు",
+      "text_start": 52,
+      "text_end": 56,
+      "method": "mithi_token_word_ownership",
+      "model_words": [
+        "వైపు"
+      ],
+      "group": null,
+      "tokens": [
+        63,
+        67
+      ],
+      "samples": [
+        83400,
+        89400
+      ]
+    },
+    {
+      "label": "దూసుకెళ్తుంది.",
+      "text_start": 57,
+      "text_end": 71,
+      "method": "mithi_token_word_ownership",
+      "model_words": [
+        "దూసుకెళ్తుంది."
+      ],
+      "group": null,
+      "tokens": [
+        69,
+        83
+      ],
+      "samples": [
+        90600,
+        108000
+      ]
+    },
+    {
+      "label": "మెసేజ్",
+      "text_start": 72,
+      "text_end": 78,
+      "method": "mithi_token_word_ownership",
+      "model_words": [
+        "మెసేజ్"
+      ],
+      "group": null,
+      "tokens": [
+        86,
+        92
+      ],
+      "samples": [
+        118800,
+        127800
+      ]
+    },
+    {
+      "label": "బయలుదేరిందని",
+      "text_start": 79,
+      "text_end": 91,
+      "method": "mithi_token_word_ownership",
+      "model_words": [
+        "బయలుదేరిందని"
+      ],
+      "group": null,
+      "tokens": [
+        94,
+        112
+      ],
+      "samples": [
+        129000,
+        149400
+      ]
+    },
+    {
+      "label": "ఒక",
+      "text_start": 92,
+      "text_end": 94,
+      "method": "mithi_token_word_ownership",
+      "model_words": [
+        "ఒక"
+      ],
+      "group": null,
+      "tokens": [
+        114,
+        117
+      ],
+      "samples": [
+        154200,
+        159000
+      ]
+    },
+    {
+      "label": "గ్రే",
+      "text_start": 95,
+      "text_end": 99,
+      "method": "mithi_token_word_ownership",
+      "model_words": [
+        "గ్రే"
+      ],
+      "group": null,
+      "tokens": [
+        119,
+        123
+      ],
+      "samples": [
+        160800,
+        165600
+      ]
+    },
+    {
+      "label": "టిక్",
+      "text_start": 100,
+      "text_end": 104,
+      "method": "mithi_token_word_ownership",
+      "model_words": [
+        "టిక్"
+      ],
+      "group": null,
+      "tokens": [
+        125,
+        128
+      ],
+      "samples": [
+        166800,
+        171000
+      ]
+    },
+    {
+      "label": "చెబుతుంది.",
+      "text_start": 105,
+      "text_end": 115,
+      "method": "mithi_token_word_ownership",
+      "model_words": [
+        "చెబుతుంది."
+      ],
+      "group": null,
+      "tokens": [
+        130,
+        140
+      ],
+      "samples": [
+        172200,
+        184200
+      ]
+    }
+  ]
+}

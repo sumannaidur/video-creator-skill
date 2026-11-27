@@ -1,0 +1,16 @@
+{
+  "passed": true,
+  "shots": 3,
+  "cues": 5,
+  "camera_keys": 0,
+  "timeline_sha256": "22bc9a45e0f63910858dd13fab952bdbf0414b4e1d947b8b7c89d6e3ef06ffc7",
+  "audio_sha256": "caa1dfeae32c247141d7d4cee325aaa27999e1e27a2fce29c6c4d5e653a880ba",
+  "sample_rate": 24000,
+  "sample_count": 268800,
+  "timing_status": "unreviewed",
+  "record_sources": [
+    "forced_alignment"
+  ],
+  "run_id": "synthetic-bike",
+  "timeline": "narration/narration.timeline.json"
+}

@@ -1,0 +1,509 @@
+{
+  "result": "mapped",
+  "words": [
+    {
+      "label": "As",
+      "text_start": 0,
+      "text_end": 2,
+      "method": "mithi_token_word_ownership",
+      "model_words": [
+        "As"
+      ],
+      "group": null,
+      "tokens": [
+        1,
+        3
+      ],
+      "samples": [
+        1200,
+        4200
+      ]
+    },
+    {
+      "label": "the",
+      "text_start": 3,
+      "text_end": 6,
+      "method": "mithi_token_word_ownership",
+      "model_words": [
+        "the"
+      ],
+      "group": null,
+      "tokens": [
+        5,
+        6
+      ],
+      "samples": [
+        5400,
+        7800
+      ]
+    },
+    {
+      "label": "leaf",
+      "text_start": 7,
+      "text_end": 11,
+      "method": "mithi_token_word_ownership",
+      "model_words": [
+        "leaf"
+      ],
+      "group": null,
+      "tokens": [
+        8,
+        11
+      ],
+      "samples": [
+        9600,
+        15000
+      ]
+    },
+    {
+      "label": "gets",
+      "text_start": 12,
+      "text_end": 16,
+      "method": "mithi_token_word_ownership",
+      "model_words": [
+        "gets"
+      ],
+      "group": null,
+      "tokens": [
+        13,
+        16
+      ],
+      "samples": [
+        16800,
+        22800
+      ]
+    },
+    {
+      "label": "ready",
+      "text_start": 17,
+      "text_end": 22,
+      "method": "mithi_token_word_ownership",
+      "model_words": [
+        "ready"
+      ],
+      "group": null,
+      "tokens": [
+        18,
+        22
+      ],
+      "samples": [
+        24000,
+        29400
+      ]
+    },
+    {
+      "label": "to",
+      "text_start": 23,
+      "text_end": 25,
+      "method": "mithi_token_word_ownership",
+      "model_words": [
+        "to"
+      ],
+      "group": null,
+      "tokens": [
+        24,
+        25
+      ],
+      "samples": [
+        31200,
+        33000
+      ]
+    },
+    {
+      "label": "fall,",
+      "text_start": 26,
+      "text_end": 31,
+      "method": "mithi_token_word_ownership",
+      "model_words": [
+        "fall,"
+      ],
+      "group": null,
+      "tokens": [
+        27,
+        30
+      ],
+      "samples": [
+        34800,
+        42000
+      ]
+    },
+    {
+      "label": "its",
+      "text_start": 32,
+      "text_end": 35,
+      "method": "mithi_token_word_ownership",
+      "model_words": [
+        "its"
+      ],
+      "group": null,
+      "tokens": [
+        33,
+        35
+      ],
+      "samples": [
+        49200,
+        52800
+      ]
+    },
+    {
+      "label": "chlorophyll",
+      "text_start": 36,
+      "text_end": 47,
+      "method": "mithi_token_word_ownership",
+      "model_words": [
+        "chlorophyll"
+      ],
+      "group": null,
+      "tokens": [
+        37,
+        46
+      ],
+      "samples": [
+        54000,
+        66000
+      ]
+    },
+    {
+      "label": "breaks",
+      "text_start": 48,
+      "text_end": 54,
+      "method": "mithi_token_word_ownership",
+      "model_words": [
+        "breaks"
+      ],
+      "group": null,
+      "tokens": [
+        48,
+        53
+      ],
+      "samples": [
+        67200,
+        73800
+      ]
+    },
+    {
+      "label": "down.",
+      "text_start": 55,
+      "text_end": 60,
+      "method": "mithi_token_word_ownership",
+      "model_words": [
+        "down."
+      ],
+      "group": null,
+      "tokens": [
+        55,
+        58
+      ],
+      "samples": [
+        75000,
+        79800
+      ]
+    },
+    {
+      "label": "Yellow",
+      "text_start": 61,
+      "text_end": 67,
+      "method": "mithi_token_word_ownership",
+      "model_words": [
+        "Yellow"
+      ],
+      "group": null,
+      "tokens": [
+        61,
+        65
+      ],
+      "samples": [
+        93600,
+        102600
+      ]
+    },
+    {
+      "label": "and",
+      "text_start": 68,
+      "text_end": 71,
+      "method": "mithi_token_word_ownership",
+      "model_words": [
+        "and"
+      ],
+      "group": null,
+      "tokens": [
+        67,
+        69
+      ],
+      "samples": [
+        103800,
+        107400
+      ]
+    },
+    {
+      "label": "orange",
+      "text_start": 72,
+      "text_end": 78,
+      "method": "mithi_token_word_ownership",
+      "model_words": [
+        "orange"
+      ],
+      "group": null,
+      "tokens": [
+        71,
+        76
+      ],
+      "samples": [
+        109200,
+        116400
+      ]
+    },
+    {
+      "label": "pigments",
+      "text_start": 79,
+      "text_end": 87,
+      "method": "mithi_token_word_ownership",
+      "model_words": [
+        "pigments"
+      ],
+      "group": null,
+      "tokens": [
+        78,
+        86
+      ],
+      "samples": [
+        117600,
+        127800
+      ]
+    },
+    {
+      "label": "were",
+      "text_start": 88,
+      "text_end": 92,
+      "method": "mithi_token_word_ownership",
+      "model_words": [
+        "were"
+      ],
+      "group": null,
+      "tokens": [
+        88,
+        90
+      ],
+      "samples": [
+        129000,
+        131400
+      ]
+    },
+    {
+      "label": "there",
+      "text_start": 93,
+      "text_end": 98,
+      "method": "mithi_token_word_ownership",
+      "model_words": [
+        "there"
+      ],
+      "group": null,
+      "tokens": [
+        92,
+        94
+      ],
+      "samples": [
+        132600,
+        136200
+      ]
+    },
+    {
+      "label": "all",
+      "text_start": 99,
+      "text_end": 102,
+      "method": "mithi_token_word_ownership",
+      "model_words": [
+        "all"
+      ],
+      "group": null,
+      "tokens": [
+        96,
+        98
+      ],
+      "samples": [
+        138000,
+        141000
+      ]
+    },
+    {
+      "label": "along.",
+      "text_start": 103,
+      "text_end": 109,
+      "method": "mithi_token_word_ownership",
+      "model_words": [
+        "along."
+      ],
+      "group": null,
+      "tokens": [
+        100,
+        104
+      ],
+      "samples": [
+        142200,
+        148800
+      ]
+    },
+    {
+      "label": "Now",
+      "text_start": 110,
+      "text_end": 113,
+      "method": "mithi_token_word_ownership",
+      "model_words": [
+        "Now"
+      ],
+      "group": null,
+      "tokens": [
+        107,
+        109
+      ],
+      "samples": [
+        159600,
+        165600
+      ]
+    },
+    {
+      "label": "that",
+      "text_start": 114,
+      "text_end": 118,
+      "method": "mithi_token_word_ownership",
+      "model_words": [
+        "that"
+      ],
+      "group": null,
+      "tokens": [
+        111,
+        113
+      ],
+      "samples": [
+        166200,
+        169800
+      ]
+    },
+    {
+      "label": "the",
+      "text_start": 119,
+      "text_end": 122,
+      "method": "mithi_token_word_ownership",
+      "model_words": [
+        "the"
+      ],
+      "group": null,
+      "tokens": [
+        115,
+        116
+      ],
+      "samples": [
+        170400,
+        172200
+      ]
+    },
+    {
+      "label": "green",
+      "text_start": 123,
+      "text_end": 128,
+      "method": "mithi_token_word_ownership",
+      "model_words": [
+        "green"
+      ],
+      "group": null,
+      "tokens": [
+        118,
+        122
+      ],
+      "samples": [
+        173400,
+        180600
+      ]
+    },
+    {
+      "label": "fades,",
+      "text_start": 129,
+      "text_end": 135,
+      "method": "mithi_token_word_ownership",
+      "model_words": [
+        "fades,"
+      ],
+      "group": null,
+      "tokens": [
+        124,
+        128
+      ],
+      "samples": [
+        182400,
+        190200
+      ]
+    },
+    {
+      "label": "we",
+      "text_start": 136,
+      "text_end": 138,
+      "method": "mithi_token_word_ownership",
+      "model_words": [
+        "we"
+      ],
+      "group": null,
+      "tokens": [
+        131,
+        132
+      ],
+      "samples": [
+        196800,
+        199200
+      ]
+    },
+    {
+      "label": "can",
+      "text_start": 139,
+      "text_end": 142,
+      "method": "mithi_token_word_ownership",
+      "model_words": [
+        "can"
+      ],
+      "group": null,
+      "tokens": [
+        134,
+        136
+      ],
+      "samples": [
+        199800,
+        203400
+      ]
+    },
+    {
+      "label": "see",
+      "text_start": 143,
+      "text_end": 146,
+      "method": "mithi_token_word_ownership",
+      "model_words": [
+        "see"
+      ],
+      "group": null,
+      "tokens": [
+        138,
+        140
+      ],
+      "samples": [
+        204600,
+        207600
+      ]
+    },
+    {
+      "label": "them.",
+      "text_start": 147,
+      "text_end": 152,
+      "method": "mithi_token_word_ownership",
+      "model_words": [
+        "them."
+      ],
+      "group": null,
+      "tokens": [
+        142,
+        145
+      ],
+      "samples": [
+        208800,
+        213000
+      ]
+    }
+  ]
+}

@@ -88,6 +88,15 @@ def detect(a):
     tools["ffmpeg"] = ff | dict(required=True, needed_for="encoding, mixing, validation")
     tools["ffprobe"] = tool("ffprobe", ["-hide_banner", "-version"], lambda t: (re.search(r"ffprobe version (\S+)", t) or [None, None])[1]) | dict(
         required=True, needed_for="media validation")
+    # Optional (P024.1B): Blender for pre-rendered artwork layers; never required, never substituted silently.
+    try:
+        import importlib.util
+        spec = importlib.util.spec_from_file_location("vc_blender_layers", HERE / "blender_layers.py")
+        mod = importlib.util.module_from_spec(spec)
+        spec.loader.exec_module(mod)
+        tools["blender"] = mod.detect()
+    except Exception as e:
+        tools["blender"] = dict(status="unknown", required=False, reason=str(e)[:120])
     report["tools"] = tools
     # Visual styles: planned registry + installed backends probed through their own interface.
     planned = {k: v for k, v in json.loads((HERE / "styles" / "registry.json").read_text(encoding="utf-8")).items() if not k.startswith("_")}

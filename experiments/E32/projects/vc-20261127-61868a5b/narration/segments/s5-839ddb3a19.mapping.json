@@ -1,0 +1,366 @@
+{
+  "result": "mapped",
+  "words": [
+    {
+      "label": "Aldrin",
+      "text_start": 0,
+      "text_end": 6,
+      "method": "mithi_token_word_ownership",
+      "model_words": [
+        "Aldrin"
+      ],
+      "group": null,
+      "tokens": [
+        1,
+        7
+      ],
+      "samples": [
+        1200,
+        10800
+      ]
+    },
+    {
+      "label": "photographed",
+      "text_start": 7,
+      "text_end": 19,
+      "method": "mithi_token_word_ownership",
+      "model_words": [
+        "photographed"
+      ],
+      "group": null,
+      "tokens": [
+        9,
+        19
+      ],
+      "samples": [
+        12600,
+        26400
+      ]
+    },
+    {
+      "label": "his",
+      "text_start": 20,
+      "text_end": 23,
+      "method": "mithi_token_word_ownership",
+      "model_words": [
+        "his"
+      ],
+      "group": null,
+      "tokens": [
+        21,
+        23
+      ],
+      "samples": [
+        27600,
+        30600
+      ]
+    },
+    {
+      "label": "own",
+      "text_start": 24,
+      "text_end": 27,
+      "method": "mithi_token_word_ownership",
+      "model_words": [
+        "own"
+      ],
+      "group": null,
+      "tokens": [
+        25,
+        27
+      ],
+      "samples": [
+        31800,
+        35400
+      ]
+    },
+    {
+      "label": "bootprint,",
+      "text_start": 28,
+      "text_end": 38,
+      "method": "mithi_token_word_ownership",
+      "model_words": [
+        "bootprint,"
+      ],
+      "group": null,
+      "tokens": [
+        29,
+        37
+      ],
+      "samples": [
+        37200,
+        49200
+      ]
+    },
+    {
+      "label": "to",
+      "text_start": 39,
+      "text_end": 41,
+      "method": "mithi_token_word_ownership",
+      "model_words": [
+        "to"
+      ],
+      "group": null,
+      "tokens": [
+        40,
+        41
+      ],
+      "samples": [
+        57600,
+        58800
+      ]
+    },
+    {
+      "label": "study",
+      "text_start": 42,
+      "text_end": 47,
+      "method": "mithi_token_word_ownership",
+      "model_words": [
+        "study"
+      ],
+      "group": null,
+      "tokens": [
+        43,
+        48
+      ],
+      "samples": [
+        60000,
+        68400
+      ]
+    },
+    {
+      "label": "the",
+      "text_start": 48,
+      "text_end": 51,
+      "method": "mithi_token_word_ownership",
+      "model_words": [
+        "the"
+      ],
+      "group": null,
+      "tokens": [
+        50,
+        51
+      ],
+      "samples": [
+        69600,
+        71400
+      ]
+    },
+    {
+      "label": "lunar",
+      "text_start": 52,
+      "text_end": 57,
+      "method": "mithi_token_word_ownership",
+      "model_words": [
+        "lunar"
+      ],
+      "group": null,
+      "tokens": [
+        53,
+        58
+      ],
+      "samples": [
+        72600,
+        80400
+      ]
+    },
+    {
+      "label": "soil.",
+      "text_start": 58,
+      "text_end": 63,
+      "method": "mithi_token_word_ownership",
+      "model_words": [
+        "soil."
+      ],
+      "group": null,
+      "tokens": [
+        60,
+        63
+      ],
+      "samples": [
+        81600,
+        88200
+      ]
+    },
+    {
+      "label": "On",
+      "text_start": 64,
+      "text_end": 66,
+      "method": "mithi_token_word_ownership",
+      "model_words": [
+        "On"
+      ],
+      "group": null,
+      "tokens": [
+        66,
+        68
+      ],
+      "samples": [
+        99000,
+        102000
+      ]
+    },
+    {
+      "label": "the",
+      "text_start": 67,
+      "text_end": 70,
+      "method": "mithi_token_word_ownership",
+      "model_words": [
+        "the"
+      ],
+      "group": null,
+      "tokens": [
+        70,
+        71
+      ],
+      "samples": [
+        103200,
+        105000
+      ]
+    },
+    {
+      "label": "twenty-fourth",
+      "text_start": 71,
+      "text_end": 84,
+      "method": "mithi_token_word_ownership",
+      "model_words": [
+        "twenty",
+        "fourth"
+      ],
+      "group": null,
+      "tokens": [
+        73,
+        85
+      ],
+      "samples": [
+        106200,
+        121200
+      ]
+    },
+    {
+      "label": "of",
+      "text_start": 85,
+      "text_end": 87,
+      "method": "mithi_token_word_ownership",
+      "model_words": [
+        "of"
+      ],
+      "group": null,
+      "tokens": [
+        87,
+        88
+      ],
+      "samples": [
+        122400,
+        124800
+      ]
+    },
+    {
+      "label": "July,",
+      "text_start": 88,
+      "text_end": 93,
+      "method": "mithi_token_word_ownership",
+      "model_words": [
+        "July,"
+      ],
+      "group": null,
+      "tokens": [
+        90,
+        94
+      ],
+      "samples": [
+        126000,
+        133800
+      ]
+    },
+    {
+      "label": "all",
+      "text_start": 94,
+      "text_end": 97,
+      "method": "mithi_token_word_ownership",
+      "model_words": [
+        "all"
+      ],
+      "group": null,
+      "tokens": [
+        97,
+        99
+      ],
+      "samples": [
+        141600,
+        146400
+      ]
+    },
+    {
+      "label": "three",
+      "text_start": 98,
+      "text_end": 103,
+      "method": "mithi_token_word_ownership",
+      "model_words": [
+        "three"
+      ],
+      "group": null,
+      "tokens": [
+        101,
+        104
+      ],
+      "samples": [
+        148200,
+        153000
+      ]
+    },
+    {
+      "label": "splashed",
+      "text_start": 104,
+      "text_end": 112,
+      "method": "mithi_token_word_ownership",
+      "model_words": [
+        "splashed"
+      ],
+      "group": null,
+      "tokens": [
+        106,
+        112
+      ],
+      "samples": [
+        154800,
+        165000
+      ]
+    },
+    {
+      "label": "down",
+      "text_start": 113,
+      "text_end": 117,
+      "method": "mithi_token_word_ownership",
+      "model_words": [
+        "down"
+      ],
+      "group": null,
+      "tokens": [
+        114,
+        117
+      ],
+      "samples": [
+        166200,
+        169800
+      ]
+    },
+    {
+      "label": "home.",
+      "text_start": 118,
+      "text_end": 123,
+      "method": "mithi_token_word_ownership",
+      "model_words": [
+        "home."
+      ],
+      "group": null,
+      "tokens": [
+        119,
+        122
+      ],
+      "samples": [
+        171000,
+        175200
+      ]
+    }
+  ]
+}

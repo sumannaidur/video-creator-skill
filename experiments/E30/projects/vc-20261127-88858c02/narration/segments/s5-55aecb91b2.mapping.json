@@ -1,0 +1,239 @@
+{
+  "result": "mapped",
+  "words": [
+    {
+      "label": "And",
+      "text_start": 0,
+      "text_end": 3,
+      "method": "mithi_token_word_ownership",
+      "model_words": [
+        "And"
+      ],
+      "group": null,
+      "tokens": [
+        1,
+        4
+      ],
+      "samples": [
+        1200,
+        4800
+      ]
+    },
+    {
+      "label": "the",
+      "text_start": 4,
+      "text_end": 7,
+      "method": "mithi_token_word_ownership",
+      "model_words": [
+        "the"
+      ],
+      "group": null,
+      "tokens": [
+        6,
+        7
+      ],
+      "samples": [
+        6000,
+        7800
+      ]
+    },
+    {
+      "label": "carrier",
+      "text_start": 8,
+      "text_end": 15,
+      "method": "mithi_token_word_ownership",
+      "model_words": [
+        "carrier"
+      ],
+      "group": null,
+      "tokens": [
+        9,
+        15
+      ],
+      "samples": [
+        9000,
+        19800
+      ]
+    },
+    {
+      "label": "always",
+      "text_start": 16,
+      "text_end": 22,
+      "method": "mithi_token_word_ownership",
+      "model_words": [
+        "always"
+      ],
+      "group": null,
+      "tokens": [
+        17,
+        23
+      ],
+      "samples": [
+        22200,
+        33000
+      ]
+    },
+    {
+      "label": "moves",
+      "text_start": 23,
+      "text_end": 28,
+      "method": "mithi_token_word_ownership",
+      "model_words": [
+        "moves"
+      ],
+      "group": null,
+      "tokens": [
+        25,
+        29
+      ],
+      "samples": [
+        34800,
+        41400
+      ]
+    },
+    {
+      "label": "at",
+      "text_start": 29,
+      "text_end": 31,
+      "method": "mithi_token_word_ownership",
+      "model_words": [
+        "at"
+      ],
+      "group": null,
+      "tokens": [
+        31,
+        32
+      ],
+      "samples": [
+        42600,
+        45000
+      ]
+    },
+    {
+      "label": "the",
+      "text_start": 32,
+      "text_end": 35,
+      "method": "mithi_token_word_ownership",
+      "model_words": [
+        "the"
+      ],
+      "group": null,
+      "tokens": [
+        34,
+        35
+      ],
+      "samples": [
+        46200,
+        48600
+      ]
+    },
+    {
+      "label": "average",
+      "text_start": 36,
+      "text_end": 43,
+      "method": "mithi_token_word_ownership",
+      "model_words": [
+        "average"
+      ],
+      "group": null,
+      "tokens": [
+        37,
+        43
+      ],
+      "samples": [
+        50400,
+        59400
+      ]
+    },
+    {
+      "label": "speed",
+      "text_start": 44,
+      "text_end": 49,
+      "method": "mithi_token_word_ownership",
+      "model_words": [
+        "speed"
+      ],
+      "group": null,
+      "tokens": [
+        45,
+        49
+      ],
+      "samples": [
+        60600,
+        67800
+      ]
+    },
+    {
+      "label": "of",
+      "text_start": 50,
+      "text_end": 52,
+      "method": "mithi_token_word_ownership",
+      "model_words": [
+        "of"
+      ],
+      "group": null,
+      "tokens": [
+        51,
+        52
+      ],
+      "samples": [
+        68400,
+        70200
+      ]
+    },
+    {
+      "label": "the",
+      "text_start": 53,
+      "text_end": 56,
+      "method": "mithi_token_word_ownership",
+      "model_words": [
+        "the"
+      ],
+      "group": null,
+      "tokens": [
+        54,
+        55
+      ],
+      "samples": [
+        71400,
+        73200
+      ]
+    },
+    {
+      "label": "two",
+      "text_start": 57,
+      "text_end": 60,
+      "method": "mithi_token_word_ownership",
+      "model_words": [
+        "two"
+      ],
+      "group": null,
+      "tokens": [
+        57,
+        59
+      ],
+      "samples": [
+        75000,
+        78000
+      ]
+    },
+    {
+      "label": "wheels.",
+      "text_start": 61,
+      "text_end": 68,
+      "method": "mithi_token_word_ownership",
+      "model_words": [
+        "wheels."
+      ],
+      "group": null,
+      "tokens": [
+        61,
+        65
+      ],
+      "samples": [
+        79200,
+        87000
+      ]
+    }
+  ]
+}

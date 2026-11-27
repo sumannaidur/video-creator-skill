@@ -1,0 +1,113 @@
+{
+  "result": "mapped",
+  "words": [
+    {
+      "label": "ಬೀಗದ",
+      "text_start": 0,
+      "text_end": 4,
+      "method": "mithi_token_word_ownership",
+      "model_words": [
+        "ಬೀಗದ"
+      ],
+      "group": null,
+      "tokens": [
+        1,
+        8
+      ],
+      "samples": [
+        1200,
+        11400
+      ]
+    },
+    {
+      "label": "ಒಳಗೆ",
+      "text_start": 5,
+      "text_end": 9,
+      "method": "mithi_token_word_ownership",
+      "model_words": [
+        "ಒಳಗೆ"
+      ],
+      "group": null,
+      "tokens": [
+        10,
+        15
+      ],
+      "samples": [
+        12600,
+        23400
+      ]
+    },
+    {
+      "label": "ಸ್ಪ್ರಿಂಗ್",
+      "text_start": 10,
+      "text_end": 19,
+      "method": "mithi_token_word_ownership",
+      "model_words": [
+        "ಸ್ಪ್ರಿಂಗ್"
+      ],
+      "group": null,
+      "tokens": [
+        17,
+        23
+      ],
+      "samples": [
+        27000,
+        36000
+      ]
+    },
+    {
+      "label": "ಒತ್ತಿದ",
+      "text_start": 20,
+      "text_end": 26,
+      "method": "mithi_token_word_ownership",
+      "model_words": [
+        "ಒತ್ತಿದ"
+      ],
+      "group": null,
+      "tokens": [
+        25,
+        31
+      ],
+      "samples": [
+        37800,
+        46800
+      ]
+    },
+    {
+      "label": "ಪಿನ್‌ಗಳ",
+      "text_start": 27,
+      "text_end": 34,
+      "method": "mithi_token_word_ownership",
+      "model_words": [
+        "ಪಿನ್‌ಗಳ"
+      ],
+      "group": null,
+      "tokens": [
+        33,
+        40
+      ],
+      "samples": [
+        48000,
+        58800
+      ]
+    },
+    {
+      "label": "ಜೋಡಿಗಳಿವೆ.",
+      "text_start": 35,
+      "text_end": 45,
+      "method": "mithi_token_word_ownership",
+      "model_words": [
+        "ಜೋಡಿಗಳಿವೆ."
+      ],
+      "group": null,
+      "tokens": [
+        42,
+        54
+      ],
+      "samples": [
+        60600,
+        75000
+      ]
+    }
+  ]
+}

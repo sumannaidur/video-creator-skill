@@ -70,6 +70,39 @@
       for (const [rr, da] of [[rf, -s * .55], [ra, -s * .3], [ra, s * .3], [rf, s * .55]]) pts.push([Math.cos(a + da) * rr, Math.sin(a + da) * rr]); }
     return Object.assign(extrude(pts, depth), {pitch: r, outer: ra});
   };
+  // P023.9 surfaces of revolution about Y: profile [[r, y], ...] (a closed outline in the r-y half plane, drawn
+  // counter-clockwise), swept over [from, to] radians with `seg` steps. Normals are smooth around the axis and across
+  // gentle profile bends (< 35°), crisp at corners. A partial sweep (cutaway) also returns `caps`: the two flat section
+  // faces, as a separate mesh so they can take a "cut" material.
+  const lathe = (profile, seg = 64, {from = 0, to = Math.PI * 2} = {}) => {
+    const n = profile.length, full = Math.abs(to - from - Math.PI * 2) < 1e-9, steps = Math.max(3, Math.round(seg * Math.abs(to - from) / (Math.PI * 2)));
+    const segN = profile.map((p, i) => { const q = profile[(i + 1) % n], dr = q[0] - p[0], dy = q[1] - p[1], l = Math.hypot(dr, dy) || 1; return [dy / l, -dr / l]; });
+    const vn = (i, end) => { const a = segN[i], b = end ? segN[(i + 1) % n] : segN[(i - 1 + n) % n];
+      return a[0] * b[0] + a[1] * b[1] > Math.cos(35 * Math.PI / 180) ? (([x, y]) => { const l = Math.hypot(x, y) || 1; return [x / l, y / l]; })([a[0] + b[0], a[1] + b[1]]) : a; };
+    const P = (r, y, th) => [r * Math.cos(th), y, r * Math.sin(th)], Nr = ([nr, ny], th) => [nr * Math.cos(th), ny, nr * Math.sin(th)];
+    const o = [];
+    for (let k = 0; k < steps; k++) {
+      const t0 = from + (to - from) * k / steps, t1 = from + (to - from) * (k + 1) / steps;
+      for (let i = 0; i < n; i++) {
+        const a = profile[i], b = profile[(i + 1) % n], na = vn(i, false), nb = vn(i, true);
+        const v = [[P(...a, t0), Nr(na, t0)], [P(...b, t0), Nr(nb, t0)], [P(...b, t1), Nr(nb, t1)], [P(...a, t1), Nr(na, t1)]];
+        for (const j of [0, 1, 2, 0, 2, 3]) o.push(...v[j][0], ...v[j][1]);
+      }
+    }
+    const rmax = Math.max(...profile.map(p => p[0])), ys = profile.map(p => p[1]);
+    const out = {data: o, bounds: [[-rmax, Math.min(...ys), -rmax], [rmax, Math.max(...ys), rmax]]};
+    if (!full) {
+      const c = profile.reduce((acc, p) => [acc[0] + p[0] / n, acc[1] + p[1] / n], [0, 0]), cap = [];
+      for (const [th, sgn] of [[from, -1], [to, 1]]) {
+        const nn = [-Math.sin(th) * sgn, 0, Math.cos(th) * sgn];
+        for (let i = 0; i < n; i++) { const a = profile[i], b = profile[(i + 1) % n]; for (const q of sgn > 0 ? [c, a, b] : [c, b, a]) cap.push(...P(q[0], q[1], th), ...nn); }
+      }
+      out.caps = {data: cap, bounds: out.bounds};
+    }
+    return out;
+  };
+  // Sphere of radius r (lathe of a semicircle; smooth).
+  const sphere = (r, seg = 32) => lathe(Array.from({length: seg / 2 + 1}, (_, i) => { const a = -Math.PI / 2 + i / (seg / 2) * Math.PI; return [Math.max(1e-4, Math.cos(a) * r), Math.sin(a) * r]; }), seg);
   const plane = (w, d) => { const o = []; quad(o, [-w / 2, 0, d / 2], [w / 2, 0, d / 2], [w / 2, 0, -d / 2], [-w / 2, 0, -d / 2], [0, 1, 0]); return {data: o, bounds: [[-w / 2, 0, -d / 2], [w / 2, 0, d / 2]]}; };
 
   // ---------- materials ----------
@@ -84,7 +117,7 @@
   const FS = `#version 300 es
     precision highp float; precision highp sampler2DShadow;
     in vec3 vN; in vec3 vW; in vec4 vL; out vec4 o;
-    uniform vec3 uColor, uEmis, uEye, uLdir, uSky, uGround, uKey; uniform float uMetal, uRough, uAlpha, uShadowOn; uniform sampler2DShadow uShadow;
+    uniform vec3 uColor, uEmis, uEye, uLdir, uSky, uGround, uKey; uniform float uMetal, uRough, uAlpha, uShadowOn, uEnv; uniform sampler2DShadow uShadow;
     float shadow() { vec3 p = vL.xyz / vL.w * .5 + .5; if (p.x < 0. || p.x > 1. || p.y < 0. || p.y > 1.) return 1.;
       float s = 0.; vec2 px = vec2(1. / 2048.); for (int x = -1; x <= 1; x++) for (int y = -1; y <= 1; y++) s += texture(uShadow, vec3(p.xy + vec2(x, y) * px, p.z - .0015)); return s / 9.; }
     void main() {
@@ -99,6 +132,12 @@
       vec3 specC = mix(vec3(1.), col, uMetal);
       float fres = pow(1. - max(dot(n, v), 0.), 4.);
       vec3 c = base * amb * .6 + base * key * nd * sh * 1.1 + specC * key * spec * sh + fres * sky * .12 + pow(uEmis, vec3(2.2));
+      // P023.9 optional studio reflection (scene.env > 0): a sky/ground gradient plus two softbox stripes, seen in the
+      // reflection vector, blurred by roughness; metals reflect in their own colour. env = 0 leaves legacy output unchanged.
+      if (uEnv > 0.) { vec3 r = reflect(-v, n); float blur = mix(18., 2., uRough);
+        float box = exp(-pow((r.x - .35) * blur * .5, 2.)) * smoothstep(-.1, .5, r.y) + .6 * exp(-pow((r.z + .45) * blur * .5, 2.)) * smoothstep(.1, .7, r.y);
+        vec3 env = mix(gnd * .5, sky, smoothstep(-.25, .45, r.y)) + key * box * mix(1.6, .5, uRough);
+        float f0 = mix(.04, 1., uMetal); c += uEnv * env * specC * (f0 + (1. - f0) * fres) * (1. - uRough * .55) * mix(.7, 1., sh); }
       o = vec4(pow(c, vec3(1. / 2.2)), uAlpha * mix(1., .6 + .4 * fres, step(uAlpha, .99)));
     }`;
   const SVS = `#version 300 es
@@ -211,7 +250,7 @@
     gl.uniformMatrix4fv(u.uView, false, view); gl.uniformMatrix4fv(u.uProj, false, proj); gl.uniformMatrix4fv(u.uLight, false, lightVP);
     gl.uniform3fv(u.uEye, cam.pos); gl.uniform3fv(u.uLdir, ld); gl.uniform3fv(u.uKey, hex(L.color));
     gl.uniform3fv(u.uSky, hex(s.sky ?? '#b9c8d8')); gl.uniform3fv(u.uGround, hex(s.ground ?? '#3a3028'));
-    gl.activeTexture(gl.TEXTURE0); gl.bindTexture(gl.TEXTURE_2D, shadowTex); gl.uniform1i(u.uShadow, 0); gl.uniform1f(u.uShadowOn, 1);
+    gl.activeTexture(gl.TEXTURE0); gl.bindTexture(gl.TEXTURE_2D, shadowTex); gl.uniform1i(u.uShadow, 0); gl.uniform1f(u.uShadowOn, 1); gl.uniform1f(u.uEnv, s.env ?? 0);
     const depth = m => { const p = M.xform(view, [m[12], m[13], m[14]]); return p[2]; };
     const opaque = items.filter(x => x.alpha >= .999), clear = items.filter(x => x.alpha < .999).sort((a, b) => depth(a.m) - depth(b.m));
     for (const [list, blend] of [[opaque, false], [clear, true]]) {
@@ -275,6 +314,6 @@
     };
   }
 
-  globalThis.k3d = {M, mesh: {box, cylinder, gear, plane, extrude}, material, scene, node, orbit, orbitKeys, keys, fitDistance, css, LABEL_STYLES, motion,
+  globalThis.k3d = {M, mesh: {box, cylinder, gear, plane, extrude, lathe, sphere}, material, scene, node, orbit, orbitKeys, keys, fitDistance, css, LABEL_STYLES, motion,
     info: () => { ensureGL(); const d = gl.getExtension('WEBGL_debug_renderer_info'); return {renderer: d ? gl.getParameter(d.UNMASKED_RENDERER_WEBGL) : gl.getParameter(gl.RENDERER)}; }};
 })();

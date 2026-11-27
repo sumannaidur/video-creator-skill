@@ -1,0 +1,29 @@
+[
+  {
+    "at": "2026-11-27T10:26:18+00:00",
+    "measured_seconds": 44.4,
+    "target_seconds": 30,
+    "deviation": 0.48,
+    "within": false,
+    "script_sha256": "ce36380db99836f4fb34dca82801007164ead6a8ea11fc762e2a4de86203226a",
+    "combined": "narration/narration-96840b43ff.wav"
+  },
+  {
+    "at": "2026-11-27T10:27:47+00:00",
+    "measured_seconds": 26.725,
+    "target_seconds": 30,
+    "deviation": -0.1092,
+    "within": false,
+    "script_sha256": "ab68c431af80770f1fb511a16459c4273def1c9fe87a7f7cc0f7101939bb3831",
+    "combined": "narration/narration-a1a35d4243.wav"
+  },
+  {
+    "at": "2026-11-27T10:32:16+00:00",
+    "measured_seconds": 29.375,
+    "target_seconds": 30,
+    "deviation": -0.0208,
+    "within": true,
+    "script_sha256": "14f7d2595d803461ff0a90ca97de1829d0fbef2ecf413e9a682969085ee7bc81",
+    "combined": "narration/narration-d4da6a0bd7.wav"
+  }
+]

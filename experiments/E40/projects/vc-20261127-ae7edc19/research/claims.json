@@ -1,0 +1,63 @@
+{
+  "topic": "How does a touchscreen know where you touched?",
+  "claims": [
+    {
+      "id": "c1",
+      "claim": "A capacitive panel is glass coated with a transparent conductor such as ITO.",
+      "sources": [
+        "S1"
+      ],
+      "status": "verified",
+      "passage": "consists of an insulator, such as glass, coated with a transparent conductor, such as indium tin oxide (ITO)",
+      "segment": "s2"
+    },
+    {
+      "id": "c2",
+      "claim": "In mutual capacitance, conductors cross without electrical contact; each crossing forms a capacitor.",
+      "sources": [
+        "S1"
+      ],
+      "status": "verified",
+      "passage": "the mutual crossing of one electrical conductor with another ... with no direct electrical contact, forms a capacitor",
+      "segment": "s2"
+    },
+    {
+      "id": "c3",
+      "claim": "Voltage pulses are applied to the conductors one at a time and couple to every crossing conductor.",
+      "sources": [
+        "S1"
+      ],
+      "status": "verified",
+      "passage": "High frequency voltage pulses are applied to these conductors, one at a time. These pulses capacitively couple to every conductor that intersects it",
+      "segment": "s3"
+    },
+    {
+      "id": "c4",
+      "claim": "The body conducts; a finger changes the local field, reducing capacitance between the crossing conductors.",
+      "sources": [
+        "S1"
+      ],
+      "status": "verified",
+      "passage": "the human body is also an electrical conductor ... Bringing a finger ... changes the local electrostatic field, which in turn reduces the capacitance between these intersecting conductors",
+      "segment": "s4"
+    },
+    {
+      "id": "c5",
+      "claim": "A significant change in sensed signal strength is used to determine the touch location, processed by the controller.",
+      "sources": [
+        "S1"
+      ],
+      "status": "verified",
+      "passage": "Any significant change in the strength of the signal sensed is used to determine ...; The location is then sent to the controller",
+      "segment": "s5"
+    }
+  ],
+  "guardrails": [
+    "'listening' and 'steals' are metaphors",
+    "grid drawn schematically: real pitch is millimetres and line counts are higher",
+    "mutual-capacitance design only; other touch technologies exist"
+  ],
+  "open_questions": [
+    "secondary source"
+  ]
+}

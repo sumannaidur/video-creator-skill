@@ -1,0 +1,167 @@
+{
+  "result": "mapped",
+  "words": [
+    {
+      "label": "பிறகு,",
+      "text_start": 0,
+      "text_end": 6,
+      "method": "mithi_token_word_ownership",
+      "model_words": [
+        "பிறகு,"
+      ],
+      "group": null,
+      "tokens": [
+        1,
+        7
+      ],
+      "samples": [
+        1200,
+        13200
+      ]
+    },
+    {
+      "label": "அட்டைகள்",
+      "text_start": 7,
+      "text_end": 15,
+      "method": "mithi_token_word_ownership",
+      "model_words": [
+        "அட்டைகள்"
+      ],
+      "group": null,
+      "tokens": [
+        10,
+        17
+      ],
+      "samples": [
+        21600,
+        34200
+      ]
+    },
+    {
+      "label": "இருந்த",
+      "text_start": 16,
+      "text_end": 22,
+      "method": "mithi_token_word_ownership",
+      "model_words": [
+        "இருந்த"
+      ],
+      "group": null,
+      "tokens": [
+        19,
+        25
+      ],
+      "samples": [
+        35400,
+        42600
+      ]
+    },
+    {
+      "label": "இடங்களை",
+      "text_start": 23,
+      "text_end": 30,
+      "method": "mithi_token_word_ownership",
+      "model_words": [
+        "இடங்களை"
+      ],
+      "group": null,
+      "tokens": [
+        27,
+        36
+      ],
+      "samples": [
+        44400,
+        57000
+      ]
+    },
+    {
+      "label": "அவர்களால்",
+      "text_start": 31,
+      "text_end": 40,
+      "method": "mithi_token_word_ownership",
+      "model_words": [
+        "அவர்களால்"
+      ],
+      "group": null,
+      "tokens": [
+        38,
+        49
+      ],
+      "samples": [
+        63000,
+        76800
+      ]
+    },
+    {
+      "label": "இன்னும்",
+      "text_start": 41,
+      "text_end": 48,
+      "method": "mithi_token_word_ownership",
+      "model_words": [
+        "இன்னும்"
+      ],
+      "group": null,
+      "tokens": [
+        51,
+        56
+      ],
+      "samples": [
+        80400,
+        89400
+      ]
+    },
+    {
+      "label": "நன்றாக",
+      "text_start": 49,
+      "text_end": 55,
+      "method": "mithi_token_word_ownership",
+      "model_words": [
+        "நன்றாக"
+      ],
+      "group": null,
+      "tokens": [
+        58,
+        66
+      ],
+      "samples": [
+        91200,
+        103200
+      ]
+    },
+    {
+      "label": "நினைவுகூர",
+      "text_start": 56,
+      "text_end": 65,
+      "method": "mithi_token_word_ownership",
+      "model_words": [
+        "நினைவுகூர"
+      ],
+      "group": null,
+      "tokens": [
+        68,
+        80
+      ],
+      "samples": [
+        104400,
+        118200
+      ]
+    },
+    {
+      "label": "முடிந்தது.",
+      "text_start": 66,
+      "text_end": 76,
+      "method": "mithi_token_word_ownership",
+      "model_words": [
+        "முடிந்தது."
+      ],
+      "group": null,
+      "tokens": [
+        82,
+        92
+      ],
+      "samples": [
+        119400,
+        130800
+      ]
+    }
+  ]
+}

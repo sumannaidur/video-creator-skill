@@ -251,3 +251,23 @@ experiments/E11/vc-*/project.json
 experiments/E13/vc-*/project.json
 experiments/E15/p017.7-documentary/qa/preflight-*/preflight.json
 experiments/**/*runtime*.json
+# --- P025.4 release hygiene ---
+# Installed / snapshot copies of the Skill package inside experiment work folders (generated).
+experiments/**/installed/
+experiments/**/work/after-*/
+experiments/**/work/before-*/
+experiments/**/work/legacy-*/
+experiments/**/work/kit-test/
+experiments/**/work/regress/
+# Downloaded third-party assets (provenance.json beside them stays tracked).
+experiments/**/*.hdr
+experiments/**/*.exr
+experiments/**/*.bin
+experiments/**/*.gltf
+experiments/**/*.glb
+# Packed topic modules with embedded rendered layers (generated from the tracked *-src.js / hdd-src.js).
+experiments/E26/topics/hdd-tech-topic.js
+experiments/E26/work/projects/*/topic.js
+experiments/E42/projects/*/visual/topic.js
+# Logs and stderr captures.
+experiments/**/*.err

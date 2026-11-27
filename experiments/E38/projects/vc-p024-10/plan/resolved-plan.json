@@ -1,0 +1,141 @@
+{
+  "schema": "video-creator.creative-plan",
+  "version": 1,
+  "style": "data-storytelling",
+  "style_reason": "One editorial chart accumulates the published Census data without moving the baseline or changing scale.",
+  "story": [
+    {
+      "segment": "s1",
+      "role": "hook",
+      "idea": "Reveal the first Census rate."
+    },
+    {
+      "segment": "s2",
+      "role": "mechanism",
+      "idea": "Reveal the intervening values and emphasize 2001."
+    },
+    {
+      "segment": "s3",
+      "role": "resolution",
+      "idea": "Reveal the last Census rate."
+    }
+  ],
+  "motifs": [
+    {
+      "id": "scale",
+      "stands_for": "The same zero to one hundred percent scale across the series."
+    }
+  ],
+  "assets": [
+    {
+      "id": "chart",
+      "kind": "procedural",
+      "description": "Original chart from sourced Census rates in the RBI table."
+    }
+  ],
+  "guardrails": [
+    "Chart uses reported Census rates and marks the age base change and coverage exclusions.",
+    "No causal claim, extrapolation, or current rate estimate."
+  ],
+  "shots": [
+    {
+      "id": "series",
+      "purpose": "Show how the reported rates increased across the Census decades.",
+      "objects": [
+        {
+          "id": "first",
+          "description": "Reveal the first Census rate.",
+          "asset": "chart",
+          "motif": "scale"
+        },
+        {
+          "id": "decades",
+          "description": "Reveal the intervening values and emphasize 2001.",
+          "asset": "chart",
+          "motif": "scale"
+        },
+        {
+          "id": "last",
+          "description": "Reveal the last Census rate.",
+          "asset": "chart",
+          "motif": "scale"
+        }
+      ],
+      "cues": [
+        {
+          "id": "below-cue",
+          "object": "first",
+          "at": {
+            "sample": 133800,
+            "seconds": 5.575,
+            "kind": "word",
+            "label": "below",
+            "segment": "s1",
+            "timing_source": "native_model",
+            "edge": "start",
+            "offset_ms": 0
+          },
+          "action": "Reveal the first Census rate."
+        },
+        {
+          "id": "two-thirds-cue",
+          "object": "decades",
+          "at": {
+            "sample": 326400,
+            "seconds": 13.6,
+            "kind": "word",
+            "label": "nearly",
+            "segment": "s2",
+            "timing_source": "native_model",
+            "edge": "start",
+            "offset_ms": 0
+          },
+          "action": "Reveal the intervening values and emphasize 2001."
+        },
+        {
+          "id": "final-cue",
+          "object": "last",
+          "at": {
+            "sample": 463200,
+            "seconds": 19.3,
+            "kind": "word",
+            "label": "eleven,",
+            "segment": "s3",
+            "timing_source": "native_model",
+            "edge": "start",
+            "offset_ms": 0
+          },
+          "action": "Reveal the last Census rate."
+        }
+      ],
+      "start": {
+        "sample": 0,
+        "seconds": 0.0,
+        "kind": "bounds",
+        "label": "narration-start",
+        "timing_source": "narration_bounds"
+      },
+      "end": {
+        "sample": 678600,
+        "seconds": 28.275
+      },
+      "camera": []
+    }
+  ],
+  "narration": {
+    "timeline": "narration/narration-bde0d901f3.timeline.json",
+    "sha256": "afcb56a279ed0098861f13944843a1cde98558d6baf190e3d9e7012a8e98024f"
+  },
+  "resolution": {
+    "timeline_sha256": "afcb56a279ed0098861f13944843a1cde98558d6baf190e3d9e7012a8e98024f",
+    "audio_sha256": "35f5bf6ab98fcc419e7f3b0bf08286af6fe1db79747e721b8b0ce5f91cea55e2",
+    "sample_rate": 24000,
+    "sample_count": 678600,
+    "timing_status": "unreviewed",
+    "record_sources": [
+      "native_model"
+    ],
+    "run_id": "combined-49385ff1979b3398b3e869f3",
+    "timeline": "narration/narration-bde0d901f3.timeline.json"
+  }
+}

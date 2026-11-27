@@ -1,0 +1,35 @@
+{
+  "topic": "How has India's literacy rate changed since 1951?",
+  "claims": [
+    {
+      "id": "c1",
+      "claim": "The 1951 reported literacy rate was 18.33%, below one in five.",
+      "segment": "s1",
+      "sources": [
+        "S1"
+      ],
+      "status": "verified",
+      "passage": "Table 6, ALL INDIA row and notes. The 1951 reported literacy rate was 18.33%, below one in five."
+    },
+    {
+      "id": "c2",
+      "claim": "The 2001 reported literacy rate was 64.84%, nearly two in three.",
+      "segment": "s2",
+      "sources": [
+        "S1"
+      ],
+      "status": "verified",
+      "passage": "Table 6, ALL INDIA row and notes. The 2001 reported literacy rate was 64.84%, nearly two in three."
+    },
+    {
+      "id": "c3",
+      "claim": "The table's 2011 reported rate was 72.99%, nearly three in four. The series uses ages five and up through 1971 and seven and up thereafter.",
+      "segment": "s3",
+      "sources": [
+        "S1"
+      ],
+      "status": "verified",
+      "passage": "Table 6, ALL INDIA row and notes. The table's 2011 reported rate was 72.99%, nearly three in four. The series uses ages five and up through 1971 and seven and up thereafter."
+    }
+  ]
+}

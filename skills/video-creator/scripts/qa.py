@@ -270,11 +270,28 @@ def main(argv):
     pick = lambda *xs: next((x for x in xs if x not in (None, "", "auto")), None)
     nar_cfg = cfg.get("narration") or {}
     present = render_ev.get("presentation") or {}
+    # P025.1: the combined timeline carries no timing block and the narration evidence no model, but every segment the evidence
+    # lists has the provider's own record (<file>.raw-duration.json: model repo, revision, file hashes) and a segment timeline
+    # (timing.method). Values are taken only from those verified files and must agree across all segments.
+    def from_segments(read):
+        vals = []
+        for seg in narr_ev.get("segments") or []:
+            base = project / "narration" / "segments" / str(seg.get("file", ""))
+            vals.append(read(base) if seg.get("file") else None)
+        if not vals or any(v is None for v in vals):
+            return None
+        return vals[0] if all(v == vals[0] for v in vals) else "INCONSISTENT across segments"
+    def seg_model(base):
+        m = (load_json(base.parent, base.name + ".raw-duration.json") or {}).get("model")
+        if isinstance(m, dict) and m.get("repo"):
+            return f"{m['repo']}@{m['revision']}" if m.get("revision") else m["repo"]
+        return m if isinstance(m, str) and m else None
+    seg_method = lambda base: ((load_json(base.parent, base.name + ".timeline.json") or {}).get("timing") or {}).get("method")
     provenance = dict(
         narration_provider=pick(narr_ev.get("provider"), (timeline or {}).get("timing", {}).get("provider"), nar_cfg.get("provider")) or "MISSING",
         voice=pick(narr_ev.get("voice"), nar_cfg.get("voice")) or "MISSING",
-        model=pick(narr_ev.get("model"), (timeline or {}).get("timing", {}).get("model")) or "MISSING (not recorded by the narration stage)",
-        timing_method=(timeline or {}).get("timing", {}).get("method") or "MISSING", timing_status=(timeline or {}).get("validation") or "MISSING",
+        model=pick(narr_ev.get("model"), (timeline or {}).get("timing", {}).get("model"), from_segments(seg_model)) or "MISSING (not recorded by the narration stage)",
+        timing_method=pick((timeline or {}).get("timing", {}).get("method"), from_segments(seg_method)) or "MISSING", timing_status=(timeline or {}).get("validation") or "MISSING",
         fonts=dict(caption=present.get("captionFont") or "MISSING", label=present.get("labelFont") or "MISSING",
                    note="system fonts as reported by the browser; font licensing is not reviewed"),
         audio_assets=mix.get("provenance") or ("no music or effects assets recorded (narration-only mix)" if mix else "MISSING"),

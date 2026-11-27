@@ -1,0 +1,49 @@
+{
+  "schema": "video-creator.script",
+  "version": 1,
+  "locale": "en-IN",
+  "target_seconds": 30,
+  "segments": [
+    {
+      "id": "s1",
+      "role": "hook",
+      "text": "In July nineteen sixty nine, a Saturn Five rocket carried three men towards the Moon.",
+      "claims": [
+        "c1"
+      ]
+    },
+    {
+      "id": "s2",
+      "role": "context",
+      "text": "Seen from the command module Columbia, the lunar module Eagle carried Neil Armstrong and Buzz Aldrin down to the Moon.",
+      "claims": [
+        "c2"
+      ]
+    },
+    {
+      "id": "s3",
+      "role": "transition",
+      "text": "Then came the words: Houston, Tranquility Base here. The Eagle has landed.",
+      "claims": [
+        "c3"
+      ]
+    },
+    {
+      "id": "s4",
+      "role": "example",
+      "text": "Armstrong took this photograph of Aldrin. Look into the visor, and you can see Armstrong himself.",
+      "claims": [
+        "c4"
+      ]
+    },
+    {
+      "id": "s5",
+      "role": "resolution",
+      "text": "Aldrin photographed his bootprint, to study the soil. By the twenty fourth of July, all three were home.",
+      "claims": [
+        "c5",
+        "c6"
+      ]
+    }
+  ]
+}

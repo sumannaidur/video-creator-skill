@@ -1,0 +1,329 @@
+{
+  "result": "mapped",
+  "words": [
+    {
+      "label": "Every",
+      "text_start": 0,
+      "text_end": 5,
+      "method": "mithi_token_word_ownership",
+      "model_words": [
+        "Every"
+      ],
+      "group": null,
+      "tokens": [
+        1,
+        6
+      ],
+      "samples": [
+        1200,
+        9000
+      ]
+    },
+    {
+      "label": "crossing",
+      "text_start": 6,
+      "text_end": 14,
+      "method": "mithi_token_word_ownership",
+      "model_words": [
+        "crossing"
+      ],
+      "group": null,
+      "tokens": [
+        8,
+        14
+      ],
+      "samples": [
+        10200,
+        19800
+      ]
+    },
+    {
+      "label": "is",
+      "text_start": 15,
+      "text_end": 17,
+      "method": "mithi_token_word_ownership",
+      "model_words": [
+        "is"
+      ],
+      "group": null,
+      "tokens": [
+        16,
+        17
+      ],
+      "samples": [
+        21600,
+        24000
+      ]
+    },
+    {
+      "label": "a",
+      "text_start": 18,
+      "text_end": 19,
+      "method": "mithi_token_word_ownership",
+      "model_words": [
+        "a"
+      ],
+      "group": null,
+      "tokens": [
+        19,
+        19
+      ],
+      "samples": [
+        25200,
+        26400
+      ]
+    },
+    {
+      "label": "tiny",
+      "text_start": 20,
+      "text_end": 24,
+      "method": "mithi_token_word_ownership",
+      "model_words": [
+        "tiny"
+      ],
+      "group": null,
+      "tokens": [
+        21,
+        25
+      ],
+      "samples": [
+        28200,
+        36000
+      ]
+    },
+    {
+      "label": "capacitor.",
+      "text_start": 25,
+      "text_end": 35,
+      "method": "mithi_token_word_ownership",
+      "model_words": [
+        "capacitor."
+      ],
+      "group": null,
+      "tokens": [
+        27,
+        36
+      ],
+      "samples": [
+        37800,
+        51600
+      ]
+    },
+    {
+      "label": "The",
+      "text_start": 36,
+      "text_end": 39,
+      "method": "mithi_token_word_ownership",
+      "model_words": [
+        "The"
+      ],
+      "group": null,
+      "tokens": [
+        39,
+        40
+      ],
+      "samples": [
+        63600,
+        66000
+      ]
+    },
+    {
+      "label": "chip",
+      "text_start": 40,
+      "text_end": 44,
+      "method": "mithi_token_word_ownership",
+      "model_words": [
+        "chip"
+      ],
+      "group": null,
+      "tokens": [
+        42,
+        45
+      ],
+      "samples": [
+        67200,
+        72000
+      ]
+    },
+    {
+      "label": "pulses",
+      "text_start": 45,
+      "text_end": 51,
+      "method": "mithi_token_word_ownership",
+      "model_words": [
+        "pulses"
+      ],
+      "group": null,
+      "tokens": [
+        47,
+        53
+      ],
+      "samples": [
+        73800,
+        83400
+      ]
+    },
+    {
+      "label": "one",
+      "text_start": 52,
+      "text_end": 55,
+      "method": "mithi_token_word_ownership",
+      "model_words": [
+        "one"
+      ],
+      "group": null,
+      "tokens": [
+        55,
+        58
+      ],
+      "samples": [
+        85200,
+        90000
+      ]
+    },
+    {
+      "label": "line",
+      "text_start": 56,
+      "text_end": 60,
+      "method": "mithi_token_word_ownership",
+      "model_words": [
+        "line"
+      ],
+      "group": null,
+      "tokens": [
+        60,
+        63
+      ],
+      "samples": [
+        91800,
+        97200
+      ]
+    },
+    {
+      "label": "at",
+      "text_start": 61,
+      "text_end": 63,
+      "method": "mithi_token_word_ownership",
+      "model_words": [
+        "at"
+      ],
+      "group": null,
+      "tokens": [
+        65,
+        66
+      ],
+      "samples": [
+        99000,
+        101400
+      ]
+    },
+    {
+      "label": "a",
+      "text_start": 64,
+      "text_end": 65,
+      "method": "mithi_token_word_ownership",
+      "model_words": [
+        "a"
+      ],
+      "group": null,
+      "tokens": [
+        68,
+        68
+      ],
+      "samples": [
+        102600,
+        103200
+      ]
+    },
+    {
+      "label": "time,",
+      "text_start": 66,
+      "text_end": 71,
+      "method": "mithi_token_word_ownership",
+      "model_words": [
+        "time,"
+      ],
+      "group": null,
+      "tokens": [
+        70,
+        73
+      ],
+      "samples": [
+        104400,
+        109800
+      ]
+    },
+    {
+      "label": "and",
+      "text_start": 72,
+      "text_end": 75,
+      "method": "mithi_token_word_ownership",
+      "model_words": [
+        "and"
+      ],
+      "group": null,
+      "tokens": [
+        76,
+        78
+      ],
+      "samples": [
+        118200,
+        121200
+      ]
+    },
+    {
+      "label": "measures",
+      "text_start": 76,
+      "text_end": 84,
+      "method": "mithi_token_word_ownership",
+      "model_words": [
+        "measures"
+      ],
+      "group": null,
+      "tokens": [
+        80,
+        86
+      ],
+      "samples": [
+        122400,
+        132000
+      ]
+    },
+    {
+      "label": "every",
+      "text_start": 85,
+      "text_end": 90,
+      "method": "mithi_token_word_ownership",
+      "model_words": [
+        "every"
+      ],
+      "group": null,
+      "tokens": [
+        88,
+        93
+      ],
+      "samples": [
+        135000,
+        142800
+      ]
+    },
+    {
+      "label": "crossing.",
+      "text_start": 91,
+      "text_end": 100,
+      "method": "mithi_token_word_ownership",
+      "model_words": [
+        "crossing."
+      ],
+      "group": null,
+      "tokens": [
+        95,
+        101
+      ],
+      "samples": [
+        144000,
+        153000
+      ]
+    }
+  ]
+}

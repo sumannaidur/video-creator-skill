@@ -1,0 +1,16 @@
+{
+  "passed": true,
+  "shots": 3,
+  "cues": 14,
+  "camera_keys": 0,
+  "timeline_sha256": "99f5810b1b3862b927e1fe07b32b47a363bd7bea12ead586c44581b5e859007d",
+  "audio_sha256": "caa1dfeae32c247141d7d4cee325aaa27999e1e27a2fce29c6c4d5e653a880ba",
+  "sample_rate": 24000,
+  "sample_count": 268800,
+  "timing_status": "unreviewed",
+  "record_sources": [
+    "forced_alignment"
+  ],
+  "run_id": "synthetic-moon",
+  "timeline": "narration/narration.timeline.json"
+}

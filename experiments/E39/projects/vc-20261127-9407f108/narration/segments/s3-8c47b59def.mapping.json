@@ -1,0 +1,167 @@
+{
+  "result": "mapped",
+  "words": [
+    {
+      "label": "ఇసుకలా,",
+      "text_start": 0,
+      "text_end": 7,
+      "method": "mithi_token_word_ownership",
+      "model_words": [
+        "ఇసుకలా,"
+      ],
+      "group": null,
+      "tokens": [
+        1,
+        10
+      ],
+      "samples": [
+        1200,
+        16800
+      ]
+    },
+    {
+      "label": "అవి",
+      "text_start": 8,
+      "text_end": 11,
+      "method": "mithi_token_word_ownership",
+      "model_words": [
+        "అవి"
+      ],
+      "group": null,
+      "tokens": [
+        13,
+        16
+      ],
+      "samples": [
+        24600,
+        30600
+      ]
+    },
+    {
+      "label": "ఎప్పుడూ",
+      "text_start": 12,
+      "text_end": 19,
+      "method": "mithi_token_word_ownership",
+      "model_words": [
+        "ఎప్పుడూ"
+      ],
+      "group": null,
+      "tokens": [
+        18,
+        25
+      ],
+      "samples": [
+        32400,
+        42600
+      ]
+    },
+    {
+      "label": "కిందికే",
+      "text_start": 20,
+      "text_end": 27,
+      "method": "mithi_token_word_ownership",
+      "model_words": [
+        "కిందికే"
+      ],
+      "group": null,
+      "tokens": [
+        27,
+        35
+      ],
+      "samples": [
+        44400,
+        55200
+      ]
+    },
+    {
+      "label": "జారి",
+      "text_start": 28,
+      "text_end": 32,
+      "method": "mithi_token_word_ownership",
+      "model_words": [
+        "జారి"
+      ],
+      "group": null,
+      "tokens": [
+        37,
+        42
+      ],
+      "samples": [
+        56400,
+        61800
+      ]
+    },
+    {
+      "label": "పడతాయి.",
+      "text_start": 33,
+      "text_end": 40,
+      "method": "mithi_token_word_ownership",
+      "model_words": [
+        "పడతాయి."
+      ],
+      "group": null,
+      "tokens": [
+        44,
+        54
+      ],
+      "samples": [
+        63000,
+        74400
+      ]
+    },
+    {
+      "label": "అదే",
+      "text_start": 41,
+      "text_end": 44,
+      "method": "mithi_token_word_ownership",
+      "model_words": [
+        "అదే"
+      ],
+      "group": null,
+      "tokens": [
+        57,
+        61
+      ],
+      "samples": [
+        82200,
+        90600
+      ]
+    },
+    {
+      "label": "దిశ",
+      "text_start": 45,
+      "text_end": 48,
+      "method": "mithi_token_word_ownership",
+      "model_words": [
+        "దిశ"
+      ],
+      "group": null,
+      "tokens": [
+        63,
+        67
+      ],
+      "samples": [
+        92400,
+        99000
+      ]
+    },
+    {
+      "label": "సంకేతం.",
+      "text_start": 49,
+      "text_end": 56,
+      "method": "mithi_token_word_ownership",
+      "model_words": [
+        "సంకేతం."
+      ],
+      "group": null,
+      "tokens": [
+        69,
+        78
+      ],
+      "samples": [
+        100800,
+        113400
+      ]
+    }
+  ]
+}

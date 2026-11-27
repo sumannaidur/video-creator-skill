@@ -1,0 +1,33 @@
+{
+  "schema": "video-creator.script",
+  "version": 1,
+  "locale": "en-IN",
+  "target_seconds": 30,
+  "segments": [
+    {
+      "id": "s1",
+      "role": "hook",
+      "text": "Hold an autumn leaf up to the light. Where did that gold come from? All summer, a pigment called chlorophyll made the leaf look green.",
+      "claims": [
+        "c1"
+      ]
+    },
+    {
+      "id": "s2",
+      "role": "mechanism",
+      "text": "As the leaf gets ready to fall, its chlorophyll breaks down. Yellow and orange pigments were there all along. They are called carotenoids. The strong green of chlorophyll had masked those colours. Now that the green fades, we can see them.",
+      "claims": [
+        "c2"
+      ]
+    },
+    {
+      "id": "s3",
+      "role": "resolution",
+      "text": "Red has a different story. Some trees make red pigments in autumn. So an autumn canopy shows both colours uncovered and colours newly made.",
+      "claims": [
+        "c3"
+      ]
+    }
+  ]
+}
+

@@ -8,11 +8,23 @@ The core renderer is style-agnostic. It handles arguments and paths, the single-
 node scripts/render.mjs --project <project dir> --topic <topic module> --timeline <timeline.json> --out <dir>
   [--style paper-explainer | --backend <file.mjs>] [--locale <bcp47>] [--font "<css family>"]
   [--width 1080 --height 1920 | --width 1920 --height 1080] [--scale 0.5] [--fps 30] [--quality 95] [--crf 18]
-  [--keys-only] [--stop-after <n>] [--options <json>] [--chrome <path>] [--clean-frames] [--plan plan/resolved-plan.json]
+  [--keys-only | --validate-only | --window <start:end>] [--stop-after <n>] [--options <json>] [--chrome <path>] [--clean-frames] [--plan plan/resolved-plan.json]
   [--captions captions/captions.json | --no-captions] [--preflight <dir>/preflight.json]
 ```
 
-- **Paths:** relative paths, including the timeline's audio path, resolve against `--project`.
+- **Paths:** relative paths, including the timeline's audio path, resolve against `--project`. The timeline's audio path must be relative and inside the project.
+- **Pre-render validation (P024.14B, every mode):** after the topic is installed and before any capture, `lib/prerender.mjs` checks:
+  - duplicate DOM ids, inside each shot (for example an object id equal to a symbol id);
+  - that the browser canvas matches `--width`×`--height`;
+  - that cue and keyframe times lie inside the narration;
+  - that shots are contiguous;
+  - that every transition fits between its shot and the next.
+
+  The engines already refuse bad layers, label styles, missing symbols, unknown transition types and unknown plan cues. A failure stops with `[validation]`. `--validate-only` stops after validation and writes `validation.json`; it is the cheapest check of a topic edit.
+- **Short windows (`--window start:end`, seconds):**
+  - Renders frames `round(start·fps)` to `ceil(end·fps)−1` at their absolute narration times, into the same `frames/` checkpoint and configuration hash as the full render. Window frames are the full render's frames, and a later full render reuses them.
+  - The MP4 contains only the window, with audio cut at the same absolute times. Its evidence records `window` (seconds, frame range, start), and the coverage and speech-onset checks are skipped.
+  - Use it for 4–5 s motion previews around a key transformation. A window is never a full-video validation.
 - **Outputs:** `keyframes/`, `frames/` (checkpoint), `<name>.mp4`, and either `<name>-evidence.json` or `keys-evidence.json`.
 - **Exit codes:** `2` usage error, `3` checkpoint locked by a live process, `75` simulated interruption, `1` any other failure, reported as `[code] message`.
 - **Style errors:** an unknown style fails with `unsupported-style`. Never substitute another style.

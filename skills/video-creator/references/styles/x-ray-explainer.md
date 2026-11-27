@@ -49,9 +49,10 @@ The multilingual font, never forced to uppercase (validated with Telugu).
 
 ## Self-review additions
 
+- Can the viewer locate the revealed parts within the original exterior? Make the working interface visible and distinguish occluded context from the parts that actually move.
 - Is the disclaimer visible wherever a see-through effect is used?
 - Do the parts' relationships (containment, drive, ratio, relative size) match the sources and the guardrails?
-- Is exactly one part lit or inspected at a time, and is it the part the narration names?
+- Does inspection lighting make the named part or working interface clear?
 - Do cutaways show their section faces?
 - Could this be mistaken for a real scan? If so, change it.
 
@@ -74,3 +75,13 @@ Any topic's machines, organs, devices, layouts or cue times. The P017.6 fixture 
 - Preflight, a 5.6 s preview, and cue, camera and transition checks.
 
 There has been no full production and no human technical review. Fonts are system fonts, with licensing review pending.
+
+## Exact mechanisms and cutaway conventions (P023.7, optional)
+
+- **Chain drives:**
+  - `art.sprocket(z, pitch)` uses pitch radius p / (2 sin(π/z)).
+  - `art.chainLoop(c1, r1, c2, r2, pitch)` solves the centre distance so the loop is an even whole number of links.
+  - `motion.chainDrive(...)` turns both sprockets the same way in the ratio z1/z2, with the chain moving at r·θ.
+  - The engine clamps `--draw` to [0, 1], so channels carry normalised progress; scale it in the art (`markup(var, travel)`).
+- **Cutaway order:** opaque exterior, then an X-ray porthole (`windowCss` with a radius smaller than the part, so the casing stays readable), then the casing as a translucent ghost with the internals fully drawn. Callouts retire before the camera moves away from their part.
+- **Verify mechanisms in preflight:** return `checks.ratios: [{a: motion.angle('driver'), b: motion.angle('driven'), ratio, label}]` from `build`. Preflight's `mechanism` check verifies every frame (relative tolerance 1e-5).

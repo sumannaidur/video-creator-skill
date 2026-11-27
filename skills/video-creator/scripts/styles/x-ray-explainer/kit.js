@@ -40,6 +40,45 @@
       `<path d="M${f(r * .72)} 0H${f(rf)}" stroke="#ffffff" stroke-opacity=".5" stroke-width="3"/>`;
     return {body, r, outer: ra};
   };
+  // ---------- P023.7 chain drives (mechanically exact; centred art in zero-origin view boxes as above) ----------
+  // Sprocket for a roller chain of pitch p: pitch radius r = p / (2 sin(π/z)); teeth sit between roller seats.
+  // `phase` (radians) puts a roller seat (tooth gap) at that angle. Returns {body, r}.
+  const sprocket = (z, p, {fill = C.steel, id = 'sp' + z, phase = -Math.PI / 2, holes = 5, roller = .32} = {}) => {
+    if (!Number.isInteger(z) || z < 8) fail('sprocket teeth must be an integer ≥ 8');
+    const r = p / (2 * Math.sin(Math.PI / z)), rr = p * roller, ra = r + p * .32, rf = r - rr, pts = [];
+    for (let i = 0; i < z; i++) {
+      const a = phase + (i + .5) / z * Math.PI * 2, s = Math.PI / z;      // tooth centred between two seats
+      for (const [rad, da] of [[rf, -s * .78], [ra * .97, -s * .22], [ra, 0], [ra * .97, s * .22], [rf, s * .78]]) pts.push([Math.cos(a + da) * rad, Math.sin(a + da) * rad]);
+    }
+    const d = 'M' + pts.map(q => q.map(f).join(' ')).join('L') + 'Z';
+    const body = metal(d, id, fill) + `<circle r="${f(r * .3)}" fill="#14202a" stroke="${C.glass}" stroke-opacity=".6" stroke-width="3"/>` +
+      Array.from({length: holes}, (_, i) => { const a = i / holes * Math.PI * 2; return `<path d="M${f(Math.cos(a - .32) * r * .42)} ${f(Math.sin(a - .32) * r * .42)}L${f(Math.cos(a - .2) * r * .78)} ${f(Math.sin(a - .2) * r * .78)}A${f(r * .78)} ${f(r * .78)} 0 0 1 ${f(Math.cos(a + .2) * r * .78)} ${f(Math.sin(a + .2) * r * .78)}L${f(Math.cos(a + .32) * r * .42)} ${f(Math.sin(a + .32) * r * .42)}Z" fill="#14202a" opacity=".9"/>`; }).join('');
+    return {body, r};
+  };
+  // Open chain loop around two sprockets (c1 = driver, c2 = driven; both turn clockwise in screen space). The centre
+  // distance along c1 → c2 is adjusted (bisection, ≤ ±p/2) so the loop is a whole number of links: a real chain.
+  // Returns {d, length, links, c2, run, markup(offsetVar, travel)}: rollers and plates move along the path by stroke-dashoffset;
+  // the engine clamps --draw to [0, 1], so pass the total travel (art units) and drive --draw 0 → 1 (chainDrive does).
+  const chainLoop = ([x1, y1], r1, [x2, y2], r2, p, {plate = '#9aa8b4', roller = '#dfe8ee'} = {}) => {
+    const geo = d => { const ux = (x2 - x1) / Math.hypot(x2 - x1, y2 - y1), uy = (y2 - y1) / Math.hypot(x2 - x1, y2 - y1), c2 = [x1 + ux * d, y1 + uy * d];
+      const sphi = (r1 - r2) / d, cphi = Math.sqrt(1 - sphi * sphi), nx = -uy, ny = ux;            // n: left of c1 → c2 (screen "up" when c2 is to the left)
+      const m = s => [s * nx * cphi + ux * sphi * -1, s * ny * cphi + uy * sphi * -1];               // outward normals of the two runs
+      const [mt, mb] = [m(-1), m(1)], T1t = [x1 + r1 * mt[0], y1 + r1 * mt[1]], T2t = [c2[0] + r2 * mt[0], c2[1] + r2 * mt[1]], T1b = [x1 + r1 * mb[0], y1 + r1 * mb[1]], T2b = [c2[0] + r2 * mb[0], c2[1] + r2 * mb[1]];
+      const phi = Math.asin(sphi), run = d * cphi, length = 2 * run + r1 * (Math.PI + 2 * phi) + r2 * (Math.PI - 2 * phi);
+      return {c2, T1t, T2t, T1b, T2b, phi, run, length}; };
+    const base = Math.hypot(x2 - x1, y2 - y1), raw = geo(base).length / p, n = 2 * Math.round(raw / 2);   // even link count (no half-link)
+    let lo = base - 2 * p, hi = base + 2 * p;
+    for (let i = 0; i < 80; i++) { const mid = (lo + hi) / 2; (geo(mid).length < n * p) ? lo = mid : hi = mid; }
+    const g = geo((lo + hi) / 2);
+    // path in the chain's direction of travel for clockwise sprockets: top run c2 → c1, around c1, bottom run c1 → c2, around c2
+    const P = q => q.map(f).join(' ');
+    const d = `M${P(g.T2t)}L${P(g.T1t)}A${f(r1)} ${f(r1)} 0 1 1 ${P(g.T1b)}L${P(g.T2b)}A${f(r2)} ${f(r2)} 0 0 1 ${P(g.T2t)}`;
+    const markup = (offsetVar = '--draw', travel = 1) => `<path d="${d}" fill="none" stroke="#0b141a" stroke-width="${f(p * .78)}" stroke-linejoin="round"/>` +
+      `<path d="${d}" fill="none" stroke="${plate}" stroke-width="${f(p * .62)}" stroke-dasharray="${f(p * .72)} ${f(p * .28)}" style="stroke-dashoffset:calc(var(${offsetVar}, 0) * ${-travel}px)"/>` +
+      `<path d="${d}" fill="none" stroke="${roller}" stroke-width="${f(p * .42)}" stroke-linecap="round" stroke-dasharray="0 ${f(p)}" style="stroke-dashoffset:calc(var(${offsetVar}, 0) * ${-travel}px - ${f(p * .86)}px)"/>`;
+    return {d, length: g.length, links: n, c2: g.c2, run: g.run, phi: g.phi, markup};
+  };
+
   // Inspection brackets around a w×h box centred at (0, 0) (four corners, no full frame).
   const brackets = (w, h, {color = C.glass, len = .22, width = 5} = {}) => {
     const x = w / 2, y = h / 2, lx = w * len, ly = h * len;
@@ -100,6 +139,14 @@
       illuminate: (id, at, off) => { const t = when(at, id); glow(id, [key(t, [0]), key(t + .3, [1], 'out'), ...(off !== undefined ? [key(when(off), [1]), key(when(off) + .3, [0])] : [])]); return t; },
       // Meshing spur gears: spins in the true ratio and opposite senses (ω2 = −ω1 · z1 / z2), degrees per second for gear 1.
       mesh: ([id1, z1], [id2, z2], deg) => { ambient(id1, {spin: deg}); ambient(id2, {spin: -deg * z1 / z2}); return deg * z1 / z2; },
+      // Chain drive (exact): driver turns `deg` degrees over [t0, t1] with `curve`; the driven sprocket turns deg·z1/z2 the
+      // same way at every instant (same curve), and the chain travels r1·θ1 (units of the art) along its loop. --draw carries
+      // travel / total (0 → 1); build the chain with markup(var, total) where total = r1 · |deg| in radians.
+      chainDrive: ([id1, z1], [id2, z2], chainId, r1, t0, t1, deg, curve = 'inOut', extra = []) => {
+        const k = z1 / z2, rot = (id, a) => track(id, [key(t0, N), key(t1, [0, 0, a, 1, 1], curve)]);
+        rot(id1, deg); rot(id2, deg * k); for (const e of extra) rot(e, deg * k);
+        stroke(chainId, [key(t0, [0]), key(t1, [1], curve)]); return {driven: deg * k, travel: r1 * deg * Math.PI / 180};
+      },
       // Exploded view: a part slides out along [dx, dy] (stage fractions) and stays.
       explode: (id, at, [dx, dy], dur = .6) => { const t = when(at, id); track(id, [key(t, N), key(t + dur, [dx, dy, 0, 1, 1], 'out')]); return t; },
       // Inspection marker or part appearing (brackets snap in).
@@ -115,5 +162,5 @@
     };
   }
 
-  globalThis.xrayKit = {art: {rounded, metal, glass, section, gear, brackets, axis, field}, windowCss, litCss, COLORS: C, css, LABEL_STYLES, motion};
+  globalThis.xrayKit = {art: {rounded, metal, glass, section, gear, sprocket, chainLoop, brackets, axis, field}, windowCss, litCss, COLORS: C, css, LABEL_STYLES, motion};
 })();

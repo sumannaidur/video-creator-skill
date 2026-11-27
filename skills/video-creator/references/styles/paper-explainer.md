@@ -39,7 +39,19 @@ These are techniques, not required elements. Choose what serves the topic.
 - **Pick one key light per scene** and keep it consistent: every cast shadow falls the same way, and the lit edges face the light. Change the light only for a story reason (time of day, a beam entering).
 - **Show light as paper.** Beams, glows and rays can be translucent vellum strips. Light should **affect the scene**: a beam brightens the surface it hits, a glow tints nearby layers, and a dark room has a pool of light.
 - **Value plan:** decide the darkest and lightest area of each frame. Put the strongest value contrast at the focal point. Use darker, larger foreground silhouettes and lighter, lower-contrast distant layers (atmospheric perspective).
-- **Depth stack:** aim for three to five depths in a typical shot, for example a framing foreground silhouette, the subject, a mid-ground setting, a distant layer and the sky. Give each depth its own parallax speed and shadow strength.
+- **Depth stack:** use as many depths as the shot needs, often a framing foreground silhouette, the subject, a mid-ground setting, a distant layer and the sky. Give each depth its own parallax speed and shadow strength.
+
+### Paper craft (reference-derived, P023.1B)
+
+Observed in professional layered cut-paper illustration (for example Owen Gildersleeve's work): the shadows, value steps and cut edges carry most of the craft. Use these where they serve the shot:
+
+- **Soft, directional paper shadows:** darkest at the cut edge, wide and faint further out, all along one light. `paperKit.art.piece(d, {fill, lit, depth})` stacks a filter-free penumbra under `cut`. Avoid per-frame blur filters on animated pieces: Blur measured about 2.5× the render cost; the stacked penumbra costs about the same as plain cut paper.
+- **Hand-cut silhouettes:** `art.deckle(points, seed, amp, step)` turns a polygon into a slightly irregular cut outline. Intricate, recognisable silhouettes (hair, beard, leaf serration, a bee's legs) beat geometric primitives. Keep the irregularity small; this is crisp cut paper, not torn paper.
+- **Cut-edge core:** coloured paper shows a lighter core where it is cut. `piece` draws it by default (`core`); set `core: 0` for white or very light paper.
+- **Folds:** `art.folded(base, tip, halfWidth, {fill})` gives petals, leaves, wings and paper flaps a crease, with one half lit and one shaded.
+- **Vellum:** `art.vellum(d, {lines})` makes translucent tracing paper for wings, vapour, light, water spray and glass.
+- **Value steps toward a focus:** professional pieces often pull the eye with nested layers that step from dark outside to bright at the core. Build it yourself, or use `art.recede(w, h, cx, cy, {colors})` for tunnels, burrows, cells or portals. A vignette made of darker paper tones around one lit subject does the same job in a constructed scene.
+- **Macro framing for small processes:** when the story happens inside something small (a cell, a seed, a drop), make that thing the stage. Fill a third or more of the frame with it, let neighbours crop at the edges, and stage the change there (for example: empty cell, then a nectar drop, pale watery nectar, vapour rising off, deep amber honey, a wax cap).
 
 ### Characters
 
@@ -60,6 +72,7 @@ These are techniques, not required elements. Choose what serves the topic.
 
 ## Paper self-review additions
 
+- At the reveal, can you see which physical layer lifts or shifts? Use an exposed edge, a fold or consistent contact shadow to make that relationship readable.
 Add these to the universal art-direction questions:
 
 - Do the important objects have visible paper thickness and the right material?
@@ -73,6 +86,10 @@ Add these to the universal art-direction questions:
 - **Reveals:** draw with directional clip reveals. Keep ambient motion small (sway, bob, drift, flicker), computed from the frame time.
 - **Paper physics:** paper objects flutter, fold, unfold, pop up from a fold, slide on tabs, swing on threads and tear. Prefer these to generic fades and scales.
 - **Entrances:** short slide-and-settle with a slight overshoot. Hold long enough to read.
+- **Hand-animated articulation (optional, P022.2):**
+  - Figure parts and hand-worked mechanisms can hold poses on twos (`vcMotion.stepped(keys, 12)`), which reads as cut paper moved by hand.
+  - Heavy parts wind up and settle (`anticipate`, `settle`); attached parts follow through (a head answering an arm, a beam after a gate).
+  - Keep the camera, water and light smooth, so stepped parts feel tactile rather than choppy.
 - **Transitions:** carry motion through the cut. Push into a texture tile (`dissolve`), or sweep a printed sheet that previews the next setting (`sheet`). Never use a blank wipe.
 
 ## Captions and labels

@@ -1,0 +1,293 @@
+{
+  "result": "mapped",
+  "words": [
+    {
+      "label": "A",
+      "text_start": 0,
+      "text_end": 1,
+      "method": "mithi_token_word_ownership",
+      "model_words": [
+        "A"
+      ],
+      "group": null,
+      "tokens": [
+        1,
+        1
+      ],
+      "samples": [
+        1200,
+        1800
+      ]
+    },
+    {
+      "label": "lighthouse",
+      "text_start": 2,
+      "text_end": 12,
+      "method": "mithi_token_word_ownership",
+      "model_words": [
+        "lighthouse"
+      ],
+      "group": null,
+      "tokens": [
+        3,
+        10
+      ],
+      "samples": [
+        3600,
+        15600
+      ]
+    },
+    {
+      "label": "holds",
+      "text_start": 13,
+      "text_end": 18,
+      "method": "mithi_token_word_ownership",
+      "model_words": [
+        "holds"
+      ],
+      "group": null,
+      "tokens": [
+        12,
+        17
+      ],
+      "samples": [
+        17400,
+        24600
+      ]
+    },
+    {
+      "label": "just",
+      "text_start": 19,
+      "text_end": 23,
+      "method": "mithi_token_word_ownership",
+      "model_words": [
+        "just"
+      ],
+      "group": null,
+      "tokens": [
+        19,
+        23
+      ],
+      "samples": [
+        25800,
+        31800
+      ]
+    },
+    {
+      "label": "one",
+      "text_start": 24,
+      "text_end": 27,
+      "method": "mithi_token_word_ownership",
+      "model_words": [
+        "one"
+      ],
+      "group": null,
+      "tokens": [
+        25,
+        28
+      ],
+      "samples": [
+        33600,
+        37800
+      ]
+    },
+    {
+      "label": "lamp,",
+      "text_start": 28,
+      "text_end": 33,
+      "method": "mithi_token_word_ownership",
+      "model_words": [
+        "lamp,"
+      ],
+      "group": null,
+      "tokens": [
+        30,
+        34
+      ],
+      "samples": [
+        39600,
+        46800
+      ]
+    },
+    {
+      "label": "yet",
+      "text_start": 34,
+      "text_end": 37,
+      "method": "mithi_token_word_ownership",
+      "model_words": [
+        "yet"
+      ],
+      "group": null,
+      "tokens": [
+        37,
+        40
+      ],
+      "samples": [
+        55800,
+        61200
+      ]
+    },
+    {
+      "label": "ships",
+      "text_start": 38,
+      "text_end": 43,
+      "method": "mithi_token_word_ownership",
+      "model_words": [
+        "ships"
+      ],
+      "group": null,
+      "tokens": [
+        42,
+        46
+      ],
+      "samples": [
+        63000,
+        69600
+      ]
+    },
+    {
+      "label": "far",
+      "text_start": 44,
+      "text_end": 47,
+      "method": "mithi_token_word_ownership",
+      "model_words": [
+        "far"
+      ],
+      "group": null,
+      "tokens": [
+        48,
+        51
+      ],
+      "samples": [
+        71400,
+        76800
+      ]
+    },
+    {
+      "label": "out",
+      "text_start": 48,
+      "text_end": 51,
+      "method": "mithi_token_word_ownership",
+      "model_words": [
+        "out"
+      ],
+      "group": null,
+      "tokens": [
+        53,
+        55
+      ],
+      "samples": [
+        78000,
+        82200
+      ]
+    },
+    {
+      "label": "at",
+      "text_start": 52,
+      "text_end": 54,
+      "method": "mithi_token_word_ownership",
+      "model_words": [
+        "at"
+      ],
+      "group": null,
+      "tokens": [
+        57,
+        58
+      ],
+      "samples": [
+        83400,
+        85800
+      ]
+    },
+    {
+      "label": "sea",
+      "text_start": 55,
+      "text_end": 58,
+      "method": "mithi_token_word_ownership",
+      "model_words": [
+        "sea"
+      ],
+      "group": null,
+      "tokens": [
+        60,
+        62
+      ],
+      "samples": [
+        87600,
+        91800
+      ]
+    },
+    {
+      "label": "can",
+      "text_start": 59,
+      "text_end": 62,
+      "method": "mithi_token_word_ownership",
+      "model_words": [
+        "can"
+      ],
+      "group": null,
+      "tokens": [
+        64,
+        66
+      ],
+      "samples": [
+        93000,
+        96000
+      ]
+    },
+    {
+      "label": "see",
+      "text_start": 63,
+      "text_end": 66,
+      "method": "mithi_token_word_ownership",
+      "model_words": [
+        "see"
+      ],
+      "group": null,
+      "tokens": [
+        68,
+        70
+      ],
+      "samples": [
+        97800,
+        100800
+      ]
+    },
+    {
+      "label": "it.",
+      "text_start": 67,
+      "text_end": 70,
+      "method": "mithi_token_word_ownership",
+      "model_words": [
+        "it."
+      ],
+      "group": null,
+      "tokens": [
+        72,
+        73
+      ],
+      "samples": [
+        102600,
+        105000
+      ]
+    },
+    {
+      "label": "How?",
+      "text_start": 71,
+      "text_end": 75,
+      "method": "mithi_token_word_ownership",
+      "model_words": [
+        "How?"
+      ],
+      "group": null,
+      "tokens": [
+        76,
+        78
+      ],
+      "samples": [
+        112200,
+        115200
+      ]
+    }
+  ]
+}

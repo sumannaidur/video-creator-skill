@@ -1,0 +1,56 @@
+{
+ "schema": "video-creator.duration-rates",
+ "version": 1,
+ "derived": "P024.14A from retained Mithi segment caches E30-E38 (experiments/P024/duration_fit.py); speech characters = Unicode letters and marks",
+ "voices": {
+  "mithi/ahana": {
+   "locale": "te-IN",
+   "chars_per_second": 11.45,
+   "segments": 7,
+   "projects": 1,
+   "heldout_segment_error": 0.036,
+   "heldout": "leave-one-segment-out (one project only)",
+   "confidence": "low"
+  },
+  "mithi/anirban": {
+   "locale": "en-IN",
+   "chars_per_second": 13.27,
+   "segments": 24,
+   "projects": 5,
+   "heldout_segment_error": 0.066,
+   "heldout": "leave-one-project-out",
+   "confidence": "moderate",
+   "heldout_script_error_range": [
+    -0.043,
+    0.059
+   ]
+  },
+  "mithi/charvi": {
+   "locale": "hi-IN",
+   "chars_per_second": 10.65,
+   "segments": 4,
+   "projects": 1,
+   "heldout_segment_error": 0.006,
+   "heldout": "leave-one-segment-out (one project only)",
+   "confidence": "low"
+  },
+  "mithi/malini": {
+   "locale": "ta-IN",
+   "chars_per_second": 12.87,
+   "segments": 5,
+   "projects": 1,
+   "heldout_segment_error": 0.046,
+   "heldout": "leave-one-segment-out (one project only)",
+   "confidence": "low"
+  },
+  "mithi/vaidehi": {
+   "locale": "kn-IN",
+   "chars_per_second": 11.17,
+   "segments": 5,
+   "projects": 1,
+   "heldout_segment_error": 0.057,
+   "heldout": "leave-one-segment-out (one project only)",
+   "confidence": "low"
+  }
+ }
+}

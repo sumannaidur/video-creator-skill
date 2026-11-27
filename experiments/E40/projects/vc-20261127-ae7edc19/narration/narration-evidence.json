@@ -1,0 +1,88 @@
+{
+  "stage": "narration",
+  "passed": true,
+  "integrity": true,
+  "timing_status": "unreviewed",
+  "measured_seconds": 29.25,
+  "target_seconds": 30,
+  "tolerance": 0.1,
+  "deviation": -0.025,
+  "within_tolerance": true,
+  "accepted_deviation": null,
+  "attempt": 0,
+  "max_attempts": 3,
+  "revision_hints": [],
+  "combined": {
+    "wav": "narration/narration-5a86cdec93.wav",
+    "timeline": "narration/narration-5a86cdec93.timeline.json",
+    "sha256": "330a8451e12b962ce0ae39ee5826e27ad193b56384f39c594c9b8fd540e2e209",
+    "run_id": "combined-93a693ecab1cf1f2f62ac912"
+  },
+  "run_at": "2026-11-27T12:19:11+00:00",
+  "provider": "mithi",
+  "voice": "anirban",
+  "locale": "en-IN",
+  "segments": [
+    {
+      "id": "s1",
+      "role": "hook",
+      "file": "s1-cf63f308d0",
+      "reused": false,
+      "chars": 98,
+      "seconds": 5.65,
+      "words": 17,
+      "words_mapped": 17,
+      "sha256": "d0e3cf431f4dc3f36e2863a40204a141a0d9e688025dadd8b546001a839d0f42",
+      "run_id": "1dff6c3985e0446c8888aec68a980b99"
+    },
+    {
+      "id": "s2",
+      "role": "mechanism",
+      "file": "s2-bc5d298004",
+      "reused": false,
+      "chars": 108,
+      "seconds": 6.5,
+      "words": 17,
+      "words_mapped": 17,
+      "sha256": "40f15a9356b5a9f786a917ba8113fbc5010d1ab40ec6e439fff7dd161df4cb53",
+      "run_id": "f53734442c0247c3ab7807ee8d635108"
+    },
+    {
+      "id": "s3",
+      "role": "mechanism",
+      "file": "s3-fb9519653a",
+      "reused": false,
+      "chars": 100,
+      "seconds": 6.45,
+      "words": 18,
+      "words_mapped": 18,
+      "sha256": "4d9b9a8f62ebe7efe0d410ddb77296b46db25280af33fa37e31230b453543d37",
+      "run_id": "d8057b98d8694ce490624c84028d5a23"
+    },
+    {
+      "id": "s4",
+      "role": "mechanism",
+      "file": "s4-bcacbc7f09",
+      "reused": false,
+      "chars": 109,
+      "seconds": 6.375,
+      "words": 19,
+      "words_mapped": 19,
+      "sha256": "54cc363bc33e98828117cae2a1597865598732c51eaa0d5a5c29c30ca47e3e1d",
+      "run_id": "20983f6db77b483eace3b0675b0ce421"
+    },
+    {
+      "id": "s5",
+      "role": "resolution",
+      "file": "s5-fb9735d090",
+      "reused": false,
+      "chars": 71,
+      "seconds": 3.475,
+      "words": 13,
+      "words_mapped": 13,
+      "sha256": "4e502a7cf5511857135b4d77e802b31a716861ff161246ab54a41e92b1e072dd",
+      "run_id": "d5d4b50400414085a6cf53fff3363397"
+    }
+  ],
+  "combined_reused": false
+}

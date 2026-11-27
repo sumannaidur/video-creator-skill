@@ -1,0 +1,185 @@
+{
+  "result": "mapped",
+  "words": [
+    {
+      "label": "தூங்கும்போது",
+      "text_start": 0,
+      "text_end": 12,
+      "method": "mithi_token_word_ownership",
+      "model_words": [
+        "தூங்கும்போது"
+      ],
+      "group": null,
+      "tokens": [
+        1,
+        14
+      ],
+      "samples": [
+        1200,
+        17400
+      ]
+    },
+    {
+      "label": "நாம்",
+      "text_start": 13,
+      "text_end": 17,
+      "method": "mithi_token_word_ownership",
+      "model_words": [
+        "நாம்"
+      ],
+      "group": null,
+      "tokens": [
+        16,
+        20
+      ],
+      "samples": [
+        18600,
+        22800
+      ]
+    },
+    {
+      "label": "படிப்பதில்லை.",
+      "text_start": 18,
+      "text_end": 31,
+      "method": "mithi_token_word_ownership",
+      "model_words": [
+        "படிப்பதில்லை."
+      ],
+      "group": null,
+      "tokens": [
+        22,
+        35
+      ],
+      "samples": [
+        24000,
+        38400
+      ]
+    },
+    {
+      "label": "ஆனாலும்",
+      "text_start": 32,
+      "text_end": 39,
+      "method": "mithi_token_word_ownership",
+      "model_words": [
+        "ஆனாலும்"
+      ],
+      "group": null,
+      "tokens": [
+        38,
+        46
+      ],
+      "samples": [
+        48600,
+        60000
+      ]
+    },
+    {
+      "label": "படித்தது",
+      "text_start": 40,
+      "text_end": 48,
+      "method": "mithi_token_word_ownership",
+      "model_words": [
+        "படித்தது"
+      ],
+      "group": null,
+      "tokens": [
+        48,
+        58
+      ],
+      "samples": [
+        61200,
+        73800
+      ]
+    },
+    {
+      "label": "நினைவில்",
+      "text_start": 49,
+      "text_end": 57,
+      "method": "mithi_token_word_ownership",
+      "model_words": [
+        "நினைவில்"
+      ],
+      "group": null,
+      "tokens": [
+        60,
+        67
+      ],
+      "samples": [
+        75000,
+        85800
+      ]
+    },
+    {
+      "label": "நிற்கத்",
+      "text_start": 58,
+      "text_end": 65,
+      "method": "mithi_token_word_ownership",
+      "model_words": [
+        "நிற்கத்"
+      ],
+      "group": null,
+      "tokens": [
+        69,
+        75
+      ],
+      "samples": [
+        87000,
+        97200
+      ]
+    },
+    {
+      "label": "தூக்கம்",
+      "text_start": 66,
+      "text_end": 73,
+      "method": "mithi_token_word_ownership",
+      "model_words": [
+        "தூக்கம்"
+      ],
+      "group": null,
+      "tokens": [
+        77,
+        84
+      ],
+      "samples": [
+        102000,
+        112200
+      ]
+    },
+    {
+      "label": "எப்படி",
+      "text_start": 74,
+      "text_end": 80,
+      "method": "mithi_token_word_ownership",
+      "model_words": [
+        "எப்படி"
+      ],
+      "group": null,
+      "tokens": [
+        86,
+        93
+      ],
+      "samples": [
+        113400,
+        121200
+      ]
+    },
+    {
+      "label": "உதவுகிறது?",
+      "text_start": 81,
+      "text_end": 91,
+      "method": "mithi_token_word_ownership",
+      "model_words": [
+        "உதவுகிறது?"
+      ],
+      "group": null,
+      "tokens": [
+        95,
+        108
+      ],
+      "samples": [
+        122400,
+        137400
+      ]
+    }
+  ]
+}

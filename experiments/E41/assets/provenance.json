@@ -1,0 +1,219 @@
+{
+ "schema": "e41.asset-provenance",
+ "retrieved": "2026-11-27",
+ "licence_verified": "each asset page at polyhaven.com/a/<id> states CC0 1.0 Universal (public domain dedication)",
+ "assets": [
+  {
+   "id": "the_sky_is_on_fire",
+   "kind": "hdri",
+   "licence": "CC0 1.0 Universal",
+   "source": "https://polyhaven.com/a/the_sky_is_on_fire",
+   "authors": {
+    "Greg Zaal": "All",
+    "Rico Cilliers": "Backplates"
+   },
+   "files": [
+    {
+     "path": "the_sky_is_on_fire/the_sky_is_on_fire_2k.hdr",
+     "url": "https://dl.polyhaven.org/file/ph-assets/HDRIs/hdr/2k/the_sky_is_on_fire_2k.hdr",
+     "bytes": 5996454,
+     "sha256": "0d6de5d26052d30546ebd291ad6e96de88c342da3e5d8aee37298e9c12647911"
+    }
+   ]
+  },
+  {
+   "id": "coastal_cliff_01",
+   "kind": "model",
+   "licence": "CC0 1.0 Universal",
+   "source": "https://polyhaven.com/a/coastal_cliff_01",
+   "authors": {
+    "Rob Tuytel": "Photography, processing",
+    "Rico Cilliers": "cleanup"
+   },
+   "files": [
+    {
+     "path": "coastal_cliff_01/coastal_cliff_01_1k.gltf",
+     "url": "https://dl.polyhaven.org/file/ph-assets/Models/gltf/1k/coastal_cliff_01/coastal_cliff_01_1k.gltf",
+     "bytes": 2825,
+     "sha256": "2e6bb1f77965b314208b309ac89b94b8148c6a08ee6c9808cd71455e5475602d"
+    },
+    {
+     "path": "coastal_cliff_01/textures/coastal_cliff_01_diff_1k.jpg",
+     "url": "https://dl.polyhaven.org/file/ph-assets/Models/jpg/1k/coastal_cliff_01/coastal_cliff_01_diff_1k.jpg",
+     "bytes": 699457,
+     "sha256": "6c9626fdb5550ba260b195638c8c89053faedc22005f4ca94d3be5df72ae525a"
+    },
+    {
+     "path": "coastal_cliff_01/coastal_cliff_01.bin",
+     "url": "https://dl.polyhaven.org/file/ph-assets/Models/gltf/8k/coastal_cliff_01/coastal_cliff_01.bin",
+     "bytes": 13179840,
+     "sha256": "6833dfaf75e0d039e64bc09ad642c4be3361739f20048af32ad50fd8e6471a65"
+    },
+    {
+     "path": "coastal_cliff_01/textures/coastal_cliff_01_arm_1k.jpg",
+     "url": "https://dl.polyhaven.org/file/ph-assets/Models/jpg/1k/coastal_cliff_01/coastal_cliff_01_arm_1k.jpg",
+     "bytes": 640985,
+     "sha256": "7f287d0b44a3162b5e360fe45ccc8b6009c189d21bd33c1094060eef613c6fa6"
+    },
+    {
+     "path": "coastal_cliff_01/textures/coastal_cliff_01_nor_gl_1k.jpg",
+     "url": "https://dl.polyhaven.org/file/ph-assets/Models/jpg/1k/coastal_cliff_01/coastal_cliff_01_nor_gl_1k.jpg",
+     "bytes": 853524,
+     "sha256": "afbe8c2f9ff62dd616f776c074b996d2d275eef982a40aee1f28f4f3b3a3cf0e"
+    }
+   ]
+  },
+  {
+   "id": "ship_pinnace",
+   "kind": "model",
+   "licence": "CC0 1.0 Universal",
+   "source": "https://polyhaven.com/a/ship_pinnace",
+   "authors": {
+    "James Ray Cock": "model, textures, cleanup",
+    "Rico Cilliers": "sails model, textures",
+    "Nicolò Zubbini": "original model",
+    "Yann Kervran": "Rigging"
+   },
+   "files": [
+    {
+     "path": "ship_pinnace/ship_pinnace_1k.gltf",
+     "url": "https://dl.polyhaven.org/file/ph-assets/Models/gltf/1k/ship_pinnace/ship_pinnace_1k.gltf",
+     "bytes": 17175,
+     "sha256": "668298cada1731ec93886bb7ec2f170bbbf45575d341b838a09580199fdf5ec5"
+    },
+    {
+     "path": "ship_pinnace/textures/ship_pinnace_rigging_diff_1k.jpg",
+     "url": "https://dl.polyhaven.org/file/ph-assets/Models/jpg/1k/ship_pinnace/ship_pinnace_rigging_diff_1k.jpg",
+     "bytes": 669629,
+     "sha256": "8964c211b0462bc0546ad175cd492718b3a4019a47ae2c23c82eb824272c032a"
+    },
+    {
+     "path": "ship_pinnace/textures/ship_pinnace_sails_diff_1k.jpg",
+     "url": "https://dl.polyhaven.org/file/ph-assets/Models/jpg/1k/ship_pinnace/ship_pinnace_sails_diff_1k.jpg",
+     "bytes": 593277,
+     "sha256": "8aedb5c11ce8fec0ee9e2c369848e5fa3d41df299e1f886a25f0ae3b6587f5c0"
+    },
+    {
+     "path": "ship_pinnace/textures/ship_pinnace_deck_diff_1k.jpg",
+     "url": "https://dl.polyhaven.org/file/ph-assets/Models/jpg/1k/ship_pinnace/ship_pinnace_deck_diff_1k.jpg",
+     "bytes": 739906,
+     "sha256": "24ff82bf815607a3f4376d0fdb8df2a70437e9d4df77a059da39d685de8837ec"
+    },
+    {
+     "path": "ship_pinnace/textures/ship_pinnace_aft_arm_1k.jpg",
+     "url": "https://dl.polyhaven.org/file/ph-assets/Models/jpg/1k/ship_pinnace/ship_pinnace_aft_arm_1k.jpg",
+     "bytes": 553685,
+     "sha256": "4ad6d2bf79e7e0aab89519543c65cf2a122ece1c940b7fd23846151131b1a061"
+    },
+    {
+     "path": "ship_pinnace/textures/ship_pinnace_rigging_arm_1k.jpg",
+     "url": "https://dl.polyhaven.org/file/ph-assets/Models/jpg/1k/ship_pinnace/ship_pinnace_rigging_arm_1k.jpg",
+     "bytes": 700773,
+     "sha256": "86d7d6e3c8f2753db4fb22ad44cf52e361b858a4f3ad76c13435b8d385a2197e"
+    },
+    {
+     "path": "ship_pinnace/textures/ship_pinnace_details_nor_gl_1k.jpg",
+     "url": "https://dl.polyhaven.org/file/ph-assets/Models/jpg/1k/ship_pinnace/ship_pinnace_details_nor_gl_1k.jpg",
+     "bytes": 712283,
+     "sha256": "d38b20a57225153d97214184893b4e785b9312f776556af2f297aa6a446fcb56"
+    },
+    {
+     "path": "ship_pinnace/textures/ship_pinnace_deck_nor_gl_1k.jpg",
+     "url": "https://dl.polyhaven.org/file/ph-assets/Models/jpg/1k/ship_pinnace/ship_pinnace_deck_nor_gl_1k.jpg",
+     "bytes": 530854,
+     "sha256": "1362d0b0e48a7ce8ebcb154fd1d366efff2ba62fbf6398e15a89240fa4c84c9f"
+    },
+    {
+     "path": "ship_pinnace/textures/ship_pinnace_rigging_nor_gl_1k.jpg",
+     "url": "https://dl.polyhaven.org/file/ph-assets/Models/jpg/1k/ship_pinnace/ship_pinnace_rigging_nor_gl_1k.jpg",
+     "bytes": 713868,
+     "sha256": "d6d895880d64043288771bfdf0db79511c2e5d4541fd60bc693a4464f826a763"
+    },
+    {
+     "path": "ship_pinnace/textures/ship_pinnace_interior_nor_gl_1k.jpg",
+     "url": "https://dl.polyhaven.org/file/ph-assets/Models/jpg/1k/ship_pinnace/ship_pinnace_interior_nor_gl_1k.jpg",
+     "bytes": 365806,
+     "sha256": "47b7da411c5936c755e935f20f6480af0dd9e8bc6c47d1b16464014e15d733d9"
+    },
+    {
+     "path": "ship_pinnace/ship_pinnace.bin",
+     "url": "https://dl.polyhaven.org/file/ph-assets/Models/gltf/4k/ship_pinnace/ship_pinnace.bin",
+     "bytes": 7127428,
+     "sha256": "2066c551c756ca1bef9a03d8b2f7ee980b56f69eddf1682531899e9bcf2539db"
+    },
+    {
+     "path": "ship_pinnace/textures/ship_pinnace_hull_diff_1k.jpg",
+     "url": "https://dl.polyhaven.org/file/ph-assets/Models/jpg/1k/ship_pinnace/ship_pinnace_hull_diff_1k.jpg",
+     "bytes": 602406,
+     "sha256": "0fc6ae7bab8fb36aa3ae58bd5dc0d794854370b3be3ed72eb25c52f801877d00"
+    },
+    {
+     "path": "ship_pinnace/textures/ship_pinnace_hull_nor_gl_1k.jpg",
+     "url": "https://dl.polyhaven.org/file/ph-assets/Models/jpg/1k/ship_pinnace/ship_pinnace_hull_nor_gl_1k.jpg",
+     "bytes": 642694,
+     "sha256": "0c303af6b5f28d0cd1d366e264cfbfb0021e4b297478e7f9948c0435ef7e2028"
+    },
+    {
+     "path": "ship_pinnace/textures/ship_pinnace_sails_arm_1k.jpg",
+     "url": "https://dl.polyhaven.org/file/ph-assets/Models/jpg/1k/ship_pinnace/ship_pinnace_sails_arm_1k.jpg",
+     "bytes": 531487,
+     "sha256": "625a1a3e82d20ddba3ad6a05c5a9223ad0f1ab7690b04f1acec9be526a63a1df"
+    },
+    {
+     "path": "ship_pinnace/textures/ship_pinnace_hull_arm_1k.jpg",
+     "url": "https://dl.polyhaven.org/file/ph-assets/Models/jpg/1k/ship_pinnace/ship_pinnace_hull_arm_1k.jpg",
+     "bytes": 686048,
+     "sha256": "938e234941aa39fc514f14025c4f1941fa5ab59f18b426f96b8e0057a7731c2b"
+    },
+    {
+     "path": "ship_pinnace/textures/ship_pinnace_interior_diff_1k.jpg",
+     "url": "https://dl.polyhaven.org/file/ph-assets/Models/jpg/1k/ship_pinnace/ship_pinnace_interior_diff_1k.jpg",
+     "bytes": 720138,
+     "sha256": "82fcb97bf757f97ddba5a72e0ccee76a163a2f13e574b13f480d06bc1a8e8e57"
+    },
+    {
+     "path": "ship_pinnace/textures/ship_pinnace_interior_arm_1k.jpg",
+     "url": "https://dl.polyhaven.org/file/ph-assets/Models/jpg/1k/ship_pinnace/ship_pinnace_interior_arm_1k.jpg",
+     "bytes": 720399,
+     "sha256": "0bd7db3c15984cd3abb63e3aa185f4e07132bc30a8e96d64a8070d4cff50e6f9"
+    },
+    {
+     "path": "ship_pinnace/textures/ship_pinnace_aft_diff_1k.jpg",
+     "url": "https://dl.polyhaven.org/file/ph-assets/Models/jpg/1k/ship_pinnace/ship_pinnace_aft_diff_1k.jpg",
+     "bytes": 659920,
+     "sha256": "1f068682360f7f1a99bb8f6da817ef1264c8f648de505555eeff84d2c5b76c6a"
+    },
+    {
+     "path": "ship_pinnace/textures/ship_pinnace_deck_arm_1k.jpg",
+     "url": "https://dl.polyhaven.org/file/ph-assets/Models/jpg/1k/ship_pinnace/ship_pinnace_deck_arm_1k.jpg",
+     "bytes": 778067,
+     "sha256": "438d31dfa17b043242ec4984edbc719be217b5a42dfd05f28a670a862c123a9d"
+    },
+    {
+     "path": "ship_pinnace/textures/ship_pinnace_sails_nor_gl_1k.jpg",
+     "url": "https://dl.polyhaven.org/file/ph-assets/Models/jpg/1k/ship_pinnace/ship_pinnace_sails_nor_gl_1k.jpg",
+     "bytes": 767155,
+     "sha256": "f27589c79ebb986e865e4492506e4ce6633c2896a721f980734f159c13fd00ef"
+    },
+    {
+     "path": "ship_pinnace/textures/ship_pinnace_details_arm_1k.jpg",
+     "url": "https://dl.polyhaven.org/file/ph-assets/Models/jpg/1k/ship_pinnace/ship_pinnace_details_arm_1k.jpg",
+     "bytes": 884789,
+     "sha256": "e0f4f97183c5559fd549c3ef35385646d613acd666338c4062643d2890d3e73c"
+    },
+    {
+     "path": "ship_pinnace/textures/ship_pinnace_aft_nor_gl_1k.jpg",
+     "url": "https://dl.polyhaven.org/file/ph-assets/Models/jpg/1k/ship_pinnace/ship_pinnace_aft_nor_gl_1k.jpg",
+     "bytes": 728770,
+     "sha256": "927077bb68b306e5eac3c7aaabb5ea07b26d66b91b1efdfee2ea2c0ece4da053"
+    },
+    {
+     "path": "ship_pinnace/textures/ship_pinnace_details_diff_1k.jpg",
+     "url": "https://dl.polyhaven.org/file/ph-assets/Models/jpg/1k/ship_pinnace/ship_pinnace_details_diff_1k.jpg",
+     "bytes": 628000,
+     "sha256": "ef2359e86687fc4b5527ab622f9c7d787960cbe2d5ca56266b433ae42f678534"
+    }
+   ]
+  }
+ ]
+}

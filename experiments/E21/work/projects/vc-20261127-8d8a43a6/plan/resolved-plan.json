@@ -1,0 +1,220 @@
+{
+  "schema": "video-creator.creative-plan",
+  "version": 1,
+  "narration": {
+    "timeline": "narration/narration.timeline.json",
+    "sha256": "ba3a75b4290894485a5a4ef95e6cd9b099ce6cf3933871152bf9f136d76e37b1"
+  },
+  "style": "paper-explainer",
+  "style_reason": "fixture",
+  "guardrails": [
+    "simplified, not to scale"
+  ],
+  "motifs": [
+    {
+      "id": "m1",
+      "stands_for": "x"
+    }
+  ],
+  "story": [
+    {
+      "segment": "s1",
+      "role": "hook",
+      "idea": "x"
+    },
+    {
+      "segment": "s2",
+      "role": "mechanism",
+      "idea": "x"
+    },
+    {
+      "segment": "s3",
+      "role": "resolution",
+      "idea": "x"
+    }
+  ],
+  "assets": [
+    {
+      "id": "a1",
+      "kind": "procedural",
+      "description": "procedural fixture art"
+    }
+  ],
+  "shots": [
+    {
+      "id": "meadow",
+      "purpose": "p",
+      "objects": [
+        {
+          "id": "m-bee",
+          "asset": "a1",
+          "description": "m-bee"
+        },
+        {
+          "id": "m-flower",
+          "asset": "a1",
+          "description": "m-flower"
+        }
+      ],
+      "cues": [
+        {
+          "id": "visits",
+          "object": "m-bee",
+          "action": "appear",
+          "at": {
+            "sample": 19733,
+            "seconds": 0.8222,
+            "kind": "word",
+            "label": "visits",
+            "segment": "s1",
+            "timing_source": "forced_alignment",
+            "edge": "start",
+            "offset_ms": 0
+          }
+        },
+        {
+          "id": "nectar",
+          "object": "m-flower",
+          "action": "appear",
+          "at": {
+            "sample": 64533,
+            "seconds": 2.6889,
+            "kind": "word",
+            "label": "nectar.",
+            "segment": "s1",
+            "timing_source": "forced_alignment",
+            "edge": "start",
+            "offset_ms": 0
+          }
+        }
+      ],
+      "start": {
+        "sample": 0,
+        "seconds": 0.0,
+        "kind": "bounds",
+        "label": "narration-start",
+        "timing_source": "narration_bounds"
+      },
+      "end": {
+        "sample": 81600,
+        "seconds": 3.4
+      },
+      "camera": []
+    },
+    {
+      "id": "hive",
+      "purpose": "p",
+      "start": {
+        "sample": 81600,
+        "seconds": 3.4,
+        "kind": "segment",
+        "label": "s2",
+        "segment": null,
+        "timing_source": "segment_boundary",
+        "edge": "start",
+        "offset_ms": 0
+      },
+      "objects": [
+        {
+          "id": "h-drop",
+          "asset": "a1",
+          "description": "h-drop"
+        },
+        {
+          "id": "h-bee1-wing",
+          "asset": "a1",
+          "description": "h-bee1-wing"
+        },
+        {
+          "id": "h-honey",
+          "asset": "a1",
+          "description": "h-honey"
+        },
+        {
+          "id": "h-cap",
+          "asset": "a1",
+          "description": "h-cap"
+        }
+      ],
+      "cues": [
+        {
+          "id": "pass",
+          "object": "h-drop",
+          "action": "appear",
+          "at": {
+            "sample": 108554,
+            "seconds": 4.5231,
+            "kind": "word",
+            "label": "pass",
+            "segment": "s2",
+            "timing_source": "forced_alignment",
+            "edge": "start",
+            "offset_ms": 0
+          }
+        },
+        {
+          "id": "fan",
+          "object": "h-bee1-wing",
+          "action": "appear",
+          "at": {
+            "sample": 130708,
+            "seconds": 5.4462,
+            "kind": "word",
+            "label": "fan",
+            "segment": "s2",
+            "timing_source": "forced_alignment",
+            "edge": "start",
+            "offset_ms": 0
+          }
+        },
+        {
+          "id": "thickens",
+          "object": "h-honey",
+          "action": "appear",
+          "at": {
+            "sample": 201943,
+            "seconds": 8.4143,
+            "kind": "word",
+            "label": "thickens",
+            "segment": "s3",
+            "timing_source": "forced_alignment",
+            "edge": "start",
+            "offset_ms": 0
+          }
+        },
+        {
+          "id": "seal",
+          "object": "h-cap",
+          "action": "appear",
+          "at": {
+            "sample": 231086,
+            "seconds": 9.6286,
+            "kind": "word",
+            "label": "seal",
+            "segment": "s3",
+            "timing_source": "forced_alignment",
+            "edge": "start",
+            "offset_ms": 0
+          }
+        }
+      ],
+      "end": {
+        "sample": 268800,
+        "seconds": 11.2
+      },
+      "camera": []
+    }
+  ],
+  "resolution": {
+    "timeline_sha256": "ba3a75b4290894485a5a4ef95e6cd9b099ce6cf3933871152bf9f136d76e37b1",
+    "audio_sha256": "caa1dfeae32c247141d7d4cee325aaa27999e1e27a2fce29c6c4d5e653a880ba",
+    "sample_rate": 24000,
+    "sample_count": 268800,
+    "timing_status": "unreviewed",
+    "record_sources": [
+      "forced_alignment"
+    ],
+    "run_id": "synthetic-bees",
+    "timeline": "narration/narration.timeline.json"
+  }
+}

@@ -1,0 +1,15 @@
+{
+ "captions": "E18 captions.json (contract-validated)",
+ "frames": [
+  {
+   "frame": 84,
+   "t": 2.8,
+   "captionWord": "నొక్కుతారు.",
+   "hook": {
+    "opacity": 0,
+    "visible": false
+   },
+   "cue": "c3"
+  }
+ ]
+}

@@ -46,9 +46,9 @@ Labels use the multilingual font (`--vc-font`) at weight 700–800 and are never
 
 ## Self-review additions
 
+- Could a viewer tell the actors or states apart by silhouette or structure? Carry an identifying feature through the transformation and mark simplified geometry that could be read literally.
 - Does every coded colour mean the same thing everywhere in the video?
 - Is the mechanism (the moving part) the clearest thing in each shot?
-- Is there at least one change of scale (outside → inside) where the topic allows it?
 - Do flows, emissions and transformations happen at the word that names them?
 - Are symbolic particles and molecules marked as not to scale in the guardrails?
 
@@ -65,3 +65,10 @@ Selected with the preference `presentation=full-bleed` or by the topic's own `pr
 Any topic's organisms, molecules, layouts or cue times. The P017.3 fixture (`scripts/tests/fixtures/fs-topic.js`, photosynthesis) is an example, not a template.
 
 **Status:** P017.3. Validated on a compact synthetic Telugu fixture only: portrait and landscape, preflight, a 5.6 s preview, cue, camera and transition checks. There has been no full production and no human artistic or scientific review. Fonts are system fonts, with licensing review pending.
+
+## Reference-derived craft (P023.3, optional)
+
+- **Flat depth without gradients:** `art.litForm(d, color, {dir})` gives one dark crescent on the shadow side and a lit rim sliver. It uses fills only, so union shapes such as cloud puffs show no inner outlines.
+- **Light as flat steps:** `art.halo` (stepped concentric discs) and `art.flare` (four-point flare) replace blurred glows. `art.starfield` provides seeded fine stars.
+- **Palettes:** `PALETTES` (`space`, `ocean`, `cell`). Choose one per video and keep its roles fixed.
+- **Transformations:** show the change in one scene when the science is a change (a cloud collapsing into a disc, a core igniting). Use existing motion curves. Mark simplifications and scale in the plan's guardrails.

@@ -1,0 +1,419 @@
+{
+  "result": "mapped",
+  "words": [
+    {
+      "label": "అసలు",
+      "text_start": 0,
+      "text_end": 4,
+      "method": "mithi_token_word_ownership",
+      "model_words": [
+        "అసలు"
+      ],
+      "group": null,
+      "tokens": [
+        1,
+        6
+      ],
+      "samples": [
+        1200,
+        9600
+      ]
+    },
+    {
+      "label": "వ్యాధి",
+      "text_start": 5,
+      "text_end": 11,
+      "method": "mithi_token_word_ownership",
+      "model_words": [
+        "వ్యాధి"
+      ],
+      "group": null,
+      "tokens": [
+        8,
+        15
+      ],
+      "samples": [
+        10800,
+        18600
+      ]
+    },
+    {
+      "label": "రాకముందే",
+      "text_start": 12,
+      "text_end": 20,
+      "method": "mithi_token_word_ownership",
+      "model_words": [
+        "రాకముందే"
+      ],
+      "group": null,
+      "tokens": [
+        17,
+        29
+      ],
+      "samples": [
+        19800,
+        34800
+      ]
+    },
+    {
+      "label": "దాన్ని",
+      "text_start": 21,
+      "text_end": 27,
+      "method": "mithi_token_word_ownership",
+      "model_words": [
+        "దాన్ని"
+      ],
+      "group": null,
+      "tokens": [
+        31,
+        37
+      ],
+      "samples": [
+        40800,
+        48000
+      ]
+    },
+    {
+      "label": "గుర్తించడం",
+      "text_start": 28,
+      "text_end": 38,
+      "method": "mithi_token_word_ownership",
+      "model_words": [
+        "గుర్తించడం"
+      ],
+      "group": null,
+      "tokens": [
+        39,
+        51
+      ],
+      "samples": [
+        49200,
+        64800
+      ]
+    },
+    {
+      "label": "శరీరం",
+      "text_start": 39,
+      "text_end": 44,
+      "method": "mithi_token_word_ownership",
+      "model_words": [
+        "శరీరం"
+      ],
+      "group": null,
+      "tokens": [
+        53,
+        61
+      ],
+      "samples": [
+        66600,
+        78600
+      ]
+    },
+    {
+      "label": "ఎలా",
+      "text_start": 45,
+      "text_end": 48,
+      "method": "mithi_token_word_ownership",
+      "model_words": [
+        "ఎలా"
+      ],
+      "group": null,
+      "tokens": [
+        63,
+        68
+      ],
+      "samples": [
+        79800,
+        85200
+      ]
+    },
+    {
+      "label": "నేర్చుకుంటుంది?",
+      "text_start": 49,
+      "text_end": 64,
+      "method": "mithi_token_word_ownership",
+      "model_words": [
+        "నేర్చుకుంటుంది?"
+      ],
+      "group": null,
+      "tokens": [
+        70,
+        85
+      ],
+      "samples": [
+        86400,
+        104400
+      ]
+    },
+    {
+      "label": "టీకా",
+      "text_start": 65,
+      "text_end": 69,
+      "method": "mithi_token_word_ownership",
+      "model_words": [
+        "టీకా"
+      ],
+      "group": null,
+      "tokens": [
+        88,
+        94
+      ],
+      "samples": [
+        116400,
+        126000
+      ]
+    },
+    {
+      "label": "రోగనిరోధక",
+      "text_start": 70,
+      "text_end": 79,
+      "method": "mithi_token_word_ownership",
+      "model_words": [
+        "రోగనిరోధక"
+      ],
+      "group": null,
+      "tokens": [
+        96,
+        113
+      ],
+      "samples": [
+        127200,
+        145200
+      ]
+    },
+    {
+      "label": "వ్యవస్థకు",
+      "text_start": 80,
+      "text_end": 89,
+      "method": "mithi_token_word_ownership",
+      "model_words": [
+        "వ్యవస్థకు"
+      ],
+      "group": null,
+      "tokens": [
+        115,
+        127
+      ],
+      "samples": [
+        145800,
+        161400
+      ]
+    },
+    {
+      "label": "ఒక",
+      "text_start": 90,
+      "text_end": 92,
+      "method": "mithi_token_word_ownership",
+      "model_words": [
+        "ఒక"
+      ],
+      "group": null,
+      "tokens": [
+        129,
+        132
+      ],
+      "samples": [
+        165000,
+        169800
+      ]
+    },
+    {
+      "label": "గుర్తును",
+      "text_start": 93,
+      "text_end": 101,
+      "method": "mithi_token_word_ownership",
+      "model_words": [
+        "గుర్తును"
+      ],
+      "group": null,
+      "tokens": [
+        134,
+        141
+      ],
+      "samples": [
+        171600,
+        180600
+      ]
+    },
+    {
+      "label": "పరిచయం",
+      "text_start": 102,
+      "text_end": 108,
+      "method": "mithi_token_word_ownership",
+      "model_words": [
+        "పరిచయం"
+      ],
+      "group": null,
+      "tokens": [
+        143,
+        153
+      ],
+      "samples": [
+        181800,
+        193200
+      ]
+    },
+    {
+      "label": "చేస్తుంది.",
+      "text_start": 109,
+      "text_end": 119,
+      "method": "mithi_token_word_ownership",
+      "model_words": [
+        "చేస్తుంది."
+      ],
+      "group": null,
+      "tokens": [
+        155,
+        164
+      ],
+      "samples": [
+        194400,
+        205800
+      ]
+    },
+    {
+      "label": "వ్యాధిని",
+      "text_start": 120,
+      "text_end": 128,
+      "method": "mithi_token_word_ownership",
+      "model_words": [
+        "వ్యాధిని"
+      ],
+      "group": null,
+      "tokens": [
+        167,
+        176
+      ],
+      "samples": [
+        220800,
+        232200
+      ]
+    },
+    {
+      "label": "కలిగించే",
+      "text_start": 129,
+      "text_end": 137,
+      "method": "mithi_token_word_ownership",
+      "model_words": [
+        "కలిగించే"
+      ],
+      "group": null,
+      "tokens": [
+        178,
+        189
+      ],
+      "samples": [
+        233400,
+        245400
+      ]
+    },
+    {
+      "label": "సూక్ష్మజీవికి",
+      "text_start": 138,
+      "text_end": 151,
+      "method": "mithi_token_word_ownership",
+      "model_words": [
+        "సూక్ష్మజీవికి"
+      ],
+      "group": null,
+      "tokens": [
+        191,
+        206
+      ],
+      "samples": [
+        247200,
+        266400
+      ]
+    },
+    {
+      "label": "సంబంధించిన",
+      "text_start": 152,
+      "text_end": 162,
+      "method": "mithi_token_word_ownership",
+      "model_words": [
+        "సంబంధించిన"
+      ],
+      "group": null,
+      "tokens": [
+        208,
+        223
+      ],
+      "samples": [
+        267600,
+        286200
+      ]
+    },
+    {
+      "label": "ఆ",
+      "text_start": 163,
+      "text_end": 164,
+      "method": "mithi_token_word_ownership",
+      "model_words": [
+        "ఆ"
+      ],
+      "group": null,
+      "tokens": [
+        225,
+        226
+      ],
+      "samples": [
+        288000,
+        291600
+      ]
+    },
+    {
+      "label": "గుర్తును",
+      "text_start": 165,
+      "text_end": 173,
+      "method": "mithi_token_word_ownership",
+      "model_words": [
+        "గుర్తును"
+      ],
+      "group": null,
+      "tokens": [
+        228,
+        235
+      ],
+      "samples": [
+        292800,
+        303600
+      ]
+    },
+    {
+      "label": "యాంటిజెన్",
+      "text_start": 174,
+      "text_end": 183,
+      "method": "mithi_token_word_ownership",
+      "model_words": [
+        "యాంటిజెన్"
+      ],
+      "group": null,
+      "tokens": [
+        237,
+        246
+      ],
+      "samples": [
+        305400,
+        318000
+      ]
+    },
+    {
+      "label": "అంటారు.",
+      "text_start": 184,
+      "text_end": 191,
+      "method": "mithi_token_word_ownership",
+      "model_words": [
+        "అంటారు."
+      ],
+      "group": null,
+      "tokens": [
+        248,
+        255
+      ],
+      "samples": [
+        319200,
+        328200
+      ]
+    }
+  ]
+}

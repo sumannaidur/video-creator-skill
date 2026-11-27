@@ -1,0 +1,437 @@
+{
+  "result": "mapped",
+  "words": [
+    {
+      "label": "सोचिए,",
+      "text_start": 0,
+      "text_end": 6,
+      "method": "mithi_token_word_ownership",
+      "model_words": [
+        "सोचिए,"
+      ],
+      "group": null,
+      "tokens": [
+        1,
+        9
+      ],
+      "samples": [
+        1200,
+        12600
+      ]
+    },
+    {
+      "label": "आपने",
+      "text_start": 7,
+      "text_end": 11,
+      "method": "mithi_token_word_ownership",
+      "model_words": [
+        "आपने"
+      ],
+      "group": null,
+      "tokens": [
+        12,
+        19
+      ],
+      "samples": [
+        20400,
+        28200
+      ]
+    },
+    {
+      "label": "सौ",
+      "text_start": 12,
+      "text_end": 14,
+      "method": "mithi_token_word_ownership",
+      "model_words": [
+        "सौ"
+      ],
+      "group": null,
+      "tokens": [
+        21,
+        24
+      ],
+      "samples": [
+        30000,
+        33600
+      ]
+    },
+    {
+      "label": "रुपये",
+      "text_start": 15,
+      "text_end": 20,
+      "method": "mithi_token_word_ownership",
+      "model_words": [
+        "रुपये"
+      ],
+      "group": null,
+      "tokens": [
+        26,
+        33
+      ],
+      "samples": [
+        34800,
+        40800
+      ]
+    },
+    {
+      "label": "बचाए।",
+      "text_start": 21,
+      "text_end": 26,
+      "method": "mithi_token_word_ownership",
+      "model_words": [
+        "बचाए."
+      ],
+      "group": null,
+      "tokens": [
+        35,
+        42
+      ],
+      "samples": [
+        42000,
+        51000
+      ]
+    },
+    {
+      "label": "मान",
+      "text_start": 27,
+      "text_end": 30,
+      "method": "mithi_token_word_ownership",
+      "model_words": [
+        "मान"
+      ],
+      "group": null,
+      "tokens": [
+        45,
+        49
+      ],
+      "samples": [
+        60600,
+        66000
+      ]
+    },
+    {
+      "label": "लेते",
+      "text_start": 31,
+      "text_end": 35,
+      "method": "mithi_token_word_ownership",
+      "model_words": [
+        "लेते"
+      ],
+      "group": null,
+      "tokens": [
+        51,
+        57
+      ],
+      "samples": [
+        67200,
+        73200
+      ]
+    },
+    {
+      "label": "हैं",
+      "text_start": 36,
+      "text_end": 39,
+      "method": "mithi_token_word_ownership",
+      "model_words": [
+        "हैं"
+      ],
+      "group": null,
+      "tokens": [
+        59,
+        61
+      ],
+      "samples": [
+        74400,
+        76200
+      ]
+    },
+    {
+      "label": "कि",
+      "text_start": 40,
+      "text_end": 42,
+      "method": "mithi_token_word_ownership",
+      "model_words": [
+        "कि"
+      ],
+      "group": null,
+      "tokens": [
+        63,
+        65
+      ],
+      "samples": [
+        78000,
+        81000
+      ]
+    },
+    {
+      "label": "हर",
+      "text_start": 43,
+      "text_end": 45,
+      "method": "mithi_token_word_ownership",
+      "model_words": [
+        "हर"
+      ],
+      "group": null,
+      "tokens": [
+        67,
+        70
+      ],
+      "samples": [
+        82800,
+        87600
+      ]
+    },
+    {
+      "label": "साल",
+      "text_start": 46,
+      "text_end": 49,
+      "method": "mithi_token_word_ownership",
+      "model_words": [
+        "साल"
+      ],
+      "group": null,
+      "tokens": [
+        72,
+        76
+      ],
+      "samples": [
+        89400,
+        95400
+      ]
+    },
+    {
+      "label": "दस",
+      "text_start": 50,
+      "text_end": 52,
+      "method": "mithi_token_word_ownership",
+      "model_words": [
+        "दस"
+      ],
+      "group": null,
+      "tokens": [
+        78,
+        81
+      ],
+      "samples": [
+        97200,
+        102000
+      ]
+    },
+    {
+      "label": "प्रतिशत",
+      "text_start": 53,
+      "text_end": 60,
+      "method": "mithi_token_word_ownership",
+      "model_words": [
+        "प्रतिशत"
+      ],
+      "group": null,
+      "tokens": [
+        83,
+        92
+      ],
+      "samples": [
+        103200,
+        115200
+      ]
+    },
+    {
+      "label": "ब्याज",
+      "text_start": 61,
+      "text_end": 66,
+      "method": "mithi_token_word_ownership",
+      "model_words": [
+        "ब्याज"
+      ],
+      "group": null,
+      "tokens": [
+        94,
+        99
+      ],
+      "samples": [
+        116400,
+        121800
+      ]
+    },
+    {
+      "label": "मिलता",
+      "text_start": 67,
+      "text_end": 72,
+      "method": "mithi_token_word_ownership",
+      "model_words": [
+        "मिलता"
+      ],
+      "group": null,
+      "tokens": [
+        101,
+        108
+      ],
+      "samples": [
+        123000,
+        130800
+      ]
+    },
+    {
+      "label": "है।",
+      "text_start": 73,
+      "text_end": 76,
+      "method": "mithi_token_word_ownership",
+      "model_words": [
+        "है."
+      ],
+      "group": null,
+      "tokens": [
+        110,
+        112
+      ],
+      "samples": [
+        132000,
+        135000
+      ]
+    },
+    {
+      "label": "खाते",
+      "text_start": 77,
+      "text_end": 81,
+      "method": "mithi_token_word_ownership",
+      "model_words": [
+        "खाते"
+      ],
+      "group": null,
+      "tokens": [
+        115,
+        122
+      ],
+      "samples": [
+        142800,
+        150600
+      ]
+    },
+    {
+      "label": "में",
+      "text_start": 82,
+      "text_end": 85,
+      "method": "mithi_token_word_ownership",
+      "model_words": [
+        "में"
+      ],
+      "group": null,
+      "tokens": [
+        124,
+        127
+      ],
+      "samples": [
+        151800,
+        154200
+      ]
+    },
+    {
+      "label": "आप",
+      "text_start": 86,
+      "text_end": 88,
+      "method": "mithi_token_word_ownership",
+      "model_words": [
+        "आप"
+      ],
+      "group": null,
+      "tokens": [
+        129,
+        132
+      ],
+      "samples": [
+        154800,
+        157800
+      ]
+    },
+    {
+      "label": "फिर",
+      "text_start": 89,
+      "text_end": 92,
+      "method": "mithi_token_word_ownership",
+      "model_words": [
+        "फिर"
+      ],
+      "group": null,
+      "tokens": [
+        134,
+        138
+      ],
+      "samples": [
+        159000,
+        163800
+      ]
+    },
+    {
+      "label": "कोई",
+      "text_start": 93,
+      "text_end": 96,
+      "method": "mithi_token_word_ownership",
+      "model_words": [
+        "कोई"
+      ],
+      "group": null,
+      "tokens": [
+        140,
+        144
+      ],
+      "samples": [
+        165000,
+        169200
+      ]
+    },
+    {
+      "label": "पैसा",
+      "text_start": 97,
+      "text_end": 101,
+      "method": "mithi_token_word_ownership",
+      "model_words": [
+        "पैसा"
+      ],
+      "group": null,
+      "tokens": [
+        146,
+        152
+      ],
+      "samples": [
+        170400,
+        177000
+      ]
+    },
+    {
+      "label": "नहीं",
+      "text_start": 102,
+      "text_end": 106,
+      "method": "mithi_token_word_ownership",
+      "model_words": [
+        "नहीं"
+      ],
+      "group": null,
+      "tokens": [
+        154,
+        159
+      ],
+      "samples": [
+        177600,
+        182400
+      ]
+    },
+    {
+      "label": "डालते।",
+      "text_start": 107,
+      "text_end": 113,
+      "method": "mithi_token_word_ownership",
+      "model_words": [
+        "डालते."
+      ],
+      "group": null,
+      "tokens": [
+        161,
+        169
+      ],
+      "samples": [
+        183600,
+        192000
+      ]
+    }
+  ]
+}

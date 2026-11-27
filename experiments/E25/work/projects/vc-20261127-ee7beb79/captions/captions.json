@@ -1,0 +1,140 @@
+{
+  "schema": "video-creator.captions",
+  "version": 1,
+  "locale": "te-IN",
+  "narration": {
+    "timeline": "narration/narration.timeline.json",
+    "timeline_sha256": "99f5810b1b3862b927e1fe07b32b47a363bd7bea12ead586c44581b5e859007d",
+    "audio_sha256": "caa1dfeae32c247141d7d4cee325aaa27999e1e27a2fce29c6c4d5e653a880ba",
+    "sample_rate": 24000,
+    "sample_count": 268800,
+    "timing_status": "unreviewed",
+    "timing_method": "forced_alignment",
+    "run_id": "synthetic-moon"
+  },
+  "config": {
+    "enabled": true,
+    "burn_in": true,
+    "subtitle_files": [
+      "srt",
+      "vtt"
+    ],
+    "mode": "words",
+    "max_chars": 28,
+    "max_words": 4,
+    "max_lines": 2,
+    "hold_ms": 700
+  },
+  "cues": [
+    {
+      "start_sample": 4800,
+      "speech_end_sample": 60480,
+      "text": "చంద్రుడు సొంతంగా వెలగడు.",
+      "text_ref": {
+        "field": "speech",
+        "start": 0,
+        "end": 24
+      },
+      "segment": "s1",
+      "timing_sources": [
+        "forced_alignment"
+      ],
+      "long": false,
+      "end_sample": 76800,
+      "id": "c1",
+      "start": 0.2,
+      "end": 3.2
+    },
+    {
+      "start_sample": 76800,
+      "speech_end_sample": 136704,
+      "text": "సూర్యకాంతి దాని ఒక వైపునే",
+      "text_ref": {
+        "field": "speech",
+        "start": 25,
+        "end": 50
+      },
+      "segment": "s2",
+      "timing_sources": [
+        "forced_alignment"
+      ],
+      "long": false,
+      "end_sample": 138240,
+      "id": "c2",
+      "start": 3.2,
+      "end": 5.76
+    },
+    {
+      "start_sample": 138240,
+      "speech_end_sample": 152064,
+      "text": "పడుతుంది.",
+      "text_ref": {
+        "field": "speech",
+        "start": 51,
+        "end": 60
+      },
+      "segment": "s2",
+      "timing_sources": [
+        "forced_alignment"
+      ],
+      "long": false,
+      "end_sample": 168000,
+      "id": "c3",
+      "start": 5.76,
+      "end": 7.0
+    },
+    {
+      "start_sample": 168000,
+      "speech_end_sample": 224160,
+      "text": "మనకు కనిపించే వెలుగు భాగమే",
+      "text_ref": {
+        "field": "speech",
+        "start": 61,
+        "end": 87
+      },
+      "segment": "s3",
+      "timing_sources": [
+        "forced_alignment"
+      ],
+      "long": false,
+      "end_sample": 225600,
+      "id": "c4",
+      "start": 7.0,
+      "end": 9.4
+    },
+    {
+      "start_sample": 225600,
+      "speech_end_sample": 252960,
+      "text": "దశలుగా మారుతుంది.",
+      "text_ref": {
+        "field": "speech",
+        "start": 88,
+        "end": 105
+      },
+      "segment": "s3",
+      "timing_sources": [
+        "forced_alignment"
+      ],
+      "long": false,
+      "end_sample": 268800,
+      "id": "c5",
+      "start": 9.4,
+      "end": 11.2
+    }
+  ],
+  "files": {
+    "srt": {
+      "path": "captions/captions.srt",
+      "sha256": "640c995a70d32f6641ed207606d6fc3a46e6a05653c3bed5e1587af8fa97e0cb"
+    },
+    "vtt": {
+      "path": "captions/captions.vtt",
+      "sha256": "d20699d2ab66659aa2c426e7a9fbb98178827959001b5fc0151d298bb5667c02"
+    }
+  },
+  "review": {
+    "technical": "passed",
+    "language": "pending native-reader review",
+    "readability": "pending human review"
+  }
+}

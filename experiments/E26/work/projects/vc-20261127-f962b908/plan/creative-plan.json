@@ -1,0 +1,131 @@
+{
+  "schema": "video-creator.creative-plan",
+  "version": 1,
+  "narration": {
+    "timeline": "narration/narration.timeline.json",
+    "sha256": "41804bc6f3b7e2eb6501c5d0499ad0e678c42ca16f719890a1407b7427a4cdfa"
+  },
+  "style": "tech-explainer",
+  "style_reason": "fixture",
+  "guardrails": [
+    "simplified, not to scale"
+  ],
+  "motifs": [
+    {
+      "id": "m1",
+      "stands_for": "x"
+    }
+  ],
+  "story": [
+    {
+      "segment": "s1",
+      "role": "hook",
+      "idea": "x"
+    },
+    {
+      "segment": "s2",
+      "role": "mechanism",
+      "idea": "x"
+    },
+    {
+      "segment": "s3",
+      "role": "resolution",
+      "idea": "x"
+    }
+  ],
+  "assets": [
+    {
+      "id": "a1",
+      "kind": "procedural",
+      "description": "procedural fixture art"
+    }
+  ],
+  "shots": [
+    {
+      "id": "spin",
+      "purpose": "p",
+      "objects": [
+        {
+          "id": "o-spin",
+          "asset": "a1",
+          "description": "o-spin"
+        }
+      ],
+      "cues": [
+        {
+          "id": "spins",
+          "object": "o-spin",
+          "action": "appear",
+          "at": {
+            "word": "spins",
+            "segment": "s1"
+          }
+        }
+      ]
+    },
+    {
+      "id": "seek",
+      "purpose": "p",
+      "start": {
+        "segment": "s2"
+      },
+      "objects": [
+        {
+          "id": "o-arm",
+          "asset": "a1",
+          "description": "o-arm"
+        },
+        {
+          "id": "o-track",
+          "asset": "a1",
+          "description": "o-track"
+        }
+      ],
+      "cues": [
+        {
+          "id": "swings",
+          "object": "o-arm",
+          "action": "appear",
+          "at": {
+            "word": "swings",
+            "segment": "s2"
+          }
+        },
+        {
+          "id": "exact",
+          "object": "o-track",
+          "action": "appear",
+          "at": {
+            "word": "exact",
+            "segment": "s2"
+          }
+        }
+      ]
+    },
+    {
+      "id": "float",
+      "purpose": "p",
+      "start": {
+        "segment": "s3"
+      },
+      "objects": [
+        {
+          "id": "o-inset",
+          "asset": "a1",
+          "description": "o-inset"
+        }
+      ],
+      "cues": [
+        {
+          "id": "floats",
+          "object": "o-inset",
+          "action": "appear",
+          "at": {
+            "word": "floats",
+            "segment": "s3"
+          }
+        }
+      ]
+    }
+  ]
+}

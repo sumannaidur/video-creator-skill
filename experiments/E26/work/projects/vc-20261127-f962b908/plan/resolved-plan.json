@@ -1,0 +1,203 @@
+{
+  "schema": "video-creator.creative-plan",
+  "version": 1,
+  "narration": {
+    "timeline": "narration/narration.timeline.json",
+    "sha256": "41804bc6f3b7e2eb6501c5d0499ad0e678c42ca16f719890a1407b7427a4cdfa"
+  },
+  "style": "tech-explainer",
+  "style_reason": "fixture",
+  "guardrails": [
+    "simplified, not to scale"
+  ],
+  "motifs": [
+    {
+      "id": "m1",
+      "stands_for": "x"
+    }
+  ],
+  "story": [
+    {
+      "segment": "s1",
+      "role": "hook",
+      "idea": "x"
+    },
+    {
+      "segment": "s2",
+      "role": "mechanism",
+      "idea": "x"
+    },
+    {
+      "segment": "s3",
+      "role": "resolution",
+      "idea": "x"
+    }
+  ],
+  "assets": [
+    {
+      "id": "a1",
+      "kind": "procedural",
+      "description": "procedural fixture art"
+    }
+  ],
+  "shots": [
+    {
+      "id": "spin",
+      "purpose": "p",
+      "objects": [
+        {
+          "id": "o-spin",
+          "asset": "a1",
+          "description": "o-spin"
+        }
+      ],
+      "cues": [
+        {
+          "id": "spins",
+          "object": "o-spin",
+          "action": "appear",
+          "at": {
+            "sample": 46154,
+            "seconds": 1.9231,
+            "kind": "word",
+            "label": "spins",
+            "segment": "s1",
+            "timing_source": "forced_alignment",
+            "edge": "start",
+            "offset_ms": 0
+          }
+        }
+      ],
+      "start": {
+        "sample": 0,
+        "seconds": 0.0,
+        "kind": "bounds",
+        "label": "narration-start",
+        "timing_source": "narration_bounds"
+      },
+      "end": {
+        "sample": 91200,
+        "seconds": 3.8
+      },
+      "camera": []
+    },
+    {
+      "id": "seek",
+      "purpose": "p",
+      "start": {
+        "sample": 91200,
+        "seconds": 3.8,
+        "kind": "segment",
+        "label": "s2",
+        "segment": null,
+        "timing_source": "segment_boundary",
+        "edge": "start",
+        "offset_ms": 0
+      },
+      "objects": [
+        {
+          "id": "o-arm",
+          "asset": "a1",
+          "description": "o-arm"
+        },
+        {
+          "id": "o-track",
+          "asset": "a1",
+          "description": "o-track"
+        }
+      ],
+      "cues": [
+        {
+          "id": "swings",
+          "object": "o-arm",
+          "action": "appear",
+          "at": {
+            "sample": 107077,
+            "seconds": 4.4615,
+            "kind": "word",
+            "label": "swings",
+            "segment": "s2",
+            "timing_source": "forced_alignment",
+            "edge": "start",
+            "offset_ms": 0
+          }
+        },
+        {
+          "id": "exact",
+          "object": "o-track",
+          "action": "appear",
+          "at": {
+            "sample": 145846,
+            "seconds": 6.0769,
+            "kind": "word",
+            "label": "exact",
+            "segment": "s2",
+            "timing_source": "forced_alignment",
+            "edge": "start",
+            "offset_ms": 0
+          }
+        }
+      ],
+      "end": {
+        "sample": 177600,
+        "seconds": 7.4
+      },
+      "camera": []
+    },
+    {
+      "id": "float",
+      "purpose": "p",
+      "start": {
+        "sample": 177600,
+        "seconds": 7.4,
+        "kind": "segment",
+        "label": "s3",
+        "segment": null,
+        "timing_source": "segment_boundary",
+        "edge": "start",
+        "offset_ms": 0
+      },
+      "objects": [
+        {
+          "id": "o-inset",
+          "asset": "a1",
+          "description": "o-inset"
+        }
+      ],
+      "cues": [
+        {
+          "id": "floats",
+          "object": "o-inset",
+          "action": "appear",
+          "at": {
+            "sample": 220800,
+            "seconds": 9.2,
+            "kind": "word",
+            "label": "floats",
+            "segment": "s3",
+            "timing_source": "forced_alignment",
+            "edge": "start",
+            "offset_ms": 0
+          }
+        }
+      ],
+      "end": {
+        "sample": 273600,
+        "seconds": 11.4
+      },
+      "camera": []
+    }
+  ],
+  "resolution": {
+    "timeline_sha256": "41804bc6f3b7e2eb6501c5d0499ad0e678c42ca16f719890a1407b7427a4cdfa",
+    "audio_sha256": "45386b2130e2ebdd5c8450d4cbae4127f937206480c803d9923accf303e6559a",
+    "sample_rate": 24000,
+    "sample_count": 273600,
+    "timing_status": "unreviewed",
+    "record_sources": [
+      "forced_alignment"
+    ],
+    "run_id": "synthetic-hdd",
+    "timeline": "narration/narration.timeline.json"
+  }
+}

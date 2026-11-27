@@ -1,0 +1,270 @@
+{
+  "schema": "video-creator.creative-plan",
+  "version": 1,
+  "narration": {
+    "timeline": "narration/narration-5a86cdec93.timeline.json",
+    "sha256": "852d85ca750b16cb7e0f58aa41b2b63f1f974eefdaa71376d418fb2ae1e50d48"
+  },
+  "style": "tech-explainer",
+  "style_reason": "An invisible electrical mechanism under familiar glass: precise lit hardware, traced conductors and glowing signals make it visible.",
+  "visual_hook": "a hidden grid glowing up through a phone's glass under a hovering fingertip",
+  "transformation": "glass becomes a layered stack, then a scanned grid whose one crossing dips under the finger",
+  "payoff": "the crosshair locks onto the dipped crossing",
+  "story": [
+    {
+      "segment": "s1",
+      "role": "hook",
+      "idea": "hidden grid under glass"
+    },
+    {
+      "segment": "s2",
+      "role": "mechanism",
+      "idea": "rows and columns cross without touching"
+    },
+    {
+      "segment": "s3",
+      "role": "mechanism",
+      "idea": "capacitors scanned line by line"
+    },
+    {
+      "segment": "s4",
+      "role": "mechanism",
+      "idea": "finger draws field; signal drops"
+    },
+    {
+      "segment": "s5",
+      "role": "resolution",
+      "idea": "dip located"
+    }
+  ],
+  "motifs": [
+    {
+      "id": "m-cross",
+      "stands_for": "the crossing: where rows meet columns, where the finger lands, where the crosshair locks"
+    }
+  ],
+  "assets": [
+    {
+      "id": "a-touch",
+      "kind": "original",
+      "description": "procedural SVG phone, exploded sensor stack, grid, fingertip, field lines and readouts"
+    }
+  ],
+  "guardrails": [
+    "schematic grid, not to scale",
+    "mutual-capacitance design only",
+    "readout values illustrative, labelled as such"
+  ],
+  "shots": [
+    {
+      "id": "hook",
+      "purpose": "Hook: a phone in a dark studio, a fingertip hovering; on 'grid' a hidden grid glows through the glass.",
+      "objects": [
+        {
+          "id": "o-grid",
+          "asset": "a-touch",
+          "description": "grid seen through the glass"
+        }
+      ],
+      "cues": [
+        {
+          "id": "grid",
+          "object": "o-grid",
+          "action": "grid glows through",
+          "at": {
+            "word": "grid,",
+            "segment": "s1"
+          }
+        }
+      ]
+    },
+    {
+      "id": "layers",
+      "start": {
+        "segment": "s2"
+      },
+      "purpose": "Exploded stack: cover glass, row conductors, column conductors, display; rows trace on, then columns; a callout shows they cross without touching.",
+      "objects": [
+        {
+          "id": "o-rows",
+          "asset": "a-touch",
+          "description": "row conductors"
+        },
+        {
+          "id": "o-cols",
+          "asset": "a-touch",
+          "description": "column conductors"
+        },
+        {
+          "id": "l-gap",
+          "asset": "a-touch",
+          "description": "no-contact callout"
+        }
+      ],
+      "cues": [
+        {
+          "id": "rows",
+          "object": "o-rows",
+          "action": "rows trace on",
+          "at": {
+            "word": "rows,",
+            "segment": "s2"
+          }
+        },
+        {
+          "id": "cols",
+          "object": "o-cols",
+          "action": "columns trace on",
+          "at": {
+            "word": "columns,",
+            "segment": "s2"
+          }
+        },
+        {
+          "id": "gap",
+          "object": "l-gap",
+          "action": "no contact",
+          "at": {
+            "word": "without",
+            "segment": "s2"
+          }
+        }
+      ]
+    },
+    {
+      "id": "scan",
+      "start": {
+        "segment": "s3"
+      },
+      "purpose": "Top view of the grid: each crossing a capacitor; the chip pulses one line at a time and reads every crossing.",
+      "objects": [
+        {
+          "id": "l-cap",
+          "asset": "a-touch",
+          "description": "capacitor callout"
+        },
+        {
+          "id": "o-pulse",
+          "asset": "a-touch",
+          "description": "active line"
+        },
+        {
+          "id": "o-bars",
+          "asset": "a-touch",
+          "description": "signal readout"
+        }
+      ],
+      "cues": [
+        {
+          "id": "cap",
+          "object": "l-cap",
+          "action": "crossing named capacitor",
+          "at": {
+            "word": "capacitor.",
+            "segment": "s3"
+          }
+        },
+        {
+          "id": "pulse",
+          "object": "o-pulse",
+          "action": "line pulses, steps across",
+          "at": {
+            "word": "pulses",
+            "segment": "s3"
+          }
+        },
+        {
+          "id": "measure",
+          "object": "o-bars",
+          "action": "signal bars",
+          "at": {
+            "word": "measures",
+            "segment": "s3"
+          }
+        }
+      ]
+    },
+    {
+      "id": "touch",
+      "start": {
+        "segment": "s4"
+      },
+      "purpose": "A fingertip lands on a crossing; field lines bend into it; that crossing's signal drops; the chip locks onto the dip.",
+      "objects": [
+        {
+          "id": "o-finger",
+          "asset": "a-touch",
+          "description": "fingertip"
+        },
+        {
+          "id": "o-field",
+          "asset": "a-touch",
+          "description": "field into finger"
+        },
+        {
+          "id": "o-dip",
+          "asset": "a-touch",
+          "description": "dropped bar"
+        },
+        {
+          "id": "o-lock",
+          "asset": "a-touch",
+          "description": "crosshair"
+        },
+        {
+          "id": "l-xy",
+          "asset": "a-touch",
+          "description": "location readout"
+        }
+      ],
+      "cues": [
+        {
+          "id": "finger",
+          "object": "o-finger",
+          "action": "finger lands",
+          "at": {
+            "word": "finger",
+            "segment": "s4"
+          }
+        },
+        {
+          "id": "field",
+          "object": "o-field",
+          "action": "field bends into the finger",
+          "at": {
+            "word": "steals",
+            "segment": "s4"
+          }
+        },
+        {
+          "id": "drop",
+          "object": "o-dip",
+          "action": "signal drops",
+          "at": {
+            "word": "drops.",
+            "segment": "s4"
+          }
+        },
+        {
+          "id": "lock",
+          "object": "o-lock",
+          "action": "crosshair locks",
+          "at": {
+            "word": "where",
+            "segment": "s5",
+            "occurrence": 1
+          }
+        },
+        {
+          "id": "xy",
+          "object": "l-xy",
+          "action": "location readout",
+          "at": {
+            "word": "dropped,",
+            "segment": "s5"
+          }
+        }
+      ]
+    }
+  ]
+}

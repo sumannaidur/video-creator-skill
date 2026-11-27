@@ -61,11 +61,11 @@ Set per-word font sizes and palettes in the topic's own CSS, for example `#id .p
 
 ## Self-review additions
 
+- Can the shape interaction convey the verb or relationship with audio off? Inspect the largest rendered words for intact marks and clear space around them.
 - Is every word on screen a narration word, revealed on its own cue?
 - Is there one dominant word per beat, and is it the word the narration stresses?
 - Do Indic words render as whole, correctly shaped clusters at every size?
 - Does the composition change shape across beats instead of repeating one layout?
-- Would it still work with the sound off, without becoming a subtitle track?
 
 ## Full-bleed presentation (optional, P018.6)
 
@@ -85,3 +85,9 @@ Any topic's words, layouts, effects per word or cue times. The P017.5 fixture (`
 - Preflight, a 5.6 s preview and the shutter transition.
 
 There has been no full production and no human typographic review. Indic scripts use the multilingual font's bold, as no black weight is available. Fonts are system fonts, with licensing review pending.
+
+## Choreography helpers (P023.5, optional)
+
+- **Effects for `say()`:** `from-left` and `from-right` (directional, masked along the direction of travel) and `stamp` (lands with weight, never larger than 1.03×). Words are always whole narration tokens: never split a word, conjunct or cluster.
+- **`sweep(shape, word, cue)`:** a shape crosses the frame and uncovers a word in its direction. Shapes from `art.disc` and `art.slab` should mean something (light, an object, a boundary), never decoration.
+- **Indic line spacing:** scripts with marks below the baseline (Telugu, Kannada, and others) need about 1.6× the font size between stacked lines. At 1.45× stacked Telugu lines were measured to collide.

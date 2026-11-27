@@ -1,0 +1,368 @@
+{
+  "schema": "video-creator.captions",
+  "version": 1,
+  "locale": "en-IN",
+  "narration": {
+    "timeline": "narration/narration-a99661ca53.timeline.json",
+    "timeline_sha256": "e4d979a970f58fdc742918ecf08ede89cf6dd7c28e16a41f2cc1247af7d7077a",
+    "audio_sha256": "a916713a24f1bf9b20d2696cbacdf6d00e56e02b94bb3cb20abc21b1fc0c8c22",
+    "sample_rate": 24000,
+    "sample_count": 738000,
+    "timing_status": "unreviewed",
+    "timing_method": null,
+    "run_id": "combined-add698436fa54efeb28986f2"
+  },
+  "config": {
+    "enabled": true,
+    "burn_in": true,
+    "subtitle_files": [
+      "srt",
+      "vtt"
+    ],
+    "mode": "phrase",
+    "max_chars": 42,
+    "max_words": 6,
+    "max_lines": 2,
+    "hold_ms": 700
+  },
+  "cues": [
+    {
+      "start_sample": 1200,
+      "speech_end_sample": 45000,
+      "text": "Hold an autumn leaf up to the light.",
+      "text_ref": {
+        "field": "speech",
+        "start": 0,
+        "end": 36
+      },
+      "segment": "s1",
+      "timing_sources": [
+        "native_model"
+      ],
+      "long": false,
+      "end_sample": 54600,
+      "id": "c1",
+      "start": 0.05,
+      "end": 2.275
+    },
+    {
+      "start_sample": 54600,
+      "speech_end_sample": 90600,
+      "text": "Where did that gold come from?",
+      "text_ref": {
+        "field": "speech",
+        "start": 37,
+        "end": 67
+      },
+      "segment": "s1",
+      "timing_sources": [
+        "native_model"
+      ],
+      "long": false,
+      "end_sample": 100200,
+      "id": "c2",
+      "start": 2.275,
+      "end": 4.175
+    },
+    {
+      "start_sample": 100200,
+      "speech_end_sample": 115800,
+      "text": "All summer,",
+      "text_ref": {
+        "field": "speech",
+        "start": 68,
+        "end": 79
+      },
+      "segment": "s1",
+      "timing_sources": [
+        "native_model"
+      ],
+      "long": false,
+      "end_sample": 123600,
+      "id": "c3",
+      "start": 4.175,
+      "end": 5.15
+    },
+    {
+      "start_sample": 123600,
+      "speech_end_sample": 181200,
+      "text": "a pigment called chlorophyll made the leaf look",
+      "text_ref": {
+        "field": "speech",
+        "start": 80,
+        "end": 127
+      },
+      "segment": "s1",
+      "timing_sources": [
+        "native_model"
+      ],
+      "long": false,
+      "end_sample": 182400,
+      "id": "c4",
+      "start": 5.15,
+      "end": 7.6
+    },
+    {
+      "start_sample": 182400,
+      "speech_end_sample": 187800,
+      "text": "green.",
+      "text_ref": {
+        "field": "speech",
+        "start": 128,
+        "end": 134
+      },
+      "segment": "s1",
+      "timing_sources": [
+        "native_model"
+      ],
+      "long": false,
+      "end_sample": 195600,
+      "id": "c5",
+      "start": 7.6,
+      "end": 8.15
+    },
+    {
+      "start_sample": 195600,
+      "speech_end_sample": 236400,
+      "text": "As the leaf gets ready to fall,",
+      "text_ref": {
+        "field": "speech",
+        "start": 135,
+        "end": 166
+      },
+      "segment": "s2",
+      "timing_sources": [
+        "native_model"
+      ],
+      "long": false,
+      "end_sample": 244200,
+      "id": "c6",
+      "start": 8.15,
+      "end": 10.175
+    },
+    {
+      "start_sample": 244200,
+      "speech_end_sample": 276000,
+      "text": "its chlorophyll breaks down.",
+      "text_ref": {
+        "field": "speech",
+        "start": 167,
+        "end": 195
+      },
+      "segment": "s2",
+      "timing_sources": [
+        "native_model"
+      ],
+      "long": false,
+      "end_sample": 283800,
+      "id": "c7",
+      "start": 10.175,
+      "end": 11.825
+    },
+    {
+      "start_sample": 283800,
+      "speech_end_sample": 337800,
+      "text": "Yellow and orange pigments were there all along.",
+      "text_ref": {
+        "field": "speech",
+        "start": 196,
+        "end": 244
+      },
+      "segment": "s2",
+      "timing_sources": [
+        "native_model"
+      ],
+      "long": false,
+      "end_sample": 349200,
+      "id": "c8",
+      "start": 11.825,
+      "end": 14.55
+    },
+    {
+      "start_sample": 349200,
+      "speech_end_sample": 380400,
+      "text": "They are called carotenoids.",
+      "text_ref": {
+        "field": "speech",
+        "start": 245,
+        "end": 273
+      },
+      "segment": "s2",
+      "timing_sources": [
+        "native_model"
+      ],
+      "long": false,
+      "end_sample": 391200,
+      "id": "c9",
+      "start": 14.55,
+      "end": 16.3
+    },
+    {
+      "start_sample": 391200,
+      "speech_end_sample": 447000,
+      "text": "The strong green of chlorophyll had masked those",
+      "text_ref": {
+        "field": "speech",
+        "start": 274,
+        "end": 322
+      },
+      "segment": "s2",
+      "timing_sources": [
+        "native_model"
+      ],
+      "long": false,
+      "end_sample": 448200,
+      "id": "c10",
+      "start": 16.3,
+      "end": 18.675
+    },
+    {
+      "start_sample": 448200,
+      "speech_end_sample": 457200,
+      "text": "colours.",
+      "text_ref": {
+        "field": "speech",
+        "start": 323,
+        "end": 331
+      },
+      "segment": "s2",
+      "timing_sources": [
+        "native_model"
+      ],
+      "long": false,
+      "end_sample": 468000,
+      "id": "c11",
+      "start": 18.675,
+      "end": 19.5
+    },
+    {
+      "start_sample": 468000,
+      "speech_end_sample": 500400,
+      "text": "Now that the green fades,",
+      "text_ref": {
+        "field": "speech",
+        "start": 332,
+        "end": 357
+      },
+      "segment": "s2",
+      "timing_sources": [
+        "native_model"
+      ],
+      "long": false,
+      "end_sample": 507000,
+      "id": "c12",
+      "start": 19.5,
+      "end": 21.125
+    },
+    {
+      "start_sample": 507000,
+      "speech_end_sample": 523200,
+      "text": "we can see them.",
+      "text_ref": {
+        "field": "speech",
+        "start": 358,
+        "end": 374
+      },
+      "segment": "s2",
+      "timing_sources": [
+        "native_model"
+      ],
+      "long": false,
+      "end_sample": 531000,
+      "id": "c13",
+      "start": 21.125,
+      "end": 22.125
+    },
+    {
+      "start_sample": 531000,
+      "speech_end_sample": 562800,
+      "text": "Red has a different story.",
+      "text_ref": {
+        "field": "speech",
+        "start": 375,
+        "end": 401
+      },
+      "segment": "s3",
+      "timing_sources": [
+        "native_model"
+      ],
+      "long": false,
+      "end_sample": 573600,
+      "id": "c14",
+      "start": 22.125,
+      "end": 23.9
+    },
+    {
+      "start_sample": 573600,
+      "speech_end_sample": 624600,
+      "text": "Some trees make red pigments in autumn.",
+      "text_ref": {
+        "field": "speech",
+        "start": 402,
+        "end": 441
+      },
+      "segment": "s3",
+      "timing_sources": [
+        "native_model"
+      ],
+      "long": false,
+      "end_sample": 633600,
+      "id": "c15",
+      "start": 23.9,
+      "end": 26.4
+    },
+    {
+      "start_sample": 633600,
+      "speech_end_sample": 705000,
+      "text": "So an autumn canopy shows both colours uncovered",
+      "text_ref": {
+        "field": "speech",
+        "start": 442,
+        "end": 490
+      },
+      "segment": "s3",
+      "timing_sources": [
+        "native_model"
+      ],
+      "long": false,
+      "end_sample": 708000,
+      "id": "c16",
+      "start": 26.4,
+      "end": 29.5
+    },
+    {
+      "start_sample": 708000,
+      "speech_end_sample": 736200,
+      "text": "and colours newly made.",
+      "text_ref": {
+        "field": "speech",
+        "start": 491,
+        "end": 514
+      },
+      "segment": "s3",
+      "timing_sources": [
+        "native_model"
+      ],
+      "long": false,
+      "end_sample": 738000,
+      "id": "c17",
+      "start": 29.5,
+      "end": 30.75
+    }
+  ],
+  "files": {
+    "srt": {
+      "path": "captions/captions.srt",
+      "sha256": "74b847cf6d0bbc9d56cb8081d92ba48af66b66eb3a882956e49d9fa7ab260256"
+    },
+    "vtt": {
+      "path": "captions/captions.vtt",
+      "sha256": "f505714bb3c4a6fcfa584583c63f767485f454f3a03488f9f400ff9c963981fb"
+    }
+  },
+  "review": {
+    "technical": "passed",
+    "language": "pending native-reader review",
+    "readability": "pending human review"
+  }
+}

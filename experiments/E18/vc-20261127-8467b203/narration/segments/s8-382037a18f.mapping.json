@@ -1,0 +1,149 @@
+{
+  "result": "mapped",
+  "words": [
+    {
+      "label": "ఇదంతా",
+      "text_start": 0,
+      "text_end": 5,
+      "method": "mithi_token_word_ownership",
+      "model_words": [
+        "ఇదంతా"
+      ],
+      "group": null,
+      "tokens": [
+        1,
+        8
+      ],
+      "samples": [
+        1200,
+        11400
+      ]
+    },
+    {
+      "label": "మీరు",
+      "text_start": 6,
+      "text_end": 10,
+      "method": "mithi_token_word_ownership",
+      "model_words": [
+        "మీరు"
+      ],
+      "group": null,
+      "tokens": [
+        10,
+        15
+      ],
+      "samples": [
+        12600,
+        21000
+      ]
+    },
+    {
+      "label": "ఏమీ",
+      "text_start": 11,
+      "text_end": 14,
+      "method": "mithi_token_word_ownership",
+      "model_words": [
+        "ఏమీ"
+      ],
+      "group": null,
+      "tokens": [
+        17,
+        22
+      ],
+      "samples": [
+        22200,
+        28200
+      ]
+    },
+    {
+      "label": "చేయకుండానే,",
+      "text_start": 15,
+      "text_end": 26,
+      "method": "mithi_token_word_ownership",
+      "model_words": [
+        "చేయకుండానే,"
+      ],
+      "group": null,
+      "tokens": [
+        24,
+        39
+      ],
+      "samples": [
+        30000,
+        49200
+      ]
+    },
+    {
+      "label": "ప్రతి",
+      "text_start": 27,
+      "text_end": 32,
+      "method": "mithi_token_word_ownership",
+      "model_words": [
+        "ప్రతి"
+      ],
+      "group": null,
+      "tokens": [
+        42,
+        47
+      ],
+      "samples": [
+        57600,
+        65400
+      ]
+    },
+    {
+      "label": "మెసేజ్‌కీ",
+      "text_start": 33,
+      "text_end": 42,
+      "method": "mithi_token_word_ownership",
+      "model_words": [
+        "మెసేజ్‌కీ"
+      ],
+      "group": null,
+      "tokens": [
+        49,
+        58
+      ],
+      "samples": [
+        67200,
+        80400
+      ]
+    },
+    {
+      "label": "ఆటోమేటిక్‌గా",
+      "text_start": 43,
+      "text_end": 55,
+      "method": "mithi_token_word_ownership",
+      "model_words": [
+        "ఆటోమేటిక్‌గా"
+      ],
+      "group": null,
+      "tokens": [
+        60,
+        75
+      ],
+      "samples": [
+        82200,
+        99000
+      ]
+    },
+    {
+      "label": "జరుగుతుంది.",
+      "text_start": 56,
+      "text_end": 67,
+      "method": "mithi_token_word_ownership",
+      "model_words": [
+        "జరుగుతుంది."
+      ],
+      "group": null,
+      "tokens": [
+        77,
+        89
+      ],
+      "samples": [
+        99600,
+        113400
+      ]
+    }
+  ]
+}

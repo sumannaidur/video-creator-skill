@@ -1,0 +1,209 @@
+{
+  "schema": "video-creator.creative-plan",
+  "version": 1,
+  "narration": {
+    "timeline": "narration/narration-b53fdb16d0.timeline.json",
+    "sha256": "175f2b0caf17179ede03b2c153274a3d7bd406a978d153ae7a6a8cc356e70d4e"
+  },
+  "style": "x-ray-explainer",
+  "style_reason": "The mechanism is hidden inside a solid brass body; an X-ray scan from exterior to a sectioned interior shows the pins, springs and shear line exactly.",
+  "story": [
+    {
+      "segment": "s1",
+      "role": "hook",
+      "idea": "small key, strong lock"
+    },
+    {
+      "segment": "s2",
+      "role": "mechanism",
+      "idea": "spring-pressed pin pairs"
+    },
+    {
+      "segment": "s3",
+      "role": "contrast",
+      "idea": "no key: pins block the line"
+    },
+    {
+      "segment": "s4",
+      "role": "mechanism",
+      "idea": "right key lifts each pin"
+    },
+    {
+      "segment": "s5",
+      "role": "resolution",
+      "idea": "gaps align, plug turns"
+    }
+  ],
+  "motifs": [
+    {
+      "id": "m-line",
+      "stands_for": "the shear line between plug and housing"
+    }
+  ],
+  "assets": [
+    {
+      "id": "a-lock",
+      "kind": "original",
+      "description": "procedural SVG cylinder lock section: housing, plug, 5 pin stacks, springs, key"
+    }
+  ],
+  "guardrails": [
+    "simplified section, five pin stacks, not to scale",
+    "pin lengths illustrative; narration says only 'right height'"
+  ],
+  "shots": [
+    {
+      "id": "lock",
+      "purpose": "Hook: a brass lock and a small key; how does it open?",
+      "objects": [
+        {
+          "id": "o-key",
+          "asset": "a-lock",
+          "description": "the key"
+        }
+      ],
+      "cues": [
+        {
+          "id": "key",
+          "object": "o-key",
+          "action": "key appears",
+          "at": {
+            "word": "ಕೀಲಿ",
+            "segment": "s1"
+          }
+        }
+      ]
+    },
+    {
+      "id": "inside",
+      "start": {
+        "segment": "s2"
+      },
+      "purpose": "X-ray scan opens the housing: pairs of spring-pressed pins.",
+      "objects": [
+        {
+          "id": "l-spring",
+          "asset": "a-lock",
+          "description": "spring label"
+        },
+        {
+          "id": "l-pins",
+          "asset": "a-lock",
+          "description": "pins label"
+        }
+      ],
+      "cues": [
+        {
+          "id": "spring",
+          "object": "l-spring",
+          "action": "springs tagged",
+          "at": {
+            "word": "ಸ್ಪ್ರಿಂಗ್",
+            "segment": "s2"
+          }
+        },
+        {
+          "id": "pins",
+          "object": "l-pins",
+          "action": "pin pairs tagged",
+          "at": {
+            "word": "ಪಿನ್‌ಗಳ",
+            "segment": "s2"
+          }
+        }
+      ]
+    },
+    {
+      "id": "blocked",
+      "start": {
+        "segment": "s3"
+      },
+      "purpose": "Without the key, upper pins cross the line between plug and housing and block turning.",
+      "objects": [
+        {
+          "id": "o-shear",
+          "asset": "a-lock",
+          "description": "shear line"
+        },
+        {
+          "id": "o-block",
+          "asset": "a-lock",
+          "description": "blocked marks"
+        }
+      ],
+      "cues": [
+        {
+          "id": "line",
+          "object": "o-shear",
+          "action": "line drawn",
+          "at": {
+            "word": "ಗೆರೆಯನ್ನು",
+            "segment": "s3"
+          }
+        },
+        {
+          "id": "stop",
+          "object": "o-block",
+          "action": "red blocks",
+          "at": {
+            "word": "ತಡೆಯುತ್ತವೆ.",
+            "segment": "s3"
+          }
+        }
+      ]
+    },
+    {
+      "id": "unlock",
+      "start": {
+        "segment": "s4"
+      },
+      "purpose": "The right key lifts each pin; gaps line up on the line; the plug turns.",
+      "objects": [
+        {
+          "id": "l-lift",
+          "asset": "a-lock",
+          "description": "lift label"
+        },
+        {
+          "id": "o-align",
+          "asset": "a-lock",
+          "description": "aligned line glow"
+        },
+        {
+          "id": "o-inset",
+          "asset": "a-lock",
+          "description": "end-view inset"
+        }
+      ],
+      "cues": [
+        {
+          "id": "lift",
+          "object": "l-lift",
+          "action": "pins lifted",
+          "at": {
+            "word": "ಎತ್ತುತ್ತದೆ.",
+            "segment": "s4"
+          }
+        },
+        {
+          "id": "align",
+          "object": "o-align",
+          "action": "line glows green",
+          "at": {
+            "word": "ಸಾಲಾಗಿ",
+            "segment": "s5"
+          }
+        },
+        {
+          "id": "turn",
+          "object": "o-inset",
+          "action": "plug turns in end view",
+          "at": {
+            "word": "ತಿರುಗುತ್ತದೆ.",
+            "segment": "s5"
+          }
+        }
+      ]
+    }
+  ]
+}

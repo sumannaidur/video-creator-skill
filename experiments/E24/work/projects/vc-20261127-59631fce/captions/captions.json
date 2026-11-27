@@ -1,0 +1,197 @@
+{
+  "schema": "video-creator.captions",
+  "version": 1,
+  "locale": "en-IN",
+  "narration": {
+    "timeline": "narration/narration.timeline.json",
+    "timeline_sha256": "c6f5adf0ea43002f1d5291848321881062adb2ad0c82d8807e0d4452e2cf5147",
+    "audio_sha256": "04a7a78bfc2545a8ddc7d5e64ac90510e0e00235aa6085a2c4c6938dff96e3cb",
+    "sample_rate": 24000,
+    "sample_count": 254400,
+    "timing_status": "unreviewed",
+    "timing_method": "forced_alignment",
+    "run_id": "synthetic-peaks"
+  },
+  "config": {
+    "enabled": true,
+    "burn_in": true,
+    "subtitle_files": [
+      "srt",
+      "vtt"
+    ],
+    "mode": "words",
+    "max_chars": 28,
+    "max_words": 4,
+    "max_lines": 2,
+    "hold_ms": 700
+  },
+  "cues": [
+    {
+      "start_sample": 4800,
+      "speech_end_sample": 32029,
+      "text": "Mount Everest is the",
+      "text_ref": {
+        "field": "speech",
+        "start": 0,
+        "end": 20
+      },
+      "segment": "s1",
+      "timing_sources": [
+        "forced_alignment"
+      ],
+      "long": false,
+      "end_sample": 32727,
+      "id": "c1",
+      "start": 0.2,
+      "end": 1.363625
+    },
+    {
+      "start_sample": 32727,
+      "speech_end_sample": 59956,
+      "text": "highest mountain on Earth,",
+      "text_ref": {
+        "field": "speech",
+        "start": 21,
+        "end": 47
+      },
+      "segment": "s1",
+      "timing_sources": [
+        "forced_alignment"
+      ],
+      "long": false,
+      "end_sample": 60655,
+      "id": "c2",
+      "start": 1.363625,
+      "end": 2.5272916666666667
+    },
+    {
+      "start_sample": 60655,
+      "speech_end_sample": 80902,
+      "text": "at 8,849 metres.",
+      "text_ref": {
+        "field": "speech",
+        "start": 48,
+        "end": 64
+      },
+      "segment": "s1",
+      "timing_sources": [
+        "forced_alignment"
+      ],
+      "long": false,
+      "end_sample": 96000,
+      "id": "c3",
+      "start": 2.5272916666666667,
+      "end": 4.0
+    },
+    {
+      "start_sample": 96000,
+      "speech_end_sample": 125417,
+      "text": "But K2 is only",
+      "text_ref": {
+        "field": "speech",
+        "start": 65,
+        "end": 79
+      },
+      "segment": "s2",
+      "timing_sources": [
+        "forced_alignment"
+      ],
+      "long": false,
+      "end_sample": 126171,
+      "id": "c4",
+      "start": 4.0,
+      "end": 5.257125
+    },
+    {
+      "start_sample": 126171,
+      "speech_end_sample": 148046,
+      "text": "238 metres lower.",
+      "text_ref": {
+        "field": "speech",
+        "start": 80,
+        "end": 97
+      },
+      "segment": "s2",
+      "timing_sources": [
+        "forced_alignment"
+      ],
+      "long": false,
+      "end_sample": 163200,
+      "id": "c5",
+      "start": 5.257125,
+      "end": 6.8
+    },
+    {
+      "start_sample": 163200,
+      "speech_end_sample": 188160,
+      "text": "The top five peaks",
+      "text_ref": {
+        "field": "speech",
+        "start": 98,
+        "end": 116
+      },
+      "segment": "s3",
+      "timing_sources": [
+        "forced_alignment"
+      ],
+      "long": false,
+      "end_sample": 188800,
+      "id": "c6",
+      "start": 6.8,
+      "end": 7.866666666666666
+    },
+    {
+      "start_sample": 188800,
+      "speech_end_sample": 213760,
+      "text": "are all within 400",
+      "text_ref": {
+        "field": "speech",
+        "start": 117,
+        "end": 135
+      },
+      "segment": "s3",
+      "timing_sources": [
+        "forced_alignment"
+      ],
+      "long": false,
+      "end_sample": 214400,
+      "id": "c7",
+      "start": 7.866666666666666,
+      "end": 8.933333333333334
+    },
+    {
+      "start_sample": 214400,
+      "speech_end_sample": 239360,
+      "text": "metres of each other.",
+      "text_ref": {
+        "field": "speech",
+        "start": 136,
+        "end": 157
+      },
+      "segment": "s3",
+      "timing_sources": [
+        "forced_alignment"
+      ],
+      "long": false,
+      "end_sample": 254400,
+      "id": "c8",
+      "start": 8.933333333333334,
+      "end": 10.6
+    }
+  ],
+  "files": {
+    "srt": {
+      "path": "captions/captions.srt",
+      "sha256": "8cf4b6b9833f78b22b2f69f04f2ef847162753feb31fb339ac7cb0d2218ecfab"
+    },
+    "vtt": {
+      "path": "captions/captions.vtt",
+      "sha256": "01783f73c9280124130c224c1e0c3af67f9defd5c4f0019a3749506c86209340"
+    }
+  },
+  "review": {
+    "technical": "passed",
+    "language": "pending native-reader review",
+    "readability": "pending human review"
+  }
+}

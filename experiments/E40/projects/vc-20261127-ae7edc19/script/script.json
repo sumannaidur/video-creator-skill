@@ -1,0 +1,50 @@
+{
+  "schema": "video-creator.script",
+  "version": 1,
+  "locale": "en-IN",
+  "target_seconds": 30,
+  "segments": [
+    {
+      "id": "s1",
+      "role": "hook",
+      "text": "Your phone's glass feels solid, but just under it is an invisible grid, listening for your finger.",
+      "claims": [
+        "c1"
+      ]
+    },
+    {
+      "id": "s2",
+      "role": "mechanism",
+      "text": "Thin lines of transparent conductor run across in rows, and down in columns, crossing without ever touching.",
+      "claims": [
+        "c1",
+        "c2"
+      ]
+    },
+    {
+      "id": "s3",
+      "role": "mechanism",
+      "text": "Every crossing is a tiny capacitor. The chip pulses one line at a time, and measures every crossing.",
+      "claims": [
+        "c2",
+        "c3"
+      ]
+    },
+    {
+      "id": "s4",
+      "role": "mechanism",
+      "text": "Your finger conducts electricity, so it steals a little of that field, and the signal at that crossing drops.",
+      "claims": [
+        "c4"
+      ]
+    },
+    {
+      "id": "s5",
+      "role": "resolution",
+      "text": "The chip finds where the signal dropped, and that is where you touched.",
+      "claims": [
+        "c5"
+      ]
+    }
+  ]
+}

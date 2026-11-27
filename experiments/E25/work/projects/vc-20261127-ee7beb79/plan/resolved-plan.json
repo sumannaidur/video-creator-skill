@@ -1,0 +1,403 @@
+{
+  "schema": "video-creator.creative-plan",
+  "version": 1,
+  "narration": {
+    "timeline": "narration/narration.timeline.json",
+    "sha256": "99f5810b1b3862b927e1fe07b32b47a363bd7bea12ead586c44581b5e859007d"
+  },
+  "style": "kinetic-typography",
+  "style_reason": "fixture",
+  "guardrails": [
+    "simplified, not to scale"
+  ],
+  "motifs": [
+    {
+      "id": "m1",
+      "stands_for": "x"
+    }
+  ],
+  "story": [
+    {
+      "segment": "s1",
+      "role": "hook",
+      "idea": "x"
+    },
+    {
+      "segment": "s2",
+      "role": "mechanism",
+      "idea": "x"
+    },
+    {
+      "segment": "s3",
+      "role": "resolution",
+      "idea": "x"
+    }
+  ],
+  "assets": [
+    {
+      "id": "a1",
+      "kind": "procedural",
+      "description": "procedural fixture art"
+    }
+  ],
+  "shots": [
+    {
+      "id": "dark",
+      "purpose": "p",
+      "objects": [
+        {
+          "id": "w1",
+          "asset": "a1",
+          "description": "w1"
+        },
+        {
+          "id": "w2",
+          "asset": "a1",
+          "description": "w2"
+        },
+        {
+          "id": "w3",
+          "asset": "a1",
+          "description": "w3"
+        }
+      ],
+      "cues": [
+        {
+          "id": "w1",
+          "object": "w1",
+          "action": "appear",
+          "at": {
+            "sample": 4800,
+            "seconds": 0.2,
+            "kind": "word",
+            "label": "చంద్రుడు",
+            "segment": "s1",
+            "timing_source": "forced_alignment",
+            "edge": "start",
+            "offset_ms": 0
+          }
+        },
+        {
+          "id": "w2",
+          "object": "w2",
+          "action": "appear",
+          "at": {
+            "sample": 24000,
+            "seconds": 1.0,
+            "kind": "word",
+            "label": "సొంతంగా",
+            "segment": "s1",
+            "timing_source": "forced_alignment",
+            "edge": "start",
+            "offset_ms": 0
+          }
+        },
+        {
+          "id": "w3",
+          "object": "w3",
+          "action": "appear",
+          "at": {
+            "sample": 43200,
+            "seconds": 1.8,
+            "kind": "word",
+            "label": "వెలగడు.",
+            "segment": "s1",
+            "timing_source": "forced_alignment",
+            "edge": "start",
+            "offset_ms": 0
+          }
+        }
+      ],
+      "start": {
+        "sample": 0,
+        "seconds": 0.0,
+        "kind": "bounds",
+        "label": "narration-start",
+        "timing_source": "narration_bounds"
+      },
+      "end": {
+        "sample": 72000,
+        "seconds": 3.0
+      },
+      "camera": []
+    },
+    {
+      "id": "sun",
+      "purpose": "p",
+      "start": {
+        "sample": 72000,
+        "seconds": 3.0,
+        "kind": "segment",
+        "label": "s2",
+        "segment": null,
+        "timing_source": "segment_boundary",
+        "edge": "start",
+        "offset_ms": 0
+      },
+      "objects": [
+        {
+          "id": "w4",
+          "asset": "a1",
+          "description": "w4"
+        },
+        {
+          "id": "w5",
+          "asset": "a1",
+          "description": "w5"
+        },
+        {
+          "id": "w6",
+          "asset": "a1",
+          "description": "w6"
+        },
+        {
+          "id": "w7",
+          "asset": "a1",
+          "description": "w7"
+        },
+        {
+          "id": "w8",
+          "asset": "a1",
+          "description": "w8"
+        }
+      ],
+      "cues": [
+        {
+          "id": "w4",
+          "object": "w4",
+          "action": "appear",
+          "at": {
+            "sample": 76800,
+            "seconds": 3.2,
+            "kind": "word",
+            "label": "సూర్యకాంతి",
+            "segment": "s2",
+            "timing_source": "forced_alignment",
+            "edge": "start",
+            "offset_ms": 0
+          }
+        },
+        {
+          "id": "w5",
+          "object": "w5",
+          "action": "appear",
+          "at": {
+            "sample": 92160,
+            "seconds": 3.84,
+            "kind": "word",
+            "label": "దాని",
+            "segment": "s2",
+            "timing_source": "forced_alignment",
+            "edge": "start",
+            "offset_ms": 0
+          }
+        },
+        {
+          "id": "w6",
+          "object": "w6",
+          "action": "appear",
+          "at": {
+            "sample": 107520,
+            "seconds": 4.48,
+            "kind": "word",
+            "label": "ఒక",
+            "segment": "s2",
+            "timing_source": "forced_alignment",
+            "edge": "start",
+            "offset_ms": 0
+          }
+        },
+        {
+          "id": "w7",
+          "object": "w7",
+          "action": "appear",
+          "at": {
+            "sample": 122880,
+            "seconds": 5.12,
+            "kind": "word",
+            "label": "వైపునే",
+            "segment": "s2",
+            "timing_source": "forced_alignment",
+            "edge": "start",
+            "offset_ms": 0
+          }
+        },
+        {
+          "id": "w8",
+          "object": "w8",
+          "action": "appear",
+          "at": {
+            "sample": 138240,
+            "seconds": 5.76,
+            "kind": "word",
+            "label": "పడుతుంది.",
+            "segment": "s2",
+            "timing_source": "forced_alignment",
+            "edge": "start",
+            "offset_ms": 0
+          }
+        }
+      ],
+      "end": {
+        "sample": 163200,
+        "seconds": 6.8
+      },
+      "camera": []
+    },
+    {
+      "id": "phases",
+      "purpose": "p",
+      "start": {
+        "sample": 163200,
+        "seconds": 6.8,
+        "kind": "segment",
+        "label": "s3",
+        "segment": null,
+        "timing_source": "segment_boundary",
+        "edge": "start",
+        "offset_ms": 0
+      },
+      "objects": [
+        {
+          "id": "w9",
+          "asset": "a1",
+          "description": "w9"
+        },
+        {
+          "id": "w10",
+          "asset": "a1",
+          "description": "w10"
+        },
+        {
+          "id": "w11",
+          "asset": "a1",
+          "description": "w11"
+        },
+        {
+          "id": "w12",
+          "asset": "a1",
+          "description": "w12"
+        },
+        {
+          "id": "w13",
+          "asset": "a1",
+          "description": "w13"
+        },
+        {
+          "id": "w14",
+          "asset": "a1",
+          "description": "w14"
+        }
+      ],
+      "cues": [
+        {
+          "id": "w9",
+          "object": "w9",
+          "action": "appear",
+          "at": {
+            "sample": 168000,
+            "seconds": 7.0,
+            "kind": "word",
+            "label": "మనకు",
+            "segment": "s3",
+            "timing_source": "forced_alignment",
+            "edge": "start",
+            "offset_ms": 0
+          }
+        },
+        {
+          "id": "w10",
+          "object": "w10",
+          "action": "appear",
+          "at": {
+            "sample": 182400,
+            "seconds": 7.6,
+            "kind": "word",
+            "label": "కనిపించే",
+            "segment": "s3",
+            "timing_source": "forced_alignment",
+            "edge": "start",
+            "offset_ms": 0
+          }
+        },
+        {
+          "id": "w11",
+          "object": "w11",
+          "action": "appear",
+          "at": {
+            "sample": 196800,
+            "seconds": 8.2,
+            "kind": "word",
+            "label": "వెలుగు",
+            "segment": "s3",
+            "timing_source": "forced_alignment",
+            "edge": "start",
+            "offset_ms": 0
+          }
+        },
+        {
+          "id": "w12",
+          "object": "w12",
+          "action": "appear",
+          "at": {
+            "sample": 211200,
+            "seconds": 8.8,
+            "kind": "word",
+            "label": "భాగమే",
+            "segment": "s3",
+            "timing_source": "forced_alignment",
+            "edge": "start",
+            "offset_ms": 0
+          }
+        },
+        {
+          "id": "w13",
+          "object": "w13",
+          "action": "appear",
+          "at": {
+            "sample": 225600,
+            "seconds": 9.4,
+            "kind": "word",
+            "label": "దశలుగా",
+            "segment": "s3",
+            "timing_source": "forced_alignment",
+            "edge": "start",
+            "offset_ms": 0
+          }
+        },
+        {
+          "id": "w14",
+          "object": "w14",
+          "action": "appear",
+          "at": {
+            "sample": 240000,
+            "seconds": 10.0,
+            "kind": "word",
+            "label": "మారుతుంది.",
+            "segment": "s3",
+            "timing_source": "forced_alignment",
+            "edge": "start",
+            "offset_ms": 0
+          }
+        }
+      ],
+      "end": {
+        "sample": 268800,
+        "seconds": 11.2
+      },
+      "camera": []
+    }
+  ],
+  "resolution": {
+    "timeline_sha256": "99f5810b1b3862b927e1fe07b32b47a363bd7bea12ead586c44581b5e859007d",
+    "audio_sha256": "caa1dfeae32c247141d7d4cee325aaa27999e1e27a2fce29c6c4d5e653a880ba",
+    "sample_rate": 24000,
+    "sample_count": 268800,
+    "timing_status": "unreviewed",
+    "record_sources": [
+      "forced_alignment"
+    ],
+    "run_id": "synthetic-moon",
+    "timeline": "narration/narration.timeline.json"
+  }
+}

@@ -10,6 +10,9 @@
 //   --width/--height <px>  layout canvas (default 1080×1920; use 1920×1080 for horizontal); --scale <0–1> output scale
 //   --fps <n> (30) --quality <1–100> (95) --crf <0–51> (18)
 //   --keys-only            checks and keyframes only; --stop-after <n> simulate interruption (exit 75)
+//   --validate-only        pre-render validation only (lib/prerender.mjs; no capture)
+//   --window <start:end>   render and encode only frames round(start·fps)…ceil(end·fps)−1 at their absolute times, in the
+//                          same checkpoint as the full render (identical frames, reused later); audio is cut to the same times
 //   --plan <resolved-plan.json>  verified resolved creative plan (project-relative); shot bounds and speech cues come from it
 //   --preflight <preflight.json>  refuse to render unless that preflight passed for exactly this configuration
 //   --captions <captions.json>  caption artifact from scripts/captions.py (timing, text, burn-in, line limit); --no-captions hides captions
@@ -22,6 +25,7 @@ import { basename, dirname, isAbsolute, join, resolve } from 'node:path';
 import { fileURLToPath, pathToFileURL } from 'node:url';
 import { RENDER_PLAN, checkCueUse, loadRenderPlan } from './lib/resolved-plan.mjs';
 import { CAPTIONS, HIDDEN, loadCaptions } from './lib/captions.mjs';
+import { validatePaths, validateTiming } from './lib/prerender.mjs';
 
 export const INTERRUPTED = 75, LOCKED = 3;
 const here = dirname(fileURLToPath(import.meta.url));
@@ -29,7 +33,7 @@ const hash = buffer => createHash('sha256').update(buffer).digest('hex');
 const die = (message, code = 'usage') => { throw Object.assign(new Error(message), {usage: code === 'usage', code}); };
 
 export function parseArgs(argv) {
-  const flags = new Set(['keys-only', 'clean-frames', 'no-captions']);
+  const flags = new Set(['keys-only', 'clean-frames', 'no-captions', 'validate-only']);
   const args = {name: 'video.mp4', width: 1080, height: 1920, scale: 1, fps: 30, quality: 95, crf: 18, style: 'paper-explainer'};
   for (let i = 0; i < argv.length; i++) {
     const key = argv[i].replace(/^--/, '');
@@ -39,7 +43,7 @@ export function parseArgs(argv) {
     args[key] = argv[++i];
   }
   const known = ['topic', 'timeline', 'out', 'project', 'style', 'backend', 'locale', 'font', 'name', 'width', 'height', 'scale', 'fps',
-    'quality', 'crf', 'keys-only', 'stop-after', 'options', 'chrome', 'clean-frames', 'plan', 'preflight', 'captions', 'no-captions'];
+    'quality', 'crf', 'keys-only', 'validate-only', 'window', 'stop-after', 'options', 'chrome', 'clean-frames', 'plan', 'preflight', 'captions', 'no-captions'];
   for (const key of Object.keys(args)) if (!known.includes(key)) die(`Unknown option --${key}`);
   for (const key of ['topic', 'timeline', 'out']) if (!args[key]) die(`--${key} is required`);
   const num = (key, ok) => { const v = Number(args[key]); if (!Number.isFinite(v) || !ok(v)) die(`Invalid --${key}: ${args[key]}`); args[key] = v; };
@@ -50,6 +54,12 @@ export function parseArgs(argv) {
   num('quality', v => Number.isInteger(v) && v >= 1 && v <= 100);
   num('crf', v => Number.isInteger(v) && v >= 0 && v <= 51);
   if (args['stop-after'] !== undefined) num('stop-after', v => Number.isInteger(v) && v >= 1);
+  if (args.window !== undefined) {
+    const m = /^(\d+(?:\.\d+)?):(\d+(?:\.\d+)?)$/.exec(args.window);
+    if (!m || !(Number(m[2]) > Number(m[1]))) die(`Invalid --window ${args.window}; expected start:end in seconds, end > start`);
+    if (args['keys-only'] || args['clean-frames']) die('--window cannot be combined with --keys-only or --clean-frames');
+    args.window = [Number(m[1]), Number(m[2])];
+  }
   args.output = [args.width * args.scale, args.height * args.scale];
   if (!args.output.every(v => Number.isInteger(v) && v % 2 === 0)) die(`Output ${args.output.join('×')} must be even whole pixels`);
   if (!/^[\w.-]+\.mp4$/.test(args.name)) die('--name must be a plain .mp4 file name');
@@ -101,7 +111,7 @@ const isJpeg = b => b.length > 4 && b[0] === 0xff && b[1] === 0xd8 && b.at(-2) =
 const frameName = i => String(i).padStart(6, '0') + '.jpg';
 
 // frames/manifest.json identifies the configuration; frames/frames.jsonl logs frames written atomically and checked.
-async function openCheckpoint(dir, manifest, total) {
+async function openCheckpoint(dir, manifest, total, [from, to] = [0, total]) {
   await mkdir(dir, {recursive: true});
   const stats = {reused: 0, missing: 0, corrupt: 0, invalidated: 0, strayTemp: 0};
   const files = await readdir(dir);
@@ -121,7 +131,8 @@ async function openCheckpoint(dir, manifest, total) {
   }
   const valid = new Map(), todo = [];
   let bytes = 0;
-  for (let i = 0; i < total; i++) {
+  for (const [i, entry] of log) if ((i < from || i >= to) && i < total && entry) valid.set(i, entry);   // outside the window: kept as logged, verified when encoded
+  for (let i = from; i < to; i++) {
     const data = await readFile(join(dir, frameName(i))).catch(() => null);
     const entry = log.get(i);
     if (!data) { stats.missing++; todo.push(i); continue; }
@@ -215,6 +226,19 @@ export async function render(argv) {
       Object.assign(evidence, await session.install({timeline, topicSource, topicOptions: args.options, ...(plan ? {plan} : {}), ...(captions ? {captions} : {}), ...(presentation ? {presentation} : {})}));
       if (plan) { checkCueUse(plan, evidence.planCuesUsed); evidence.plan = plan.source; }
       if (session.describe) evidence.presentation = await session.describe();
+      // Pre-render validation: nothing is captured until the installed topic passes. Scenes mount per shot, so the DOM is
+      // inspected once inside each shot (a finding is reported once, with the shots it occurs in).
+      const domFindings = async () => { const seen = new Map();
+        for (const s of evidence.shots ?? [{id: null, start: 0, end: 0}]) {
+          await session.seek((s.start + s.end) / 2);
+          for (const f of await session.inspectDom(args.width, args.height)) { const k = f.check + ':' + (f.id ?? ''); if (!seen.has(k)) seen.set(k, {...f, shots: []}); seen.get(k).shots.push(s.id); }
+        }
+        return [...seen.values()]; };
+      const findings = [...validatePaths({project: args.project, timeline}), ...validateTiming(evidence),
+        ...(session.inspectDom ? await domFindings() : [{check: 'dom', status: 'unsupported', reason: 'backend does not expose inspectDom'}])];
+      evidence.validation = {status: findings.some(f => f.status !== 'unsupported') ? 'failed' : findings.length ? 'unsupported' : 'passed', findings};
+      if (evidence.validation.status === 'failed') die('Pre-render validation failed: ' + findings.filter(f => f.status !== 'unsupported').map(f => `[${f.check}] ${f.reason}`).join('; '), 'validation');
+      if (args['validate-only']) { await writeFile(join(args.out, 'validation.json'), JSON.stringify(evidence.validation, null, 2) + '\n'); return evidence; }
       const seconds = evidence.duration, seek = t => session.seek(t);
       const shot = (format = 'png') => session.capture({format, quality: args.quality, scale});
       evidence.cueChecks = [];
@@ -227,14 +251,28 @@ export async function render(argv) {
       }
       const keyDir = join(args.out, 'keyframes');
       await mkdir(keyDir, {recursive: true});
+      const declarations = evidence.composition;
+      if (declarations !== undefined && (!declarations || typeof declarations !== 'object' || Array.isArray(declarations) ||
+        Object.keys(declarations).some(name => !evidence.checks.keyframes.some(([key]) => key === name)))) {
+        throw new Error('Composition declarations must be keyed by existing keyframe names');
+      }
       const pngs = {};
       for (const [name, t] of evidence.checks.keyframes) {
         const state = await seek(t);
+        let composition = {status: 'not-declared', findings: []};
+        if (declarations && Object.hasOwn(declarations, name)) {
+          composition = session.inspectComposition ? await session.inspectComposition(declarations[name]) :
+            {status: 'unsupported', findings: [{status: 'unsupported', check: 'composition', reason: 'Backend does not expose browser inspection'}]};
+          if (composition.status === 'failed') {
+            await writeFile(join(keyDir, `composition-failure-${name}.json`), JSON.stringify({name,t,...composition}, null, 2) + '\n');
+            throw new Error(`Composition at ${name} (${t}): ${composition.findings.filter(f => f.status === 'failed').map(f => f.reason).join(', ')}`);
+          }
+        }
         if (state.outside.length) throw new Error(`Bounds at ${t}: ${state.outside.join(', ')}`);
         const png = await shot();
         pngs[name] = png;
         await writeFile(join(keyDir, `key-${evidence.keyframes.length + 1}-${name}.png`), png);
-        evidence.keyframes.push({name, t, shot: state.shot, captionId: state.captionId, transition: state.transition, labels: state.labels, sha256: hash(png)});
+        evidence.keyframes.push({name, t, shot: state.shot, captionId: state.captionId, transition: state.transition, labels: state.labels, composition, sha256: hash(png)});
       }
       const at = evidence.checks.repeatAt;
       const known = evidence.keyframes.find(k => k.t === at);
@@ -261,11 +299,14 @@ export async function render(argv) {
       evidence.frames = total;
       const configHash = hash(JSON.stringify({inputs: Object.fromEntries(Object.entries(inputs).map(([k, v]) => [k, v.sha256])), settings, browser: evidence.browser, total}));
       const manifest = {version: 1, configHash, created: new Date().toISOString(), frames: total, settings, browser: evidence.browser, inputs};
-      const checkpoint = await openCheckpoint(framesDir, manifest, total);
+      const range = args.window ? [Math.round(args.window[0] * fps), Math.min(total, Math.ceil(args.window[1] * fps - 1e-6))] : [0, total];
+      if (range[1] <= range[0]) die(`--window ${args.window.join(':')} has no frames inside 0–${seconds} s`);
+      if (args.window) evidence.window = {seconds: args.window, frames: range, start: range[0] / fps, duration: (range[1] - range[0]) / fps};
+      const checkpoint = await openCheckpoint(framesDir, manifest, total, range);
       evidence.checkpoint = {...checkpoint.stats, configHash, rendered: 0};
       // No sample capture for the estimate: an extra capture changes raster history (P013.1 regression lesson).
       const estimate = checkpoint.averageBytes ?? args.output[0] * args.output[1] * .5;
-      evidence.checkpoint.freeBytesBefore = await ensureSpace(args.out, Math.ceil(checkpoint.todo.length * estimate * 1.5 + total * estimate * .2 + 64 * 2 ** 20));
+      evidence.checkpoint.freeBytesBefore = await ensureSpace(args.out, Math.ceil(checkpoint.todo.length * estimate * 1.5 + (range[1] - range[0]) * estimate * .2 + 64 * 2 ** 20));
       const log = join(framesDir, 'frames.jsonl');
       for (const i of checkpoint.todo) {
         if (args['stop-after'] !== undefined && evidence.checkpoint.rendered >= args['stop-after'])
@@ -288,7 +329,8 @@ export async function render(argv) {
     } finally { await session.close(); }
 
     // Encode only from a complete, verified frame set.
-    const recheck = await openCheckpoint(framesDir, JSON.parse(await readFile(join(framesDir, 'manifest.json'), 'utf8')), evidence.frames);
+    const [from, to] = evidence.window?.frames ?? [0, evidence.frames], count = to - from;
+    const recheck = await openCheckpoint(framesDir, JSON.parse(await readFile(join(framesDir, 'manifest.json'), 'utf8')), evidence.frames, [from, to]);
     if (recheck.todo.length) throw new Error(`Frames incomplete or corrupt before encoding: ${recheck.todo.slice(0, 10).join(', ')}`);
     const file = join(args.out, args.name), partial = file.replace(/\.mp4$/, '.partial.mp4');
     const run = (cmd, list) => {
@@ -296,11 +338,12 @@ export async function render(argv) {
       if (result.status !== 0) throw new Error(cmd + ' failed: ' + result.stderr.slice(-2000));
       return result.stdout + result.stderr;
     };
-    run('ffmpeg', ['-hide_banner', '-loglevel', 'error', '-y', '-framerate', String(fps), '-start_number', '0',
-      '-i', join(framesDir, '%06d.jpg'), '-i', audioFile, '-map', '0:v', '-map', '1:a',
+    const cut = evidence.window ? ['-ss', String(from / fps)] : [], length = evidence.window ? ['-t', String(count / fps)] : [];
+    run('ffmpeg', ['-hide_banner', '-loglevel', 'error', '-y', '-framerate', String(fps), '-start_number', String(from),
+      '-i', join(framesDir, '%06d.jpg'), ...cut, '-i', audioFile, '-map', '0:v', '-map', '1:a', '-frames:v', String(count),
       '-vf', 'scale=in_range=pc:out_range=tv,format=yuv420p', '-c:v', 'libx264', '-preset', 'medium', '-crf', String(args.crf),
       '-color_range', 'tv', '-colorspace', 'bt709', '-color_primaries', 'bt709', '-color_trc', 'bt709', '-r', String(fps),
-      '-c:a', 'aac', '-b:a', '160k', '-ar', '48000', '-af', 'apad', '-shortest', '-movflags', '+faststart', partial]);
+      '-c:a', 'aac', '-b:a', '160k', '-ar', '48000', '-af', 'apad', '-shortest', ...length, '-movflags', '+faststart', partial]);
     await rename(partial, file);
     const probe = JSON.parse(run('ffprobe', ['-v', 'error', '-count_frames', '-show_entries',
       'stream=codec_type,codec_name,profile,width,height,pix_fmt,r_frame_rate,nb_read_frames,sample_rate,channels,start_time,duration:format=duration',
@@ -317,13 +360,13 @@ export async function render(argv) {
     if (video?.codec_name !== 'h264' || sound?.codec_name !== 'aac') failures.push('codecs');
     if (video?.pix_fmt !== 'yuv420p') failures.push('pixel format');
     if (video?.width !== args.output[0] || video?.height !== args.output[1]) failures.push('dimensions');
-    if (video?.r_frame_rate !== `${fps}/1` || Number(video?.nb_read_frames) !== evidence.frames) failures.push('frames');
+    if (video?.r_frame_rate !== `${fps}/1` || Number(video?.nb_read_frames) !== count) failures.push('frames');
     if (Math.abs(Number(video?.duration) - Number(sound?.duration)) > 1 / fps + .03) failures.push('stream duration');
     if (decode) failures.push('decode');
-    if (!(Math.abs(evidence.media.speechOnset.offsetSeconds) <= .03)) failures.push('audio onset');
+    if (!evidence.window && !(Math.abs(evidence.media.speechOnset.offsetSeconds) <= .03)) failures.push('audio onset');   // a window may start mid-speech
     const expectedTransitions = new Set(evidence.shots.filter(s => s.transition).map(s => s.transition.type));
-    if (evidence.shotsSeen.length !== evidence.shots.length || evidence.captionsSeen.length !== evidence.captions.length ||
-      evidence.transitionsSeen.length !== expectedTransitions.size) failures.push('coverage');
+    if (!evidence.window && (evidence.shotsSeen.length !== evidence.shots.length || evidence.captionsSeen.length !== evidence.captions.length ||
+      evidence.transitionsSeen.length !== expectedTransitions.size)) failures.push('coverage');   // a window covers part of the story
     evidence.failures = failures;
     await writeFile(join(args.out, basename(args.name, '.mp4') + '-evidence.json'), JSON.stringify(evidence, null, 2) + '\n');
     if (failures.length) throw new Error('Media checks failed: ' + failures.join(', '));
@@ -336,8 +379,9 @@ if (process.argv[1] && import.meta.url === pathToFileURL(process.argv[1]).href) 
   try {
     const evidence = await render(process.argv.slice(2));
     const c = evidence.checkpoint;
-    console.log(evidence.media
-      ? `${evidence.name}: ${evidence.frames} frames, ${Number(evidence.media.container.duration).toFixed(3)} s; reused ${c.reused}, rendered ${c.rendered}, corrupt ${c.corrupt}, missing ${c.missing}, invalidated ${c.invalidated}; ${evidence.renderWallSeconds.toFixed(1)} s wall`
+    console.log(evidence.validation && !evidence.cueChecks ? `validation ${evidence.validation.status}: ${evidence.validation.findings.length} findings`
+      : evidence.media
+      ? `${evidence.name}: ${evidence.window ? `${evidence.window.frames[1] - evidence.window.frames[0]} window frames from ${evidence.window.start.toFixed(3)} s` : `${evidence.frames} frames`},${Number(evidence.media.container.duration).toFixed(3)} s; reused ${c.reused}, rendered ${c.rendered}, corrupt ${c.corrupt}, missing ${c.missing}, invalidated ${c.invalidated}; ${evidence.renderWallSeconds.toFixed(1)} s wall`
       : `keyframes only: ${evidence.keyframes.length} keyframes, ${evidence.cueChecks.length} cue checks passed`);
   } catch (error) {
     console.error((error.usage ? 'Usage error: ' : error.code && typeof error.code === 'string' ? `[${error.code}] ` : '') + error.message);

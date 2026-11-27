@@ -1,0 +1,22 @@
+{
+ "layers": [
+  "base",
+  "part"
+ ],
+ "size": [
+  270,
+  480
+ ],
+ "geometry": {
+  "pivot": [
+   0.5,
+   0.5
+  ]
+ },
+ "renderSeconds": {
+  "base": 2.05,
+  "part": 0.45
+ },
+ "blender": "5.2.2 LTS",
+ "engine": "BLENDER_EEVEE"
+}

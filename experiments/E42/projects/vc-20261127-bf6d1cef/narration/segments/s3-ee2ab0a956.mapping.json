@@ -1,0 +1,167 @@
+{
+  "result": "mapped",
+  "words": [
+    {
+      "label": "దాంతో,",
+      "text_start": 0,
+      "text_end": 6,
+      "method": "mithi_token_word_ownership",
+      "model_words": [
+        "దాంతో,"
+      ],
+      "group": null,
+      "tokens": [
+        1,
+        8
+      ],
+      "samples": [
+        1200,
+        13800
+      ]
+    },
+    {
+      "label": "మారుతూ",
+      "text_start": 7,
+      "text_end": 13,
+      "method": "mithi_token_word_ownership",
+      "model_words": [
+        "మారుతూ"
+      ],
+      "group": null,
+      "tokens": [
+        11,
+        19
+      ],
+      "samples": [
+        19800,
+        31200
+      ]
+    },
+    {
+      "label": "ఉండే",
+      "text_start": 14,
+      "text_end": 18,
+      "method": "mithi_token_word_ownership",
+      "model_words": [
+        "ఉండే"
+      ],
+      "group": null,
+      "tokens": [
+        21,
+        26
+      ],
+      "samples": [
+        32400,
+        41400
+      ]
+    },
+    {
+      "label": "అయస్కాంత",
+      "text_start": 19,
+      "text_end": 27,
+      "method": "mithi_token_word_ownership",
+      "model_words": [
+        "అయస్కాంత"
+      ],
+      "group": null,
+      "tokens": [
+        28,
+        39
+      ],
+      "samples": [
+        45000,
+        60000
+      ]
+    },
+    {
+      "label": "క్షేత్రం",
+      "text_start": 28,
+      "text_end": 36,
+      "method": "mithi_token_word_ownership",
+      "model_words": [
+        "క్షేత్రం"
+      ],
+      "group": null,
+      "tokens": [
+        41,
+        49
+      ],
+      "samples": [
+        61200,
+        73800
+      ]
+    },
+    {
+      "label": "గాజు",
+      "text_start": 37,
+      "text_end": 41,
+      "method": "mithi_token_word_ownership",
+      "model_words": [
+        "గాజు"
+      ],
+      "group": null,
+      "tokens": [
+        51,
+        56
+      ],
+      "samples": [
+        81000,
+        91200
+      ]
+    },
+    {
+      "label": "గుండా",
+      "text_start": 42,
+      "text_end": 47,
+      "method": "mithi_token_word_ownership",
+      "model_words": [
+        "గుండా"
+      ],
+      "group": null,
+      "tokens": [
+        58,
+        64
+      ],
+      "samples": [
+        92400,
+        99000
+      ]
+    },
+    {
+      "label": "పైకి",
+      "text_start": 48,
+      "text_end": 52,
+      "method": "mithi_token_word_ownership",
+      "model_words": [
+        "పైకి"
+      ],
+      "group": null,
+      "tokens": [
+        66,
+        70
+      ],
+      "samples": [
+        100200,
+        106200
+      ]
+    },
+    {
+      "label": "వెళ్తుంది.",
+      "text_start": 53,
+      "text_end": 63,
+      "method": "mithi_token_word_ownership",
+      "model_words": [
+        "వెళ్తుంది."
+      ],
+      "group": null,
+      "tokens": [
+        72,
+        80
+      ],
+      "samples": [
+        107400,
+        118200
+      ]
+    }
+  ]
+}

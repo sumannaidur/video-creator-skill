@@ -1,0 +1,42 @@
+# Delivery report: technical PASSED
+
+- Human review: **pending** (never automatic). Publication: **not-approved**; ready to publish: **False**.
+
+| Check | Status | Detail |
+|---|---|---|
+| stage:research | passed | "completed" |
+| stage:script | passed | "completed" |
+| stage:narration | passed | "completed" |
+| stage:creative-plan | passed | "completed" |
+| stage:visual-production | passed | "completed" |
+| stage:sound | passed | "completed" |
+| artifact:video | passed | "render/final/e42-final.mp4" |
+| artifact:render-evidence | passed | "render/final/e42-evidence.json" |
+| artifact:preflight | passed | "qa/preflight/preflight.json" |
+| artifact:mix-evidence | passed | "audio/mix.evidence.json" |
+| narration-timeline | passed | "narration/narration-ca1e95afa3.timeline.json" |
+| visual-preflight | passed | "870 frames at 30 fps" |
+| render-media-checks | passed | [] |
+| captions | passed | "23 cues; files: srt, vtt" |
+| audio-mix | passed | {"lufs": -16.0, "true_peak": -1.6, "speech_over_bed_lu": 15.2, "sync_lag_ms": 0} |
+| narration-sync | passed | "{\"method\": \"bed-subtracted envelope cross-correlation\", \"lag_ms\": 0, \"correlation\": 1.0, \"max_lag_ms\": 2, \"min_correlation\": 0.95, \"passed\": true |
+| final-video | passed | {"size": "1080x1920", "fps": "30/1", "frames": "870", "duration": "29.000000", "codecs": "h264/aac"} |
+
+## Deliverables
+- Video: `render/final/e42-final.mp4`
+- Subtitles: `captions/captions.srt`, `captions/captions.vtt`
+- Sources: `research/claims.json`, `research/sources.json`
+- Supporting artifacts: 15 files (see qa-report.json)
+
+## Provenance (recorded, not reviewed)
+- narration_provider: "mithi"
+- voice: "ahana"
+- model: "Oomni/mithi-v2-flash@1fc0dd68496a2483508ec764d310146c41ff90be"
+- timing_method: "native_durations"
+- timing_status: "unreviewed"
+- fonts: {"caption": "\"Nirmala UI\", \"Segoe UI\", sans-serif", "label": "\"Nirmala UI\", \"Segoe UI\", sans-serif", "note": "system fonts as reported by the browser; font licensing is not reviewed"}
+- audio_assets: {"assets/chime.wav": {"sha256": "4318779372088c36cc4b15cd2c17622c5999da8b8b9b649560cb0b8528f87a94", "license": "Original procedural audio synthesized in this project with FFmpeg lavfi; no third-party 
+- visual_assets: "topic artwork: see the creative plan's assets list"
+- renderer: {"browser": "Chrome/157.0.8103.79", "style": "tech-explainer"}
+
+Technical checks do not judge artistic quality, native-language quality, acoustic timing accuracy or licensing.

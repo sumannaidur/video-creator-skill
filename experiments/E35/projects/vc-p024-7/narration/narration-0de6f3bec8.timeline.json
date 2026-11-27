@@ -1,0 +1,7418 @@
+{
+  "version": 1,
+  "unit": "sample",
+  "locale": "en-IN",
+  "validation": "unreviewed",
+  "run_id": "combined-c57e9ac369ef5abd0212a5cf",
+  "combined_id": "narration-0de6f3bec8",
+  "audio": {
+    "path": "narration/narration-0de6f3bec8.wav",
+    "sha256": "431895cb665c05d6631ac1148228a12c736f70103476a5b8dfadce645813e96e",
+    "sample_rate": 24000,
+    "sample_count": 762000
+  },
+  "text": {
+    "display": "How can a square on a label hold a message? Look closely at a QR code. Its light and dark squares form a grid, with information arranged across rows and columns. First, the scanner finds three large corner patterns. They show where the code is and which way it faces. Alternating timing marks help the scanner line up with the little squares. Once it has the grid, the reader can interpret the encoded data. Some of those squares carry extra information for error correction, which can help recover a message even if part of the code is damaged.",
+    "speech": "How can a square on a label hold a message? Look closely at a QR code. Its light and dark squares form a grid, with information arranged across rows and columns. First, the scanner finds three large corner patterns. They show where the code is and which way it faces. Alternating timing marks help the scanner line up with the little squares. Once it has the grid, the reader can interpret the encoded data. Some of those squares carry extra information for error correction, which can help recover a message even if part of the code is damaged."
+  },
+  "segments": [
+    {
+      "id": "s1",
+      "run_id": "883a6035202841ed935a4df66e7910c2",
+      "validation": "unreviewed",
+      "source_timeline": "narration/segments/s1-2f452fdabe.timeline.json",
+      "source_timeline_sha256": "570fd2e34ee7c5d8b6737bffff60fa6e47e0441beec67ee30c0b86188a4dda14",
+      "audio": {
+        "path": "narration/segments/s1-2f452fdabe.wav",
+        "sha256": "6f85cb9b786c95bfb0c85299d0e164045b775de0f96b1ec5dec41c1a9357a254",
+        "sample_rate": 24000,
+        "sample_count": 236400
+      },
+      "offset_samples": 0,
+      "sample_count": 236400,
+      "text_offset": {
+        "speech": 0,
+        "display": 0
+      },
+      "gap_after_samples": 4800
+    },
+    {
+      "id": "s2",
+      "run_id": "290756d2b3aa451798a1fe761184e682",
+      "validation": "unreviewed",
+      "source_timeline": "narration/segments/s2-f8b297d4d0.timeline.json",
+      "source_timeline_sha256": "b693a4c8106c646ea5569434e5cdcf145526a611babbe548d8d8f6e663288995",
+      "audio": {
+        "path": "narration/segments/s2-f8b297d4d0.wav",
+        "sha256": "b539873cef795db3f0892b1af9d234897a48e2fea1778d9edd6784f263b7b235",
+        "sample_rate": 24000,
+        "sample_count": 239400
+      },
+      "offset_samples": 241200,
+      "sample_count": 239400,
+      "text_offset": {
+        "speech": 162,
+        "display": 162
+      },
+      "gap_after_samples": 4800
+    },
+    {
+      "id": "s3",
+      "run_id": "6c8ed6d6fea949f8a3decc37a277e1fa",
+      "validation": "unreviewed",
+      "source_timeline": "narration/segments/s3-bc0fab4702.timeline.json",
+      "source_timeline_sha256": "59c2f093ed819f785056f9fb172aac52dfe4ee19ca5a3b8d7ce8ce3a3f500756",
+      "audio": {
+        "path": "narration/segments/s3-bc0fab4702.wav",
+        "sha256": "cb68d5a09820f9f8d0ea1e937e4614f60f89afa9394dd0911a3189ed868fb56d",
+        "sample_rate": 24000,
+        "sample_count": 276600
+      },
+      "offset_samples": 485400,
+      "sample_count": 276600,
+      "text_offset": {
+        "speech": 343,
+        "display": 343
+      },
+      "gap_after_samples": 0
+    }
+  ],
+  "records": [
+    {
+      "kind": "phoneme",
+      "label": "h",
+      "start": 1200,
+      "end": 2400,
+      "source": "native_model",
+      "segment": "s1"
+    },
+    {
+      "kind": "phoneme",
+      "label": "ˌ",
+      "start": 2400,
+      "end": 3000,
+      "source": "native_model",
+      "segment": "s1"
+    },
+    {
+      "kind": "phoneme",
+      "label": "W",
+      "start": 3000,
+      "end": 5400,
+      "source": "native_model",
+      "segment": "s1"
+    },
+    {
+      "kind": "phoneme",
+      "label": "k",
+      "start": 7200,
+      "end": 8400,
+      "source": "native_model",
+      "segment": "s1"
+    },
+    {
+      "kind": "phoneme",
+      "label": "æ",
+      "start": 8400,
+      "end": 9600,
+      "source": "native_model",
+      "segment": "s1"
+    },
+    {
+      "kind": "phoneme",
+      "label": "n",
+      "start": 9600,
+      "end": 10800,
+      "source": "native_model",
+      "segment": "s1"
+    },
+    {
+      "kind": "phoneme",
+      "label": "ɐ",
+      "start": 12000,
+      "end": 12600,
+      "source": "native_model",
+      "segment": "s1"
+    },
+    {
+      "kind": "phoneme",
+      "label": "s",
+      "start": 14400,
+      "end": 15600,
+      "source": "native_model",
+      "segment": "s1"
+    },
+    {
+      "kind": "phoneme",
+      "label": "k",
+      "start": 15600,
+      "end": 17400,
+      "source": "native_model",
+      "segment": "s1"
+    },
+    {
+      "kind": "phoneme",
+      "label": "w",
+      "start": 17400,
+      "end": 18600,
+      "source": "native_model",
+      "segment": "s1"
+    },
+    {
+      "kind": "phoneme",
+      "label": "ˈ",
+      "start": 18600,
+      "end": 19200,
+      "source": "native_model",
+      "segment": "s1"
+    },
+    {
+      "kind": "phoneme",
+      "label": "ɛ",
+      "start": 19200,
+      "end": 20400,
+      "source": "native_model",
+      "segment": "s1"
+    },
+    {
+      "kind": "phoneme",
+      "label": "ɹ",
+      "start": 20400,
+      "end": 22200,
+      "source": "native_model",
+      "segment": "s1"
+    },
+    {
+      "kind": "phoneme",
+      "label": "ˌ",
+      "start": 23400,
+      "end": 24000,
+      "source": "native_model",
+      "segment": "s1"
+    },
+    {
+      "kind": "phoneme",
+      "label": "ɔ",
+      "start": 24000,
+      "end": 25200,
+      "source": "native_model",
+      "segment": "s1"
+    },
+    {
+      "kind": "phoneme",
+      "label": "n",
+      "start": 25200,
+      "end": 26400,
+      "source": "native_model",
+      "segment": "s1"
+    },
+    {
+      "kind": "phoneme",
+      "label": "ɐ",
+      "start": 27000,
+      "end": 27600,
+      "source": "native_model",
+      "segment": "s1"
+    },
+    {
+      "kind": "phoneme",
+      "label": "l",
+      "start": 28800,
+      "end": 30000,
+      "source": "native_model",
+      "segment": "s1"
+    },
+    {
+      "kind": "phoneme",
+      "label": "ˈ",
+      "start": 30000,
+      "end": 30600,
+      "source": "native_model",
+      "segment": "s1"
+    },
+    {
+      "kind": "phoneme",
+      "label": "A",
+      "start": 30600,
+      "end": 32400,
+      "source": "native_model",
+      "segment": "s1"
+    },
+    {
+      "kind": "phoneme",
+      "label": "b",
+      "start": 32400,
+      "end": 34200,
+      "source": "native_model",
+      "segment": "s1"
+    },
+    {
+      "kind": "phoneme",
+      "label": "ə",
+      "start": 34200,
+      "end": 35400,
+      "source": "native_model",
+      "segment": "s1"
+    },
+    {
+      "kind": "phoneme",
+      "label": "l",
+      "start": 35400,
+      "end": 36600,
+      "source": "native_model",
+      "segment": "s1"
+    },
+    {
+      "kind": "phoneme",
+      "label": "h",
+      "start": 37800,
+      "end": 39000,
+      "source": "native_model",
+      "segment": "s1"
+    },
+    {
+      "kind": "phoneme",
+      "label": "ˈ",
+      "start": 39000,
+      "end": 39600,
+      "source": "native_model",
+      "segment": "s1"
+    },
+    {
+      "kind": "phoneme",
+      "label": "O",
+      "start": 39600,
+      "end": 41400,
+      "source": "native_model",
+      "segment": "s1"
+    },
+    {
+      "kind": "phoneme",
+      "label": "l",
+      "start": 41400,
+      "end": 43200,
+      "source": "native_model",
+      "segment": "s1"
+    },
+    {
+      "kind": "phoneme",
+      "label": "d",
+      "start": 43200,
+      "end": 44400,
+      "source": "native_model",
+      "segment": "s1"
+    },
+    {
+      "kind": "phoneme",
+      "label": "ɐ",
+      "start": 45000,
+      "end": 45600,
+      "source": "native_model",
+      "segment": "s1"
+    },
+    {
+      "kind": "phoneme",
+      "label": "m",
+      "start": 46800,
+      "end": 48000,
+      "source": "native_model",
+      "segment": "s1"
+    },
+    {
+      "kind": "phoneme",
+      "label": "ˈ",
+      "start": 48000,
+      "end": 48600,
+      "source": "native_model",
+      "segment": "s1"
+    },
+    {
+      "kind": "phoneme",
+      "label": "ɛ",
+      "start": 48600,
+      "end": 49800,
+      "source": "native_model",
+      "segment": "s1"
+    },
+    {
+      "kind": "phoneme",
+      "label": "s",
+      "start": 49800,
+      "end": 51600,
+      "source": "native_model",
+      "segment": "s1"
+    },
+    {
+      "kind": "phoneme",
+      "label": "ɪ",
+      "start": 51600,
+      "end": 54000,
+      "source": "native_model",
+      "segment": "s1"
+    },
+    {
+      "kind": "phoneme",
+      "label": "ʤ",
+      "start": 54000,
+      "end": 56400,
+      "source": "native_model",
+      "segment": "s1"
+    },
+    {
+      "kind": "phoneme",
+      "label": "l",
+      "start": 67200,
+      "end": 68400,
+      "source": "native_model",
+      "segment": "s1"
+    },
+    {
+      "kind": "phoneme",
+      "label": "ˈ",
+      "start": 68400,
+      "end": 69000,
+      "source": "native_model",
+      "segment": "s1"
+    },
+    {
+      "kind": "phoneme",
+      "label": "ʊ",
+      "start": 69000,
+      "end": 70800,
+      "source": "native_model",
+      "segment": "s1"
+    },
+    {
+      "kind": "phoneme",
+      "label": "k",
+      "start": 70800,
+      "end": 72000,
+      "source": "native_model",
+      "segment": "s1"
+    },
+    {
+      "kind": "phoneme",
+      "label": "k",
+      "start": 73800,
+      "end": 75000,
+      "source": "native_model",
+      "segment": "s1"
+    },
+    {
+      "kind": "phoneme",
+      "label": "l",
+      "start": 75000,
+      "end": 76800,
+      "source": "native_model",
+      "segment": "s1"
+    },
+    {
+      "kind": "phoneme",
+      "label": "ˈ",
+      "start": 76800,
+      "end": 77400,
+      "source": "native_model",
+      "segment": "s1"
+    },
+    {
+      "kind": "phoneme",
+      "label": "O",
+      "start": 77400,
+      "end": 79200,
+      "source": "native_model",
+      "segment": "s1"
+    },
+    {
+      "kind": "phoneme",
+      "label": "s",
+      "start": 79200,
+      "end": 81600,
+      "source": "native_model",
+      "segment": "s1"
+    },
+    {
+      "kind": "phoneme",
+      "label": "l",
+      "start": 81600,
+      "end": 83400,
+      "source": "native_model",
+      "segment": "s1"
+    },
+    {
+      "kind": "phoneme",
+      "label": "i",
+      "start": 83400,
+      "end": 84600,
+      "source": "native_model",
+      "segment": "s1"
+    },
+    {
+      "kind": "phoneme",
+      "label": "æ",
+      "start": 85800,
+      "end": 87000,
+      "source": "native_model",
+      "segment": "s1"
+    },
+    {
+      "kind": "phoneme",
+      "label": "t",
+      "start": 87000,
+      "end": 88200,
+      "source": "native_model",
+      "segment": "s1"
+    },
+    {
+      "kind": "phoneme",
+      "label": "ɐ",
+      "start": 89400,
+      "end": 90000,
+      "source": "native_model",
+      "segment": "s1"
+    },
+    {
+      "kind": "phoneme",
+      "label": "k",
+      "start": 91200,
+      "end": 92400,
+      "source": "native_model",
+      "segment": "s1"
+    },
+    {
+      "kind": "phoneme",
+      "label": "j",
+      "start": 92400,
+      "end": 93600,
+      "source": "native_model",
+      "segment": "s1"
+    },
+    {
+      "kind": "phoneme",
+      "label": "ˌ",
+      "start": 93600,
+      "end": 94200,
+      "source": "native_model",
+      "segment": "s1"
+    },
+    {
+      "kind": "phoneme",
+      "label": "u",
+      "start": 94200,
+      "end": 96000,
+      "source": "native_model",
+      "segment": "s1"
+    },
+    {
+      "kind": "phoneme",
+      "label": "ˈ",
+      "start": 96000,
+      "end": 96600,
+      "source": "native_model",
+      "segment": "s1"
+    },
+    {
+      "kind": "phoneme",
+      "label": "ɑ",
+      "start": 96600,
+      "end": 98400,
+      "source": "native_model",
+      "segment": "s1"
+    },
+    {
+      "kind": "phoneme",
+      "label": "ɹ",
+      "start": 98400,
+      "end": 100200,
+      "source": "native_model",
+      "segment": "s1"
+    },
+    {
+      "kind": "phoneme",
+      "label": "k",
+      "start": 101400,
+      "end": 102600,
+      "source": "native_model",
+      "segment": "s1"
+    },
+    {
+      "kind": "phoneme",
+      "label": "ˈ",
+      "start": 102600,
+      "end": 103200,
+      "source": "native_model",
+      "segment": "s1"
+    },
+    {
+      "kind": "phoneme",
+      "label": "O",
+      "start": 103200,
+      "end": 105600,
+      "source": "native_model",
+      "segment": "s1"
+    },
+    {
+      "kind": "phoneme",
+      "label": "d",
+      "start": 105600,
+      "end": 107400,
+      "source": "native_model",
+      "segment": "s1"
+    },
+    {
+      "kind": "phoneme",
+      "label": "ˌ",
+      "start": 117600,
+      "end": 118200,
+      "source": "native_model",
+      "segment": "s1"
+    },
+    {
+      "kind": "phoneme",
+      "label": "ɪ",
+      "start": 118200,
+      "end": 119400,
+      "source": "native_model",
+      "segment": "s1"
+    },
+    {
+      "kind": "phoneme",
+      "label": "t",
+      "start": 119400,
+      "end": 121200,
+      "source": "native_model",
+      "segment": "s1"
+    },
+    {
+      "kind": "phoneme",
+      "label": "s",
+      "start": 121200,
+      "end": 122400,
+      "source": "native_model",
+      "segment": "s1"
+    },
+    {
+      "kind": "phoneme",
+      "label": "l",
+      "start": 124200,
+      "end": 126000,
+      "source": "native_model",
+      "segment": "s1"
+    },
+    {
+      "kind": "phoneme",
+      "label": "ˈ",
+      "start": 126000,
+      "end": 126600,
+      "source": "native_model",
+      "segment": "s1"
+    },
+    {
+      "kind": "phoneme",
+      "label": "I",
+      "start": 126600,
+      "end": 129000,
+      "source": "native_model",
+      "segment": "s1"
+    },
+    {
+      "kind": "phoneme",
+      "label": "t",
+      "start": 129000,
+      "end": 130800,
+      "source": "native_model",
+      "segment": "s1"
+    },
+    {
+      "kind": "phoneme",
+      "label": "æ",
+      "start": 132000,
+      "end": 132600,
+      "source": "native_model",
+      "segment": "s1"
+    },
+    {
+      "kind": "phoneme",
+      "label": "n",
+      "start": 132600,
+      "end": 133800,
+      "source": "native_model",
+      "segment": "s1"
+    },
+    {
+      "kind": "phoneme",
+      "label": "d",
+      "start": 133800,
+      "end": 134400,
+      "source": "native_model",
+      "segment": "s1"
+    },
+    {
+      "kind": "phoneme",
+      "label": "d",
+      "start": 136200,
+      "end": 137400,
+      "source": "native_model",
+      "segment": "s1"
+    },
+    {
+      "kind": "phoneme",
+      "label": "ˈ",
+      "start": 137400,
+      "end": 138000,
+      "source": "native_model",
+      "segment": "s1"
+    },
+    {
+      "kind": "phoneme",
+      "label": "ɑ",
+      "start": 138000,
+      "end": 139800,
+      "source": "native_model",
+      "segment": "s1"
+    },
+    {
+      "kind": "phoneme",
+      "label": "ɹ",
+      "start": 139800,
+      "end": 141000,
+      "source": "native_model",
+      "segment": "s1"
+    },
+    {
+      "kind": "phoneme",
+      "label": "k",
+      "start": 141000,
+      "end": 142200,
+      "source": "native_model",
+      "segment": "s1"
+    },
+    {
+      "kind": "phoneme",
+      "label": "s",
+      "start": 143400,
+      "end": 144600,
+      "source": "native_model",
+      "segment": "s1"
+    },
+    {
+      "kind": "phoneme",
+      "label": "k",
+      "start": 144600,
+      "end": 145800,
+      "source": "native_model",
+      "segment": "s1"
+    },
+    {
+      "kind": "phoneme",
+      "label": "w",
+      "start": 145800,
+      "end": 147000,
+      "source": "native_model",
+      "segment": "s1"
+    },
+    {
+      "kind": "phoneme",
+      "label": "ˈ",
+      "start": 147000,
+      "end": 147600,
+      "source": "native_model",
+      "segment": "s1"
+    },
+    {
+      "kind": "phoneme",
+      "label": "ɛ",
+      "start": 147600,
+      "end": 148800,
+      "source": "native_model",
+      "segment": "s1"
+    },
+    {
+      "kind": "phoneme",
+      "label": "ɹ",
+      "start": 148800,
+      "end": 150600,
+      "source": "native_model",
+      "segment": "s1"
+    },
+    {
+      "kind": "phoneme",
+      "label": "z",
+      "start": 150600,
+      "end": 151800,
+      "source": "native_model",
+      "segment": "s1"
+    },
+    {
+      "kind": "phoneme",
+      "label": "f",
+      "start": 153000,
+      "end": 154200,
+      "source": "native_model",
+      "segment": "s1"
+    },
+    {
+      "kind": "phoneme",
+      "label": "ˈ",
+      "start": 154200,
+      "end": 154800,
+      "source": "native_model",
+      "segment": "s1"
+    },
+    {
+      "kind": "phoneme",
+      "label": "ɔ",
+      "start": 154800,
+      "end": 156000,
+      "source": "native_model",
+      "segment": "s1"
+    },
+    {
+      "kind": "phoneme",
+      "label": "ɹ",
+      "start": 156000,
+      "end": 157200,
+      "source": "native_model",
+      "segment": "s1"
+    },
+    {
+      "kind": "phoneme",
+      "label": "m",
+      "start": 157200,
+      "end": 157800,
+      "source": "native_model",
+      "segment": "s1"
+    },
+    {
+      "kind": "phoneme",
+      "label": "ɐ",
+      "start": 159000,
+      "end": 159600,
+      "source": "native_model",
+      "segment": "s1"
+    },
+    {
+      "kind": "phoneme",
+      "label": "ɡ",
+      "start": 161400,
+      "end": 162600,
+      "source": "native_model",
+      "segment": "s1"
+    },
+    {
+      "kind": "phoneme",
+      "label": "ɹ",
+      "start": 162600,
+      "end": 163800,
+      "source": "native_model",
+      "segment": "s1"
+    },
+    {
+      "kind": "phoneme",
+      "label": "ˈ",
+      "start": 163800,
+      "end": 164400,
+      "source": "native_model",
+      "segment": "s1"
+    },
+    {
+      "kind": "phoneme",
+      "label": "ɪ",
+      "start": 164400,
+      "end": 166200,
+      "source": "native_model",
+      "segment": "s1"
+    },
+    {
+      "kind": "phoneme",
+      "label": "d",
+      "start": 166200,
+      "end": 168000,
+      "source": "native_model",
+      "segment": "s1"
+    },
+    {
+      "kind": "phoneme",
+      "label": "w",
+      "start": 175800,
+      "end": 177000,
+      "source": "native_model",
+      "segment": "s1"
+    },
+    {
+      "kind": "phoneme",
+      "label": "ɪ",
+      "start": 177000,
+      "end": 177600,
+      "source": "native_model",
+      "segment": "s1"
+    },
+    {
+      "kind": "phoneme",
+      "label": "ð",
+      "start": 177600,
+      "end": 178200,
+      "source": "native_model",
+      "segment": "s1"
+    },
+    {
+      "kind": "phoneme",
+      "label": "ˌ",
+      "start": 179400,
+      "end": 180000,
+      "source": "native_model",
+      "segment": "s1"
+    },
+    {
+      "kind": "phoneme",
+      "label": "ɪ",
+      "start": 180000,
+      "end": 181200,
+      "source": "native_model",
+      "segment": "s1"
+    },
+    {
+      "kind": "phoneme",
+      "label": "n",
+      "start": 181200,
+      "end": 182400,
+      "source": "native_model",
+      "segment": "s1"
+    },
+    {
+      "kind": "phoneme",
+      "label": "f",
+      "start": 182400,
+      "end": 183600,
+      "source": "native_model",
+      "segment": "s1"
+    },
+    {
+      "kind": "phoneme",
+      "label": "ə",
+      "start": 183600,
+      "end": 184800,
+      "source": "native_model",
+      "segment": "s1"
+    },
+    {
+      "kind": "phoneme",
+      "label": "ɹ",
+      "start": 184800,
+      "end": 186000,
+      "source": "native_model",
+      "segment": "s1"
+    },
+    {
+      "kind": "phoneme",
+      "label": "m",
+      "start": 186000,
+      "end": 187200,
+      "source": "native_model",
+      "segment": "s1"
+    },
+    {
+      "kind": "phoneme",
+      "label": "ˈ",
+      "start": 187200,
+      "end": 187800,
+      "source": "native_model",
+      "segment": "s1"
+    },
+    {
+      "kind": "phoneme",
+      "label": "A",
+      "start": 187800,
+      "end": 189000,
+      "source": "native_model",
+      "segment": "s1"
+    },
+    {
+      "kind": "phoneme",
+      "label": "ʃ",
+      "start": 189000,
+      "end": 190800,
+      "source": "native_model",
+      "segment": "s1"
+    },
+    {
+      "kind": "phoneme",
+      "label": "ə",
+      "start": 190800,
+      "end": 192000,
+      "source": "native_model",
+      "segment": "s1"
+    },
+    {
+      "kind": "phoneme",
+      "label": "n",
+      "start": 192000,
+      "end": 193200,
+      "source": "native_model",
+      "segment": "s1"
+    },
+    {
+      "kind": "phoneme",
+      "label": "ə",
+      "start": 194400,
+      "end": 195600,
+      "source": "native_model",
+      "segment": "s1"
+    },
+    {
+      "kind": "phoneme",
+      "label": "ɹ",
+      "start": 195600,
+      "end": 196800,
+      "source": "native_model",
+      "segment": "s1"
+    },
+    {
+      "kind": "phoneme",
+      "label": "ˈ",
+      "start": 196800,
+      "end": 197400,
+      "source": "native_model",
+      "segment": "s1"
+    },
+    {
+      "kind": "phoneme",
+      "label": "A",
+      "start": 197400,
+      "end": 198600,
+      "source": "native_model",
+      "segment": "s1"
+    },
+    {
+      "kind": "phoneme",
+      "label": "n",
+      "start": 198600,
+      "end": 200400,
+      "source": "native_model",
+      "segment": "s1"
+    },
+    {
+      "kind": "phoneme",
+      "label": "ʤ",
+      "start": 200400,
+      "end": 201600,
+      "source": "native_model",
+      "segment": "s1"
+    },
+    {
+      "kind": "phoneme",
+      "label": "d",
+      "start": 201600,
+      "end": 202800,
+      "source": "native_model",
+      "segment": "s1"
+    },
+    {
+      "kind": "phoneme",
+      "label": "ə",
+      "start": 204000,
+      "end": 205200,
+      "source": "native_model",
+      "segment": "s1"
+    },
+    {
+      "kind": "phoneme",
+      "label": "k",
+      "start": 205200,
+      "end": 206400,
+      "source": "native_model",
+      "segment": "s1"
+    },
+    {
+      "kind": "phoneme",
+      "label": "ɹ",
+      "start": 206400,
+      "end": 207600,
+      "source": "native_model",
+      "segment": "s1"
+    },
+    {
+      "kind": "phoneme",
+      "label": "ˈ",
+      "start": 207600,
+      "end": 208200,
+      "source": "native_model",
+      "segment": "s1"
+    },
+    {
+      "kind": "phoneme",
+      "label": "ɔ",
+      "start": 208200,
+      "end": 210000,
+      "source": "native_model",
+      "segment": "s1"
+    },
+    {
+      "kind": "phoneme",
+      "label": "s",
+      "start": 210000,
+      "end": 211800,
+      "source": "native_model",
+      "segment": "s1"
+    },
+    {
+      "kind": "phoneme",
+      "label": "ɹ",
+      "start": 213600,
+      "end": 214800,
+      "source": "native_model",
+      "segment": "s1"
+    },
+    {
+      "kind": "phoneme",
+      "label": "ˈ",
+      "start": 214800,
+      "end": 215400,
+      "source": "native_model",
+      "segment": "s1"
+    },
+    {
+      "kind": "phoneme",
+      "label": "O",
+      "start": 215400,
+      "end": 217800,
+      "source": "native_model",
+      "segment": "s1"
+    },
+    {
+      "kind": "phoneme",
+      "label": "z",
+      "start": 217800,
+      "end": 220200,
+      "source": "native_model",
+      "segment": "s1"
+    },
+    {
+      "kind": "phoneme",
+      "label": "æ",
+      "start": 221400,
+      "end": 222600,
+      "source": "native_model",
+      "segment": "s1"
+    },
+    {
+      "kind": "phoneme",
+      "label": "n",
+      "start": 222600,
+      "end": 223800,
+      "source": "native_model",
+      "segment": "s1"
+    },
+    {
+      "kind": "phoneme",
+      "label": "d",
+      "start": 223800,
+      "end": 224400,
+      "source": "native_model",
+      "segment": "s1"
+    },
+    {
+      "kind": "phoneme",
+      "label": "k",
+      "start": 225600,
+      "end": 226800,
+      "source": "native_model",
+      "segment": "s1"
+    },
+    {
+      "kind": "phoneme",
+      "label": "ˈ",
+      "start": 226800,
+      "end": 227400,
+      "source": "native_model",
+      "segment": "s1"
+    },
+    {
+      "kind": "phoneme",
+      "label": "ɑ",
+      "start": 227400,
+      "end": 228600,
+      "source": "native_model",
+      "segment": "s1"
+    },
+    {
+      "kind": "phoneme",
+      "label": "l",
+      "start": 228600,
+      "end": 229800,
+      "source": "native_model",
+      "segment": "s1"
+    },
+    {
+      "kind": "phoneme",
+      "label": "ə",
+      "start": 229800,
+      "end": 231000,
+      "source": "native_model",
+      "segment": "s1"
+    },
+    {
+      "kind": "phoneme",
+      "label": "m",
+      "start": 231000,
+      "end": 232800,
+      "source": "native_model",
+      "segment": "s1"
+    },
+    {
+      "kind": "phoneme",
+      "label": "z",
+      "start": 232800,
+      "end": 234600,
+      "source": "native_model",
+      "segment": "s1"
+    },
+    {
+      "kind": "phoneme",
+      "label": "f",
+      "start": 242400,
+      "end": 243600,
+      "source": "native_model",
+      "segment": "s2"
+    },
+    {
+      "kind": "phoneme",
+      "label": "ˈ",
+      "start": 243600,
+      "end": 244200,
+      "source": "native_model",
+      "segment": "s2"
+    },
+    {
+      "kind": "phoneme",
+      "label": "ɜ",
+      "start": 244200,
+      "end": 246000,
+      "source": "native_model",
+      "segment": "s2"
+    },
+    {
+      "kind": "phoneme",
+      "label": "ɹ",
+      "start": 246000,
+      "end": 247800,
+      "source": "native_model",
+      "segment": "s2"
+    },
+    {
+      "kind": "phoneme",
+      "label": "s",
+      "start": 247800,
+      "end": 250200,
+      "source": "native_model",
+      "segment": "s2"
+    },
+    {
+      "kind": "phoneme",
+      "label": "t",
+      "start": 250200,
+      "end": 251400,
+      "source": "native_model",
+      "segment": "s2"
+    },
+    {
+      "kind": "phoneme",
+      "label": "ð",
+      "start": 259800,
+      "end": 261000,
+      "source": "native_model",
+      "segment": "s2"
+    },
+    {
+      "kind": "phoneme",
+      "label": "ə",
+      "start": 261000,
+      "end": 262200,
+      "source": "native_model",
+      "segment": "s2"
+    },
+    {
+      "kind": "phoneme",
+      "label": "s",
+      "start": 263400,
+      "end": 264600,
+      "source": "native_model",
+      "segment": "s2"
+    },
+    {
+      "kind": "phoneme",
+      "label": "k",
+      "start": 264600,
+      "end": 265800,
+      "source": "native_model",
+      "segment": "s2"
+    },
+    {
+      "kind": "phoneme",
+      "label": "ˈ",
+      "start": 265800,
+      "end": 266400,
+      "source": "native_model",
+      "segment": "s2"
+    },
+    {
+      "kind": "phoneme",
+      "label": "æ",
+      "start": 266400,
+      "end": 268200,
+      "source": "native_model",
+      "segment": "s2"
+    },
+    {
+      "kind": "phoneme",
+      "label": "n",
+      "start": 268200,
+      "end": 270000,
+      "source": "native_model",
+      "segment": "s2"
+    },
+    {
+      "kind": "phoneme",
+      "label": "ə",
+      "start": 270000,
+      "end": 271200,
+      "source": "native_model",
+      "segment": "s2"
+    },
+    {
+      "kind": "phoneme",
+      "label": "ɹ",
+      "start": 271200,
+      "end": 271800,
+      "source": "native_model",
+      "segment": "s2"
+    },
+    {
+      "kind": "phoneme",
+      "label": "f",
+      "start": 273000,
+      "end": 274800,
+      "source": "native_model",
+      "segment": "s2"
+    },
+    {
+      "kind": "phoneme",
+      "label": "ˈ",
+      "start": 274800,
+      "end": 275400,
+      "source": "native_model",
+      "segment": "s2"
+    },
+    {
+      "kind": "phoneme",
+      "label": "I",
+      "start": 275400,
+      "end": 277200,
+      "source": "native_model",
+      "segment": "s2"
+    },
+    {
+      "kind": "phoneme",
+      "label": "n",
+      "start": 277200,
+      "end": 278400,
+      "source": "native_model",
+      "segment": "s2"
+    },
+    {
+      "kind": "phoneme",
+      "label": "d",
+      "start": 278400,
+      "end": 279600,
+      "source": "native_model",
+      "segment": "s2"
+    },
+    {
+      "kind": "phoneme",
+      "label": "z",
+      "start": 279600,
+      "end": 280800,
+      "source": "native_model",
+      "segment": "s2"
+    },
+    {
+      "kind": "phoneme",
+      "label": "θ",
+      "start": 282600,
+      "end": 283800,
+      "source": "native_model",
+      "segment": "s2"
+    },
+    {
+      "kind": "phoneme",
+      "label": "ɹ",
+      "start": 283800,
+      "end": 286200,
+      "source": "native_model",
+      "segment": "s2"
+    },
+    {
+      "kind": "phoneme",
+      "label": "ˈ",
+      "start": 286200,
+      "end": 286800,
+      "source": "native_model",
+      "segment": "s2"
+    },
+    {
+      "kind": "phoneme",
+      "label": "i",
+      "start": 286800,
+      "end": 289800,
+      "source": "native_model",
+      "segment": "s2"
+    },
+    {
+      "kind": "phoneme",
+      "label": "l",
+      "start": 290400,
+      "end": 291600,
+      "source": "native_model",
+      "segment": "s2"
+    },
+    {
+      "kind": "phoneme",
+      "label": "ˈ",
+      "start": 291600,
+      "end": 292200,
+      "source": "native_model",
+      "segment": "s2"
+    },
+    {
+      "kind": "phoneme",
+      "label": "ɑ",
+      "start": 292200,
+      "end": 294000,
+      "source": "native_model",
+      "segment": "s2"
+    },
+    {
+      "kind": "phoneme",
+      "label": "ɹ",
+      "start": 294000,
+      "end": 295800,
+      "source": "native_model",
+      "segment": "s2"
+    },
+    {
+      "kind": "phoneme",
+      "label": "ʤ",
+      "start": 295800,
+      "end": 297000,
+      "source": "native_model",
+      "segment": "s2"
+    },
+    {
+      "kind": "phoneme",
+      "label": "k",
+      "start": 298200,
+      "end": 299400,
+      "source": "native_model",
+      "segment": "s2"
+    },
+    {
+      "kind": "phoneme",
+      "label": "ˈ",
+      "start": 299400,
+      "end": 300000,
+      "source": "native_model",
+      "segment": "s2"
+    },
+    {
+      "kind": "phoneme",
+      "label": "ɔ",
+      "start": 300000,
+      "end": 301200,
+      "source": "native_model",
+      "segment": "s2"
+    },
+    {
+      "kind": "phoneme",
+      "label": "ɹ",
+      "start": 301200,
+      "end": 302400,
+      "source": "native_model",
+      "segment": "s2"
+    },
+    {
+      "kind": "phoneme",
+      "label": "n",
+      "start": 302400,
+      "end": 303600,
+      "source": "native_model",
+      "segment": "s2"
+    },
+    {
+      "kind": "phoneme",
+      "label": "ə",
+      "start": 303600,
+      "end": 304800,
+      "source": "native_model",
+      "segment": "s2"
+    },
+    {
+      "kind": "phoneme",
+      "label": "ɹ",
+      "start": 304800,
+      "end": 305400,
+      "source": "native_model",
+      "segment": "s2"
+    },
+    {
+      "kind": "phoneme",
+      "label": "p",
+      "start": 306600,
+      "end": 307800,
+      "source": "native_model",
+      "segment": "s2"
+    },
+    {
+      "kind": "phoneme",
+      "label": "ˈ",
+      "start": 307800,
+      "end": 308400,
+      "source": "native_model",
+      "segment": "s2"
+    },
+    {
+      "kind": "phoneme",
+      "label": "æ",
+      "start": 308400,
+      "end": 309600,
+      "source": "native_model",
+      "segment": "s2"
+    },
+    {
+      "kind": "phoneme",
+      "label": "T",
+      "start": 309600,
+      "end": 311400,
+      "source": "native_model",
+      "segment": "s2"
+    },
+    {
+      "kind": "phoneme",
+      "label": "ə",
+      "start": 311400,
+      "end": 312600,
+      "source": "native_model",
+      "segment": "s2"
+    },
+    {
+      "kind": "phoneme",
+      "label": "ɹ",
+      "start": 312600,
+      "end": 313800,
+      "source": "native_model",
+      "segment": "s2"
+    },
+    {
+      "kind": "phoneme",
+      "label": "n",
+      "start": 313800,
+      "end": 315000,
+      "source": "native_model",
+      "segment": "s2"
+    },
+    {
+      "kind": "phoneme",
+      "label": "z",
+      "start": 315000,
+      "end": 316200,
+      "source": "native_model",
+      "segment": "s2"
+    },
+    {
+      "kind": "phoneme",
+      "label": "ð",
+      "start": 327600,
+      "end": 328800,
+      "source": "native_model",
+      "segment": "s2"
+    },
+    {
+      "kind": "phoneme",
+      "label": "ˌ",
+      "start": 328800,
+      "end": 329400,
+      "source": "native_model",
+      "segment": "s2"
+    },
+    {
+      "kind": "phoneme",
+      "label": "A",
+      "start": 329400,
+      "end": 331200,
+      "source": "native_model",
+      "segment": "s2"
+    },
+    {
+      "kind": "phoneme",
+      "label": "ʃ",
+      "start": 333000,
+      "end": 334200,
+      "source": "native_model",
+      "segment": "s2"
+    },
+    {
+      "kind": "phoneme",
+      "label": "ˈ",
+      "start": 334200,
+      "end": 334800,
+      "source": "native_model",
+      "segment": "s2"
+    },
+    {
+      "kind": "phoneme",
+      "label": "O",
+      "start": 334800,
+      "end": 337200,
+      "source": "native_model",
+      "segment": "s2"
+    },
+    {
+      "kind": "phoneme",
+      "label": "w",
+      "start": 339000,
+      "end": 340200,
+      "source": "native_model",
+      "segment": "s2"
+    },
+    {
+      "kind": "phoneme",
+      "label": "ˌ",
+      "start": 340200,
+      "end": 340800,
+      "source": "native_model",
+      "segment": "s2"
+    },
+    {
+      "kind": "phoneme",
+      "label": "ɛ",
+      "start": 340800,
+      "end": 342000,
+      "source": "native_model",
+      "segment": "s2"
+    },
+    {
+      "kind": "phoneme",
+      "label": "ɹ",
+      "start": 342000,
+      "end": 343200,
+      "source": "native_model",
+      "segment": "s2"
+    },
+    {
+      "kind": "phoneme",
+      "label": "ð",
+      "start": 344400,
+      "end": 345000,
+      "source": "native_model",
+      "segment": "s2"
+    },
+    {
+      "kind": "phoneme",
+      "label": "ə",
+      "start": 345000,
+      "end": 345600,
+      "source": "native_model",
+      "segment": "s2"
+    },
+    {
+      "kind": "phoneme",
+      "label": "k",
+      "start": 346800,
+      "end": 348000,
+      "source": "native_model",
+      "segment": "s2"
+    },
+    {
+      "kind": "phoneme",
+      "label": "ˈ",
+      "start": 348000,
+      "end": 348600,
+      "source": "native_model",
+      "segment": "s2"
+    },
+    {
+      "kind": "phoneme",
+      "label": "O",
+      "start": 348600,
+      "end": 350400,
+      "source": "native_model",
+      "segment": "s2"
+    },
+    {
+      "kind": "phoneme",
+      "label": "d",
+      "start": 350400,
+      "end": 352200,
+      "source": "native_model",
+      "segment": "s2"
+    },
+    {
+      "kind": "phoneme",
+      "label": "ɪ",
+      "start": 353400,
+      "end": 355200,
+      "source": "native_model",
+      "segment": "s2"
+    },
+    {
+      "kind": "phoneme",
+      "label": "z",
+      "start": 355200,
+      "end": 356400,
+      "source": "native_model",
+      "segment": "s2"
+    },
+    {
+      "kind": "phoneme",
+      "label": "æ",
+      "start": 359400,
+      "end": 360600,
+      "source": "native_model",
+      "segment": "s2"
+    },
+    {
+      "kind": "phoneme",
+      "label": "n",
+      "start": 360600,
+      "end": 361800,
+      "source": "native_model",
+      "segment": "s2"
+    },
+    {
+      "kind": "phoneme",
+      "label": "d",
+      "start": 361800,
+      "end": 362400,
+      "source": "native_model",
+      "segment": "s2"
+    },
+    {
+      "kind": "phoneme",
+      "label": "w",
+      "start": 363600,
+      "end": 364800,
+      "source": "native_model",
+      "segment": "s2"
+    },
+    {
+      "kind": "phoneme",
+      "label": "ˌ",
+      "start": 364800,
+      "end": 365400,
+      "source": "native_model",
+      "segment": "s2"
+    },
+    {
+      "kind": "phoneme",
+      "label": "ɪ",
+      "start": 365400,
+      "end": 367200,
+      "source": "native_model",
+      "segment": "s2"
+    },
+    {
+      "kind": "phoneme",
+      "label": "ʧ",
+      "start": 367200,
+      "end": 368400,
+      "source": "native_model",
+      "segment": "s2"
+    },
+    {
+      "kind": "phoneme",
+      "label": "w",
+      "start": 370200,
+      "end": 370800,
+      "source": "native_model",
+      "segment": "s2"
+    },
+    {
+      "kind": "phoneme",
+      "label": "ˈ",
+      "start": 370800,
+      "end": 371400,
+      "source": "native_model",
+      "segment": "s2"
+    },
+    {
+      "kind": "phoneme",
+      "label": "A",
+      "start": 371400,
+      "end": 372600,
+      "source": "native_model",
+      "segment": "s2"
+    },
+    {
+      "kind": "phoneme",
+      "label": "ɪ",
+      "start": 374400,
+      "end": 375600,
+      "source": "native_model",
+      "segment": "s2"
+    },
+    {
+      "kind": "phoneme",
+      "label": "t",
+      "start": 375600,
+      "end": 376800,
+      "source": "native_model",
+      "segment": "s2"
+    },
+    {
+      "kind": "phoneme",
+      "label": "f",
+      "start": 378000,
+      "end": 379200,
+      "source": "native_model",
+      "segment": "s2"
+    },
+    {
+      "kind": "phoneme",
+      "label": "ˈ",
+      "start": 379200,
+      "end": 379800,
+      "source": "native_model",
+      "segment": "s2"
+    },
+    {
+      "kind": "phoneme",
+      "label": "A",
+      "start": 379800,
+      "end": 381600,
+      "source": "native_model",
+      "segment": "s2"
+    },
+    {
+      "kind": "phoneme",
+      "label": "s",
+      "start": 381600,
+      "end": 383400,
+      "source": "native_model",
+      "segment": "s2"
+    },
+    {
+      "kind": "phoneme",
+      "label": "ᵻ",
+      "start": 383400,
+      "end": 385200,
+      "source": "native_model",
+      "segment": "s2"
+    },
+    {
+      "kind": "phoneme",
+      "label": "z",
+      "start": 385200,
+      "end": 386400,
+      "source": "native_model",
+      "segment": "s2"
+    },
+    {
+      "kind": "phoneme",
+      "label": "ˈ",
+      "start": 396600,
+      "end": 397800,
+      "source": "native_model",
+      "segment": "s2"
+    },
+    {
+      "kind": "phoneme",
+      "label": "ɔ",
+      "start": 397800,
+      "end": 399000,
+      "source": "native_model",
+      "segment": "s2"
+    },
+    {
+      "kind": "phoneme",
+      "label": "l",
+      "start": 399000,
+      "end": 400800,
+      "source": "native_model",
+      "segment": "s2"
+    },
+    {
+      "kind": "phoneme",
+      "label": "t",
+      "start": 400800,
+      "end": 402600,
+      "source": "native_model",
+      "segment": "s2"
+    },
+    {
+      "kind": "phoneme",
+      "label": "ə",
+      "start": 402600,
+      "end": 403200,
+      "source": "native_model",
+      "segment": "s2"
+    },
+    {
+      "kind": "phoneme",
+      "label": "ɹ",
+      "start": 403200,
+      "end": 404400,
+      "source": "native_model",
+      "segment": "s2"
+    },
+    {
+      "kind": "phoneme",
+      "label": "n",
+      "start": 404400,
+      "end": 405600,
+      "source": "native_model",
+      "segment": "s2"
+    },
+    {
+      "kind": "phoneme",
+      "label": "ˌ",
+      "start": 405600,
+      "end": 406200,
+      "source": "native_model",
+      "segment": "s2"
+    },
+    {
+      "kind": "phoneme",
+      "label": "A",
+      "start": 406200,
+      "end": 407400,
+      "source": "native_model",
+      "segment": "s2"
+    },
+    {
+      "kind": "phoneme",
+      "label": "T",
+      "start": 407400,
+      "end": 409200,
+      "source": "native_model",
+      "segment": "s2"
+    },
+    {
+      "kind": "phoneme",
+      "label": "ɪ",
+      "start": 409200,
+      "end": 410400,
+      "source": "native_model",
+      "segment": "s2"
+    },
+    {
+      "kind": "phoneme",
+      "label": "ŋ",
+      "start": 410400,
+      "end": 411000,
+      "source": "native_model",
+      "segment": "s2"
+    },
+    {
+      "kind": "phoneme",
+      "label": "t",
+      "start": 412200,
+      "end": 414000,
+      "source": "native_model",
+      "segment": "s2"
+    },
+    {
+      "kind": "phoneme",
+      "label": "ˈ",
+      "start": 414000,
+      "end": 414600,
+      "source": "native_model",
+      "segment": "s2"
+    },
+    {
+      "kind": "phoneme",
+      "label": "I",
+      "start": 414600,
+      "end": 416400,
+      "source": "native_model",
+      "segment": "s2"
+    },
+    {
+      "kind": "phoneme",
+      "label": "m",
+      "start": 416400,
+      "end": 417600,
+      "source": "native_model",
+      "segment": "s2"
+    },
+    {
+      "kind": "phoneme",
+      "label": "ɪ",
+      "start": 417600,
+      "end": 418800,
+      "source": "native_model",
+      "segment": "s2"
+    },
+    {
+      "kind": "phoneme",
+      "label": "ŋ",
+      "start": 418800,
+      "end": 419400,
+      "source": "native_model",
+      "segment": "s2"
+    },
+    {
+      "kind": "phoneme",
+      "label": "m",
+      "start": 420600,
+      "end": 421800,
+      "source": "native_model",
+      "segment": "s2"
+    },
+    {
+      "kind": "phoneme",
+      "label": "ˈ",
+      "start": 421800,
+      "end": 422400,
+      "source": "native_model",
+      "segment": "s2"
+    },
+    {
+      "kind": "phoneme",
+      "label": "ɑ",
+      "start": 422400,
+      "end": 423600,
+      "source": "native_model",
+      "segment": "s2"
+    },
+    {
+      "kind": "phoneme",
+      "label": "ɹ",
+      "start": 423600,
+      "end": 425400,
+      "source": "native_model",
+      "segment": "s2"
+    },
+    {
+      "kind": "phoneme",
+      "label": "k",
+      "start": 425400,
+      "end": 427200,
+      "source": "native_model",
+      "segment": "s2"
+    },
+    {
+      "kind": "phoneme",
+      "label": "s",
+      "start": 427200,
+      "end": 428400,
+      "source": "native_model",
+      "segment": "s2"
+    },
+    {
+      "kind": "phoneme",
+      "label": "h",
+      "start": 429600,
+      "end": 430800,
+      "source": "native_model",
+      "segment": "s2"
+    },
+    {
+      "kind": "phoneme",
+      "label": "ˈ",
+      "start": 430800,
+      "end": 431400,
+      "source": "native_model",
+      "segment": "s2"
+    },
+    {
+      "kind": "phoneme",
+      "label": "ɛ",
+      "start": 431400,
+      "end": 432600,
+      "source": "native_model",
+      "segment": "s2"
+    },
+    {
+      "kind": "phoneme",
+      "label": "l",
+      "start": 432600,
+      "end": 433800,
+      "source": "native_model",
+      "segment": "s2"
+    },
+    {
+      "kind": "phoneme",
+      "label": "p",
+      "start": 433800,
+      "end": 434400,
+      "source": "native_model",
+      "segment": "s2"
+    },
+    {
+      "kind": "phoneme",
+      "label": "ð",
+      "start": 435600,
+      "end": 436200,
+      "source": "native_model",
+      "segment": "s2"
+    },
+    {
+      "kind": "phoneme",
+      "label": "ə",
+      "start": 436200,
+      "end": 437400,
+      "source": "native_model",
+      "segment": "s2"
+    },
+    {
+      "kind": "phoneme",
+      "label": "s",
+      "start": 438600,
+      "end": 439800,
+      "source": "native_model",
+      "segment": "s2"
+    },
+    {
+      "kind": "phoneme",
+      "label": "k",
+      "start": 439800,
+      "end": 441000,
+      "source": "native_model",
+      "segment": "s2"
+    },
+    {
+      "kind": "phoneme",
+      "label": "ˈ",
+      "start": 441000,
+      "end": 441600,
+      "source": "native_model",
+      "segment": "s2"
+    },
+    {
+      "kind": "phoneme",
+      "label": "æ",
+      "start": 441600,
+      "end": 442800,
+      "source": "native_model",
+      "segment": "s2"
+    },
+    {
+      "kind": "phoneme",
+      "label": "n",
+      "start": 442800,
+      "end": 444600,
+      "source": "native_model",
+      "segment": "s2"
+    },
+    {
+      "kind": "phoneme",
+      "label": "ə",
+      "start": 444600,
+      "end": 445800,
+      "source": "native_model",
+      "segment": "s2"
+    },
+    {
+      "kind": "phoneme",
+      "label": "ɹ",
+      "start": 445800,
+      "end": 447000,
+      "source": "native_model",
+      "segment": "s2"
+    },
+    {
+      "kind": "phoneme",
+      "label": "l",
+      "start": 448200,
+      "end": 449400,
+      "source": "native_model",
+      "segment": "s2"
+    },
+    {
+      "kind": "phoneme",
+      "label": "ˈ",
+      "start": 449400,
+      "end": 450000,
+      "source": "native_model",
+      "segment": "s2"
+    },
+    {
+      "kind": "phoneme",
+      "label": "I",
+      "start": 450000,
+      "end": 451200,
+      "source": "native_model",
+      "segment": "s2"
+    },
+    {
+      "kind": "phoneme",
+      "label": "n",
+      "start": 451200,
+      "end": 452400,
+      "source": "native_model",
+      "segment": "s2"
+    },
+    {
+      "kind": "phoneme",
+      "label": "ˌ",
+      "start": 453600,
+      "end": 454200,
+      "source": "native_model",
+      "segment": "s2"
+    },
+    {
+      "kind": "phoneme",
+      "label": "ʌ",
+      "start": 454200,
+      "end": 455400,
+      "source": "native_model",
+      "segment": "s2"
+    },
+    {
+      "kind": "phoneme",
+      "label": "p",
+      "start": 455400,
+      "end": 456600,
+      "source": "native_model",
+      "segment": "s2"
+    },
+    {
+      "kind": "phoneme",
+      "label": "w",
+      "start": 457800,
+      "end": 458400,
+      "source": "native_model",
+      "segment": "s2"
+    },
+    {
+      "kind": "phoneme",
+      "label": "ɪ",
+      "start": 458400,
+      "end": 459600,
+      "source": "native_model",
+      "segment": "s2"
+    },
+    {
+      "kind": "phoneme",
+      "label": "ð",
+      "start": 459600,
+      "end": 460200,
+      "source": "native_model",
+      "segment": "s2"
+    },
+    {
+      "kind": "phoneme",
+      "label": "ð",
+      "start": 461400,
+      "end": 462000,
+      "source": "native_model",
+      "segment": "s2"
+    },
+    {
+      "kind": "phoneme",
+      "label": "ə",
+      "start": 462000,
+      "end": 462600,
+      "source": "native_model",
+      "segment": "s2"
+    },
+    {
+      "kind": "phoneme",
+      "label": "l",
+      "start": 463800,
+      "end": 464400,
+      "source": "native_model",
+      "segment": "s2"
+    },
+    {
+      "kind": "phoneme",
+      "label": "ˈ",
+      "start": 464400,
+      "end": 465000,
+      "source": "native_model",
+      "segment": "s2"
+    },
+    {
+      "kind": "phoneme",
+      "label": "ɪ",
+      "start": 465000,
+      "end": 465600,
+      "source": "native_model",
+      "segment": "s2"
+    },
+    {
+      "kind": "phoneme",
+      "label": "T",
+      "start": 465600,
+      "end": 466800,
+      "source": "native_model",
+      "segment": "s2"
+    },
+    {
+      "kind": "phoneme",
+      "label": "ᵊ",
+      "start": 466800,
+      "end": 468000,
+      "source": "native_model",
+      "segment": "s2"
+    },
+    {
+      "kind": "phoneme",
+      "label": "l",
+      "start": 468000,
+      "end": 469200,
+      "source": "native_model",
+      "segment": "s2"
+    },
+    {
+      "kind": "phoneme",
+      "label": "s",
+      "start": 470400,
+      "end": 471600,
+      "source": "native_model",
+      "segment": "s2"
+    },
+    {
+      "kind": "phoneme",
+      "label": "k",
+      "start": 471600,
+      "end": 472800,
+      "source": "native_model",
+      "segment": "s2"
+    },
+    {
+      "kind": "phoneme",
+      "label": "w",
+      "start": 472800,
+      "end": 474000,
+      "source": "native_model",
+      "segment": "s2"
+    },
+    {
+      "kind": "phoneme",
+      "label": "ˈ",
+      "start": 474000,
+      "end": 474600,
+      "source": "native_model",
+      "segment": "s2"
+    },
+    {
+      "kind": "phoneme",
+      "label": "ɛ",
+      "start": 474600,
+      "end": 475800,
+      "source": "native_model",
+      "segment": "s2"
+    },
+    {
+      "kind": "phoneme",
+      "label": "ɹ",
+      "start": 475800,
+      "end": 477600,
+      "source": "native_model",
+      "segment": "s2"
+    },
+    {
+      "kind": "phoneme",
+      "label": "z",
+      "start": 477600,
+      "end": 478800,
+      "source": "native_model",
+      "segment": "s2"
+    },
+    {
+      "kind": "phoneme",
+      "label": "w",
+      "start": 486600,
+      "end": 487800,
+      "source": "native_model",
+      "segment": "s3"
+    },
+    {
+      "kind": "phoneme",
+      "label": "ˈ",
+      "start": 487800,
+      "end": 488400,
+      "source": "native_model",
+      "segment": "s3"
+    },
+    {
+      "kind": "phoneme",
+      "label": "ʌ",
+      "start": 488400,
+      "end": 490200,
+      "source": "native_model",
+      "segment": "s3"
+    },
+    {
+      "kind": "phoneme",
+      "label": "n",
+      "start": 490200,
+      "end": 491400,
+      "source": "native_model",
+      "segment": "s3"
+    },
+    {
+      "kind": "phoneme",
+      "label": "s",
+      "start": 491400,
+      "end": 492600,
+      "source": "native_model",
+      "segment": "s3"
+    },
+    {
+      "kind": "phoneme",
+      "label": "ɪ",
+      "start": 493800,
+      "end": 495000,
+      "source": "native_model",
+      "segment": "s3"
+    },
+    {
+      "kind": "phoneme",
+      "label": "t",
+      "start": 495000,
+      "end": 496200,
+      "source": "native_model",
+      "segment": "s3"
+    },
+    {
+      "kind": "phoneme",
+      "label": "h",
+      "start": 497400,
+      "end": 498000,
+      "source": "native_model",
+      "segment": "s3"
+    },
+    {
+      "kind": "phoneme",
+      "label": "æ",
+      "start": 498000,
+      "end": 499200,
+      "source": "native_model",
+      "segment": "s3"
+    },
+    {
+      "kind": "phoneme",
+      "label": "z",
+      "start": 499200,
+      "end": 500400,
+      "source": "native_model",
+      "segment": "s3"
+    },
+    {
+      "kind": "phoneme",
+      "label": "ð",
+      "start": 501600,
+      "end": 502800,
+      "source": "native_model",
+      "segment": "s3"
+    },
+    {
+      "kind": "phoneme",
+      "label": "ə",
+      "start": 502800,
+      "end": 504000,
+      "source": "native_model",
+      "segment": "s3"
+    },
+    {
+      "kind": "phoneme",
+      "label": "ɡ",
+      "start": 505200,
+      "end": 506400,
+      "source": "native_model",
+      "segment": "s3"
+    },
+    {
+      "kind": "phoneme",
+      "label": "ɹ",
+      "start": 506400,
+      "end": 508200,
+      "source": "native_model",
+      "segment": "s3"
+    },
+    {
+      "kind": "phoneme",
+      "label": "ˈ",
+      "start": 508200,
+      "end": 508800,
+      "source": "native_model",
+      "segment": "s3"
+    },
+    {
+      "kind": "phoneme",
+      "label": "ɪ",
+      "start": 508800,
+      "end": 510600,
+      "source": "native_model",
+      "segment": "s3"
+    },
+    {
+      "kind": "phoneme",
+      "label": "d",
+      "start": 510600,
+      "end": 512400,
+      "source": "native_model",
+      "segment": "s3"
+    },
+    {
+      "kind": "phoneme",
+      "label": "ð",
+      "start": 521400,
+      "end": 523200,
+      "source": "native_model",
+      "segment": "s3"
+    },
+    {
+      "kind": "phoneme",
+      "label": "ə",
+      "start": 523200,
+      "end": 524400,
+      "source": "native_model",
+      "segment": "s3"
+    },
+    {
+      "kind": "phoneme",
+      "label": "ɹ",
+      "start": 525600,
+      "end": 526800,
+      "source": "native_model",
+      "segment": "s3"
+    },
+    {
+      "kind": "phoneme",
+      "label": "ˈ",
+      "start": 526800,
+      "end": 527400,
+      "source": "native_model",
+      "segment": "s3"
+    },
+    {
+      "kind": "phoneme",
+      "label": "i",
+      "start": 527400,
+      "end": 529200,
+      "source": "native_model",
+      "segment": "s3"
+    },
+    {
+      "kind": "phoneme",
+      "label": "d",
+      "start": 529200,
+      "end": 530400,
+      "source": "native_model",
+      "segment": "s3"
+    },
+    {
+      "kind": "phoneme",
+      "label": "ə",
+      "start": 530400,
+      "end": 531600,
+      "source": "native_model",
+      "segment": "s3"
+    },
+    {
+      "kind": "phoneme",
+      "label": "ɹ",
+      "start": 531600,
+      "end": 532200,
+      "source": "native_model",
+      "segment": "s3"
+    },
+    {
+      "kind": "phoneme",
+      "label": "k",
+      "start": 533400,
+      "end": 534600,
+      "source": "native_model",
+      "segment": "s3"
+    },
+    {
+      "kind": "phoneme",
+      "label": "æ",
+      "start": 534600,
+      "end": 535800,
+      "source": "native_model",
+      "segment": "s3"
+    },
+    {
+      "kind": "phoneme",
+      "label": "n",
+      "start": 535800,
+      "end": 537000,
+      "source": "native_model",
+      "segment": "s3"
+    },
+    {
+      "kind": "phoneme",
+      "label": "ɪ",
+      "start": 538200,
+      "end": 539400,
+      "source": "native_model",
+      "segment": "s3"
+    },
+    {
+      "kind": "phoneme",
+      "label": "n",
+      "start": 539400,
+      "end": 540600,
+      "source": "native_model",
+      "segment": "s3"
+    },
+    {
+      "kind": "phoneme",
+      "label": "t",
+      "start": 540600,
+      "end": 541800,
+      "source": "native_model",
+      "segment": "s3"
+    },
+    {
+      "kind": "phoneme",
+      "label": "ˈ",
+      "start": 541800,
+      "end": 542400,
+      "source": "native_model",
+      "segment": "s3"
+    },
+    {
+      "kind": "phoneme",
+      "label": "ɜ",
+      "start": 542400,
+      "end": 543600,
+      "source": "native_model",
+      "segment": "s3"
+    },
+    {
+      "kind": "phoneme",
+      "label": "ɹ",
+      "start": 543600,
+      "end": 544800,
+      "source": "native_model",
+      "segment": "s3"
+    },
+    {
+      "kind": "phoneme",
+      "label": "p",
+      "start": 544800,
+      "end": 546000,
+      "source": "native_model",
+      "segment": "s3"
+    },
+    {
+      "kind": "phoneme",
+      "label": "ɹ",
+      "start": 546000,
+      "end": 547200,
+      "source": "native_model",
+      "segment": "s3"
+    },
+    {
+      "kind": "phoneme",
+      "label": "ə",
+      "start": 547200,
+      "end": 548400,
+      "source": "native_model",
+      "segment": "s3"
+    },
+    {
+      "kind": "phoneme",
+      "label": "t",
+      "start": 548400,
+      "end": 549600,
+      "source": "native_model",
+      "segment": "s3"
+    },
+    {
+      "kind": "phoneme",
+      "label": "ð",
+      "start": 550800,
+      "end": 551400,
+      "source": "native_model",
+      "segment": "s3"
+    },
+    {
+      "kind": "phoneme",
+      "label": "i",
+      "start": 551400,
+      "end": 552600,
+      "source": "native_model",
+      "segment": "s3"
+    },
+    {
+      "kind": "phoneme",
+      "label": "ɪ",
+      "start": 554400,
+      "end": 555600,
+      "source": "native_model",
+      "segment": "s3"
+    },
+    {
+      "kind": "phoneme",
+      "label": "n",
+      "start": 555600,
+      "end": 556800,
+      "source": "native_model",
+      "segment": "s3"
+    },
+    {
+      "kind": "phoneme",
+      "label": "k",
+      "start": 556800,
+      "end": 558600,
+      "source": "native_model",
+      "segment": "s3"
+    },
+    {
+      "kind": "phoneme",
+      "label": "ˈ",
+      "start": 558600,
+      "end": 559200,
+      "source": "native_model",
+      "segment": "s3"
+    },
+    {
+      "kind": "phoneme",
+      "label": "O",
+      "start": 559200,
+      "end": 561000,
+      "source": "native_model",
+      "segment": "s3"
+    },
+    {
+      "kind": "phoneme",
+      "label": "d",
+      "start": 561000,
+      "end": 562800,
+      "source": "native_model",
+      "segment": "s3"
+    },
+    {
+      "kind": "phoneme",
+      "label": "ᵻ",
+      "start": 562800,
+      "end": 564000,
+      "source": "native_model",
+      "segment": "s3"
+    },
+    {
+      "kind": "phoneme",
+      "label": "d",
+      "start": 564000,
+      "end": 565200,
+      "source": "native_model",
+      "segment": "s3"
+    },
+    {
+      "kind": "phoneme",
+      "label": "d",
+      "start": 566400,
+      "end": 567600,
+      "source": "native_model",
+      "segment": "s3"
+    },
+    {
+      "kind": "phoneme",
+      "label": "ˈ",
+      "start": 567600,
+      "end": 568200,
+      "source": "native_model",
+      "segment": "s3"
+    },
+    {
+      "kind": "phoneme",
+      "label": "A",
+      "start": 568200,
+      "end": 570000,
+      "source": "native_model",
+      "segment": "s3"
+    },
+    {
+      "kind": "phoneme",
+      "label": "T",
+      "start": 570000,
+      "end": 571800,
+      "source": "native_model",
+      "segment": "s3"
+    },
+    {
+      "kind": "phoneme",
+      "label": "ə",
+      "start": 571800,
+      "end": 573000,
+      "source": "native_model",
+      "segment": "s3"
+    },
+    {
+      "kind": "phoneme",
+      "label": "s",
+      "start": 586200,
+      "end": 587400,
+      "source": "native_model",
+      "segment": "s3"
+    },
+    {
+      "kind": "phoneme",
+      "label": "ˌ",
+      "start": 587400,
+      "end": 588000,
+      "source": "native_model",
+      "segment": "s3"
+    },
+    {
+      "kind": "phoneme",
+      "label": "ʌ",
+      "start": 588000,
+      "end": 589200,
+      "source": "native_model",
+      "segment": "s3"
+    },
+    {
+      "kind": "phoneme",
+      "label": "m",
+      "start": 589200,
+      "end": 590400,
+      "source": "native_model",
+      "segment": "s3"
+    },
+    {
+      "kind": "phoneme",
+      "label": "ʌ",
+      "start": 591600,
+      "end": 592200,
+      "source": "native_model",
+      "segment": "s3"
+    },
+    {
+      "kind": "phoneme",
+      "label": "v",
+      "start": 592200,
+      "end": 593400,
+      "source": "native_model",
+      "segment": "s3"
+    },
+    {
+      "kind": "phoneme",
+      "label": "ð",
+      "start": 594600,
+      "end": 595800,
+      "source": "native_model",
+      "segment": "s3"
+    },
+    {
+      "kind": "phoneme",
+      "label": "O",
+      "start": 595800,
+      "end": 597600,
+      "source": "native_model",
+      "segment": "s3"
+    },
+    {
+      "kind": "phoneme",
+      "label": "z",
+      "start": 597600,
+      "end": 598800,
+      "source": "native_model",
+      "segment": "s3"
+    },
+    {
+      "kind": "phoneme",
+      "label": "s",
+      "start": 600600,
+      "end": 601800,
+      "source": "native_model",
+      "segment": "s3"
+    },
+    {
+      "kind": "phoneme",
+      "label": "k",
+      "start": 601800,
+      "end": 603000,
+      "source": "native_model",
+      "segment": "s3"
+    },
+    {
+      "kind": "phoneme",
+      "label": "w",
+      "start": 603000,
+      "end": 604200,
+      "source": "native_model",
+      "segment": "s3"
+    },
+    {
+      "kind": "phoneme",
+      "label": "ˈ",
+      "start": 604200,
+      "end": 604800,
+      "source": "native_model",
+      "segment": "s3"
+    },
+    {
+      "kind": "phoneme",
+      "label": "ɛ",
+      "start": 604800,
+      "end": 606600,
+      "source": "native_model",
+      "segment": "s3"
+    },
+    {
+      "kind": "phoneme",
+      "label": "ɹ",
+      "start": 606600,
+      "end": 608400,
+      "source": "native_model",
+      "segment": "s3"
+    },
+    {
+      "kind": "phoneme",
+      "label": "z",
+      "start": 608400,
+      "end": 609600,
+      "source": "native_model",
+      "segment": "s3"
+    },
+    {
+      "kind": "phoneme",
+      "label": "k",
+      "start": 610800,
+      "end": 612000,
+      "source": "native_model",
+      "segment": "s3"
+    },
+    {
+      "kind": "phoneme",
+      "label": "ˈ",
+      "start": 612000,
+      "end": 612600,
+      "source": "native_model",
+      "segment": "s3"
+    },
+    {
+      "kind": "phoneme",
+      "label": "ɛ",
+      "start": 612600,
+      "end": 614400,
+      "source": "native_model",
+      "segment": "s3"
+    },
+    {
+      "kind": "phoneme",
+      "label": "ɹ",
+      "start": 614400,
+      "end": 615600,
+      "source": "native_model",
+      "segment": "s3"
+    },
+    {
+      "kind": "phoneme",
+      "label": "i",
+      "start": 615600,
+      "end": 617400,
+      "source": "native_model",
+      "segment": "s3"
+    },
+    {
+      "kind": "phoneme",
+      "label": "ˈ",
+      "start": 620400,
+      "end": 621000,
+      "source": "native_model",
+      "segment": "s3"
+    },
+    {
+      "kind": "phoneme",
+      "label": "ɛ",
+      "start": 621000,
+      "end": 622200,
+      "source": "native_model",
+      "segment": "s3"
+    },
+    {
+      "kind": "phoneme",
+      "label": "k",
+      "start": 622200,
+      "end": 624000,
+      "source": "native_model",
+      "segment": "s3"
+    },
+    {
+      "kind": "phoneme",
+      "label": "s",
+      "start": 624000,
+      "end": 625800,
+      "source": "native_model",
+      "segment": "s3"
+    },
+    {
+      "kind": "phoneme",
+      "label": "t",
+      "start": 625800,
+      "end": 627000,
+      "source": "native_model",
+      "segment": "s3"
+    },
+    {
+      "kind": "phoneme",
+      "label": "ɹ",
+      "start": 627000,
+      "end": 627600,
+      "source": "native_model",
+      "segment": "s3"
+    },
+    {
+      "kind": "phoneme",
+      "label": "ə",
+      "start": 627600,
+      "end": 628800,
+      "source": "native_model",
+      "segment": "s3"
+    },
+    {
+      "kind": "phoneme",
+      "label": "ˌ",
+      "start": 630000,
+      "end": 630600,
+      "source": "native_model",
+      "segment": "s3"
+    },
+    {
+      "kind": "phoneme",
+      "label": "ɪ",
+      "start": 630600,
+      "end": 631800,
+      "source": "native_model",
+      "segment": "s3"
+    },
+    {
+      "kind": "phoneme",
+      "label": "n",
+      "start": 631800,
+      "end": 633000,
+      "source": "native_model",
+      "segment": "s3"
+    },
+    {
+      "kind": "phoneme",
+      "label": "f",
+      "start": 633000,
+      "end": 634200,
+      "source": "native_model",
+      "segment": "s3"
+    },
+    {
+      "kind": "phoneme",
+      "label": "ə",
+      "start": 634200,
+      "end": 635400,
+      "source": "native_model",
+      "segment": "s3"
+    },
+    {
+      "kind": "phoneme",
+      "label": "ɹ",
+      "start": 635400,
+      "end": 636600,
+      "source": "native_model",
+      "segment": "s3"
+    },
+    {
+      "kind": "phoneme",
+      "label": "m",
+      "start": 636600,
+      "end": 637800,
+      "source": "native_model",
+      "segment": "s3"
+    },
+    {
+      "kind": "phoneme",
+      "label": "ˈ",
+      "start": 637800,
+      "end": 638400,
+      "source": "native_model",
+      "segment": "s3"
+    },
+    {
+      "kind": "phoneme",
+      "label": "A",
+      "start": 638400,
+      "end": 639600,
+      "source": "native_model",
+      "segment": "s3"
+    },
+    {
+      "kind": "phoneme",
+      "label": "ʃ",
+      "start": 639600,
+      "end": 641400,
+      "source": "native_model",
+      "segment": "s3"
+    },
+    {
+      "kind": "phoneme",
+      "label": "ə",
+      "start": 641400,
+      "end": 642600,
+      "source": "native_model",
+      "segment": "s3"
+    },
+    {
+      "kind": "phoneme",
+      "label": "n",
+      "start": 642600,
+      "end": 643800,
+      "source": "native_model",
+      "segment": "s3"
+    },
+    {
+      "kind": "phoneme",
+      "label": "f",
+      "start": 645000,
+      "end": 646200,
+      "source": "native_model",
+      "segment": "s3"
+    },
+    {
+      "kind": "phoneme",
+      "label": "ɔ",
+      "start": 646200,
+      "end": 647400,
+      "source": "native_model",
+      "segment": "s3"
+    },
+    {
+      "kind": "phoneme",
+      "label": "ɹ",
+      "start": 647400,
+      "end": 648000,
+      "source": "native_model",
+      "segment": "s3"
+    },
+    {
+      "kind": "phoneme",
+      "label": "ˈ",
+      "start": 649200,
+      "end": 649800,
+      "source": "native_model",
+      "segment": "s3"
+    },
+    {
+      "kind": "phoneme",
+      "label": "ɛ",
+      "start": 649800,
+      "end": 651000,
+      "source": "native_model",
+      "segment": "s3"
+    },
+    {
+      "kind": "phoneme",
+      "label": "ɹ",
+      "start": 651000,
+      "end": 652800,
+      "source": "native_model",
+      "segment": "s3"
+    },
+    {
+      "kind": "phoneme",
+      "label": "ə",
+      "start": 652800,
+      "end": 653400,
+      "source": "native_model",
+      "segment": "s3"
+    },
+    {
+      "kind": "phoneme",
+      "label": "ɹ",
+      "start": 653400,
+      "end": 654000,
+      "source": "native_model",
+      "segment": "s3"
+    },
+    {
+      "kind": "phoneme",
+      "label": "k",
+      "start": 655200,
+      "end": 656400,
+      "source": "native_model",
+      "segment": "s3"
+    },
+    {
+      "kind": "phoneme",
+      "label": "ə",
+      "start": 656400,
+      "end": 657600,
+      "source": "native_model",
+      "segment": "s3"
+    },
+    {
+      "kind": "phoneme",
+      "label": "ɹ",
+      "start": 657600,
+      "end": 658800,
+      "source": "native_model",
+      "segment": "s3"
+    },
+    {
+      "kind": "phoneme",
+      "label": "ˈ",
+      "start": 658800,
+      "end": 659400,
+      "source": "native_model",
+      "segment": "s3"
+    },
+    {
+      "kind": "phoneme",
+      "label": "ɛ",
+      "start": 659400,
+      "end": 660600,
+      "source": "native_model",
+      "segment": "s3"
+    },
+    {
+      "kind": "phoneme",
+      "label": "k",
+      "start": 660600,
+      "end": 661800,
+      "source": "native_model",
+      "segment": "s3"
+    },
+    {
+      "kind": "phoneme",
+      "label": "ʃ",
+      "start": 661800,
+      "end": 663000,
+      "source": "native_model",
+      "segment": "s3"
+    },
+    {
+      "kind": "phoneme",
+      "label": "ə",
+      "start": 663000,
+      "end": 664200,
+      "source": "native_model",
+      "segment": "s3"
+    },
+    {
+      "kind": "phoneme",
+      "label": "n",
+      "start": 664200,
+      "end": 665400,
+      "source": "native_model",
+      "segment": "s3"
+    },
+    {
+      "kind": "phoneme",
+      "label": "w",
+      "start": 676200,
+      "end": 677400,
+      "source": "native_model",
+      "segment": "s3"
+    },
+    {
+      "kind": "phoneme",
+      "label": "ˌ",
+      "start": 677400,
+      "end": 678000,
+      "source": "native_model",
+      "segment": "s3"
+    },
+    {
+      "kind": "phoneme",
+      "label": "ɪ",
+      "start": 678000,
+      "end": 679200,
+      "source": "native_model",
+      "segment": "s3"
+    },
+    {
+      "kind": "phoneme",
+      "label": "ʧ",
+      "start": 679200,
+      "end": 680400,
+      "source": "native_model",
+      "segment": "s3"
+    },
+    {
+      "kind": "phoneme",
+      "label": "k",
+      "start": 681600,
+      "end": 682800,
+      "source": "native_model",
+      "segment": "s3"
+    },
+    {
+      "kind": "phoneme",
+      "label": "æ",
+      "start": 682800,
+      "end": 684000,
+      "source": "native_model",
+      "segment": "s3"
+    },
+    {
+      "kind": "phoneme",
+      "label": "n",
+      "start": 684000,
+      "end": 685200,
+      "source": "native_model",
+      "segment": "s3"
+    },
+    {
+      "kind": "phoneme",
+      "label": "h",
+      "start": 686400,
+      "end": 687600,
+      "source": "native_model",
+      "segment": "s3"
+    },
+    {
+      "kind": "phoneme",
+      "label": "ˈ",
+      "start": 687600,
+      "end": 688200,
+      "source": "native_model",
+      "segment": "s3"
+    },
+    {
+      "kind": "phoneme",
+      "label": "ɛ",
+      "start": 688200,
+      "end": 689400,
+      "source": "native_model",
+      "segment": "s3"
+    },
+    {
+      "kind": "phoneme",
+      "label": "l",
+      "start": 689400,
+      "end": 690600,
+      "source": "native_model",
+      "segment": "s3"
+    },
+    {
+      "kind": "phoneme",
+      "label": "p",
+      "start": 690600,
+      "end": 691800,
+      "source": "native_model",
+      "segment": "s3"
+    },
+    {
+      "kind": "phoneme",
+      "label": "ɹ",
+      "start": 693600,
+      "end": 694800,
+      "source": "native_model",
+      "segment": "s3"
+    },
+    {
+      "kind": "phoneme",
+      "label": "ə",
+      "start": 694800,
+      "end": 696000,
+      "source": "native_model",
+      "segment": "s3"
+    },
+    {
+      "kind": "phoneme",
+      "label": "k",
+      "start": 696000,
+      "end": 697200,
+      "source": "native_model",
+      "segment": "s3"
+    },
+    {
+      "kind": "phoneme",
+      "label": "ˈ",
+      "start": 697200,
+      "end": 697800,
+      "source": "native_model",
+      "segment": "s3"
+    },
+    {
+      "kind": "phoneme",
+      "label": "ʌ",
+      "start": 697800,
+      "end": 699000,
+      "source": "native_model",
+      "segment": "s3"
+    },
+    {
+      "kind": "phoneme",
+      "label": "v",
+      "start": 699000,
+      "end": 700800,
+      "source": "native_model",
+      "segment": "s3"
+    },
+    {
+      "kind": "phoneme",
+      "label": "ə",
+      "start": 700800,
+      "end": 702000,
+      "source": "native_model",
+      "segment": "s3"
+    },
+    {
+      "kind": "phoneme",
+      "label": "ɹ",
+      "start": 702000,
+      "end": 703200,
+      "source": "native_model",
+      "segment": "s3"
+    },
+    {
+      "kind": "phoneme",
+      "label": "ɐ",
+      "start": 704400,
+      "end": 705000,
+      "source": "native_model",
+      "segment": "s3"
+    },
+    {
+      "kind": "phoneme",
+      "label": "m",
+      "start": 706200,
+      "end": 707400,
+      "source": "native_model",
+      "segment": "s3"
+    },
+    {
+      "kind": "phoneme",
+      "label": "ˈ",
+      "start": 707400,
+      "end": 708000,
+      "source": "native_model",
+      "segment": "s3"
+    },
+    {
+      "kind": "phoneme",
+      "label": "ɛ",
+      "start": 708000,
+      "end": 709200,
+      "source": "native_model",
+      "segment": "s3"
+    },
+    {
+      "kind": "phoneme",
+      "label": "s",
+      "start": 709200,
+      "end": 711000,
+      "source": "native_model",
+      "segment": "s3"
+    },
+    {
+      "kind": "phoneme",
+      "label": "ɪ",
+      "start": 711000,
+      "end": 712800,
+      "source": "native_model",
+      "segment": "s3"
+    },
+    {
+      "kind": "phoneme",
+      "label": "ʤ",
+      "start": 712800,
+      "end": 714000,
+      "source": "native_model",
+      "segment": "s3"
+    },
+    {
+      "kind": "phoneme",
+      "label": "ˈ",
+      "start": 717000,
+      "end": 718200,
+      "source": "native_model",
+      "segment": "s3"
+    },
+    {
+      "kind": "phoneme",
+      "label": "i",
+      "start": 718200,
+      "end": 719400,
+      "source": "native_model",
+      "segment": "s3"
+    },
+    {
+      "kind": "phoneme",
+      "label": "v",
+      "start": 719400,
+      "end": 720600,
+      "source": "native_model",
+      "segment": "s3"
+    },
+    {
+      "kind": "phoneme",
+      "label": "ə",
+      "start": 720600,
+      "end": 721800,
+      "source": "native_model",
+      "segment": "s3"
+    },
+    {
+      "kind": "phoneme",
+      "label": "n",
+      "start": 721800,
+      "end": 723000,
+      "source": "native_model",
+      "segment": "s3"
+    },
+    {
+      "kind": "phoneme",
+      "label": "ɪ",
+      "start": 724200,
+      "end": 724800,
+      "source": "native_model",
+      "segment": "s3"
+    },
+    {
+      "kind": "phoneme",
+      "label": "f",
+      "start": 724800,
+      "end": 726000,
+      "source": "native_model",
+      "segment": "s3"
+    },
+    {
+      "kind": "phoneme",
+      "label": "p",
+      "start": 727200,
+      "end": 728400,
+      "source": "native_model",
+      "segment": "s3"
+    },
+    {
+      "kind": "phoneme",
+      "label": "ˈ",
+      "start": 728400,
+      "end": 729000,
+      "source": "native_model",
+      "segment": "s3"
+    },
+    {
+      "kind": "phoneme",
+      "label": "ɑ",
+      "start": 729000,
+      "end": 730800,
+      "source": "native_model",
+      "segment": "s3"
+    },
+    {
+      "kind": "phoneme",
+      "label": "ɹ",
+      "start": 730800,
+      "end": 732000,
+      "source": "native_model",
+      "segment": "s3"
+    },
+    {
+      "kind": "phoneme",
+      "label": "t",
+      "start": 732000,
+      "end": 733200,
+      "source": "native_model",
+      "segment": "s3"
+    },
+    {
+      "kind": "phoneme",
+      "label": "ʌ",
+      "start": 734400,
+      "end": 735600,
+      "source": "native_model",
+      "segment": "s3"
+    },
+    {
+      "kind": "phoneme",
+      "label": "v",
+      "start": 735600,
+      "end": 736200,
+      "source": "native_model",
+      "segment": "s3"
+    },
+    {
+      "kind": "phoneme",
+      "label": "ð",
+      "start": 737400,
+      "end": 738000,
+      "source": "native_model",
+      "segment": "s3"
+    },
+    {
+      "kind": "phoneme",
+      "label": "ə",
+      "start": 738000,
+      "end": 739200,
+      "source": "native_model",
+      "segment": "s3"
+    },
+    {
+      "kind": "phoneme",
+      "label": "k",
+      "start": 740400,
+      "end": 741600,
+      "source": "native_model",
+      "segment": "s3"
+    },
+    {
+      "kind": "phoneme",
+      "label": "ˈ",
+      "start": 741600,
+      "end": 742200,
+      "source": "native_model",
+      "segment": "s3"
+    },
+    {
+      "kind": "phoneme",
+      "label": "O",
+      "start": 742200,
+      "end": 744000,
+      "source": "native_model",
+      "segment": "s3"
+    },
+    {
+      "kind": "phoneme",
+      "label": "d",
+      "start": 744000,
+      "end": 745800,
+      "source": "native_model",
+      "segment": "s3"
+    },
+    {
+      "kind": "phoneme",
+      "label": "ɪ",
+      "start": 747000,
+      "end": 748200,
+      "source": "native_model",
+      "segment": "s3"
+    },
+    {
+      "kind": "phoneme",
+      "label": "z",
+      "start": 748200,
+      "end": 749400,
+      "source": "native_model",
+      "segment": "s3"
+    },
+    {
+      "kind": "phoneme",
+      "label": "d",
+      "start": 750600,
+      "end": 751800,
+      "source": "native_model",
+      "segment": "s3"
+    },
+    {
+      "kind": "phoneme",
+      "label": "ˈ",
+      "start": 751800,
+      "end": 752400,
+      "source": "native_model",
+      "segment": "s3"
+    },
+    {
+      "kind": "phoneme",
+      "label": "æ",
+      "start": 752400,
+      "end": 753600,
+      "source": "native_model",
+      "segment": "s3"
+    },
+    {
+      "kind": "phoneme",
+      "label": "m",
+      "start": 753600,
+      "end": 754800,
+      "source": "native_model",
+      "segment": "s3"
+    },
+    {
+      "kind": "phoneme",
+      "label": "ɪ",
+      "start": 754800,
+      "end": 756600,
+      "source": "native_model",
+      "segment": "s3"
+    },
+    {
+      "kind": "phoneme",
+      "label": "ʤ",
+      "start": 756600,
+      "end": 758400,
+      "source": "native_model",
+      "segment": "s3"
+    },
+    {
+      "kind": "phoneme",
+      "label": "d",
+      "start": 758400,
+      "end": 760200,
+      "source": "native_model",
+      "segment": "s3"
+    },
+    {
+      "kind": "pause",
+      "label": "edge silence",
+      "start": 0,
+      "end": 1200,
+      "source": "native_model",
+      "segment": "s1"
+    },
+    {
+      "kind": "pause",
+      "label": "word gap",
+      "start": 5400,
+      "end": 7200,
+      "source": "native_model",
+      "segment": "s1"
+    },
+    {
+      "kind": "pause",
+      "label": "word gap",
+      "start": 10800,
+      "end": 12000,
+      "source": "native_model",
+      "segment": "s1"
+    },
+    {
+      "kind": "pause",
+      "label": "word gap",
+      "start": 12600,
+      "end": 14400,
+      "source": "native_model",
+      "segment": "s1"
+    },
+    {
+      "kind": "pause",
+      "label": "word gap",
+      "start": 22200,
+      "end": 23400,
+      "source": "native_model",
+      "segment": "s1"
+    },
+    {
+      "kind": "pause",
+      "label": "word gap",
+      "start": 26400,
+      "end": 27000,
+      "source": "native_model",
+      "segment": "s1"
+    },
+    {
+      "kind": "pause",
+      "label": "word gap",
+      "start": 27600,
+      "end": 28800,
+      "source": "native_model",
+      "segment": "s1"
+    },
+    {
+      "kind": "pause",
+      "label": "word gap",
+      "start": 36600,
+      "end": 37800,
+      "source": "native_model",
+      "segment": "s1"
+    },
+    {
+      "kind": "pause",
+      "label": "word gap",
+      "start": 44400,
+      "end": 45000,
+      "source": "native_model",
+      "segment": "s1"
+    },
+    {
+      "kind": "pause",
+      "label": "word gap",
+      "start": 45600,
+      "end": 46800,
+      "source": "native_model",
+      "segment": "s1"
+    },
+    {
+      "kind": "pause",
+      "label": "punctuation pause",
+      "start": 56400,
+      "end": 67200,
+      "source": "native_model",
+      "segment": "s1"
+    },
+    {
+      "kind": "pause",
+      "label": "word gap",
+      "start": 72000,
+      "end": 73800,
+      "source": "native_model",
+      "segment": "s1"
+    },
+    {
+      "kind": "pause",
+      "label": "word gap",
+      "start": 84600,
+      "end": 85800,
+      "source": "native_model",
+      "segment": "s1"
+    },
+    {
+      "kind": "pause",
+      "label": "word gap",
+      "start": 88200,
+      "end": 89400,
+      "source": "native_model",
+      "segment": "s1"
+    },
+    {
+      "kind": "pause",
+      "label": "word gap",
+      "start": 90000,
+      "end": 91200,
+      "source": "native_model",
+      "segment": "s1"
+    },
+    {
+      "kind": "pause",
+      "label": "word gap",
+      "start": 100200,
+      "end": 101400,
+      "source": "native_model",
+      "segment": "s1"
+    },
+    {
+      "kind": "pause",
+      "label": "punctuation pause",
+      "start": 107400,
+      "end": 117600,
+      "source": "native_model",
+      "segment": "s1"
+    },
+    {
+      "kind": "pause",
+      "label": "word gap",
+      "start": 122400,
+      "end": 124200,
+      "source": "native_model",
+      "segment": "s1"
+    },
+    {
+      "kind": "pause",
+      "label": "word gap",
+      "start": 130800,
+      "end": 132000,
+      "source": "native_model",
+      "segment": "s1"
+    },
+    {
+      "kind": "pause",
+      "label": "word gap",
+      "start": 134400,
+      "end": 136200,
+      "source": "native_model",
+      "segment": "s1"
+    },
+    {
+      "kind": "pause",
+      "label": "word gap",
+      "start": 142200,
+      "end": 143400,
+      "source": "native_model",
+      "segment": "s1"
+    },
+    {
+      "kind": "pause",
+      "label": "word gap",
+      "start": 151800,
+      "end": 153000,
+      "source": "native_model",
+      "segment": "s1"
+    },
+    {
+      "kind": "pause",
+      "label": "word gap",
+      "start": 157800,
+      "end": 159000,
+      "source": "native_model",
+      "segment": "s1"
+    },
+    {
+      "kind": "pause",
+      "label": "word gap",
+      "start": 159600,
+      "end": 161400,
+      "source": "native_model",
+      "segment": "s1"
+    },
+    {
+      "kind": "pause",
+      "label": "punctuation pause",
+      "start": 168000,
+      "end": 175800,
+      "source": "native_model",
+      "segment": "s1"
+    },
+    {
+      "kind": "pause",
+      "label": "word gap",
+      "start": 178200,
+      "end": 179400,
+      "source": "native_model",
+      "segment": "s1"
+    },
+    {
+      "kind": "pause",
+      "label": "word gap",
+      "start": 193200,
+      "end": 194400,
+      "source": "native_model",
+      "segment": "s1"
+    },
+    {
+      "kind": "pause",
+      "label": "word gap",
+      "start": 202800,
+      "end": 204000,
+      "source": "native_model",
+      "segment": "s1"
+    },
+    {
+      "kind": "pause",
+      "label": "word gap",
+      "start": 211800,
+      "end": 213600,
+      "source": "native_model",
+      "segment": "s1"
+    },
+    {
+      "kind": "pause",
+      "label": "word gap",
+      "start": 220200,
+      "end": 221400,
+      "source": "native_model",
+      "segment": "s1"
+    },
+    {
+      "kind": "pause",
+      "label": "word gap",
+      "start": 224400,
+      "end": 225600,
+      "source": "native_model",
+      "segment": "s1"
+    },
+    {
+      "kind": "pause",
+      "label": "punctuation pause",
+      "start": 234600,
+      "end": 236400,
+      "source": "native_model",
+      "segment": "s1"
+    },
+    {
+      "kind": "pause",
+      "label": "inserted silence",
+      "start": 236400,
+      "end": 241200,
+      "source": "manual",
+      "segment": null
+    },
+    {
+      "kind": "pause",
+      "label": "edge silence",
+      "start": 241200,
+      "end": 242400,
+      "source": "native_model",
+      "segment": "s2"
+    },
+    {
+      "kind": "pause",
+      "label": "punctuation pause",
+      "start": 251400,
+      "end": 259800,
+      "source": "native_model",
+      "segment": "s2"
+    },
+    {
+      "kind": "pause",
+      "label": "word gap",
+      "start": 262200,
+      "end": 263400,
+      "source": "native_model",
+      "segment": "s2"
+    },
+    {
+      "kind": "pause",
+      "label": "word gap",
+      "start": 271800,
+      "end": 273000,
+      "source": "native_model",
+      "segment": "s2"
+    },
+    {
+      "kind": "pause",
+      "label": "word gap",
+      "start": 280800,
+      "end": 282600,
+      "source": "native_model",
+      "segment": "s2"
+    },
+    {
+      "kind": "pause",
+      "label": "word gap",
+      "start": 289800,
+      "end": 290400,
+      "source": "native_model",
+      "segment": "s2"
+    },
+    {
+      "kind": "pause",
+      "label": "word gap",
+      "start": 297000,
+      "end": 298200,
+      "source": "native_model",
+      "segment": "s2"
+    },
+    {
+      "kind": "pause",
+      "label": "word gap",
+      "start": 305400,
+      "end": 306600,
+      "source": "native_model",
+      "segment": "s2"
+    },
+    {
+      "kind": "pause",
+      "label": "punctuation pause",
+      "start": 316200,
+      "end": 327600,
+      "source": "native_model",
+      "segment": "s2"
+    },
+    {
+      "kind": "pause",
+      "label": "word gap",
+      "start": 331200,
+      "end": 333000,
+      "source": "native_model",
+      "segment": "s2"
+    },
+    {
+      "kind": "pause",
+      "label": "word gap",
+      "start": 337200,
+      "end": 339000,
+      "source": "native_model",
+      "segment": "s2"
+    },
+    {
+      "kind": "pause",
+      "label": "word gap",
+      "start": 343200,
+      "end": 344400,
+      "source": "native_model",
+      "segment": "s2"
+    },
+    {
+      "kind": "pause",
+      "label": "word gap",
+      "start": 345600,
+      "end": 346800,
+      "source": "native_model",
+      "segment": "s2"
+    },
+    {
+      "kind": "pause",
+      "label": "word gap",
+      "start": 352200,
+      "end": 353400,
+      "source": "native_model",
+      "segment": "s2"
+    },
+    {
+      "kind": "pause",
+      "label": "word gap",
+      "start": 356400,
+      "end": 359400,
+      "source": "native_model",
+      "segment": "s2"
+    },
+    {
+      "kind": "pause",
+      "label": "word gap",
+      "start": 362400,
+      "end": 363600,
+      "source": "native_model",
+      "segment": "s2"
+    },
+    {
+      "kind": "pause",
+      "label": "word gap",
+      "start": 368400,
+      "end": 370200,
+      "source": "native_model",
+      "segment": "s2"
+    },
+    {
+      "kind": "pause",
+      "label": "word gap",
+      "start": 372600,
+      "end": 374400,
+      "source": "native_model",
+      "segment": "s2"
+    },
+    {
+      "kind": "pause",
+      "label": "word gap",
+      "start": 376800,
+      "end": 378000,
+      "source": "native_model",
+      "segment": "s2"
+    },
+    {
+      "kind": "pause",
+      "label": "punctuation pause",
+      "start": 386400,
+      "end": 396600,
+      "source": "native_model",
+      "segment": "s2"
+    },
+    {
+      "kind": "pause",
+      "label": "word gap",
+      "start": 411000,
+      "end": 412200,
+      "source": "native_model",
+      "segment": "s2"
+    },
+    {
+      "kind": "pause",
+      "label": "word gap",
+      "start": 419400,
+      "end": 420600,
+      "source": "native_model",
+      "segment": "s2"
+    },
+    {
+      "kind": "pause",
+      "label": "word gap",
+      "start": 428400,
+      "end": 429600,
+      "source": "native_model",
+      "segment": "s2"
+    },
+    {
+      "kind": "pause",
+      "label": "word gap",
+      "start": 434400,
+      "end": 435600,
+      "source": "native_model",
+      "segment": "s2"
+    },
+    {
+      "kind": "pause",
+      "label": "word gap",
+      "start": 437400,
+      "end": 438600,
+      "source": "native_model",
+      "segment": "s2"
+    },
+    {
+      "kind": "pause",
+      "label": "word gap",
+      "start": 447000,
+      "end": 448200,
+      "source": "native_model",
+      "segment": "s2"
+    },
+    {
+      "kind": "pause",
+      "label": "word gap",
+      "start": 452400,
+      "end": 453600,
+      "source": "native_model",
+      "segment": "s2"
+    },
+    {
+      "kind": "pause",
+      "label": "word gap",
+      "start": 456600,
+      "end": 457800,
+      "source": "native_model",
+      "segment": "s2"
+    },
+    {
+      "kind": "pause",
+      "label": "word gap",
+      "start": 460200,
+      "end": 461400,
+      "source": "native_model",
+      "segment": "s2"
+    },
+    {
+      "kind": "pause",
+      "label": "word gap",
+      "start": 462600,
+      "end": 463800,
+      "source": "native_model",
+      "segment": "s2"
+    },
+    {
+      "kind": "pause",
+      "label": "word gap",
+      "start": 469200,
+      "end": 470400,
+      "source": "native_model",
+      "segment": "s2"
+    },
+    {
+      "kind": "pause",
+      "label": "punctuation pause",
+      "start": 478800,
+      "end": 480600,
+      "source": "native_model",
+      "segment": "s2"
+    },
+    {
+      "kind": "pause",
+      "label": "inserted silence",
+      "start": 480600,
+      "end": 485400,
+      "source": "manual",
+      "segment": null
+    },
+    {
+      "kind": "pause",
+      "label": "edge silence",
+      "start": 485400,
+      "end": 486600,
+      "source": "native_model",
+      "segment": "s3"
+    },
+    {
+      "kind": "pause",
+      "label": "word gap",
+      "start": 492600,
+      "end": 493800,
+      "source": "native_model",
+      "segment": "s3"
+    },
+    {
+      "kind": "pause",
+      "label": "word gap",
+      "start": 496200,
+      "end": 497400,
+      "source": "native_model",
+      "segment": "s3"
+    },
+    {
+      "kind": "pause",
+      "label": "word gap",
+      "start": 500400,
+      "end": 501600,
+      "source": "native_model",
+      "segment": "s3"
+    },
+    {
+      "kind": "pause",
+      "label": "word gap",
+      "start": 504000,
+      "end": 505200,
+      "source": "native_model",
+      "segment": "s3"
+    },
+    {
+      "kind": "pause",
+      "label": "punctuation pause",
+      "start": 512400,
+      "end": 521400,
+      "source": "native_model",
+      "segment": "s3"
+    },
+    {
+      "kind": "pause",
+      "label": "word gap",
+      "start": 524400,
+      "end": 525600,
+      "source": "native_model",
+      "segment": "s3"
+    },
+    {
+      "kind": "pause",
+      "label": "word gap",
+      "start": 532200,
+      "end": 533400,
+      "source": "native_model",
+      "segment": "s3"
+    },
+    {
+      "kind": "pause",
+      "label": "word gap",
+      "start": 537000,
+      "end": 538200,
+      "source": "native_model",
+      "segment": "s3"
+    },
+    {
+      "kind": "pause",
+      "label": "word gap",
+      "start": 549600,
+      "end": 550800,
+      "source": "native_model",
+      "segment": "s3"
+    },
+    {
+      "kind": "pause",
+      "label": "word gap",
+      "start": 552600,
+      "end": 554400,
+      "source": "native_model",
+      "segment": "s3"
+    },
+    {
+      "kind": "pause",
+      "label": "word gap",
+      "start": 565200,
+      "end": 566400,
+      "source": "native_model",
+      "segment": "s3"
+    },
+    {
+      "kind": "pause",
+      "label": "punctuation pause",
+      "start": 573000,
+      "end": 586200,
+      "source": "native_model",
+      "segment": "s3"
+    },
+    {
+      "kind": "pause",
+      "label": "word gap",
+      "start": 590400,
+      "end": 591600,
+      "source": "native_model",
+      "segment": "s3"
+    },
+    {
+      "kind": "pause",
+      "label": "word gap",
+      "start": 593400,
+      "end": 594600,
+      "source": "native_model",
+      "segment": "s3"
+    },
+    {
+      "kind": "pause",
+      "label": "word gap",
+      "start": 598800,
+      "end": 600600,
+      "source": "native_model",
+      "segment": "s3"
+    },
+    {
+      "kind": "pause",
+      "label": "word gap",
+      "start": 609600,
+      "end": 610800,
+      "source": "native_model",
+      "segment": "s3"
+    },
+    {
+      "kind": "pause",
+      "label": "word gap",
+      "start": 617400,
+      "end": 620400,
+      "source": "native_model",
+      "segment": "s3"
+    },
+    {
+      "kind": "pause",
+      "label": "word gap",
+      "start": 628800,
+      "end": 630000,
+      "source": "native_model",
+      "segment": "s3"
+    },
+    {
+      "kind": "pause",
+      "label": "word gap",
+      "start": 643800,
+      "end": 645000,
+      "source": "native_model",
+      "segment": "s3"
+    },
+    {
+      "kind": "pause",
+      "label": "word gap",
+      "start": 648000,
+      "end": 649200,
+      "source": "native_model",
+      "segment": "s3"
+    },
+    {
+      "kind": "pause",
+      "label": "word gap",
+      "start": 654000,
+      "end": 655200,
+      "source": "native_model",
+      "segment": "s3"
+    },
+    {
+      "kind": "pause",
+      "label": "punctuation pause",
+      "start": 665400,
+      "end": 676200,
+      "source": "native_model",
+      "segment": "s3"
+    },
+    {
+      "kind": "pause",
+      "label": "word gap",
+      "start": 680400,
+      "end": 681600,
+      "source": "native_model",
+      "segment": "s3"
+    },
+    {
+      "kind": "pause",
+      "label": "word gap",
+      "start": 685200,
+      "end": 686400,
+      "source": "native_model",
+      "segment": "s3"
+    },
+    {
+      "kind": "pause",
+      "label": "word gap",
+      "start": 691800,
+      "end": 693600,
+      "source": "native_model",
+      "segment": "s3"
+    },
+    {
+      "kind": "pause",
+      "label": "word gap",
+      "start": 703200,
+      "end": 704400,
+      "source": "native_model",
+      "segment": "s3"
+    },
+    {
+      "kind": "pause",
+      "label": "word gap",
+      "start": 705000,
+      "end": 706200,
+      "source": "native_model",
+      "segment": "s3"
+    },
+    {
+      "kind": "pause",
+      "label": "word gap",
+      "start": 714000,
+      "end": 717000,
+      "source": "native_model",
+      "segment": "s3"
+    },
+    {
+      "kind": "pause",
+      "label": "word gap",
+      "start": 723000,
+      "end": 724200,
+      "source": "native_model",
+      "segment": "s3"
+    },
+    {
+      "kind": "pause",
+      "label": "word gap",
+      "start": 726000,
+      "end": 727200,
+      "source": "native_model",
+      "segment": "s3"
+    },
+    {
+      "kind": "pause",
+      "label": "word gap",
+      "start": 733200,
+      "end": 734400,
+      "source": "native_model",
+      "segment": "s3"
+    },
+    {
+      "kind": "pause",
+      "label": "word gap",
+      "start": 736200,
+      "end": 737400,
+      "source": "native_model",
+      "segment": "s3"
+    },
+    {
+      "kind": "pause",
+      "label": "word gap",
+      "start": 739200,
+      "end": 740400,
+      "source": "native_model",
+      "segment": "s3"
+    },
+    {
+      "kind": "pause",
+      "label": "word gap",
+      "start": 745800,
+      "end": 747000,
+      "source": "native_model",
+      "segment": "s3"
+    },
+    {
+      "kind": "pause",
+      "label": "word gap",
+      "start": 749400,
+      "end": 750600,
+      "source": "native_model",
+      "segment": "s3"
+    },
+    {
+      "kind": "pause",
+      "label": "punctuation pause",
+      "start": 760200,
+      "end": 762000,
+      "source": "native_model",
+      "segment": "s3"
+    },
+    {
+      "kind": "word",
+      "label": "How",
+      "start": 1200,
+      "end": 5400,
+      "source": "native_model",
+      "mapping": {
+        "method": "mithi_token_word_ownership",
+        "model_words": [
+          0
+        ],
+        "first_token": 1,
+        "last_token": 3
+      },
+      "text_ref": {
+        "field": "speech",
+        "start": 0,
+        "end": 3
+      },
+      "display_ref": {
+        "field": "display",
+        "start": 0,
+        "end": 3
+      },
+      "mapping_scope": "segment",
+      "segment": "s1"
+    },
+    {
+      "kind": "word",
+      "label": "can",
+      "start": 7200,
+      "end": 10800,
+      "source": "native_model",
+      "mapping": {
+        "method": "mithi_token_word_ownership",
+        "model_words": [
+          1
+        ],
+        "first_token": 5,
+        "last_token": 7
+      },
+      "text_ref": {
+        "field": "speech",
+        "start": 4,
+        "end": 7
+      },
+      "display_ref": {
+        "field": "display",
+        "start": 4,
+        "end": 7
+      },
+      "mapping_scope": "segment",
+      "segment": "s1"
+    },
+    {
+      "kind": "word",
+      "label": "a",
+      "start": 12000,
+      "end": 12600,
+      "source": "native_model",
+      "mapping": {
+        "method": "mithi_token_word_ownership",
+        "model_words": [
+          2
+        ],
+        "first_token": 9,
+        "last_token": 9
+      },
+      "text_ref": {
+        "field": "speech",
+        "start": 8,
+        "end": 9
+      },
+      "display_ref": {
+        "field": "display",
+        "start": 8,
+        "end": 9
+      },
+      "mapping_scope": "segment",
+      "segment": "s1"
+    },
+    {
+      "kind": "word",
+      "label": "square",
+      "start": 14400,
+      "end": 22200,
+      "source": "native_model",
+      "mapping": {
+        "method": "mithi_token_word_ownership",
+        "model_words": [
+          3
+        ],
+        "first_token": 11,
+        "last_token": 16
+      },
+      "text_ref": {
+        "field": "speech",
+        "start": 10,
+        "end": 16
+      },
+      "display_ref": {
+        "field": "display",
+        "start": 10,
+        "end": 16
+      },
+      "mapping_scope": "segment",
+      "segment": "s1"
+    },
+    {
+      "kind": "word",
+      "label": "on",
+      "start": 23400,
+      "end": 26400,
+      "source": "native_model",
+      "mapping": {
+        "method": "mithi_token_word_ownership",
+        "model_words": [
+          4
+        ],
+        "first_token": 18,
+        "last_token": 20
+      },
+      "text_ref": {
+        "field": "speech",
+        "start": 17,
+        "end": 19
+      },
+      "display_ref": {
+        "field": "display",
+        "start": 17,
+        "end": 19
+      },
+      "mapping_scope": "segment",
+      "segment": "s1"
+    },
+    {
+      "kind": "word",
+      "label": "a",
+      "start": 27000,
+      "end": 27600,
+      "source": "native_model",
+      "mapping": {
+        "method": "mithi_token_word_ownership",
+        "model_words": [
+          5
+        ],
+        "first_token": 22,
+        "last_token": 22
+      },
+      "text_ref": {
+        "field": "speech",
+        "start": 20,
+        "end": 21
+      },
+      "display_ref": {
+        "field": "display",
+        "start": 20,
+        "end": 21
+      },
+      "mapping_scope": "segment",
+      "segment": "s1"
+    },
+    {
+      "kind": "word",
+      "label": "label",
+      "start": 28800,
+      "end": 36600,
+      "source": "native_model",
+      "mapping": {
+        "method": "mithi_token_word_ownership",
+        "model_words": [
+          6
+        ],
+        "first_token": 24,
+        "last_token": 29
+      },
+      "text_ref": {
+        "field": "speech",
+        "start": 22,
+        "end": 27
+      },
+      "display_ref": {
+        "field": "display",
+        "start": 22,
+        "end": 27
+      },
+      "mapping_scope": "segment",
+      "segment": "s1"
+    },
+    {
+      "kind": "word",
+      "label": "hold",
+      "start": 37800,
+      "end": 44400,
+      "source": "native_model",
+      "mapping": {
+        "method": "mithi_token_word_ownership",
+        "model_words": [
+          7
+        ],
+        "first_token": 31,
+        "last_token": 35
+      },
+      "text_ref": {
+        "field": "speech",
+        "start": 28,
+        "end": 32
+      },
+      "display_ref": {
+        "field": "display",
+        "start": 28,
+        "end": 32
+      },
+      "mapping_scope": "segment",
+      "segment": "s1"
+    },
+    {
+      "kind": "word",
+      "label": "a",
+      "start": 45000,
+      "end": 45600,
+      "source": "native_model",
+      "mapping": {
+        "method": "mithi_token_word_ownership",
+        "model_words": [
+          8
+        ],
+        "first_token": 37,
+        "last_token": 37
+      },
+      "text_ref": {
+        "field": "speech",
+        "start": 33,
+        "end": 34
+      },
+      "display_ref": {
+        "field": "display",
+        "start": 33,
+        "end": 34
+      },
+      "mapping_scope": "segment",
+      "segment": "s1"
+    },
+    {
+      "kind": "word",
+      "label": "message?",
+      "start": 46800,
+      "end": 56400,
+      "source": "native_model",
+      "mapping": {
+        "method": "mithi_token_word_ownership",
+        "model_words": [
+          9
+        ],
+        "first_token": 39,
+        "last_token": 44
+      },
+      "text_ref": {
+        "field": "speech",
+        "start": 35,
+        "end": 43
+      },
+      "display_ref": {
+        "field": "display",
+        "start": 35,
+        "end": 43
+      },
+      "mapping_scope": "segment",
+      "segment": "s1"
+    },
+    {
+      "kind": "word",
+      "label": "Look",
+      "start": 67200,
+      "end": 72000,
+      "source": "native_model",
+      "mapping": {
+        "method": "mithi_token_word_ownership",
+        "model_words": [
+          10
+        ],
+        "first_token": 47,
+        "last_token": 50
+      },
+      "text_ref": {
+        "field": "speech",
+        "start": 44,
+        "end": 48
+      },
+      "display_ref": {
+        "field": "display",
+        "start": 44,
+        "end": 48
+      },
+      "mapping_scope": "segment",
+      "segment": "s1"
+    },
+    {
+      "kind": "word",
+      "label": "closely",
+      "start": 73800,
+      "end": 84600,
+      "source": "native_model",
+      "mapping": {
+        "method": "mithi_token_word_ownership",
+        "model_words": [
+          11
+        ],
+        "first_token": 52,
+        "last_token": 58
+      },
+      "text_ref": {
+        "field": "speech",
+        "start": 49,
+        "end": 56
+      },
+      "display_ref": {
+        "field": "display",
+        "start": 49,
+        "end": 56
+      },
+      "mapping_scope": "segment",
+      "segment": "s1"
+    },
+    {
+      "kind": "word",
+      "label": "at",
+      "start": 85800,
+      "end": 88200,
+      "source": "native_model",
+      "mapping": {
+        "method": "mithi_token_word_ownership",
+        "model_words": [
+          12
+        ],
+        "first_token": 60,
+        "last_token": 61
+      },
+      "text_ref": {
+        "field": "speech",
+        "start": 57,
+        "end": 59
+      },
+      "display_ref": {
+        "field": "display",
+        "start": 57,
+        "end": 59
+      },
+      "mapping_scope": "segment",
+      "segment": "s1"
+    },
+    {
+      "kind": "word",
+      "label": "a",
+      "start": 89400,
+      "end": 90000,
+      "source": "native_model",
+      "mapping": {
+        "method": "mithi_token_word_ownership",
+        "model_words": [
+          13
+        ],
+        "first_token": 63,
+        "last_token": 63
+      },
+      "text_ref": {
+        "field": "speech",
+        "start": 60,
+        "end": 61
+      },
+      "display_ref": {
+        "field": "display",
+        "start": 60,
+        "end": 61
+      },
+      "mapping_scope": "segment",
+      "segment": "s1"
+    },
+    {
+      "kind": "word",
+      "label": "QR",
+      "start": 91200,
+      "end": 100200,
+      "source": "native_model",
+      "mapping": {
+        "method": "mithi_token_word_ownership",
+        "model_words": [
+          14
+        ],
+        "first_token": 65,
+        "last_token": 71
+      },
+      "text_ref": {
+        "field": "speech",
+        "start": 62,
+        "end": 64
+      },
+      "display_ref": {
+        "field": "display",
+        "start": 62,
+        "end": 64
+      },
+      "mapping_scope": "segment",
+      "segment": "s1"
+    },
+    {
+      "kind": "word",
+      "label": "code.",
+      "start": 101400,
+      "end": 107400,
+      "source": "native_model",
+      "mapping": {
+        "method": "mithi_token_word_ownership",
+        "model_words": [
+          15
+        ],
+        "first_token": 73,
+        "last_token": 76
+      },
+      "text_ref": {
+        "field": "speech",
+        "start": 65,
+        "end": 70
+      },
+      "display_ref": {
+        "field": "display",
+        "start": 65,
+        "end": 70
+      },
+      "mapping_scope": "segment",
+      "segment": "s1"
+    },
+    {
+      "kind": "word",
+      "label": "Its",
+      "start": 117600,
+      "end": 122400,
+      "source": "native_model",
+      "mapping": {
+        "method": "mithi_token_word_ownership",
+        "model_words": [
+          16
+        ],
+        "first_token": 79,
+        "last_token": 82
+      },
+      "text_ref": {
+        "field": "speech",
+        "start": 71,
+        "end": 74
+      },
+      "display_ref": {
+        "field": "display",
+        "start": 71,
+        "end": 74
+      },
+      "mapping_scope": "segment",
+      "segment": "s1"
+    },
+    {
+      "kind": "word",
+      "label": "light",
+      "start": 124200,
+      "end": 130800,
+      "source": "native_model",
+      "mapping": {
+        "method": "mithi_token_word_ownership",
+        "model_words": [
+          17
+        ],
+        "first_token": 84,
+        "last_token": 87
+      },
+      "text_ref": {
+        "field": "speech",
+        "start": 75,
+        "end": 80
+      },
+      "display_ref": {
+        "field": "display",
+        "start": 75,
+        "end": 80
+      },
+      "mapping_scope": "segment",
+      "segment": "s1"
+    },
+    {
+      "kind": "word",
+      "label": "and",
+      "start": 132000,
+      "end": 134400,
+      "source": "native_model",
+      "mapping": {
+        "method": "mithi_token_word_ownership",
+        "model_words": [
+          18
+        ],
+        "first_token": 89,
+        "last_token": 91
+      },
+      "text_ref": {
+        "field": "speech",
+        "start": 81,
+        "end": 84
+      },
+      "display_ref": {
+        "field": "display",
+        "start": 81,
+        "end": 84
+      },
+      "mapping_scope": "segment",
+      "segment": "s1"
+    },
+    {
+      "kind": "word",
+      "label": "dark",
+      "start": 136200,
+      "end": 142200,
+      "source": "native_model",
+      "mapping": {
+        "method": "mithi_token_word_ownership",
+        "model_words": [
+          19
+        ],
+        "first_token": 93,
+        "last_token": 97
+      },
+      "text_ref": {
+        "field": "speech",
+        "start": 85,
+        "end": 89
+      },
+      "display_ref": {
+        "field": "display",
+        "start": 85,
+        "end": 89
+      },
+      "mapping_scope": "segment",
+      "segment": "s1"
+    },
+    {
+      "kind": "word",
+      "label": "squares",
+      "start": 143400,
+      "end": 151800,
+      "source": "native_model",
+      "mapping": {
+        "method": "mithi_token_word_ownership",
+        "model_words": [
+          20
+        ],
+        "first_token": 99,
+        "last_token": 105
+      },
+      "text_ref": {
+        "field": "speech",
+        "start": 90,
+        "end": 97
+      },
+      "display_ref": {
+        "field": "display",
+        "start": 90,
+        "end": 97
+      },
+      "mapping_scope": "segment",
+      "segment": "s1"
+    },
+    {
+      "kind": "word",
+      "label": "form",
+      "start": 153000,
+      "end": 157800,
+      "source": "native_model",
+      "mapping": {
+        "method": "mithi_token_word_ownership",
+        "model_words": [
+          21
+        ],
+        "first_token": 107,
+        "last_token": 111
+      },
+      "text_ref": {
+        "field": "speech",
+        "start": 98,
+        "end": 102
+      },
+      "display_ref": {
+        "field": "display",
+        "start": 98,
+        "end": 102
+      },
+      "mapping_scope": "segment",
+      "segment": "s1"
+    },
+    {
+      "kind": "word",
+      "label": "a",
+      "start": 159000,
+      "end": 159600,
+      "source": "native_model",
+      "mapping": {
+        "method": "mithi_token_word_ownership",
+        "model_words": [
+          22
+        ],
+        "first_token": 113,
+        "last_token": 113
+      },
+      "text_ref": {
+        "field": "speech",
+        "start": 103,
+        "end": 104
+      },
+      "display_ref": {
+        "field": "display",
+        "start": 103,
+        "end": 104
+      },
+      "mapping_scope": "segment",
+      "segment": "s1"
+    },
+    {
+      "kind": "word",
+      "label": "grid,",
+      "start": 161400,
+      "end": 168000,
+      "source": "native_model",
+      "mapping": {
+        "method": "mithi_token_word_ownership",
+        "model_words": [
+          23
+        ],
+        "first_token": 115,
+        "last_token": 119
+      },
+      "text_ref": {
+        "field": "speech",
+        "start": 105,
+        "end": 110
+      },
+      "display_ref": {
+        "field": "display",
+        "start": 105,
+        "end": 110
+      },
+      "mapping_scope": "segment",
+      "segment": "s1"
+    },
+    {
+      "kind": "word",
+      "label": "with",
+      "start": 175800,
+      "end": 178200,
+      "source": "native_model",
+      "mapping": {
+        "method": "mithi_token_word_ownership",
+        "model_words": [
+          24
+        ],
+        "first_token": 122,
+        "last_token": 124
+      },
+      "text_ref": {
+        "field": "speech",
+        "start": 111,
+        "end": 115
+      },
+      "display_ref": {
+        "field": "display",
+        "start": 111,
+        "end": 115
+      },
+      "mapping_scope": "segment",
+      "segment": "s1"
+    },
+    {
+      "kind": "word",
+      "label": "information",
+      "start": 179400,
+      "end": 193200,
+      "source": "native_model",
+      "mapping": {
+        "method": "mithi_token_word_ownership",
+        "model_words": [
+          25
+        ],
+        "first_token": 126,
+        "last_token": 137
+      },
+      "text_ref": {
+        "field": "speech",
+        "start": 116,
+        "end": 127
+      },
+      "display_ref": {
+        "field": "display",
+        "start": 116,
+        "end": 127
+      },
+      "mapping_scope": "segment",
+      "segment": "s1"
+    },
+    {
+      "kind": "word",
+      "label": "arranged",
+      "start": 194400,
+      "end": 202800,
+      "source": "native_model",
+      "mapping": {
+        "method": "mithi_token_word_ownership",
+        "model_words": [
+          26
+        ],
+        "first_token": 139,
+        "last_token": 145
+      },
+      "text_ref": {
+        "field": "speech",
+        "start": 128,
+        "end": 136
+      },
+      "display_ref": {
+        "field": "display",
+        "start": 128,
+        "end": 136
+      },
+      "mapping_scope": "segment",
+      "segment": "s1"
+    },
+    {
+      "kind": "word",
+      "label": "across",
+      "start": 204000,
+      "end": 211800,
+      "source": "native_model",
+      "mapping": {
+        "method": "mithi_token_word_ownership",
+        "model_words": [
+          27
+        ],
+        "first_token": 147,
+        "last_token": 152
+      },
+      "text_ref": {
+        "field": "speech",
+        "start": 137,
+        "end": 143
+      },
+      "display_ref": {
+        "field": "display",
+        "start": 137,
+        "end": 143
+      },
+      "mapping_scope": "segment",
+      "segment": "s1"
+    },
+    {
+      "kind": "word",
+      "label": "rows",
+      "start": 213600,
+      "end": 220200,
+      "source": "native_model",
+      "mapping": {
+        "method": "mithi_token_word_ownership",
+        "model_words": [
+          28
+        ],
+        "first_token": 154,
+        "last_token": 157
+      },
+      "text_ref": {
+        "field": "speech",
+        "start": 144,
+        "end": 148
+      },
+      "display_ref": {
+        "field": "display",
+        "start": 144,
+        "end": 148
+      },
+      "mapping_scope": "segment",
+      "segment": "s1"
+    },
+    {
+      "kind": "word",
+      "label": "and",
+      "start": 221400,
+      "end": 224400,
+      "source": "native_model",
+      "mapping": {
+        "method": "mithi_token_word_ownership",
+        "model_words": [
+          29
+        ],
+        "first_token": 159,
+        "last_token": 161
+      },
+      "text_ref": {
+        "field": "speech",
+        "start": 149,
+        "end": 152
+      },
+      "display_ref": {
+        "field": "display",
+        "start": 149,
+        "end": 152
+      },
+      "mapping_scope": "segment",
+      "segment": "s1"
+    },
+    {
+      "kind": "word",
+      "label": "columns.",
+      "start": 225600,
+      "end": 234600,
+      "source": "native_model",
+      "mapping": {
+        "method": "mithi_token_word_ownership",
+        "model_words": [
+          30
+        ],
+        "first_token": 163,
+        "last_token": 169
+      },
+      "text_ref": {
+        "field": "speech",
+        "start": 153,
+        "end": 161
+      },
+      "display_ref": {
+        "field": "display",
+        "start": 153,
+        "end": 161
+      },
+      "mapping_scope": "segment",
+      "segment": "s1"
+    },
+    {
+      "kind": "word",
+      "label": "First,",
+      "start": 242400,
+      "end": 251400,
+      "source": "native_model",
+      "mapping": {
+        "method": "mithi_token_word_ownership",
+        "model_words": [
+          0
+        ],
+        "first_token": 1,
+        "last_token": 6
+      },
+      "text_ref": {
+        "field": "speech",
+        "start": 162,
+        "end": 168
+      },
+      "display_ref": {
+        "field": "display",
+        "start": 162,
+        "end": 168
+      },
+      "mapping_scope": "segment",
+      "segment": "s2"
+    },
+    {
+      "kind": "word",
+      "label": "the",
+      "start": 259800,
+      "end": 262200,
+      "source": "native_model",
+      "mapping": {
+        "method": "mithi_token_word_ownership",
+        "model_words": [
+          1
+        ],
+        "first_token": 9,
+        "last_token": 10
+      },
+      "text_ref": {
+        "field": "speech",
+        "start": 169,
+        "end": 172
+      },
+      "display_ref": {
+        "field": "display",
+        "start": 169,
+        "end": 172
+      },
+      "mapping_scope": "segment",
+      "segment": "s2"
+    },
+    {
+      "kind": "word",
+      "label": "scanner",
+      "start": 263400,
+      "end": 271800,
+      "source": "native_model",
+      "mapping": {
+        "method": "mithi_token_word_ownership",
+        "model_words": [
+          2
+        ],
+        "first_token": 12,
+        "last_token": 18
+      },
+      "text_ref": {
+        "field": "speech",
+        "start": 173,
+        "end": 180
+      },
+      "display_ref": {
+        "field": "display",
+        "start": 173,
+        "end": 180
+      },
+      "mapping_scope": "segment",
+      "segment": "s2"
+    },
+    {
+      "kind": "word",
+      "label": "finds",
+      "start": 273000,
+      "end": 280800,
+      "source": "native_model",
+      "mapping": {
+        "method": "mithi_token_word_ownership",
+        "model_words": [
+          3
+        ],
+        "first_token": 20,
+        "last_token": 25
+      },
+      "text_ref": {
+        "field": "speech",
+        "start": 181,
+        "end": 186
+      },
+      "display_ref": {
+        "field": "display",
+        "start": 181,
+        "end": 186
+      },
+      "mapping_scope": "segment",
+      "segment": "s2"
+    },
+    {
+      "kind": "word",
+      "label": "three",
+      "start": 282600,
+      "end": 289800,
+      "source": "native_model",
+      "mapping": {
+        "method": "mithi_token_word_ownership",
+        "model_words": [
+          4
+        ],
+        "first_token": 27,
+        "last_token": 30
+      },
+      "text_ref": {
+        "field": "speech",
+        "start": 187,
+        "end": 192
+      },
+      "display_ref": {
+        "field": "display",
+        "start": 187,
+        "end": 192
+      },
+      "mapping_scope": "segment",
+      "segment": "s2"
+    },
+    {
+      "kind": "word",
+      "label": "large",
+      "start": 290400,
+      "end": 297000,
+      "source": "native_model",
+      "mapping": {
+        "method": "mithi_token_word_ownership",
+        "model_words": [
+          5
+        ],
+        "first_token": 32,
+        "last_token": 36
+      },
+      "text_ref": {
+        "field": "speech",
+        "start": 193,
+        "end": 198
+      },
+      "display_ref": {
+        "field": "display",
+        "start": 193,
+        "end": 198
+      },
+      "mapping_scope": "segment",
+      "segment": "s2"
+    },
+    {
+      "kind": "word",
+      "label": "corner",
+      "start": 298200,
+      "end": 305400,
+      "source": "native_model",
+      "mapping": {
+        "method": "mithi_token_word_ownership",
+        "model_words": [
+          6
+        ],
+        "first_token": 38,
+        "last_token": 44
+      },
+      "text_ref": {
+        "field": "speech",
+        "start": 199,
+        "end": 205
+      },
+      "display_ref": {
+        "field": "display",
+        "start": 199,
+        "end": 205
+      },
+      "mapping_scope": "segment",
+      "segment": "s2"
+    },
+    {
+      "kind": "word",
+      "label": "patterns.",
+      "start": 306600,
+      "end": 316200,
+      "source": "native_model",
+      "mapping": {
+        "method": "mithi_token_word_ownership",
+        "model_words": [
+          7
+        ],
+        "first_token": 46,
+        "last_token": 53
+      },
+      "text_ref": {
+        "field": "speech",
+        "start": 206,
+        "end": 215
+      },
+      "display_ref": {
+        "field": "display",
+        "start": 206,
+        "end": 215
+      },
+      "mapping_scope": "segment",
+      "segment": "s2"
+    },
+    {
+      "kind": "word",
+      "label": "They",
+      "start": 327600,
+      "end": 331200,
+      "source": "native_model",
+      "mapping": {
+        "method": "mithi_token_word_ownership",
+        "model_words": [
+          8
+        ],
+        "first_token": 56,
+        "last_token": 58
+      },
+      "text_ref": {
+        "field": "speech",
+        "start": 216,
+        "end": 220
+      },
+      "display_ref": {
+        "field": "display",
+        "start": 216,
+        "end": 220
+      },
+      "mapping_scope": "segment",
+      "segment": "s2"
+    },
+    {
+      "kind": "word",
+      "label": "show",
+      "start": 333000,
+      "end": 337200,
+      "source": "native_model",
+      "mapping": {
+        "method": "mithi_token_word_ownership",
+        "model_words": [
+          9
+        ],
+        "first_token": 60,
+        "last_token": 62
+      },
+      "text_ref": {
+        "field": "speech",
+        "start": 221,
+        "end": 225
+      },
+      "display_ref": {
+        "field": "display",
+        "start": 221,
+        "end": 225
+      },
+      "mapping_scope": "segment",
+      "segment": "s2"
+    },
+    {
+      "kind": "word",
+      "label": "where",
+      "start": 339000,
+      "end": 343200,
+      "source": "native_model",
+      "mapping": {
+        "method": "mithi_token_word_ownership",
+        "model_words": [
+          10
+        ],
+        "first_token": 64,
+        "last_token": 67
+      },
+      "text_ref": {
+        "field": "speech",
+        "start": 226,
+        "end": 231
+      },
+      "display_ref": {
+        "field": "display",
+        "start": 226,
+        "end": 231
+      },
+      "mapping_scope": "segment",
+      "segment": "s2"
+    },
+    {
+      "kind": "word",
+      "label": "the",
+      "start": 344400,
+      "end": 345600,
+      "source": "native_model",
+      "mapping": {
+        "method": "mithi_token_word_ownership",
+        "model_words": [
+          11
+        ],
+        "first_token": 69,
+        "last_token": 70
+      },
+      "text_ref": {
+        "field": "speech",
+        "start": 232,
+        "end": 235
+      },
+      "display_ref": {
+        "field": "display",
+        "start": 232,
+        "end": 235
+      },
+      "mapping_scope": "segment",
+      "segment": "s2"
+    },
+    {
+      "kind": "word",
+      "label": "code",
+      "start": 346800,
+      "end": 352200,
+      "source": "native_model",
+      "mapping": {
+        "method": "mithi_token_word_ownership",
+        "model_words": [
+          12
+        ],
+        "first_token": 72,
+        "last_token": 75
+      },
+      "text_ref": {
+        "field": "speech",
+        "start": 236,
+        "end": 240
+      },
+      "display_ref": {
+        "field": "display",
+        "start": 236,
+        "end": 240
+      },
+      "mapping_scope": "segment",
+      "segment": "s2"
+    },
+    {
+      "kind": "word",
+      "label": "is",
+      "start": 353400,
+      "end": 356400,
+      "source": "native_model",
+      "mapping": {
+        "method": "mithi_token_word_ownership",
+        "model_words": [
+          13
+        ],
+        "first_token": 77,
+        "last_token": 78
+      },
+      "text_ref": {
+        "field": "speech",
+        "start": 241,
+        "end": 243
+      },
+      "display_ref": {
+        "field": "display",
+        "start": 241,
+        "end": 243
+      },
+      "mapping_scope": "segment",
+      "segment": "s2"
+    },
+    {
+      "kind": "word",
+      "label": "and",
+      "start": 359400,
+      "end": 362400,
+      "source": "native_model",
+      "mapping": {
+        "method": "mithi_token_word_ownership",
+        "model_words": [
+          14
+        ],
+        "first_token": 80,
+        "last_token": 82
+      },
+      "text_ref": {
+        "field": "speech",
+        "start": 244,
+        "end": 247
+      },
+      "display_ref": {
+        "field": "display",
+        "start": 244,
+        "end": 247
+      },
+      "mapping_scope": "segment",
+      "segment": "s2"
+    },
+    {
+      "kind": "word",
+      "label": "which",
+      "start": 363600,
+      "end": 368400,
+      "source": "native_model",
+      "mapping": {
+        "method": "mithi_token_word_ownership",
+        "model_words": [
+          15
+        ],
+        "first_token": 84,
+        "last_token": 87
+      },
+      "text_ref": {
+        "field": "speech",
+        "start": 248,
+        "end": 253
+      },
+      "display_ref": {
+        "field": "display",
+        "start": 248,
+        "end": 253
+      },
+      "mapping_scope": "segment",
+      "segment": "s2"
+    },
+    {
+      "kind": "word",
+      "label": "way",
+      "start": 370200,
+      "end": 372600,
+      "source": "native_model",
+      "mapping": {
+        "method": "mithi_token_word_ownership",
+        "model_words": [
+          16
+        ],
+        "first_token": 89,
+        "last_token": 91
+      },
+      "text_ref": {
+        "field": "speech",
+        "start": 254,
+        "end": 257
+      },
+      "display_ref": {
+        "field": "display",
+        "start": 254,
+        "end": 257
+      },
+      "mapping_scope": "segment",
+      "segment": "s2"
+    },
+    {
+      "kind": "word",
+      "label": "it",
+      "start": 374400,
+      "end": 376800,
+      "source": "native_model",
+      "mapping": {
+        "method": "mithi_token_word_ownership",
+        "model_words": [
+          17
+        ],
+        "first_token": 93,
+        "last_token": 94
+      },
+      "text_ref": {
+        "field": "speech",
+        "start": 258,
+        "end": 260
+      },
+      "display_ref": {
+        "field": "display",
+        "start": 258,
+        "end": 260
+      },
+      "mapping_scope": "segment",
+      "segment": "s2"
+    },
+    {
+      "kind": "word",
+      "label": "faces.",
+      "start": 378000,
+      "end": 386400,
+      "source": "native_model",
+      "mapping": {
+        "method": "mithi_token_word_ownership",
+        "model_words": [
+          18
+        ],
+        "first_token": 96,
+        "last_token": 101
+      },
+      "text_ref": {
+        "field": "speech",
+        "start": 261,
+        "end": 267
+      },
+      "display_ref": {
+        "field": "display",
+        "start": 261,
+        "end": 267
+      },
+      "mapping_scope": "segment",
+      "segment": "s2"
+    },
+    {
+      "kind": "word",
+      "label": "Alternating",
+      "start": 396600,
+      "end": 411000,
+      "source": "native_model",
+      "mapping": {
+        "method": "mithi_token_word_ownership",
+        "model_words": [
+          19
+        ],
+        "first_token": 104,
+        "last_token": 115
+      },
+      "text_ref": {
+        "field": "speech",
+        "start": 268,
+        "end": 279
+      },
+      "display_ref": {
+        "field": "display",
+        "start": 268,
+        "end": 279
+      },
+      "mapping_scope": "segment",
+      "segment": "s2"
+    },
+    {
+      "kind": "word",
+      "label": "timing",
+      "start": 412200,
+      "end": 419400,
+      "source": "native_model",
+      "mapping": {
+        "method": "mithi_token_word_ownership",
+        "model_words": [
+          20
+        ],
+        "first_token": 117,
+        "last_token": 122
+      },
+      "text_ref": {
+        "field": "speech",
+        "start": 280,
+        "end": 286
+      },
+      "display_ref": {
+        "field": "display",
+        "start": 280,
+        "end": 286
+      },
+      "mapping_scope": "segment",
+      "segment": "s2"
+    },
+    {
+      "kind": "word",
+      "label": "marks",
+      "start": 420600,
+      "end": 428400,
+      "source": "native_model",
+      "mapping": {
+        "method": "mithi_token_word_ownership",
+        "model_words": [
+          21
+        ],
+        "first_token": 124,
+        "last_token": 129
+      },
+      "text_ref": {
+        "field": "speech",
+        "start": 287,
+        "end": 292
+      },
+      "display_ref": {
+        "field": "display",
+        "start": 287,
+        "end": 292
+      },
+      "mapping_scope": "segment",
+      "segment": "s2"
+    },
+    {
+      "kind": "word",
+      "label": "help",
+      "start": 429600,
+      "end": 434400,
+      "source": "native_model",
+      "mapping": {
+        "method": "mithi_token_word_ownership",
+        "model_words": [
+          22
+        ],
+        "first_token": 131,
+        "last_token": 135
+      },
+      "text_ref": {
+        "field": "speech",
+        "start": 293,
+        "end": 297
+      },
+      "display_ref": {
+        "field": "display",
+        "start": 293,
+        "end": 297
+      },
+      "mapping_scope": "segment",
+      "segment": "s2"
+    },
+    {
+      "kind": "word",
+      "label": "the",
+      "start": 435600,
+      "end": 437400,
+      "source": "native_model",
+      "mapping": {
+        "method": "mithi_token_word_ownership",
+        "model_words": [
+          23
+        ],
+        "first_token": 137,
+        "last_token": 138
+      },
+      "text_ref": {
+        "field": "speech",
+        "start": 298,
+        "end": 301
+      },
+      "display_ref": {
+        "field": "display",
+        "start": 298,
+        "end": 301
+      },
+      "mapping_scope": "segment",
+      "segment": "s2"
+    },
+    {
+      "kind": "word",
+      "label": "scanner",
+      "start": 438600,
+      "end": 447000,
+      "source": "native_model",
+      "mapping": {
+        "method": "mithi_token_word_ownership",
+        "model_words": [
+          24
+        ],
+        "first_token": 140,
+        "last_token": 146
+      },
+      "text_ref": {
+        "field": "speech",
+        "start": 302,
+        "end": 309
+      },
+      "display_ref": {
+        "field": "display",
+        "start": 302,
+        "end": 309
+      },
+      "mapping_scope": "segment",
+      "segment": "s2"
+    },
+    {
+      "kind": "word",
+      "label": "line",
+      "start": 448200,
+      "end": 452400,
+      "source": "native_model",
+      "mapping": {
+        "method": "mithi_token_word_ownership",
+        "model_words": [
+          25
+        ],
+        "first_token": 148,
+        "last_token": 151
+      },
+      "text_ref": {
+        "field": "speech",
+        "start": 310,
+        "end": 314
+      },
+      "display_ref": {
+        "field": "display",
+        "start": 310,
+        "end": 314
+      },
+      "mapping_scope": "segment",
+      "segment": "s2"
+    },
+    {
+      "kind": "word",
+      "label": "up",
+      "start": 453600,
+      "end": 456600,
+      "source": "native_model",
+      "mapping": {
+        "method": "mithi_token_word_ownership",
+        "model_words": [
+          26
+        ],
+        "first_token": 153,
+        "last_token": 155
+      },
+      "text_ref": {
+        "field": "speech",
+        "start": 315,
+        "end": 317
+      },
+      "display_ref": {
+        "field": "display",
+        "start": 315,
+        "end": 317
+      },
+      "mapping_scope": "segment",
+      "segment": "s2"
+    },
+    {
+      "kind": "word",
+      "label": "with",
+      "start": 457800,
+      "end": 460200,
+      "source": "native_model",
+      "mapping": {
+        "method": "mithi_token_word_ownership",
+        "model_words": [
+          27
+        ],
+        "first_token": 157,
+        "last_token": 159
+      },
+      "text_ref": {
+        "field": "speech",
+        "start": 318,
+        "end": 322
+      },
+      "display_ref": {
+        "field": "display",
+        "start": 318,
+        "end": 322
+      },
+      "mapping_scope": "segment",
+      "segment": "s2"
+    },
+    {
+      "kind": "word",
+      "label": "the",
+      "start": 461400,
+      "end": 462600,
+      "source": "native_model",
+      "mapping": {
+        "method": "mithi_token_word_ownership",
+        "model_words": [
+          28
+        ],
+        "first_token": 161,
+        "last_token": 162
+      },
+      "text_ref": {
+        "field": "speech",
+        "start": 323,
+        "end": 326
+      },
+      "display_ref": {
+        "field": "display",
+        "start": 323,
+        "end": 326
+      },
+      "mapping_scope": "segment",
+      "segment": "s2"
+    },
+    {
+      "kind": "word",
+      "label": "little",
+      "start": 463800,
+      "end": 469200,
+      "source": "native_model",
+      "mapping": {
+        "method": "mithi_token_word_ownership",
+        "model_words": [
+          29
+        ],
+        "first_token": 164,
+        "last_token": 169
+      },
+      "text_ref": {
+        "field": "speech",
+        "start": 327,
+        "end": 333
+      },
+      "display_ref": {
+        "field": "display",
+        "start": 327,
+        "end": 333
+      },
+      "mapping_scope": "segment",
+      "segment": "s2"
+    },
+    {
+      "kind": "word",
+      "label": "squares.",
+      "start": 470400,
+      "end": 478800,
+      "source": "native_model",
+      "mapping": {
+        "method": "mithi_token_word_ownership",
+        "model_words": [
+          30
+        ],
+        "first_token": 171,
+        "last_token": 177
+      },
+      "text_ref": {
+        "field": "speech",
+        "start": 334,
+        "end": 342
+      },
+      "display_ref": {
+        "field": "display",
+        "start": 334,
+        "end": 342
+      },
+      "mapping_scope": "segment",
+      "segment": "s2"
+    },
+    {
+      "kind": "word",
+      "label": "Once",
+      "start": 486600,
+      "end": 492600,
+      "source": "native_model",
+      "mapping": {
+        "method": "mithi_token_word_ownership",
+        "model_words": [
+          0
+        ],
+        "first_token": 1,
+        "last_token": 5
+      },
+      "text_ref": {
+        "field": "speech",
+        "start": 343,
+        "end": 347
+      },
+      "display_ref": {
+        "field": "display",
+        "start": 343,
+        "end": 347
+      },
+      "mapping_scope": "segment",
+      "segment": "s3"
+    },
+    {
+      "kind": "word",
+      "label": "it",
+      "start": 493800,
+      "end": 496200,
+      "source": "native_model",
+      "mapping": {
+        "method": "mithi_token_word_ownership",
+        "model_words": [
+          1
+        ],
+        "first_token": 7,
+        "last_token": 8
+      },
+      "text_ref": {
+        "field": "speech",
+        "start": 348,
+        "end": 350
+      },
+      "display_ref": {
+        "field": "display",
+        "start": 348,
+        "end": 350
+      },
+      "mapping_scope": "segment",
+      "segment": "s3"
+    },
+    {
+      "kind": "word",
+      "label": "has",
+      "start": 497400,
+      "end": 500400,
+      "source": "native_model",
+      "mapping": {
+        "method": "mithi_token_word_ownership",
+        "model_words": [
+          2
+        ],
+        "first_token": 10,
+        "last_token": 12
+      },
+      "text_ref": {
+        "field": "speech",
+        "start": 351,
+        "end": 354
+      },
+      "display_ref": {
+        "field": "display",
+        "start": 351,
+        "end": 354
+      },
+      "mapping_scope": "segment",
+      "segment": "s3"
+    },
+    {
+      "kind": "word",
+      "label": "the",
+      "start": 501600,
+      "end": 504000,
+      "source": "native_model",
+      "mapping": {
+        "method": "mithi_token_word_ownership",
+        "model_words": [
+          3
+        ],
+        "first_token": 14,
+        "last_token": 15
+      },
+      "text_ref": {
+        "field": "speech",
+        "start": 355,
+        "end": 358
+      },
+      "display_ref": {
+        "field": "display",
+        "start": 355,
+        "end": 358
+      },
+      "mapping_scope": "segment",
+      "segment": "s3"
+    },
+    {
+      "kind": "word",
+      "label": "grid,",
+      "start": 505200,
+      "end": 512400,
+      "source": "native_model",
+      "mapping": {
+        "method": "mithi_token_word_ownership",
+        "model_words": [
+          4
+        ],
+        "first_token": 17,
+        "last_token": 21
+      },
+      "text_ref": {
+        "field": "speech",
+        "start": 359,
+        "end": 364
+      },
+      "display_ref": {
+        "field": "display",
+        "start": 359,
+        "end": 364
+      },
+      "mapping_scope": "segment",
+      "segment": "s3"
+    },
+    {
+      "kind": "word",
+      "label": "the",
+      "start": 521400,
+      "end": 524400,
+      "source": "native_model",
+      "mapping": {
+        "method": "mithi_token_word_ownership",
+        "model_words": [
+          5
+        ],
+        "first_token": 24,
+        "last_token": 25
+      },
+      "text_ref": {
+        "field": "speech",
+        "start": 365,
+        "end": 368
+      },
+      "display_ref": {
+        "field": "display",
+        "start": 365,
+        "end": 368
+      },
+      "mapping_scope": "segment",
+      "segment": "s3"
+    },
+    {
+      "kind": "word",
+      "label": "reader",
+      "start": 525600,
+      "end": 532200,
+      "source": "native_model",
+      "mapping": {
+        "method": "mithi_token_word_ownership",
+        "model_words": [
+          6
+        ],
+        "first_token": 27,
+        "last_token": 32
+      },
+      "text_ref": {
+        "field": "speech",
+        "start": 369,
+        "end": 375
+      },
+      "display_ref": {
+        "field": "display",
+        "start": 369,
+        "end": 375
+      },
+      "mapping_scope": "segment",
+      "segment": "s3"
+    },
+    {
+      "kind": "word",
+      "label": "can",
+      "start": 533400,
+      "end": 537000,
+      "source": "native_model",
+      "mapping": {
+        "method": "mithi_token_word_ownership",
+        "model_words": [
+          7
+        ],
+        "first_token": 34,
+        "last_token": 36
+      },
+      "text_ref": {
+        "field": "speech",
+        "start": 376,
+        "end": 379
+      },
+      "display_ref": {
+        "field": "display",
+        "start": 376,
+        "end": 379
+      },
+      "mapping_scope": "segment",
+      "segment": "s3"
+    },
+    {
+      "kind": "word",
+      "label": "interpret",
+      "start": 538200,
+      "end": 549600,
+      "source": "native_model",
+      "mapping": {
+        "method": "mithi_token_word_ownership",
+        "model_words": [
+          8
+        ],
+        "first_token": 38,
+        "last_token": 47
+      },
+      "text_ref": {
+        "field": "speech",
+        "start": 380,
+        "end": 389
+      },
+      "display_ref": {
+        "field": "display",
+        "start": 380,
+        "end": 389
+      },
+      "mapping_scope": "segment",
+      "segment": "s3"
+    },
+    {
+      "kind": "word",
+      "label": "the",
+      "start": 550800,
+      "end": 552600,
+      "source": "native_model",
+      "mapping": {
+        "method": "mithi_token_word_ownership",
+        "model_words": [
+          9
+        ],
+        "first_token": 49,
+        "last_token": 50
+      },
+      "text_ref": {
+        "field": "speech",
+        "start": 390,
+        "end": 393
+      },
+      "display_ref": {
+        "field": "display",
+        "start": 390,
+        "end": 393
+      },
+      "mapping_scope": "segment",
+      "segment": "s3"
+    },
+    {
+      "kind": "word",
+      "label": "encoded",
+      "start": 554400,
+      "end": 565200,
+      "source": "native_model",
+      "mapping": {
+        "method": "mithi_token_word_ownership",
+        "model_words": [
+          10
+        ],
+        "first_token": 52,
+        "last_token": 59
+      },
+      "text_ref": {
+        "field": "speech",
+        "start": 394,
+        "end": 401
+      },
+      "display_ref": {
+        "field": "display",
+        "start": 394,
+        "end": 401
+      },
+      "mapping_scope": "segment",
+      "segment": "s3"
+    },
+    {
+      "kind": "word",
+      "label": "data.",
+      "start": 566400,
+      "end": 573000,
+      "source": "native_model",
+      "mapping": {
+        "method": "mithi_token_word_ownership",
+        "model_words": [
+          11
+        ],
+        "first_token": 61,
+        "last_token": 65
+      },
+      "text_ref": {
+        "field": "speech",
+        "start": 402,
+        "end": 407
+      },
+      "display_ref": {
+        "field": "display",
+        "start": 402,
+        "end": 407
+      },
+      "mapping_scope": "segment",
+      "segment": "s3"
+    },
+    {
+      "kind": "word",
+      "label": "Some",
+      "start": 586200,
+      "end": 590400,
+      "source": "native_model",
+      "mapping": {
+        "method": "mithi_token_word_ownership",
+        "model_words": [
+          12
+        ],
+        "first_token": 68,
+        "last_token": 71
+      },
+      "text_ref": {
+        "field": "speech",
+        "start": 408,
+        "end": 412
+      },
+      "display_ref": {
+        "field": "display",
+        "start": 408,
+        "end": 412
+      },
+      "mapping_scope": "segment",
+      "segment": "s3"
+    },
+    {
+      "kind": "word",
+      "label": "of",
+      "start": 591600,
+      "end": 593400,
+      "source": "native_model",
+      "mapping": {
+        "method": "mithi_token_word_ownership",
+        "model_words": [
+          13
+        ],
+        "first_token": 73,
+        "last_token": 74
+      },
+      "text_ref": {
+        "field": "speech",
+        "start": 413,
+        "end": 415
+      },
+      "display_ref": {
+        "field": "display",
+        "start": 413,
+        "end": 415
+      },
+      "mapping_scope": "segment",
+      "segment": "s3"
+    },
+    {
+      "kind": "word",
+      "label": "those",
+      "start": 594600,
+      "end": 598800,
+      "source": "native_model",
+      "mapping": {
+        "method": "mithi_token_word_ownership",
+        "model_words": [
+          14
+        ],
+        "first_token": 76,
+        "last_token": 78
+      },
+      "text_ref": {
+        "field": "speech",
+        "start": 416,
+        "end": 421
+      },
+      "display_ref": {
+        "field": "display",
+        "start": 416,
+        "end": 421
+      },
+      "mapping_scope": "segment",
+      "segment": "s3"
+    },
+    {
+      "kind": "word",
+      "label": "squares",
+      "start": 600600,
+      "end": 609600,
+      "source": "native_model",
+      "mapping": {
+        "method": "mithi_token_word_ownership",
+        "model_words": [
+          15
+        ],
+        "first_token": 80,
+        "last_token": 86
+      },
+      "text_ref": {
+        "field": "speech",
+        "start": 422,
+        "end": 429
+      },
+      "display_ref": {
+        "field": "display",
+        "start": 422,
+        "end": 429
+      },
+      "mapping_scope": "segment",
+      "segment": "s3"
+    },
+    {
+      "kind": "word",
+      "label": "carry",
+      "start": 610800,
+      "end": 617400,
+      "source": "native_model",
+      "mapping": {
+        "method": "mithi_token_word_ownership",
+        "model_words": [
+          16
+        ],
+        "first_token": 88,
+        "last_token": 92
+      },
+      "text_ref": {
+        "field": "speech",
+        "start": 430,
+        "end": 435
+      },
+      "display_ref": {
+        "field": "display",
+        "start": 430,
+        "end": 435
+      },
+      "mapping_scope": "segment",
+      "segment": "s3"
+    },
+    {
+      "kind": "word",
+      "label": "extra",
+      "start": 620400,
+      "end": 628800,
+      "source": "native_model",
+      "mapping": {
+        "method": "mithi_token_word_ownership",
+        "model_words": [
+          17
+        ],
+        "first_token": 94,
+        "last_token": 100
+      },
+      "text_ref": {
+        "field": "speech",
+        "start": 436,
+        "end": 441
+      },
+      "display_ref": {
+        "field": "display",
+        "start": 436,
+        "end": 441
+      },
+      "mapping_scope": "segment",
+      "segment": "s3"
+    },
+    {
+      "kind": "word",
+      "label": "information",
+      "start": 630000,
+      "end": 643800,
+      "source": "native_model",
+      "mapping": {
+        "method": "mithi_token_word_ownership",
+        "model_words": [
+          18
+        ],
+        "first_token": 102,
+        "last_token": 113
+      },
+      "text_ref": {
+        "field": "speech",
+        "start": 442,
+        "end": 453
+      },
+      "display_ref": {
+        "field": "display",
+        "start": 442,
+        "end": 453
+      },
+      "mapping_scope": "segment",
+      "segment": "s3"
+    },
+    {
+      "kind": "word",
+      "label": "for",
+      "start": 645000,
+      "end": 648000,
+      "source": "native_model",
+      "mapping": {
+        "method": "mithi_token_word_ownership",
+        "model_words": [
+          19
+        ],
+        "first_token": 115,
+        "last_token": 117
+      },
+      "text_ref": {
+        "field": "speech",
+        "start": 454,
+        "end": 457
+      },
+      "display_ref": {
+        "field": "display",
+        "start": 454,
+        "end": 457
+      },
+      "mapping_scope": "segment",
+      "segment": "s3"
+    },
+    {
+      "kind": "word",
+      "label": "error",
+      "start": 649200,
+      "end": 654000,
+      "source": "native_model",
+      "mapping": {
+        "method": "mithi_token_word_ownership",
+        "model_words": [
+          20
+        ],
+        "first_token": 119,
+        "last_token": 123
+      },
+      "text_ref": {
+        "field": "speech",
+        "start": 458,
+        "end": 463
+      },
+      "display_ref": {
+        "field": "display",
+        "start": 458,
+        "end": 463
+      },
+      "mapping_scope": "segment",
+      "segment": "s3"
+    },
+    {
+      "kind": "word",
+      "label": "correction,",
+      "start": 655200,
+      "end": 665400,
+      "source": "native_model",
+      "mapping": {
+        "method": "mithi_token_word_ownership",
+        "model_words": [
+          21
+        ],
+        "first_token": 125,
+        "last_token": 133
+      },
+      "text_ref": {
+        "field": "speech",
+        "start": 464,
+        "end": 475
+      },
+      "display_ref": {
+        "field": "display",
+        "start": 464,
+        "end": 475
+      },
+      "mapping_scope": "segment",
+      "segment": "s3"
+    },
+    {
+      "kind": "word",
+      "label": "which",
+      "start": 676200,
+      "end": 680400,
+      "source": "native_model",
+      "mapping": {
+        "method": "mithi_token_word_ownership",
+        "model_words": [
+          22
+        ],
+        "first_token": 136,
+        "last_token": 139
+      },
+      "text_ref": {
+        "field": "speech",
+        "start": 476,
+        "end": 481
+      },
+      "display_ref": {
+        "field": "display",
+        "start": 476,
+        "end": 481
+      },
+      "mapping_scope": "segment",
+      "segment": "s3"
+    },
+    {
+      "kind": "word",
+      "label": "can",
+      "start": 681600,
+      "end": 685200,
+      "source": "native_model",
+      "mapping": {
+        "method": "mithi_token_word_ownership",
+        "model_words": [
+          23
+        ],
+        "first_token": 141,
+        "last_token": 143
+      },
+      "text_ref": {
+        "field": "speech",
+        "start": 482,
+        "end": 485
+      },
+      "display_ref": {
+        "field": "display",
+        "start": 482,
+        "end": 485
+      },
+      "mapping_scope": "segment",
+      "segment": "s3"
+    },
+    {
+      "kind": "word",
+      "label": "help",
+      "start": 686400,
+      "end": 691800,
+      "source": "native_model",
+      "mapping": {
+        "method": "mithi_token_word_ownership",
+        "model_words": [
+          24
+        ],
+        "first_token": 145,
+        "last_token": 149
+      },
+      "text_ref": {
+        "field": "speech",
+        "start": 486,
+        "end": 490
+      },
+      "display_ref": {
+        "field": "display",
+        "start": 486,
+        "end": 490
+      },
+      "mapping_scope": "segment",
+      "segment": "s3"
+    },
+    {
+      "kind": "word",
+      "label": "recover",
+      "start": 693600,
+      "end": 703200,
+      "source": "native_model",
+      "mapping": {
+        "method": "mithi_token_word_ownership",
+        "model_words": [
+          25
+        ],
+        "first_token": 151,
+        "last_token": 158
+      },
+      "text_ref": {
+        "field": "speech",
+        "start": 491,
+        "end": 498
+      },
+      "display_ref": {
+        "field": "display",
+        "start": 491,
+        "end": 498
+      },
+      "mapping_scope": "segment",
+      "segment": "s3"
+    },
+    {
+      "kind": "word",
+      "label": "a",
+      "start": 704400,
+      "end": 705000,
+      "source": "native_model",
+      "mapping": {
+        "method": "mithi_token_word_ownership",
+        "model_words": [
+          26
+        ],
+        "first_token": 160,
+        "last_token": 160
+      },
+      "text_ref": {
+        "field": "speech",
+        "start": 499,
+        "end": 500
+      },
+      "display_ref": {
+        "field": "display",
+        "start": 499,
+        "end": 500
+      },
+      "mapping_scope": "segment",
+      "segment": "s3"
+    },
+    {
+      "kind": "word",
+      "label": "message",
+      "start": 706200,
+      "end": 714000,
+      "source": "native_model",
+      "mapping": {
+        "method": "mithi_token_word_ownership",
+        "model_words": [
+          27
+        ],
+        "first_token": 162,
+        "last_token": 167
+      },
+      "text_ref": {
+        "field": "speech",
+        "start": 501,
+        "end": 508
+      },
+      "display_ref": {
+        "field": "display",
+        "start": 501,
+        "end": 508
+      },
+      "mapping_scope": "segment",
+      "segment": "s3"
+    },
+    {
+      "kind": "word",
+      "label": "even",
+      "start": 717000,
+      "end": 723000,
+      "source": "native_model",
+      "mapping": {
+        "method": "mithi_token_word_ownership",
+        "model_words": [
+          28
+        ],
+        "first_token": 169,
+        "last_token": 173
+      },
+      "text_ref": {
+        "field": "speech",
+        "start": 509,
+        "end": 513
+      },
+      "display_ref": {
+        "field": "display",
+        "start": 509,
+        "end": 513
+      },
+      "mapping_scope": "segment",
+      "segment": "s3"
+    },
+    {
+      "kind": "word",
+      "label": "if",
+      "start": 724200,
+      "end": 726000,
+      "source": "native_model",
+      "mapping": {
+        "method": "mithi_token_word_ownership",
+        "model_words": [
+          29
+        ],
+        "first_token": 175,
+        "last_token": 176
+      },
+      "text_ref": {
+        "field": "speech",
+        "start": 514,
+        "end": 516
+      },
+      "display_ref": {
+        "field": "display",
+        "start": 514,
+        "end": 516
+      },
+      "mapping_scope": "segment",
+      "segment": "s3"
+    },
+    {
+      "kind": "word",
+      "label": "part",
+      "start": 727200,
+      "end": 733200,
+      "source": "native_model",
+      "mapping": {
+        "method": "mithi_token_word_ownership",
+        "model_words": [
+          30
+        ],
+        "first_token": 178,
+        "last_token": 182
+      },
+      "text_ref": {
+        "field": "speech",
+        "start": 517,
+        "end": 521
+      },
+      "display_ref": {
+        "field": "display",
+        "start": 517,
+        "end": 521
+      },
+      "mapping_scope": "segment",
+      "segment": "s3"
+    },
+    {
+      "kind": "word",
+      "label": "of",
+      "start": 734400,
+      "end": 736200,
+      "source": "native_model",
+      "mapping": {
+        "method": "mithi_token_word_ownership",
+        "model_words": [
+          31
+        ],
+        "first_token": 184,
+        "last_token": 185
+      },
+      "text_ref": {
+        "field": "speech",
+        "start": 522,
+        "end": 524
+      },
+      "display_ref": {
+        "field": "display",
+        "start": 522,
+        "end": 524
+      },
+      "mapping_scope": "segment",
+      "segment": "s3"
+    },
+    {
+      "kind": "word",
+      "label": "the",
+      "start": 737400,
+      "end": 739200,
+      "source": "native_model",
+      "mapping": {
+        "method": "mithi_token_word_ownership",
+        "model_words": [
+          32
+        ],
+        "first_token": 187,
+        "last_token": 188
+      },
+      "text_ref": {
+        "field": "speech",
+        "start": 525,
+        "end": 528
+      },
+      "display_ref": {
+        "field": "display",
+        "start": 525,
+        "end": 528
+      },
+      "mapping_scope": "segment",
+      "segment": "s3"
+    },
+    {
+      "kind": "word",
+      "label": "code",
+      "start": 740400,
+      "end": 745800,
+      "source": "native_model",
+      "mapping": {
+        "method": "mithi_token_word_ownership",
+        "model_words": [
+          33
+        ],
+        "first_token": 190,
+        "last_token": 193
+      },
+      "text_ref": {
+        "field": "speech",
+        "start": 529,
+        "end": 533
+      },
+      "display_ref": {
+        "field": "display",
+        "start": 529,
+        "end": 533
+      },
+      "mapping_scope": "segment",
+      "segment": "s3"
+    },
+    {
+      "kind": "word",
+      "label": "is",
+      "start": 747000,
+      "end": 749400,
+      "source": "native_model",
+      "mapping": {
+        "method": "mithi_token_word_ownership",
+        "model_words": [
+          34
+        ],
+        "first_token": 195,
+        "last_token": 196
+      },
+      "text_ref": {
+        "field": "speech",
+        "start": 534,
+        "end": 536
+      },
+      "display_ref": {
+        "field": "display",
+        "start": 534,
+        "end": 536
+      },
+      "mapping_scope": "segment",
+      "segment": "s3"
+    },
+    {
+      "kind": "word",
+      "label": "damaged.",
+      "start": 750600,
+      "end": 760200,
+      "source": "native_model",
+      "mapping": {
+        "method": "mithi_token_word_ownership",
+        "model_words": [
+          35
+        ],
+        "first_token": 198,
+        "last_token": 204
+      },
+      "text_ref": {
+        "field": "speech",
+        "start": 537,
+        "end": 545
+      },
+      "display_ref": {
+        "field": "display",
+        "start": 537,
+        "end": 545
+      },
+      "mapping_scope": "segment",
+      "segment": "s3"
+    },
+    {
+      "kind": "phrase",
+      "label": "How can a square on a label hold a message?",
+      "start": 1200,
+      "end": 56400,
+      "source": "native_model",
+      "mapping": {
+        "method": "contextual_word_union",
+        "first_word": 0,
+        "stop_word": 10
+      },
+      "text_ref": {
+        "field": "speech",
+        "start": 0,
+        "end": 43
+      },
+      "display_ref": {
+        "field": "display",
+        "start": 0,
+        "end": 43
+      },
+      "mapping_scope": "segment",
+      "segment": "s1"
+    },
+    {
+      "kind": "phrase",
+      "label": "Look closely at a QR code.",
+      "start": 67200,
+      "end": 107400,
+      "source": "native_model",
+      "mapping": {
+        "method": "contextual_word_union",
+        "first_word": 10,
+        "stop_word": 16
+      },
+      "text_ref": {
+        "field": "speech",
+        "start": 44,
+        "end": 70
+      },
+      "display_ref": {
+        "field": "display",
+        "start": 44,
+        "end": 70
+      },
+      "mapping_scope": "segment",
+      "segment": "s1"
+    },
+    {
+      "kind": "phrase",
+      "label": "Its light and dark squares form a grid,",
+      "start": 117600,
+      "end": 168000,
+      "source": "native_model",
+      "mapping": {
+        "method": "contextual_word_union",
+        "first_word": 16,
+        "stop_word": 24
+      },
+      "text_ref": {
+        "field": "speech",
+        "start": 71,
+        "end": 110
+      },
+      "display_ref": {
+        "field": "display",
+        "start": 71,
+        "end": 110
+      },
+      "mapping_scope": "segment",
+      "segment": "s1"
+    },
+    {
+      "kind": "phrase",
+      "label": "with information arranged across rows and columns.",
+      "start": 175800,
+      "end": 234600,
+      "source": "native_model",
+      "mapping": {
+        "method": "contextual_word_union",
+        "first_word": 24,
+        "stop_word": 31
+      },
+      "text_ref": {
+        "field": "speech",
+        "start": 111,
+        "end": 161
+      },
+      "display_ref": {
+        "field": "display",
+        "start": 111,
+        "end": 161
+      },
+      "mapping_scope": "segment",
+      "segment": "s1"
+    },
+    {
+      "kind": "phrase",
+      "label": "First,",
+      "start": 242400,
+      "end": 251400,
+      "source": "native_model",
+      "mapping": {
+        "method": "contextual_word_union",
+        "first_word": 0,
+        "stop_word": 1
+      },
+      "text_ref": {
+        "field": "speech",
+        "start": 162,
+        "end": 168
+      },
+      "display_ref": {
+        "field": "display",
+        "start": 162,
+        "end": 168
+      },
+      "mapping_scope": "segment",
+      "segment": "s2"
+    },
+    {
+      "kind": "phrase",
+      "label": "the scanner finds three large corner patterns.",
+      "start": 259800,
+      "end": 316200,
+      "source": "native_model",
+      "mapping": {
+        "method": "contextual_word_union",
+        "first_word": 1,
+        "stop_word": 8
+      },
+      "text_ref": {
+        "field": "speech",
+        "start": 169,
+        "end": 215
+      },
+      "display_ref": {
+        "field": "display",
+        "start": 169,
+        "end": 215
+      },
+      "mapping_scope": "segment",
+      "segment": "s2"
+    },
+    {
+      "kind": "phrase",
+      "label": "They show where the code is and which way it faces.",
+      "start": 327600,
+      "end": 386400,
+      "source": "native_model",
+      "mapping": {
+        "method": "contextual_word_union",
+        "first_word": 8,
+        "stop_word": 19
+      },
+      "text_ref": {
+        "field": "speech",
+        "start": 216,
+        "end": 267
+      },
+      "display_ref": {
+        "field": "display",
+        "start": 216,
+        "end": 267
+      },
+      "mapping_scope": "segment",
+      "segment": "s2"
+    },
+    {
+      "kind": "phrase",
+      "label": "Alternating timing marks help the scanner line up with the little squares.",
+      "start": 396600,
+      "end": 478800,
+      "source": "native_model",
+      "mapping": {
+        "method": "contextual_word_union",
+        "first_word": 19,
+        "stop_word": 31
+      },
+      "text_ref": {
+        "field": "speech",
+        "start": 268,
+        "end": 342
+      },
+      "display_ref": {
+        "field": "display",
+        "start": 268,
+        "end": 342
+      },
+      "mapping_scope": "segment",
+      "segment": "s2"
+    },
+    {
+      "kind": "phrase",
+      "label": "Once it has the grid,",
+      "start": 486600,
+      "end": 512400,
+      "source": "native_model",
+      "mapping": {
+        "method": "contextual_word_union",
+        "first_word": 0,
+        "stop_word": 5
+      },
+      "text_ref": {
+        "field": "speech",
+        "start": 343,
+        "end": 364
+      },
+      "display_ref": {
+        "field": "display",
+        "start": 343,
+        "end": 364
+      },
+      "mapping_scope": "segment",
+      "segment": "s3"
+    },
+    {
+      "kind": "phrase",
+      "label": "the reader can interpret the encoded data.",
+      "start": 521400,
+      "end": 573000,
+      "source": "native_model",
+      "mapping": {
+        "method": "contextual_word_union",
+        "first_word": 5,
+        "stop_word": 12
+      },
+      "text_ref": {
+        "field": "speech",
+        "start": 365,
+        "end": 407
+      },
+      "display_ref": {
+        "field": "display",
+        "start": 365,
+        "end": 407
+      },
+      "mapping_scope": "segment",
+      "segment": "s3"
+    },
+    {
+      "kind": "phrase",
+      "label": "Some of those squares carry extra information for error correction,",
+      "start": 586200,
+      "end": 665400,
+      "source": "native_model",
+      "mapping": {
+        "method": "contextual_word_union",
+        "first_word": 12,
+        "stop_word": 22
+      },
+      "text_ref": {
+        "field": "speech",
+        "start": 408,
+        "end": 475
+      },
+      "display_ref": {
+        "field": "display",
+        "start": 408,
+        "end": 475
+      },
+      "mapping_scope": "segment",
+      "segment": "s3"
+    },
+    {
+      "kind": "phrase",
+      "label": "which can help recover a message even if part of the code is damaged.",
+      "start": 676200,
+      "end": 760200,
+      "source": "native_model",
+      "mapping": {
+        "method": "contextual_word_union",
+        "first_word": 22,
+        "stop_word": 36
+      },
+      "text_ref": {
+        "field": "speech",
+        "start": 476,
+        "end": 545
+      },
+      "display_ref": {
+        "field": "display",
+        "start": 476,
+        "end": 545
+      },
+      "mapping_scope": "segment",
+      "segment": "s3"
+    }
+  ],
+  "checks": {
+    "total_samples": true,
+    "audio_hash": true,
+    "segment_audio_byte_exact": true,
+    "gaps_silent": true,
+    "records_offset_exactly": true,
+    "records_within_own_segment": true,
+    "text_slices_valid": true,
+    "status_preserved": true
+  }
+}

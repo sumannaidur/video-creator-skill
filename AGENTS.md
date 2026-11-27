@@ -16,28 +16,52 @@ Build a portable, local-first Agent Skill for sourced, natural, professionally a
 
 The owner has limited Codex and Claude Code usage, hardware resources and time.
 
-Treat agent usage as a limited project resource.
+Treat agent tokens, execution time and computational resources as limited project resources. Maximize meaningful quality improvement per unit of resource consumed.
 
-Default execution budget for each atomic task:
+### Default task budget
 
-- Target active execution time: 5–10 minutes.
+- Target active agent execution time: 5–10 minutes.
 - One narrowly scoped implementation objective.
 - One focused validation cycle.
 - One evidence-supported corrective attempt per blocker.
 - One Full HD render at most, only when explicitly required.
-- Concise completion report.
+- Completion report under 250 words unless essential evidence requires more.
 
 These are execution targets, not guaranteed runtimes.
 
-If the task exceeds its intended budget:
+### Token and resource efficiency
+
+- Read only files directly relevant to the approved task.
+- Reuse existing research, decisions, implementations, fixtures and artifacts.
+- Avoid repeated repository scans, excessive investigation and routine progress narration.
+- Prefer the smallest reliable implementation over additional infrastructure.
+- Inspect representative keyframes before rendering motion previews.
+- Run only tests relevant to the changed behavior.
+- Do not repeat successful validation without a material change.
+- Use reproducible terminal commands for lengthy rendering, encoding, downloads and other routine computational operations.
+- Avoid continuously polling long-running processes.
+- Do not repeat project history or existing documentation in completion reports.
+
+### Budget enforcement and recovery
+
+If a task exceeds its intended budget, or an unresolved blocker remains after one justified corrective attempt:
 
 1. Preserve completed implementation.
-2. Record the current checkpoint.
-3. Report remaining work and blockers.
+2. Record the current checkpoint and verified artifacts.
+3. Report remaining work, blockers and uncertainties.
 4. Provide manual terminal commands where practical.
-5. Stop for owner review.
+5. Provide a concise resume instruction.
+6. Stop for owner review.
 
-Do not silently extend the task.
+Resume from the last valid checkpoint rather than restarting completed work.
+
+Do not silently extend tasks, begin another phase or enter repeated debugging and optimization cycles.
+
+### Quality safeguards
+
+Resource efficiency must not compromise security, factual accuracy, licensing, reliability or approved artistic quality requirements.
+
+Prefer reducing task scope over lowering quality standards.
 
 Explicit owner-approved task budgets override these defaults.
 

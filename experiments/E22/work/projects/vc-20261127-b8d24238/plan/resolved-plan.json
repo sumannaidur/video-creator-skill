@@ -1,0 +1,223 @@
+{
+  "schema": "video-creator.creative-plan",
+  "version": 1,
+  "narration": {
+    "timeline": "narration/narration.timeline.json",
+    "sha256": "e4f3e80a814e6fb69a1588986c87b4ea8b5493e9ca5341eb827df760333221a7"
+  },
+  "style": "whiteboard",
+  "style_reason": "fixture",
+  "guardrails": [
+    "simplified, not to scale"
+  ],
+  "motifs": [
+    {
+      "id": "m1",
+      "stands_for": "x"
+    }
+  ],
+  "story": [
+    {
+      "segment": "s1",
+      "role": "hook",
+      "idea": "x"
+    },
+    {
+      "segment": "s2",
+      "role": "mechanism",
+      "idea": "x"
+    },
+    {
+      "segment": "s3",
+      "role": "resolution",
+      "idea": "x"
+    }
+  ],
+  "assets": [
+    {
+      "id": "a1",
+      "kind": "procedural",
+      "description": "procedural fixture art"
+    }
+  ],
+  "shots": [
+    {
+      "id": "bake",
+      "purpose": "p",
+      "objects": [
+        {
+          "id": "o-bake",
+          "asset": "a1",
+          "description": "o-bake"
+        }
+      ],
+      "cues": [
+        {
+          "id": "bakes",
+          "object": "o-bake",
+          "action": "appear",
+          "at": {
+            "sample": 12267,
+            "seconds": 0.5111,
+            "kind": "word",
+            "label": "bakes",
+            "segment": "s1",
+            "timing_source": "forced_alignment",
+            "edge": "start",
+            "offset_ms": 0
+          }
+        }
+      ],
+      "start": {
+        "sample": 0,
+        "seconds": 0.0,
+        "kind": "bounds",
+        "label": "narration-start",
+        "timing_source": "narration_bounds"
+      },
+      "end": {
+        "sample": 81600,
+        "seconds": 3.4
+      },
+      "camera": []
+    },
+    {
+      "id": "store",
+      "purpose": "p",
+      "start": {
+        "sample": 81600,
+        "seconds": 3.4,
+        "kind": "segment",
+        "label": "s2",
+        "segment": null,
+        "timing_source": "segment_boundary",
+        "edge": "start",
+        "offset_ms": 0
+      },
+      "objects": [
+        {
+          "id": "o-pan",
+          "asset": "a1",
+          "description": "o-pan"
+        }
+      ],
+      "cues": [
+        {
+          "id": "stores",
+          "object": "o-pan",
+          "action": "appear",
+          "at": {
+            "sample": 93867,
+            "seconds": 3.9111,
+            "kind": "word",
+            "label": "stores",
+            "segment": "s2",
+            "timing_source": "forced_alignment",
+            "edge": "start",
+            "offset_ms": 0
+          }
+        }
+      ],
+      "end": {
+        "sample": 163200,
+        "seconds": 6.8
+      },
+      "camera": []
+    },
+    {
+      "id": "night",
+      "purpose": "p",
+      "start": {
+        "sample": 163200,
+        "seconds": 6.8,
+        "kind": "segment",
+        "label": "s3",
+        "segment": null,
+        "timing_source": "segment_boundary",
+        "edge": "start",
+        "offset_ms": 0
+      },
+      "objects": [
+        {
+          "id": "o-moon",
+          "asset": "a1",
+          "description": "o-moon"
+        },
+        {
+          "id": "o-tree",
+          "asset": "a1",
+          "description": "o-tree"
+        },
+        {
+          "id": "o-cool",
+          "asset": "a1",
+          "description": "o-cool"
+        }
+      ],
+      "cues": [
+        {
+          "id": "night",
+          "object": "o-moon",
+          "action": "appear",
+          "at": {
+            "sample": 175015,
+            "seconds": 7.2923,
+            "kind": "word",
+            "label": "night",
+            "segment": "s3",
+            "timing_source": "forced_alignment",
+            "edge": "start",
+            "offset_ms": 0
+          }
+        },
+        {
+          "id": "trees",
+          "object": "o-tree",
+          "action": "appear",
+          "at": {
+            "sample": 217108,
+            "seconds": 9.0462,
+            "kind": "word",
+            "label": "trees",
+            "segment": "s3",
+            "timing_source": "forced_alignment",
+            "edge": "start",
+            "offset_ms": 0
+          }
+        },
+        {
+          "id": "cooler",
+          "object": "o-cool",
+          "action": "appear",
+          "at": {
+            "sample": 252185,
+            "seconds": 10.5077,
+            "kind": "word",
+            "label": "cooler.",
+            "segment": "s3",
+            "timing_source": "forced_alignment",
+            "edge": "start",
+            "offset_ms": 0
+          }
+        }
+      ],
+      "end": {
+        "sample": 273600,
+        "seconds": 11.4
+      },
+      "camera": []
+    }
+  ],
+  "resolution": {
+    "timeline_sha256": "e4f3e80a814e6fb69a1588986c87b4ea8b5493e9ca5341eb827df760333221a7",
+    "audio_sha256": "45386b2130e2ebdd5c8450d4cbae4127f937206480c803d9923accf303e6559a",
+    "sample_rate": 24000,
+    "sample_count": 273600,
+    "timing_status": "unreviewed",
+    "record_sources": [
+      "forced_alignment"
+    ],
+    "run_id": "synthetic-heat",
+    "timeline": "narration/narration.timeline.json"
+  }
+}

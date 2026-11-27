@@ -1,0 +1,54 @@
+{
+  "schema": "video-creator.script",
+  "version": 1,
+  "locale": "en-IN",
+  "target_seconds": 30,
+  "segments": [
+    {
+      "id": "s1",
+      "role": "hook",
+      "text": "When a car turns a corner, its outer wheels have to travel a longer path than the inner wheels do.",
+      "claims": [
+        "c1"
+      ]
+    },
+    {
+      "id": "s2",
+      "role": "mechanism",
+      "text": "So the two wheels must spin at different speeds, and the differential makes that possible.",
+      "claims": [
+        "c2"
+      ]
+    },
+    {
+      "id": "s3",
+      "role": "mechanism",
+      "text": "The engine turns a ring gear and its carrier, and small planet gears inside link the two axles.",
+      "claims": [
+        "c3",
+        "c4"
+      ]
+    },
+    {
+      "id": "s4",
+      "role": "example",
+      "text": "On a curve, the planet gears start to turn, so one wheel speeds up while the other slows down.",
+      "claims": [
+        "c5"
+      ]
+    },
+    {
+      "id": "s5",
+      "role": "resolution",
+      "text": "And through it all, the carrier always moves at exactly the average speed of the two wheels.",
+      "claims": [
+        "c6"
+      ]
+    }
+  ],
+  "revisions": [
+    {
+      "why": "measured 25.9 s vs 30 s target; lengthened s1 and s5 without new claims"
+    }
+  ]
+}

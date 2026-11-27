@@ -1,0 +1,270 @@
+{
+  "version": 1,
+  "unit": "sample",
+  "locale": "te-IN",
+  "validation": "unreviewed",
+  "run_id": "synthetic-moon",
+  "timing": {
+    "method": "forced_alignment",
+    "provider": "synthetic-test"
+  },
+  "audio": {
+    "path": "narration/narration.wav",
+    "sha256": "caa1dfeae32c247141d7d4cee325aaa27999e1e27a2fce29c6c4d5e653a880ba",
+    "sample_rate": 24000,
+    "sample_count": 268800
+  },
+  "text": {
+    "display": "చంద్రుడు సొంతంగా వెలగడు. సూర్యకాంతి దాని ఒక వైపునే పడుతుంది. మనకు కనిపించే వెలుగు భాగమే దశలుగా మారుతుంది.",
+    "speech": "చంద్రుడు సొంతంగా వెలగడు. సూర్యకాంతి దాని ఒక వైపునే పడుతుంది. మనకు కనిపించే వెలుగు భాగమే దశలుగా మారుతుంది."
+  },
+  "segments": [
+    {
+      "id": "s1",
+      "run_id": "synthetic",
+      "validation": "unreviewed",
+      "offset_samples": 0,
+      "sample_count": 72000,
+      "gap_after_samples": 0
+    },
+    {
+      "id": "s2",
+      "run_id": "synthetic",
+      "validation": "unreviewed",
+      "offset_samples": 72000,
+      "sample_count": 91200,
+      "gap_after_samples": 0
+    },
+    {
+      "id": "s3",
+      "run_id": "synthetic",
+      "validation": "unreviewed",
+      "offset_samples": 163200,
+      "sample_count": 105600,
+      "gap_after_samples": 0
+    }
+  ],
+  "records": [
+    {
+      "kind": "word",
+      "label": "చంద్రుడు",
+      "start": 4800,
+      "end": 22080,
+      "source": "forced_alignment",
+      "segment": "s1",
+      "text_ref": {
+        "field": "speech",
+        "start": 0,
+        "end": 8
+      }
+    },
+    {
+      "kind": "word",
+      "label": "సొంతంగా",
+      "start": 24000,
+      "end": 41280,
+      "source": "forced_alignment",
+      "segment": "s1",
+      "text_ref": {
+        "field": "speech",
+        "start": 9,
+        "end": 16
+      }
+    },
+    {
+      "kind": "word",
+      "label": "వెలగడు.",
+      "start": 43200,
+      "end": 60480,
+      "source": "forced_alignment",
+      "segment": "s1",
+      "text_ref": {
+        "field": "speech",
+        "start": 17,
+        "end": 24
+      }
+    },
+    {
+      "kind": "word",
+      "label": "సూర్యకాంతి",
+      "start": 76800,
+      "end": 90624,
+      "source": "forced_alignment",
+      "segment": "s2",
+      "text_ref": {
+        "field": "speech",
+        "start": 25,
+        "end": 35
+      }
+    },
+    {
+      "kind": "word",
+      "label": "దాని",
+      "start": 92160,
+      "end": 105984,
+      "source": "forced_alignment",
+      "segment": "s2",
+      "text_ref": {
+        "field": "speech",
+        "start": 36,
+        "end": 40
+      }
+    },
+    {
+      "kind": "word",
+      "label": "ఒక",
+      "start": 107520,
+      "end": 121344,
+      "source": "forced_alignment",
+      "segment": "s2",
+      "text_ref": {
+        "field": "speech",
+        "start": 41,
+        "end": 43
+      }
+    },
+    {
+      "kind": "word",
+      "label": "వైపునే",
+      "start": 122880,
+      "end": 136704,
+      "source": "forced_alignment",
+      "segment": "s2",
+      "text_ref": {
+        "field": "speech",
+        "start": 44,
+        "end": 50
+      }
+    },
+    {
+      "kind": "word",
+      "label": "పడుతుంది.",
+      "start": 138240,
+      "end": 152064,
+      "source": "forced_alignment",
+      "segment": "s2",
+      "text_ref": {
+        "field": "speech",
+        "start": 51,
+        "end": 60
+      }
+    },
+    {
+      "kind": "word",
+      "label": "మనకు",
+      "start": 168000,
+      "end": 180960,
+      "source": "forced_alignment",
+      "segment": "s3",
+      "text_ref": {
+        "field": "speech",
+        "start": 61,
+        "end": 65
+      }
+    },
+    {
+      "kind": "word",
+      "label": "కనిపించే",
+      "start": 182400,
+      "end": 195360,
+      "source": "forced_alignment",
+      "segment": "s3",
+      "text_ref": {
+        "field": "speech",
+        "start": 66,
+        "end": 74
+      }
+    },
+    {
+      "kind": "word",
+      "label": "వెలుగు",
+      "start": 196800,
+      "end": 209760,
+      "source": "forced_alignment",
+      "segment": "s3",
+      "text_ref": {
+        "field": "speech",
+        "start": 75,
+        "end": 81
+      }
+    },
+    {
+      "kind": "word",
+      "label": "భాగమే",
+      "start": 211200,
+      "end": 224160,
+      "source": "forced_alignment",
+      "segment": "s3",
+      "text_ref": {
+        "field": "speech",
+        "start": 82,
+        "end": 87
+      }
+    },
+    {
+      "kind": "word",
+      "label": "దశలుగా",
+      "start": 225600,
+      "end": 238560,
+      "source": "forced_alignment",
+      "segment": "s3",
+      "text_ref": {
+        "field": "speech",
+        "start": 88,
+        "end": 94
+      }
+    },
+    {
+      "kind": "word",
+      "label": "మారుతుంది.",
+      "start": 240000,
+      "end": 252960,
+      "source": "forced_alignment",
+      "segment": "s3",
+      "text_ref": {
+        "field": "speech",
+        "start": 95,
+        "end": 105
+      }
+    },
+    {
+      "kind": "phrase",
+      "label": "చంద్రుడు సొంతంగా వెలగడు.",
+      "start": 4800,
+      "end": 60480,
+      "source": "forced_alignment",
+      "segment": "s1",
+      "text_ref": {
+        "field": "speech",
+        "start": 0,
+        "end": 24
+      }
+    },
+    {
+      "kind": "phrase",
+      "label": "సూర్యకాంతి దాని ఒక వైపునే పడుతుంది.",
+      "start": 76800,
+      "end": 152064,
+      "source": "forced_alignment",
+      "segment": "s2",
+      "text_ref": {
+        "field": "speech",
+        "start": 25,
+        "end": 60
+      }
+    },
+    {
+      "kind": "phrase",
+      "label": "మనకు కనిపించే వెలుగు భాగమే దశలుగా మారుతుంది.",
+      "start": 168000,
+      "end": 252960,
+      "source": "forced_alignment",
+      "segment": "s3",
+      "text_ref": {
+        "field": "speech",
+        "start": 61,
+        "end": 105
+      }
+    }
+  ]
+}
