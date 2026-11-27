@@ -2,7 +2,7 @@
 
 **Turn a topic into a sourced, narrated, animated explainer video, using free local tools on your own computer.**
 
-> **Status: v0.2.0-beta, published as a private GitHub [prerelease](https://github.com/sumannaidur/video-creator-skill/releases/tag/v0.2.0-beta).** The pipeline works end to end, but the output is **not** artistically validated and **not** production-ready. Every video it makes still needs human review: artistic, factual, native-language, licensing and publication. See [Known limitations](#known-limitations).
+> **Status: v0.2.0-beta, published as a public GitHub [prerelease](https://github.com/sumannaidur/video-creator-skill/releases/tag/v0.2.0-beta).** The pipeline works end to end, but the output is **not** artistically validated and **not** production-ready. Every video it makes still needs human review: artistic, factual, native-language, licensing and publication. See [Known limitations](#known-limitations).
 
 Video Creator is an [Agent Skill](https://agentskills.io): a folder of instructions (`SKILL.md`), reference guides and scripts that an AI coding agent such as Claude Code or Codex loads when you ask for an explainer video.
 - **The agent decides** what to say and show: research, script, art direction, shots, motion, captions and sound.
@@ -120,7 +120,7 @@ The listed hosts and tools are all free. Nothing below is bundled with the Skill
 
 ## Installation
 
-Download `video-creator-v0.2.0-beta.zip` and `video-creator-v0.2.0-beta.zip.sha256` from the [v0.2.0-beta prerelease](https://github.com/sumannaidur/video-creator-skill/releases/tag/v0.2.0-beta). The repository is private, so you need access. Verify the checksum:
+Download `video-creator-v0.2.0-beta.zip` and `video-creator-v0.2.0-beta.zip.sha256` from the [v0.2.0-beta prerelease](https://github.com/sumannaidur/video-creator-skill/releases/tag/v0.2.0-beta). Verify the checksum:
 
 ```powershell
 (Get-FileHash .\video-creator-v0.2.0-beta.zip -Algorithm SHA256).Hash.ToLower()
@@ -294,9 +294,15 @@ The final video is an H.264/AAC MP4, by default 1080×1920 at 30 fps. 1920×1080
 
 ## Licensing
 
-- **This project:** "Proprietary (project-internal)", pending licensing review. The repository is private.
-- **Not bundled, each under its own licence:** narration models (Mithi: review its LICENSE; Kokoro: Apache-2.0 per its manifest), FFmpeg, Node.js, Python, Chromium and Blender.
-- **Fonts:** the system's (Nirmala UI, Segoe UI); redistribution not reviewed.
+- **This project:** original code and documentation are licensed under the [Apache License 2.0](LICENSE).
+  - The licence covers only the project's own work. It grants no rights over third-party tools, models, voices, fonts or assets, or over videos you generate.
+  - Releases `v0.1.0-beta` and `v0.2.0-beta` were published before this choice and carry the metadata "Proprietary (project-internal)". The archives are unchanged.
+- **Third-party material:** see [THIRD_PARTY_NOTICES.md](THIRD_PARTY_NOTICES.md), which records verified and unresolved terms.
+  - Nothing is bundled.
+  - Mithi v2 Flash and Kokoro-82M are Apache-2.0, but the provenance and consent of their voice recordings are unresolved.
+  - The Kokoro route uses GPL-3.0 phonemizer and eSpeak NG in your own environment.
+  - FFmpeg, Node.js, Python, Chromium and Blender each have their own licence.
+- **Fonts:** the system's (Nirmala UI, Segoe UI). Microsoft's terms for use in published video are unresolved.
 - **Generated media:** original procedural artwork and audio by default. External assets (CC0 or public-domain photographs, models, HDRIs) are used only with your approval and with recorded provenance.
 - **Publication rights** for any video remain your responsibility, and need human review.
 
@@ -306,6 +312,7 @@ The final video is an H.264/AAC MP4, by default 1080×1920 at 30 fps. 1920×1080
 - `docs/`: requirements, quality strategy, architecture, decisions, research and the [v0.2.0-beta release checklist](docs/release-checklist-v0.2.0-beta.md).
 - `experiments/`: development evidence (notes, scripts, plans, captions, QA reports, contact sheets). **Not needed to use the Skill.**
 - `AGENTS.md`, `CLAUDE.md`: engineering instructions for coding agents that develop this repository.
+- `LICENSE`, `THIRD_PARTY_NOTICES.md`, `SECURITY.md`, `CONTRIBUTING.md`, `CODE_OF_CONDUCT.md`: licensing, security reporting and contribution rules.
 
 ## For AI agents
 

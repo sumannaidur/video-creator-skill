@@ -1,5 +1,12 @@
 # Release notes
 
+## Unreleased (after v0.2.0-beta)
+
+- **Licence:** original code and documentation are now licensed under the **Apache License 2.0**.
+  - `LICENSE` and `THIRD_PARTY_NOTICES.md` are included in the package.
+  - The v0.1.0-beta and v0.2.0-beta archives were published earlier with "Proprietary (project-internal)" metadata; they remain unchanged.
+- **Documentation:** reflects the public repository. Codex install instructions were added to the package README.
+
 ## v0.2.0-beta (release candidate, 2026-11-27): quality and reliability upgrades
 
 A release candidate for evaluation, not publication-ready output. It extends v0.1.0-beta; projects and preferences stay compatible.

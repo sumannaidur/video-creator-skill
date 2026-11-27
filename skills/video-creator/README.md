@@ -182,7 +182,7 @@ None of these are automated, and none are closed by this release:
 1. **Artistic acceptance** of each style and of every produced video against the professional reference standard.
 2. **Factual review:** claims are sourced, but subject-matter review is still required (for example, the anatomy in E17).
 3. **Native-language review** for te, kn, ta, en-IN and hi: narration naturalness, pronunciation, wording, captions and word boundaries.
-4. **Licensing review:** narration model and voice licences, fonts, the package's own licence (currently "Proprietary, project-internal"), and publication rights.
+4. **Licensing review:** voice-recording provenance and consent, font terms for published video, and publication rights. The package is licensed under Apache-2.0 (`LICENSE`); third-party terms are in `THIRD_PARTY_NOTICES.md`.
 5. **Publication approval:** recorded per project with `project.py approve`. Technical QA never implies it.
 
 See `RELEASE-NOTES.md` for the changes in this release.

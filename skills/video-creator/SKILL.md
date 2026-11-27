@@ -1,7 +1,7 @@
 ---
 name: video-creator
 description: Create a sourced, narrated, topic-specific animated explainer video (nine visual styles, framed or full-bleed) from a topic, documents or research, using only free local tools. Use when the user asks to make, plan, resume, validate or revise an explainer video. Not for editing existing footage, slideshows from fixed templates, or paid/cloud video services.
-license: Proprietary (project-internal). Third-party tools and models keep their own licenses.
+license: Apache-2.0 (see LICENSE). Third-party tools, models, voices and fonts keep their own terms (see THIRD_PARTY_NOTICES.md).
 compatibility: Requires shell access, Node 22+, Python 3, FFmpeg/FFprobe and local Chromium. Narration uses locally configured Kokoro ONNX (hi-IN) or Mithi on WSL 2 (hi-IN, kn-IN, ta-IN, te-IN, en-IN). Windows 11 evidence includes Claude Code release validation (P019) and development keyframe workflows run natively in Claude Code (P024.2–P024.4) and Codex (P024.5–P024.10).
 metadata:
   version: 0.2.0-beta
