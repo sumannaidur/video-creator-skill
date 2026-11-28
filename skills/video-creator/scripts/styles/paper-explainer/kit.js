@@ -808,6 +808,67 @@
     return {at,speed,stride,period};
   };
 
+
+  // Artwork-independent performance curves. Each channel has independent absolute-time keys.
+  const characterPerformance = ({tracks={},blinks=[],gestures={}}={})=>{
+    const ranges={gazeX:[-1,1],gazeY:[-1,1],lidLeft:[0,1],lidRight:[0,1],browLeft:[-1,1],browRight:[-1,1],smile:[-1,1],mouthOpen:[0,1],mouthRound:[0,1]};
+    const object=(v,name)=>{
+      if(!v||typeof v!=='object'||Array.isArray(v)) fail('performance '+name+' must be an object');
+    };
+    object(tracks,'tracks');object(gestures,'gestures');
+    const curve=(keys,lo,hi,name)=>{
+      if(!Array.isArray(keys)||!keys.length||keys.length>1024) fail('performance '+name+' needs 1..1024 keys');
+      const frames=keys.map((k,i)=>{
+        if(!Array.isArray(k)||k.length<2||k.length>3) fail('performance invalid key '+name);
+        const [t,v,ease='smooth']=k;
+        num(t,'performance time');num(v,'performance value');
+        if(t<0||(i&&t<=keys[i-1][0])||v<lo||v>hi||!['linear','smooth'].includes(ease)) fail('performance invalid key '+name);
+        return [t,v,ease];
+      });
+      return t=>{
+        if(t<=frames[0][0]) return frames[0][1];
+        if(t>=frames.at(-1)[0]) return frames.at(-1)[1];
+        const i=frames.findIndex(k=>k[0]>=t),a=frames[i-1],b=frames[i];
+        let u=(t-a[0])/(b[0]-a[0]);
+        if(b[2]==='smooth') u=u*u*(3-2*u);
+        return a[1]*(1-u)+b[1]*u;
+      };
+    };
+    for(const name of Object.keys(tracks)) if(!Object.hasOwn(ranges,name)) fail('performance unknown channel '+name);
+    const facial=Object.entries(tracks).map(([name,keys])=>[name,curve(keys,...ranges[name],name)]);
+    const allowed=['torso','neck','head',...['left','right'].flatMap(side=>['upper-arm','forearm','hand'].map(part=>side+'-'+part))];
+    const joints=Object.entries(gestures).map(([id,keys])=>{
+      if(!allowed.includes(id)) fail('performance invalid gesture joint '+id);
+      return [id,curve(keys,-360,360,id)];
+    });
+    if(!Array.isArray(blinks)||blinks.length>1024) fail('performance invalid blinks');
+    const events=blinks.map(e=>{
+      if(!e||typeof e!=='object'||Array.isArray(e)) fail('performance invalid blink');
+      const {t,close=.06,hold=.02,open=.10,side='both'}=e;
+      [t,close,hold,open].forEach(v=>num(v,'performance blink'));
+      const end=num(t+close+hold+open,'performance blink end');
+      if(t<0||close<=0||hold<0||open<=0||!['left','right','both'].includes(side)||end<=t) fail('performance invalid blink');
+      return {t,close,hold,open,side,end};
+    });
+    const smooth=u=>u*u*(3-2*u);
+    const at=(t,base={})=>{
+      num(t,'performance time');object(base,'base pose');
+      const face=Object.fromEntries(Object.keys(ranges).map(name=>[name,0]));
+      for(const [name,fn] of facial) face[name]=fn(t);
+      for(const e of events){
+        if(t<e.t||t>=e.end) continue;
+        const u=t-e.t;
+        const v=u<e.close?smooth(u/e.close):u<e.close+e.hold?1:smooth(Math.max(0,1-(u-e.close-e.hold)/e.open));
+        if(e.side!=='right') face.lidLeft=Math.max(face.lidLeft,v);
+        if(e.side!=='left') face.lidRight=Math.max(face.lidRight,v);
+      }
+      const pose={...base};
+      for(const [id,fn] of joints) pose[id]={...base[id],angle:num((base[id]?.angle??0)+fn(t),'performance gesture angle')};
+      return {face,pose};
+    };
+    return {at};
+  };
+
   // ---------- label treatments (object option labelStyle; CSS below, include kit.css in topic.css) ----------
   const LABEL_STYLES = ['tag', 'accent', 'plain', 'chip'];
   const css = `
@@ -877,5 +938,5 @@
   }
 
   globalThis.paperKit = {art: {fibres, sheet, layered, castShadow, ring, connector, tileTexture, parts,
-    light, mix, cut, gouache, wave, ridge, strata, sky, haze, textures, groundPlane, worldCamera, cameraPath, rig2D, twoBoneIK, characterRig, walkCycle, masonry, facade, foliage, water, figure, deckle, penumbra, piece, folded, vellum, recede}, css, LABEL_STYLES, motion};
+    light, mix, cut, gouache, wave, ridge, strata, sky, haze, textures, groundPlane, worldCamera, cameraPath, rig2D, twoBoneIK, characterRig, walkCycle, characterPerformance, masonry, facade, foliage, water, figure, deckle, penumbra, piece, folded, vellum, recede}, css, LABEL_STYLES, motion};
 })();

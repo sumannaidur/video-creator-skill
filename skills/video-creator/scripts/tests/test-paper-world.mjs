@@ -323,3 +323,35 @@ assert.throws(()=>actor.contact({}, {side:'left',limb:'arm',target:[0,0],angle:0
 assert.throws(()=>actor.contact({}, {side:'left',limb:'arm',target:[0,0],angle:NaN}),/number/);
 assert.throws(()=>actor.attachment({}, {side:'left',point:[NaN,0]}),/number/);
 console.log('Paper oriented character contacts and attachments: passed');
+
+const characterPerformance=sandbox.paperKit.art.characterPerformance;
+const expressionKeys=[[0,0],[2,1],[4,-1,'linear']];
+const perf=characterPerformance({tracks:{smile:expressionKeys,gazeX:[[0,-1],[2,1]],mouthOpen:[[0,0],[2,.8]],lidRight:[[0,.2]]},
+  blinks:[{t:1,close:.1,hold:.05,open:.15},{t:1.1,side:'left',close:.1,hold:0,open:.1}],
+  gestures:{head:[[0,0],[2,20]],'left-upper-arm':[[0,0],[2,-30]]}});
+const free={pelvis:{offset:[20,30]},head:{angle:5},'right-shin':{angle:10}};
+const p0=perf.at(0,free),p1=perf.at(1,free),p2=perf.at(2,free);
+close(p0.face.smile,0);close(p1.face.smile,.5);close(p2.face.smile,1);
+close(p1.face.gazeX,0);close(p2.face.mouthOpen,.8);
+close(p1.pose.head.angle,15);close(p2.pose['left-upper-arm'].angle,-30);
+assert.equal(p2.pose['right-shin'].angle,10);assert.equal(free.head.angle,5);
+close(perf.at(1.05).face.lidLeft,.5);
+close(perf.at(1.12).face.lidRight,1);
+close(perf.at(1.2).face.lidLeft,1);
+close(perf.at(1.31).face.lidRight,.2);
+close(perf.at(3).face.smile,0);
+close(perf.at(100).face.smile,-1);
+close(perf.at(-1).face.gazeX,-1);
+expressionKeys[1][1]=0;
+close(perf.at(2).face.smile,1);
+const recorded=JSON.stringify(perf.at(1.22,free));
+perf.at(4,free);
+assert.equal(JSON.stringify(perf.at(1.22,free)),recorded);
+actor.evaluate(p2.pose);
+assert.throws(()=>characterPerformance({tracks:{unknown:[[0,0]]}}),/unknown channel/);
+assert.throws(()=>characterPerformance({tracks:{smile:[[0,2]]}}),/invalid key/);
+assert.throws(()=>characterPerformance({tracks:{smile:[[1,0],[1,1]]}}),/invalid key/);
+assert.throws(()=>characterPerformance({blinks:[{t:1,close:0}]}),/invalid blink/);
+assert.throws(()=>characterPerformance({gestures:{'left-shin':[[0,0]]}}),/gesture joint/);
+assert.throws(()=>perf.at(NaN),/number/);
+console.log('Paper facial performance and gesture channels: passed');
