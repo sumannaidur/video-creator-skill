@@ -2,6 +2,14 @@
 
 Author each topic as a **topic module**: original inline SVG artwork plus motion data, evaluated by the shot engine. The style file supplies the visual grammar; the topic module supplies every topic-specific shape, scene and cue.
 
+## Original construction and adaptive detail
+
+Build important objects from recognizable structure, not generic placeholders. Identify functional parts, proportions, view, material, attachment points and how the object interacts with its surroundings. Use existing SVG paths, gradients, symbols, procedural textures and motion helpers; for genuine 3D use existing WebGL geometry. Construct independent moving components and explicit contact anchors where the action needs them. Keep reusable functions parameterized where useful; use scoped IDs and seeded variation. Do not introduce a framework or a universal rig for a single shot.
+
+Compose the environment as a coherent layout: ground or support plane, appropriate architecture and props, foreground occlusion, background depth, coherent lighting and shadows. Match the level of detail to delivery size: silhouette and broad tonal masses for distant objects; functional construction, surface variation and joints for close focal objects. Prefer inexpensive repeated symbols and selective detail over large filters or thousands of invisible elements. A close-up may require distinct artwork, not simply enlarging a wide shot. For diagrams and typography, precision and legibility take priority over decorative scenery.
+
+Keep scene code editable, separate reusable construction from project placement and timing, and preserve source in the project. The existing project retention contract remains in force until safe cleanup is implemented. Do not delete intermediate files manually as part of this phase.
+
 ## Topic module contract (as implemented by the experimental engine)
 
 `globalThis.paperTopic = { shots, symbols(ctx), css, build(ctx) }`
@@ -14,7 +22,7 @@ Author each topic as a **topic module**: original inline SVG artwork plus motion
 - **`build(ctx)`** returns `{scenes, cameras, checks}`. Use `ctx.motion` helpers: `track`, `show`, `showHide`, `reveal`, `ambient`, `emit` and `cue(id, phraseIndex, offset)`. A cue must make its object invisible before the cue time and visible after it.
 - **Speech cues from the resolved plan** (render with `--plan`; see [rendering](rendering.md)): `ctx.motion.speechCue(cueId, objectId?)` returns the cue's time in seconds and registers the visibility check on the plan's object (or the one you name). `ctx.cue(cueId)` returns the time without a check, for anything else you want to time to speech. `ctx.plan` exposes the resolved shots and cues. Use these instead of typing speech timestamps; every plan cue with an `id` must be used. With a plan, `shots` lists the plan's shot IDs in order with only `scene` and `transition`: boundaries come from the plan, and a `start` or `phrases` is rejected. How an object appears, moves and leaves stays entirely your choice.
 - `cue(id, phraseIndex, offset)` remains for legacy topics rendered without a plan.
-- **Production checks (P024.1B, shared shot-core styles):** preflight also runs `ink-legibility` (board lettering), `data-marks` (objects with `dataMark: true` may not use overshoot, settle or anticipate) and `mechanism` (`checks.ratios` returned by `build`; `motion.angle(id)` gives a track's rotation). Optional Blender layers: `scripts/blender_layers.py` (see Tech Explainer).
+- **Production checks (P024.1B, shared shot-core styles):** preflight also runs `ink-legibility` (board lettering), `data-marks` (objects with `dataMark: true` may not use overshoot, settle or anticipate) and `mechanism` (`checks.ratios` returned by `build`; `motion.angle(id)` gives a track's rotation). Legacy optional Blender layer interface exists but is excluded from V3 production.
 - **Shared motion primitives (optional, P022.2):** `globalThis.vcMotion` adds track curves (`inOut`, `outQuart`, `anticipate`, `overshoot`, `settle`, `hold`) and key builders (`arrive`, `follow`, `stepped`, `stagger`, `jitter`, `sample`). See [creative direction](creative-direction.md) for when each serves the story. The original curves are unchanged.
 - **Style kits:** a style may ship optional helpers for its own look. Paper Explainer's is `globalThis.paperKit` (see [Paper Explainer](styles/paper-explainer.md)); its motion helpers accept cue IDs, and `planCamera` places camera keys at the plan's camera moments. Kits are building blocks, not templates; other styles are not bound by them.
 - **`checks`** optionally sets `keyframes`, `repeatAt` and `absentAfter`.
@@ -35,7 +43,7 @@ Author each topic as a **topic module**: original inline SVG artwork plus motion
 
 ## Rich artwork: technique selection (P024.16B)
 
-Use the cheapest technique that meets the artistic need, and escalate only when the keyframe review shows that procedural art falls short. Keep labels, captions, cues and moving explanatory parts in the style's own renderer.
+For V3 use the cheapest original local procedural technique that meets the artistic need. If review reveals weak art, refine construction, composition or choose a more achievable stylized approach within existing capabilities; do not escalate to Blender, OpenVINO, new dependencies or downloaded artwork. The following legacy technique table documents historical capabilities and measurements only; it does not authorize their use in V3. Keep labels, captions, cues and moving explanatory parts in the style's own renderer.
 
 | Technique | Use when | Measured cost (reference laptop) | Limits |
 |---|---|---|---|
@@ -50,10 +58,10 @@ Use the cheapest technique that meets the artistic need, and escalate only when 
 - **Rights:** only verified licences are allowed.
 - **Cost:** check memory and render time against the budget, close Blender before rendering video, and run long renders as reproducible terminal commands.
 
-**Genuine 3D:** the 3D Explainer's explanatory parts stay real geometry (WebGL meshes). A Blender layer may supply only the static environment or a hero still, and must never replace a part that has to move in 3D.
+**Genuine 3D:** the 3D Explainer's explanatory parts stay real geometry (WebGL meshes). For V3 construct surroundings procedurally within supported capabilities; report limitations rather than substituting Blender layers.
 
 **Rights and provenance:**
-- Prefer CC0 sources such as Poly Haven and Smithsonian Open Access CC0.
+- For V3, original local artwork is the default; only explicitly authorized user media is permitted as an exception. The following provenance requirements apply to authorized media; legacy download guidance is not permission to download assets.
 - Check the licence on each asset's own page, not the site in general.
 - Ask the owner before every download, giving the files, source, size and licence.
 - Keep the files inside the project (for example `assets/`).

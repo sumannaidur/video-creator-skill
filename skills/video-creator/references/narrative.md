@@ -4,6 +4,8 @@ Write for the ear, natively in the target language. Never translate a script wri
 
 ## Structure
 
+Choose narrative structure according to the content and audience. The following is an explainer pattern, not a mandatory film template. A story may develop through character action and consequence; a product film may demonstrate use or contrast; a data story may reveal a pattern. Develop a visual premise, world or abstract visual language and audience payoff before locking narration. Let images convey information where possible instead of illustrating each word. The current narration and plan contract remains speech-based; dialogue, silent and music-led production are future V3 capabilities, not implemented by this guidance.
+
 - **Hook:** a concrete question or tension the viewer recognises.
 - **Progression:** one idea per sentence, each building on the last. Use contrast where it helps ("not only…, but also…").
 - **Example:** one relatable case that makes the mechanism tangible.

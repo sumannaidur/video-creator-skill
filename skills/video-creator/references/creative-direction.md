@@ -2,6 +2,19 @@
 
 You decide the shot count, metaphors, artwork, composition, camera, cues and transitions for each topic. There is **no fixed storyboard, scene count or template**. The structures below make your reasoning reviewable; they don't dictate content.
 
+## Visual development before detailed artwork
+
+Develop a compact, topic-specific world and art-direction section in the existing creative-decisions note. Begin with the actual subject: its recognizable form, functional parts, physical relationships, behavior and sourced facts or clearly identified fictional choices. Decide what the audience should experience, not merely which nouns to draw. For an abstract or data-driven film, design a coherent visual language and relationships instead of inventing a physical setting.
+
+- Establish the location, spatial layout, time, atmosphere and light direction where relevant. Imagine the surroundings a person would encounter there: architecture, meaningful props, surfaces and natural activity. Include only details that establish place, support the story or enrich the composition.
+- Define the artistic identity: silhouette and shape language, material treatment, palette relationships, typography, lighting, depth and movement rhythm. Respect the selected style and any explicit brand preferences. Do not confuse a palette change with a new creative identity.
+- Identify the focal subject in each planned shot and distinguish supporting context from incidental detail. Plan foreground, subject plane and background where useful, consistent scale, occlusion, contact and negative space. Allocate fine detail to the objects the camera actually reveals.
+- Sketch the sequence as distinct compositions. Choose wide, close, overhead, point-of-view, cutaway or still framing only when it serves the story. A crop or zoom is not an alternate viewpoint. Establish a simple layout and object state when continuity matters; construct the alternate view from the same relationships.
+- Plan the visible action and its cause: anticipation, contact, attachment, release and consequences where appropriate. Decide sound perspective, environmental cues, meaningful silence and transitions before artwork. Do not prescribe a quota of characters, shots, camera moves or effects.
+- Identify reusable construction techniques and source within the current project and packaged kits; reuse or customize where relevant. The shared cross-project library is future work, not an available API. Do not repeat compositions simply because reusable art exists.
+
+Inspect the intended sequence against the actual subject and professional craft expectations before implementing. If the idea exceeds the existing renderer, choose an achievable original stylized treatment and state the limitation rather than adding dependencies. Keep this note concise and use existing shot direction fields for decisions that differ by shot.
+
 ## Creative plan (`plan/creative-plan.json`, before any artwork)
 
 Schema `video-creator.creative-plan` v1. The plan records **your** decisions; `scripts/plan.py` only checks references and resolves speech anchors to times. It never chooses shots, metaphors or timings for you.
@@ -81,7 +94,7 @@ Use the existing plan and a brief `creative-decisions` note. Sketch the opening,
 - **Open on evidence.** Put a recognisable subject in a specific situation. Show a contrast, tension or unexpected state that raises the question before the explanation. A quiet opening can work when the image itself creates curiosity.
 - **Make the change do the explaining.** Identify what stays recognisable and what changes, then tie the visible cause and result to speech cues. Keep symbolic scale, colours and shapes faithful to the claim guardrails. Show the answer at the end through a changed object, relationship or value the viewer can compare with the opening.
 - **Compose for the actual delivery frame.** Name the first read and direct attention through scale, contrast, placement or detail. Decide where the subject, supporting context and captions fit. Keep annotations beside their targets and use leaders where the referent is ambiguous. Leave negative space where it serves the reading order.
-- **Pick the craft and tool together.** Identify the material, shape, stroke, evidence crop or typographic relationship that makes this subject recognisable. In the note, connect each consequential capability choice to the intended visual result and its cost. Use styled SVG for precise silhouettes, diagrams and labels, optional raster layers when material or photographic evidence does explanatory work, and 3D when geometry or viewpoint needs to remain coherent. Check the selected style reference for supported tools. Reuse simpler working techniques when they carry the idea as clearly.
+- **Pick the craft and tool together.** Identify the material, shape, stroke, evidence crop or typographic relationship that makes this subject recognisable. In the note, connect each consequential capability choice to the intended visual result and its cost. Use original styled SVG for precise silhouettes, layered environments, materials, diagrams and labels, and existing WebGL geometry when genuine spatial relationships are required. Procedurally generated temporary raster textures or explicitly authorized user media may be used only through supported interfaces and existing rights checks. Check the selected style reference for supported tools. Reuse simpler working techniques when they carry the idea as clearly.
 
 Keep art independent of narration word order and label length. Bind motion to resolved cues and reserve space for localised text. Choose cuts, camera moves and effects when they clarify an action, reveal a relationship or carry a motif forward.
 
@@ -111,6 +124,8 @@ Before any preview or full render, inspect representative frames from every shot
 |---|---|
 | Visual argument | Name the subject and question in the opening, the visible change and its cause in the middle, and what answers the question at the end. Record any essential inference carried only by narration. |
 | Composition | Identify the first read in each frame. Verify captions and labels remain readable, leaders terminate at their subjects and critical evidence stays visible. Note intentional crops. |
-| Craft and accuracy | Point to a topic-specific detail that serves recognition or explanation, and compare the result against the style reference and claim guardrails. |
+| Craft and accuracy | Check silhouette, functional parts, material, perspective and meaningful detail at the intended shot scale. Compare against the style reference and claim guardrails. |
+| World and direction | Where a physical world is intended, check spatial relationships, consistent light, contact shadows, foreground/background depth and meaningful surroundings. Check that alternate views and object states agree. |
+| Artistic weakness | Identify generic placeholders, excessive empty space, competing details, stiff poses or zoom-only framing that undermine the intended result. A passing geometry test does not excuse weak artwork. |
 
 Record the strongest frame and the most consequential weakness in the same note. Address failures that obscure the explanation or violate guardrails before advancing. Use the available correction budget on the highest-impact failure. If scope or budget prevents a correction, preserve the frames and stop for review. Technical checks and self-review support the decision to advance; artistic acceptance stays with the owner.
