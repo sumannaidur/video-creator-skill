@@ -869,6 +869,46 @@
     return {at};
   };
 
+
+  // A source-only identity definition. Registry versions pin the authored factory,
+  // not a generated image. All appearances share the same rig and identity palette.
+  const characterIdentity = ({id,height=640,proportions={},palette,features=[],appearances}={})=>{
+    const valid=name=>typeof name==='string'&&/^[a-z][a-z0-9]*(?:[.-][a-z0-9]+)*$/.test(name)&&name.length<=80;
+    const object=(v,name)=>{
+      if(!v||typeof v!=='object'||Array.isArray(v)) fail('character identity invalid '+name);
+    };
+    if(!valid(id)) fail('character identity invalid id');
+    object(palette,'palette');object(appearances,'appearances');
+    if(!Object.keys(palette).length||Object.keys(palette).length>32) fail('character identity palette size');
+    for(const [key,value] of Object.entries(palette)){
+      if(!valid(key)||typeof value!=='string'||!/^#[0-9a-fA-F]{6}$/.test(value)) fail('character identity invalid palette color');
+    }
+    if(!Array.isArray(features)||features.length>32||features.some(v=>typeof v!=='string'||!v.trim()||v.length>200)) fail('character identity invalid features');
+    const actor=characterRig({height,proportions});
+    const colors=Object.freeze({...palette}),details=Object.freeze(features.slice()),dimensions=Object.freeze({...actor.dimensions});
+    const names=Object.keys(appearances);
+    if(!names.length||names.length>32||!names.includes('default')) fail('character identity needs default appearance');
+    const views=new Map();
+    for(const [name,spec] of Object.entries(appearances)){
+      if(!valid(name)) fail('character identity invalid appearance name');
+      object(spec,'appearance');
+      const {build,order=actor.joints}=spec;
+      if(typeof build!=='function') fail('character identity appearance needs build function');
+      if(!Array.isArray(order)||new Set(order).size!==order.length||order.some(id=>!actor.joints.includes(id))) fail('character identity invalid order');
+      views.set(name,{build,order:order.slice()});
+    }
+    const context=Object.freeze({id,palette:colors,features:details,dimensions});
+    const draw=(pose,{appearance='default',face={}}={})=>{
+      if(!views.has(appearance)) fail('character identity unknown appearance');
+      object(face,'face');
+      const {build,order}=views.get(appearance);
+      // The authored builder must be pure; fixed geometry can be cached in its closure.
+      const parts=build(context,Object.freeze({...face}));
+      return actor.draw(pose,parts,order);
+    };
+    return {id,actor,palette:colors,features:details,appearances:names.slice(),draw};
+  };
+
   // ---------- label treatments (object option labelStyle; CSS below, include kit.css in topic.css) ----------
   const LABEL_STYLES = ['tag', 'accent', 'plain', 'chip'];
   const css = `
@@ -938,5 +978,5 @@
   }
 
   globalThis.paperKit = {art: {fibres, sheet, layered, castShadow, ring, connector, tileTexture, parts,
-    light, mix, cut, gouache, wave, ridge, strata, sky, haze, textures, groundPlane, worldCamera, cameraPath, rig2D, twoBoneIK, characterRig, walkCycle, characterPerformance, masonry, facade, foliage, water, figure, deckle, penumbra, piece, folded, vellum, recede}, css, LABEL_STYLES, motion};
+    light, mix, cut, gouache, wave, ridge, strata, sky, haze, textures, groundPlane, worldCamera, cameraPath, rig2D, twoBoneIK, characterRig, walkCycle, characterPerformance, characterIdentity, masonry, facade, foliage, water, figure, deckle, penumbra, piece, folded, vellum, recede}, css, LABEL_STYLES, motion};
 })();

@@ -355,3 +355,32 @@ assert.throws(()=>characterPerformance({blinks:[{t:1,close:0}]}),/invalid blink/
 assert.throws(()=>characterPerformance({gestures:{'left-shin':[[0,0]]}}),/gesture joint/);
 assert.throws(()=>perf.at(NaN),/number/);
 console.log('Paper facial performance and gesture channels: passed');
+
+const characterIdentity=sandbox.paperKit.art.characterIdentity;
+const identityPalette={skin:'#c98d63',coat:'#335577'};
+const identityFeatures=['Copper cap','Blue coat'];
+const buildIdentity=({palette,dimensions},face)=>({
+  torso:'<rect width="'+dimensions.shoulder+'" fill="'+palette.coat+'"/>',
+  head:'<circle r="'+dimensions.head/2+'" fill="'+palette.skin+'"/><path d="M0 0L1 '+(face.smile??0)+'"/>'
+});
+const identityOrder=['torso','head'];
+const identity=characterIdentity({id:'lock-keeper',height:100,palette:identityPalette,features:identityFeatures,
+  appearances:{default:{build:buildIdentity,order:identityOrder},profile:{build:buildIdentity,order:['head','torso']}}});
+const identityPose={pelvis:{offset:[100,200]},head:{angle:12}};
+const neutralIdentity=identity.draw(identityPose);
+const smilingIdentity=identity.draw(identityPose,{face:{smile:1}});
+assert.notEqual(neutralIdentity,smilingIdentity);
+assert.ok(neutralIdentity.includes('#c98d63')&&smilingIdentity.includes('#335577'));
+const profileIdentity=identity.draw(identityPose,{appearance:'profile'});
+assert.ok(profileIdentity.indexOf('<circle')<profileIdentity.indexOf('<rect'));
+close(identity.actor.dimensions.head,14);
+identityPalette.coat='#ffffff';identityFeatures[0]='changed';identityOrder.reverse();
+assert.equal(identity.draw(identityPose),neutralIdentity);
+assert.equal(identity.features[0],'Copper cap');
+assert.equal(identity.draw(identityPose,{face:{smile:1}}),smilingIdentity);
+assert.throws(()=>identity.draw(identityPose,{appearance:'missing'}),/unknown appearance/);
+assert.throws(()=>characterIdentity({id:'bad id',palette:{coat:'#000000'},appearances:{default:{build:buildIdentity}}}),/invalid id/);
+assert.throws(()=>characterIdentity({id:'valid',palette:{coat:'red'},appearances:{default:{build:buildIdentity}}}),/palette color/);
+assert.throws(()=>characterIdentity({id:'valid',palette:{coat:'#000000'},appearances:{profile:{build:buildIdentity}}}),/default appearance/);
+assert.throws(()=>characterIdentity({id:'valid',palette:{coat:'#000000'},appearances:{default:{build:buildIdentity,order:['head','head']}}}),/invalid order/);
+console.log('Paper reusable character identity and appearance variants: passed');
