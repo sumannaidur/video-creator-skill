@@ -167,3 +167,38 @@ close(one.poseAt(100).eyeHeight,2);
 const two=cameraPath({...config,keys:[k,{...k,t:4,x:4}],interpolation:'continuous'});
 close(two.poseAt(1).x,.625);
 console.log('Paper continuous camera interpolation: passed');
+
+const characterRig=sandbox.paperKit.art.characterRig;
+const actor=characterRig({height:100});
+assert.equal(actor.joints.length,16);
+const neutral=actor.evaluate();
+const distance=(a,b)=>Math.hypot(a[0]-b[0],a[1]-b[1]);
+close(distance(neutral.point('head',[0,0]),neutral.anchor('head','crown')),14);
+for(const angle of [-90,0,35,90,180]){
+  const pose={pelvis:{offset:[100,200],scale:2,angle:10},torso:{angle:angle/3},'left-upper-arm':{angle},'left-forearm':{angle:60},'right-thigh':{angle},'right-shin':{angle:-45}};
+  const s=actor.evaluate(pose);
+  for(const side of ['left','right']){
+    xy(s.anchor(side+'-upper-arm','elbow'),s.point(side+'-forearm',[0,0]));
+    xy(s.anchor(side+'-forearm','wrist'),s.point(side+'-hand',[0,0]));
+    xy(s.anchor(side+'-thigh','knee'),s.point(side+'-shin',[0,0]));
+    xy(s.anchor(side+'-shin','ankle'),s.point(side+'-foot',[0,0]));
+    close(distance(s.point(side+'-upper-arm',[0,0]),s.anchor(side+'-upper-arm','elbow')),31);
+    close(distance(s.point(side+'-shin',[0,0]),s.anchor(side+'-shin','ankle')),44);
+  }
+  xy(s.anchor('torso','neck'),s.point('neck',[0,0]));
+  const parts={head:'<circle r="5"/>','left-hand':'<path/>'};
+  const order=['left-hand','head'];
+  const markup=actor.draw(pose,parts,order);
+  assert.equal(markup,actor.draw(pose,parts,order));
+  assert.ok(markup.indexOf('<path/>')<markup.indexOf('<circle'));
+}
+const modified=characterRig({height:100,proportions:{upperArm:.2}});
+close(distance(modified.evaluate().point('left-upper-arm',[0,0]),modified.evaluate().anchor('left-upper-arm','elbow')),20);
+assert.throws(()=>characterRig({height:0}),/positive/);
+assert.throws(()=>characterRig({proportions:{thigh:NaN}}),/number/);
+assert.throws(()=>characterRig({proportions:{tail:.2}}),/unknown/);
+assert.throws(()=>actor.evaluate({'left-shin':{scale:2}}),/only permits/);
+assert.throws(()=>actor.evaluate({unknown:{angle:1}}),/unknown/);
+assert.throws(()=>actor.draw({}, {head:'<path/>'},['torso']),/omits/);
+assert.throws(()=>actor.draw({}, {head:'<path/>'},['head','head']),/order/);
+console.log('Paper articulated character anatomy: passed');

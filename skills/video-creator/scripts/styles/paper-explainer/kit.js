@@ -597,6 +597,63 @@
     return {evaluate};
   };
 
+
+  // Reusable front-view articulated anatomy in SVG coordinates, pelvis origin.
+  // Artwork is supplied independently by the topic; the skeleton does not prescribe a style.
+  const characterRig = ({height=640, proportions={}}={}) => {
+    num(height,'character height');
+    if(height<=0) fail('character height must be positive');
+    if(!proportions||typeof proportions!=='object'||Array.isArray(proportions)) fail('character proportions must be an object');
+    const defaults={torso:.29,neck:.035,head:.14,shoulder:.13,hip:.075,upperArm:.155,forearm:.14,hand:.065,thigh:.22,shin:.22,foot:.09,ankle:.045};
+    for(const name of Object.keys(proportions)) if(!Object.hasOwn(defaults,name)) fail('unknown character proportion '+name);
+    const d=Object.fromEntries(Object.entries({...defaults,...proportions}).map(([name,v])=>{
+      num(v,'character proportion '+name);
+      if(v<=0||v>1) fail('character proportion outside (0,1]');
+      return [name,num(v*height,'character dimension')];
+    }));
+    // Neutral legs extend down; torso extends upward. Anatomical left appears screen-right.
+    const specs=[
+      {id:'pelvis',anchors:{centre:[0,0]}},
+      {id:'torso',parent:'pelvis',anchors:{neck:[0,-d.torso],chest:[0,-d.torso*.7]}},
+      {id:'neck',parent:'torso',offset:[0,-d.torso]},
+      {id:'head',parent:'neck',offset:[0,-d.neck],anchors:{crown:[0,-d.head],eyes:[0,-d.head*.55]}}
+    ];
+    for(const [side,sign] of [['left',1],['right',-1]]){
+      const id=n=>side+'-'+n;
+      specs.push(
+        {id:id('upper-arm'),parent:'torso',offset:[sign*d.shoulder,-d.torso*.86],anchors:{elbow:[0,d.upperArm]}},
+        {id:id('forearm'),parent:id('upper-arm'),offset:[0,d.upperArm],anchors:{wrist:[0,d.forearm]}},
+        {id:id('hand'),parent:id('forearm'),offset:[0,d.forearm],anchors:{grip:[0,d.hand*.5],tip:[0,d.hand]}},
+        {id:id('thigh'),parent:'pelvis',offset:[sign*d.hip,0],anchors:{knee:[0,d.thigh]}},
+        {id:id('shin'),parent:id('thigh'),offset:[0,d.thigh],anchors:{ankle:[0,d.shin]}},
+        {id:id('foot'),parent:id('shin'),offset:[0,d.shin],anchors:{sole:[0,d.ankle],toe:[sign*d.foot,d.ankle]}}
+      );
+    }
+    const rig=rig2D(specs);
+    const ids=specs.map(s=>s.id);
+    // Pose overrides are restricted to rotations and pelvis translation/scale:
+    // limb lengths and joints cannot accidentally be changed mid-performance.
+    const evaluate=(pose={})=>{
+      if(!pose||typeof pose!=='object'||Array.isArray(pose)) fail('character pose must be an object');
+      for(const [id,q] of Object.entries(pose)){
+        if(!ids.includes(id)) fail('unknown character joint '+id);
+        if(!q||typeof q!=='object'||Array.isArray(q)||Object.keys(q).some(k=>!(id==='pelvis'?['angle','offset','scale']:['angle']).includes(k)))
+          fail('character pose only permits joint angles and pelvis placement');
+      }
+      return rig.evaluate(pose);
+    };
+    // Absolute groups, deliberately no automatic facing/depth decisions.
+    const draw=(pose,parts,order=ids)=>{
+      if(!parts||typeof parts!=='object'||Array.isArray(parts)) fail('character parts must be an object');
+      for(const [id,markup] of Object.entries(parts)) if(!ids.includes(id)||typeof markup!=='string') fail('invalid character artwork part '+id);
+      if(!Array.isArray(order)||new Set(order).size!==order.length||order.some(id=>!ids.includes(id))) fail('invalid character draw order');
+      if(Object.keys(parts).some(id=>!order.includes(id))) fail('character draw order omits artwork');
+      const p=evaluate(pose);
+      return order.filter(id=>Object.hasOwn(parts,id)).map(id=>p.group(id,parts[id])).join('');
+    };
+    return {dimensions:{...d},joints:ids.slice(),evaluate,draw};
+  };
+
   // ---------- label treatments (object option labelStyle; CSS below, include kit.css in topic.css) ----------
   const LABEL_STYLES = ['tag', 'accent', 'plain', 'chip'];
   const css = `
@@ -666,5 +723,5 @@
   }
 
   globalThis.paperKit = {art: {fibres, sheet, layered, castShadow, ring, connector, tileTexture, parts,
-    light, mix, cut, gouache, wave, ridge, strata, sky, haze, textures, groundPlane, worldCamera, cameraPath, rig2D, masonry, facade, foliage, water, figure, deckle, penumbra, piece, folded, vellum, recede}, css, LABEL_STYLES, motion};
+    light, mix, cut, gouache, wave, ridge, strata, sky, haze, textures, groundPlane, worldCamera, cameraPath, rig2D, characterRig, masonry, facade, foliage, water, figure, deckle, penumbra, piece, folded, vellum, recede}, css, LABEL_STYLES, motion};
 })();
