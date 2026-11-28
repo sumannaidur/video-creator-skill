@@ -193,3 +193,13 @@ Set `topic.presentation = {mode: 'full-bleed', ...}` (see [rendering](../renderi
 - **Layout:** compose for the full frame. Keep labels clear of the hook and captions, and use `captionPosition: 'upper'` on shots whose subject sits low.
 
 **Status:** validated on short Telugu and English fixtures only. Not yet used in a production video, and not reviewed by a person.
+
+## Spatial layout helper (P033.1, optional)
+
+For a physical setting with a level one-point view, `art.groundPlane({cx,horizon,focal,eyeHeight,near})` shares one ground projection across scenery, paths and object placement. Coordinates `cx` and `horizon` are SVG viewBox units; `focal` is positive in the same units, `eyeHeight` and positive depth `z` are in consistent world units. `near` defaults to 0.1 world units. It does not draw or select a setting.
+
+- `project(x,z,h=0)` gives screen x/y and scale (screen units per world unit). Equal-height objects get smaller with distance and their bases approach the horizon.
+- `polygon([[x,z],...])` returns a closed SVG ground footprint path; use for floors, paths, banks, supporting surfaces or cast shadow footprints.
+- `upright(x,z,markup)` places your own upright art, drawn in world units with its base at (0,0), above the ground anchor (negative local y). Draw far objects before near ones where their silhouettes overlap. For large volumes, construct the visible faces with the shared projection rather than treating the whole object as a billboard.
+
+Example: `const g = art.groundPlane({cx:800,horizon:320,focal:650,eyeHeight:1.7});` Then design meaningful scenery, structural faces, footpaths and placements for the actual subject. Use coherent depth, varied silhouettes and appropriate detail. Avoid uniform rows or scatter as a substitute for art direction. Use existing layers, sky, haze, foliage, masonry and piece helpers selectively; separate movable parts from static plates. This is not genuine 3D, does not perform clipping or automatic occlusion and assumes a level camera. A new viewpoint requires its own authored composition. No new dependency.

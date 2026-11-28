@@ -35,6 +35,7 @@ SUITES = [
     ("test_plan.py", "core", [], None), ("test_project.py", "core", [], None), ("test_mithi_timing.py", "core", [], None),
     ("test_runtime_discovery.py", "core", [], None),
     ("test-prerender.mjs", "node", ["node"], None),
+    ("test-paper-world.mjs", "node", ["node"], None),
     ("test-network.mjs", "browser", ["node", "browser"], None), ("test-composition.mjs", "browser", ["node", "browser"], None),
     ("test_render_plan.py", "browser", ["node", "browser", "ffmpeg"], None), ("test_captions.py", "browser", ["node", "browser", "ffmpeg"], None),
     ("test_preflight.py", "browser", ["node", "browser", "ffmpeg"], None), ("test_paper_kit.py", "browser", ["node", "browser", "ffmpeg"], None),

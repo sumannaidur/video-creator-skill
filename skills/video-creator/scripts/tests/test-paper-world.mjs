@@ -1,0 +1,25 @@
+import assert from 'node:assert/strict';
+import {readFileSync} from 'node:fs';
+import vm from 'node:vm';
+
+const sandbox = {paperShotArt: {f: n => String(Number(n.toFixed(4)))}};
+vm.runInNewContext(readFileSync(new URL('../styles/paper-explainer/kit.js', import.meta.url), 'utf8'), sandbox);
+const ground = sandbox.paperKit.art.groundPlane;
+const g = ground({cx: 500, horizon: 200, focal: 400, eyeHeight: 2});
+const p = g.project(1, 4);
+assert.equal(p.x, 600);
+assert.equal(p.y, 400);
+assert.equal(p.scale, 100);
+assert.equal(g.project(1, 8).scale, 50);
+assert.equal(g.project(1, 8).y, 300);
+assert.equal(g.project(1, 4, 2).y, 200);
+assert.equal(g.polygon([[-1,4],[1,4],[1,8],[-1,8]]), 'M400 400L600 400L550 300L450 300Z');
+assert.equal(g.upright(1,4,'<path/>'), '<g transform="translate(600 400) scale(100)"><path/></g>');
+assert.throws(() => g.project(1,0), /near plane/);
+assert.throws(() => g.project(NaN,4), /number/);
+assert.throws(() => ground({cx:0,horizon:0,focal:0,eyeHeight:2}), /positive/);
+assert.throws(() => g.polygon([[0,4],[1,4]]), /3..256/);
+assert.throws(() => g.polygon([[0,4],[1,4],[1,4,2]]), /footprint/);
+assert.throws(() => g.upright(1,4,null), /markup/);
+assert.equal(g.polygon([[-1,4],[1,4],[1,8],[-1,8]]), g.polygon([[-1,4],[1,4],[1,8],[-1,8]]));
+console.log('Paper world projection: passed');

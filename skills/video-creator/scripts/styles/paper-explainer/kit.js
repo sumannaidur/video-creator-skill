@@ -135,6 +135,40 @@
       `${T.pattern(`${prefix}-speckle`, T.bake({kind: 'speckle', seed: seed + 2, tint: [30, 24, 18], alpha: [0, .28], contrast: 2.4}), tile * .6)}</defs>`;
   };
 
+
+  // Level, one-point ground projection for topic-authored environments. Units are arbitrary but consistent.
+  // x is horizontal, z is positive depth from the camera, h is height above the ground.
+  // This is a layout tool for 2D art, not a 3D renderer or an automatic environment generator.
+  const groundPlane = ({cx, horizon, focal, eyeHeight, near = .1} = {}) => {
+    [cx, horizon, focal, eyeHeight, near].forEach((v, i) => num(v, ['cx','horizon','focal','eyeHeight','near'][i]));
+    if (focal <= 0 || eyeHeight <= 0 || near <= 0) fail('groundPlane requires positive focal, eyeHeight and near');
+    const project = (x, z, h = 0) => {
+      num(x, 'x'); num(z, 'z'); num(h, 'h');
+      if (z < near) fail('groundPlane point is behind near plane');
+      const scale = focal / z, px = cx + x * scale, py = horizon + (eyeHeight - h) * scale;
+      [scale, px, py].forEach(v => num(v, 'projected coordinate'));
+      if (scale <= 0) fail('groundPlane scale underflow');
+      return {x: px, y: py, scale};
+    };
+    // Footprints and paths share the same ground projection as standing artwork.
+    const polygon = (points) => {
+      if (!Array.isArray(points) || points.length < 3 || points.length > 256) fail('groundPlane polygon needs 3..256 points');
+      return 'M' + points.map(p => {
+        if (!Array.isArray(p) || p.length !== 2) fail('groundPlane footprint point must be [x,z]');
+        const q = project(p[0], p[1]);
+        return f(q.x) + ' ' + f(q.y);
+      }).join('L') + 'Z';
+    };
+    // Place authored upright artwork in local world units with its base at (0,0).
+    // Caller owns markup, clipping, occlusion, style and detail. Draw far objects first.
+    const upright = (x, z, markup) => {
+      if (typeof markup !== 'string') fail('groundPlane upright requires markup');
+      const q = project(x, z);
+      return '<g transform="translate(' + f(q.x) + ' ' + f(q.y) + ') scale(' + f(q.scale) + ')">' + markup + '</g>';
+    };
+    return {project, polygon, upright};
+  };
+
   // ---------- P018.4 construction: recognizable objects built from components (not decorated basic shapes) ----------
   // Reference characteristics (P018.1 audit, Painted Story / Paper Collage): buildings with windows, frames, sills,
   // shutters and roof tiles; stone and brick masonry; layered foliage; water with depth and ripples; characters with
@@ -397,5 +431,5 @@
   }
 
   globalThis.paperKit = {art: {fibres, sheet, layered, castShadow, ring, connector, tileTexture, parts,
-    light, mix, cut, gouache, wave, ridge, strata, sky, haze, textures, masonry, facade, foliage, water, figure, deckle, penumbra, piece, folded, vellum, recede}, css, LABEL_STYLES, motion};
+    light, mix, cut, gouache, wave, ridge, strata, sky, haze, textures, groundPlane, masonry, facade, foliage, water, figure, deckle, penumbra, piece, folded, vellum, recede}, css, LABEL_STYLES, motion};
 })();
