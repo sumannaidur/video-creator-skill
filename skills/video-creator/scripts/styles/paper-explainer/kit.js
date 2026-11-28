@@ -598,6 +598,38 @@
   };
 
 
+
+  // Analytic two-bone IK; neutral bones point along local +y, angles are clockwise degrees.
+  // The target is relative to the first joint in its parent's coordinate axes.
+  const twoBoneIK = ({target,lengths,bend=1}={}) => {
+    const pair=(v,name)=>{
+      if(!Array.isArray(v)||v.length!==2) fail('twoBoneIK '+name+' needs two numbers');
+      return v.map(x=>num(x,'twoBoneIK '+name));
+    };
+    const [x,y]=pair(target,'target'),[a,b]=pair(lengths,'lengths');
+    if(a<=0||b<=0) fail('twoBoneIK lengths must be positive');
+    if(bend!==1&&bend!==-1) fail('twoBoneIK bend must be +1 or -1');
+    const outer=num(a+b,'twoBoneIK reach'),inner=Math.abs(a-b);
+    const distance=num(Math.hypot(x,y),'twoBoneIK distance');
+    const reach=Math.max(inner,Math.min(outer,distance));
+    const direction=distance===0?0:Math.atan2(-x,y);
+    // Normalize the triangle to avoid squaring large dimensional quantities.
+    const A=a/outer,B=b/outer,R=reach/outer;
+    if(A===0||B===0) fail('twoBoneIK degenerate length ratio');
+    const clamp=v=>Math.max(-1,Math.min(1,v));
+    let relative,first;
+    if(reach===0){relative=bend*Math.PI;first=direction;}
+    else if(reach===outer){relative=0;first=direction;}
+    else if(reach===inner){relative=bend*Math.PI;first=direction-(a<b?bend*Math.PI:0);}
+    else{
+      relative=bend*Math.acos(clamp((R*R-A*A-B*B)/(2*A*B)));
+      first=direction-Math.atan2(B*Math.sin(relative),A+B*Math.cos(relative));
+    }
+    const endpoint=[num(-a*Math.sin(first)-b*Math.sin(first+relative),'IK endpoint'),num(a*Math.cos(first)+b*Math.cos(first+relative),'IK endpoint')];
+    return {angles:[first*180/Math.PI,relative*180/Math.PI],endpoint,
+      reachable:distance>=inner&&distance<=outer,error:num(Math.hypot(x-endpoint[0],y-endpoint[1]),'IK error')};
+  };
+
   // Reusable front-view articulated anatomy in SVG coordinates, pelvis origin.
   // Artwork is supplied independently by the topic; the skeleton does not prescribe a style.
   const characterRig = ({height=640, proportions={}}={}) => {
@@ -651,7 +683,26 @@
       const p=evaluate(pose);
       return order.filter(id=>Object.hasOwn(parts,id)).map(id=>p.group(id,parts[id])).join('');
     };
-    return {dimensions:{...d},joints:ids.slice(),evaluate,draw};
+    // Solve a wrist or ankle in stage coordinates; preserve all other pose overrides.
+    const solve=(pose,{side,limb,target,bend=1}={})=>{
+      if(!['left','right'].includes(side)||!['arm','leg'].includes(limb)) fail('character IK invalid side or limb');
+      if(!Array.isArray(target)||target.length!==2) fail('character IK target needs [x,y]');
+      const [x,y]=target.map(v=>num(v,'character IK target'));
+      const upper=side+(limb==='arm'?'-upper-arm':'-thigh');
+      const lower=side+(limb==='arm'?'-forearm':'-shin');
+      const parent=limb==='arm'?'torso':'pelvis';
+      const lengths=limb==='arm'?[d.upperArm,d.forearm]:[d.thigh,d.shin];
+      const p=evaluate(pose),origin=p.point(upper,[0,0]),[a,b]=p.matrix(parent);
+      const scale=num(Math.hypot(a,b),'character IK parent scale');
+      if(scale<=0) fail('character IK degenerate parent scale');
+      const dx=num((x-origin[0])/scale,'character IK delta'),dy=num((y-origin[1])/scale,'character IK delta');
+      const c=a/scale,s=b/scale;
+      const local=twoBoneIK({target:[c*dx+s*dy,-s*dx+c*dy],lengths,bend});
+      const next={...pose,[upper]:{angle:local.angles[0]},[lower]:{angle:local.angles[1]}};
+      const endpoint=evaluate(next).anchor(lower,limb==='arm'?'wrist':'ankle');
+      return {pose:next,endpoint,reachable:local.reachable,error:num(Math.hypot(x-endpoint[0],y-endpoint[1]),'character IK error')};
+    };
+    return {dimensions:{...d},joints:ids.slice(),evaluate,draw,solve};
   };
 
   // ---------- label treatments (object option labelStyle; CSS below, include kit.css in topic.css) ----------
@@ -723,5 +774,5 @@
   }
 
   globalThis.paperKit = {art: {fibres, sheet, layered, castShadow, ring, connector, tileTexture, parts,
-    light, mix, cut, gouache, wave, ridge, strata, sky, haze, textures, groundPlane, worldCamera, cameraPath, rig2D, characterRig, masonry, facade, foliage, water, figure, deckle, penumbra, piece, folded, vellum, recede}, css, LABEL_STYLES, motion};
+    light, mix, cut, gouache, wave, ridge, strata, sky, haze, textures, groundPlane, worldCamera, cameraPath, rig2D, twoBoneIK, characterRig, masonry, facade, foliage, water, figure, deckle, penumbra, piece, folded, vellum, recede}, css, LABEL_STYLES, motion};
 })();

@@ -202,3 +202,47 @@ assert.throws(()=>actor.evaluate({unknown:{angle:1}}),/unknown/);
 assert.throws(()=>actor.draw({}, {head:'<path/>'},['torso']),/omits/);
 assert.throws(()=>actor.draw({}, {head:'<path/>'},['head','head']),/order/);
 console.log('Paper articulated character anatomy: passed');
+
+const twoBoneIK=sandbox.paperKit.art.twoBoneIK;
+for(const bend of [-1,1]){
+  for(const target of [[12,10],[-12,10],[0,-10],[0,29],[0,1]]){
+    const s=twoBoneIK({target,lengths:[15,14],bend});
+    assert.ok(s.reachable);
+    xy(s.endpoint,target);
+    assert.ok(s.error<1e-8);
+    const [a,b]=s.angles.map(v=>v*Math.PI/180);
+    close(Math.hypot(-15*Math.sin(a),15*Math.cos(a)),15);
+    close(Math.hypot(-14*Math.sin(a+b),14*Math.cos(a+b)),14);
+    assert.ok(b*bend>=0);
+  }
+  const far=twoBoneIK({target:[0,40],lengths:[15,14],bend});
+  assert.equal(far.reachable,false);close(far.error,11);
+  const inside=twoBoneIK({target:[0,0],lengths:[14,15],bend});
+  assert.equal(inside.reachable,false);close(inside.error,1);
+  const folded=twoBoneIK({target:[0,0],lengths:[15,15],bend});
+  assert.equal(folded.reachable,true);close(folded.error,0);
+}
+for(const side of ['left','right']) for(const limb of ['arm','leg']) for(const bend of [-1,1]){
+  const base={pelvis:{offset:[120,230],angle:37,scale:1.8},torso:{angle:-22},head:{angle:12}};
+  const upper=side+(limb==='arm'?'-upper-arm':'-thigh');
+  const lower=side+(limb==='arm'?'-forearm':'-shin');
+  const end=limb==='arm'?'wrist':'ankle';
+  const origin=actor.evaluate(base).point(upper,[0,0]);
+  for(const phase of [0,1,2,3,4,5,1]){
+    const target=[origin[0]+30*Math.cos(phase),origin[1]+30*Math.sin(phase)];
+    const s=actor.solve(base,{side,limb,target,bend});
+    assert.ok(s.reachable);xy(s.endpoint,target);
+    xy(actor.evaluate(s.pose).anchor(lower,end),target);
+    assert.equal(s.pose.head.angle,12);
+    assert.equal(JSON.stringify(s),JSON.stringify(actor.solve(base,{side,limb,target,bend})));
+    assert.equal(Object.hasOwn(base,upper),false);
+  }
+  const far=actor.solve(base,{side,limb,target:[origin[0]+1000,origin[1]],bend});
+  assert.equal(far.reachable,false);
+  close(distance(origin,far.endpoint),1.8*(limb==='arm'?29.5:44));
+}
+assert.throws(()=>twoBoneIK({target:[0,1],lengths:[0,1]}),/positive/);
+assert.throws(()=>twoBoneIK({target:[NaN,1],lengths:[1,1]}),/number/);
+assert.throws(()=>twoBoneIK({target:[0,1],lengths:[1,1],bend:0}),/bend/);
+assert.throws(()=>actor.solve({}, {side:'middle',limb:'arm',target:[0,0]}),/side or limb/);
+console.log('Paper two-bone IK and character contact targets: passed');
