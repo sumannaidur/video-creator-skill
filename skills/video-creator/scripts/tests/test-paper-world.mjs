@@ -246,3 +246,42 @@ assert.throws(()=>twoBoneIK({target:[NaN,1],lengths:[1,1]}),/number/);
 assert.throws(()=>twoBoneIK({target:[0,1],lengths:[1,1],bend:0}),/bend/);
 assert.throws(()=>actor.solve({}, {side:'middle',limb:'arm',target:[0,0]}),/side or limb/);
 console.log('Paper two-bone IK and character contact targets: passed');
+
+const walkCycle=sandbox.paperKit.art.walkCycle;
+for(const direction of [-1,1]){
+  const walk=walkCycle(actor,{origin:[30,150],direction,scale:1.5});
+  const initial=walk.at(0),later=walk.at(walk.period);
+  close(later.root[0]-initial.root[0],direction*walk.stride);
+  const prev={};
+  for(let i=0;i<=480;i++){
+    const s=walk.at(i*walk.period/240);
+    assert.ok(s.feet.left.planted||s.feet.right.planted);
+    const p=actor.evaluate(s.pose);
+    for(const side of ['left','right']){
+      const foot=s.feet[side];
+      assert.ok(foot.reachable);
+      assert.ok(foot.error<1e-8);
+      assert.ok(foot.sole[1]<=150+1e-8);
+      if(foot.planted){
+        close(foot.sole[1],150);
+        if(prev[side]?.planted) xy(foot.sole,prev[side].sole);
+      }
+      close(distance(p.point(side+'-thigh',[0,0]),p.anchor(side+'-thigh','knee')),33);
+      prev[side]=foot;
+    }
+  }
+  const s=JSON.stringify(walk.at(.87));
+  walk.at(9);
+  assert.equal(JSON.stringify(walk.at(.87)),s);
+  // Position and velocity continuity of the foot at swing/stance boundaries.
+  for(const t of [.62*walk.period,walk.period]){
+    const e=1e-5,a=walk.at(t-e).feet.left.sole,b=walk.at(t).feet.left.sole,c=walk.at(t+e).feet.left.sole;
+    assert.ok(distance(a,b)/e<.01);
+    assert.ok(distance(b,c)/e<.01);
+  }
+}
+assert.throws(()=>walkCycle(actor,{stride:1000}),/reach/);
+assert.throws(()=>walkCycle(actor,{stance:.4}),/invalid/);
+assert.throws(()=>walkCycle(actor,{period:0}),/invalid/);
+assert.throws(()=>walkCycle(actor).at(NaN),/number/);
+console.log('Paper procedural walking and planted feet: passed');

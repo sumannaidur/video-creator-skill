@@ -705,6 +705,58 @@
     return {dimensions:{...d},joints:ids.slice(),evaluate,draw,solve};
   };
 
+
+  // Steady level-ground planar gait. A stride is one complete cycle of either foot.
+  // World/stage coordinates, not screen-relative offsets: stance targets stay fixed.
+  const walkCycle = (actor,{origin=[0,0],stride,period=1.2,stance=.62,lift,bob,armSwing=18,direction=1,scale=1}={})=>{
+    if(!actor||typeof actor.solve!=='function'||typeof actor.evaluate!=='function'||!actor.dimensions) fail('walkCycle needs a character rig');
+    if(!Array.isArray(origin)||origin.length!==2) fail('walkCycle origin needs [x,groundY]');
+    const [x0,ground]=origin.map(v=>num(v,'walkCycle origin'));
+    const {thigh,shin,ankle,hip}=actor.dimensions;
+    const leg=num((thigh+shin)*scale,'walkCycle leg length');
+    const footHeight=num(ankle*scale,'walkCycle ankle height');
+    stride=stride===undefined?leg*.55:stride;
+    lift=lift===undefined?leg*.10:lift;
+    bob=bob===undefined?leg*.025:bob;
+    [stride,period,stance,lift,bob,armSwing,scale].forEach(v=>num(v,'walkCycle parameter'));
+    if(scale<=0||leg<=0||footHeight<=0||stride<=0||period<=0||stance<=.5||stance>=1||lift<0||bob<0||armSwing<0||armSwing>90||![1,-1].includes(direction)) fail('walkCycle invalid gait parameters');
+    const speed=num(stride/period,'walkCycle speed');
+    // Conservative reach envelope: both legs remain within their annulus.
+    const height=leg*.88;
+    const maxHorizontal=stride*Math.max(stance/2,1-stance/2);
+    if(Math.hypot(maxHorizontal,height+bob)>leg||height-bob-lift<=Math.abs(thigh-shin)*scale)
+      fail('walkCycle stride/lift/bob exceeds conservative leg reach');
+    const smooth=u=>u*u*(3-2*u);
+    const at=t=>{
+      num(t,'walkCycle time');
+      const cycle=num(t/period,'walkCycle phase');
+      const phase=cycle-Math.floor(cycle);
+      const x=num(x0+direction*speed*t,'walkCycle root x');
+      const y=ground-footHeight-height-bob*Math.cos(4*Math.PI*phase);
+      let pose={pelvis:{offset:[x,y],scale},torso:{angle:direction*-4}};
+      const feet={};
+      for(const [side,offset,sign] of [['left',0,1],['right',.5,-1]]){
+        const q=cycle+offset,k=Math.floor(q),u=q-k;
+        const planted=u<stance;
+        const v=planted?0:(u-stance)/(1-stance);
+        const px=x0+direction*stride*(k-offset+stance/2+smooth(v))+sign*hip*scale;
+        const py=ground-footHeight-lift*Math.sin(Math.PI*v)**2;
+        const solved=actor.solve(pose,{side,limb:'leg',target:[px,py],bend:direction});
+        pose=solved.pose;
+        // Counter-rotate the foot to keep its sole horizontal in stage coordinates.
+        pose[side+'-foot']={angle:-pose[side+'-thigh'].angle-pose[side+'-shin'].angle};
+        const swing=direction*armSwing*Math.cos(2*Math.PI*u);
+        pose[side+'-upper-arm']={angle:swing};
+        pose[side+'-forearm']={angle:-direction*12};
+        feet[side]={planted,target:[px,py],reachable:solved.reachable,error:solved.error};
+      }
+      const p=actor.evaluate(pose);
+      for(const side of ['left','right']) feet[side].sole=p.anchor(side+'-foot','sole');
+      return {pose,feet,phase,speed,root:[x,y]};
+    };
+    return {at,speed,stride,period};
+  };
+
   // ---------- label treatments (object option labelStyle; CSS below, include kit.css in topic.css) ----------
   const LABEL_STYLES = ['tag', 'accent', 'plain', 'chip'];
   const css = `
@@ -774,5 +826,5 @@
   }
 
   globalThis.paperKit = {art: {fibres, sheet, layered, castShadow, ring, connector, tileTexture, parts,
-    light, mix, cut, gouache, wave, ridge, strata, sky, haze, textures, groundPlane, worldCamera, cameraPath, rig2D, twoBoneIK, characterRig, masonry, facade, foliage, water, figure, deckle, penumbra, piece, folded, vellum, recede}, css, LABEL_STYLES, motion};
+    light, mix, cut, gouache, wave, ridge, strata, sky, haze, textures, groundPlane, worldCamera, cameraPath, rig2D, twoBoneIK, characterRig, walkCycle, masonry, facade, foliage, water, figure, deckle, penumbra, piece, folded, vellum, recede}, css, LABEL_STYLES, motion};
 })();
