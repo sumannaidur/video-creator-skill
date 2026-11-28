@@ -57,3 +57,34 @@ assert.throws(()=>side.shadow(0,0,{direction:[0,0]}),/nonzero/);
 const expected = g.shadow(0,4,{direction:[0,1]});
 assert.equal(side.shadow(0,0,{direction:[1,0]}),expected);
 console.log('Paper world projection, shadows and alternate camera views: passed');
+
+const rig2D=sandbox.paperKit.art.rig2D;
+const rig=rig2D([
+  {id:'tool',parent:'forearm',offset:[40,0],pivot:[5,0],anchors:{grip:[5,0]}},
+  {id:'arm',offset:[100,50],pivot:[10,0],anchors:{elbow:[70,0]}},
+  {id:'forearm',parent:'arm',offset:[70,0],anchors:{hand:[40,0]}}
+]);
+const xy=(a,b)=>{close(a[0],b[0]);close(a[1],b[1]);};
+for(const angle of [-90,0,30,90,180,360]) {
+  const pose={arm:{angle,scale:1.2},forearm:{angle:45}};
+  const s=rig.evaluate(pose);
+  xy(s.point('arm',[10,0]),[100,50]);
+  xy(s.anchor('arm','elbow'),s.point('forearm',[0,0]));
+  xy(s.anchor('forearm','hand'),s.anchor('tool','grip'));
+  assert.equal(s.group('tool','<path/>'),rig.evaluate(pose).group('tool','<path/>'));
+  assert.ok(!/NaN|Infinity/.test(s.group('tool','<path/>')));
+}
+const rightAngle=rig.evaluate({arm:{angle:90}});
+xy(rightAngle.anchor('arm','elbow'),[100,110]);
+xy(rightAngle.anchor('tool','grip'),[100,150]);
+const m=rightAngle.matrix('arm');m[4]=999;
+xy(rightAngle.point('arm',[10,0]),[100,50]);
+assert.throws(()=>rig2D([{id:'a',parent:'b'}]),/unknown parent/);
+assert.throws(()=>rig2D([{id:'a',parent:'b'},{id:'b',parent:'a'}]),/cyclic/);
+assert.throws(()=>rig2D([{id:'a'},{id:'a'}]),/unique/);
+assert.throws(()=>rig2D([{id:'a',pivot:[NaN,0]}]),/number/);
+assert.throws(()=>rig.evaluate({tool:{scale:0}}),/positive/);
+assert.throws(()=>rig.evaluate({unknown:{}}),/unknown pose/);
+assert.throws(()=>rig.evaluate({arm:{angle:Infinity}}),/number/);
+assert.throws(()=>rig.evaluate().anchor('arm','missing'),/unknown anchor/);
+console.log('Paper 2D rig pivots, hierarchy and attachments: passed');

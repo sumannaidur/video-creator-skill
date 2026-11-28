@@ -448,6 +448,83 @@
     return s;
   };
 
+
+  // 2D forward kinematics in SVG units (+y down; positive rotation clockwise).
+  // A node's pivot maps to its offset in the parent's local coordinate system.
+  const rig2D = specs => {
+    if (!Array.isArray(specs) || !specs.length || specs.length>128) fail('rig2D needs 1..128 nodes');
+    const validId = id => typeof id==='string' && /^[a-z][a-z0-9-]*$/.test(id);
+    const pair = (v,name) => {
+      if (!Array.isArray(v)||v.length!==2) fail(name+' needs [x,y]');
+      return [num(v[0],name),num(v[1],name)];
+    };
+    const nodes = new Map();
+    for (const spec of specs) {
+      if (!validId(spec?.id)||nodes.has(spec.id)) fail('rig2D requires unique node IDs');
+      const {id,parent=null,offset=[0,0],pivot=[0,0],anchors={}}=spec;
+      if (parent!==null&&!validId(parent)) fail('rig2D invalid parent');
+      if (!anchors || typeof anchors!=='object'||Array.isArray(anchors)) fail('rig2D invalid anchors');
+      const named=new Map();
+      for (const [name,point] of Object.entries(anchors)) {
+        if (!validId(name)) fail('rig2D invalid anchor name');
+        named.set(name,pair(point,'anchor'));
+      }
+      nodes.set(id,{parent,offset:pair(offset,'offset'),pivot:pair(pivot,'pivot'),anchors:named});
+    }
+    const order=[], visiting=new Set(), done=new Set();
+    const visit=id=>{
+      if (done.has(id)) return;
+      if (visiting.has(id)) fail('rig2D cyclic hierarchy');
+      const node=nodes.get(id);
+      if (!node) fail('rig2D unknown parent '+id);
+      visiting.add(id);
+      if (node.parent!==null) visit(node.parent);
+      visiting.delete(id);done.add(id);order.push(id);
+    };
+    for (const id of nodes.keys()) visit(id);
+    // pose maps node IDs to local overrides {offset, angle (degrees), scale (>0)}.
+    // No previous-frame state is retained.
+    const evaluate=(pose={})=>{
+      if (!pose||typeof pose!=='object'||Array.isArray(pose)) fail('rig2D invalid pose');
+      for(const id of Object.keys(pose)) if(!nodes.has(id)) fail('rig2D unknown pose node '+id);
+      const matrices=new Map();
+      const mul=(p,m)=>[
+        p[0]*m[0]+p[2]*m[1],p[1]*m[0]+p[3]*m[1],
+        p[0]*m[2]+p[2]*m[3],p[1]*m[2]+p[3]*m[3],
+        p[0]*m[4]+p[2]*m[5]+p[4],p[1]*m[4]+p[3]*m[5]+p[5]];
+      for(const id of order){
+        const n=nodes.get(id), q=Object.hasOwn(pose,id)?pose[id]:{};
+        if(!q||typeof q!=='object'||Array.isArray(q)||Object.keys(q).some(k=>!['offset','angle','scale'].includes(k))) fail('rig2D invalid node pose');
+        const [x,y]=q.offset===undefined?n.offset:pair(q.offset,'pose offset');
+        const angle=num(q.angle===undefined?0:q.angle,'angle')%360*Math.PI/180;
+        const scale=num(q.scale===undefined?1:q.scale,'scale');
+        if(scale<=0) fail('rig2D scale must be positive');
+        const c=Math.cos(angle)*scale,s=Math.sin(angle)*scale,[px,py]=n.pivot;
+        const local=[c,s,-s,c,x-c*px+s*py,y-s*px-c*py];
+        const m=n.parent===null?local:mul(matrices.get(n.parent),local);
+        m.forEach(v=>num(v,'rig matrix'));matrices.set(id,m);
+      }
+      const matrix=id=>{
+        if(!matrices.has(id)) fail('rig2D unknown node '+id);
+        return matrices.get(id).slice();
+      };
+      const point=(id,p)=>{
+        const [x,y]=pair(p,'point'),[a,b,c,d,e,f]=matrix(id);
+        return [num(a*x+c*y+e,'point x'),num(b*x+d*y+f,'point y')];
+      };
+      const anchor=(id,name)=>{
+        if(!nodes.get(id)?.anchors.has(name)) fail('rig2D unknown anchor '+name);
+        return point(id,nodes.get(id).anchors.get(name));
+      };
+      const group=(id,markup)=>{
+        if(typeof markup!=='string') fail('rig2D group needs markup');
+        return '<g transform="matrix('+matrix(id).join(' ')+')">'+markup+'</g>';
+      };
+      return {matrix,point,anchor,group};
+    };
+    return {evaluate};
+  };
+
   // ---------- label treatments (object option labelStyle; CSS below, include kit.css in topic.css) ----------
   const LABEL_STYLES = ['tag', 'accent', 'plain', 'chip'];
   const css = `
@@ -517,5 +594,5 @@
   }
 
   globalThis.paperKit = {art: {fibres, sheet, layered, castShadow, ring, connector, tileTexture, parts,
-    light, mix, cut, gouache, wave, ridge, strata, sky, haze, textures, groundPlane, worldCamera, masonry, facade, foliage, water, figure, deckle, penumbra, piece, folded, vellum, recede}, css, LABEL_STYLES, motion};
+    light, mix, cut, gouache, wave, ridge, strata, sky, haze, textures, groundPlane, worldCamera, rig2D, masonry, facade, foliage, water, figure, deckle, penumbra, piece, folded, vellum, recede}, css, LABEL_STYLES, motion};
 })();
