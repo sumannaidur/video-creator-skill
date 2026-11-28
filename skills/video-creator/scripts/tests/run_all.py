@@ -31,6 +31,7 @@ import runtimes  # noqa: E402
 PY, NODE = [sys.executable, "-I"], "node"
 # (file, category, requirements, runtime provider argument)
 SUITES = [
+    ("test_asset_registry.py", "core", [], None),
     ("test_plan.py", "core", [], None), ("test_project.py", "core", [], None), ("test_mithi_timing.py", "core", [], None),
     ("test_runtime_discovery.py", "core", [], None),
     ("test-prerender.mjs", "node", ["node"], None),

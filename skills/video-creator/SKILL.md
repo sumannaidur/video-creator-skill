@@ -56,6 +56,10 @@ Stop and report (stage, reason, evidence path, how to recover) when:
 
 Never fabricate sources, quotations, statistics, licenses or evaluation results.
 
+## Experimental V3 source reuse
+
+When constructing reusable original artwork, consult [shared source assets](references/source-assets.md). Search reviewed source first, inspect compatibility and pinned dependencies, customize project-local copies, and keep new source as a candidate until actual review. The registry is optional during development; it does not execute assets or replace the project ledger. Do not automatically promote benchmark artwork.
+
 ## Extensibility
 
 The workflow is independent of language and style.
