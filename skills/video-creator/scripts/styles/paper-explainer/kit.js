@@ -702,7 +702,58 @@
       const endpoint=evaluate(next).anchor(lower,limb==='arm'?'wrist':'ankle');
       return {pose:next,endpoint,reachable:local.reachable,error:num(Math.hypot(x-endpoint[0],y-endpoint[1]),'character IK error')};
     };
-    return {dimensions:{...d},joints:ids.slice(),evaluate,draw,solve};
+    // Oriented grip/sole contact in stage space, blended from an authored free pose.
+    const contact=(pose,{side,limb,target,angle,bend=1,weight=1}={})=>{
+      if(!['left','right'].includes(side)||!['arm','leg'].includes(limb)) fail('character contact invalid side or limb');
+      if(!Array.isArray(target)||target.length!==2) fail('character contact target needs [x,y]');
+      const [x,y]=target.map(v=>num(v,'contact target'));
+      num(angle,'contact angle');num(weight,'contact weight');
+      if(weight<0||weight>1) fail('contact weight must be in [0,1]');
+      const id=side+(limb==='arm'?'-hand':'-foot');
+      const anchor=limb==='arm'?'grip':'sole';
+      const lower=side+(limb==='arm'?'-forearm':'-shin');
+      const p=evaluate(pose),start=p.anchor(id,anchor),[a,b]=p.matrix(id);
+      const scale=num(Math.hypot(a,b),'contact scale');
+      if(scale<=0) fail('contact degenerate scale');
+      const initial=Math.atan2(b,a)*180/Math.PI;
+      const wrap=v=>((v%360+540)%360)-180;
+      const desired=initial+wrap(angle%360-initial)*weight;
+      const blended=[start[0]*(1-weight)+x*weight,start[1]*(1-weight)+y*weight];
+      const offset=(limb==='arm'?d.hand*.5:d.ankle)*scale;
+      const rad=desired*Math.PI/180;
+      const wrist=[blended[0]+Math.sin(rad)*offset,blended[1]-Math.cos(rad)*offset];
+      // Zero weight must preserve the free pose, even if its elbow bends differently.
+      let next=pose,reachable=true;
+      if(weight!==0){
+        const s=solve(pose,{side,limb,target:wrist,bend});
+        next=s.pose;reachable=s.reachable;
+        const [c,e]=evaluate(next).matrix(lower);
+        next={...next,[id]:{angle:wrap(desired-Math.atan2(e,c)*180/Math.PI)}};
+      }else if(bend!==1&&bend!==-1) fail('twoBoneIK bend must be +1 or -1');
+      const result=evaluate(next),endpoint=result.anchor(id,anchor),[c,e]=result.matrix(id);
+      return {pose:next,endpoint,reachable,error:num(Math.hypot(endpoint[0]-blended[0],endpoint[1]-blended[1]),'contact error'),
+        targetError:num(Math.hypot(endpoint[0]-x,endpoint[1]-y),'contact target error'),
+        angleError:Math.abs(wrap(Math.atan2(e,c)*180/Math.PI-desired))};
+    };
+    // Attach local artwork to an oriented hand or sole anchor. Local contact point
+    // maps to that anchor; inherit the actor's uniform scale and terminal rotation.
+    const attachment=(pose,{side,limb='arm',point=[0,0],angle=0}={})=>{
+      if(!['left','right'].includes(side)||!['arm','leg'].includes(limb)) fail('character attachment invalid side or limb');
+      if(!Array.isArray(point)||point.length!==2) fail('attachment point needs [x,y]');
+      const [px,py]=point.map(v=>num(v,'attachment point'));
+      num(angle,'attachment angle');
+      const id=side+(limb==='arm'?'-hand':'-foot'),p=evaluate(pose);
+      const [a,b]=p.matrix(id),[x,y]=p.anchor(id,limb==='arm'?'grip':'sole');
+      const rad=(angle%360)*Math.PI/180,c=Math.cos(rad),s=Math.sin(rad);
+      const A=a*c-b*s,B=b*c+a*s;
+      const matrix=[A,B,-B,A,x-A*px+B*py,y-B*px-A*py];
+      matrix.forEach(v=>num(v,'attachment matrix'));
+      return {matrix,group:markup=>{
+        if(typeof markup!=='string') fail('attachment group needs markup');
+        return '<g transform="matrix('+matrix.join(' ')+')">'+markup+'</g>';
+      }};
+    };
+    return {dimensions:{...d},joints:ids.slice(),evaluate,draw,solve,contact,attachment};
   };
 
 

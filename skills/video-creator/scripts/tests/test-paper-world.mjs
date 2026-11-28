@@ -285,3 +285,41 @@ assert.throws(()=>walkCycle(actor,{stance:.4}),/invalid/);
 assert.throws(()=>walkCycle(actor,{period:0}),/invalid/);
 assert.throws(()=>walkCycle(actor).at(NaN),/number/);
 console.log('Paper procedural walking and planted feet: passed');
+
+const baseContact={pelvis:{offset:[200,300],scale:1.7,angle:19},torso:{angle:-12},head:{angle:8}};
+for(const side of ['left','right']) for(const limb of ['arm','leg']){
+  const id=side+(limb==='arm'?'-hand':'-foot'),anchor=limb==='arm'?'grip':'sole';
+  const upper=side+(limb==='arm'?'-upper-arm':'-thigh');
+  const o=actor.evaluate(baseContact).point(upper,[0,0]);
+  for(const angle of [-170,0,75,180]){
+    const target=[o[0]+12,o[1]+25];
+    const s=actor.contact(baseContact,{side,limb,target,angle,bend:1});
+    assert.ok(s.reachable);xy(s.endpoint,target);close(s.angleError,0);
+    xy(actor.evaluate(s.pose).anchor(id,anchor),target);
+    const attachment=actor.attachment(s.pose,{side,limb,point:[3,-4],angle:27});
+    const [a,b,c,d,e,f]=attachment.matrix;
+    xy([a*3+c*(-4)+e,b*3+d*(-4)+f],target);
+    close(Math.hypot(a,b),1.7);
+    assert.equal(attachment.group('<path/>'),actor.attachment(s.pose,{side,limb,point:[3,-4],angle:27}).group('<path/>'));
+  }
+  const target=[o[0]+15,o[1]+20],start=actor.evaluate(baseContact).anchor(id,anchor);
+  const zero=actor.contact(baseContact,{side,limb,target,angle:30,weight:0});
+  assert.equal(zero.pose,baseContact);xy(zero.endpoint,start);
+  const half=actor.contact(baseContact,{side,limb,target,angle:30,weight:.5});
+  assert.ok(half.reachable);xy(half.endpoint,[(start[0]+target[0])/2,(start[1]+target[1])/2]);
+  const far=actor.contact(baseContact,{side,limb,target:[10000,10000],angle:0});
+  assert.equal(far.reachable,false);assert.ok(far.error>100);
+}
+let both=baseContact;
+for(const side of ['left','right']){
+  const o=actor.evaluate(both).point(side+'-upper-arm',[0,0]);
+  both=actor.contact(both,{side,limb:'arm',target:[o[0],o[1]+30],angle:0}).pose;
+}
+for(const side of ['left','right']){
+  const p=actor.evaluate(both),o=p.point(side+'-upper-arm',[0,0]);
+  xy(p.anchor(side+'-hand','grip'),[o[0],o[1]+30]);
+}
+assert.throws(()=>actor.contact({}, {side:'left',limb:'arm',target:[0,0],angle:0,weight:2}),/weight/);
+assert.throws(()=>actor.contact({}, {side:'left',limb:'arm',target:[0,0],angle:NaN}),/number/);
+assert.throws(()=>actor.attachment({}, {side:'left',point:[NaN,0]}),/number/);
+console.log('Paper oriented character contacts and attachments: passed');
