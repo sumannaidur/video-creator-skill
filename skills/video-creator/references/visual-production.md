@@ -4,6 +4,8 @@ Author each topic as a **topic module**: original inline SVG artwork plus motion
 
 ## Original construction and adaptive detail
 
+For important artwork, apply [procedural craftsmanship](procedural-craftsmanship.md): establish projection, structural components, material and lighting, spatial relationships and visible action. Prioritize a representative hero frame before multiplying weak artwork across shots.
+
 Build important objects from recognizable structure, not generic placeholders. Identify functional parts, proportions, view, material, attachment points and how the object interacts with its surroundings. Use existing SVG paths, gradients, symbols, procedural textures and motion helpers; for genuine 3D use existing WebGL geometry. Construct independent moving components and explicit contact anchors where the action needs them. Keep reusable functions parameterized where useful; use scoped IDs and seeded variation. Do not introduce a framework or a universal rig for a single shot.
 
 Compose the environment as a coherent layout: ground or support plane, appropriate architecture and props, foreground occlusion, background depth, coherent lighting and shadows. Match the level of detail to delivery size: silhouette and broad tonal masses for distant objects; functional construction, surface variation and joints for close focal objects. Prefer inexpensive repeated symbols and selective detail over large filters or thousands of invisible elements. A close-up may require distinct artwork, not simply enlarging a wide shot. For diagrams and typography, precision and legibility take priority over decorative scenery.
