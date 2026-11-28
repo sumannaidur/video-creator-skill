@@ -1,5 +1,7 @@
 # Product baseline and requirements
 
+For the owner-approved V3 target, see [V3 requirements](v3/requirements.md). This document records the earlier baseline.
+
 Status: confirmed product requirements from P001 request. Architecture and technologies remain proposals.
 
 ## Vision and scope
