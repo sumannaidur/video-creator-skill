@@ -384,3 +384,38 @@ assert.throws(()=>characterIdentity({id:'valid',palette:{coat:'red'},appearances
 assert.throws(()=>characterIdentity({id:'valid',palette:{coat:'#000000'},appearances:{profile:{build:buildIdentity}}}),/default appearance/);
 assert.throws(()=>characterIdentity({id:'valid',palette:{coat:'#000000'},appearances:{default:{build:buildIdentity,order:['head','head']}}}),/invalid order/);
 console.log('Paper reusable character identity and appearance variants: passed');
+
+for(const direction of [-1,1]){
+  const upright=walkCycle(actor,{origin:[30,150],direction,heightRatio:.97,stride:24,period:1.2,stop:{at:2.46,duration:.6,settle:.4}});
+  const legacy=walkCycle(actor,{origin:[30,150],direction,stride:24,period:1.2});
+  assert.ok(upright.at(.06).root[1]<legacy.at(.06).root[1]);
+  const prev={};let previous;
+  for(let i=0;i<=840;i++){
+    const s=upright.at(i/240);
+    assert.ok(s.feet.left.planted||s.feet.right.planted);
+    for(const side of ['left','right']){
+      const foot=s.feet[side];
+      assert.ok(foot.reachable);assert.ok(foot.error<1e-8);
+      assert.ok(foot.sole[1]<=150+1e-8);
+      if(foot.planted&&prev[side]?.planted) xy(foot.sole,prev[side].sole);
+      prev[side]=foot;
+    }
+    if(previous) assert.ok(distance(previous.root,s.root)<1);
+    previous=s;
+  }
+  const stopped=upright.at(3.2),later=upright.at(10);
+  assert.equal(stopped.speed,0);
+  assert.ok(stopped.feet.left.planted&&stopped.feet.right.planted);
+  xy(stopped.root,later.root);
+  assert.equal(JSON.stringify(stopped),JSON.stringify(later));
+  close(stopped.pose.torso.angle,0);
+  for(const t of [2.16,2.76,3.16]){
+    const e=1e-5,a=upright.at(t-e),b=upright.at(t),c=upright.at(t+e);
+    assert.ok(Math.abs((b.root[0]-a.root[0])/e-(c.root[0]-b.root[0])/e)<.01);
+    assert.ok(Math.abs((b.root[1]-a.root[1])/e-(c.root[1]-b.root[1])/e)<.05);
+  }
+  assert.equal(JSON.stringify(upright.at(.8)),JSON.stringify(upright.at(.8)));
+}
+assert.throws(()=>walkCycle(actor,{heightRatio:1}),/height ratio/);
+assert.throws(()=>walkCycle(actor,{stop:{at:.4,duration:.2}}),/double support/);
+console.log('Paper upright gait and planted-foot stopping transition: passed');

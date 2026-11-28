@@ -759,7 +759,7 @@
 
   // Steady level-ground planar gait. A stride is one complete cycle of either foot.
   // World/stage coordinates, not screen-relative offsets: stance targets stay fixed.
-  const walkCycle = (actor,{origin=[0,0],stride,period=1.2,stance=.62,lift,bob,armSwing=18,direction=1,scale=1}={})=>{
+  const walkCycle = (actor,{origin=[0,0],stride,period=1.2,stance=.62,lift,bob,armSwing=18,direction=1,scale=1,heightRatio,stop}={})=>{
     if(!actor||typeof actor.solve!=='function'||typeof actor.evaluate!=='function'||!actor.dimensions) fail('walkCycle needs a character rig');
     if(!Array.isArray(origin)||origin.length!==2) fail('walkCycle origin needs [x,groundY]');
     const [x0,ground]=origin.map(v=>num(v,'walkCycle origin'));
@@ -773,37 +773,74 @@
     if(scale<=0||leg<=0||footHeight<=0||stride<=0||period<=0||stance<=.5||stance>=1||lift<0||bob<0||armSwing<0||armSwing>90||![1,-1].includes(direction)) fail('walkCycle invalid gait parameters');
     const speed=num(stride/period,'walkCycle speed');
     // Conservative reach envelope: both legs remain within their annulus.
-    const height=leg*.88;
+    const adaptive=heightRatio!==undefined;
+    if(adaptive){num(heightRatio,'walkCycle height ratio');if(heightRatio<=0||heightRatio>=1) fail('walkCycle invalid height ratio');}
+    const height=leg*(heightRatio??.88);
     const maxHorizontal=stride*Math.max(stance/2,1-stance/2);
-    if(Math.hypot(maxHorizontal,height+bob)>leg||height-bob-lift<=Math.abs(thigh-shin)*scale)
+    const limit=leg*.995, softness=leg*.005, inner=Math.abs(thigh-shin)*scale;
+    if((adaptive?(maxHorizontal>=limit||Math.sqrt(Math.max(0,limit*limit-maxHorizontal*maxHorizontal))-lift-softness<=inner):Math.hypot(maxHorizontal,height+bob)>leg)||height-bob-lift<=inner)
       fail('walkCycle stride/lift/bob exceeds conservative leg reach');
     const smooth=u=>u*u*(3-2*u);
+    let braking=null;
+    if(stop!==undefined){
+      if(!stop||typeof stop!=='object'||Array.isArray(stop)) fail('walkCycle invalid stop');
+      const {at:finish,duration=.6,settle=.4}=stop;
+      [finish,duration,settle].forEach(v=>num(v,'walkCycle stop'));
+      const begin=finish-duration/2,end=finish+duration/2;
+      const phase=finish/period-Math.floor(finish/period);
+      if(duration<=0||settle<=0||begin<0||!Number.isFinite(end+settle)||!(phase<stance&&(phase+.5)%1<stance))
+        fail('walkCycle stop needs double support and positive transition durations');
+      braking={finish,duration,settle,begin,end};
+    }
+    const smoothMax=(a,b)=>a+(b-a+Math.hypot(a-b,softness))/2;
     const at=t=>{
       num(t,'walkCycle time');
-      const cycle=num(t/period,'walkCycle phase');
+      let time=t,rate=1,rest=0;
+      if(braking&&t>=braking.begin){
+        const {begin,end,duration,finish,settle}=braking;
+        const u=Math.min(1,(t-begin)/duration);
+        time=t>=end?finish:begin+duration*(u-u*u/2);
+        rate=1-u;rest=smooth(Math.max(0,Math.min(1,(t-end)/settle)));
+      }
+      const cycle=num(time/period,'walkCycle phase');
       const phase=cycle-Math.floor(cycle);
-      const x=num(x0+direction*speed*t,'walkCycle root x');
-      const y=ground-footHeight-height-bob*Math.cos(4*Math.PI*phase);
-      let pose={pelvis:{offset:[x,y],scale},torso:{angle:direction*-4}};
-      const feet={};
+      const x=num(x0+direction*speed*time,'walkCycle root x');
+      const feet={},targets=[];
+      let y=ground-footHeight-(height+bob*Math.cos(4*Math.PI*phase))*(adaptive?1-rest:1)-leg*.98*(adaptive?rest:0);
+      if(!adaptive&&rest>0) y=ground-footHeight-leg*.98;
       for(const [side,offset,sign] of [['left',0,1],['right',.5,-1]]){
         const q=cycle+offset,k=Math.floor(q),u=q-k;
         const planted=u<stance;
         const v=planted?0:(u-stance)/(1-stance);
         const px=x0+direction*stride*(k-offset+stance/2+smooth(v))+sign*hip*scale;
         const py=ground-footHeight-lift*Math.sin(Math.PI*v)**2;
+        targets.push({side,planted,px,py,u,sign});
+        if(adaptive||rest>0){
+          const dx=px-x-sign*hip*scale;
+          y=smoothMax(y,py-Math.sqrt(Math.max(0,limit*limit-dx*dx)));
+        }
+      }
+      // Keep legacy steady gait unchanged; stopping without adaptive height
+      // blends toward the same reach-aware standing height.
+      if(!adaptive&&rest>0){
+        const base=ground-footHeight-height-bob*Math.cos(4*Math.PI*phase);
+        y=base*(1-rest)+y*rest;
+      }
+      let pose={pelvis:{offset:[x,y],scale},torso:{angle:direction*-4*(1-rest)}};
+      for(const {side,planted,px,py,u} of targets){
         const solved=actor.solve(pose,{side,limb:'leg',target:[px,py],bend:direction});
+        if((adaptive||braking)&&!solved.reachable) fail('walkCycle unreachable pose');
         pose=solved.pose;
         // Counter-rotate the foot to keep its sole horizontal in stage coordinates.
         pose[side+'-foot']={angle:-pose[side+'-thigh'].angle-pose[side+'-shin'].angle};
         const swing=direction*armSwing*Math.cos(2*Math.PI*u);
-        pose[side+'-upper-arm']={angle:swing};
-        pose[side+'-forearm']={angle:-direction*12};
+        pose[side+'-upper-arm']={angle:swing*(1-rest)};
+        pose[side+'-forearm']={angle:-direction*12*(1-rest)};
         feet[side]={planted,target:[px,py],reachable:solved.reachable,error:solved.error};
       }
       const p=actor.evaluate(pose);
       for(const side of ['left','right']) feet[side].sole=p.anchor(side+'-foot','sole');
-      return {pose,feet,phase,speed,root:[x,y]};
+      return {pose,feet,phase,speed:speed*rate,root:[x,y]};
     };
     return {at,speed,stride,period};
   };
