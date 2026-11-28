@@ -37,7 +37,7 @@ function renderPaperScene(id) {
     lines.append(group);
   }
   stage.append(lines);
-  for (const { id, art, position:{x,y,width}, layer, label } of scene.objects) {
+  for (const { id, art, dynamic, position:{x,y,width}, layer, label } of scene.objects) {
     if (![x,y,width,layer].every(Number.isFinite) || x<0 || x>100 || y<0 || y>100 || width<=0 || width>100) {
       throw new Error('Invalid position: ' + id);
     }
@@ -47,7 +47,9 @@ function renderPaperScene(id) {
     node.dataset.required = id;
     node.className = 'piece piece--' + (art || 'annotation');
     Object.assign(node.style, {left:x+'%',top:y+'%',width:width+'%',zIndex:layer});
-    if (art) {
+    if (dynamic) {
+      node.append(svg('svg', {class:'piece-art',viewBox:dynamic.viewBox,'aria-hidden':'true'}));
+    } else if (art) {
       const symbol = document.getElementById(art);
       if (symbol?.localName !== 'symbol') throw new Error('Missing SVG symbol: ' + art);
       const image = svg('svg', {class:'piece-art',viewBox:symbol.getAttribute('viewBox'),'aria-hidden':'true'});

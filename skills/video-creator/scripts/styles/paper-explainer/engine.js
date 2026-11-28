@@ -166,6 +166,9 @@
     const tracks = {}, reveals = {}, ambient = {}, cues = [];
     const P = (id, art, x, y, width, layer, extra = {}) => ({id, art, position: {x, y, width}, layer, label: extra.label ?? null, ...extra});
     const plate = (id, art, layer, mode = 'cover') => P(id, art, 50, 50, 100, layer, {plate: mode});
+    // Fixed viewport, time-dependent SVG children from trusted topic source.
+    const dynamic = (id, viewBox, draw, x, y, width, layer, extra = {}) =>
+      P(id, null, x, y, width, layer, {...extra, art:null, dynamic:{viewBox,draw}});
     const motion = {
       key, N,
       track: (id, keys) => { tracks[id] = keys; },
@@ -190,7 +193,7 @@
     const byId = Object.fromEntries(shots.map(s => [s.id, {id: s.id, start: s.start, end: s.end, phrases: s.range}]));
     const ctx = {phrases, duration, shots: shots.map(s => byId[s.id]), shot: id => byId[id] ?? fail(`unknown shot ${id}`),
       plan: plan ? {shots: plan.shots, cues: plan.cues} : null, cue: id => speech(id).seconds,
-      art: globalThis.paperShotArt, motion, P, plate};
+      art: globalThis.paperShotArt, motion, P, plate, dynamic};
     // P018.6: presentation facts for topic layout. Framed: the whole stage is text-safe (layouts are unchanged).
     ctx.presentation = pres ? 'full-bleed' : 'framed';
     ctx.safe = pres ? pres.safe() : {left: 0, top: 0, right: 100, bottom: 100, captionTop: 100};
@@ -208,6 +211,13 @@
     for (const [id, scene] of Object.entries(scenes)) {
       if (!Array.isArray(scene.objects)) fail(`scene ${id}: objects required`);
       for (const o of scene.objects) {
+        if (o.dynamic !== undefined) {
+          const d = o.dynamic;
+          const vb = typeof d?.viewBox === 'string' && d.viewBox.trim() ? d.viewBox.trim().split(/[ ,]+/).map(Number) : [];
+          if (o.art || typeof d?.draw !== 'function' || vb.length !== 4 || !vb.every(isNum) || vb[2]<=0 || vb[3]<=0)
+            fail(`scene ${id}: invalid dynamic object ${o.id}`);
+          if (o.plate && o.plate !== 'exact') fail(`scene ${id}: dynamic plate must be exact`);
+        }
         if (o.art && document.getElementById(o.art)?.localName !== 'symbol') fail(`scene ${id}: missing symbol ${o.art}`);
         if (o.plate && !['cover', 'exact'].includes(o.plate)) fail(`scene ${id}: plate mode must be cover or exact`);
         if (!Number.isInteger(o.layer) || o.layer < 0 || o.layer >= parallax.length) fail(`scene ${id}: object ${o.id} layer must be 0–5`);
@@ -245,9 +255,11 @@
     const stage = document.querySelector('.story-stage');
     const caption = document.querySelector('footer');
     let active = -1, camera, overlayDissolve, overlayPaper, W, H;
+    const dynamicNodes = new Map();
 
     function setup(index) {
       const shot = shots[index];
+      dynamicNodes.clear();
       globalThis.renderPaperScene(shot.scene);
       camera = document.createElement('div');
       camera.className = 'shot-camera';
@@ -266,6 +278,7 @@
       stage.append(camera, vignette, grain, overlayDissolve, overlayPaper);
       for (const object of globalThis.paperScenes[shot.scene].objects) {
         const node = document.getElementById(object.id);
+        if (object.dynamic) dynamicNodes.set(object.id, {svg:node.querySelector('svg'), last:null});
         if (object.plate) {
           node.classList.add('plate', 'flat', object.plate);
           node.querySelector('svg').setAttribute('preserveAspectRatio', 'xMidYMid slice');
@@ -297,6 +310,16 @@
       const [cx, cy, zoom] = interp(shot.camera, t);
       camera.style.transform = `scale(${zoom}) translate(${-cx * W}px,${-cy * H}px)`;
       for (const object of globalThis.paperScenes[shot.scene].objects) {
+        if (object.dynamic) {
+          const state = dynamicNodes.get(object.id);
+          // Absolute clamped seconds; the topic must not depend on previous frames.
+          const body = object.dynamic.draw(t);
+          if (typeof body !== 'string' || body.length > 65536) fail(`dynamic ${object.id}: expected SVG string of at most 65536 characters`);
+          if (body !== state.last) {
+            state.svg.innerHTML = body;
+            state.last = body;
+          }
+        }
         const v = [...(tracks[object.id] ? interp(tracks[object.id], t) : N)];
         v[4] = Math.min(1, Math.max(0, v[4]));   // P022.2: overshoot/settle curves act on every channel; opacity stays in [0, 1] (CSS clamps it anyway)
         const a = ambient[object.id] ?? {};
