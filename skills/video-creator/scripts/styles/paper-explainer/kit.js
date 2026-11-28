@@ -258,11 +258,12 @@
 
   // Level world camera trajectory: absolute timeline seconds, no accumulated state.
   // Each key is a complete pose; yaw is explicitly unwrapped by the author.
-  const cameraPath = ({cx,horizon,focal,near=.1,keys,target}={}) => {
+  const cameraPath = ({cx,horizon,focal,near=.1,keys,target,interpolation='segment'}={}) => {
     [cx,horizon,focal,near].forEach(v=>num(v,'cameraPath projection'));
     if(focal<=0||near<=0) fail('cameraPath positive focal and near required');
     if(target!==undefined&&typeof target!=='function') fail('cameraPath target must be a function');
     if(!Array.isArray(keys)||!keys.length||keys.length>256) fail('cameraPath needs 1..256 keys');
+    if(!['segment','continuous'].includes(interpolation)) fail('cameraPath unknown interpolation');
     const curves={linear:p=>p,smooth:p=>p*p*(3-2*p)};
     const frames=keys.map((k,i)=>{
       if(!k||typeof k!=='object'||Array.isArray(k)) fail('cameraPath invalid key');
@@ -272,16 +273,45 @@
       if(!Object.hasOwn(curves,ease)) fail('cameraPath unknown ease');
       return {t,x,z,eyeHeight,yaw,ease};
     });
+    // Shape-preserving cubic Hermite per coordinate. Weighted harmonic slopes
+    // accommodate uneven key spacing and avoid overshoot on monotone segments.
+    // End slopes are zero to match the clamped portions of the path.
+    const channels=['x','z','eyeHeight','yaw'];
+    const slopes=interpolation==='continuous'?Object.fromEntries(channels.map(name=>{
+      const h=frames.slice(1).map((b,i)=>num(b.t-frames[i].t,'cameraPath interval'));
+      const d=h.map((dt,i)=>num((frames[i+1][name]-frames[i][name])/dt,'cameraPath slope'));
+      const m=frames.map((_,i)=>{
+        if(i===0||i===frames.length-1) return 0;
+        const a=d[i-1],b=d[i];
+        if(a===0||b===0||Math.sign(a)!==Math.sign(b)) return 0;
+        // Normalize weights and slopes before the harmonic mean.
+        const maxH=Math.max(h[i-1],h[i]), left=h[i-1]/maxH,right=h[i]/maxH;
+        const w=(2*right+left)/(3*(left+right));
+        const low=Math.min(Math.abs(a),Math.abs(b));
+        return num(Math.sign(a)*low/(w*(low/Math.abs(a))+(1-w)*(low/Math.abs(b))),'cameraPath tangent');
+      });
+      return [name,m];
+    })):null;
     const poseAt=t=>{
       num(t,'cameraPath time');
-      let a=frames[0],b=a,p=0;
+      let a=frames[0],b=a,p=0,segment=-1;
       if(t>=frames.at(-1).t) a=b=frames.at(-1);
       else if(t>frames[0].t){
         const i=frames.findIndex(k=>k.t>=t);
-        a=frames[i-1];b=frames[i];p=curves[b.ease]((t-a.t)/(b.t-a.t));
+        a=frames[i-1];b=frames[i];segment=i-1;
+        const u=(t-a.t)/(b.t-a.t);
+        p=slopes?u:curves[b.ease](u);
       }
       const lerp=(u,v)=>num(u*(1-p)+v*p,'cameraPath interpolated value');
       const pose={x:lerp(a.x,b.x),z:lerp(a.z,b.z),eyeHeight:lerp(a.eyeHeight,b.eyeHeight),yaw:lerp(a.yaw,b.yaw)};
+      if(slopes&&segment>=0){
+        const u=p,u2=u*u,u3=u2*u,h=b.t-a.t;
+        for(const name of channels){
+          const m=slopes[name];
+          const y=(2*u3-3*u2+1)*a[name]+(u3-2*u2+u)*h*m[segment]+(-2*u3+3*u2)*b[name]+(u3-u2)*h*m[segment+1];
+          pose[name]=num(y,'cameraPath cubic value');
+        }
+      }
       if(target){
         // Target is sampled at the requested absolute time, even outside the camera keys.
         const q=target(t);

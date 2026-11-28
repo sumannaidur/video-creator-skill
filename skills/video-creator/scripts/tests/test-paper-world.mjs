@@ -130,3 +130,40 @@ assert.throws(()=>cameraPath({...config,keys:[k],target:()=>[0,0]}).at(0),/too c
 assert.throws(()=>cameraPath({...config,keys:[k],target:()=>[NaN,2]}).at(0),/number/);
 assert.throws(()=>path.at(Infinity),/number/);
 console.log('Paper continuous camera paths and target tracking: passed');
+
+const continuous=cameraPath({cx:500,horizon:200,focal:400,interpolation:'continuous',keys:[
+  {t:0,x:0,z:0,eyeHeight:2,yaw:350},
+  {t:2,x:4,z:3,eyeHeight:3,yaw:360},
+  {t:5,x:7,z:9,eyeHeight:4,yaw:380},
+  {t:9,x:9,z:12,eyeHeight:3,yaw:390}
+]});
+const eps=1e-5;
+for(const time of [2,5]){
+  const a=continuous.poseAt(time-eps),b=continuous.poseAt(time),c=continuous.poseAt(time+eps);
+  for(const name of ['x','z','eyeHeight','yaw']){
+    const left=(b[name]-a[name])/eps,right=(c[name]-b[name])/eps;
+    assert.ok(Math.abs(left-right)<.001,name+' velocity continuity');
+  }
+  assert.ok((c.x-a.x)/(2*eps)>.1,'nonzero intermediate velocity');
+}
+for(const [lo,hi] of [[0,2],[2,5],[5,9]]){
+  const a=continuous.poseAt(lo),b=continuous.poseAt(hi);
+  for(let i=0;i<=100;i++){
+    const p=continuous.poseAt(lo+(hi-lo)*i/100);
+    for(const name of ['x','z','eyeHeight','yaw'])
+      assert.ok(p[name]>=Math.min(a[name],b[name])-1e-9&&p[name]<=Math.max(a[name],b[name])+1e-9,'no coordinate overshoot');
+  }
+}
+close(continuous.poseAt(2).x,4);
+close(continuous.poseAt(5).yaw,380);
+assert.ok(continuous.poseAt(eps).x/eps<.001);
+assert.ok((9-continuous.poseAt(9-eps).x)/eps<.001);
+const saved=JSON.stringify(continuous.poseAt(3.2));
+continuous.poseAt(8);
+assert.equal(JSON.stringify(continuous.poseAt(3.2)),saved);
+assert.throws(()=>cameraPath({...config,keys:[k],interpolation:'bad'}),/interpolation/);
+const one=cameraPath({...config,keys:[k],interpolation:'continuous'});
+close(one.poseAt(100).eyeHeight,2);
+const two=cameraPath({...config,keys:[k,{...k,t:4,x:4}],interpolation:'continuous'});
+close(two.poseAt(1).x,.625);
+console.log('Paper continuous camera interpolation: passed');
