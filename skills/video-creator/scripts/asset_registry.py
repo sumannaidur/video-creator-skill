@@ -247,7 +247,6 @@ class Registry:
                 and marker.get("version") == 1, "initialized project required")
         parent = project / "asset-snapshots"
         require(not parent.is_symlink() and parent.resolve().parent == project, "unsafe snapshot directory")
-        parent.mkdir(exist_ok=True)
         name = identity(asset_id, version)
         destination = parent / name
         require(not destination.exists() and not destination.is_symlink(), "snapshot already exists")
@@ -271,6 +270,8 @@ class Registry:
             pending.extend((d["id"], d["version"], d["sha256"]) for d in data["metadata"]["dependencies"])
         # A private staging directory is invisible to readers until publication. A dedicated
         # exclusive lock prevents cooperating checkout writers from overwriting each other.
+        require(not parent.is_symlink() and parent.resolve().parent == project, "unsafe snapshot directory")
+        parent.mkdir(exist_ok=True)
         lock = parent / ".checkout-lock"
         try:
             fd = os.open(lock, os.O_CREAT | os.O_EXCL | os.O_WRONLY, 0o600)
