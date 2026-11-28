@@ -166,7 +166,49 @@
       const q = project(x, z);
       return '<g transform="translate(' + f(q.x) + ' ' + f(q.y) + ') scale(' + f(q.scale) + ')">' + markup + '</g>';
     };
-    return {project, polygon, upright};
+    // Grounded contact and directional cast shadows in world coordinates. A capsule-like
+    // silhouette is an approximation for a standing object, not physical light simulation.
+    // Draw on the receiving plane before the occluding art. No filters, IDs or per-frame textures.
+    const shadow = (x, z, {radius = .25, height = 1, direction = [1, .5],
+      lengthPerHeight = 1, softness = .25, opacity = .28, color = '#302b26'} = {}) => {
+      [x,z,radius,height,lengthPerHeight,softness,opacity].forEach(v => num(v, 'shadow parameter'));
+      if (radius <= 0 || height < 0 || lengthPerHeight < 0 || softness < 0 ||
+          softness > 1 || opacity < 0 || opacity > 1) fail('invalid ground shadow range');
+      if (!Array.isArray(direction) || direction.length !== 2) fail('shadow direction must be [dx,dz]');
+      direction.forEach(v => num(v, 'shadow direction'));
+      const norm = Math.hypot(...direction);
+      if (!Number.isFinite(norm) || norm <= 0) fail('shadow direction must be nonzero');
+      if (typeof color !== 'string' || !/^#[0-9a-f]{6}$/i.test(color)) fail('shadow color must be #rrggbb');
+      const dx = direction[0]/norm, dz = direction[1]/norm;
+      const length = height * lengthPerHeight;
+      num(length, 'shadow length');
+      // Convex projected capsules with fixed vertex count; decreasing opacity toward edge.
+      // For a zero-length shadow this reduces to concentric contact footprints.
+      const capsule = (r, l) => {
+        const points = [];
+        for (let i = 0; i <= 8; i++) {
+          const theta = -Math.PI/2 + Math.PI*i/8;
+          const u = Math.cos(theta)*r, v = Math.sin(theta)*r;
+          points.push([x+dx*(l+u)-dz*v,z+dz*(l+u)+dx*v]);
+        }
+        for (let i = 0; i <= 8; i++) {
+          const theta = Math.PI/2 + Math.PI*i/8;
+          const u = Math.cos(theta)*r, v = Math.sin(theta)*r;
+          points.push([x+dx*u-dz*v,z+dz*u+dx*v]);
+        }
+        return polygon(points);
+      };
+      const layers = [[1+softness,.22],[1+softness*.5,.30],[1,.48]];
+      let out = '';
+      for (const [spread, alpha] of layers) {
+        const d = capsule(radius*spread,length);
+        out += '<path d="'+d+'" fill="'+color+'" opacity="'+f(opacity*alpha)+'"/>';
+      }
+      // A compact darker footprint anchors the object even with a long cast shadow.
+      out += '<path d="'+capsule(radius*.72,0)+'" fill="'+color+'" opacity="'+f(opacity*.65)+'"/>';
+      return out;
+    };
+    return {project, polygon, upright, shadow};
   };
 
   // ---------- P018.4 construction: recognizable objects built from components (not decorated basic shapes) ----------
