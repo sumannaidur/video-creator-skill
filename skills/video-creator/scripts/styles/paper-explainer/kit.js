@@ -211,6 +211,50 @@
     return {project, polygon, upright, shadow};
   };
 
+  // A level camera expressed in shared world coordinates. Positive yaw looks toward +x.
+  // The old groundPlane remains unchanged; shadows are constructed in camera coordinates.
+  const worldCamera = ({x = 0, z = 0, yaw = 0, ...settings} = {}) => {
+    [x,z,yaw].forEach(v => num(v, 'world camera parameter'));
+    const angle = (yaw % 360) * Math.PI / 180;
+    const c = Math.cos(angle), s = Math.sin(angle);
+    const g = groundPlane(settings);
+    const direction = (dx,dz) => [c*dx-s*dz,s*dx+c*dz];
+    const local = (wx,wz) => {
+      num(wx,'world x'); num(wz,'world z');
+      const q = direction(wx-x,wz-z);
+      q.forEach(v=>num(v,'camera coordinate'));
+      return q;
+    };
+    const project = (wx,wz,h=0) => g.project(...local(wx,wz),h);
+    const polygon = points => {
+      if (!Array.isArray(points) || points.length<3 || points.length>256)
+        fail('worldCamera polygon needs 3..256 points');
+      return g.polygon(points.map(p=>{
+        if (!Array.isArray(p)||p.length!==2) fail('worldCamera footprint point must be [x,z]');
+        return local(...p);
+      }));
+    };
+    const upright = (wx,wz,markup) => g.upright(...local(wx,wz),markup);
+    const shadow = (wx,wz,{direction:dir=[1,.5],...options}={}) => {
+      if (!Array.isArray(dir)||dir.length!==2) fail('shadow direction must be [dx,dz]');
+      dir.forEach(v=>num(v,'shadow direction'));
+      return g.shadow(...local(wx,wz),{...options,direction:direction(...dir)});
+    };
+    // Author a planar face from world points. No clipping, culling or automatic depth sort.
+    const face = points => {
+      if (!Array.isArray(points)||points.length<3||points.length>256)
+        fail('worldCamera face needs 3..256 points');
+      return 'M'+points.map(p=>{
+        if (!Array.isArray(p)||p.length!==3) fail('worldCamera face point must be [x,z,h]');
+        const q=project(...p);
+        return f(q.x)+' '+f(q.y);
+      }).join('L')+'Z';
+    };
+    const depth = (wx,wz) => local(wx,wz)[1];
+    return {project,polygon,upright,shadow,face,depth};
+  };
+
+
   // ---------- P018.4 construction: recognizable objects built from components (not decorated basic shapes) ----------
   // Reference characteristics (P018.1 audit, Painted Story / Paper Collage): buildings with windows, frames, sills,
   // shutters and roof tiles; stone and brick masonry; layered foliage; water with depth and ripples; characters with
@@ -473,5 +517,5 @@
   }
 
   globalThis.paperKit = {art: {fibres, sheet, layered, castShadow, ring, connector, tileTexture, parts,
-    light, mix, cut, gouache, wave, ridge, strata, sky, haze, textures, groundPlane, masonry, facade, foliage, water, figure, deckle, penumbra, piece, folded, vellum, recede}, css, LABEL_STYLES, motion};
+    light, mix, cut, gouache, wave, ridge, strata, sky, haze, textures, groundPlane, worldCamera, masonry, facade, foliage, water, figure, deckle, penumbra, piece, folded, vellum, recede}, css, LABEL_STYLES, motion};
 })();
