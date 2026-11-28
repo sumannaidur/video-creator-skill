@@ -17,7 +17,7 @@ class Assets(unittest.TestCase):
         self.root = Path(self.temp.name)
         self.reg = Registry(self.root / "library")
         self.js = self.root / "source.js"
-        self.js.write_text("function wheel(r) { return r * 2; }\n", encoding="utf-8")
+        self.js.write_bytes(b"function wheel(r) { return r * 2; }\r\n")
 
     def meta(self, asset_id="object.wheel", version="1.0.0", deps=None):
         return dict(id=asset_id, version=version, category="object", description="Wooden wheel",
@@ -31,8 +31,8 @@ class Assets(unittest.TestCase):
         self.assertEqual(len(self.reg.search("mill rotate", True)), 1)
         self.reg.promote("object.wheel", "1.0.0", "owner", "Reviewed actual frames; test fixture")
         self.assertEqual(self.reg.search("mill")[0]["sha256"], item["sha256"])
-        self.assertEqual(self.reg.source("object.wheel", "1.0.0", item["sha256"]),
-                         self.js.read_text(encoding="utf-8"))
+        self.assertEqual(self.reg.source("object.wheel", "1.0.0", item["sha256"]).encode("utf-8"),
+                         self.js.read_bytes())
         with self.assertRaises(AssetError):
             self.reg.promote("object.wheel", "1.0.0", "owner", "duplicate")
 
