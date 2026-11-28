@@ -53,6 +53,27 @@ python scripts/plan.py resolve  <project> [--plan plan/creative-plan.json] [--ou
 - The timeline must be a verified output of the completed narration stage, and `narration.sha256` must match it. When narration changes, the ledger invalidates the plan stage and the old plan is refused until you review it against the new narration.
 - Only contract fields are read (`audio`, `segments`, word and phrase records with `source` and `segment`), so any provider's timeline works. The resolved plan keeps the timeline and audio hashes, the timing method and sources, and the review status (`unreviewed` stays unreviewed).
 
+## Cinematic direction (new productions)
+
+Set top-level `"cinematic": true` on new plans. Legacy v1 plans remain valid without it. Add a `direction` object to every shot:
+
+```json
+{"action": "hand places cup on counter",
+ "environment": "street tea stall, foreground jars, distant pedestrians",
+ "composition": "cup and hand in focus, clear space for captions",
+ "viewpoint": "counter-height close-up, static",
+ "lighting": "warm daylight from left, contact shadow under cup",
+ "performance": "wrist follows the cup until contact, then releases",
+ "sound": "market ambience continues; cup contact follows visible impact",
+ "continuity": "same cup, counter and screen direction as previous shot",
+ "technique": "original layered SVG with articulated hand",
+ "assets": ["a1"]}
+```
+
+Use concise topic-specific decisions, not generic adjectives. Each field is a nonempty string; environment, viewpoint, lighting, performance and sound may instead be an object such as `{"omit":"abstract chart, no character"}`. Action, composition, continuity and technique always require text (a static hold or deliberate cut can be the action or continuity). Assets is a list of existing plan asset IDs, empty if none. Do not repeat timed camera keys or cues: use existing anchors for the actual timing. Direction is editorial metadata, not automatic camera, rig, sound or renderer support.
+
+Group adjacent shots into narrative sequences in the creative-decisions note. Sketch the entire sequence in shot order before detailed artwork, including entry/exit states, reusable assets, sound perspective and the visible payoff. Reuse sets and character identities across views; use alternate artwork or real geometry for genuine viewpoint changes. Plan silence when useful. Choose the cheapest technique that meets the intended visual quality, and do not promise unavailable capabilities.
+
 ## Plan the visual argument
 
 Use the existing plan and a brief `creative-decisions` note. Sketch the opening, the change that explains the mechanism, and the payoff. These are story beats and may share a shot.
@@ -84,7 +105,7 @@ Every curve starts at 0 and ends exactly at 1, so key values, speech-cue timing 
 
 ## Keyframe review gate
 
-Before any preview or full render, inspect the rendered hook, change and payoff at delivery aspect ratio and phone size with sound off. Read them first without relying on captions. Use the selected style's review criteria for the medium.
+Before any preview or full render, inspect representative frames from every shot in sequence at delivery aspect ratio and phone size with sound off, including the hook, change and payoff. Record missing or unreviewed shots explicitly; do not advance on a partial review. Read them first without relying on captions. Use the selected style's review criteria for the medium.
 
 | Check | Evidence to record |
 |---|---|

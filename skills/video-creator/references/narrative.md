@@ -19,7 +19,7 @@ For each segment, record:
 - The question it opens or the promise it pays off.
 - The single idea the viewer should keep from it.
 
-This map drives shot planning later. It was the most useful decision aid in P013, where the conclusion paid off a «?» from the mid-video turn.
+For each segment, also sketch what the viewer sees change, what establishes context and what can be understood without words. Develop this alongside the spoken text before synthesis; revise together if the visual argument is weak. This map drives shot planning later. It was the most useful decision aid in P013, where the conclusion paid off a «?» from the mid-video turn.
 
 ## Duration control
 

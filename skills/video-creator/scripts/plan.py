@@ -131,6 +131,33 @@ class Resolver:
                     timing_source=record["source"], edge=edge, offset_ms=offset)
 
 
+DIRECTION_FIELDS = ("action", "environment", "composition", "viewpoint", "lighting",
+                    "performance", "sound", "continuity", "technique")
+
+
+def validate_direction(shot, assets, required):
+    """Editorial intent only; never imply that a renderer implements these directions."""
+    sid = shot["id"]
+    if "direction" not in shot and not required:
+        return
+    direction = shot.get("direction")
+    if not isinstance(direction, dict):
+        raise PlanError("invalid-direction", f"shot {sid}: direction must be an object")
+    for key in DIRECTION_FIELDS:
+        value = direction.get(key)
+        if isinstance(value, str) and value.strip():
+            continue
+        # Action, composition, continuity and technique are essential even for abstract shots.
+        if key not in ("action", "composition", "continuity", "technique") and isinstance(value, dict) and set(value) == {"omit"} and isinstance(value["omit"], str) and value["omit"].strip():
+            continue
+        raise PlanError("invalid-direction", f"shot {sid}: direction.{key} needs a specific intent or permitted omission")
+    refs = direction.get("assets")
+    if not isinstance(refs, list) or any(not isinstance(a, str) or a not in assets for a in refs):
+        raise PlanError("invalid-direction", f"shot {sid}: direction.assets must list declared asset IDs (or be empty)")
+    if len(set(refs)) != len(refs):
+        raise PlanError("invalid-direction", f"shot {sid}: duplicate direction asset")
+
+
 def validate_plan(plan, timeline, styles):
     """Return the resolved plan or raise PlanError. Checks structure, references, coverage, ordering and bounds."""
     if plan.get("schema") != SCHEMA or plan.get("version") != VERSION:
@@ -162,15 +189,19 @@ def validate_plan(plan, timeline, styles):
     shots = plan.get("shots")
     if not isinstance(shots, list) or not shots:
         raise PlanError("invalid-plan", "shots must be a non-empty list (the count is yours)")
+    cinematic = plan.get("cinematic", False)
+    if not isinstance(cinematic, bool):
+        raise PlanError("invalid-direction", "cinematic must be a boolean")
     resolved, starts, seen, cue_ids = [], {}, set(), set()
     for i, shot in enumerate(shots):
         sid = shot.get("id")
         if not sid or sid in seen or not shot.get("purpose"):
             raise PlanError("invalid-plan", f"shot {i}: needs a unique id and a purpose")
         seen.add(sid)
-        start = r.anchor(shot["start"], f"shot {sid} start") if i else dict(sample=0, seconds=0.0, kind="bounds", label="narration-start", timing_source="narration_bounds")
+        validate_direction(shot, assets, cinematic)
         if i and "start" not in shot:
             raise PlanError("invalid-plan", f"shot {sid}: shots after the first need a start anchor")
+        start = r.anchor(shot["start"], f"shot {sid} start") if i else dict(sample=0, seconds=0.0, kind="bounds", label="narration-start", timing_source="narration_bounds")
         if i and start["sample"] <= resolved[-1]["start"]["sample"]:
             raise PlanError("cue-order", f"shot {sid} starts at or before the previous shot")
         starts[sid] = start["sample"]

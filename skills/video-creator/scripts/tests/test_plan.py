@@ -173,6 +173,26 @@ code, out, err = run_plan(P, plan(tl, [dict(id="x", purpose="p")], extensions={"
                                                                                "3d-explainer": {"note": "considered, not chosen"}}))
 check("style-specific extensions pass through the common contract unchanged", code == 0, err=err[-120:])
 
+# Cinematic intent remains metadata; original anchor resolution and legacy plans are unchanged.
+direction = dict(action="shade moves across the ground", environment="tree beside a path",
+                 composition="tree and shadow dominate", viewpoint="wide, static",
+                 lighting="sun from left", performance={"omit": "no characters"},
+                 sound="leaves rustle", continuity="shadow connects to next beat",
+                 technique="layered SVG", assets=["a1"])
+cin = plan(tl, [dict(id="x", purpose="p", direction=direction)], cinematic=True)
+code, out, err = run_plan(P, cin, "resolve")
+resolved_cin = json.loads((P / "plan/resolved-plan.json").read_text(encoding="utf-8")) if code == 0 else {}
+check("cinematic direction survives resolution", code == 0 and resolved_cin.get("shots", [{}])[0].get("direction") == direction, err=err[-120:])
+for name, bad in [
+    ("missing shot direction", plan(tl, [dict(id="x", purpose="p")], cinematic=True)),
+    ("unknown asset", plan(tl, [dict(id="x", purpose="p", direction=direction | {"assets": ["ghost"]})], cinematic=True)),
+    ("empty omission reason", plan(tl, [dict(id="x", purpose="p", direction=direction | {"performance": {"omit": " "}})], cinematic=True)),
+    ("omitted essential action", plan(tl, [dict(id="x", purpose="p", direction=direction | {"action": {"omit": "none"}})], cinematic=True)),
+    ("invalid opt-in", cin | {"cinematic": "true"}),
+]:
+    code, out, err = run_plan(P, bad)
+    check("rejects cinematic " + name, code == 1 and "[invalid-direction]" in err, err=err[-120:])
+
 # Stale narration: a plan written against another narration, and narration changing after the plan completed.
 stale = plan(tl, three) | {"narration": dict(timeline="narration/narration.timeline.json", sha256="0" * 64)}
 code, out, err = run_plan(P, stale)

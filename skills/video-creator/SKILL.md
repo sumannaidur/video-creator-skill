@@ -26,9 +26,9 @@ Load each reference only when you reach its stage.
 | # | Stage | You (agent) | Tools | Reference |
 |---|---|---|---|---|
 | 1 | Research | Gather evidence, build a claim ledger, flag uncertainty | none required | [research](references/research.md) |
-| 2 | Script | Write native, conversational narration with a hook, progression and payoff | duration measurement (after stage 3) | [narrative](references/narrative.md) |
+| 2 | Script | Develop spoken and visual narratives together; write native, conversational narration with a hook, progression and payoff | duration measurement (after stage 3) | [narrative](references/narrative.md) |
 | 3 | Narration | Choose the provider and voice; revise the script when the measured length is off target | `scripts/narration/stage.py` synthesizes and joins clips, resolves model-predicted timing, measures audio duration and updates the ledger. Human acoustic alignment review is separate. | [narration](references/narration.md), locale file |
-| 4 | Creative plan | Design the visual hook, transformation and payoff before choosing artwork or effects. Record cues and claim guardrails. | `scripts/plan.py` (validate, resolve); `render.mjs --plan` | [creative direction](references/creative-direction.md) |
+| 4 | Creative plan | Design the visual hook, transformation and payoff before choosing artwork or effects. Use the cinematic shot contract; record cues and claim guardrails. | `scripts/plan.py` (validate, resolve); `render.mjs --plan` | [creative direction](references/creative-direction.md) |
 | 5 | Visual production | Build topic-specific artwork and motion. Apply the keyframe review gate before advancing to preview or final render. | shot engine, visual preflight, checkpointed renderer, frame validation | [visual production](references/visual-production.md), style file |
 | 6 | Sound | Decide music, effects and levels; write a mix spec | procedural assets, mixer, sync check | [sound design](references/sound-design.md) |
 | 7 | Review and delivery | Run all gates, assemble the review packet, report honestly | `scripts/qa.py` (unified QA report, delivery report, human review checklist), `scripts/captions.py` (SRT/VTT) | [quality review](references/quality-review.md) |

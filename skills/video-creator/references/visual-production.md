@@ -31,7 +31,7 @@ Author each topic as a **topic module**: original inline SVG artwork plus motion
 1. Build one shot at a time. Render keyframes only with the packaged renderer (`scripts/render.mjs --keys-only`; see [rendering](rendering.md)). Cue, layout and repeatability checks run automatically.
 2. Apply the [keyframe review gate](creative-direction.md#keyframe-review-gate) before advancing. Follow the approved correction budget and stop point.
 3. **Before the preview, run the visual preflight** (`scripts/preflight.mjs`; see [rendering](rendering.md)). It inspects every output frame time, including mid-move frames that keyframes miss (such as a label still visible while the camera pans away), without capturing images. Fix every defect; then render with `--preflight <out>/preflight.json`. Mark art that must stay fully in frame with `required: true`; undeclared art may bleed or move off-screen on purpose.
-4. Render a 540×960 preview. Then render Full HD, checkpointed, with one writer per checkpoint folder.
+4. Render a low-resolution preview at delivery aspect ratio. Review the whole sequence in order, with narration and intended sound where available: pacing, physical contacts, continuity, camera moves and transitions. Record untested sound or motion as unreviewed, not passed. Fix material problems within the correction budget before Full HD, checkpointed, with one writer per checkpoint folder.
 
 ## Rich artwork: technique selection (P024.16B)
 
