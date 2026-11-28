@@ -419,3 +419,24 @@ for(const direction of [-1,1]){
 assert.throws(()=>walkCycle(actor,{heightRatio:1}),/height ratio/);
 assert.throws(()=>walkCycle(actor,{stop:{at:.4,duration:.2}}),/double support/);
 console.log('Paper upright gait and planted-foot stopping transition: passed');
+
+const limbContour=sandbox.paperKit.art.limbContour;
+const straightContour=limbContour([[0,0],[0,20],[0,40]],{widths:[12,10,8],fill:'#314d50'});
+assert.ok(straightContour.includes('M-6 0'));
+assert.ok(straightContour.includes('L-4 40'));
+assert.equal((straightContour.match(/<path /g)||[]).length,1);
+for(const direction of [-1,1]){
+  const points=[[0,0],[0,20],[direction*15,35]];
+  const markup=limbContour(points,{widths:[12,10,8]});
+  assert.ok(markup.includes('Q'));
+  assert.ok(!/NaN|Infinity/.test(markup));
+  assert.equal(markup,limbContour(points,{widths:[12,10,8]}));
+}
+const contourPose={pelvis:{offset:[30,40],scale:2},'left-thigh':{angle:-20},'left-shin':{angle:35}};
+const contourRig=actor.evaluate(contourPose);
+const contourPoints=[contourRig.point('left-thigh',[0,0]),contourRig.anchor('left-thigh','knee'),contourRig.anchor('left-shin','ankle')];
+assert.ok(limbContour(contourPoints,{widths:[12,10,8]}).includes('<path'));
+assert.throws(()=>limbContour([[0,0],[0,0],[0,20]],{widths:[1,1,1]}),/coincident/);
+assert.throws(()=>limbContour([[0,0],[0,20],[0,0]],{widths:[1,1,1]}),/extreme fold/);
+assert.throws(()=>limbContour([[0,0],[0,20],[0,40]],{widths:[1,0,1]}),/positive/);
+console.log('Paper connected articulated limb contours: passed');

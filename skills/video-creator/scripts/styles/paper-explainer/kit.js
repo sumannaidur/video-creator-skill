@@ -946,6 +946,46 @@
     return {id,actor,palette:colors,features:details,appearances:names.slice(),draw};
   };
 
+
+  // A single tapered silhouette around a three-point articulated centreline.
+  // Rounded elbow/knee joins are geometry, not separately outlined joint pieces.
+  const limbContour = (points,{widths,fill=INK,stroke=INK,strokeWidth=3}={})=>{
+    if(!Array.isArray(points)||points.length!==3||!Array.isArray(widths)||widths.length!==3) fail('limbContour needs three points and widths');
+    const [a,b,c]=points.map(p=>{
+      if(!Array.isArray(p)||p.length!==2) fail('limbContour invalid point');
+      return p.map(v=>num(v,'limbContour coordinate'));
+    });
+    const [ra,rb,rc]=widths.map(w=>{num(w,'limbContour width');if(w<=0) fail('limbContour width must be positive');return w/2;});
+    num(strokeWidth,'limbContour stroke width');
+    if(strokeWidth<0||![fill,stroke].every(v=>typeof v==='string'&&/^(?:#[0-9a-fA-F]{6}|none)$/.test(v))) fail('limbContour invalid paint');
+    const unit=(p,q)=>{
+      const dx=q[0]-p[0],dy=q[1]-p[1],l=num(Math.hypot(dx,dy),'limbContour length');
+      if(l<=0) fail('limbContour coincident joints');
+      return [dx/l,dy/l];
+    };
+    const u=unit(a,b),v=unit(b,c),n=[-u[1],u[0]],m=[-v[1],v[0]];
+    const dot=u[0]*v[0]+u[1]*v[1],cross=u[0]*v[1]-u[1]*v[0];
+    // Extremely folded bones overlap in projection; one outline cannot
+    // reliably represent their occlusion. Require separate authored parts.
+    if(dot<-.95) fail('limbContour extreme fold needs authored occlusion');
+    const offset=(p,k,r,s)=>[p[0]+k[0]*r*s,p[1]+k[1]*r*s];
+    const fmt=p=>p.map(x=>f(num(x,'limbContour path'))).join(' ');
+    const side=s=>{
+      const start=offset(a,n,ra,s),end=offset(c,m,rc,s);
+      const p=offset(b,n,rb,s),q=offset(b,m,rb,s);
+      // Inside corner uses the intersection of the offset lines; cap the
+      // miter to avoid spikes at deep bends. Outside corner is quadratic.
+      const k=[n[0]+m[0],n[1]+m[1]],factor=Math.min(2,1/(1+dot));
+      const join=offset(b,k,rb*factor,s);
+      const outer=cross*s<0;
+      return {start,end,p,q,join,outer};
+    };
+    const l=side(1),r=side(-1);
+    const path='M'+fmt(l.start)+(l.outer?'L'+fmt(l.p)+'Q'+fmt(l.join)+' '+fmt(l.q):'L'+fmt(l.join))+
+      'L'+fmt(l.end)+'L'+fmt(r.end)+(r.outer?'L'+fmt(r.q)+'Q'+fmt(r.join)+' '+fmt(r.p):'L'+fmt(r.join))+'L'+fmt(r.start)+'Z';
+    return '<path d="'+path+'" fill="'+fill+'" stroke="'+stroke+'" stroke-width="'+strokeWidth+'" stroke-linejoin="round"/>';
+  };
+
   // ---------- label treatments (object option labelStyle; CSS below, include kit.css in topic.css) ----------
   const LABEL_STYLES = ['tag', 'accent', 'plain', 'chip'];
   const css = `
@@ -1015,5 +1055,5 @@
   }
 
   globalThis.paperKit = {art: {fibres, sheet, layered, castShadow, ring, connector, tileTexture, parts,
-    light, mix, cut, gouache, wave, ridge, strata, sky, haze, textures, groundPlane, worldCamera, cameraPath, rig2D, twoBoneIK, characterRig, walkCycle, characterPerformance, characterIdentity, masonry, facade, foliage, water, figure, deckle, penumbra, piece, folded, vellum, recede}, css, LABEL_STYLES, motion};
+    light, mix, cut, gouache, wave, ridge, strata, sky, haze, textures, groundPlane, worldCamera, cameraPath, rig2D, twoBoneIK, characterRig, walkCycle, characterPerformance, characterIdentity, limbContour, masonry, facade, foliage, water, figure, deckle, penumbra, piece, folded, vellum, recede}, css, LABEL_STYLES, motion};
 })();
