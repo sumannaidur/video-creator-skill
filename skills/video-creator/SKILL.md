@@ -58,7 +58,7 @@ Never fabricate sources, quotations, statistics, licenses or evaluation results.
 
 ## Experimental V3 source reuse
 
-When constructing reusable original artwork, consult [shared source assets](references/source-assets.md). Search reviewed source first, inspect compatibility and pinned dependencies, customize project-local copies, and keep new source as a candidate until actual review. The registry is optional during development; it does not execute assets or replace the project ledger. Do not automatically promote benchmark artwork.
+When constructing reusable original artwork, consult [shared source assets](references/source-assets.md). During creative planning search reviewed source first, inspect compatibility and pinned dependencies, checkout exact source into the project and record manifest/source outputs in the ledger; verify before visual production and customize separate project-local copies, and keep new source as a candidate until actual review. The registry is optional during development; it does not execute assets or replace the project ledger. Do not automatically promote benchmark artwork.
 
 ## Extensibility
 

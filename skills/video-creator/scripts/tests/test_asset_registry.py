@@ -7,7 +7,7 @@ import unittest
 
 sys.dont_write_bytecode = True
 sys.path.insert(0, str(Path(__file__).resolve().parents[1]))
-from asset_registry import Registry, AssetError
+from asset_registry import Registry, AssetError, verify_snapshot
 
 
 class Assets(unittest.TestCase):
@@ -87,6 +87,43 @@ class Assets(unittest.TestCase):
         item = self.reg.add(self.meta(), self.js)
         other = Registry(self.root / "library")
         self.assertEqual(other.show("object.wheel", "1.0.0"), item)
+
+    def test_checkout_and_offline_verification(self):
+        project = self.root / "project"
+        project.mkdir()
+        (project / "project.json").write_text('{"schema":"video-creator.project","version":1}')
+        first = self.reg.add(self.meta(), self.js)
+        dep = {k: first[k] for k in ("id", "version", "sha256")}
+        child = self.reg.add(self.meta("object.mill", deps=[dep]), self.js)
+        with self.assertRaises(AssetError):
+            self.reg.checkout("object.mill", "1.0.0", child["sha256"], project)
+        self.assertFalse((project / "asset-snapshots").exists())
+        self.reg.promote("object.wheel", "1.0.0", "fixture", "test attestation")
+        self.reg.promote("object.mill", "1.0.0", "fixture", "test attestation")
+        result = self.reg.checkout("object.mill", "1.0.0", child["sha256"], project)
+        self.assertEqual(verify_snapshot(result["snapshot"], result["manifest_sha256"])["assets"], 2)
+        for filename in result["files"]:
+            self.assertEqual(Path(filename).read_bytes(), self.js.read_bytes())
+        with self.assertRaises(AssetError):
+            self.reg.checkout("object.mill", "1.0.0", child["sha256"], project)
+        # Offline verification does not depend on the registry.
+        self.reg.path("object.wheel", "1.0.0").unlink()
+        self.assertTrue(verify_snapshot(result["snapshot"], result["manifest_sha256"])["passed"])
+        Path(result["files"][0]).write_bytes(b"changed")
+        with self.assertRaises(AssetError):
+            verify_snapshot(result["snapshot"], result["manifest_sha256"])
+
+    def test_candidate_checkout_and_pin(self):
+        project = self.root / "project"
+        project.mkdir()
+        (project / "project.json").write_text('{"schema":"video-creator.project","version":1}')
+        item = self.reg.add(self.meta(), self.js)
+        with self.assertRaises(AssetError):
+            self.reg.checkout("object.wheel", "1.0.0", "0"*64, project, True)
+        result = self.reg.checkout("object.wheel", "1.0.0", item["sha256"], project, True)
+        self.assertTrue(verify_snapshot(result["snapshot"], result["manifest_sha256"])["experiment"])
+        with self.assertRaises(AssetError):
+            verify_snapshot(result["snapshot"], "0"*64)
 
 
 if __name__ == "__main__":

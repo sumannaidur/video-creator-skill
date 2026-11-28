@@ -235,6 +235,121 @@ class Registry:
         return data["source"]
 
 
+    def checkout(self, asset_id, version, expected_sha, project, allow_candidates=False):
+        """Publish an immutable source snapshot; never execute or concatenate modules."""
+        project = Path(project).resolve()
+        require(project.is_dir() and not project.is_relative_to(PACKAGE)
+                and not PACKAGE.is_relative_to(project), "invalid project directory")
+        require(not project.is_relative_to(self.root) and not self.root.is_relative_to(project),
+                "project and registry must be separate")
+        marker = read_json(project / "project.json")
+        require(isinstance(marker, dict) and marker.get("schema") == "video-creator.project"
+                and marker.get("version") == 1, "initialized project required")
+        parent = project / "asset-snapshots"
+        require(not parent.is_symlink() and parent.resolve().parent == project, "unsafe snapshot directory")
+        parent.mkdir(exist_ok=True)
+        name = identity(asset_id, version)
+        destination = parent / name
+        require(not destination.exists() and not destination.is_symlink(), "snapshot already exists")
+        pending = [(asset_id, version, expected_sha)]
+        records = {}
+        while pending:
+            aid, ver, pin = pending.pop()
+            key = identity(aid, ver)
+            if key in records:
+                require(records[key]["sha256"] == pin, "conflicting asset pins")
+                continue
+            require(len(records) < 64, "snapshot exceeds 64 asset versions")
+            data, sha = self.load(aid, ver)
+            require(sha == pin and digest(canonical(data)) == sha, "asset record digest mismatch")
+            status = self.status(aid, ver, sha)
+            require(allow_candidates or status == "reviewed", "candidate requires explicit experiment opt-in")
+            review = read_json(self.path(aid, ver, review=True)) if status == "reviewed" else None
+            records[key] = dict(metadata=data["metadata"], sha256=sha,
+                                source_sha256=data["source_sha256"], status=status, review=review,
+                                filename=key + ".js", source=data["source"])
+            pending.extend((d["id"], d["version"], d["sha256"]) for d in data["metadata"]["dependencies"])
+        # A private staging directory is invisible to readers until publication. A dedicated
+        # exclusive lock prevents cooperating checkout writers from overwriting each other.
+        lock = parent / ".checkout-lock"
+        try:
+            fd = os.open(lock, os.O_CREAT | os.O_EXCL | os.O_WRONLY, 0o600)
+        except FileExistsError:
+            raise AssetError("checkout locked; inspect before manual recovery") from None
+        try:
+            with os.fdopen(fd, "w") as out:
+                out.write(str(os.getpid()) + "\n")
+            require(not destination.exists() and not destination.is_symlink(), "snapshot already exists")
+            with tempfile.TemporaryDirectory(dir=parent, prefix=".checkout-") as temp:
+                staged = Path(temp) / name
+                staged.mkdir()
+                entries = []
+                for key, row in sorted(records.items()):
+                    (staged / row["filename"]).write_bytes(row["source"].encode("utf-8"))
+                    entries.append({k: v for k, v in row.items() if k != "source"})
+                manifest = dict(schema="video-creator.asset-snapshot", version=1, root=name,
+                                experiment=allow_candidates, assets=entries)
+                raw = canonical(manifest)
+                require(len(raw) <= MAX_RECORD, "snapshot manifest exceeds size limit")
+                (staged / "manifest.json").write_bytes(raw)
+                verify_snapshot(staged, digest(raw))
+                staged.rename(destination)
+        finally:
+            lock.unlink()
+        return dict(snapshot=str(destination), manifest_sha256=digest(raw),
+                    files=[str(destination / row["filename"]) for row in entries],
+                    experiment=allow_candidates)
+
+
+def verify_snapshot(folder, expected_sha):
+    """Offline integrity verification against a previously recorded manifest pin."""
+    folder = Path(folder).resolve()
+    raw = read_bytes(folder / "manifest.json", MAX_RECORD)
+    require(digest(raw) == expected_sha, "snapshot manifest digest mismatch")
+    manifest = json.loads(raw.decode("utf-8"))
+    require(isinstance(manifest, dict) and manifest.get("schema") == "video-creator.asset-snapshot"
+            and manifest.get("version") == 1 and isinstance(manifest.get("experiment"), bool)
+            and isinstance(manifest.get("assets"), list) and 1 <= len(manifest["assets"]) <= 64,
+            "invalid snapshot manifest")
+    pins = {}
+    for row in manifest["assets"]:
+        require(isinstance(row, dict) and set(row) == {"metadata", "sha256", "source_sha256",
+                "status", "review", "filename"}, "invalid snapshot entry")
+        meta = row["metadata"]
+        validate_metadata(meta)
+        key = identity(meta["id"], meta["version"])
+        require(key not in pins and row["filename"] == key + ".js", "invalid snapshot filename or duplicate")
+        source = read_bytes(folder / row["filename"], MAX_SOURCE)
+        require(digest(source) == row["source_sha256"], "snapshot source changed")
+        data = dict(schema=SCHEMA, metadata=meta, source=source.decode("utf-8"),
+                    source_sha256=row["source_sha256"])
+        require(digest(canonical(data)) == row["sha256"], "snapshot record digest mismatch")
+        review = row["review"]
+        if row["status"] == "reviewed":
+            require(isinstance(review, dict) and review.get("asset_sha256") == row["sha256"]
+                    and review.get("status") == "reviewed" and short_text(review.get("reviewer"), 100)
+                    and short_text(review.get("evidence"), 2000), "invalid snapshot review")
+        else:
+            require(row["status"] == "candidate" and review is None and manifest["experiment"],
+                    "unreviewed snapshot entry")
+        pins[key] = row
+    require(manifest.get("root") in pins, "missing snapshot root")
+    reachable = set()
+    pending = [manifest["root"]]
+    while pending:
+        key = pending.pop()
+        if key in reachable:
+            continue
+        reachable.add(key)
+        for dep in pins[key]["metadata"]["dependencies"]:
+            depkey = identity(dep["id"], dep["version"])
+            require(depkey in pins and pins[depkey]["sha256"] == dep["sha256"], "missing or changed dependency")
+            pending.append(depkey)
+    require(reachable == set(pins), "unexpected snapshot entries")
+    return dict(passed=True, manifest_sha256=expected_sha, assets=len(pins),
+                experiment=manifest["experiment"])
+
+
 def main():
     ap = argparse.ArgumentParser(description=__doc__)
     ap.add_argument("--root", help="shared external registry (or VC_ASSETS)")
@@ -256,8 +371,20 @@ def main():
             a.add_argument("--reviewer", required=True)
             a.add_argument("--evidence", required=True)
             a.add_argument("--confirm-reviewed", action="store_true", required=True)
+    a = sub.add_parser("checkout")
+    a.add_argument("id")
+    a.add_argument("version")
+    a.add_argument("--sha256", required=True)
+    a.add_argument("--project", required=True)
+    a.add_argument("--allow-candidates", action="store_true")
+    a = sub.add_parser("verify-snapshot")
+    a.add_argument("folder")
+    a.add_argument("--sha256", required=True)
     args = ap.parse_args()
     try:
+        if args.command == "verify-snapshot":
+            print(json.dumps(verify_snapshot(args.folder, args.sha256), indent=2))
+            return
         reg = Registry(args.root)
         if args.command == "add":
             result = reg.add(read_json(args.metadata), args.source)
@@ -267,6 +394,8 @@ def main():
             result = reg.show(args.id, args.version)
         elif args.command == "promote":
             result = reg.promote(args.id, args.version, args.reviewer, args.evidence)
+        elif args.command == "checkout":
+            result = reg.checkout(args.id, args.version, args.sha256, args.project, args.allow_candidates)
         else:
             sys.stdout.buffer.write(reg.source(args.id, args.version, args.sha256).encode("utf-8"))
             return
