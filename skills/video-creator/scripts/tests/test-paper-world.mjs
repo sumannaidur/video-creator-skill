@@ -88,3 +88,45 @@ assert.throws(()=>rig.evaluate({unknown:{}}),/unknown pose/);
 assert.throws(()=>rig.evaluate({arm:{angle:Infinity}}),/number/);
 assert.throws(()=>rig.evaluate().anchor('arm','missing'),/unknown anchor/);
 console.log('Paper 2D rig pivots, hierarchy and attachments: passed');
+
+const cameraPath=sandbox.paperKit.art.cameraPath;
+const path=cameraPath({cx:500,horizon:200,focal:400,keys:[
+  {t:0,x:0,z:0,eyeHeight:2,yaw:350},
+  {t:4,x:4,z:2,eyeHeight:4,yaw:370,ease:'linear'}
+]});
+close(path.poseAt(2).x,2);
+close(path.poseAt(2).z,1);
+close(path.poseAt(2).eyeHeight,3);
+close(path.poseAt(2).yaw,360);
+close(path.poseAt(-1).yaw,350);
+close(path.poseAt(9).yaw,370);
+const q=path.at(2).project(2,5);
+close(q.x,500);close(q.y,500);
+assert.equal(JSON.stringify(path.at(2).project(2,5)),JSON.stringify(q));
+path.at(3).project(4,10);
+assert.equal(JSON.stringify(path.at(2).project(2,5)),JSON.stringify(q));
+const tracking=cameraPath({cx:500,horizon:200,focal:400,keys:[
+  {t:0,x:0,z:-4,eyeHeight:2},
+  {t:4,x:4,z:-4,eyeHeight:2,ease:'linear'}
+],target:t=>[2*t,0]});
+for(const t of [4,0,1,3,2,1]){
+  const view=tracking.at(t),p=view.project(2*t,0,2);
+  close(p.x,500);close(p.y,200);
+}
+const dolly=cameraPath({cx:500,horizon:200,focal:400,keys:[
+  {t:0,x:0,z:0,eyeHeight:2},{t:4,x:0,z:2,eyeHeight:2}
+]});
+close(dolly.poseAt(1).z,.3125);
+assert.ok(dolly.at(4).project(1,4).scale>dolly.at(0).project(1,4).scale);
+const nearShift=dolly.at(4).project(1,4).x-dolly.at(0).project(1,4).x;
+const farShift=dolly.at(4).project(1,12).x-dolly.at(0).project(1,12).x;
+assert.ok(nearShift>farShift);
+const config={cx:500,horizon:200,focal:400};
+const k={t:0,x:0,z:0,eyeHeight:2};
+assert.throws(()=>cameraPath({...config,keys:[k,k]}),/increasing/);
+assert.throws(()=>cameraPath({...config,keys:[{...k,ease:'bad'}]}),/ease/);
+assert.throws(()=>cameraPath({...config,keys:[{...k,eyeHeight:0}]}),/positive/);
+assert.throws(()=>cameraPath({...config,keys:[k],target:()=>[0,0]}).at(0),/too close/);
+assert.throws(()=>cameraPath({...config,keys:[k],target:()=>[NaN,2]}).at(0),/number/);
+assert.throws(()=>path.at(Infinity),/number/);
+console.log('Paper continuous camera paths and target tracking: passed');

@@ -255,6 +255,48 @@
   };
 
 
+
+  // Level world camera trajectory: absolute timeline seconds, no accumulated state.
+  // Each key is a complete pose; yaw is explicitly unwrapped by the author.
+  const cameraPath = ({cx,horizon,focal,near=.1,keys,target}={}) => {
+    [cx,horizon,focal,near].forEach(v=>num(v,'cameraPath projection'));
+    if(focal<=0||near<=0) fail('cameraPath positive focal and near required');
+    if(target!==undefined&&typeof target!=='function') fail('cameraPath target must be a function');
+    if(!Array.isArray(keys)||!keys.length||keys.length>256) fail('cameraPath needs 1..256 keys');
+    const curves={linear:p=>p,smooth:p=>p*p*(3-2*p)};
+    const frames=keys.map((k,i)=>{
+      if(!k||typeof k!=='object'||Array.isArray(k)) fail('cameraPath invalid key');
+      const {t,x,z,eyeHeight,yaw=0,ease='smooth'}=k;
+      [t,x,z,eyeHeight,yaw].forEach(v=>num(v,'cameraPath key'));
+      if(t<0||(i&&t<=keys[i-1].t)||eyeHeight<=0) fail('cameraPath keys require increasing nonnegative times and positive eyeHeight');
+      if(!Object.hasOwn(curves,ease)) fail('cameraPath unknown ease');
+      return {t,x,z,eyeHeight,yaw,ease};
+    });
+    const poseAt=t=>{
+      num(t,'cameraPath time');
+      let a=frames[0],b=a,p=0;
+      if(t>=frames.at(-1).t) a=b=frames.at(-1);
+      else if(t>frames[0].t){
+        const i=frames.findIndex(k=>k.t>=t);
+        a=frames[i-1];b=frames[i];p=curves[b.ease]((t-a.t)/(b.t-a.t));
+      }
+      const lerp=(u,v)=>num(u*(1-p)+v*p,'cameraPath interpolated value');
+      const pose={x:lerp(a.x,b.x),z:lerp(a.z,b.z),eyeHeight:lerp(a.eyeHeight,b.eyeHeight),yaw:lerp(a.yaw,b.yaw)};
+      if(target){
+        // Target is sampled at the requested absolute time, even outside the camera keys.
+        const q=target(t);
+        if(!Array.isArray(q)||q.length!==2) fail('cameraPath target must return [x,z]');
+        const dx=num(q[0],'target x')-pose.x,dz=num(q[1],'target z')-pose.z;
+        num(dx,'target delta');num(dz,'target delta');
+        if(Math.hypot(dx,dz)<near) fail('cameraPath target too close');
+        pose.yaw=Math.atan2(dx,dz)*180/Math.PI;
+      }
+      return pose;
+    };
+    const at=t=>worldCamera({cx,horizon,focal,near,...poseAt(t)});
+    return {poseAt,at};
+  };
+
   // ---------- P018.4 construction: recognizable objects built from components (not decorated basic shapes) ----------
   // Reference characteristics (P018.1 audit, Painted Story / Paper Collage): buildings with windows, frames, sills,
   // shutters and roof tiles; stone and brick masonry; layered foliage; water with depth and ripples; characters with
@@ -594,5 +636,5 @@
   }
 
   globalThis.paperKit = {art: {fibres, sheet, layered, castShadow, ring, connector, tileTexture, parts,
-    light, mix, cut, gouache, wave, ridge, strata, sky, haze, textures, groundPlane, worldCamera, rig2D, masonry, facade, foliage, water, figure, deckle, penumbra, piece, folded, vellum, recede}, css, LABEL_STYLES, motion};
+    light, mix, cut, gouache, wave, ridge, strata, sky, haze, textures, groundPlane, worldCamera, cameraPath, rig2D, masonry, facade, foliage, water, figure, deckle, penumbra, piece, folded, vellum, recede}, css, LABEL_STYLES, motion};
 })();
