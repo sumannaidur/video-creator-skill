@@ -1,1 +1,0 @@
-First, the scanner finds three large corner patterns. They show where the code is and which way it faces. Alternating timing marks help the scanner line up with the little squares.

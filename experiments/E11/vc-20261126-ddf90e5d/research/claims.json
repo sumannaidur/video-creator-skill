@@ -1,8 +1,0 @@
-{"topic": "Why does the sky appear blue?", "claims": [
-  {"id": "c1", "claim": "Sunlight looks white but is made of all the colours of visible light (rainbow colours); a prism separates them.", "sources": ["S1", "S2"], "status": "verified"},
-  {"id": "c2", "claim": "Tiny molecules of air scatter sunlight in all directions.", "sources": ["S1", "S2"], "status": "verified", "note": "sources do not name specific gases; the video does not name them"},
-  {"id": "c3", "claim": "Blue light is scattered more than other colours, such as red, because it travels as shorter waves (scattering increases as wavelength decreases).", "sources": ["S1", "S2"], "status": "verified"},
-  {"id": "c4", "claim": "The scattered blue light reaches us from all over the sky, so the sky looks blue in every direction.", "sources": ["S1", "S2"], "status": "verified"},
-  {"id": "c5", "claim": "Violet is scattered even more than blue, but the sky looks blue because sunlight reaching the atmosphere contains more blue than violet and human eyes are more sensitive to blue.", "sources": ["S2"], "status": "verified-single-source", "note": "NASA Space Place does not discuss violet; one reputable source"},
-  {"id": "c6", "claim": "When the Sun is low (sunrise/sunset), its light passes through more atmosphere; blue is scattered away on the way and red, orange and yellow light reaches our eyes.", "sources": ["S1", "S2"], "status": "verified", "note": "S1 adds that dust and aerosols also scatter blue; not stated in the video"}
-], "guardrails": ["no wavelength numbers or 1/lambda^4 formula (not stated by the read sources)", "do not name nitrogen/oxygen", "molecules drawn as symbolic dots, not to scale", "sunset colours are illustrative"]}

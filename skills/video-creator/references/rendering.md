@@ -13,6 +13,7 @@ node scripts/render.mjs --project <project dir> --topic <topic module> --timelin
 ```
 
 - **Paths:** relative paths, including the timeline's audio path, resolve against `--project`. The timeline's audio path must be relative and inside the project.
+- **Network isolation (P026.2, every mode and preflight):** pages may load only `file:`, `data:`, `blob:` and `about:` content. Any other request (remote fonts, images, scripts or `fetch`) is blocked in the browser, and the run stops with `[network-blocked] <url>`. Embed assets locally instead: verified manifest media, `data:` URIs or packed layers.
 - **Pre-render validation (P024.14B, every mode):** after the topic is installed and before any capture, `lib/prerender.mjs` checks:
   - duplicate DOM ids, inside each shot (for example an object id equal to a symbol id);
   - that the browser canvas matches `--width`×`--height`;

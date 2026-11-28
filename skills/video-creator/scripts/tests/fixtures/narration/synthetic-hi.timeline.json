@@ -1,0 +1,701 @@
+{
+ "version": 1,
+ "unit": "sample",
+ "locale": "hi-IN",
+ "validation": "unreviewed",
+ "run_id": "5ec7a24ba6fca1478f428da367aeff92",
+ "fixture": {
+  "synthetic": true,
+  "speech": false,
+  "generator": "scripts/tests/fixtures/narration/make_synthetic_fixture.py",
+  "note": "Original integer tone bursts, not speech or provider evidence. Timing is exact by construction."
+ },
+ "timing": {
+  "method": "synthetic_fixture",
+  "provider": "none"
+ },
+ "audio": {
+  "path": "narration/synthetic-hi.wav",
+  "sha256": "5ec7a24ba6fca1478f428da367aeff92dff470668de7f6955ea2418cbaba04f4",
+  "sample_rate": 24000,
+  "sample_count": 138000
+ },
+ "text": {
+  "display": "पेड़ धूप रोकते हैं। पत्तियों से पानी भाप बनकर निकलता है, तो आसपास की हवा ठंडी होने में भी मदद मिल सकती है।",
+  "speech": "पेड़ धूप रोकते हैं। पत्तियों से पानी भाप बनकर निकलता है, तो आसपास की हवा ठंडी होने में भी मदद मिल सकती है।"
+ },
+ "records": [
+  {
+   "kind": "sentence",
+   "label": "पेड़ धूप रोकते हैं।",
+   "start": 4800,
+   "end": 24600,
+   "source": "manual",
+   "text_ref": {
+    "field": "display",
+    "start": 0,
+    "end": 19
+   }
+  },
+  {
+   "kind": "sentence",
+   "label": "पत्तियों से पानी भाप बनकर निकलता है, तो आसपास की हवा ठंडी होने में भी मदद मिल सकती है।",
+   "start": 31800,
+   "end": 133200,
+   "source": "manual",
+   "text_ref": {
+    "field": "display",
+    "start": 20,
+    "end": 106
+   }
+  },
+  {
+   "kind": "phrase",
+   "label": "पेड़ धूप रोकते हैं",
+   "start": 4800,
+   "end": 24600,
+   "source": "manual",
+   "text_ref": {
+    "field": "display",
+    "start": 0,
+    "end": 18
+   }
+  },
+  {
+   "kind": "phrase",
+   "label": "पत्तियों से पानी भाप बनकर निकलता है",
+   "start": 31800,
+   "end": 69000,
+   "source": "manual",
+   "text_ref": {
+    "field": "display",
+    "start": 20,
+    "end": 55
+   }
+  },
+  {
+   "kind": "phrase",
+   "label": "तो आसपास की हवा ठंडी होने में भी मदद मिल सकती है",
+   "start": 76200,
+   "end": 133200,
+   "source": "manual",
+   "text_ref": {
+    "field": "display",
+    "start": 57,
+    "end": 105
+   }
+  },
+  {
+   "kind": "word",
+   "label": "निकलता",
+   "start": null,
+   "end": null,
+   "source": null,
+   "text_ref": {
+    "field": "display",
+    "start": 46,
+    "end": 52
+   }
+  },
+  {
+   "kind": "word",
+   "label": "पेड़",
+   "start": 4800,
+   "end": 9000,
+   "source": "manual",
+   "text_ref": {
+    "field": "display",
+    "start": 0,
+    "end": 4
+   }
+  },
+  {
+   "kind": "word",
+   "label": "धूप",
+   "start": 10200,
+   "end": 13800,
+   "source": "manual",
+   "text_ref": {
+    "field": "display",
+    "start": 5,
+    "end": 8
+   }
+  },
+  {
+   "kind": "word",
+   "label": "रोकते",
+   "start": 15000,
+   "end": 19800,
+   "source": "manual",
+   "text_ref": {
+    "field": "display",
+    "start": 9,
+    "end": 14
+   }
+  },
+  {
+   "kind": "word",
+   "label": "हैं",
+   "start": 21000,
+   "end": 24600,
+   "source": "manual",
+   "text_ref": {
+    "field": "display",
+    "start": 15,
+    "end": 18
+   }
+  },
+  {
+   "kind": "word",
+   "label": "पत्तियों",
+   "start": 31800,
+   "end": 38400,
+   "source": "manual",
+   "text_ref": {
+    "field": "display",
+    "start": 20,
+    "end": 28
+   }
+  },
+  {
+   "kind": "word",
+   "label": "से",
+   "start": 39600,
+   "end": 42600,
+   "source": "manual",
+   "text_ref": {
+    "field": "display",
+    "start": 29,
+    "end": 31
+   }
+  },
+  {
+   "kind": "word",
+   "label": "पानी",
+   "start": 43800,
+   "end": 48000,
+   "source": "manual",
+   "text_ref": {
+    "field": "display",
+    "start": 32,
+    "end": 36
+   }
+  },
+  {
+   "kind": "word",
+   "label": "भाप",
+   "start": 49200,
+   "end": 52800,
+   "source": "manual",
+   "text_ref": {
+    "field": "display",
+    "start": 37,
+    "end": 40
+   }
+  },
+  {
+   "kind": "word",
+   "label": "बनकर",
+   "start": 54000,
+   "end": 58200,
+   "source": "manual",
+   "text_ref": {
+    "field": "display",
+    "start": 41,
+    "end": 45
+   }
+  },
+  {
+   "kind": "word",
+   "label": "है",
+   "start": 66000,
+   "end": 69000,
+   "source": "manual",
+   "text_ref": {
+    "field": "display",
+    "start": 53,
+    "end": 55
+   }
+  },
+  {
+   "kind": "word",
+   "label": "तो",
+   "start": 76200,
+   "end": 79200,
+   "source": "manual",
+   "text_ref": {
+    "field": "display",
+    "start": 57,
+    "end": 59
+   }
+  },
+  {
+   "kind": "word",
+   "label": "आसपास",
+   "start": 80400,
+   "end": 85200,
+   "source": "manual",
+   "text_ref": {
+    "field": "display",
+    "start": 60,
+    "end": 65
+   }
+  },
+  {
+   "kind": "word",
+   "label": "की",
+   "start": 86400,
+   "end": 89400,
+   "source": "manual",
+   "text_ref": {
+    "field": "display",
+    "start": 66,
+    "end": 68
+   }
+  },
+  {
+   "kind": "word",
+   "label": "हवा",
+   "start": 90600,
+   "end": 94200,
+   "source": "manual",
+   "text_ref": {
+    "field": "display",
+    "start": 69,
+    "end": 72
+   }
+  },
+  {
+   "kind": "word",
+   "label": "ठंडी",
+   "start": 95400,
+   "end": 99600,
+   "source": "manual",
+   "text_ref": {
+    "field": "display",
+    "start": 73,
+    "end": 77
+   }
+  },
+  {
+   "kind": "word",
+   "label": "होने",
+   "start": 100800,
+   "end": 105000,
+   "source": "manual",
+   "text_ref": {
+    "field": "display",
+    "start": 78,
+    "end": 82
+   }
+  },
+  {
+   "kind": "word",
+   "label": "में",
+   "start": 106200,
+   "end": 109800,
+   "source": "manual",
+   "text_ref": {
+    "field": "display",
+    "start": 83,
+    "end": 86
+   }
+  },
+  {
+   "kind": "word",
+   "label": "भी",
+   "start": 111000,
+   "end": 114000,
+   "source": "manual",
+   "text_ref": {
+    "field": "display",
+    "start": 87,
+    "end": 89
+   }
+  },
+  {
+   "kind": "word",
+   "label": "मदद",
+   "start": 115200,
+   "end": 118800,
+   "source": "manual",
+   "text_ref": {
+    "field": "display",
+    "start": 90,
+    "end": 93
+   }
+  },
+  {
+   "kind": "word",
+   "label": "मिल",
+   "start": 120000,
+   "end": 123600,
+   "source": "manual",
+   "text_ref": {
+    "field": "display",
+    "start": 94,
+    "end": 97
+   }
+  },
+  {
+   "kind": "word",
+   "label": "सकती",
+   "start": 124800,
+   "end": 129000,
+   "source": "manual",
+   "text_ref": {
+    "field": "display",
+    "start": 98,
+    "end": 102
+   }
+  },
+  {
+   "kind": "word",
+   "label": "है",
+   "start": 130200,
+   "end": 133200,
+   "source": "manual",
+   "text_ref": {
+    "field": "display",
+    "start": 103,
+    "end": 105
+   }
+  },
+  {
+   "kind": "phoneme",
+   "label": "tone-0a",
+   "start": 4800,
+   "end": 6900,
+   "source": "manual"
+  },
+  {
+   "kind": "phoneme",
+   "label": "tone-0b",
+   "start": 6900,
+   "end": 9000,
+   "source": "manual"
+  },
+  {
+   "kind": "phoneme",
+   "label": "tone-1a",
+   "start": 10200,
+   "end": 12000,
+   "source": "manual"
+  },
+  {
+   "kind": "phoneme",
+   "label": "tone-1b",
+   "start": 12000,
+   "end": 13800,
+   "source": "manual"
+  },
+  {
+   "kind": "phoneme",
+   "label": "tone-2a",
+   "start": 15000,
+   "end": 17400,
+   "source": "manual"
+  },
+  {
+   "kind": "phoneme",
+   "label": "tone-2b",
+   "start": 17400,
+   "end": 19800,
+   "source": "manual"
+  },
+  {
+   "kind": "phoneme",
+   "label": "tone-3a",
+   "start": 21000,
+   "end": 22800,
+   "source": "manual"
+  },
+  {
+   "kind": "phoneme",
+   "label": "tone-3b",
+   "start": 22800,
+   "end": 24600,
+   "source": "manual"
+  },
+  {
+   "kind": "phoneme",
+   "label": "tone-4a",
+   "start": 31800,
+   "end": 35100,
+   "source": "manual"
+  },
+  {
+   "kind": "phoneme",
+   "label": "tone-4b",
+   "start": 35100,
+   "end": 38400,
+   "source": "manual"
+  },
+  {
+   "kind": "phoneme",
+   "label": "tone-5a",
+   "start": 39600,
+   "end": 41100,
+   "source": "manual"
+  },
+  {
+   "kind": "phoneme",
+   "label": "tone-5b",
+   "start": 41100,
+   "end": 42600,
+   "source": "manual"
+  },
+  {
+   "kind": "phoneme",
+   "label": "tone-6a",
+   "start": 43800,
+   "end": 45900,
+   "source": "manual"
+  },
+  {
+   "kind": "phoneme",
+   "label": "tone-6b",
+   "start": 45900,
+   "end": 48000,
+   "source": "manual"
+  },
+  {
+   "kind": "phoneme",
+   "label": "tone-7a",
+   "start": 49200,
+   "end": 51000,
+   "source": "manual"
+  },
+  {
+   "kind": "phoneme",
+   "label": "tone-7b",
+   "start": 51000,
+   "end": 52800,
+   "source": "manual"
+  },
+  {
+   "kind": "phoneme",
+   "label": "tone-8a",
+   "start": 54000,
+   "end": 56100,
+   "source": "manual"
+  },
+  {
+   "kind": "phoneme",
+   "label": "tone-8b",
+   "start": 56100,
+   "end": 58200,
+   "source": "manual"
+  },
+  {
+   "kind": "phoneme",
+   "label": "tone-9a",
+   "start": 59400,
+   "end": 62100,
+   "source": "manual"
+  },
+  {
+   "kind": "phoneme",
+   "label": "tone-9b",
+   "start": 62100,
+   "end": 64800,
+   "source": "manual"
+  },
+  {
+   "kind": "phoneme",
+   "label": "tone-10a",
+   "start": 66000,
+   "end": 67500,
+   "source": "manual"
+  },
+  {
+   "kind": "phoneme",
+   "label": "tone-10b",
+   "start": 67500,
+   "end": 69000,
+   "source": "manual"
+  },
+  {
+   "kind": "phoneme",
+   "label": "tone-11a",
+   "start": 76200,
+   "end": 77700,
+   "source": "manual"
+  },
+  {
+   "kind": "phoneme",
+   "label": "tone-11b",
+   "start": 77700,
+   "end": 79200,
+   "source": "manual"
+  },
+  {
+   "kind": "phoneme",
+   "label": "tone-12a",
+   "start": 80400,
+   "end": 82800,
+   "source": "manual"
+  },
+  {
+   "kind": "phoneme",
+   "label": "tone-12b",
+   "start": 82800,
+   "end": 85200,
+   "source": "manual"
+  },
+  {
+   "kind": "phoneme",
+   "label": "tone-13a",
+   "start": 86400,
+   "end": 87900,
+   "source": "manual"
+  },
+  {
+   "kind": "phoneme",
+   "label": "tone-13b",
+   "start": 87900,
+   "end": 89400,
+   "source": "manual"
+  },
+  {
+   "kind": "phoneme",
+   "label": "tone-14a",
+   "start": 90600,
+   "end": 92400,
+   "source": "manual"
+  },
+  {
+   "kind": "phoneme",
+   "label": "tone-14b",
+   "start": 92400,
+   "end": 94200,
+   "source": "manual"
+  },
+  {
+   "kind": "phoneme",
+   "label": "tone-15a",
+   "start": 95400,
+   "end": 97500,
+   "source": "manual"
+  },
+  {
+   "kind": "phoneme",
+   "label": "tone-15b",
+   "start": 97500,
+   "end": 99600,
+   "source": "manual"
+  },
+  {
+   "kind": "phoneme",
+   "label": "tone-16a",
+   "start": 100800,
+   "end": 102900,
+   "source": "manual"
+  },
+  {
+   "kind": "phoneme",
+   "label": "tone-16b",
+   "start": 102900,
+   "end": 105000,
+   "source": "manual"
+  },
+  {
+   "kind": "phoneme",
+   "label": "tone-17a",
+   "start": 106200,
+   "end": 108000,
+   "source": "manual"
+  },
+  {
+   "kind": "phoneme",
+   "label": "tone-17b",
+   "start": 108000,
+   "end": 109800,
+   "source": "manual"
+  },
+  {
+   "kind": "phoneme",
+   "label": "tone-18a",
+   "start": 111000,
+   "end": 112500,
+   "source": "manual"
+  },
+  {
+   "kind": "phoneme",
+   "label": "tone-18b",
+   "start": 112500,
+   "end": 114000,
+   "source": "manual"
+  },
+  {
+   "kind": "phoneme",
+   "label": "tone-19a",
+   "start": 115200,
+   "end": 117000,
+   "source": "manual"
+  },
+  {
+   "kind": "phoneme",
+   "label": "tone-19b",
+   "start": 117000,
+   "end": 118800,
+   "source": "manual"
+  },
+  {
+   "kind": "phoneme",
+   "label": "tone-20a",
+   "start": 120000,
+   "end": 121800,
+   "source": "manual"
+  },
+  {
+   "kind": "phoneme",
+   "label": "tone-20b",
+   "start": 121800,
+   "end": 123600,
+   "source": "manual"
+  },
+  {
+   "kind": "phoneme",
+   "label": "tone-21a",
+   "start": 124800,
+   "end": 126900,
+   "source": "manual"
+  },
+  {
+   "kind": "phoneme",
+   "label": "tone-21b",
+   "start": 126900,
+   "end": 129000,
+   "source": "manual"
+  },
+  {
+   "kind": "phoneme",
+   "label": "tone-22a",
+   "start": 130200,
+   "end": 131700,
+   "source": "manual"
+  },
+  {
+   "kind": "phoneme",
+   "label": "tone-22b",
+   "start": 131700,
+   "end": 133200,
+   "source": "manual"
+  },
+  {
+   "kind": "pause",
+   "label": "phrase-gap",
+   "start": 24600,
+   "end": 31800,
+   "source": "manual"
+  },
+  {
+   "kind": "pause",
+   "label": "phrase-gap",
+   "start": 69000,
+   "end": 76200,
+   "source": "manual"
+  }
+ ]
+}

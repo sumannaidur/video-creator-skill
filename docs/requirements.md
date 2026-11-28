@@ -47,4 +47,4 @@ Initial rendering targets: local MP4, H.264 video, AAC audio, 1080×1920 vertica
 
 ## Boundaries and open decisions
 
-Confirmed: five initial locales, Paper Explainer first, local-first/free baseline, audio-first synchronization, verified final media. Proposed: exact Skill directory layout, data schemas, TTS and alignment adapters, renderer, visual primitives, numeric quality thresholds. Assumptions: the approximately 60-second R01 sample may use one language and a sourced topic. Approval needed after experiments for material dependencies, stack choices, quality thresholds, and R01 sample topic/voice if the owner wants to specify them.
+Confirmed: five initial locales, Paper Explainer first, local-first/free baseline, audio-first synchronization, verified final media. Implemented in v0.2.0-beta: the Skill layout, data schemas, Kokoro and Mithi narration providers with native timing, the renderer, nine styles and numeric QA thresholds (see `skills/video-creator/`). Still open: human review of narration, artwork and motion quality, font licensing, and approval of any new material dependency.

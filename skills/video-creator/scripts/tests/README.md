@@ -1,5 +1,30 @@
 # Package tests
 
+## Run everything (P026.4)
+
+```bash
+python scripts/tests/run_all.py                         # every suite whose requirements are present
+python scripts/tests/run_all.py --only core,node        # dependency-free subset (Python, plus Node.js 22+)
+python scripts/tests/run_all.py --list                  # suites, categories and requirements
+python scripts/tests/run_all.py --strict                # also fail if anything was skipped
+```
+
+**Categories:**
+
+| Category | Needs |
+|---|---|
+| `core` | Python only |
+| `node` | Node.js 22+ |
+| `browser` | Node plus Chrome, Edge or Chromium (`VC_CHROME`), usually also FFmpeg |
+| `ffmpeg` | FFmpeg and FFprobe |
+| `runtime` | A narration runtime file (Kokoro), found like `doctor.py` finds it: `--runtime kokoro-onnx=<file>`, `$VC_RUNTIMES/kokoro-onnx.json`, or `<APPDATA \| ~/.config>/video-creator/runtimes/kokoro-onnx.json` |
+
+**Results:**
+- The runner reports every suite as **passed**, **failed** or **skipped**, with the reason, plus the check counts inside each suite.
+- **Skipped coverage is never counted as passed.**
+- Two repository-only regressions (the P013 keyframe and mix reproductions) are skipped inside their suites when the source repository's `experiments/` are absent, for example in an extracted release package. Every other check is self-contained.
+- A test file that isn't registered in `run_all.py` makes the runner fail, so nothing is silently left out.
+
 ## Self-contained smoke test (run after installing the package)
 
 `smoke_integration.py` needs no repository or P013 fixtures. It copies the package to an isolated folder and creates a separate project folder there. It then runs two short generic Hindi segments through every packaged stage:

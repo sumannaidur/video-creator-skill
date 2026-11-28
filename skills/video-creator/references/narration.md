@@ -41,7 +41,11 @@ python scripts/narration/narrate.py combine --project <dir> --id <name> --gap-ms
 python scripts/narration/narrate.py validate --project <dir> <timeline.json> ...
 ```
 
-- **Runtime JSON:** lives **outside** the Skill package, for example in user preferences: `{"python": "<provider environment interpreter>", "model": "<path>", "voices": "<path>"}`. Paths inside the package are rejected. Nothing is downloaded.
+- **Runtime JSON:** lives **outside** the Skill package: `{"python": "<provider environment interpreter>", "model": "<path>", "voices": "<path>"}`.
+  - **Discovery (P026.3):** `--runtime <provider>=<file>` wins. Otherwise `doctor.py` and `stage.py` check exactly one file, `<runtime dir>/<provider>.json`, where the runtime directory is `$VC_RUNTIMES` or `<APPDATA | XDG_CONFIG_HOME | ~/.config>/video-creator/runtimes`. Nothing is scanned.
+  - A missing file is reported with the exact path expected.
+  - Paths inside the package are rejected, and nothing is downloaded.
+  - Tested versions are in [tested configurations](tested-configurations.md).
 - **Explicit failures:** `unsupported-provider`, `provider-not-packaged`, `unsupported-locale`, `unsupported-voice`, `script-mismatch`, `invalid-text`, `missing-runtime` or `provider-failed`. Nothing falls back to another provider, voice or language.
 - **Text:** UTF-8, read with whitespace collapsed and otherwise unchanged. No Unicode normalization, so the author's exact characters and pronunciation boundaries are kept.
 - **No overwriting:** an existing segment WAV is never overwritten. Timings always belong to the exact WAV that the same run produced.
@@ -80,7 +84,7 @@ The runtime JSON lives outside the package. Its `kind` must match the registry e
 - **Kokoro (`python-environment`):** `{"python": <interpreter>, "model": <file>, "voices": <file>}`.
 - **Mithi (`wsl-python-environment`):** `{"kind": "wsl", "distro": "Ubuntu-24.04", "python": <Linux interpreter inside the distribution>, "model": <Windows path to the pinned model folder>}`.
 
-Mithi runs on CPU inside WSL2 because Windows Application Control blocks a native dependency on this host (see `docs/experiments/E03-P005.2-mithi.md`).
+Mithi runs on CPU inside WSL2 because Windows Application Control blocks a native dependency on this host (see `docs/history/experiments/E03-P005.2-mithi.md` in the source repository; not part of the installed package).
 - The model folder is hash-checked against `providers/mithi-v2-flash.manifest.json` before every synthesis.
 - Synthesis is refused below 1 GiB of available memory.
 - Text must fit in one model piece (at most 400 phonemes); longer text is rejected rather than split.

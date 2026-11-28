@@ -1,1 +1,0 @@
-Every crossing is a tiny capacitor. The chip pulses one line at a time, and measures every crossing.

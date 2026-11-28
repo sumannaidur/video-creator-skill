@@ -1,3 +1,0 @@
-# P005.1A resolution input: Windows x64, Python 3.12, CPU-only torch.
-kokoro==0.9.4
-soundfile

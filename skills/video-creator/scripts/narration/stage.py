@@ -24,6 +24,7 @@ HERE = Path(__file__).resolve().parent
 SCRIPTS = HERE.parent
 PACKAGE = SCRIPTS.parent
 sys.path.insert(0, str(HERE)); sys.path.insert(0, str(SCRIPTS))
+import runtimes as launchers  # noqa: E402  (runtime-file discovery, P026.3)
 from narrate import NarrationError, registry, route  # noqa: E402
 from timeline import validate as validate_timeline  # noqa: E402
 from project import pid_alive  # noqa: E402
@@ -172,9 +173,9 @@ def run(a):
     if sstage["state"] != "completed" or not any(o["path"] == Path(script_rel).as_posix() and o["sha256"] == sha(script_path) for o in sstage["outputs"] if script_path.exists()):
         raise StageError("script-not-verified", f"{script_rel} must be a verified output of the completed script stage")
     script, entry, r = validate_script(project, data, cfg, script_path)
-    runtimes = dict(x.split("=", 1) for x in a.runtime)
+    runtimes = launchers.discover([r["provider"]], dict(x.split("=", 1) for x in a.runtime))
     if r["provider"] not in runtimes:
-        raise StageError("missing-runtime", f"pass --runtime {r['provider']}=<runtime.json>")
+        raise StageError("missing-runtime", f"no runtime file for {r['provider']}: create {launchers.runtime_dir() / (r['provider'] + '.json')} or pass --runtime {r['provider']}=<runtime.json>")
     nstage = data["stages"]["narration"]
     with RunnerLock(project) as lock:
         if nstage["state"] != "running":

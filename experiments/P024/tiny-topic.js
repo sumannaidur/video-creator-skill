@@ -1,1 +1,0 @@
-globalThis.demoTopic = 1;

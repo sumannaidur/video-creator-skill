@@ -1,4 +1,4 @@
-# Video Creator: Agent Skill, v0.2.0-beta
+# Video Creator: Agent Skill, v0.2.1-beta
 
 Video Creator is an Agent Skill that turns a topic into a **sourced, narrated, animated explainer video**. Everything runs with free, local, CPU-first tools; no paid service or API is required.
 
@@ -21,7 +21,7 @@ The agent makes the editorial and creative decisions: research, script, art dire
   - Unified `qa.py`.
 - `scripts/tests/`: optional, self-contained validation suites. Each copies the package to a temporary folder first.
 
-## Capability matrix (v0.2.0-beta)
+## Capability matrix (v0.2.1-beta)
 
 | Area | Supported | Validation level |
 |---|---|---|
@@ -67,7 +67,7 @@ The models are **not** included. Obtain them under their own licences and keep t
 PowerShell. Extract the archive and copy the `video-creator` folder into your personal skills folder:
 
 ```powershell
-Expand-Archive video-creator-v0.2.0-beta.zip -DestinationPath $env:TEMP\vc-release -Force
+Expand-Archive video-creator-v0.2.1-beta.zip -DestinationPath $env:TEMP\vc-release -Force
 New-Item -ItemType Directory -Force "$HOME\.claude\skills" | Out-Null
 Copy-Item -Recurse "$env:TEMP\vc-release\video-creator" "$HOME\.claude\skills\video-creator"
 ```
@@ -78,22 +78,28 @@ Restart Claude Code, or start a new session. `video-creator` then appears among 
 
 ## Runtime setup (once)
 
-Create runtime files **outside** the Skill folder, for example in `%USERPROFILE%\video-creator-runtimes\`. The tools refuse runtime paths inside the package.
+Create one small runtime file per provider **outside** the Skill folder. The tools look for exactly one conventional location, so you don't need to pass paths on every run:
+
+- Windows: `%APPDATA%\video-creator\runtimes\mithi.json` and `%APPDATA%\video-creator\runtimes\kokoro-onnx.json`.
+- Elsewhere: `$XDG_CONFIG_HOME/video-creator/runtimes/` or `~/.config/video-creator/runtimes/`.
+- Or any folder named by the `VC_RUNTIMES` environment variable.
+
+An explicit `--runtime <provider>=<file>` always overrides. The tools refuse runtime paths inside the package.
 
 ```json
-// mithi-runtime.json
+// %APPDATA%\video-creator\runtimes\mithi.json
 {"kind": "wsl", "distro": "Ubuntu-24.04", "python": "/home/<you>/<mithi-env>/bin/python", "model": "D:/<models>/mithi"}
 ```
 
 ```json
-// kokoro-runtime.json
+// %APPDATA%\video-creator\runtimes\kokoro-onnx.json  (environment: pip install --require-hashes -r scripts\narration\providers\kokoro-requirements.txt)
 {"python": "C:/<kokoro-env>/Scripts/python.exe", "model": "C:/<models>/kokoro-v1.0.onnx", "voices": "C:/<models>/voices-v1.0.bin"}
 ```
 
 Check the installation with the packaged preflight. It is read-only and downloads nothing:
 
 ```powershell
-python "$HOME\.claude\skills\video-creator\scripts\doctor.py" --runtime mithi=<path>\mithi-runtime.json --runtime kokoro-onnx=<path>\kokoro-runtime.json
+python "$HOME\.claude\skills\video-creator\scripts\doctor.py"
 ```
 
 The report lists every style and language route as available, installed, planned or missing, each with a remedy.
@@ -125,7 +131,7 @@ Ask in plain language. The Skill runs the stages itself.
 - "Make a 60-second Telugu explainer about how the human heart pumps blood, full-bleed, autonomous."
 - "Create a short Kannada video explaining monsoon rainfall in the Data Storytelling style."
 - "Resume my video project in D:\videos\vc-20261126-xxxx."
-- "Plan, but don't render, a Hindi whiteboard explainer on photosynthesis. Mithi runtime: D:\runtimes\mithi-runtime.json."
+- "Plan, but don't render, a Hindi whiteboard explainer on photosynthesis."
 
 Each project lives outside the Skill folder and keeps a ledger (`project.json`), so interrupted work resumes from verified stages.
 

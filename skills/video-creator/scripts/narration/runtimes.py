@@ -12,6 +12,24 @@ import re
 KINDS = {"python-environment": "python", "wsl-python-environment": "wsl"}
 
 
+def runtime_dir():
+    """Conventional folder for runtime files (P026.3): $VC_RUNTIMES, else <APPDATA | XDG_CONFIG_HOME | ~/.config>/video-creator/runtimes."""
+    if os.environ.get("VC_RUNTIMES"):
+        return Path(os.environ["VC_RUNTIMES"]).expanduser()
+    return Path(os.environ.get("APPDATA") or os.environ.get("XDG_CONFIG_HOME") or Path.home() / ".config") / "video-creator" / "runtimes"
+
+
+def discover(providers, explicit):
+    """Runtime files by provider id. Explicit provider=path entries win; otherwise exactly one conventional file per
+    provider, <runtime_dir>/<provider>.json, is checked. Nothing is scanned or guessed."""
+    found = dict(explicit)
+    for pid in providers:
+        candidate = runtime_dir() / f"{pid}.json"
+        if pid not in found and candidate.is_file():
+            found[pid] = str(candidate)
+    return found
+
+
 class RuntimeError_(Exception):
     def __init__(self, code, message):
         super().__init__(f"[{code}] {message}")

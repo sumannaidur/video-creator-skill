@@ -97,7 +97,7 @@
         route: [key(S('route').start, [0, .02, 1.12]), key(S('route').end, [0, 0, 1.02], 'out')],
         arrive: cam('arrive', [0, 0, 1.06], [[0, 0, 1.0, 'smooth']]),
       };
-      return {scenes, cameras, checks: {keyframes: [['send-packets', pk + .7], ['route-trace', p0 + .75], ['arrive', cue('together') + .6]]}};
+      return {scenes, cameras, checks: {keyframes: [['send-packets', pk + .7], ['route-trace', p0 + .75], ['arrive', Math.min(cue('together') + .6, ctx.shot('arrive').end - .05)]]}};
     },
   };
 })();

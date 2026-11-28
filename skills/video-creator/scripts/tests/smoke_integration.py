@@ -83,7 +83,7 @@ broken = [f"{d.name}->{t}" for d in docs for t in re.findall(r"\]\(([^)#\s]+)", 
           if not t.startswith("http") and not ((d.parent / t).resolve().exists() and (d.parent / t).resolve().is_relative_to(pkg))]
 usage = run(["node", render]); prov = run([*py, narrate, "providers"]); gen = run([*py, assets_tool, "-h"]); val = run([*py, pkg / "scripts/narration/timeline.py", "-h"])
 check("documented scripts exist, links resolve, commands respond", not missing and not broken and usage.returncode == 2 and "Usage error" in usage.stderr
-      and prov.returncode == 0 and "kokoro-onnx" in prov.stdout and '"status": "candidate"' in prov.stdout and gen.returncode == 0 and val.returncode == 0,
+      and prov.returncode == 0 and "kokoro-onnx" in prov.stdout and '"status": "experimentally-validated"' in prov.stdout and gen.returncode == 0 and val.returncode == 0,
       missing=missing, broken=broken, render_usage=usage.returncode, providers=prov.stdout.count("provider"))
 
 # 3. Narration: two generic segments → validated, combined timeline (project-relative paths only).
@@ -154,7 +154,7 @@ check("existing narration, mix and assets are not overwritten; provenance record
 
 # 8. Extension boundaries: unsupported style and locale fail explicitly (no fallback).
 s = run(["node", render, "--project", project, "--topic", pkg / "scripts/tests/fixtures/cards-topic.js", "--timeline", "narration/narration.timeline.json",
-         "--out", "renders/x", "--style", "kinetic-typography", "--keys-only"])
+         "--out", "renders/x", "--style", "claymation", "--keys-only"])
 l = run([*py, narrate, "synth", "--project", project, "--provider", "kokoro-onnx", "--locale", "ta-IN", "--voice", "hf_alpha", "--runtime", a.runtime,
          "--text-file", "inputs/B.txt", "--id", "T", "--out-dir", "narration/segments"])
 check("unsupported style and locale fail explicitly", s.returncode == 1 and "unsupported-style" in s.stderr and l.returncode == 1 and "unsupported-locale" in l.stderr)

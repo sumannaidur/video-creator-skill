@@ -1,1 +1,0 @@
-Once it has the grid, the reader can interpret the encoded data. Some of those squares carry extra information for error correction, which can help recover a message even if part of the code is damaged.

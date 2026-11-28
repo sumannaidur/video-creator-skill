@@ -119,7 +119,7 @@ def detect(a):
     # Narration: provider registry + read-only provider probes with the user's runtime configuration.
     reg = json.loads((HERE / "narration" / "providers" / "registry.json").read_text(encoding="utf-8"))
     targets = reg.get("_target_locales", [])
-    runtimes = dict(item.split("=", 1) for item in a.runtime)
+    runtimes = launchers.discover([k for k in reg if not k.startswith("_")], dict(item.split("=", 1) for item in a.runtime))
     providers = {}
     for pid, entry in ((k, v) for k, v in reg.items() if not k.startswith("_")):
         info = dict(registry_status=entry["status"], timing_method=entry["timing_method"], word_timing=entry.get("word_timing", True),
@@ -128,6 +128,7 @@ def detect(a):
             info["status"] = "candidate (not packaged)"
         elif pid not in runtimes:
             info["status"] = "installed (runtime not configured)"
+            info["reason"] = f"no runtime file: create {launchers.runtime_dir() / (pid + '.json')} or pass --runtime {pid}=<runtime.json>"
         else:
             try:
                 rt = json.loads(Path(runtimes[pid]).read_text(encoding="utf-8"))
@@ -147,6 +148,7 @@ def detect(a):
             elif not interp or (argv[0] == interp and not Path(interp).is_file()):
                 info.update(status="installed (runtime missing)", reason=f"runtime interpreter not found: {interp}")
             else:
+                info["runtime_file"] = str(runtimes[pid])
                 model = rt.get("model")
                 req = dict(model=host(model) if model else model, voices=rt.get("voices"), verify_hashes=a.verify_hashes)
                 code, out, err = run([*argv, "--probe"], input=json.dumps(req), timeout=300)
@@ -229,6 +231,8 @@ def human(report):
     lines.append("Narration providers:")
     for k, p in report["narration_providers"].items():
         lines.append(f"  {k:12} {p['status']}  timing={p['timing_method']}{'' if p['word_timing'] else ' (no word timing)'}  locales={','.join(p['locales']) or '-'}")
+        if p.get("reason"):
+            lines.append(f"  {'':12} -> {p['reason']}")
     lines.append("Locales (narration + timing):")
     for k, l in report["locales"].items():
         route = "; ".join(f"{r['provider']} [{r['status']}] voices={','.join(v['id'] for v in r['voices'])} - {r['validation']}" for r in l["routes"]) or "no packaged route" + (

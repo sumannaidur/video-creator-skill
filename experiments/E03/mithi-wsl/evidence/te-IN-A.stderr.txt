@@ -1,1 +1,0 @@
-Loading weights:   0%|          | 0/25 [00:00<?, ?it/s]Loading weights:  20%|██        | 5/25 [00:00<00:00, 26.27it/s]Loading weights: 100%|██████████| 25/25 [00:00<00:00, 129.19it/s]

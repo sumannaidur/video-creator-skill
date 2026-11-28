@@ -1,8 +1,0 @@
-{
-  "cue_checks": 4,
-  "repeatability": true,
-  "human_review": "pending",
-  "passed": true,
-  "keyframes": 3,
-  "scope": "keyframes-only"
-}

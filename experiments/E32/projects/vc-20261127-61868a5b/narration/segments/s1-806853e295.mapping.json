@@ -1,5 +1,0 @@
-{
-  "result": "rejected",
-  "code": "word-mismatch",
-  "reason": "[word-mismatch] text word '1969,' does not match the model words ['one']"
-}

@@ -34,7 +34,7 @@
     return `<ellipse cx="${f(cx)}" cy="${f(cy)}" rx="${f(rx)}" ry="${f(ry)}" fill="${RICH ? '#222b3b' : '#e9edf3'}"/>` +
       (RICH ? `<ellipse cx="${f(cx - rx * .25)}" cy="${f(cy - ry * .3)}" rx="${f(rx * .55)}" ry="${f(ry * .35)}" fill="#ffffff" opacity=".07"/>` : '');
   };
-  const padLed = () => { const [cx, cy] = I(0, 200, 20); return (RICH ? A.halo(cx, cy, 70, {id: 'wx-led', color: FIELD, strength: .8}) : '') + `<circle cx="${f(cx)}" cy="${f(cy)}" r="7" fill="${FIELD}"/>`; };
+  const padLed = (id = 'wx-led') => { const [cx, cy] = I(0, 200, 20); return (RICH ? A.halo(cx, cy, 70, {id, color: FIELD, strength: .8}) : '') + `<circle cx="${f(cx)}" cy="${f(cy)}" r="7" fill="${FIELD}"/>`; };
   const beamArt = () => RICH ? A.beam([VW * .18, -40], I(0, 0, 40), 120, 520, {id: 'wx-beam', color: '#b9d3ff', strength: .2}) : '';
   const fieldLoops = (top = 230, n = 4, z = 40) => {
     const [cx, cy] = I(0, 0, z);
@@ -92,7 +92,7 @@
       sym('w-studio-a', vb, studio('wx-sa', [.5, .66])), sym('w-studio-b', vb, studio('wx-sb', [.5, .6])), sym('w-studio-c', vb, studio('wx-sc', [.5, .64])),
       sym('w-beam', vb, beamArt()), sym('w-pad', vb, padBody()), sym('w-coil', vb, padCoil()), sym('w-lid', vb, padLid()), sym('w-led', vb, padLed()),
       sym('w-field', vb, fieldLoops(320, 5)), sym('w-phone', vb, phoneSlab()), sym('w-field-tall', vb, fieldLoops(330, 5)),
-      sym('w-pad-lit', vb, padBody() + padCoil() + padLed()),
+      sym('w-pad-lit', vb, padBody() + padCoil() + padLed('wx-led-lit')),   // unique gradient id per symbol (P026.6B)
       ...['back', 'rcoil', 'battery', 'glass'].map(n => sym(`w-${n}`, vb, part(n, Z))), sym('w-current', vb, currentArt(Z)),
       sym('w-cell', vb, batteryArt()), sym('w-fill', vb, fillArt()), sym('w-bglow', vb, batteryGlow()),
     ].join(''); },

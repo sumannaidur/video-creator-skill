@@ -19,11 +19,19 @@ export function findChrome(explicit) {
   return found;
 }
 
+// Network isolation (P026.2): rendered pages may load only local content. Every page request passes through the DevTools
+// Fetch domain: file:, data:, blob: and about: continue, anything else is failed before it leaves the browser and recorded.
+// The next evaluate() then throws [network-blocked], so a render or preflight that needed a remote asset fails explicitly
+// instead of rendering without it. Host-name resolution is also disabled (second layer, also covering non-HTTP schemes).
+// The DevTools connection itself is made by Node to 127.0.0.1 and is not affected.
+export const LOCAL_SCHEMES = /^(file|data|blob|about):/i;
+const redactUrl = url => { try { const u = new URL(url); return `${u.protocol}//${u.host}${u.pathname}`; } catch { return String(url).split('?')[0]; } };
+
 export async function launch({chrome, width, height, browserArgs = []}) {
   const profile = await mkdtemp(join(tmpdir(), 'vc-chrome-'));
   const browser = spawn(findChrome(chrome), ['--headless', '--remote-debugging-port=0', '--no-first-run',
     '--no-default-browser-check', '--disable-background-networking', '--user-data-dir=' + profile,
-    ...browserArgs, 'about:blank'], {windowsHide: true, stdio: 'ignore'});
+    '--host-resolver-rules=MAP * ~NOTFOUND', ...browserArgs, 'about:blank'], {windowsHide: true, stdio: 'ignore'});
   let ws;
   const close = async () => { ws?.close(); browser.kill(); await rm(profile, {recursive: true, force: true}).catch(() => {}); };
   try {
@@ -51,13 +59,24 @@ export async function launch({chrome, width, height, browserArgs = []}) {
       ws.send(JSON.stringify({id: request, method, params}));
     });
     const version = (await call('Browser.getVersion')).product;
+    const blocked = [];
+    ws.addEventListener('message', event => {
+      const message = JSON.parse(event.data);
+      if (message.method !== 'Fetch.requestPaused') return;
+      const {requestId, request} = message.params;
+      const allow = LOCAL_SCHEMES.test(request.url);
+      if (!allow) blocked.push(redactUrl(request.url));
+      ws.send(JSON.stringify({id: ++id, method: allow ? 'Fetch.continueRequest' : 'Fetch.failRequest', params: allow ? {requestId} : {requestId, errorReason: 'BlockedByClient'}}));
+    });
+    await call('Fetch.enable', {patterns: [{urlPattern: '*'}]});
     await call('DOM.enable'); await call('CSS.enable'); await call('Page.enable');
     await call('Emulation.setDeviceMetricsOverride', {width, height, deviceScaleFactor: 1, mobile: false});
     const evaluate = async expression => {
       const reply = await call('Runtime.evaluate', {expression, returnByValue: true, awaitPromise: true});
+      if (blocked.length) throw Object.assign(new Error(`[network-blocked] the rendered page requested non-local resources, which are not allowed: ${[...new Set(blocked)].slice(0, 5).join(', ')}`), {code: 'network-blocked'});
       if (reply.exceptionDetails) throw new Error(reply.exceptionDetails.exception?.description || 'Browser evaluation failed');
       return reply.result.value;
     };
-    return {call, evaluate, version, close};
+    return {call, evaluate, version, close, blocked};
   } catch (error) { await close(); throw error; }
 }

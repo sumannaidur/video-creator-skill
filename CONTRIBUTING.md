@@ -32,15 +32,20 @@ Update [`THIRD_PARTY_NOTICES.md`](THIRD_PARTY_NOTICES.md), and its copy in `skil
 
 ## Testing
 
-The self-contained tests live in `skills/video-creator/scripts/tests/`; see their `README.md`. Run the suites that cover your change, for example:
+Run the unified runner (see `skills/video-creator/scripts/tests/README.md`):
 
 ```bash
-python skills/video-creator/scripts/tests/test_plan.py
-node skills/video-creator/scripts/tests/test-prerender.mjs
+python skills/video-creator/scripts/tests/run_all.py
+python tools/check_repository.py
 ```
 
-- Some suites need Chromium, FFmpeg or a local narration runtime. Say in your pull request which suites you ran and which you couldn't run.
-- There is no CI yet.
+- Some suites need Chromium, FFmpeg or a local narration runtime; the runner reports those as skipped, never passed. Say in your pull request which suites you ran and which were skipped.
+- **CI** (`.github/workflows/ci.yml`) runs on every push to `main` and every pull request:
+  - repository checks;
+  - deterministic packaging;
+  - the core, Node, browser and FFmpeg suites, both from the source tree and from an extracted release package.
+
+  Narration runtime suites can't run in CI (no models).
 
 ## Pull requests
 

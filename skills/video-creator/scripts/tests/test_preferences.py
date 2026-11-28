@@ -6,6 +6,7 @@ python -I scripts/tests/test_preferences.py --runtime <kokoro runtime.json> [--w
 import argparse
 import hashlib
 import json
+import os
 from pathlib import Path
 import shutil
 import subprocess
@@ -19,6 +20,9 @@ ap.add_argument("--work", default=str(Path(tempfile.gettempdir()) / "vc-prefs-te
 a = ap.parse_args()
 work = Path(a.work).resolve()
 shutil.rmtree(work, ignore_errors=True)
+
+# Isolate from runtime files the maintainer has configured (P026.3 discovery): only runtimes passed explicitly count.
+(work / "no-runtimes").mkdir(parents=True, exist_ok=True); os.environ["VC_RUNTIMES"] = str(work / "no-runtimes")
 pkg = work / "installed" / "video-creator"
 shutil.copytree(SOURCE, pkg, ignore=shutil.ignore_patterns("test-*results.json", "__pycache__"))
 tool = pkg / "scripts" / "preferences.py"

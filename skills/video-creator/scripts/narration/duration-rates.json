@@ -1,7 +1,7 @@
 {
  "schema": "video-creator.duration-rates",
  "version": 1,
- "derived": "P024.14A from retained Mithi segment caches E30-E38 (experiments/P024/duration_fit.py); speech characters = Unicode letters and marks",
+ "derived": "P024.14A from retained Mithi segment caches E30-E38 (tools/duration_fit.py in the source repository); speech characters = Unicode letters and marks",
  "voices": {
   "mithi/ahana": {
    "locale": "te-IN",

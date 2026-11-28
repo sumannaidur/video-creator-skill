@@ -4,8 +4,8 @@ description: Create a sourced, narrated, topic-specific animated explainer video
 license: Apache-2.0 (see LICENSE). Third-party tools, models, voices and fonts keep their own terms (see THIRD_PARTY_NOTICES.md).
 compatibility: Requires shell access, Node 22+, Python 3, FFmpeg/FFprobe and local Chromium. Narration uses locally configured Kokoro ONNX (hi-IN) or Mithi on WSL 2 (hi-IN, kn-IN, ta-IN, te-IN, en-IN). Windows 11 evidence includes Claude Code release validation (P019) and development keyframe workflows run natively in Claude Code (P024.2–P024.4) and Codex (P024.5–P024.10).
 metadata:
-  version: 0.2.0-beta
-  status: beta (release candidate); nine styles, framed and full-bleed presentations, five locales; optional Blender artwork layers; human artistic, factual, native-language, licensing and publication gates stay open (see README.md)
+  version: 0.2.1-beta
+  status: beta (maintenance release candidate); nine styles, framed and full-bleed presentations, five locales; optional Blender artwork layers; human artistic, factual, native-language, licensing and publication gates stay open (see README.md)
   contract: skill-contract v0.1
 ---
 

@@ -28,6 +28,9 @@ snapshot = lambda: {p.relative_to(pkg).as_posix(): hashlib.sha256(p.read_bytes()
 before = snapshot()
 project = work / "project"; project.mkdir()
 
+# Isolate from runtime files the maintainer has configured (P026.3 discovery): only runtimes passed explicitly count.
+(work / "no-runtimes").mkdir(parents=True, exist_ok=True); os.environ["VC_RUNTIMES"] = str(work / "no-runtimes")
+
 
 def check(name, ok, **detail):
     results.append(dict(name=name, ok=bool(ok), **detail))

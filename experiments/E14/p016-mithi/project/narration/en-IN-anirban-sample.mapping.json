@@ -1,5 +1,0 @@
-{
-  "result": "rejected",
-  "code": "word-group-mismatch",
-  "reason": "[word-group-mismatch] 18 token groups but 21 model words"
-}

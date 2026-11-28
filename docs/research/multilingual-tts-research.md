@@ -1,6 +1,6 @@
 # P004 — Local multilingual voice research
 
-Researched **2026-11-25** from official model cards, repositories, and license texts. No checkpoint was downloaded or run. Published samples and claims are **external evidence**, not listening or benchmark results on this machine. See [E02 hardware](../experiments/E02-hardware-assessment.md): 4-core/8-thread CPU, 16 GiB installed but ~2.5 GiB free at inspection, integrated Iris Xe, 134 GiB free on D:, no active Python TTS packages. The provisional first-test incremental RAM budget is ~1 GiB, not a model-specific limit.
+Researched **2026-11-25** from official model cards, repositories, and license texts. No checkpoint was downloaded or run. Published samples and claims are **external evidence**, not listening or benchmark results on this machine. See [E02 hardware](../history/experiments/E02-hardware-assessment.md): 4-core/8-thread CPU, 16 GiB installed but ~2.5 GiB free at inspection, integrated Iris Xe, 134 GiB free on D:, no active Python TTS packages. The provisional first-test incremental RAM budget is ~1 GiB, not a model-specific limit.
 
 ## Findings and candidate categories
 

@@ -21,5 +21,5 @@ Packaged as provider `mithi`, locale `kn-IN`, voice `vaidehi` (see [narration](.
 
 - Native listening review of `vaidehi`: naturalness, pronunciation and accent.
 - Native-reader review of the script wording, captions and labels.
-- A native word-boundary review of the timings. The P016 sample and its label track are in `experiments/E14/p016-mithi/`.
+- A native word-boundary review of the timings. The P016 sample and its label track are in `experiments/E14/p016-mithi/` (archived development evidence, not part of the installed package; see `docs/history/experiments-index.md` in the source repository).
 - Licence review of the caption font and of Mithi for publishing.

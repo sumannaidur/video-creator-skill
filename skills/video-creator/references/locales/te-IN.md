@@ -30,4 +30,4 @@ Packaged as provider `mithi`, locale `te-IN`, voice `ahana` (see [narration](../
 
 - Native listening review of `ahana`: naturalness, pronunciation and accent.
 - Native-reader review of the script wording, captions and labels.
-- A native word-boundary review of the timings (a review sheet and Audacity label tracks are in `experiments/E12/p015.2b-timing/review/`).
+- A native word-boundary review of the timings (a review sheet and Audacity label tracks are in `experiments/E12/p015.2b-timing/review/` (archived development evidence, not part of the installed package; see `docs/history/experiments-index.md` in the source repository)).

@@ -1,4 +1,5 @@
-"""P014.3C focused audio tests (system Python + FFmpeg). Uses repository P013 audio as fixtures.
+"""P014.3C focused audio tests (system Python + FFmpeg). Self-contained since P026.4: a deterministic synthetic speech-like
+narration (band-limited pink noise with a 4.3 Hz syllable envelope and two pauses, 24 kHz mono) replaces the P013 recordings.
 
 python -I skills/video-creator/scripts/tests/test_audio.py [--repo <root>] [--work <scratch>]
 """
@@ -23,8 +24,13 @@ sha = lambda p: hashlib.sha256(Path(p).read_bytes()).hexdigest()
 
 
 def check(name, ok, **detail):
-    results.append(dict(name=name, ok=bool(ok), **detail))
+    results.append(dict(name=name, **detail, status="passed" if ok else "failed"))
     print(("PASS " if ok else "FAIL ") + name + " " + json.dumps(detail, ensure_ascii=False)[:400])
+
+
+def skip(name, reason):
+    results.append(dict(name=name, status="skipped", reason=reason))
+    print(f"SKIP {name} ({reason})")
 
 
 # 1. No experiments/ references (provenance lines excluded); run everything from an installed copy outside the repo.
@@ -49,13 +55,19 @@ check("asset generator: manifest written, overwrite refused, package path refuse
       r.returncode == 0 and (assets / "assets-manifest.json").exists() and r2.returncode != 0 and "--overwrite" in r2.stderr and r3.returncode != 0,
       first=r.returncode, second=r2.stderr.strip()[-120:], inside=r3.stderr.strip()[-80:])
 
+# Synthetic speech-like narration fixture (deterministic seed), used by the sync and mix tests below.
+speech = work / "synthetic-narration.wav"
+subprocess.run(["ffmpeg", "-hide_banner", "-loglevel", "error", "-y", "-f", "lavfi", "-i", "anoisesrc=color=pink:amplitude=0.6:sample_rate=24000:seed=7:duration=8.925",
+                "-af", "bandpass=f=900:width_type=h:w=1600,volume='0.15+0.85*abs(sin(PI*4.3*t))':eval=frame,volume=enable='between(t,2.6,3.2)+between(t,5.7,6.3)':volume=0,loudnorm=I=-18:TP=-2:LRA=11",
+                "-ac", "1", "-ar", "24000", "-c:a", "pcm_s16le", str(speech)], check=True)
+
 # 4. The eight P013.5.1 synchronization tests, from the installed copy.
-r = py(installed / "scripts" / "tests" / "test_sync.py", repo / "experiments/E10/p013-flights/narration-DK.wav", assets / "music-pad.wav")
+r = py(installed / "scripts" / "tests" / "test_sync.py", speech, assets / "music-pad.wav")
 check("eight synchronization regression tests", r.returncode == 0 and r.stdout.count("PASS") == 8, out=r.stdout.strip().splitlines()[-1:] if r.stdout else r.stderr[-200:])
 
 # 5. Short mix + video mux smoke test (music, two effects, ducking, loudness, peak, sync, stream copy).
 narration = project / "narration.wav"
-shutil.copy(repo / "experiments/E04/native-timing/samples/sample-B-native.wav", narration)
+shutil.copy(speech, narration)
 seconds = 8.925
 subprocess.run(["ffmpeg", "-hide_banner", "-loglevel", "error", "-f", "lavfi", "-i", f"color=c=0x427361:s=270x480:r=30:d={seconds}",
                 "-i", str(narration), "-map", "0:v", "-map", "1:a", "-c:v", "libx264", "-pix_fmt", "yuv420p", "-c:a", "aac", "-shortest",
@@ -97,29 +109,45 @@ unl = only | {"manifest": "audio/assets/unlicensed-manifest.json", "sfx": [{"fil
 r = py(audio / "mix_audio.py", project / "bad2.json")
 check("rejects asset whose manifest entry has no license", r.returncode != 0 and "license" in r.stderr, err=r.stderr.strip()[-120:])
 
-# 8. Regression: the packaged mixer reproduces the accepted P013 flight mix byte for byte (audio only, no video).
+# 8. Regression: the packaged mixer reproduces the accepted P013 flight mix byte for byte (audio only, no video). Repository only.
 flights = repo / "experiments/E10/p013-flights"
-fspec = json.loads((flights / "audio/mix-spec.json").read_text(encoding="utf-8"))
-reg = work / "regression"; reg.mkdir()
-fspec["narration"] = str((flights / "audio" / fspec["narration"]).resolve())
-fspec["manifest"] = str((flights / "audio" / fspec["manifest"]).resolve())
-fspec["music"]["file"] = str((flights / "audio" / fspec["music"]["file"]).resolve())
-for s in fspec["sfx"]:
-    s["file"] = str((flights / "audio" / s["file"]).resolve())
-fspec.pop("video"); fspec["output"] = "flights-mix.wav"
-(reg / "spec.json").write_text(json.dumps(fspec, ensure_ascii=False), encoding="utf-8")
-r = py(audio / "mix_audio.py", reg / "spec.json")
-# The FFmpeg graph is not bit-reproducible run to run (the unchanged experimental mixer also differs between runs), so compare
-# measurements and the residual against the accepted mix instead of bytes.
-new = json.loads((reg / "flights-mix.evidence.json").read_text(encoding="utf-8")) if r.returncode == 0 else {}
-old = json.loads((flights / "audio/flights-mix.evidence.json").read_text(encoding="utf-8"))
-stats = subprocess.run(["ffmpeg", "-hide_banner", "-i", str(reg / "flights-mix.wav"), "-i", str(flights / "audio/flights-mix.wav"), "-filter_complex",
-                        "[0][1]amerge=inputs=2,pan=mono|c0=c0-c2,astats=reset=0", "-f", "null", "-"], capture_output=True, text=True).stderr
-residual = float(stats.split("Overall")[-1].split("RMS level dB:")[1].split()[0]) if "Overall" in stats else 0.0
-same = r.returncode == 0 and new["loudnorm_first_pass"] == old["loudnorm_first_pass"] and new["applied_gain_db"] == old["applied_gain_db"] and     (new["output"]["integrated"], new["output"]["true_peak"]) == (old["output"]["integrated"], old["output"]["true_peak"]) and new["passed"]
-check("flight mix regression: same measurements as P013.5.2, residual <= -70 dBFS RMS", same and residual <= -70,
-      residual_rms_db=residual, lufs=new.get("output", {}).get("integrated"), peak=new.get("output", {}).get("true_peak"), err=r.stderr[-200:])
+def p013_missing():
+    """Every input the regression needs; several are git-ignored media absent from clones and CI (P026.6B)."""
+    spec_file = flights / "audio/mix-spec.json"
+    if not spec_file.is_file():
+        return [str(spec_file)]
+    spec = json.loads(spec_file.read_text(encoding="utf-8"))
+    need = [spec.get("narration"), spec.get("manifest"), (spec.get("music") or {}).get("file"), *[s.get("file") for s in spec.get("sfx", [])],
+            "flights-mix.wav", "flights-mix.evidence.json"]
+    return sorted({str(flights / "audio" / n) for n in need if n and not (flights / "audio" / n).is_file()} | ({"mix-spec.json: missing entries"} if None in need[:3] else set()))
 
-(PKG / "scripts" / "tests" / "test-audio-results.json").write_text(json.dumps(results, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
-print(f"{sum(x['ok'] for x in results)}/{len(results)} passed")
-sys.exit(0 if all(x["ok"] for x in results) else 1)
+
+missing = p013_missing()
+if missing:
+    skip("flight mix regression: same measurements as P013.5.2, residual <= -70 dBFS RMS", "fixtures unavailable: " + ", ".join(missing[:4]))
+else:
+    fspec = json.loads((flights / "audio/mix-spec.json").read_text(encoding="utf-8"))
+    reg = work / "regression"; reg.mkdir()
+    fspec["narration"] = str((flights / "audio" / fspec["narration"]).resolve())
+    fspec["manifest"] = str((flights / "audio" / fspec["manifest"]).resolve())
+    fspec["music"]["file"] = str((flights / "audio" / fspec["music"]["file"]).resolve())
+    for s in fspec["sfx"]:
+        s["file"] = str((flights / "audio" / s["file"]).resolve())
+    fspec.pop("video"); fspec["output"] = "flights-mix.wav"
+    (reg / "spec.json").write_text(json.dumps(fspec, ensure_ascii=False), encoding="utf-8")
+    r = py(audio / "mix_audio.py", reg / "spec.json")
+    # The FFmpeg graph is not bit-reproducible run to run (the unchanged experimental mixer also differs between runs), so compare
+    # measurements and the residual against the accepted mix instead of bytes.
+    new = json.loads((reg / "flights-mix.evidence.json").read_text(encoding="utf-8")) if r.returncode == 0 else {}
+    old = json.loads((flights / "audio/flights-mix.evidence.json").read_text(encoding="utf-8"))
+    stats = subprocess.run(["ffmpeg", "-hide_banner", "-i", str(reg / "flights-mix.wav"), "-i", str(flights / "audio/flights-mix.wav"), "-filter_complex",
+                            "[0][1]amerge=inputs=2,pan=mono|c0=c0-c2,astats=reset=0", "-f", "null", "-"], capture_output=True, text=True).stderr
+    residual = float(stats.split("Overall")[-1].split("RMS level dB:")[1].split()[0]) if "Overall" in stats else 0.0
+    same = r.returncode == 0 and new["loudnorm_first_pass"] == old["loudnorm_first_pass"] and new["applied_gain_db"] == old["applied_gain_db"] and     (new["output"]["integrated"], new["output"]["true_peak"]) == (old["output"]["integrated"], old["output"]["true_peak"]) and new["passed"]
+    check("flight mix regression: same measurements as P013.5.2, residual <= -70 dBFS RMS", same and residual <= -70,
+          residual_rms_db=residual, lufs=new.get("output", {}).get("integrated"), peak=new.get("output", {}).get("true_peak"), err=r.stderr[-200:])
+
+(work / "test-audio-results.json").write_text(json.dumps(results, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
+count = lambda st: sum(x["status"] == st for x in results)
+print(f"{count('passed')} passed, {count('failed')} failed, {count('skipped')} skipped")
+sys.exit(1 if count("failed") else 0)

@@ -1,1 +1,0 @@
-{"method": "bed-subtracted envelope cross-correlation", "lag_ms": 5, "correlation": 0.9995, "max_lag_ms": 2, "min_correlation": 0.95, "passed": false}

@@ -271,3 +271,11 @@ experiments/E26/work/projects/*/topic.js
 experiments/E42/projects/*/visual/topic.js
 # Logs and stderr captures.
 experiments/**/*.err
+
+# --- P026.6C: development experiments are archived out of the active tree (see docs/history/experiments-index.md);
+# local copies, media and the archive tarball stay on the maintainer's disk only.
+/experiments/
+/archive/
+
+# P027.1: local audit notes contain machine paths; keep them local-only.
+/docs/audits/

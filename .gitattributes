@@ -1,0 +1,20 @@
+# P026.3: store and check out text with LF everywhere, so release builds are byte-reproducible from any checkout
+# (Windows core.autocrlf would otherwise convert to CRLF). Binary formats are never converted.
+* text=auto eol=lf
+
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.gif binary
+*.webp binary
+*.wav binary
+*.mp3 binary
+*.mp4 binary
+*.zip binary
+*.bin binary
+*.hdr binary
+*.exr binary
+*.glb binary
+*.npy binary
+*.onnx binary
+*.safetensors binary

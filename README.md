@@ -2,7 +2,7 @@
 
 **Turn a topic into a sourced, narrated, animated explainer video, using free local tools on your own computer.**
 
-> **Status: v0.2.0-beta, published as a public GitHub [prerelease](https://github.com/sumannaidur/video-creator-skill/releases/tag/v0.2.0-beta).** The pipeline works end to end, but the output is **not** artistically validated and **not** production-ready. Every video it makes still needs human review: artistic, factual, native-language, licensing and publication. See [Known limitations](#known-limitations).
+> **Status: v0.2.1-beta maintenance release candidate (not yet published). The latest published prerelease is [v0.2.0-beta](https://github.com/sumannaidur/video-creator-skill/releases/tag/v0.2.0-beta).** The pipeline works end to end, but the output is **not** artistically validated and **not** production-ready. Every video it makes still needs human review: artistic, factual, native-language, licensing and publication. See [Known limitations](#known-limitations).
 
 Video Creator is an [Agent Skill](https://agentskills.io): a folder of instructions (`SKILL.md`), reference guides and scripts that an AI coding agent such as Claude Code or Codex loads when you ask for an explainer video.
 - **The agent decides** what to say and show: research, script, art direction, shots, motion, captions and sound.
@@ -102,7 +102,7 @@ Synthesis and word timing are technically validated for all five. Timings are mo
 
 The listed hosts and tools are all free. Nothing below is bundled with the Skill.
 
-**Verified configuration** (the only one exercised so far): Windows 11; Node.js 22+; Python 3; FFmpeg and FFprobe; Chrome; Mithi in WSL2 Ubuntu 24.04 (Python 3.12, CPU PyTorch 2.9.1); optional Blender 5.2.2. Other versions and platforms may work but are **unverified**.
+**Verified configuration** (the only one exercised so far): Windows 11; Node.js 24.19; Python 3.14; FFmpeg 9.0.2; Chrome 157; Mithi in WSL2 Ubuntu 24.04 (Python 3.12.3, CPU PyTorch 2.9.1); Kokoro with the hash-pinned wheel set for CPython 3.12; optional Blender 5.2.2. Exact versions, evidence and vulnerability status are in the package's `references/tested-configurations.md`. Other versions and platforms may work but are **unverified**.
 
 - **An Agent Skill host with shell access:** Claude Code or Codex (see [Host compatibility](#host-compatibility)).
 - **Operating system:** Windows 11. This is the only platform exercised so far; Linux and macOS are untested.
@@ -120,17 +120,17 @@ The listed hosts and tools are all free. Nothing below is bundled with the Skill
 
 ## Installation
 
-Download `video-creator-v0.2.0-beta.zip` and `video-creator-v0.2.0-beta.zip.sha256` from the [v0.2.0-beta prerelease](https://github.com/sumannaidur/video-creator-skill/releases/tag/v0.2.0-beta). Verify the checksum:
+Download `video-creator-v0.2.1-beta.zip` and `video-creator-v0.2.1-beta.zip.sha256` from the [releases page](https://github.com/sumannaidur/video-creator-skill/releases). Until v0.2.1-beta is published, use the v0.2.0-beta files and substitute that version in the commands. Verify the checksum:
 
 ```powershell
-(Get-FileHash .\video-creator-v0.2.0-beta.zip -Algorithm SHA256).Hash.ToLower()
-Get-Content .\video-creator-v0.2.0-beta.zip.sha256
+(Get-FileHash .\video-creator-v0.2.1-beta.zip -Algorithm SHA256).Hash.ToLower()
+Get-Content .\video-creator-v0.2.1-beta.zip.sha256
 ```
 
 The two hashes must match. Then extract the archive; it contains one folder, `video-creator`.
 
 ```powershell
-Expand-Archive .\video-creator-v0.2.0-beta.zip -DestinationPath $env:TEMP\vc-release -Force
+Expand-Archive .\video-creator-v0.2.1-beta.zip -DestinationPath $env:TEMP\vc-release -Force
 ```
 
 ### Claude Code
@@ -167,14 +167,20 @@ Start a new Codex session. Ask in plain language, or mention `$video-creator`.
 
 **What is verified and what is not:** the runtime-file formats, the model hash checks and the doctor's readiness report are verified, because the packaged tools enforce them. The environment-creation steps below are **reference guidance**, derived from what the packaged providers import and check. A fresh install by following them has **not** been exercised end to end. If `doctor.py` reports a route `missing`, its remedy takes precedence over this guide.
 
-Create small runtime files **outside** the Skill folder, for example in `%USERPROFILE%\video-creator-runtimes\`. The tools refuse runtime paths inside the package.
+Create one small runtime file per provider **outside** the Skill folder. The tools look for exactly one conventional location, so you don't need to pass paths on every run:
+
+- Windows: `%APPDATA%\video-creator\runtimes\mithi.json` and `%APPDATA%\video-creator\runtimes\kokoro-onnx.json`.
+- Elsewhere: `$XDG_CONFIG_HOME/video-creator/runtimes/` or `~/.config/video-creator/runtimes/`.
+- Or any folder named by the `VC_RUNTIMES` environment variable.
+
+An explicit `--runtime <provider>=<file>` always overrides. The tools refuse runtime paths inside the package.
 
 ### Mithi v2 Flash (all five languages, WSL2)
 
 1. Install WSL2 with a Linux distribution, for example `Ubuntu-24.04`.
 2. In the distribution, create a Python virtual environment with **CPU-only PyTorch** (a CUDA build is refused), NumPy, soundfile, and whatever else the model's own `run.py` imports. Follow the model card.
 3. Download the model repository `Oomni/mithi-v2-flash` at revision `1fc0dd68496a2483508ec764d310146c41ff90be` into a Windows folder. Every file is hash-checked against the packaged manifest before each synthesis, so any other revision is refused.
-4. Write `mithi-runtime.json`:
+4. Write `%APPDATA%\video-creator\runtimes\mithi.json`:
 
 ```json
 {"kind": "wsl", "distro": "Ubuntu-24.04", "python": "/home/<you>/<mithi-env>/bin/python", "model": "D:/<models>/mithi"}
@@ -182,9 +188,9 @@ Create small runtime files **outside** the Skill folder, for example in `%USERPR
 
 ### Kokoro ONNX (Hindi only, Windows Python)
 
-1. Create a Python environment with `kokoro-onnx==0.6.1`, `onnxruntime`, `soundfile` and `phonemizer` (with eSpeak NG available).
+1. Create a CPython 3.12 (Windows x64) environment outside the Skill folder, and install the exact tested, hash-pinned wheel set: `python -m pip install --require-hashes -r <installed Skill>\scripts\narration\providers\kokoro-requirements.txt`. That includes kokoro-onnx 0.6.1, onnxruntime 1.32.0 and phonemizer 3.6.0; eSpeak NG data comes from `espeakng-loader`. Other Python versions need different wheels and are unverified.
 2. Download `kokoro-v1.0.onnx` and `voices-v1.0.bin` from the kokoro-onnx `model-files-v1.1` release.
-3. Write `kokoro-runtime.json`:
+3. Write `%APPDATA%\video-creator\runtimes\kokoro-onnx.json`:
 
 ```json
 {"python": "C:/<kokoro-env>/Scripts/python.exe", "model": "C:/<models>/kokoro-v1.0.onnx", "voices": "C:/<models>/voices-v1.0.bin"}
@@ -195,10 +201,10 @@ Create small runtime files **outside** the Skill folder, for example in `%USERPR
 Run the packaged doctor. It is read-only: it downloads, installs and changes nothing.
 
 ```powershell
-python "$HOME\.claude\skills\video-creator\scripts\doctor.py" --runtime mithi=$HOME\video-creator-runtimes\mithi-runtime.json --locale te-IN
+python "$HOME\.claude\skills\video-creator\scripts\doctor.py" --locale te-IN
 ```
 
-For Codex installs, use the `$HOME\.agents\skills\video-creator\...` path. The report lists the system, tools, Blender (optional), every narration route and every style as `available`, `installed`, `planned` or `missing`, each with a remedy. The last line says `READY` or `NOT READY`.
+For Codex installs, use the `$HOME\.agents\skills\video-creator\...` path. Runtime files are found in the conventional folder. If one is missing, the report prints the exact path it expected. The report lists the system, tools, Blender (optional), every narration route and every style as `available`, `installed`, `planned` or `missing`, each with a remedy. The last line says `READY` or `NOT READY`.
 
 ## First-use preferences
 
@@ -223,7 +229,7 @@ A value you give in a request overrides the saved preference for that run only, 
 
 Ask your agent in plain language. Include the topic, language and length; everything else can be left to the Skill.
 
-- "Make a 30-second Telugu explainer on how an induction stove heats only the pan. Mithi runtime: `C:\Users\me\video-creator-runtimes\mithi-runtime.json`."
+- "Make a 30-second Telugu explainer on how an induction stove heats only the pan."
 - "Create a 60-second Kannada Data Storytelling video on monsoon rainfall, full-bleed, guided mode."
 - "Plan, but don't render, a Hindi whiteboard explainer on photosynthesis."
 - "Render three keyframes only, then stop for my review."
@@ -291,6 +297,8 @@ The final video is an H.264/AAC MP4, by default 1080×1920 at 30 fps. 1920×1080
 - **3D:** the 3D style cannot import textures or models. Blender is verified for static layers and stills only.
 - **Captions:** the full-bleed text-safe areas are assumptions, not measured platform UI zones.
 - **Platform:** Windows 11 only. Linux, macOS and other hosts are untested. Antigravity is **unverified**.
+- **Security:** renderer network isolation blocks remote loads, but topic modules, Blender scripts and narration runtimes run as trusted local code with your user permissions; nothing is sandboxed. See [SECURITY.md](SECURITY.md).
+- **Tests:** the runtime category (real synthesis) runs only where a narration runtime file is configured, and CI runs no runtime or Blender tests. Repository-only pixel and mix regressions skip without the archived experiments; `scripts/tests/run_all.py` reports every skip.
 
 ## Licensing
 
@@ -309,8 +317,8 @@ The final video is an H.264/AAC MP4, by default 1080×1920 at 30 fps. 1920×1080
 ## Repository layout
 
 - `skills/video-creator/`: **the Skill package**. This folder is what gets installed: `SKILL.md`, `README.md`, `RELEASE-NOTES.md`, `references/`, `scripts/` and optional self-contained `scripts/tests/`.
-- `docs/`: requirements, quality strategy, architecture, decisions, research and the [v0.2.0-beta release checklist](docs/release-checklist-v0.2.0-beta.md).
-- `experiments/`: development evidence (notes, scripts, plans, captions, QA reports, contact sheets). **Not needed to use the Skill.**
+- `tools/`: release build (`build_release.py`), repository checks (`check_repository.py`), development install (`install_dev.sh`), duration-rate fitting (`duration_fit.py`).
+- `docs/`: requirements, quality strategy, architecture, decisions, research, [releases](docs/releases/release-process.md), security, audits, [representative evidence](docs/media/README.md) and [history](docs/history/experiments-index.md). The development experiments (E01–E42) are archived; the history index explains how to recover them. **Not needed to use the Skill.**
 - `AGENTS.md`, `CLAUDE.md`: engineering instructions for coding agents that develop this repository.
 - `LICENSE`, `THIRD_PARTY_NOTICES.md`, `SECURITY.md`, `CONTRIBUTING.md`, `CODE_OF_CONDUCT.md`: licensing, security reporting and contribution rules.
 

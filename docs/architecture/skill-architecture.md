@@ -1,8 +1,8 @@
-# Proposed portable Skill architecture
+# Portable Skill architecture
 
-**Status: direction accepted in ADR-001; no production stack or host compatibility selected.** The smallest portable core is a standards-compliant folder with `SKILL.md`. Add `references/` only for guidance actually used, `scripts/` only when repeatable deterministic work warrants them, and `assets/` only for distributable assets. The P002 experiment is isolated in `experiments/E01/`; it is not the production Skill.
+**Status: implemented in `skills/video-creator/` (v0.2.1-beta release candidate; ADR-001).** The package is a standards-compliant `SKILL.md` folder with `references/` (workflow, locale, style and quality guidance) and `scripts/` (narration, planning, rendering, audio, QA and tests); it ships no third-party assets. Tested hosts and runtimes are listed in `skills/video-creator/references/tested-configurations.md`. Development experiments are archived ([history](../history/experiments-index.md)).
 
-The future production package may have `references/` for workflow, locale, style, and quality guidance; `scripts/` for validation, audio/timestamp/render operations; `assets/` for licensed reusable material. These are conceptual boundaries, not committed directories or technologies. Keep generated projects, user preferences, downloaded models, and large outputs **outside** the immutable Skill package in host-writable locations chosen during setup. Resolve references from the Skill directory; resolve user inputs and output paths independently after validation.
+Generated projects, user preferences, downloaded models, runtime files and large outputs live **outside** the immutable Skill package.
 
 | Layer | Responsibility |
 | --- | --- |
